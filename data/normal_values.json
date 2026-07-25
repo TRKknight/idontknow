@@ -1,0 +1,1730 @@
+[
+  {
+    "id": "electrolytes",
+    "name": "Electrolytes",
+    "icon": "⚡",
+    "entries": [
+      {
+        "name": "Sodium",
+        "abbr": "Na⁺",
+        "sample": "S",
+        "range": "136-145",
+        "unit": "mEq/L",
+        "si": "136-145",
+        "siUnit": "mmol/L",
+        "note": "Major extracellular cation"
+      },
+      {
+        "name": "Potassium",
+        "abbr": "K⁺",
+        "sample": "S",
+        "range": "3.5-5",
+        "unit": "mEq/L",
+        "si": "3.5-5",
+        "siUnit": "mmol/L",
+        "note": "Major intracellular cation"
+      },
+      {
+        "name": "Chloride",
+        "abbr": "Cl⁻",
+        "sample": "P",
+        "range": "96-106",
+        "unit": "mEq/L",
+        "si": "96-106",
+        "siUnit": "mmol/L",
+        "note": "Major extracellular anion"
+      },
+      {
+        "name": "Bicarbonate",
+        "abbr": "HCO₃⁻",
+        "sample": "S",
+        "range": "22-26",
+        "unit": "mEq/L",
+        "si": "22-26",
+        "siUnit": "mmol/L",
+        "note": "CO₂ transport; buffer system"
+      },
+      {
+        "name": "Calcium, total",
+        "abbr": "Ca²⁺",
+        "sample": "S",
+        "range": "9-11",
+        "unit": "mg/dL",
+        "si": "2.1-2.5",
+        "siUnit": "mmol/L",
+        "note": "99% in bone; ionised form active"
+      },
+      {
+        "name": "Magnesium",
+        "abbr": "Mg²⁺",
+        "sample": "S",
+        "range": "1.8-2.2",
+        "unit": "mg/dL",
+        "si": "0.7-0.9",
+        "siUnit": "mmol/L",
+        "note": "Cofactor for ATPases, kinases"
+      },
+      {
+        "name": "Phosphate, inorganic",
+        "abbr": "PO₄³⁻",
+        "sample": "S",
+        "range": "3-4",
+        "unit": "mg/dL",
+        "si": "1-1.5",
+        "siUnit": "mmol/L",
+        "note": "Energy metabolism, bone mineral"
+      },
+      {
+        "name": "Sulfate",
+        "abbr": "SO₄²⁻",
+        "sample": "S",
+        "range": "0.5-1.5",
+        "unit": "mEq/L",
+        "si": "0.5-1.5",
+        "siUnit": "mEq/L",
+        "note": "Amino acid metabolism byproduct"
+      }
+    ]
+  },
+  {
+    "id": "renal",
+    "name": "Renal Function",
+    "icon": "🧪",
+    "entries": [
+      {
+        "name": "Urea",
+        "abbr": "",
+        "sample": "S",
+        "range": "20-40",
+        "unit": "mg/dL",
+        "si": "2.4-4.8",
+        "siUnit": "mmol/L",
+        "note": "End product of protein metabolism"
+      },
+      {
+        "name": "Urea Nitrogen",
+        "abbr": "BUN",
+        "sample": "P",
+        "range": "8-20",
+        "unit": "mg/dL",
+        "si": "3-9",
+        "siUnit": "mmol/L",
+        "note": "BUN = Urea × 0.467"
+      },
+      {
+        "name": "Creatinine",
+        "abbr": "Cr",
+        "sample": "S",
+        "range": "0.7-1.4",
+        "unit": "mg/dL",
+        "si": "60-125",
+        "siUnit": "μmol/L",
+        "note": "Marker of glomerular filtration"
+      },
+      {
+        "name": "Uric Acid, Male",
+        "abbr": "UA",
+        "sample": "S/P",
+        "range": "3.5-7",
+        "unit": "mg/dL",
+        "si": "0.21-0.4",
+        "siUnit": "mmol/L",
+        "note": "Purine metabolism end product"
+      },
+      {
+        "name": "Uric Acid, Female",
+        "abbr": "UA",
+        "sample": "S/P",
+        "range": "3.0-6",
+        "unit": "mg/dL",
+        "si": "0.18-0.35",
+        "siUnit": "mmol/L",
+        "note": "Lower in premenopausal women"
+      },
+      {
+        "name": "Uric Acid, Children",
+        "abbr": "UA",
+        "sample": "S/P",
+        "range": "2.0-5.5",
+        "unit": "mg/dL",
+        "si": "0.12-0.32",
+        "siUnit": "mmol/L",
+        "note": ""
+      },
+      {
+        "name": "Creatinine, Urine",
+        "abbr": "Cr",
+        "sample": "U",
+        "range": "15-25",
+        "unit": "mg/kg/d",
+        "si": "0.15-0.2",
+        "siUnit": "mmol/kg/d",
+        "note": "24-hour urine collection"
+      }
+    ]
+  },
+  {
+    "id": "glucose",
+    "name": "Glucose & Diabetes",
+    "icon": "🍬",
+    "entries": [
+      {
+        "name": "Glucose, Fasting",
+        "abbr": "FBS",
+        "sample": "P",
+        "range": "70-110",
+        "unit": "mg/dL",
+        "si": "4.0-6.1",
+        "siUnit": "mmol/L",
+        "note": "Diabetes: ≥126 mg/dL"
+      },
+      {
+        "name": "Glucose, CSF",
+        "abbr": "",
+        "sample": "CSF",
+        "range": "50-70",
+        "unit": "mg/dL",
+        "si": "2.8-4.2",
+        "siUnit": "mmol/L",
+        "note": "~60% of blood glucose"
+      },
+      {
+        "name": "HbA1c (Glycohemoglobin)",
+        "abbr": "HbA1c",
+        "sample": "B",
+        "range": "4-8",
+        "unit": "% of total Hb",
+        "si": "",
+        "siUnit": "",
+        "note": "Diabetes: >6.5%; reflects 2-3 month control"
+      },
+      {
+        "name": "Insulin, Fasting",
+        "abbr": "",
+        "sample": "S",
+        "range": "5-15",
+        "unit": "μU/mL",
+        "si": "30-100",
+        "siUnit": "pmol/L",
+        "note": "Hypoglycaemia workup"
+      },
+      {
+        "name": "Glucagon",
+        "abbr": "",
+        "sample": "S",
+        "range": "2-10",
+        "unit": "ng/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Counter-regulatory hormone"
+      },
+      {
+        "name": "Lactic Acid / Lactate",
+        "abbr": "",
+        "sample": "P",
+        "range": "4-20",
+        "unit": "mg/dL",
+        "si": "0.4-2.0",
+        "siUnit": "mmol/L",
+        "note": "↑ In hypoxia, sepsis, PDH deficiency"
+      }
+    ]
+  },
+  {
+    "id": "lft",
+    "name": "Liver Function",
+    "icon": "🫁",
+    "entries": [
+      {
+        "name": "ALT / SGPT",
+        "abbr": "ALT",
+        "sample": "S",
+        "range": "Male 13-35, Female 10-30",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Cytosolic liver enzyme; ↑ in hepatitis"
+      },
+      {
+        "name": "AST / SGOT",
+        "abbr": "AST",
+        "sample": "S",
+        "range": "8-20",
+        "unit": "IU/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Mitochondrial; ↑ in alcohol, necrosis"
+      },
+      {
+        "name": "Alkaline Phosphatase",
+        "abbr": "ALP",
+        "sample": "S",
+        "range": "40-125",
+        "unit": "IU/L",
+        "si": "",
+        "siUnit": "",
+        "note": "↑ In biliary obstruction, bone disease"
+      },
+      {
+        "name": "GGT",
+        "abbr": "GGT",
+        "sample": "S",
+        "range": "10-30",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Alcohol-induced; helps confirm ALP origin"
+      },
+      {
+        "name": "Bilirubin, Total",
+        "abbr": "",
+        "sample": "S",
+        "range": "0.2-1.0",
+        "unit": "mg/dL",
+        "si": "4-17",
+        "siUnit": "μmol/L",
+        "note": "Unconjugated + conjugated"
+      },
+      {
+        "name": "Bilirubin, Unconjugated",
+        "abbr": "",
+        "sample": "S",
+        "range": "0.2-0.7",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Indirect; ↑ in haemolysis, Gilbert's"
+      },
+      {
+        "name": "Bilirubin, Conjugated",
+        "abbr": "",
+        "sample": "S",
+        "range": "0.1-0.4",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Direct; ↑ in obstruction, hepatitis"
+      },
+      {
+        "name": "Total Protein",
+        "abbr": "TP",
+        "sample": "S",
+        "range": "6-8",
+        "unit": "g/dL",
+        "si": "60-80",
+        "siUnit": "g/L",
+        "note": "Albumin + globulins"
+      },
+      {
+        "name": "Albumin",
+        "abbr": "",
+        "sample": "S",
+        "range": "3.5-5",
+        "unit": "g/dL",
+        "si": "35-50",
+        "siUnit": "g/L",
+        "note": "Synthesised in liver; ↓ in cirrhosis, nephrosis"
+      },
+      {
+        "name": "Globulins",
+        "abbr": "",
+        "sample": "S",
+        "range": "2.5-3.5",
+        "unit": "g/dL",
+        "si": "25-35",
+        "siUnit": "g/L",
+        "note": "α₁, α₂, β, γ fractions"
+      },
+      {
+        "name": "Ammonia",
+        "abbr": "",
+        "sample": "P/S",
+        "range": "<50",
+        "unit": "μg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "↑ In hepatic encephalopathy, urea cycle defects"
+      },
+      {
+        "name": "Prothrombin",
+        "abbr": "",
+        "sample": "P",
+        "range": "10-15",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Vitamin K-dependent clotting factor"
+      }
+    ]
+  },
+  {
+    "id": "lipids",
+    "name": "Lipid Profile",
+    "icon": "🧈",
+    "entries": [
+      {
+        "name": "Total Cholesterol",
+        "abbr": "TC",
+        "sample": "P",
+        "range": "150-200",
+        "unit": "mg/dL",
+        "si": "4-6",
+        "siUnit": "mmol/L",
+        "note": "Desirable: <200; borderline: 200-240"
+      },
+      {
+        "name": "HDL Cholesterol, Male",
+        "abbr": "HDL",
+        "sample": "S",
+        "range": "30-60",
+        "unit": "mg/dL",
+        "si": "0.75-1.58",
+        "siUnit": "mmol/L",
+        "note": "Low <40 mg/dL (risk factor)"
+      },
+      {
+        "name": "HDL Cholesterol, Female",
+        "abbr": "HDL",
+        "sample": "S",
+        "range": "35-75",
+        "unit": "mg/dL",
+        "si": "0.98-1.95",
+        "siUnit": "mmol/L",
+        "note": "Higher due to oestrogen"
+      },
+      {
+        "name": "LDL Cholesterol",
+        "abbr": "LDL",
+        "sample": "S",
+        "range": "60-200",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Varies by age; optimal <100 mg/dL"
+      },
+      {
+        "name": "Triglycerides, Male",
+        "abbr": "TG",
+        "sample": "S",
+        "range": "50-200",
+        "unit": "mg/dL",
+        "si": "0.5-2.3",
+        "siUnit": "mmol/L",
+        "note": "Fasting sample required"
+      },
+      {
+        "name": "Triglycerides, Female",
+        "abbr": "TG",
+        "sample": "S",
+        "range": "40-150",
+        "unit": "mg/dL",
+        "si": "0.4-1.6",
+        "siUnit": "mmol/L",
+        "note": "Slightly lower than males"
+      },
+      {
+        "name": "Total Lipids",
+        "abbr": "",
+        "sample": "S",
+        "range": "400-600",
+        "unit": "mg/dL",
+        "si": "4-6",
+        "siUnit": "g/L",
+        "note": "Sum of all lipid fractions"
+      },
+      {
+        "name": "Phospholipids",
+        "abbr": "",
+        "sample": "",
+        "range": "150-200",
+        "unit": "mg/dL",
+        "si": "2-2.5",
+        "siUnit": "mmol/L",
+        "note": "Membrane components"
+      },
+      {
+        "name": "NEFA / FFA",
+        "abbr": "NEFA",
+        "sample": "P",
+        "range": "10-20",
+        "unit": "mg/dL",
+        "si": "0.3-0.7",
+        "siUnit": "mEq/L",
+        "note": "Free fatty acids; ↑ in starvation, DKA"
+      }
+    ]
+  },
+  {
+    "id": "cardiac",
+    "name": "Cardiac Enzymes",
+    "icon": "❤️",
+    "entries": [
+      {
+        "name": "CK, Male",
+        "abbr": "CK",
+        "sample": "S",
+        "range": "15-210",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "CK-MB elevated in MI"
+      },
+      {
+        "name": "CK, Female",
+        "abbr": "CK",
+        "sample": "S",
+        "range": "10-80",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Lower muscle mass → lower CK"
+      },
+      {
+        "name": "LDH",
+        "abbr": "LDH",
+        "sample": "S",
+        "range": "100-200",
+        "unit": "IU/L",
+        "si": "",
+        "siUnit": "",
+        "note": "5 isoenzymes; ↑ in MI, haemolysis, hepatitis"
+      },
+      {
+        "name": "Troponin I",
+        "abbr": "TnI",
+        "sample": "S",
+        "range": "<10",
+        "unit": "pg/mL",
+        "si": "",
+        "siUnit": "",
+        "note": "Gold standard for MI; cardiac-specific"
+      },
+      {
+        "name": "AST",
+        "abbr": "AST",
+        "sample": "S",
+        "range": "8-20",
+        "unit": "IU/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Also in cardiac panel"
+      }
+    ]
+  },
+  {
+    "id": "pancreatic",
+    "name": "Pancreatic Enzymes",
+    "icon": "🔬",
+    "entries": [
+      {
+        "name": "Amylase",
+        "abbr": "",
+        "sample": "S",
+        "range": "50-120",
+        "unit": "IU/L",
+        "si": "",
+        "siUnit": "",
+        "note": "↑ In pancreatitis; also salivary"
+      },
+      {
+        "name": "Amylase, Urine",
+        "abbr": "",
+        "sample": "U",
+        "range": "0-375",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Renally cleared; elevated longer than serum"
+      },
+      {
+        "name": "Lipase",
+        "abbr": "",
+        "sample": "S",
+        "range": "50-175",
+        "unit": "IU/L",
+        "si": "",
+        "siUnit": "",
+        "note": "More specific for pancreatitis than amylase"
+      }
+    ]
+  },
+  {
+    "id": "hematology",
+    "name": "Hematology",
+    "icon": "🩸",
+    "entries": [
+      {
+        "name": "Hemoglobin, Male",
+        "abbr": "Hb",
+        "sample": "B",
+        "range": "14-16",
+        "unit": "g/dL",
+        "si": "2.17-2.4",
+        "siUnit": "mmol/L",
+        "note": "Anaemia: <13 g/dL (male)"
+      },
+      {
+        "name": "Hemoglobin, Female",
+        "abbr": "Hb",
+        "sample": "B",
+        "range": "13-15",
+        "unit": "g/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Anaemia: <12 g/dL (female)"
+      },
+      {
+        "name": "HbA₂",
+        "abbr": "",
+        "sample": "E",
+        "range": "2-3",
+        "unit": "% of total Hb",
+        "si": "",
+        "siUnit": "",
+        "note": "↑ In β-thalassaemia trait"
+      },
+      {
+        "name": "Ferritin, Male",
+        "abbr": "",
+        "sample": "S",
+        "range": "30-300",
+        "unit": "μg/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Reflects iron stores; ↓ in deficiency"
+      },
+      {
+        "name": "Ferritin, Female",
+        "abbr": "",
+        "sample": "S",
+        "range": "20-120",
+        "unit": "μg/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Lower stores due to menstruation"
+      },
+      {
+        "name": "Serum Iron",
+        "abbr": "Fe",
+        "sample": "S",
+        "range": "100-150",
+        "unit": "μg/dL",
+        "si": "20-30",
+        "siUnit": "μmol/L",
+        "note": "Diurnal variation (higher in AM)"
+      },
+      {
+        "name": "TIBC",
+        "abbr": "TIBC",
+        "sample": "S",
+        "range": "250-400",
+        "unit": "μg/dL",
+        "si": "44-70",
+        "siUnit": "μmol/L",
+        "note": "Transferrin capacity; ↑ in iron deficiency"
+      },
+      {
+        "name": "Fibrinogen",
+        "abbr": "",
+        "sample": "P",
+        "range": "200-400",
+        "unit": "mg/dL",
+        "si": "5.8-8.5",
+        "siUnit": "μmol/L",
+        "note": "Acute phase protein; clotting factor I"
+      },
+      {
+        "name": "Haptoglobin",
+        "abbr": "",
+        "sample": "",
+        "range": "40-175",
+        "unit": "mg/dL",
+        "si": "400-1750",
+        "siUnit": "mg/L",
+        "note": "Binds free Hb; ↓ in haemolysis"
+      },
+      {
+        "name": "Hemopexin",
+        "abbr": "",
+        "sample": "S",
+        "range": "50-100",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Binds heme; ↓ in haemolysis"
+      },
+      {
+        "name": "Plasminogen",
+        "abbr": "",
+        "sample": "S",
+        "range": "10-30",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Fibrinolysis system component"
+      },
+      {
+        "name": "G6PD",
+        "abbr": "G6PD",
+        "sample": "B",
+        "range": "6-12",
+        "unit": "U/g Hb",
+        "si": "",
+        "siUnit": "",
+        "note": "X-linked deficiency → haemolytic anaemia"
+      }
+    ]
+  },
+  {
+    "id": "abg",
+    "name": "Arterial Blood Gases",
+    "icon": "🫁",
+    "entries": [
+      {
+        "name": "pH",
+        "abbr": "",
+        "sample": "B",
+        "range": "7.35-7.45",
+        "unit": "",
+        "si": "",
+        "siUnit": "",
+        "note": "[H⁺] = 40 nmol/L at pH 7.4"
+      },
+      {
+        "name": "pCO₂",
+        "abbr": "",
+        "sample": "B (arterial)",
+        "range": "35-45",
+        "unit": "mm Hg",
+        "si": "",
+        "siUnit": "",
+        "note": "Respiratory component"
+      },
+      {
+        "name": "pO₂",
+        "abbr": "",
+        "sample": "B (arterial)",
+        "range": "90-100",
+        "unit": "mm Hg",
+        "si": "",
+        "siUnit": "",
+        "note": "Hypoxia: <80 mm Hg"
+      },
+      {
+        "name": "Bicarbonate",
+        "abbr": "HCO₃⁻",
+        "sample": "S",
+        "range": "22-26",
+        "unit": "mEq/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Metabolic component"
+      },
+      {
+        "name": "Osmolarity (calculated)",
+        "abbr": "",
+        "sample": "S",
+        "range": "280-296",
+        "unit": "mOsmol/kg",
+        "si": "280-296",
+        "siUnit": "mmol/kg",
+        "note": "2Na⁺ + glucose/18 + BUN/2.8"
+      }
+    ]
+  },
+  {
+    "id": "vitamins",
+    "name": "Vitamins",
+    "icon": "💊",
+    "entries": [
+      {
+        "name": "Vitamin A (Retinol)",
+        "abbr": "Vit A",
+        "sample": "S",
+        "range": "15-50",
+        "unit": "μg/dL",
+        "si": "0.5-2",
+        "siUnit": "μmol/L",
+        "note": "Fat-soluble; RDA: 750 μg (adult)"
+      },
+      {
+        "name": "Vitamin C (Ascorbic Acid)",
+        "abbr": "Vit C",
+        "sample": "P",
+        "range": "0.4-1.5",
+        "unit": "mg/dL",
+        "si": "23-85",
+        "siUnit": "μmol/L",
+        "note": "Water-soluble; RDA: 70 mg (adult)"
+      },
+      {
+        "name": "Vitamin D₃ (Calcitriol)",
+        "abbr": "Vit D",
+        "sample": "S",
+        "range": "1.5-6",
+        "unit": "pg/dL",
+        "si": "50-160",
+        "siUnit": "pmol/L",
+        "note": "RDA: 5 μg (adult); 10 μg (preschool)"
+      },
+      {
+        "name": "Vitamin E (α-Tocopherol)",
+        "abbr": "Vit E",
+        "sample": "S",
+        "range": "0.5-1.8",
+        "unit": "mg/dL",
+        "si": "12-42",
+        "siUnit": "μmol/L",
+        "note": "RDA: 10 mg (male), 8 mg (female)"
+      },
+      {
+        "name": "Vitamin B₁₂ (Cyanocobalamin)",
+        "abbr": "Vit B₁₂",
+        "sample": "S",
+        "range": "20-80",
+        "unit": "ng/dL",
+        "si": "150-600",
+        "siUnit": "pmol/L",
+        "note": "Methylmalonyl-CoA mutase cofactor; RDA: 1 μg"
+      },
+      {
+        "name": "Folic Acid / Folate",
+        "abbr": "",
+        "sample": "S",
+        "range": "5-20",
+        "unit": "ng/mL",
+        "si": "10-40",
+        "siUnit": "nmol/L",
+        "note": "RDA: 100 μg (adult); 300 μg (pregnancy)"
+      }
+    ]
+  },
+  {
+    "id": "hormones",
+    "name": "Hormones",
+    "icon": "🧬",
+    "entries": [
+      {
+        "name": "TSH",
+        "abbr": "TSH",
+        "sample": "S",
+        "range": "0.5-5",
+        "unit": "μU/mL",
+        "si": "0.5-5",
+        "siUnit": "mU/L",
+        "note": "Pituitary; ↑ in primary hypothyroidism"
+      },
+      {
+        "name": "T₃ (Tri-iodothyronine)",
+        "abbr": "T₃",
+        "sample": "S",
+        "range": "120-190",
+        "unit": "ng/dL",
+        "si": "1.8-3",
+        "siUnit": "nmol/L",
+        "note": "Active form; ↑ in hyperthyroidism"
+      },
+      {
+        "name": "T₄ (Thyroxine)",
+        "abbr": "T₄",
+        "sample": "S",
+        "range": "5-12",
+        "unit": "μg/dL",
+        "si": "65-150",
+        "siUnit": "nmol/L",
+        "note": "Bound to TBG; free T₄: 0.8-1.8 ng/dL"
+      },
+      {
+        "name": "Cortisol, 9 AM",
+        "abbr": "",
+        "sample": "P",
+        "range": "5-15",
+        "unit": "μg/dL",
+        "si": "130-600",
+        "siUnit": "nmol/L",
+        "note": "Diurnal; ↑ in Cushing's"
+      },
+      {
+        "name": "Cortisol, Midnight",
+        "abbr": "",
+        "sample": "P",
+        "range": "2-5",
+        "unit": "μg/dL",
+        "si": "30-130",
+        "siUnit": "nmol/L",
+        "note": "Loss of diurnal rhythm → Cushing's"
+      },
+      {
+        "name": "ACTH (Corticotropin)",
+        "abbr": "ACTH",
+        "sample": "P",
+        "range": "2.5-10",
+        "unit": "ng/dL",
+        "si": "2-10",
+        "siUnit": "pmol/L",
+        "note": "Pituitary; drives cortisol secretion"
+      },
+      {
+        "name": "Aldosterone, Standing",
+        "abbr": "",
+        "sample": "S",
+        "range": "6-20",
+        "unit": "ng/dL",
+        "si": "0.17-6",
+        "siUnit": "nmol/L",
+        "note": "↑ In standing position; regulates Na⁺/K⁺"
+      },
+      {
+        "name": "Renin (upright, normal salt)",
+        "abbr": "",
+        "sample": "P",
+        "range": "0.5-1",
+        "unit": "ng/L/s",
+        "si": "",
+        "siUnit": "",
+        "note": "Renin-angiotensin system"
+      },
+      {
+        "name": "PTH (Parathyroid Hormone)",
+        "abbr": "PTH",
+        "sample": "S",
+        "range": "10-25",
+        "unit": "ng/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Regulates Ca²⁺/PO₄³⁻ balance"
+      },
+      {
+        "name": "Calcitonin",
+        "abbr": "",
+        "sample": "S",
+        "range": "0-20",
+        "unit": "pg/mL",
+        "si": "0-20",
+        "siUnit": "ng/L",
+        "note": "↓ Ca²⁺; marker for medullary thyroid CA"
+      },
+      {
+        "name": "Testosterone, Male (AM)",
+        "abbr": "",
+        "sample": "S",
+        "range": "300-1000",
+        "unit": "ng/dL",
+        "si": "10-38",
+        "siUnit": "nmol/L",
+        "note": "Diurnal; highest in AM"
+      },
+      {
+        "name": "Testosterone, Female (AM)",
+        "abbr": "",
+        "sample": "S",
+        "range": "25-45",
+        "unit": "ng/dL",
+        "si": "1-1.5",
+        "siUnit": "nmol/L",
+        "note": "Adrenal + ovarian origin"
+      },
+      {
+        "name": "Estradiol (Female, Midcycle)",
+        "abbr": "E₂",
+        "sample": "S",
+        "range": "10-50",
+        "unit": "ng/dL",
+        "si": "0.3-2",
+        "siUnit": "nmol/L",
+        "note": "Peaks at ovulation"
+      },
+      {
+        "name": "Estradiol, Male",
+        "abbr": "E₂",
+        "sample": "S",
+        "range": "<5",
+        "unit": "ng/dL",
+        "si": "<180",
+        "siUnit": "pmol/L",
+        "note": "From peripheral aromatisation"
+      },
+      {
+        "name": "Progesterone, Male",
+        "abbr": "",
+        "sample": "S",
+        "range": "12-30",
+        "unit": "ng/dL",
+        "si": "0.3-0.9",
+        "siUnit": "nmol/L",
+        "note": "Adrenal origin"
+      },
+      {
+        "name": "Progesterone, Female",
+        "abbr": "",
+        "sample": "S",
+        "range": "0.6-3",
+        "unit": "ng/dL",
+        "si": "19-95",
+        "siUnit": "nmol/L",
+        "note": "Luteal phase; higher in pregnancy"
+      },
+      {
+        "name": "LH, Male",
+        "abbr": "LH",
+        "sample": "S",
+        "range": "1.5-7",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Pituitary gonadotropin"
+      },
+      {
+        "name": "LH, Female (Midcycle)",
+        "abbr": "LH",
+        "sample": "S",
+        "range": "20-50",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Surge triggers ovulation"
+      },
+      {
+        "name": "FSH, Male",
+        "abbr": "FSH",
+        "sample": "S",
+        "range": "4-10",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Spermatogenesis regulation"
+      },
+      {
+        "name": "FSH, Female",
+        "abbr": "FSH",
+        "sample": "S",
+        "range": "10-20",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Follicular development; ↑ in menopause"
+      },
+      {
+        "name": "Prolactin",
+        "abbr": "PRL",
+        "sample": "S",
+        "range": "Male <15, Female <20",
+        "unit": "μg/L",
+        "si": "",
+        "siUnit": "",
+        "note": "↑ In prolactinoma; inhibits GnRH"
+      },
+      {
+        "name": "β-hCG (Non-pregnant)",
+        "abbr": "hCG",
+        "sample": "S",
+        "range": "<10",
+        "unit": "mU/mL",
+        "si": "<10",
+        "siUnit": "U/L",
+        "note": "Pregnancy marker; also tumour marker"
+      },
+      {
+        "name": "ADH (Arginine Vasopressin)",
+        "abbr": "ADH",
+        "sample": "P",
+        "range": "1-13",
+        "unit": "pg/mL",
+        "si": "",
+        "siUnit": "",
+        "note": "Regulates water reabsorption"
+      },
+      {
+        "name": "Growth Hormone",
+        "abbr": "GH",
+        "sample": "S",
+        "range": "0-5",
+        "unit": "ng/mL",
+        "si": "",
+        "siUnit": "",
+        "note": "Pulsatile; ↑ in acromegaly"
+      },
+      {
+        "name": "IGF-1 / Somatomedin C",
+        "abbr": "IGF-1",
+        "sample": "S",
+        "range": "50-250",
+        "unit": "ng/mL",
+        "si": "",
+        "siUnit": "",
+        "note": "Better marker for GH status"
+      }
+    ]
+  },
+  {
+    "id": "proteins",
+    "name": "Proteins & Immunoglobulins",
+    "icon": "🧫",
+    "entries": [
+      {
+        "name": "Total Protein",
+        "abbr": "TP",
+        "sample": "S",
+        "range": "6-8",
+        "unit": "g/dL",
+        "si": "60-80",
+        "siUnit": "g/L",
+        "note": "Albumin + globulins"
+      },
+      {
+        "name": "Albumin",
+        "abbr": "",
+        "sample": "S",
+        "range": "3.5-5",
+        "unit": "g/dL",
+        "si": "35-50",
+        "siUnit": "g/L",
+        "note": "Synthesised in liver"
+      },
+      {
+        "name": "Prealbumin (Transthyretin)",
+        "abbr": "TBPA",
+        "sample": "S",
+        "range": "25-30",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Short half-life; marker of nutrition"
+      },
+      {
+        "name": "Transferrin",
+        "abbr": "",
+        "sample": "S",
+        "range": "200-300",
+        "unit": "mg/dL",
+        "si": "23-35",
+        "siUnit": "μmol/L",
+        "note": "Iron transport protein"
+      },
+      {
+        "name": "Ceruloplasmin",
+        "abbr": "",
+        "sample": "S",
+        "range": "25-50",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Copper transport; ↓ in Wilson's"
+      },
+      {
+        "name": "Alpha-1-Antitrypsin",
+        "abbr": "AAT",
+        "sample": "S",
+        "range": "75-200",
+        "unit": "mg/dL",
+        "si": "0.75-2",
+        "siUnit": "g/L",
+        "note": "Deficiency → emphysema, cirrhosis"
+      },
+      {
+        "name": "Alpha-Fetoprotein",
+        "abbr": "AFP",
+        "sample": "S",
+        "range": "5-15",
+        "unit": "ng/mL",
+        "si": "5-15",
+        "siUnit": "μg/L",
+        "note": "Hepatocellular carcinoma marker"
+      },
+      {
+        "name": "CRP",
+        "abbr": "CRP",
+        "sample": "S",
+        "range": "0.5-1",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "Acute phase protein; hs-CRP for cardiac risk"
+      },
+      {
+        "name": "Complement C3",
+        "abbr": "C3",
+        "sample": "",
+        "range": "80-120",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "↓ In SLE, post-streptococcal GN"
+      },
+      {
+        "name": "Complement C4",
+        "abbr": "C4",
+        "sample": "",
+        "range": "25-40",
+        "unit": "mg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "↓ In active SLE, C1 esterase deficiency"
+      },
+      {
+        "name": "IgG",
+        "abbr": "IgG",
+        "sample": "S",
+        "range": "800-1200",
+        "unit": "mg/dL",
+        "si": "8-12",
+        "siUnit": "g/L",
+        "note": "Most abundant Ig; crosses placenta"
+      },
+      {
+        "name": "IgA",
+        "abbr": "IgA",
+        "sample": "S",
+        "range": "150-300",
+        "unit": "mg/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Mucosal immunity"
+      },
+      {
+        "name": "IgM",
+        "abbr": "IgM",
+        "sample": "S",
+        "range": "50-200",
+        "unit": "mg/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Primary immune response"
+      },
+      {
+        "name": "IgE",
+        "abbr": "IgE",
+        "sample": "S",
+        "range": "1.5-4.5",
+        "unit": "μg/dL",
+        "si": "",
+        "siUnit": "",
+        "note": "↑ In allergy, parasitic infection"
+      },
+      {
+        "name": "Globulin Electrophoresis — Albumin",
+        "abbr": "",
+        "sample": "S",
+        "range": "55-65%",
+        "unit": "",
+        "si": "3.5-4.7",
+        "siUnit": "g/dL",
+        "note": "Normal serum protein fractions"
+      },
+      {
+        "name": "Globulin Electrophoresis — α₁",
+        "abbr": "",
+        "sample": "S",
+        "range": "2-4%",
+        "unit": "",
+        "si": "0.2-0.3",
+        "siUnit": "g/dL",
+        "note": "α₁-antitrypsin, α₁-acid glycoprotein"
+      },
+      {
+        "name": "Globulin Electrophoresis — α₂",
+        "abbr": "",
+        "sample": "S",
+        "range": "6-12%",
+        "unit": "",
+        "si": "0.4-0.9",
+        "siUnit": "g/dL",
+        "note": "Haptoglobin, α₂-macroglobulin"
+      },
+      {
+        "name": "Globulin Electrophoresis — β",
+        "abbr": "",
+        "sample": "S",
+        "range": "8-12%",
+        "unit": "",
+        "si": "0.5-1.0",
+        "siUnit": "g/dL",
+        "note": "Transferrin, complement, LDL"
+      },
+      {
+        "name": "Globulin Electrophoresis — γ",
+        "abbr": "",
+        "sample": "S",
+        "range": "12-22%",
+        "unit": "",
+        "si": "0.7-1.5",
+        "siUnit": "g/dL",
+        "note": "Immunoglobulins; ↑ in myeloma (M-spike)"
+      }
+    ]
+  },
+  {
+    "id": "rda",
+    "name": "RDA of Essential Nutrients",
+    "icon": "🍎",
+    "entries": [
+      {
+        "name": "Protein, Adult",
+        "abbr": "",
+        "sample": "",
+        "range": "0.8",
+        "unit": "g/kg",
+        "si": "",
+        "siUnit": "",
+        "note": "Higher for athletes, pregnancy"
+      },
+      {
+        "name": "Protein, Infant",
+        "abbr": "",
+        "sample": "",
+        "range": "2.4",
+        "unit": "g/kg",
+        "si": "",
+        "siUnit": "",
+        "note": "Highest requirement per kg"
+      },
+      {
+        "name": "Protein, Pregnancy",
+        "abbr": "",
+        "sample": "",
+        "range": "2",
+        "unit": "g/kg",
+        "si": "",
+        "siUnit": "",
+        "note": "Third trimester: +25 g/day"
+      },
+      {
+        "name": "Protein, Lactation",
+        "abbr": "",
+        "sample": "",
+        "range": "2.5",
+        "unit": "g/kg",
+        "si": "",
+        "siUnit": "",
+        "note": "For milk production"
+      },
+      {
+        "name": "Vitamin A",
+        "abbr": "Vit A",
+        "sample": "",
+        "range": "750",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Children: 400-600 μg; Pregnancy: 1000 μg"
+      },
+      {
+        "name": "Vitamin D",
+        "abbr": "Vit D",
+        "sample": "",
+        "range": "5",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Preschool: 10 μg; Pregnancy & lactation: 15 μg"
+      },
+      {
+        "name": "Vitamin E (Male)",
+        "abbr": "Vit E",
+        "sample": "",
+        "range": "10",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Female: 8 mg; Old age: 10 mg; Pregnancy: 11 mg"
+      },
+      {
+        "name": "Vitamin K",
+        "abbr": "Vit K",
+        "sample": "",
+        "range": "50-100",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Children: 1 μg/kg"
+      },
+      {
+        "name": "Thiamine (B₁)",
+        "abbr": "B₁",
+        "sample": "",
+        "range": "1-1.5",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "PDH cofactor; ↑ in alcoholism"
+      },
+      {
+        "name": "Riboflavin (B₂)",
+        "abbr": "B₂",
+        "sample": "",
+        "range": "1.5",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "FAD cofactor; pregnancy: 1.7-2 mg"
+      },
+      {
+        "name": "Niacin (B₃)",
+        "abbr": "B₃",
+        "sample": "",
+        "range": "20",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "NAD⁺/NADP⁺ precursor; pregnancy: 22 mg"
+      },
+      {
+        "name": "Pyridoxine (B₆)",
+        "abbr": "B₆",
+        "sample": "",
+        "range": "2",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "PLP cofactor; pregnancy: 2.5 mg"
+      },
+      {
+        "name": "Pantothenic Acid (B₅)",
+        "abbr": "B₅",
+        "sample": "",
+        "range": "10",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "CoA component"
+      },
+      {
+        "name": "Biotin (B₇)",
+        "abbr": "",
+        "sample": "",
+        "range": "200-300",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Carboxylase cofactor; egg-white injury"
+      },
+      {
+        "name": "Folic Acid",
+        "abbr": "",
+        "sample": "",
+        "range": "100",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Pregnancy: 300 μg; lactation: 150 μg"
+      },
+      {
+        "name": "Vitamin B₁₂",
+        "abbr": "B₁₂",
+        "sample": "",
+        "range": "1",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Pregnancy & lactation: 1.5 μg"
+      },
+      {
+        "name": "Ascorbic Acid (C)",
+        "abbr": "Vit C",
+        "sample": "",
+        "range": "70",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Pregnancy & lactation: 100 mg"
+      },
+      {
+        "name": "Calcium",
+        "abbr": "Ca",
+        "sample": "",
+        "range": "0.5",
+        "unit": "g",
+        "si": "",
+        "siUnit": "",
+        "note": "Bone mineralisation; muscle contraction; children: 1 g"
+      },
+      {
+        "name": "Phosphorus",
+        "abbr": "P",
+        "sample": "",
+        "range": "500",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Bone mineral; ATP & nucleic acid synthesis"
+      },
+      {
+        "name": "Magnesium",
+        "abbr": "Mg",
+        "sample": "",
+        "range": "400",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Cofactor for >300 enzymes"
+      },
+      {
+        "name": "Manganese",
+        "abbr": "Mn",
+        "sample": "",
+        "range": "5-6",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Trace element; glycosyltransferase cofactor"
+      },
+      {
+        "name": "Sodium",
+        "abbr": "Na",
+        "sample": "",
+        "range": "5-10",
+        "unit": "g",
+        "si": "",
+        "siUnit": "",
+        "note": "DASH diet: <2.3 g Na"
+      },
+      {
+        "name": "Potassium",
+        "abbr": "K",
+        "sample": "",
+        "range": "3-4",
+        "unit": "g",
+        "si": "",
+        "siUnit": "",
+        "note": "DASH diet: 4.7 g"
+      },
+      {
+        "name": "Iron, Male",
+        "abbr": "Fe",
+        "sample": "",
+        "range": "15-20",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Heme synthesis"
+      },
+      {
+        "name": "Iron, Female",
+        "abbr": "Fe",
+        "sample": "",
+        "range": "20-25",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Pregnancy: 40-50 mg"
+      },
+      {
+        "name": "Copper",
+        "abbr": "Cu",
+        "sample": "",
+        "range": "1.5-3",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Ceruloplasmin component"
+      },
+      {
+        "name": "Iodine",
+        "abbr": "I",
+        "sample": "",
+        "range": "150-200",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Thyroid hormone synthesis"
+      },
+      {
+        "name": "Zinc",
+        "abbr": "Zn",
+        "sample": "",
+        "range": "8-10",
+        "unit": "mg",
+        "si": "",
+        "siUnit": "",
+        "note": "Metalloenzyme cofactor"
+      },
+      {
+        "name": "Selenium",
+        "abbr": "Se",
+        "sample": "",
+        "range": "50-100",
+        "unit": "μg",
+        "si": "",
+        "siUnit": "",
+        "note": "Glutathione peroxidase cofactor"
+      }
+    ]
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "icon": "📋",
+    "entries": [
+      {
+        "name": "Osmolarity, Serum",
+        "abbr": "",
+        "sample": "S",
+        "range": "280-296",
+        "unit": "mOsmol/kg",
+        "si": "280-296",
+        "siUnit": "mmol/kg",
+        "note": "2Na + Glu/18 + BUN/2.8"
+      },
+      {
+        "name": "Aldolase",
+        "abbr": "",
+        "sample": "S",
+        "range": "1.5-7",
+        "unit": "IU/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Fructose metabolism; ↑ in muscle disease"
+      },
+      {
+        "name": "5'-Nucleotidase",
+        "abbr": "NTP",
+        "sample": "S",
+        "range": "2-10",
+        "unit": "U/L",
+        "si": "",
+        "siUnit": "",
+        "note": "Liver enzyme; ↑ in biliary obstruction"
+      },
+      {
+        "name": "Cholinesterase / Pseudocholinesterase",
+        "abbr": "",
+        "sample": "B",
+        "range": "8-18",
+        "unit": "IU/mL",
+        "si": "",
+        "siUnit": "",
+        "note": "Suxamethonium metabolism; ↓ in liver disease, OP poisoning"
+      },
+      {
+        "name": "Copper, Serum",
+        "abbr": "Cu",
+        "sample": "P",
+        "range": "70-150",
+        "unit": "μg/dL",
+        "si": "16-30",
+        "siUnit": "μmol/L",
+        "note": "↓ In Wilson's disease; ↑ in inflammation"
+      },
+      {
+        "name": "Zinc, Serum",
+        "abbr": "Zn",
+        "sample": "S",
+        "range": "50-100",
+        "unit": "μg/dL",
+        "si": "8-16",
+        "siUnit": "μmol/L",
+        "note": "↓ In acrodermatitis enteropathica"
+      },
+      {
+        "name": "Selenium, Serum",
+        "abbr": "Se",
+        "sample": "S",
+        "range": "50-100",
+        "unit": "μg/dL",
+        "si": "0.5",
+        "siUnit": "μmol/L",
+        "note": "Se deficiency → Keshan disease"
+      },
+      {
+        "name": "Serotonin",
+        "abbr": "5-HT",
+        "sample": "B",
+        "range": "4-36",
+        "unit": "mg/dL",
+        "si": "0.2-2",
+        "siUnit": "μmol/L",
+        "note": "Carcinoid syndrome marker"
+      },
+      {
+        "name": "VMA, Urine",
+        "abbr": "VMA",
+        "sample": "U",
+        "range": "2-6",
+        "unit": "mg/d",
+        "si": "7-32",
+        "siUnit": "μmol/d",
+        "note": "Catecholamine metabolite; ↑ in neuroblastoma, phaeochromocytoma"
+      },
+      {
+        "name": "17-Ketosteroids, Urine",
+        "abbr": "17-KS",
+        "sample": "U",
+        "range": "Male 5-23, Female 3-15",
+        "unit": "mg/d",
+        "si": "",
+        "siUnit": "",
+        "note": "Adrenal androgen metabolites"
+      },
+      {
+        "name": "17-Hydroxycorticosteroids, Urine",
+        "abbr": "17-OHCS",
+        "sample": "U",
+        "range": "Male 3-10, Female 2-8",
+        "unit": "mg/d",
+        "si": "",
+        "siUnit": "",
+        "note": "Cortisol metabolites"
+      },
+      {
+        "name": "Epinephrine, Plasma",
+        "abbr": "",
+        "sample": "P",
+        "range": "10-100",
+        "unit": "pg/mL",
+        "si": "10-500",
+        "siUnit": "pmol/L",
+        "note": "↑ In phaeochromocytoma"
+      },
+      {
+        "name": "Norepinephrine, Plasma",
+        "abbr": "",
+        "sample": "P",
+        "range": "70-700",
+        "unit": "pg/mL",
+        "si": "1-4",
+        "siUnit": "nmol/L",
+        "note": "↑ In phaeochromocytoma, heart failure"
+      },
+      {
+        "name": "PSA, Male",
+        "abbr": "PSA",
+        "sample": "S",
+        "range": "100-500",
+        "unit": "ng/dL",
+        "si": "1-5",
+        "siUnit": "μg/L",
+        "note": "Prostate cancer screening; age-specific cutoffs"
+      },
+      {
+        "name": "Prostaglandin E",
+        "abbr": "PGE",
+        "sample": "P",
+        "range": "25-200",
+        "unit": "ng/dL",
+        "si": "70-550",
+        "siUnit": "pmol/L",
+        "note": "Inflammation mediator"
+      },
+      {
+        "name": "Acid Phosphatase, Total",
+        "abbr": "ACP",
+        "sample": "S",
+        "range": "0.5-1.9",
+        "unit": "KAU/dL",
+        "si": "2.5-12",
+        "siUnit": "IU/L",
+        "note": "Prostatic origin; ↑ in metastatic prostate CA"
+      },
+      {
+        "name": "Acid Phosphatase (Tartrate-Labile)",
+        "abbr": "ACP-TL",
+        "sample": "S",
+        "range": "<0.9",
+        "unit": "KAU/dL",
+        "si": "<1",
+        "siUnit": "IU/L",
+        "note": "Prostate-specific isoform"
+      }
+    ]
+  }
+]

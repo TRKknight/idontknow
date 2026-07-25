@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>BFM Feed</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0f0f0f;
+    --surface: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #f0f0f0;
+    --sub: #999;
+    --muted: #555;
+    --card: #1e1e1e;
+  }
+
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, serif;
+    overscroll-behavior: none;
+  }
+
+  /* ── Header ── */
+  #header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(15,15,15,0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+  #header .title { font-size: 15px; font-weight: bold; color: #fff; letter-spacing: 0.3px; }
+  #header .sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  #header .badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: var(--surface);
+    color: var(--sub);
+    border: 1px solid var(--border);
+    font-family: monospace;
+  }
+
+  /* ── Feed container ── */
+  #feed {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    max-width: 560px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* ── Card ── */
+  .card {
+    position: relative;
+    border-radius: 16px;
+    margin: 12px 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+    background: var(--card);
+  }
+  .card:active { transform: scale(0.98); }
+
+  /* ── Card visual (top band) ── */
+  .card-visual {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .card-visual .big-text {
+    font-size: 72px;
+    line-height: 1;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
+    z-index: 2;
+    position: relative;
+  }
+  .card-visual .bg-label {
+    position: absolute;
+    bottom: 8px; right: 12px;
+    font-size: 10px;
+    font-family: monospace;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.45;
+    color: #fff;
+    z-index: 2;
+  }
+  .card-visual .noise {
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ── Card body ── */
+  .card-body {
+    padding: 16px 18px 18px;
+  }
+
+  .card-eyebrow {
+    font-size: 10px;
+    font-family: monospace;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+
+  .card-hook {
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .card-teaser {
+    font-size: 13px;
+    color: var(--sub);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .card-footer .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    font-family: monospace;
+  }
+  .card-footer .tap-hint {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* ── Expanded reveal ── */
+  .card-reveal {
+    display: none;
+    padding: 0 18px 18px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    animation: fadeIn 0.2s ease;
+  }
+  .card-reveal.open { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal-row {
+    margin-top: 14px;
+  }
+  .reveal-label {
+    font-size: 10px;
+    font-family: monospace;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .reveal-value {
+    font-size: 14px;
+    color: var(--sub);
+    line-height: 1.6;
+  }
+  .reveal-value strong { color: var(--text); }
+
+  .reveal-close {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-size: 12px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    text-align: center;
+  }
+  .reveal-close:hover { color: var(--sub); border-color: #444; }
+
+  /* ── Loading card ── */
+  .card-loading {
+    border-radius: 16px;
+    margin: 12px 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--card);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .skeleton-band { height: 120px; background: var(--surface); }
+  .skeleton-body { padding: 16px 18px 18px; }
+  .skeleton-line {
+    height: 12px;
+    border-radius: 6px;
+    background: var(--border);
+    margin-bottom: 10px;
+  }
+
+  /* ── Empty / error ── */
+  .feed-msg {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .feed-msg .icon { font-size: 36px; margin-bottom: 12px; }
+
+  /* ── Load more sentinel ── */
+  #sentinel { height: 1px; }
+
+  /* ── Seen indicator ── */
+  .card.seen .card-hook { opacity: 0.7; }
+  .card.seen .card-visual { opacity: 0.8; }
+
+
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div>
+    <div class="title">BFM Feed</div>
+    <div class="sub">Passive learning mode</div>
+  </div>
+  <div class="badge" id="seen-badge">0 seen</div>
+</div>
+
+<div id="feed">
+  <!-- cards injected here -->
+  <div id="sentinel"></div>
+</div>
+
+<script>
+const CAT_META = {
+  A: { label: "Carbohydrate Metabolism", color: "#e07b39", icon: "🍬" },
+  B: { label: "Glycogen Storage",        color: "#c0392b", icon: "🏋️" },
+  C: { label: "Lipid Metabolism",        color: "#8e44ad", icon: "🫀" },
+  D: { label: "Amino Acid Metabolism",   color: "#2980b9", icon: "🧬" },
+  E: { label: "Urea Cycle",              color: "#16a085", icon: "♻️" },
+  F: { label: "Organic Acidemias",       color: "#27ae60", icon: "⚗️" },
+  G: { label: "Purine & Pyrimidine",     color: "#d35400", icon: "🔵" },
+  H: { label: "Porphyrin & Heme",        color: "#7f8c8d", icon: "🩸" },
+  I: { label: "Hemoglobin & RBC",        color: "#c0392b", icon: "🔴" },
+  J: { label: "Vitamin Deficiencies",    color: "#f39c12", icon: "💊" },
+  K: { label: "Minerals",               color: "#1abc9c", icon: "⚡" },
+  L: { label: "Lysosomal Storage",       color: "#6c3483", icon: "🗃️" },
+  M: { label: "Mucopolysaccharidoses",   color: "#154360", icon: "🧱" },
+  N: { label: "Miscellaneous",          color: "#1a5276", icon: "📋" },
+  O: { label: "Toxic & Applied",        color: "#922b21", icon: "☠️" },
+  P: { label: "Hematology & Immunology", color: "#e74c3c", icon: "🩸" },
+  Q: { label: "Cardiovascular System",   color: "#e67e22", icon: "❤️" },
+  R: { label: "Respiratory System",      color: "#3498db", icon: "🫁" },
+  S: { label: "GI & Metabolic",         color: "#2ecc71", icon: "🔬" },
+  T: { label: "Renal & Acid-Base",       color: "#9b59b6", icon: "🫘" },
+  U: { label: "Endocrine & Reproductive",color: "#f1c40f", icon: "🧪" },
+  V: { label: "Integrative Physiology",  color: "#1abc9c", icon: "🧠" },
+};
+
+const TAB_MAP = {
+  "Hematology and Immunology": "P",
+  "Cardiovascular System (CVS)": "Q",
+  "Respiratory System": "R",
+  "Gastrointestinal and Metabolic": "S",
+  "Renal and Acid-Base": "T",
+  "Endocrine and Reproductive": "U",
+  "Integrative Physiology": "V",
+};
+
+// ── State ────────────────────────────────────────────────────────────────
+let allItems = [];
+let queue = [];
+let queueIndex = 0;
+let seenCount = 0;
+let isLoading = false;
+let BATCH = 3;
+let strategyOffset = 0;
+let hookCache = {};
+
+function stripMd(s) { return (s || '').replace(/\*\*(.+?)\*\*/g, '$1'); }
+function firstSentence(s) {
+  if (!s) return '';
+  for (let i = 0; i < s.length - 2; i++) {
+    if (s[i] === '.' && s[i+1] === ' ' && s[i+2] >= 'A' && s[i+2] <= 'Z') {
+      return s.slice(0, i + 1);
+    }
+  }
+  return s;
+}
+
+function normalizeItem(raw, type, idx) {
+  if (type === 'clinical') {
+    const sec = raw.sections || {};
+    return {
+      _sid: idx, id: 'cl-' + idx, type: 'clinical', cat: TAB_MAP[raw.tab] || 'V', num: idx,
+      disorder: raw.name, title: raw.name,
+      defect: stripMd(firstSentence(sec["Pathophysiology / Mechanism"] || sec["Definition / Description"] || '')),
+      pathway: raw.tab,
+      keyFeature: stripMd(sec["Definition / Description"] || sec["Characteristics"] || ''),
+      basis: stripMd(sec["Pathophysiology / Mechanism"] || sec["Definition / Description"] || ''),
+      diagnosis: stripMd(sec["Clinical correlation"] || ''),
+      treatment: stripMd(sec["Regulation / Control"] || sec["Compensatory Mechanisms"] || sec["Factors Affecting"] || sec["Treatment"] || ''),
+      sections: Object.fromEntries(Object.entries(sec).map(([k, v]) => [k, stripMd(v)])),
+    };
+  }
+  return { ...raw, _sid: raw.id, id: 'bio-' + raw.id, type: 'biochem', title: raw.disorder };
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────
+async function init() {
+  try {
+    const [bioRes, clinRes] = await Promise.all([
+      fetch('../data/disorders.json'),
+      fetch('../data/clinical.json').catch(() => null),
+    ]);
+    if (!bioRes.ok) { showMsg('⚠️', 'Could not load disorders.json', ''); return; }
+    const bioData = await bioRes.json();
+    const clinData = clinRes && clinRes.ok ? await clinRes.json() : [];
+    const bioItems = bioData.map((d, i) => normalizeItem(d, 'biochem', i));
+    const clinItems = clinData.map((c, i) => normalizeItem(c, 'clinical', i));
+    allItems = shuffle([...bioItems, ...clinItems]);
+  } catch(e) {
+    showMsg('⚠️', 'Could not load data', 'Check that data.json and clinical.json exist');
+    return;
+  }
+  queue = [...allItems];
+  loadMore();
+  setupIntersectionObserver();
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// ── Hook composer ──────────────────────────────────────────────────────────
+function composeHook(d) {
+  if (hookCache[d.id]) return hookCache[d.id];
+
+  const kfRaw = (d.keyFeature || '').split(/[,;]/)[0].trim() || 'clinical features';
+  const kf = (firstSentence(kfRaw) || kfRaw).replace(/\.+$/, '');
+  const kfLow = kf.toLowerCase();
+  const meta = CAT_META[d.cat] || { label: 'Disorder', color: '#555' };
+  const dShort = d.defect;
+
+  const bioStrategies = [
+    () => `${d.disorder}: a single defect in ${dShort} explains the whole picture.`,
+    () => `${kfLow}? Check ${d.pathway} for the answer.`,
+    () => `One broken step in ${d.pathway}. One disorder: ${d.disorder}.`,
+    () => `${dShort} \u2192 ${kf}. Learn the link.`,
+    () => `Exam favourite: ${d.disorder}. Here's why ${dShort} matters.`,
+    () => `Not just ${kfLow} \u2014 it's ${d.disorder}. Trace it back to ${dShort}.`,
+    () => `${dShort} in ${d.pathway}. Now you know ${d.disorder}.`,
+    () => `${d.disorder}: when ${d.pathway} meets a broken ${dShort}.`,
+    () => `${kf}? Think ${d.disorder}. The defect? ${dShort}.`,
+    () => `${d.disorder} demystified: ${dShort} in ${d.pathway}.`,
+    () => `${d.pathway} has a weak link: ${dShort}. The result? ${d.disorder}.`,
+    () => `${meta.label} pearl: ${d.disorder} and its key defect.`,
+    () => `${d.disorder} made simple: it's all about ${dShort}.`,
+    () => `From ${dShort} to ${kfLow} \u2014 that's ${d.disorder}.`,
+    () => `What ${d.disorder} teaches us about ${d.pathway}.`,
+  ];
+
+  const clinStrategies = [
+    () => `${d.disorder}: a classic ${meta.label} condition.`,
+    () => `When ${meta.label} goes wrong, think ${d.disorder}.`,
+    () => `${d.disorder} \u2014 know the presentation, ace the diagnosis.`,
+    () => `${d.disorder}: what happens when ${meta.label} fails.`,
+    () => `${meta.label} pearl: ${d.disorder} and its clinical presentation.`,
+    () => `Understanding ${d.disorder} means understanding ${meta.label}.`,
+    () => `${d.disorder} \u2014 the bedside presentation of ${meta.label} dysfunction.`,
+    () => `${kf}? Think ${d.disorder}.`,
+    () => `${d.disorder}: linking pathophysiology to clinical practice.`,
+    () => `A ${meta.label} condition that presents with ${kfLow}.`,
+    () => `${d.disorder} demystified: a ${meta.label} breakdown.`,
+    () => `${meta.label} essentials: what you need to know about ${d.disorder}.`,
+    () => `Know ${d.disorder} to understand ${meta.label} physiology.`,
+    () => `${d.disorder}: from mechanism to management.`,
+    () => `Why every clinician should know ${d.disorder}.`,
+  ];
+
+  const pool = d.type === 'clinical' ? clinStrategies : bioStrategies;
+  const idx = (d._sid + strategyOffset) % pool.length;
+  const hook = pool[idx]();
+  hookCache[d.id] = hook;
+  return hook;
+}
+
+// ── Card rendering ────────────────────────────────────────────────────────
+function makeSkeletonCard() {
+  const el = document.createElement('div');
+  el.className = 'card-loading';
+  el.innerHTML = `
+    <div class="skeleton-band"></div>
+    <div class="skeleton-body">
+      <div class="skeleton-line" style="width:40%; margin-bottom:12px;"></div>
+      <div class="skeleton-line" style="width:90%;"></div>
+      <div class="skeleton-line" style="width:75%;"></div>
+      <div class="skeleton-line" style="width:55%; margin-top:16px;"></div>
+    </div>
+  `;
+  return el;
+}
+
+function gradientForCat(cat) {
+  const c = CAT_META[cat]?.color || '#555';
+  // derive a slightly lighter/darker second stop
+  return `linear-gradient(135deg, ${c}cc 0%, ${c}44 100%)`;
+}
+
+function patternForCat(cat) {
+  // Each category gets a unique abstract SVG pattern background
+  const patterns = {
+    A: `radial-gradient(circle at 20% 80%, #e07b3933 0%, transparent 50%), radial-gradient(circle at 80% 20%, #e07b3922 0%, transparent 50%)`,
+    B: `repeating-linear-gradient(45deg, #c0392b11 0px, #c0392b11 2px, transparent 2px, transparent 12px)`,
+    C: `radial-gradient(ellipse at 50% 50%, #8e44ad44 0%, transparent 70%)`,
+    D: `repeating-linear-gradient(0deg, #2980b911 0px, #2980b911 1px, transparent 1px, transparent 16px)`,
+    E: `conic-gradient(from 0deg at 50% 50%, #16a08522 0%, transparent 60%)`,
+    F: `radial-gradient(circle at 30% 70%, #27ae6033 0%, transparent 60%)`,
+    G: `repeating-linear-gradient(60deg, #d3540011 0px, #d3540011 1px, transparent 1px, transparent 10px)`,
+    H: `radial-gradient(circle at 70% 30%, #7f8c8d33 0%, transparent 50%)`,
+    I: `radial-gradient(circle at 50% 80%, #c0392b44 0%, transparent 60%)`,
+    J: `repeating-radial-gradient(circle at 50% 50%, #f39c1211 0px, #f39c1211 2px, transparent 2px, transparent 20px)`,
+    K: `linear-gradient(135deg, #1abc9c22 0%, transparent 60%)`,
+    L: `radial-gradient(ellipse at 80% 20%, #6c348333 0%, transparent 60%)`,
+    M: `repeating-linear-gradient(90deg, #15436011 0px, #15436011 1px, transparent 1px, transparent 14px)`,
+    N: `conic-gradient(from 180deg at 30% 30%, #1a527622 0%, transparent 40%)`,
+    O: `radial-gradient(circle at 60% 60%, #922b2144 0%, transparent 55%)`,
+    P: `radial-gradient(circle at 30% 70%, #e74c3c33 0%, transparent 55%), repeating-linear-gradient(30deg, #e74c3c11 0px, #e74c3c11 1px, transparent 1px, transparent 8px)`,
+    Q: `radial-gradient(circle at 50% 30%, #e67e2233 0%, transparent 60%)`,
+    R: `repeating-linear-gradient(120deg, #3498db11 0px, #3498db11 1px, transparent 1px, transparent 12px)`,
+    S: `conic-gradient(from 90deg at 60% 40%, #2ecc7122 0%, transparent 50%)`,
+    T: `repeating-radial-gradient(circle at 30% 60%, #9b59b611 0px, #9b59b611 2px, transparent 2px, transparent 16px)`,
+    U: `radial-gradient(ellipse at 70% 50%, #f1c40f22 0%, transparent 60%)`,
+    V: `repeating-linear-gradient(0deg, #1abc9c11 0px, #1abc9c11 2px, transparent 2px, transparent 10px)`,
+  };
+  return patterns[cat] || patterns.A;
+}
+
+function makeCard(item) {
+  const hook = composeHook(item);
+  const meta = CAT_META[item.cat] || { label: 'Unknown', color: '#555', icon: '🔬' };
+  const color = meta.color;
+
+  function revealRows() {
+    if (item.type === 'clinical') {
+      const order = [
+        "Definition / Description", "Characteristics", "Pathophysiology / Mechanism",
+        "Location / System Involved", "Components Involved", "Types / Classification",
+        "Factors Affecting", "Functions Affected", "Clinical correlation",
+        "Compensatory Mechanisms", "Regulation / Control", "Stages",
+      ];
+      return order.filter(k => item.sections[k]).map(k => `
+        <div class="reveal-row">
+          <div class="reveal-label">${k}</div>
+          <div class="reveal-value">${item.sections[k]}</div>
+        </div>
+      `).join('');
+    }
+    return `
+      <div class="reveal-row">
+        <div class="reveal-label">Enzyme / Defect</div>
+        <div class="reveal-value">${item.defect}</div>
+      </div>
+      <div class="reveal-row">
+        <div class="reveal-label">Biochemical Basis</div>
+        <div class="reveal-value">${item.basis}</div>
+      </div>
+      <div class="reveal-row">
+        <div class="reveal-label">Key Clinical Features</div>
+        <div class="reveal-value"><strong>${item.keyFeature}</strong></div>
+      </div>
+      <div class="reveal-row">
+        <div class="reveal-label">Diagnosis</div>
+        <div class="reveal-value">${item.diagnosis}</div>
+      </div>
+      <div class="reveal-row">
+        <div class="reveal-label">Treatment</div>
+        <div class="reveal-value">${item.treatment}</div>
+      </div>
+    `;
+  }
+
+  const el = document.createElement('div');
+  el.className = 'card';
+  el.dataset.id = item.id;
+
+  el.innerHTML = `
+    <div class="card-visual" style="background: ${gradientForCat(item.cat)};">
+      <div class="noise"></div>
+      <div style="position:absolute; inset:0; background: ${patternForCat(item.cat)};"></div>
+      <div class="big-text">${meta.icon}</div>
+      <div class="bg-label">${meta.label}</div>
+    </div>
+    <div class="card-body">
+      <div class="card-eyebrow" style="color: ${color};">${item.cat}${item.num} · ${item.pathway || meta.label}</div>
+      <div class="card-hook">${hook}</div>
+      <div class="card-teaser">${item.keyFeature}</div>
+      <div class="card-footer">
+        <span class="tag" style="color:${color}; border-color:${color}44; background:${color}12;">${item.disorder}</span>
+        <span class="tap-hint">tap to reveal →</span>
+      </div>
+    </div>
+    <div class="card-reveal" id="reveal-${item.id}">
+      ${revealRows()}
+      <button class="reveal-close" onclick="closeReveal('${item.id}', event)">collapse ↑</button>
+    </div>
+  `;
+
+  el.addEventListener('click', () => toggleReveal(item.id, el));
+  return el;
+}
+
+function toggleReveal(id, cardEl) {
+  const reveal = document.getElementById(`reveal-${id}`);
+  if (!reveal) return;
+  const isOpen = reveal.classList.contains('open');
+  if (!isOpen) {
+    reveal.classList.add('open');
+    cardEl.querySelector('.tap-hint').textContent = 'tap to collapse ↑';
+    markSeen(cardEl);
+  } else {
+    reveal.classList.remove('open');
+    cardEl.querySelector('.tap-hint').textContent = 'tap to reveal →';
+  }
+}
+
+function closeReveal(id, e) {
+  e.stopPropagation();
+  const reveal = document.getElementById(`reveal-${id}`);
+  if (reveal) reveal.classList.remove('open');
+  const card = document.querySelector(`[data-id="${id}"]`);
+  if (card) card.querySelector('.tap-hint').textContent = 'tap to reveal →';
+}
+
+function markSeen(cardEl) {
+  if (!cardEl.classList.contains('seen')) {
+    cardEl.classList.add('seen');
+    seenCount++;
+    document.getElementById('seen-badge').textContent = `${seenCount} seen`;
+  }
+}
+
+// ── Feed loading ───────────────────────────────────────────────────────────
+function loadMore() {
+  if (isLoading) return;
+  if (queueIndex >= queue.length) {
+    // restart with a fresh shuffle
+    queue = shuffle([...allItems]);
+    queueIndex = 0;
+    strategyOffset++;            // rotate strategies so hooks feel fresh
+  }
+  isLoading = true;
+
+  const feed = document.getElementById('feed');
+  const sentinel = document.getElementById('sentinel');
+  const batch = queue.slice(queueIndex, queueIndex + BATCH);
+  queueIndex += BATCH;
+
+  // Add skeleton placeholders
+  const skeletons = batch.map(() => {
+    const sk = makeSkeletonCard();
+    feed.insertBefore(sk, sentinel);
+    return sk;
+  });
+
+  // Generate cards
+  const cards = batch.map(d => makeCard(d));
+
+  // Replace skeletons with real cards
+  cards.forEach((card, i) => {
+    feed.replaceChild(card, skeletons[i]);
+  });
+
+  isLoading = false;
+}
+
+function setupIntersectionObserver() {
+  const sentinel = document.getElementById('sentinel');
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) loadMore();
+  }, { rootMargin: '300px' });
+  observer.observe(sentinel);
+}
+
+function showMsg(icon, title, body) {
+  const feed = document.getElementById('feed');
+  feed.innerHTML = `<div class="feed-msg"><div class="icon">${icon}</div><strong>${title}</strong><br/>${body}</div>`;
+}
+
+init();
+</script>
+</body>
+</html>

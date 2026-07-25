@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f4f6f8;
+  --color-background-tertiary: #e9edf2;
+  --color-border-primary: #6b7280;
+  --color-border-secondary: #c6cbd3;
+  --color-border-tertiary: #dde1e7;
+  --color-text-primary: #172033;
+  --color-text-secondary: #4b5565;
+  --color-text-tertiary: #7b8494;
+  --color-page-start: #ffffff;
+  --color-page-mid: #f7f8fb;
+  --color-page-end: #eef2f6;
+  --color-focus-ring: rgba(24, 95, 165, 0.22);
+  --color-shadow-soft: rgba(23, 32, 51, 0.08);
+  --theme-toggle-bg: #eef2f6;
+  --theme-toggle-thumb: #ffffff;
+  --theme-toggle-icon: #c27700;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 8px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background-primary: #1a1a1a;
+  --color-background-secondary: #222;
+  --color-background-tertiary: #2a2a2a;
+  --color-border-primary: #888;
+  --color-border-secondary: #444;
+  --color-border-tertiary: #333;
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: #bbb;
+  --color-text-tertiary: #888;
+  --color-page-start: #111;
+  --color-page-mid: #1a1a1a;
+  --color-page-end: #222;
+  --color-focus-ring: rgba(255, 255, 255, 0.15);
+  --color-shadow-soft: rgba(0, 0, 0, 0.4);
+  --theme-toggle-bg: #333;
+  --theme-toggle-thumb: #555;
+  --theme-toggle-icon: #ffd700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--color-page-mid);
+  transition: background-color 260ms ease, color 260ms ease;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-page-start) 0%,
+      var(--color-page-mid) 42%,
+      var(--color-page-end) 100%
+    );
+  transition: background 260ms ease, color 260ms ease;
+}
+
+button,
+input {
+  font: inherit;
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+#root {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+#root,
+#root * {
+  transition:
+    background-color 260ms ease,
+    border-color 260ms ease,
+    color 260ms ease,
+    box-shadow 260ms ease,
+    opacity 260ms ease;
+}
+
+.app-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 38px;
+  padding: 4px 10px 4px 5px;
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: 999px;
+  color: var(--color-text-secondary);
+  background: color-mix(in srgb, var(--color-background-primary) 88%, transparent);
+  box-shadow: 0 8px 24px var(--color-shadow-soft);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--color-text-primary);
+  border-color: var(--color-border-primary);
+  transform: translateY(-1px);
+}
+
+.theme-toggle__track {
+  position: relative;
+  width: 58px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--theme-toggle-bg);
+  box-shadow: inset 0 0 0 1px var(--color-border-tertiary);
+}
+
+.theme-toggle__thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--theme-toggle-icon);
+  background: var(--theme-toggle-thumb);
+  box-shadow: 0 4px 12px var(--color-shadow-soft);
+  transform: translateX(0) rotate(0deg);
+  transition:
+    transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 260ms ease,
+    color 260ms ease;
+}
+
+[data-theme="dark"] .theme-toggle__thumb {
+  transform: translateX(30px) rotate(180deg);
+}
+
+.theme-toggle__icon {
+  grid-area: 1 / 1;
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition:
+    opacity 180ms ease,
+    transform 260ms ease;
+}
+
+.theme-toggle__icon--sun {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.theme-toggle__icon--moon {
+  opacity: 0;
+  transform: scale(0.5) rotate(-90deg);
+}
+
+[data-theme="dark"] .theme-toggle__icon--sun {
+  opacity: 0;
+  transform: scale(0.5) rotate(90deg);
+}
+
+[data-theme="dark"] .theme-toggle__icon--moon {
+  opacity: 1;
+  transform: scale(1) rotate(-180deg);
+}
+
+.theme-toggle__label {
+  min-width: 32px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  #root {
+    width: min(100% - 20px, 1120px);
+    padding: 20px 0;
+  }
+
+  .app-toolbar {
+    margin-bottom: 10px;
+  }
+
+  .theme-toggle__label {
+    display: none;
+  }
+
+  .theme-toggle {
+    padding-right: 5px;
+  }
+}

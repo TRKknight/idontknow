@@ -1,0 +1,4167 @@
+[
+  {
+    "id": 1,
+    "name": "Glycolysis",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Breakdown of glucose → 2 pyruvate. Net yield: 2 ATP (anaerobic) or 7 ATP (aerobic). Occurs in cytoplasm of all cells.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glucose",
+        "enzyme": "Hexokinase / Glucokinase",
+        "cofactors": "ATP → ADP + Pᵢ; Mg²⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Hexokinase Deficiency",
+          "disorderId": null,
+          "branch": [
+            "↓ ATP in RBCs → membrane failure",
+            "Haemolytic anaemia",
+            "↓ 2,3-BPG → high O₂ affinity of Hb"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Glucose-6-Phosphate",
+        "enzyme": "Phosphoglucose Isomerase",
+        "cofactors": null,
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Fructose-6-Phosphate",
+        "enzyme": "Phosphofructokinase-1 (PFK-1) — Rate-Limiting Step",
+        "cofactors": "ATP → ADP; Mg²⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Tarui Disease (GSD VII)",
+          "disorderId": 17,
+          "branch": [
+            "↑ Fructose-6-P in muscle and RBCs",
+            "Cannot use glucose for ATP during exercise",
+            "Exercise intolerance, cramps, myoglobinuria",
+            "Haemolytic anaemia (RBCs also lack PFK-1)"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Fructose-1,6-Bisphosphate",
+        "enzyme": "Aldolase A (muscle) / Aldolase B (liver)",
+        "cofactors": null,
+        "reversible": true,
+        "disorder": {
+          "name": "Hereditary Fructose Intolerance",
+          "disorderId": 6,
+          "branch": [
+            "Aldolase B deficiency (liver-specific)",
+            "↑ Fructose-1-P accumulates — highly toxic",
+            "Inhibits glycogen phosphorylase → hypoglycaemia",
+            "Inhibits aldolase → glycolysis blocked",
+            "Jaundice, vomiting, hepatomegaly after fruit intake"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "DHAP + Glyceraldehyde-3-P",
+        "enzyme": "Triose Phosphate Isomerase",
+        "cofactors": "DHAP ⇌ G3P (only G3P continues)",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Glyceraldehyde-3-Phosphate (×2)",
+        "enzyme": "G3P Dehydrogenase",
+        "cofactors": "NAD⁺ → NADH + H⁺; Pᵢ added",
+        "reversible": true,
+        "disorder": {
+          "name": "Inhibited by Iodoacetate / Arsenite",
+          "disorderId": null,
+          "branch": [
+            "Iodoacetate blocks this enzyme",
+            "Arsenite also inhibits at this step",
+            "Fluoride inhibits Enolase (step 9) — used in blood tubes to preserve glucose"
+          ]
+        }
+      },
+      {
+        "stepNum": 7,
+        "molecule": "1,3-Bisphosphoglycerate (×2)",
+        "enzyme": "Bisphosphoglycerate Kinase (Phosphoglycerate Kinase)",
+        "cofactors": "ADP → ATP (×2) — 1st substrate-level phosphorylation",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 8,
+        "molecule": "3-Phosphoglycerate (×2)",
+        "enzyme": "Phosphoglycerate Mutase",
+        "cofactors": null,
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 9,
+        "molecule": "2-Phosphoglycerate (×2)",
+        "enzyme": "Enolase",
+        "cofactors": "H₂O removed; Mg²⁺ or Mn²⁺ required",
+        "reversible": true,
+        "disorder": {
+          "name": "Fluoride inhibits Enolase",
+          "disorderId": null,
+          "branch": [
+            "Fluoride (NaF) removes Mg²⁺ from Enolase",
+            "Stops glycolysis in RBCs in blood collection tubes",
+            "Used clinically to prevent ex-vivo glucose consumption"
+          ]
+        }
+      },
+      {
+        "stepNum": 10,
+        "molecule": "Phosphoenolpyruvate — PEP (×2)",
+        "enzyme": "Pyruvate Kinase",
+        "cofactors": "ADP → ATP (×2) — 2nd substrate-level phosphorylation",
+        "reversible": false,
+        "disorder": {
+          "name": "Pyruvate Kinase Deficiency",
+          "disorderId": 66,
+          "branch": [
+            "↑ PEP and 2,3-BPG accumulate in RBCs",
+            "↑ 2,3-BPG → right shift of Hb-O₂ curve",
+            "↓ ATP → RBC membrane failure and haemolysis",
+            "Chronic non-spherocytic haemolytic anaemia"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Pyruvate (×2)",
+    "nextPathways": [
+      5,
+      2,
+      {
+        "id": 12,
+        "entryStep": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Gluconeogenesis",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Synthesis of glucose from non-carbohydrate precursors (lactate, amino acids, glycerol, propionyl CoA). Occurs in liver and kidney cortex. Requires 6 high-energy phosphate bonds per glucose.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Pyruvate (in mitochondria)",
+        "enzyme": "Pyruvate Carboxylase",
+        "cofactors": "ATP + CO₂ + Biotin; activated by Acetyl-CoA",
+        "reversible": false,
+        "disorder": {
+          "name": "Pyruvate Carboxylase Deficiency",
+          "disorderId": null,
+          "branch": [
+            "Cannot replenish oxaloacetate for TCA or gluconeogenesis",
+            "↑ Pyruvate → ↑ Lactate (lactic acidosis)",
+            "Progressive neurological deterioration",
+            "Mental retardation"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Oxaloacetate (mitochondrial)",
+        "enzyme": "Malate-Aspartate Shuttle (export mechanism)",
+        "cofactors": "OAA → Malate (cannot cross membrane as OAA)",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Oxaloacetate (cytosolic)",
+        "enzyme": "PEPCK (Phosphoenolpyruvate Carboxykinase)",
+        "cofactors": "GTP → GDP + CO₂",
+        "reversible": false,
+        "disorder": {
+          "name": "PEPCK Deficiency",
+          "disorderId": null,
+          "branch": [
+            "Rare inherited disorder",
+            "Severe fasting hypoglycaemia",
+            "Lactic acidosis and hyperammonaemia"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Phosphoenolpyruvate (PEP)",
+        "enzyme": "Reversible Glycolytic Enzymes (Enolase, Mutase, PGK, GAPDH)",
+        "cofactors": "Reverse glycolytic steps 9→6",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Fructose-1,6-Bisphosphate",
+        "enzyme": "Fructose-1,6-Bisphosphatase",
+        "cofactors": "H₂O; inhibited by AMP and Fructose-2,6-BP",
+        "reversible": false,
+        "disorder": {
+          "name": "Fructose-1,6-Bisphosphatase Deficiency",
+          "disorderId": 9,
+          "branch": [
+            "Cannot bypass PFK-1 step in reverse",
+            "Fasting hypoglycaemia and lactic acidosis",
+            "Ketosis during fasting",
+            "Presents in neonatal period"
+          ]
+        }
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Fructose-6-Phosphate",
+        "enzyme": "Phosphoglucose Isomerase",
+        "cofactors": null,
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 7,
+        "molecule": "Glucose-6-Phosphate",
+        "enzyme": "Glucose-6-Phosphatase (liver and kidney only)",
+        "cofactors": "H₂O; absent in muscle",
+        "reversible": false,
+        "disorder": {
+          "name": "Von Gierke Disease (GSD I)",
+          "disorderId": 11,
+          "branch": [
+            "G6Pase absent → cannot release free glucose",
+            "Severe fasting hypoglycaemia",
+            "G6P shunted → ↑ Lactate, ↑ Uric acid, ↑ Triglycerides",
+            "Hepatomegaly, doll-like face, massive liver"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Free Glucose → bloodstream",
+    "nextPathways": [
+      3
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Glycogenesis",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Synthesis of glycogen from glucose. Occurs in cytosol of liver (blood glucose maintenance) and skeletal muscle (local fuel reserve). Insulin promotes glycogenesis.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glucose",
+        "enzyme": "Hexokinase / Glucokinase",
+        "cofactors": "ATP → ADP + Pᵢ",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Glucose-6-Phosphate",
+        "enzyme": "Phosphoglucomutase",
+        "cofactors": null,
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Glucose-1-Phosphate",
+        "enzyme": "UDP-Glucose Pyrophosphorylase (UDPG-PPase)",
+        "cofactors": "UTP → PPᵢ",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "UDP-Glucose",
+        "enzyme": "Glycogenin (self-glucosylating primer protein)",
+        "cofactors": "Initiates glycogen chain on Tyr residue",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Glycogen Primer (initiated chain)",
+        "enzyme": "Glycogen Synthase — Key Regulatory Enzyme",
+        "cofactors": "Active when dephosphorylated (insulin activates); forms α₁→4 linkages",
+        "reversible": false,
+        "disorder": {
+          "name": "GSD 0 (Glycogen Synthase Deficiency)",
+          "disorderId": null,
+          "branch": [
+            "Cannot elongate glycogen chain",
+            "Fasting hypoglycaemia (no glycogen reserve)",
+            "Postprandial hyperglycaemia"
+          ]
+        }
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Linear Glycogen Chain (11–12 residues)",
+        "enzyme": "Branching Enzyme (Amylo-1,4→1,6-transglucosidase)",
+        "cofactors": "Transfers 6–8 residues to form α₁→6 branch point",
+        "reversible": false,
+        "disorder": {
+          "name": "Andersen Disease (GSD IV)",
+          "disorderId": 14,
+          "branch": [
+            "Branching enzyme absent → very few branches",
+            "Insoluble amylopectin-like glycogen accumulates",
+            "Triggers fibrotic reaction in liver",
+            "Hepatosplenomegaly → cirrhosis → early death"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Branched Glycogen",
+    "nextPathways": [
+      4
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Glycogenolysis",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Degradation of glycogen to release glucose. Occurs in cytosol of liver (releases glucose to blood) and muscle (fuel for contraction). Activated by glucagon and epinephrine.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glycogen (branched)",
+        "enzyme": "Glycogen Phosphorylase — Key Regulatory Enzyme",
+        "cofactors": "Pᵢ + PLP (Vit B6 prosthetic group); active when phosphorylated",
+        "reversible": false,
+        "disorder": {
+          "name": "McArdle Disease (GSD V) / Hers Disease (GSD VI)",
+          "disorderId": 15,
+          "branch": [
+            "Muscle phosphorylase absent (McArdle) → no muscle glycogenolysis",
+            "Exercise intolerance, cramps, myoglobinuria",
+            "'Second wind' phenomenon",
+            "Liver phosphorylase absent (Hers) → hepatomegaly, mild hypoglycaemia"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Limit Dextrin (4 residues from branch point)",
+        "enzyme": "Debranching Enzyme (bifunctional: Transferase + α₁→6 Glucosidase)",
+        "cofactors": "Transfers trisaccharide + hydrolyses branch → free glucose",
+        "reversible": false,
+        "disorder": {
+          "name": "Cori Disease (GSD III)",
+          "disorderId": 13,
+          "branch": [
+            "Debranching enzyme absent",
+            "Glycogen broken down only to 'limit dextrin'",
+            "Hepatomegaly, fasting hypoglycaemia",
+            "Muscle weakness (myopathy)"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Glucose-1-Phosphate + Free Glucose",
+        "enzyme": "Phosphoglucomutase",
+        "cofactors": "G1P → G6P",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Glucose-6-Phosphate",
+        "enzyme": "Glucose-6-Phosphatase (liver and kidney ONLY)",
+        "cofactors": "H₂O; absent in muscle",
+        "reversible": false,
+        "disorder": {
+          "name": "Von Gierke Disease (GSD I)",
+          "disorderId": 11,
+          "branch": [
+            "G6Pase absent → G6P cannot be released as free glucose",
+            "Severe fasting hypoglycaemia",
+            "Massive hepatomegaly",
+            "↑ Lactate, uric acid, triglycerides"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Free Glucose (liver) → bloodstream / G6P → Glycolysis (muscle)",
+    "nextPathways": [
+      1
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pyruvate Dehydrogenase (PDH) Complex",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Irreversible oxidative decarboxylation of pyruvate → Acetyl-CoA. Located in mitochondrial matrix. The essential link between glycolysis and the TCA cycle. Requires 5 coenzymes: TPP, NAD⁺, FAD, CoA, Lipoic acid.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Pyruvate",
+        "enzyme": "E1: Pyruvate Decarboxylase",
+        "cofactors": "TPP (Thiamine Pyrophosphate) + Mg²⁺; CO₂ released",
+        "reversible": false,
+        "disorder": {
+          "name": "Wernicke-Korsakoff Syndrome (Thiamine Deficiency)",
+          "disorderId": null,
+          "branch": [
+            "Thiamine (B1) deficiency (chronic alcoholism)",
+            "TPP unavailable → E1 fails",
+            "↑ Pyruvate → ↑ Lactate (lactic acidosis)",
+            "Wernicke: confusion, ataxia, ophthalmoplegia",
+            "Korsakoff: memory loss, confabulation"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Hydroxyethyl-TPP intermediate",
+        "enzyme": "E2: Dihydrolipoyl Transacetylase",
+        "cofactors": "Lipoic Acid + CoA-SH → Acetyl-CoA formed",
+        "reversible": false,
+        "disorder": {
+          "name": "Arsenite Poisoning",
+          "disorderId": null,
+          "branch": [
+            "Arsenite binds lipoic acid → blocks E2",
+            "PDH complex inhibited",
+            "↑ Pyruvate accumulates → lactic acidosis",
+            "Also inhibits α-KG dehydrogenase (TCA)"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Dihydrolipoamide (reduced E2)",
+        "enzyme": "E3: Dihydrolipoyl Dehydrogenase",
+        "cofactors": "FAD → FADH₂ → then NAD⁺ → NADH + H⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Inherited PDH Deficiency",
+          "disorderId": null,
+          "branch": [
+            "X-linked (E1α subunit most common)",
+            "Lactic acidosis from birth",
+            "Progressive neurological loss",
+            "Leigh syndrome (subacute necrotising encephalopathy)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Acetyl-CoA → TCA Cycle",
+    "nextPathways": [
+      6,
+      16
+    ]
+  },
+  {
+    "id": 6,
+    "name": "TCA / Krebs / Citric Acid Cycle",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Amphibolic cycle in mitochondrial matrix. Generates 10 ATP per turn: 3 NADH (7.5 ATP) + 1 FADH₂ (1.5 ATP) + 1 GTP (1 ATP). Provides precursors for heme, amino acids, and glucose.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Acetyl-CoA + Oxaloacetate",
+        "enzyme": "Citrate Synthase",
+        "cofactors": "H₂O; inhibited by ATP, NADH, Citrate",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Citrate",
+        "enzyme": "Aconitase",
+        "cofactors": "Fe-S cluster; inhibited by Fluoroacetate",
+        "reversible": true,
+        "disorder": {
+          "name": "Fluoroacetate (Rat Poison) Poisoning",
+          "disorderId": null,
+          "branch": [
+            "Fluoroacetate → Fluorocitrate in cell",
+            "Fluorocitrate inhibits Aconitase",
+            "TCA cycle blocked at citrate",
+            "Citrate accumulates → cell death"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Isocitrate",
+        "enzyme": "Isocitrate Dehydrogenase — Rate-Limiting Step",
+        "cofactors": "NAD⁺ → NADH + H⁺; CO₂ released; Mg²⁺; activated by ADP",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "α-Ketoglutarate (α-KG)",
+        "enzyme": "α-Ketoglutarate Dehydrogenase Complex",
+        "cofactors": "NAD⁺+CoA+TPP+Lipoate+FAD → NADH; CO₂ released; inhibited by Arsenite",
+        "reversible": false,
+        "disorder": {
+          "name": "Arsenite / Arsenic Poisoning",
+          "disorderId": null,
+          "branch": [
+            "Arsenite binds lipoic acid on α-KG DH",
+            "TCA cycle blocked at α-ketoglutarate",
+            "Also blocks PDH complex",
+            "Succinyl-CoA (heme precursor) depleted"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Succinyl-CoA",
+        "enzyme": "Succinate Thiokinase (Succinyl-CoA Synthetase)",
+        "cofactors": "GDP + Pᵢ → GTP (substrate-level phosphorylation)",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Succinate",
+        "enzyme": "Succinate Dehydrogenase (Complex II of ETC)",
+        "cofactors": "FAD → FADH₂; inhibited by Malonate (competitive)",
+        "reversible": false,
+        "disorder": {
+          "name": "Malonate — Competitive Inhibitor",
+          "disorderId": null,
+          "branch": [
+            "Malonate structurally resembles succinate",
+            "Competitively inhibits succinate dehydrogenase",
+            "FADH₂ not generated → less ATP",
+            "Classic example of competitive inhibition"
+          ]
+        }
+      },
+      {
+        "stepNum": 7,
+        "molecule": "Fumarate",
+        "enzyme": "Fumarase (Fumarate Hydratase)",
+        "cofactors": "H₂O added",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 8,
+        "molecule": "Malate",
+        "enzyme": "Malate Dehydrogenase",
+        "cofactors": "NAD⁺ → NADH + H⁺",
+        "reversible": true,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Oxaloacetate (regenerated → cycle repeats)",
+    "nextPathways": [
+      {
+        "id": 2,
+        "entryStep": 3
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "HMP Shunt (Pentose Phosphate Pathway)",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Also: Dickens-Horecker Pathway. No ATP produced or consumed. Generates NADPH (for reductive biosynthesis and glutathione) and Ribose-5-P (for nucleotides). Active in liver, RBCs, adrenal cortex, mammary glands.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glucose-6-Phosphate",
+        "enzyme": "G6PD (Glucose-6-Phosphate Dehydrogenase) — Rate-Limiting Step",
+        "cofactors": "NADP⁺ → NADPH; inhibited by NADPH (feedback)",
+        "reversible": false,
+        "disorder": {
+          "name": "G6PD Deficiency",
+          "disorderId": 64,
+          "branch": [
+            "↓ NADPH → cannot regenerate reduced glutathione",
+            "RBCs vulnerable to oxidative haemolysis",
+            "Triggered by primaquine, dapsone, fava beans",
+            "Heinz bodies (oxidised Hb) in RBCs",
+            "X-linked recessive; most common enzyme deficiency worldwide"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "6-Phosphogluconolactone",
+        "enzyme": "Gluconolactonase",
+        "cofactors": "H₂O",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "6-Phosphogluconate",
+        "enzyme": "6-Phosphogluconate Dehydrogenase (6-PGD)",
+        "cofactors": "NADP⁺ → NADPH + H⁺; CO₂ released",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Ribulose-5-Phosphate",
+        "enzyme": "Phosphopentose Isomerase / Phosphopentose Epimerase",
+        "cofactors": "→ Ribose-5-P (isomerase) or Xylulose-5-P (epimerase)",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Ribose-5-P + Xylulose-5-P",
+        "enzyme": "Transketolase (TPP-dependent) + Transaldolase",
+        "cofactors": "TPP (Thiamine); carbon rearrangement reactions",
+        "reversible": true,
+        "disorder": {
+          "name": "Wernicke-Korsakoff (Transketolase)",
+          "disorderId": null,
+          "branch": [
+            "Transketolase requires TPP (Thiamine/B1)",
+            "In thiamine deficiency, transketolase fails",
+            "Pentoses cannot re-enter glycolysis",
+            "NADPH production also impaired",
+            "Neurological symptoms: ataxia, confusion"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Fructose-6-P + G3P (→ Glycolysis) + Ribose-5-P (→ Nucleotide synthesis)",
+    "nextPathways": [
+      53,
+      {
+        "id": 56,
+        "entryStep": 5
+      },
+      {
+        "id": 1,
+        "entryStep": 3
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Glucuronic Acid Pathway",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Converts glucose → UDP-glucuronic acid (for bilirubin conjugation, detoxification, GAG synthesis). Also produces L-xylulose → HMP shunt. Humans cannot synthesise Vitamin C via this pathway (lack L-gulonolactone oxidase).",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glucose-1-Phosphate",
+        "enzyme": "UDP-Glucose Pyrophosphorylase",
+        "cofactors": "UTP → PPᵢ",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "UDP-Glucose",
+        "enzyme": "UDPG-Dehydrogenase",
+        "cofactors": "2 NAD⁺ → 2 NADH + H⁺",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "UDP-Glucuronic Acid",
+        "enzyme": "UDP-Glucuronosyltransferase (conjugation)",
+        "cofactors": "Conjugates bilirubin, steroids, drugs → water-soluble",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "D-Glucuronic Acid (free)",
+        "enzyme": "Glucuronate Reductase",
+        "cofactors": "NADPH → NADP⁺",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "L-Gulonic Acid",
+        "enzyme": "Lactonase → L-Gulonolactone oxidase (ABSENT in humans)",
+        "cofactors": "Required for Vitamin C synthesis; humans lack this enzyme",
+        "reversible": false,
+        "disorder": {
+          "name": "Scurvy (Vitamin C Deficiency)",
+          "disorderId": null,
+          "branch": [
+            "Humans lack L-gulonolactone oxidase",
+            "Cannot synthesise Vitamin C endogenously",
+            "Must obtain from diet (citrus, vegetables)",
+            "Deficiency → weak collagen → bleeding gums, loose teeth"
+          ]
+        }
+      },
+      {
+        "stepNum": 6,
+        "molecule": "L-Xylulose",
+        "enzyme": "Xylitol Dehydrogenase (NAD⁺) → Xylulose Reductase",
+        "cofactors": "NAD⁺ → NADH; L-xylulose → Xylitol → D-xylulose",
+        "reversible": false,
+        "disorder": {
+          "name": "Essential Pentosuria",
+          "disorderId": 10,
+          "branch": [
+            "Xylitol dehydrogenase deficient",
+            "L-xylulose accumulates and excreted in urine",
+            "Benign — no clinical symptoms",
+            "Gives false positive in old urine glucose tests (Benedict's)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "D-Xylulose-5-Phosphate → HMP Shunt",
+    "nextPathways": [
+      {
+        "id": 7,
+        "entryStep": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Polyol (Sorbitol) Pathway",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Active in lens, seminal vesicles, Schwann cells, and retina. Converts glucose → sorbitol → fructose. Clinically significant in diabetes mellitus where glucose excess drives sorbitol accumulation.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glucose (excess in diabetes)",
+        "enzyme": "Aldose Reductase",
+        "cofactors": "NADPH → NADP⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Diabetic Cataract / Complications",
+          "disorderId": 1,
+          "branch": [
+            "Excess glucose in lens → ↑ Sorbitol accumulation",
+            "Sorbitol is osmotically active and poorly diffusible",
+            "Osmotic swelling → lens opacification → Cataract",
+            "Also: Diabetic neuropathy (Schwann cells) and retinopathy",
+            "Aldose reductase inhibitors used to prevent this"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Sorbitol",
+        "enzyme": "Sorbitol Dehydrogenase",
+        "cofactors": "NAD⁺ → NADH + H⁺; absent in lens",
+        "reversible": false,
+        "disorder": {
+          "name": "Sorbitol Accumulation in Lens",
+          "disorderId": null,
+          "branch": [
+            "Lens lacks sorbitol dehydrogenase",
+            "Sorbitol cannot be converted to fructose",
+            "Accumulates irreversibly → osmotic cataract",
+            "Galactitol from galactose accumulates similarly (Galactosemia)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Fructose (→ Fructose metabolism or used by sperm)",
+    "nextPathways": [
+      {
+        "id": 10,
+        "entryStep": 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Fructose Metabolism",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Liver pathway for fructose utilisation. Fructose bypasses PFK-1 (the rate-limiting step of glycolysis), so it is metabolised faster than glucose and promotes lipogenesis. Not insulin-dependent.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Fructose",
+        "enzyme": "Fructokinase",
+        "cofactors": "ATP → ADP; Mg²⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Essential Fructosuria",
+          "disorderId": 7,
+          "branch": [
+            "Fructokinase absent",
+            "Fructose not phosphorylated in liver",
+            "Excreted freely in urine",
+            "Completely benign — no symptoms"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Fructose-1-Phosphate",
+        "enzyme": "Aldolase B (liver-specific)",
+        "cofactors": null,
+        "reversible": false,
+        "disorder": {
+          "name": "Hereditary Fructose Intolerance",
+          "disorderId": 6,
+          "branch": [
+            "Aldolase B absent → F1P accumulates (toxic)",
+            "F1P inhibits glycogen phosphorylase → hypoglycaemia",
+            "F1P sequesters Pᵢ → ↓ ATP synthesis",
+            "Liver damage, jaundice, vomiting after sucrose/fruit intake",
+            "Treatment: strict elimination of fructose and sucrose"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Glyceraldehyde + DHAP",
+        "enzyme": "Triose Kinase (for glyceraldehyde)",
+        "cofactors": "ATP → ADP; converts glyceraldehyde → G3P",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Glyceraldehyde-3-P + DHAP",
+        "enzyme": "Triose Phosphate Isomerase",
+        "cofactors": "DHAP ⇌ G3P",
+        "reversible": true,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "2× Glyceraldehyde-3-Phosphate → Glycolysis",
+    "nextPathways": [
+      {
+        "id": 1,
+        "entryStep": 6
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Galactose Metabolism",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Converts galactose (from lactose digestion) to glucose-1-phosphate for entry into glycolysis. Occurs almost exclusively in the liver. Galactose not essential — can be synthesised from glucose via epimerase.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Galactose",
+        "enzyme": "Galactokinase",
+        "cofactors": "ATP → ADP; Mg²⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Galactokinase Deficiency",
+          "disorderId": 5,
+          "branch": [
+            "Galactose not phosphorylated",
+            "Galactose reduced by aldose reductase to Galactitol",
+            "Galactitol accumulates in lens → osmotic cataract",
+            "Milder than classic galactosemia — no liver damage",
+            "Treatment: galactose-free diet"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Galactose-1-Phosphate",
+        "enzyme": "Galactose-1-P Uridyltransferase (GALT) — Rate-Limiting",
+        "cofactors": "UDP-Glucose → UDP-Galactose + Glucose-1-P",
+        "reversible": false,
+        "disorder": {
+          "name": "Classical Galactosemia (Type I)",
+          "disorderId": 4,
+          "branch": [
+            "GALT absent → Galactose-1-P accumulates (toxic)",
+            "G1P inhibits glycogen phosphorylase → hypoglycaemia",
+            "Galactitol in lens → oil-droplet cataract",
+            "Liver damage: jaundice, hepatomegaly, cirrhosis",
+            "E. coli sepsis risk in neonates",
+            "Treatment: strict lactose and galactose-free diet"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "UDP-Galactose",
+        "enzyme": "UDP-Galactose-4-Epimerase",
+        "cofactors": null,
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "UDP-Glucose",
+        "enzyme": "Releases Glucose-1-Phosphate (via further phosphorylysis)",
+        "cofactors": "UDP recycled → pathway continues",
+        "reversible": true,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Glucose-1-Phosphate → Glycogenesis or Glycolysis",
+    "nextPathways": [
+      {
+        "id": 3,
+        "entryStep": 3
+      },
+      {
+        "id": 1,
+        "entryStep": 2
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Cori Cycle (Lactic Acid Cycle)",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Inter-organ cycle between skeletal muscle and liver. Muscle produces lactate anaerobically (2 ATP); liver converts it back to glucose (costs 6 ATP). Net deficit of 4 ATP = 'oxygen debt'. Provides continuous glucose supply during exercise.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glucose (from liver via blood)",
+        "enzyme": "Glycolysis (anaerobic, in muscle)",
+        "cofactors": "Produces 2 ATP net under anaerobic conditions",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Pyruvate (in muscle)",
+        "enzyme": "Lactate Dehydrogenase (LDH)",
+        "cofactors": "NADH + H⁺ → NAD⁺ regenerated (essential for continued glycolysis)",
+        "reversible": true,
+        "disorder": {
+          "name": "Lactic Acidosis",
+          "disorderId": null,
+          "branch": [
+            "Excessive lactate production in hypoxia, shock",
+            "Alcohol inhibits gluconeogenesis from lactate",
+            "Lactate accumulation → metabolic acidosis",
+            "Muscle cramps from local lactate accumulation"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Lactate (transported to liver via blood)",
+        "enzyme": "Lactate Dehydrogenase (LDH) — liver",
+        "cofactors": "NAD⁺ → NADH + H⁺; reverse reaction in well-oxygenated liver",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Pyruvate (in liver)",
+        "enzyme": "Gluconeogenesis (Pyruvate Carboxylase → PEPCK → … → G6Pase)",
+        "cofactors": "Costs 6 ATP total",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Glucose → released back to muscle",
+    "nextPathways": [
+      1
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Glucose–Alanine (Cahill) Cycle",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Inter-organ cycle between muscle and liver. Transfers amino nitrogen safely from muscle to liver as alanine (non-toxic). Liver detoxifies nitrogen as urea and converts pyruvate back to glucose. Critical during starvation.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Amino Acids (muscle protein breakdown)",
+        "enzyme": "Aminotransferases (transfer NH₂ to pyruvate)",
+        "cofactors": "PLP (Pyridoxal Phosphate / Vit B6)",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Pyruvate + NH₂ group",
+        "enzyme": "Alanine Transaminase (ALT/GPT)",
+        "cofactors": "PLP; α-KG → Glutamate (amino group acceptor)",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Alanine (transported to liver via blood)",
+        "enzyme": "ALT (liver) — reverse transamination",
+        "cofactors": "PLP; releases NH₃ → Urea cycle",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Pyruvate (in liver)",
+        "enzyme": "Gluconeogenesis",
+        "cofactors": "Costs 6 ATP; regenerates glucose",
+        "reversible": false,
+        "disorder": {
+          "name": "Muscle Wasting in DM / Starvation",
+          "disorderId": null,
+          "branch": [
+            "Accelerated in uncontrolled diabetes and starvation",
+            "Muscle protein broken down for gluconeogenesis via this cycle",
+            "↑ ALT in blood = marker of liver damage (reverse reaction)",
+            "↑ Urea production during catabolism"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Glucose → returned to muscle; NH₃ → Urea (liver)",
+    "nextPathways": [
+      36
+    ]
+  },
+  {
+    "id": 14,
+    "name": "BPG Shunt (Rapaport–Leubering Cycle)",
+    "biomolecule": "Carbohydrates",
+    "color": "#e07b39",
+    "description": "Exclusive to erythrocytes. ~10% of glycolytic flux diverted here. Produces 2,3-BPG which decreases Hb-O₂ affinity (right-shifts ODC). No ATP generated — RBC sacrifices energy for O₂ delivery.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "1,3-Bisphosphoglycerate (1,3-BPG)",
+        "enzyme": "Bisphosphoglycerate Mutase (BPGM)",
+        "cofactors": "No energy input required; bypasses PGK step",
+        "reversible": false,
+        "disorder": {
+          "name": "PK Deficiency → ↑ 2,3-BPG",
+          "disorderId": 66,
+          "branch": [
+            "In PK deficiency, glycolysis blocked at PEP step",
+            "1,3-BPG accumulates → shunted to 2,3-BPG",
+            "↑ 2,3-BPG → right shift of ODC → O₂ delivered to tissues",
+            "Partially compensates for anaemia (adaptive)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "2,3-Bisphosphoglycerate (2,3-BPG)",
+        "enzyme": "BPG-Phosphatase",
+        "cofactors": "H₂O; releases Pᵢ; re-enters glycolysis as 3-PG",
+        "reversible": false,
+        "disorder": {
+          "name": "Hexokinase Deficiency → ↓ 2,3-BPG",
+          "disorderId": null,
+          "branch": [
+            "HK deficiency → less glucose phosphorylated",
+            "Less 1,3-BPG formed → less 2,3-BPG",
+            "↓ 2,3-BPG → left shift of ODC → Hb holds O₂ tightly",
+            "O₂ not released to tissues effectively"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "3-Phosphoglycerate → re-enters Glycolysis at Step 8",
+    "nextPathways": [
+      {
+        "id": 1,
+        "entryStep": 8
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "β-Oxidation of Fatty Acids",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Major energy-yielding pathway for fatty acids. Occurs in mitochondrial matrix. Sequentially removes 2-carbon units as Acetyl-CoA. Palmitate (16C): net 106 ATP. Requires carnitine shuttle for long-chain FA entry.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Fatty Acid (free, in cytoplasm)",
+        "enzyme": "Thiokinase (Acyl-CoA Synthetase)",
+        "cofactors": "ATP → AMP + PPᵢ (= 2 high-energy bonds consumed); CoA-SH",
+        "reversible": false,
+        "disorder": {
+          "name": "Activation Step — 2 ATP equivalents consumed",
+          "disorderId": null,
+          "branch": [
+            "ATP is split to AMP (not ADP) — consumes 2 phosphate bonds",
+            "PPᵢ hydrolysed by pyrophosphatase → drives reaction forward",
+            "Carnitine deficiency prevents downstream transport (see Carnitine Shuttle)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Acyl-CoA (cytoplasm)",
+        "enzyme": "CAT-I (Carnitine Acyl Transferase I) — Rate-Limiting",
+        "cofactors": "Carnitine required; inhibited by Malonyl-CoA (fatty acid synthesis prevents breakdown simultaneously)",
+        "reversible": false,
+        "disorder": {
+          "name": "Carnitine Deficiency",
+          "disorderId": 25,
+          "branch": [
+            "Cannot transport LCFA into mitochondria",
+            "Fatty acids accumulate → lipid myopathy",
+            "Non-ketotic hypoglycaemia during fasting",
+            "Exercise intolerance and muscle cramps",
+            "Seen in preterm infants (cannot synthesise carnitine)"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Acyl-CoA (mitochondrial matrix)",
+        "enzyme": "Acyl-CoA Dehydrogenase (SCAD/MCAD/LCAD based on chain length)",
+        "cofactors": "FAD → FADH₂",
+        "reversible": false,
+        "disorder": {
+          "name": "MCAD Deficiency",
+          "disorderId": 26,
+          "branch": [
+            "Medium-chain acyl-CoA dehydrogenase absent",
+            "Cannot β-oxidise C6–C12 fatty acids",
+            "SIDS (Sudden Infant Death Syndrome)",
+            "Hypoketotic hypoglycaemia during fasting",
+            "Suberylglycine in urine (pathognomonic)",
+            "Neonatal screening: ↑ C8 acylcarnitine"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "trans-Δ²-Enoyl-CoA",
+        "enzyme": "Enoyl-CoA Hydratase",
+        "cofactors": "H₂O added",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "L-β-Hydroxy Acyl-CoA",
+        "enzyme": "L-β-Hydroxy Acyl-CoA Dehydrogenase",
+        "cofactors": "NAD⁺ → NADH + H⁺",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 6,
+        "molecule": "β-Keto Acyl-CoA",
+        "enzyme": "Thiolase (β-Ketothiolase)",
+        "cofactors": "CoA-SH; releases Acetyl-CoA + shortened Acyl-CoA",
+        "reversible": true,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Acetyl-CoA (→ TCA Cycle) + FADH₂ + NADH (→ ETC) — cycle repeats with shortened chain",
+    "nextPathways": [
+      6,
+      20
+    ]
+  },
+  {
+    "id": 16,
+    "name": "De Novo Fatty Acid Synthesis (Lynen's Spiral)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Synthesis of palmitate (16C) from Acetyl-CoA in cytosol. Requires 8 Acetyl-CoA + 14 NADPH + 7 ATP. Occurs in liver, adipose tissue, mammary glands. Stimulated by insulin, inhibited by glucagon.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Acetyl-CoA (mitochondrial)",
+        "enzyme": "Citrate Synthase (for export via Citrate Shuttle)",
+        "cofactors": "Condenses with OAA → Citrate for transport to cytosol",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Citrate (cytosolic)",
+        "enzyme": "ATP-Citrate Lyase",
+        "cofactors": "ATP + CoA → Acetyl-CoA + OAA regenerated",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Acetyl-CoA (cytosolic)",
+        "enzyme": "Acetyl-CoA Carboxylase (ACC) — Committed Rate-Limiting Step",
+        "cofactors": "ATP + CO₂ + Biotin + Mn²⁺; inhibited by Palmitoyl-CoA; activated by Citrate",
+        "reversible": false,
+        "disorder": {
+          "name": "Regulation by Malonyl-CoA",
+          "disorderId": null,
+          "branch": [
+            "Malonyl-CoA product inhibits CAT-I → prevents β-oxidation",
+            "Ensures FA synthesis and breakdown do not occur simultaneously",
+            "Glucagon/epinephrine → phosphorylate and inactivate ACC",
+            "Statins → ↑ AMPK → inactivate ACC → ↓ FA synthesis"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Malonyl-CoA",
+        "enzyme": "Fatty Acid Synthase (FAS) Complex — Condensation",
+        "cofactors": "Ketoacyl synthase (CE); CO₂ released; chain attached to ACP",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Acetoacetyl-ACP (4C — first condensation)",
+        "enzyme": "Ketoacyl Reductase",
+        "cofactors": "NADPH → NADP⁺",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 6,
+        "molecule": "β-Hydroxybutyryl-ACP",
+        "enzyme": "Dehydratase",
+        "cofactors": "H₂O removed",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 7,
+        "molecule": "Crotonyl-ACP (Enoyl-ACP)",
+        "enzyme": "Enoyl Reductase",
+        "cofactors": "NADPH → NADP⁺; chain now 4C saturated",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 8,
+        "molecule": "Butyryl-ACP (4C) → cycle repeats 6 more times",
+        "enzyme": "Thioesterase (after 7 full cycles)",
+        "cofactors": "H₂O; releases Palmitate (16C) from ACP",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Palmitate (16:0) → further elongation, desaturation, or esterification",
+    "nextPathways": [
+      {
+        "id": 18,
+        "entryStep": 2
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Oxidation of Odd-Chain Fatty Acids",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Odd-chain FA undergo β-oxidation normally until a 3-carbon Propionyl-CoA remains. Propionyl-CoA is then converted to Succinyl-CoA (TCA intermediate) via Vitamin B12-dependent steps. Odd-chain FA are gluconeogenic.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Odd-Chain Fatty Acid",
+        "enzyme": "Successive β-Oxidation cycles (same as even-chain)",
+        "cofactors": "FAD, NAD⁺, CoA; produces Acetyl-CoA until 5C remains",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Propionyl-CoA (3C — final product)",
+        "enzyme": "Propionyl-CoA Carboxylase",
+        "cofactors": "ATP + CO₂ + Biotin",
+        "reversible": false,
+        "disorder": {
+          "name": "Propionic Acidemia",
+          "disorderId": 46,
+          "branch": [
+            "Propionyl-CoA carboxylase deficient",
+            "↑ Propionyl-CoA and propionic acid accumulate",
+            "Ketoacidosis, hyperammonaemia, hypoglycaemia",
+            "Vomiting, lethargy in neonatal period",
+            "Inhibits Urea cycle → secondary hyperammonaemia"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "D-Methylmalonyl-CoA",
+        "enzyme": "Racemase (Methylmalonyl-CoA Epimerase)",
+        "cofactors": "Converts D → L isomer",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "L-Methylmalonyl-CoA",
+        "enzyme": "Methylmalonyl-CoA Mutase",
+        "cofactors": "Adenosylcobalamin (Vitamin B12) — mandatory cofactor",
+        "reversible": false,
+        "disorder": {
+          "name": "Methylmalonic Acidemia",
+          "disorderId": 45,
+          "branch": [
+            "Mutase deficient OR Vitamin B12 deficiency",
+            "↑ Methylmalonyl-CoA → ↑ methylmalonic acid in blood/urine",
+            "Neurotoxic: progressive neurological loss",
+            "Interferes with myelin synthesis",
+            "Hypoglycaemia, ketoacidosis, hyperammonaemia",
+            "Treatment: Vit B12 supplementation if B12-responsive form"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Succinyl-CoA → TCA Cycle (gluconeogenic — can form oxaloacetate → glucose)",
+    "nextPathways": [
+      {
+        "id": 6,
+        "entryStep": 5
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Triacylglycerol Synthesis (Lipogenesis)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Synthesis of TAG from glycerol-3-phosphate and fatty acyl-CoA. Occurs in cytosol of liver and adipose tissue. Promoted by insulin (post-meal). Adipose tissue lacks glycerol kinase — must use DHAP from glycolysis.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glycerol-3-Phosphate (from DHAP in adipose; from glycerol in liver)",
+        "enzyme": "Glycerol Kinase (liver only) / Glycerol-3-P Dehydrogenase (adipose)",
+        "cofactors": "ATP (liver); NADH (adipose)",
+        "reversible": false,
+        "disorder": {
+          "name": "Adipose Tissue: No Glycerol Kinase",
+          "disorderId": null,
+          "branch": [
+            "Adipose tissue cannot phosphorylate free glycerol",
+            "Glycerol from lipolysis sent to liver for gluconeogenesis",
+            "Glycerol-3-P must be derived from DHAP (glycolysis)",
+            "Hence FA re-esterification in adipose requires active glycolysis (glucose)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Lysophosphatidic Acid (LPA)",
+        "enzyme": "Glycerol-3-P Acyltransferase",
+        "cofactors": "Fatty Acyl-CoA (C1 position)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Phosphatidic Acid (PA)",
+        "enzyme": "1-Acyl Glycerol-3-P Acyltransferase",
+        "cofactors": "2nd Fatty Acyl-CoA (C2 position)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "1,2-Diacylglycerol (DAG)",
+        "enzyme": "Phosphatidate Phosphatase (Lipin)",
+        "cofactors": "H₂O; releases Pᵢ",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "1,2-Diacylglycerol (DAG)",
+        "enzyme": "Diacylglycerol Acyltransferase (DGAT)",
+        "cofactors": "3rd Fatty Acyl-CoA (C3 position)",
+        "reversible": false,
+        "disorder": {
+          "name": "Hypertriglyceridaemia / Fatty Liver",
+          "disorderId": 20,
+          "branch": [
+            "Excess insulin → excess TAG synthesis in liver",
+            "Alcohol → excess NADH → excess FA esterification → fatty liver",
+            "LPL or Apo C-II deficiency → TAG not cleared → lipaemia",
+            "Eruptive xanthomas and pancreatitis risk at very high TAG levels"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Triacylglycerol (TAG) → stored in adipose or packaged into VLDL (liver)",
+    "nextPathways": [
+      19,
+      {
+        "id": 24,
+        "entryStep": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Lipolysis (Fat Mobilisation)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Hydrolysis of stored TAG in adipose tissue to release Free Fatty Acids (FFA) and glycerol. Activated by glucagon, epinephrine, cortisol (via cAMP cascade). Inhibited by insulin. FFA → β-oxidation; glycerol → liver gluconeogenesis.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Triacylglycerol (stored in adipocyte)",
+        "enzyme": "Hormone-Sensitive Lipase (HSL) — activated by phosphorylation via PKA",
+        "cofactors": "cAMP → PKA → phosphorylates HSL (active form); activated by glucagon/epinephrine",
+        "reversible": false,
+        "disorder": {
+          "name": "DKA — Uncontrolled Lipolysis",
+          "disorderId": 2,
+          "branch": [
+            "In T1DM: no insulin → no HSL inhibition → uncontrolled lipolysis",
+            "FFA flood liver → converted to ketone bodies → DKA",
+            "Glucagon:Insulin ratio markedly increased",
+            "FFA also → VLDL synthesis → hypertriglyceridaemia"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Diacylglycerol (DAG)",
+        "enzyme": "Hormone-Sensitive Lipase (HSL) continues",
+        "cofactors": null,
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Monoacylglycerol (MAG)",
+        "enzyme": "MAG Lipase (monoglyceride lipase)",
+        "cofactors": null,
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Glycerol (→ liver gluconeogenesis) + 3 Free Fatty Acids (→ β-oxidation)",
+    "nextPathways": [
+      15,
+      {
+        "id": 2,
+        "entryStep": 4
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Ketogenesis",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Formation of ketone bodies (acetoacetate, β-hydroxybutyrate, acetone) exclusively in hepatic mitochondria. Occurs during starvation and in T1DM. Provides fuel for brain (up to 75% of energy) and other tissues when glucose is scarce.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Acetyl-CoA (×2)",
+        "enzyme": "Thiolase",
+        "cofactors": "Condensation reaction",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Acetoacetyl-CoA",
+        "enzyme": "HMG-CoA Synthase — Rate-Limiting Step",
+        "cofactors": "+ 1 more Acetyl-CoA; inhibited by Malonyl-CoA (level 2 regulation)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "HMG-CoA (β-Hydroxy-β-Methylglutaryl-CoA)",
+        "enzyme": "HMG-CoA Lyase",
+        "cofactors": "Releases Acetyl-CoA; mitochondrial isoform",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Acetoacetate (primary ketone body)",
+        "enzyme": "β-Hydroxybutyrate Dehydrogenase",
+        "cofactors": "NADH → NAD⁺; reduction to β-OHB",
+        "reversible": true,
+        "disorder": {
+          "name": "Diabetic Ketoacidosis (DKA)",
+          "disorderId": 2,
+          "branch": [
+            "Uncontrolled ketogenesis in T1DM",
+            "↑ Acetoacetate + β-hydroxybutyrate → metabolic acidosis",
+            "Acetone: fruity/sweet breath",
+            "↑ Anion gap metabolic acidosis",
+            "Kussmaul breathing (hyperventilation to blow off CO₂)",
+            "Ketonuria positive; Rothera's test positive"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Acetone (spontaneous)",
+        "enzyme": "Non-enzymatic decarboxylation of Acetoacetate",
+        "cofactors": "Spontaneous; produces characteristic breath odour",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Acetoacetate + β-Hydroxybutyrate (exported to tissues) + Acetone (exhaled)",
+    "nextPathways": [
+      21
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Ketolysis (Ketone Body Utilisation)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Utilisation of ketone bodies in extrahepatic tissues (heart, renal cortex, skeletal muscle, brain). Liver cannot use ketones (lacks thiophorase). RBCs cannot (no mitochondria). Acetoacetate → 19 ATP; β-OHB → 21.5 ATP.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "β-Hydroxybutyrate (from blood)",
+        "enzyme": "β-Hydroxybutyrate Dehydrogenase",
+        "cofactors": "NAD⁺ → NADH + H⁺; regenerates Acetoacetate",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Acetoacetate",
+        "enzyme": "Thiophorase (Acetoacetate-Succinyl-CoA Transferase)",
+        "cofactors": "Succinyl-CoA → Succinate (donated); enzyme ABSENT in liver",
+        "reversible": false,
+        "disorder": {
+          "name": "Liver Cannot Utilise Ketones",
+          "disorderId": null,
+          "branch": [
+            "Liver lacks thiophorase — cannot activate acetoacetate",
+            "This ensures ketones flow out to peripheral tissues",
+            "If liver used its own ketones, the brain would be deprived",
+            "RBCs also cannot use ketones (no mitochondria)"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Acetoacetyl-CoA",
+        "enzyme": "Thiolase",
+        "cofactors": "+ CoA-SH → 2 Acetyl-CoA",
+        "reversible": true,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "2 Acetyl-CoA → TCA Cycle for complete oxidation",
+    "nextPathways": [
+      6
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Cholesterol Biosynthesis (Mevalonate Pathway)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Synthesis of cholesterol from Acetyl-CoA. Occurs in cytosol and ER, primarily in liver. Requires 18 ATP + 14 NADPH per molecule. Rate-limiting enzyme: HMG-CoA reductase (statin target). Regulated by cellular cholesterol via SREBP.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Acetyl-CoA (×2)",
+        "enzyme": "Acetoacetyl-CoA Thiolase",
+        "cofactors": "Condensation",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Acetoacetyl-CoA",
+        "enzyme": "HMG-CoA Synthase (cytosolic isoform)",
+        "cofactors": "+ 1 Acetyl-CoA",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "HMG-CoA",
+        "enzyme": "HMG-CoA Reductase — Rate-Limiting Committed Step",
+        "cofactors": "2 NADPH → 2 NADP⁺; inhibited by Statins, Glucagon, Cortisol; activated by Insulin, T4",
+        "reversible": false,
+        "disorder": {
+          "name": "Familial Hypercholesterolaemia",
+          "disorderId": 19,
+          "branch": [
+            "LDL receptor defect (or Apo B-100 mutation)",
+            "Cannot clear LDL → ↑ plasma LDL → ↑ HMG-CoA reductase activity",
+            "Tendon xanthomas, corneal arcus, premature CAD",
+            "Statins competitively inhibit HMG-CoA reductase → ↓ endogenous cholesterol → ↑ LDL receptor expression"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Mevalonate (6C)",
+        "enzyme": "Mevalonate Kinase, Phosphomevalonate Kinase, Decarboxylase",
+        "cofactors": "3 ATP total; → Isopentenyl pyrophosphate (IPP, 5C)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Isopentenyl Pyrophosphate (IPP, 5C)",
+        "enzyme": "Prenyltransferases (sequential condensations)",
+        "cofactors": "6 × IPP → Squalene (30C) via Farnesyl-PP",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Squalene (30C)",
+        "enzyme": "Squalene Epoxidase + Cyclase (Oxidosqualene cyclase)",
+        "cofactors": "NADPH + O₂; forms steroid ring system",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 7,
+        "molecule": "Lanosterol (first steroid, 30C)",
+        "enzyme": "Multiple ER enzymes (demethylation, double-bond migrations)",
+        "cofactors": "Several NADPH-dependent steps",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Cholesterol (27C) → bile acids, steroid hormones, vitamin D, cell membranes",
+    "nextPathways": [
+      23,
+      24
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Bile Acid Synthesis",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Conversion of cholesterol → primary bile acids (cholic acid, chenodeoxycholic acid) in liver ER. Only route for cholesterol excretion. Secondary bile acids formed by gut bacteria. Enterohepatic circulation recycles 95% of bile acids.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Cholesterol",
+        "enzyme": "7-α-Hydroxylase (CYP7A1) — Rate-Limiting Step",
+        "cofactors": "NADPH + Cytochrome P450 + Vit C; inhibited by bile acids (feedback)",
+        "reversible": false,
+        "disorder": {
+          "name": "Gallstone Disease (Cholelithiasis)",
+          "disorderId": 134,
+          "branch": [
+            "Lithogenic bile: ↑ cholesterol relative to bile salts + lecithin",
+            "Bile salts keep cholesterol in solution (as micelles)",
+            "If bile salts ↓ → cholesterol precipitates → gallstones",
+            "Cholestyramine (bile acid resin) forces liver to convert more cholesterol → bile acids"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "7-Hydroxycholesterol",
+        "enzyme": "Multiple hydroxylation and side-chain cleavage enzymes",
+        "cofactors": "Remove 3C as propionate; add hydroxyl groups",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Primary Bile Acids (Cholic acid + Chenodeoxycholic acid)",
+        "enzyme": "Bile Acid-CoA Synthetase + Conjugating Enzyme",
+        "cofactors": "Conjugated with Glycine (glycocholate) or Taurine (taurocholate)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Conjugated Bile Salts (in bile)",
+        "enzyme": "Gut bacteria (7-α-dehydroxylase) in colon",
+        "cofactors": "Forms secondary bile acids: Deoxycholic acid + Lithocholic acid",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Secondary Bile Acids → partially reabsorbed (enterohepatic circulation) → excreted in faeces",
+    "nextPathways": []
+  },
+  {
+    "id": 24,
+    "name": "Lipoprotein Cascade (VLDL → IDL → LDL)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Endogenous lipid transport pathway. Liver secretes VLDL (TAG-rich). Lipoprotein lipase progressively strips TAG → IDL → LDL (cholesterol-rich). LDL ('bad cholesterol') taken up by LDL receptors or deposited in arterial walls.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Acetyl-CoA + Cholesterol (in liver)",
+        "enzyme": "VLDL Assembly (MTP + Apo B-100)",
+        "cofactors": "Microsomal Triglyceride Transfer Protein (MTP) essential",
+        "reversible": false,
+        "disorder": {
+          "name": "Abetalipoproteinemia",
+          "disorderId": 22,
+          "branch": [
+            "MTP gene mutation → cannot assemble VLDL/chylomicrons",
+            "↓↓ Plasma TAG and cholesterol",
+            "Malabsorption of fat-soluble vitamins (A,D,E,K)",
+            "Acanthocytosis (spiny RBCs)",
+            "Retinitis pigmentosa, ataxia"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "VLDL (in circulation)",
+        "enzyme": "Lipoprotein Lipase (LPL) — at capillary endothelium",
+        "cofactors": "Apo C-II activates LPL; Apo C-III inhibits; insulin induces LPL",
+        "reversible": false,
+        "disorder": {
+          "name": "Lipoprotein Lipase Deficiency",
+          "disorderId": 24,
+          "branch": [
+            "LPL or Apo C-II absent",
+            "Cannot hydrolyse TAG in VLDL/chylomicrons",
+            "Milky plasma (lipaemia), eruptive xanthomas",
+            "Hepatomegaly, acute pancreatitis",
+            "Type I hyperlipoproteinaemia"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "IDL (Intermediate Density Lipoprotein)",
+        "enzyme": "Hepatic Lipase (HL)",
+        "cofactors": "Further TAG hydrolysis; cholesterol esters acquired from HDL via CETP",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "LDL (Low Density Lipoprotein, cholesterol-rich)",
+        "enzyme": "LDL Receptor (Apo B-100 receptor) — receptor-mediated endocytosis",
+        "cofactors": "Downregulated by high intracellular cholesterol (SREBP system)",
+        "reversible": false,
+        "disorder": {
+          "name": "Familial Hypercholesterolaemia",
+          "disorderId": 19,
+          "branch": [
+            "LDL receptor deficient or absent",
+            "LDL not cleared → ↑↑ plasma LDL (cholesterol)",
+            "Tuberous and tendon xanthomas, corneal arcus",
+            "Premature atherosclerosis and MI",
+            "Treatment: statins, bile acid resins, PCSK9 inhibitors"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Cholesterol delivered to peripheral tissues and liver",
+    "nextPathways": []
+  },
+  {
+    "id": 25,
+    "name": "Reverse Cholesterol Transport",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "The ONLY pathway for cholesterol excretion from the body. HDL ('good cholesterol') collects excess cholesterol from peripheral tissues → delivers to liver → excreted as bile acids. PUFA required for LCAT activity.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Cholesterol (in peripheral cells)",
+        "enzyme": "ABC-A1 and ABC-G1 transporters",
+        "cofactors": "Transfer free cholesterol to nascent discoid HDL",
+        "reversible": false,
+        "disorder": {
+          "name": "Tangier Disease",
+          "disorderId": 23,
+          "branch": [
+            "ABC-A1 transporter mutation",
+            "Cholesterol cannot efflux from cells to HDL",
+            "Near-absent plasma HDL and Apo A-I",
+            "Orange-yellow tonsils (cholesterol ester deposits)",
+            "Hepatosplenomegaly, peripheral neuropathy"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Nascent HDL (discoid)",
+        "enzyme": "LCAT (Lecithin-Cholesterol Acyl Transferase)",
+        "cofactors": "Apo A-I activates LCAT; PUFA required; esterifies free cholesterol → moves to core → HDL-3 (spherical)",
+        "reversible": false,
+        "disorder": {
+          "name": "LCAT Deficiency",
+          "disorderId": 130,
+          "branch": [
+            "Cannot esterify cholesterol",
+            "Cholesterol stays in membrane-bound (free) form",
+            "Cannot be excreted → accumulates in cornea, RBCs",
+            "Corneal clouding, anaemia, progressive renal failure"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "HDL-3 (cholesterol ester-rich)",
+        "enzyme": "CETP (Cholesterol Ester Transfer Protein)",
+        "cofactors": "Exchanges CE from HDL for TAG from VLDL/LDL → forms HDL-2",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Mature HDL-2",
+        "enzyme": "SR-B1 (Scavenger Receptor B1) — hepatic uptake",
+        "cofactors": "Selective lipid uptake; Apo A-I recycled",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Cholesterol → liver → bile acids → excreted in faeces",
+    "nextPathways": [
+      {
+        "id": 23,
+        "entryStep": 1
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "HDL Cycle",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Continuous interconversion between HDL-3 and HDL-2 in plasma. HDL-3 (smaller, denser) picks up cholesterol from tissues → LCAT esterifies it → HDL-2 (larger, CE-rich) → delivers to liver. Maintains effective reverse cholesterol transport.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Discoid Nascent HDL (from liver and intestine)",
+        "enzyme": "ABC-A1 / ABC-G1 — cholesterol efflux from cells",
+        "cofactors": "Free cholesterol transferred to HDL surface",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Cholesterol-loaded Nascent HDL",
+        "enzyme": "LCAT (activated by Apo A-I)",
+        "cofactors": "Lecithin donates fatty acid to cholesterol → Cholesterol Ester (CE); CE moves to HDL core → spherical HDL-3",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "HDL-3",
+        "enzyme": "CETP (Cholesterol Ester Transfer Protein)",
+        "cofactors": "Transfers CE from HDL to VLDL/LDL in exchange for TAG → HDL-2 formed; relieves LCAT product inhibition",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "HDL-2 (mature, large, CE-rich)",
+        "enzyme": "Hepatic Lipase (HL)",
+        "cofactors": "Hydrolyses surface TAG and phospholipids → HDL-3 reformed (cycle continues)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "HDL-2 (hepatic uptake)",
+        "enzyme": "SR-B1 Receptor (liver)",
+        "cofactors": "Selective CE uptake; Apo A-I released back into circulation",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Cholesterol delivered to liver for bile synthesis; Apo A-I recycled to restart cycle",
+    "nextPathways": []
+  },
+  {
+    "id": 27,
+    "name": "Carnitine Shuttle",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Transports long-chain fatty acyl-CoA (LCFA-CoA) from cytosol into mitochondrial matrix for β-oxidation. Short and medium-chain FAs cross freely without carnitine. CAT-I is the rate-limiting, regulated step.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Long-Chain Fatty Acid (cytoplasm)",
+        "enzyme": "Thiokinase (Acyl-CoA Synthetase)",
+        "cofactors": "ATP → AMP + PPᵢ (2 high-energy bonds); CoA-SH",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Long-Chain Acyl-CoA (cytoplasm)",
+        "enzyme": "CAT-I (Carnitine Acyl Transferase I) — outer mitochondrial membrane",
+        "cofactors": "Carnitine; inhibited by Malonyl-CoA (key regulation)",
+        "reversible": false,
+        "disorder": {
+          "name": "Carnitine Deficiency / CAT-I Deficiency",
+          "disorderId": 25,
+          "branch": [
+            "Cannot transfer LCFA into mitochondria",
+            "LCFA accumulate in cytoplasm → lipid droplets in muscle/liver",
+            "Non-ketotic hypoglycaemia (cannot produce ketones from LCFA)",
+            "Carnitine synthesised from Lysine + Methionine (requires Vit C)",
+            "Preterm infants especially vulnerable"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Acyl-Carnitine",
+        "enzyme": "Translocase (inner mitochondrial membrane carrier)",
+        "cofactors": "Antiport: Acyl-carnitine IN, free carnitine OUT",
+        "reversible": false,
+        "disorder": {
+          "name": "Translocase Deficiency",
+          "disorderId": null,
+          "branch": [
+            "Acyl-carnitine cannot cross inner membrane",
+            "Same clinical picture as carnitine deficiency",
+            "Muscle cramps during fasting/exercise",
+            "Non-ketotic hypoglycaemia"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Acyl-Carnitine (matrix side)",
+        "enzyme": "CAT-II (Carnitine Acyl Transferase II) — inner membrane, matrix side",
+        "cofactors": "Regenerates Acyl-CoA + free carnitine",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Long-Chain Acyl-CoA (in matrix) → β-Oxidation",
+    "nextPathways": [
+      {
+        "id": 15,
+        "entryStep": 3
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Citrate Shuttle (Tricarboxylate Carrier System)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Transports Acetyl-CoA from mitochondrial matrix to cytosol for fatty acid synthesis. The inner mitochondrial membrane is impermeable to Acetyl-CoA directly. Citrate acts as the carrier molecule.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Acetyl-CoA + Oxaloacetate (mitochondrial matrix)",
+        "enzyme": "Citrate Synthase",
+        "cofactors": "Condenses to form Citrate",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Citrate (matrix)",
+        "enzyme": "Tricarboxylate Carrier",
+        "cofactors": "Citrate transported across inner mitochondrial membrane to cytosol",
+        "reversible": false,
+        "disorder": {
+          "name": "Citrate — Allosteric Regulator",
+          "disorderId": null,
+          "branch": [
+            "Citrate (in cytosol) allosterically activates Acetyl-CoA Carboxylase",
+            "Signals 'energy abundant' → promote FA synthesis",
+            "Citrate also inhibits PFK-1 → slows glycolysis when energy sufficient",
+            "Links mitochondrial energy status to cytosolic FA synthesis"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Citrate (cytosol)",
+        "enzyme": "ATP-Citrate Lyase",
+        "cofactors": "ATP + CoA → Acetyl-CoA + Oxaloacetate + ADP + Pᵢ",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Oxaloacetate (cytosol — must return to mitochondria)",
+        "enzyme": "Malate Dehydrogenase → NADPH generation via Malic Enzyme",
+        "cofactors": "OAA → Malate (NADH); Malate → Pyruvate + NADPH (Malic Enzyme); Pyruvate re-enters mitochondria",
+        "reversible": true,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Acetyl-CoA (cytosol) → De Novo FA Synthesis",
+    "nextPathways": [
+      {
+        "id": 16,
+        "entryStep": 3
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Vitamin K Cycle (Epoxide Cycle)",
+    "biomolecule": "Lipids",
+    "color": "#8e44ad",
+    "description": "Vitamin K undergoes oxidation-reduction cycling in liver ER to continuously activate γ-glutamyl carboxylase. Required for post-translational γ-carboxylation of clotting factors II, VII, IX, X (and proteins C, S, Z). Target of warfarin.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Vitamin K Hydroquinone (KH₂) — active reduced form",
+        "enzyme": "γ-Glutamyl Carboxylase",
+        "cofactors": "O₂; carboxylates Glu residues on clotting factors → γ-carboxyglutamate (GCG) allows Ca²⁺ binding",
+        "reversible": false,
+        "disorder": {
+          "name": "Vitamin K Deficiency / Haemorrhagic Disease",
+          "disorderId": null,
+          "branch": [
+            "Factors II, VII, IX, X cannot bind calcium → inactive",
+            "Prolonged PT (prothrombin time) and APTT",
+            "Haemorrhagic disease of the newborn (neonates lack gut flora)",
+            "Treatment: Vitamin K injection",
+            "Warfarin → anticoagulation by blocking this step"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Vitamin K Epoxide (oxidised, inactive)",
+        "enzyme": "Vitamin K Epoxide Reductase (VKOR)",
+        "cofactors": "NADH; reduces Epoxide → Vitamin K Quinone",
+        "reversible": false,
+        "disorder": {
+          "name": "Warfarin / Dicoumarol — VKOR Inhibitors",
+          "disorderId": null,
+          "branch": [
+            "Warfarin competitively inhibits VKOR",
+            "Vitamin K cannot be recycled → epoxide accumulates",
+            "Active hydroquinone depleted → clotting factors not carboxylated",
+            "Antidote: Vitamin K1 (phylloquinone) injection",
+            "INR monitored for anticoagulation therapy"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Vitamin K Quinone",
+        "enzyme": "Vitamin K Reductase (DT-diaphorase)",
+        "cofactors": "NADH → completes the cycle; regenerates active Hydroquinone",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Vitamin K Hydroquinone (recycled for next γ-carboxylation reaction)",
+    "nextPathways": []
+  },
+  {
+    "id": 30,
+    "name": "Proteolysis (Protein Digestion)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Hydrolytic degradation of dietary proteins to free amino acids. Carried out by hydrolases in stomach, pancreas, and small intestine. Enzymes secreted as inactive zymogens to prevent autodigestion.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Dietary Protein",
+        "enzyme": "HCl (Gastric Acid)",
+        "cofactors": "pH ~2.0; denatures proteins; activates pepsinogen",
+        "reversible": false,
+        "disorder": {
+          "name": "Achlorhydria",
+          "disorderId": null,
+          "branch": [
+            "Absent HCl → pepsinogen not activated",
+            "Proteins poorly digested in stomach",
+            "Overgrowth of gut bacteria",
+            "Associated with pernicious anaemia (also affects IF secretion)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Denatured Protein",
+        "enzyme": "Pepsin (endopeptidase)",
+        "cofactors": "Activated from pepsinogen by HCl; cleaves Phe, Tyr, Trp, Met bonds",
+        "reversible": false,
+        "disorder": {
+          "name": "Peptic Ulcer Disease",
+          "disorderId": 133,
+          "branch": [
+            "Pepsin + HCl damage unprotected mucosa",
+            "H. pylori disrupts mucosal barrier",
+            "Excess pepsin activity in ZE syndrome (gastrinoma)",
+            "PPI drugs inhibit H⁺/K⁺-ATPase → ↓ HCl → ↓ pepsin activation"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Large Peptides (in duodenum)",
+        "enzyme": "Trypsin (endopeptidase)",
+        "cofactors": "Activated from trypsinogen by Enterokinase; cleaves Arg, Lys bonds; Trypsin also activates other zymogens",
+        "reversible": false,
+        "disorder": {
+          "name": "Acute Pancreatitis",
+          "disorderId": null,
+          "branch": [
+            "Premature activation of trypsinogen inside pancreas",
+            "Trypsin activates all other zymogens → autodigestion",
+            "Severe abdominal pain, raised serum amylase/lipase",
+            "Haemorrhagic pancreatitis can be fatal"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Medium Peptides",
+        "enzyme": "Chymotrypsin + Elastase + Carboxypeptidases A & B",
+        "cofactors": "All activated by trypsin; Carboxypeptidases require Zn²⁺",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Small Peptides (di/tri)",
+        "enzyme": "Aminopeptidases + Dipeptidases + Tripeptidases (intestinal brush border)",
+        "cofactors": "Act on N-terminal end; final release of free amino acids",
+        "reversible": false,
+        "disorder": {
+          "name": "Hartnup Disease / Cystinuria",
+          "disorderId": 37,
+          "branch": [
+            "Hartnup: defective neutral AA transporter (SLC6A19) in intestine and kidney",
+            "Tryptophan not absorbed → pellagra-like rash, ataxia",
+            "Cystinuria: defective COLA transporter → cystine stones",
+            "Celiac disease: villous atrophy → reduced absorptive surface for AAs"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Free Amino Acids → portal blood → liver",
+    "nextPathways": []
+  },
+  {
+    "id": 31,
+    "name": "Meister Cycle (γ-Glutamyl Cycle)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Active transport mechanism for neutral amino acids across cell membranes using glutathione as carrier. Costs 3 ATP per amino acid transported. Active in intestine, kidney tubules, and brain.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Extracellular Amino Acid + Glutathione",
+        "enzyme": "γ-Glutamyl Transferase (GGT / Transpeptidase)",
+        "cofactors": "Membrane-bound enzyme",
+        "reversible": false,
+        "disorder": {
+          "name": "GGT — Clinical Marker of Alcohol Abuse",
+          "disorderId": null,
+          "branch": [
+            "Serum GGT rises proportionally with alcohol intake",
+            "Most sensitive marker for alcohol abuse",
+            "Also elevated in cholestatic liver disease and drug induction",
+            "GGT induction by alcohol: ↑ microsomal enzyme synthesis"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "γ-Glutamyl-Amino Acid + Cysteinyl-glycine",
+        "enzyme": "γ-Glutamyl Cyclotransferase",
+        "cofactors": "Releases free amino acid into cell; forms 5-Oxoproline",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "5-Oxoproline",
+        "enzyme": "5-Oxoprolinase",
+        "cofactors": "ATP required",
+        "reversible": false,
+        "disorder": {
+          "name": "Oxoprolinuria",
+          "disorderId": null,
+          "branch": [
+            "Defect in glutathione resynthesis",
+            "5-Oxoproline accumulates",
+            "Metabolic acidosis and haemolytic anaemia",
+            "Raised urinary pyroglutamate (oxoproline)"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Glutamate",
+        "enzyme": "γ-Glutamyl-Cysteine Synthetase",
+        "cofactors": "ATP; condensation with cysteine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "γ-Glutamyl-Cysteine",
+        "enzyme": "Glutathione Synthetase",
+        "cofactors": "ATP; condensation with glycine",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Glutathione (regenerated) → cycle restarts",
+    "nextPathways": []
+  },
+  {
+    "id": 32,
+    "name": "Transamination",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Reversible transfer of α-amino group from an amino acid to an α-keto acid. Operates via Ping-Pong (double displacement) mechanism. Occurs in virtually all tissues. No net deamination — amino group transferred, not released as NH₃.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Amino Acid (e.g. Alanine) + α-Ketoglutarate",
+        "enzyme": "Alanine Transaminase (ALT / SGPT)",
+        "cofactors": "Pyridoxal Phosphate (PLP / Vit B6) — forms Schiff base intermediate",
+        "reversible": true,
+        "disorder": {
+          "name": "Elevated ALT — Liver Damage Marker",
+          "disorderId": null,
+          "branch": [
+            "ALT highly specific for hepatocellular damage",
+            "↑ ALT in viral hepatitis, cirrhosis, NAFLD",
+            "De Ritis ratio: AST:ALT >2 suggests alcoholic hepatitis",
+            "Normal ALT: 7–56 U/L"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Pyruvate + Glutamate",
+        "enzyme": "Aspartate Transaminase (AST / SGOT)",
+        "cofactors": "PLP; key reaction: Oxaloacetate + Glutamate ⇌ Aspartate + α-KG",
+        "reversible": true,
+        "disorder": {
+          "name": "Elevated AST — Liver and Heart Damage",
+          "disorderId": null,
+          "branch": [
+            "AST present in liver, heart, skeletal muscle, RBCs",
+            "Rises in MI (now replaced by troponin)",
+            "Vitamin B6 deficiency → ↓ transaminase activity",
+            "Exceptions: Lysine, Threonine, Proline — do NOT undergo transamination"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Glutamate (collects amino groups) → Oxidative Deamination in liver mitochondria",
+    "nextPathways": [
+      {
+        "id": 33,
+        "entryStep": 1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Oxidative Deamination",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Release of free ammonia (NH₃) from glutamate in hepatic mitochondria. The primary source of ammonia for the urea cycle. Glutamate is the only amino acid that undergoes rapid oxidative deamination in mammals.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glutamate (mitochondrial)",
+        "enzyme": "Glutamate Dehydrogenase (GDH)",
+        "cofactors": "NAD⁺ or NADP⁺; activated by ADP (low energy); inhibited by GTP (high energy)",
+        "reversible": true,
+        "disorder": {
+          "name": "Hyperammonaemia",
+          "disorderId": null,
+          "branch": [
+            "Failure to oxidatively deaminate glutamate → NH₃ accumulates",
+            "NH₃ highly neurotoxic → cerebral oedema",
+            "Encephalopathy, asterixis (flapping tremor)",
+            "Liver failure → reduced GDH activity → NH₃ accumulation"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "α-Ketoglutarate + NH₃ + NADH",
+        "enzyme": "Minor: L-Amino Acid Oxidase",
+        "cofactors": "FMN; produces H₂O₂ (minor pathway)",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "NH₃ → Urea Cycle | α-KG → TCA Cycle",
+    "nextPathways": [
+      36,
+      {
+        "id": 6,
+        "entryStep": 4
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Trans-deamination (Combined Pathway)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "The physiologically dominant mechanism for amino nitrogen disposal. Combines transamination (all tissues, cytoplasm) and oxidative deamination (liver mitochondria). Glutamate acts as the central amino group collector.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Any Amino Acid (peripheral tissue)",
+        "enzyme": "Aminotransferases (Transamination Step)",
+        "cofactors": "PLP; transfers NH₂ to α-KG → forms Glutamate",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Glutamate (transported to liver)",
+        "enzyme": "Bloodstream transport",
+        "cofactors": "Free glutamate or as glutamine; carried to hepatic portal circulation",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Glutamate (in liver mitochondria)",
+        "enzyme": "Glutamate Dehydrogenase (GDH)",
+        "cofactors": "NAD⁺ → NADH; releases free NH₃; regenerates α-KG",
+        "reversible": true,
+        "disorder": {
+          "name": "Ammonia Toxicity",
+          "disorderId": null,
+          "branch": [
+            "If GDH impaired (liver failure), glutamate accumulates",
+            "NH₃ not released → AA catabolism impaired",
+            "NH₃ inhibits α-KG dehydrogenase → TCA cycle blocked",
+            "α-KG depleted → brain energy failure → coma"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "NH₃ → Urea Cycle | Carbon skeleton → TCA/Gluconeogenesis",
+    "nextPathways": [
+      36,
+      {
+        "id": 6,
+        "entryStep": 4
+      },
+      {
+        "id": 2,
+        "entryStep": 3
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Non-oxidative Deamination",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Release of NH₃ from specific amino acids without oxidation. Provides an alternative deamination route for hydroxy and sulfur amino acids. Products feed into glycolysis and gluconeogenesis.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Serine",
+        "enzyme": "Serine Dehydratase",
+        "cofactors": "PLP (Vit B6)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Pyruvate + NH₃",
+        "enzyme": "Threonine Dehydratase (for Threonine → α-Ketobutyrate + NH₃)",
+        "cofactors": "PLP",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Cysteine",
+        "enzyme": "Cysteine Desulfhydrase",
+        "cofactors": "PLP; releases H₂S + NH₃",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Histidine",
+        "enzyme": "Histidase",
+        "cofactors": "No cofactor; releases NH₃",
+        "reversible": false,
+        "disorder": {
+          "name": "Histidinemia",
+          "disorderId": 38,
+          "branch": [
+            "Histidase deficiency → ↑ blood and urine histidine",
+            "Speech defects and occasional mild mental retardation",
+            "Urocanic acid absent in skin (no UV protection)",
+            "Positive ferric chloride test in urine (grey-green)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Pyruvate / α-Ketobutyrate + NH₃ → Urea Cycle",
+    "nextPathways": [
+      {
+        "id": 36,
+        "entryStep": 1
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Urea Cycle (Krebs–Henseleit / Ornithine Cycle)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Converts toxic ammonia into non-toxic urea for excretion. Occurs exclusively in liver (mitochondria + cytosol). Costs 3 ATP (4 high-energy bonds) per urea molecule. Net cost ~1.5 after fumarate→NADH recovery. One N from NH₃, one from Aspartate.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "NH₃ + CO₂ (mitochondria)",
+        "enzyme": "Carbamoyl Phosphate Synthetase I (CPS-I) — Rate-Limiting",
+        "cofactors": "2 ATP; N-acetyl Glutamate (NAG) as obligate allosteric activator; Mg²⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Hyperammonaemia Type I (CPS-I Deficiency)",
+          "disorderId": 40,
+          "branch": [
+            "CPS-I absent → NH₃ cannot enter urea cycle",
+            "Severe neonatal hyperammonaemia",
+            "Vomiting, lethargy, encephalopathy, coma",
+            "No secondary orotic aciduria (distinguishes from OTC deficiency)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Carbamoyl Phosphate + Ornithine (mitochondria)",
+        "enzyme": "Ornithine Transcarbamoylase (OTC) — X-linked recessive",
+        "cofactors": "Forms Citrulline; Ornithine transported in via ORNT1",
+        "reversible": false,
+        "disorder": {
+          "name": "Hyperammonaemia Type II (OTC Deficiency)",
+          "disorderId": 41,
+          "branch": [
+            "Most common urea cycle disorder (X-linked)",
+            "Excess carbamoyl-P enters pyrimidine pathway → ↑ Orotic acid in urine",
+            "Distinguishing feature: OROTIC ACIDURIA",
+            "Protein aversion, episodic encephalopathy",
+            "Treatment: low-protein diet + Na benzoate/phenylacetate"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Citrulline (exported to cytosol) + Aspartate",
+        "enzyme": "Argininosuccinate Synthetase",
+        "cofactors": "ATP → AMP + PPᵢ (2 high-energy bonds); Mg²⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Citrullinaemia (Type I)",
+          "disorderId": 42,
+          "branch": [
+            "Argininosuccinate synthetase deficient",
+            "↑↑ Citrulline in blood, CSF, urine",
+            "Hyperammonaemia, vomiting, liver failure",
+            "Citrullinuria (1–2 g/day)"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Argininosuccinate",
+        "enzyme": "Argininosuccinate Lyase (Argininosuccinase)",
+        "cofactors": "Cleaves to Arginine + Fumarate (fumarate enters TCA)",
+        "reversible": false,
+        "disorder": {
+          "name": "Argininosuccinic Aciduria",
+          "disorderId": 43,
+          "branch": [
+            "Argininosuccinate lyase deficient",
+            "Characteristic: Trichorrhexis nodosa (brittle, tufted hair)",
+            "Argininosuccinate in blood and urine",
+            "Hyperammonaemia + hepatomegaly"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Arginine (cytosol)",
+        "enzyme": "Arginase",
+        "cofactors": "Mn²⁺; releases Urea + regenerates Ornithine",
+        "reversible": false,
+        "disorder": {
+          "name": "Hyperargininaemia (Arginase Deficiency)",
+          "disorderId": 44,
+          "branch": [
+            "Arginase deficient → Arginine accumulates",
+            "Spastic diplegia/tetraparesis, microcephaly, low IQ",
+            "Milder hyperammonaemia (partial cycle activity)",
+            "Symptoms appear later in childhood (unlike other UCDs)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Urea → excreted in urine | Ornithine → recycled into mitochondria",
+    "nextPathways": [
+      {
+        "id": 6,
+        "entryStep": 7
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "One-Carbon Metabolism (Folate Cycle)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Pool of one-carbon units carried by Tetrahydrofolic acid (THFA). Supplies C2 and C8 for purine synthesis, methyl for dTMP synthesis, and methyl groups for transmethylation (via B12). Serine is the primary one-carbon donor. Methyl-THFA is a metabolic dead-end (irreversible).",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Serine + THFA",
+        "enzyme": "Serine Hydroxymethyl Transferase",
+        "cofactors": "PLP; transfers methylene group → Glycine + N⁵,N¹⁰-Methylene-THFA",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "N⁵,N¹⁰-Methylene-THFA",
+        "enzyme": "THFA Reductase (Methylenetetrahydrofolate reductase — MTHFR)",
+        "cofactors": "FADH₂; irreversible reduction → N⁵-Methyl-THFA (metabolic sink)",
+        "reversible": false,
+        "disorder": {
+          "name": "Folate Trap (Vit B12 Deficiency)",
+          "disorderId": 77,
+          "branch": [
+            "B12 needed to transfer methyl from N⁵-Methyl-THFA to Homocysteine",
+            "B12 deficient → methyl group cannot be transferred",
+            "All folate trapped as N⁵-Methyl-THFA",
+            "Functional folate deficiency despite normal folate intake",
+            "↓ dTMP synthesis → Megaloblastic anaemia",
+            "↓ Methionine → ↑ Homocysteine → thrombosis risk"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "N⁵-Methyl-THFA + Homocysteine",
+        "enzyme": "Methionine Synthase (requires Methyl-B12)",
+        "cofactors": "Methylcobalamin (Vit B12); regenerates Methionine + THFA",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "N¹⁰-Formyl-THFA (from formate or histidine)",
+        "enzyme": "Used by Purine Synthesis (C2 and C8 of purine ring)",
+        "cofactors": "Formyl group donated to growing purine ring",
+        "reversible": false,
+        "disorder": {
+          "name": "Folate Deficiency — FIGLU Test",
+          "disorderId": 76,
+          "branch": [
+            "Histidine → FIGLU (Formiminoglutamate) in folic acid deficiency",
+            "FIGLU cannot transfer formimino group to THFA",
+            "↑ Urinary FIGLU after histidine load = diagnostic test for folate deficiency",
+            "Methotrexate blocks DHF→THFA → starves cells of one-carbon units"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "N⁵,N¹⁰-Methylene-THFA + dUMP",
+        "enzyme": "Thymidylate Synthase",
+        "cofactors": "Methylene group transferred → dTMP; THFA oxidised to DHF",
+        "reversible": false,
+        "disorder": {
+          "name": "5-Fluorouracil (5-FU) Target",
+          "disorderId": null,
+          "branch": [
+            "5-FU → FdUMP → suicide inhibitor of thymidylate synthase",
+            "dTMP synthesis blocked → no DNA synthesis",
+            "Cancer cells (high proliferation) most affected",
+            "Methotrexate blocks DHF reductase → same net effect"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "dTMP (DNA), Purines (DNA/RNA), Methionine (transmethylation)",
+    "nextPathways": []
+  },
+  {
+    "id": 38,
+    "name": "Glycine–Serine–Choline Salvage Cycle",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Salvages one-carbon units used in choline synthesis back into the folate pool. Serine → ethanolamine → choline (uses 3 SAM). Choline oxidised → betaine → donates methyls back via demethylation to regenerate glycine and one-carbon units.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Serine",
+        "enzyme": "Serine Decarboxylase",
+        "cofactors": "PLP; decarboxylation → Ethanolamine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Ethanolamine",
+        "enzyme": "Methyl Transferase (×3)",
+        "cofactors": "3 × SAM (each costs 1 ATP); methylation → Choline",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Choline",
+        "enzyme": "Choline Dehydrogenase",
+        "cofactors": "NAD⁺; oxidation → Betaine (Trimethyl Glycine)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Betaine",
+        "enzyme": "Betaine-Homocysteine Methyltransferase",
+        "cofactors": "Donates 1 methyl to Homocysteine → Methionine; becomes Dimethylglycine (B12-independent pathway)",
+        "reversible": false,
+        "disorder": {
+          "name": "Homocystinuria — Alternative Remethylation",
+          "disorderId": 35,
+          "branch": [
+            "Betaine provides B12-independent route to remethylate Hcy",
+            "Used therapeutically in homocystinuria (betaine supplements)",
+            "Reduces homocysteine levels even without B12",
+            "Dimethylglycine donates 2 more one-carbon units to THFA pool"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Dimethylglycine → Sarcosine → Glycine",
+        "enzyme": "Sarcosine Dehydrogenase + Glycine Cleavage System",
+        "cofactors": "NAD⁺; releases one-carbon units to THFA pool at each step",
+        "reversible": false,
+        "disorder": {
+          "name": "Nonketotic Hyperglycinaemia",
+          "disorderId": 132,
+          "branch": [
+            "Glycine cleavage system defect (closely linked)",
+            "Massive ↑ glycine in blood, urine, and CSF",
+            "Severe neonatal seizures and mental retardation",
+            "Primary Hyperoxaluria: glyoxalate (glycine metabolite) → oxalate → kidney stones"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Glycine → THFA one-carbon pool replenished",
+    "nextPathways": []
+  },
+  {
+    "id": 39,
+    "name": "Glycine Cleavage System",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Major catabolic route for glycine. Multienzyme complex in mitochondria. Generates NADH, NH₃, CO₂, and a methylene one-carbon unit for THFA pool. Can run in reverse to synthesise glycine (glycine synthase mode).",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glycine",
+        "enzyme": "Component A: Glycine Decarboxylase",
+        "cofactors": "PLP; decarboxylates glycine; CO₂ released",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Methylamine-Lipoamide Intermediate",
+        "enzyme": "Component B: Amino Methyl Transferase",
+        "cofactors": "Lipoamide prosthetic group; transfers methylamine to THFA",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "N⁵,N¹⁰-Methylene-THFA + NH₃",
+        "enzyme": "Component C: Methylene THFA Synthase",
+        "cofactors": "THFA acceptor; NH₃ released",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Dihydrolipoamide",
+        "enzyme": "Component D: Lipoamide Dehydrogenase",
+        "cofactors": "NAD⁺ → NADH; regenerates oxidised lipoamide",
+        "reversible": true,
+        "disorder": {
+          "name": "Nonketotic Hyperglycinaemia (NKH)",
+          "disorderId": 132,
+          "branch": [
+            "Congenital defect in glycine cleavage system",
+            "↑↑ Glycine in blood, urine, and CSF",
+            "Seizures and severe mental retardation from birth",
+            "No ketosis (distinguishes from organic acidaemias)",
+            "Treated partially with sodium benzoate (scavenges glycine)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "NH₃ + CO₂ + NADH + N⁵,N¹⁰-Methylene-THFA",
+    "nextPathways": []
+  },
+  {
+    "id": 40,
+    "name": "Creatine–Creatinine Cycle",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Synthesis of creatine from Arg + Gly + Met (via SAM). Phosphocreatine acts as immediate ATP buffer in muscle (Lohmann reaction). Creatinine is spontaneous non-enzymatic product excreted in urine at constant rate — used to estimate GFR.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Arginine + Glycine (kidney mitochondria)",
+        "enzyme": "Amidotransferase (Transamidinase)",
+        "cofactors": "Transfers amidino group from Arg to Gly; releases Ornithine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Guanidoacetic Acid (Guanidoacetate)",
+        "enzyme": "Methyl Transferase (liver cytoplasm)",
+        "cofactors": "SAM (methyl donor) → SAH; methylation forms Creatine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Creatine (transported to muscle/brain)",
+        "enzyme": "Creatine Kinase (CK)",
+        "cofactors": "ATP → ADP; phosphorylation → Phosphocreatine (high-energy store)",
+        "reversible": true,
+        "disorder": {
+          "name": "Myocardial Infarction — CK-MB Marker",
+          "disorderId": null,
+          "branch": [
+            "CK-MB isoform specific to cardiac muscle",
+            "Rises 4–6h after MI, peaks at 12–24h",
+            "Troponin I more sensitive/specific now used",
+            "Muscular dystrophies: ↑↑ CK-MM (skeletal muscle isoform)"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Phosphocreatine",
+        "enzyme": "Spontaneous Non-enzymatic Cyclisation",
+        "cofactors": "No enzyme; loses phosphate → Creatinine",
+        "reversible": false,
+        "disorder": {
+          "name": "Renal Function Assessment",
+          "disorderId": null,
+          "branch": [
+            "Creatinine produced at constant rate (proportional to muscle mass)",
+            "Filtered at glomerulus, not reabsorbed → excreted in urine",
+            "Creatinine Clearance estimates GFR",
+            "↑ Serum creatinine → ↓ GFR → kidney disease",
+            "Normal serum creatinine: 0.6–1.2 mg/dL"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Creatinine → excreted in urine (GFR marker)",
+    "nextPathways": []
+  },
+  {
+    "id": 41,
+    "name": "Trans-sulfuration Pathway (Methionine → Cysteine)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Converts essential amino acid methionine to non-essential cysteine via homocysteine. SAM (universal methyl donor) is generated as key intermediate. Requires PLP (B6) for both CBS and cystathionase steps.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Methionine",
+        "enzyme": "Methionine Adenosyl Transferase (MAT)",
+        "cofactors": "ATP → PPᵢ + Pᵢ; forms SAM (active methionine / universal methyl donor)",
+        "reversible": false,
+        "disorder": {
+          "name": "SAM — Universal Methyl Donor",
+          "disorderId": null,
+          "branch": [
+            "SAM methylates: creatine, epinephrine, choline, melatonin, DNA",
+            "After donating methyl → S-Adenosyl Homocysteine (SAH)",
+            "SAH is a potent product inhibitor of methyltransferases",
+            "SAH → Homocysteine + Adenosine (by adenosine homocysteinase)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "S-Adenosyl Methionine (SAM)",
+        "enzyme": "Various Methyl Transferases",
+        "cofactors": "SAM donates methyl group to acceptor molecules",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "S-Adenosyl Homocysteine (SAH)",
+        "enzyme": "Adenosine Homocysteinase",
+        "cofactors": "Hydrolysis → Homocysteine + Adenosine",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Homocysteine + Serine",
+        "enzyme": "Cystathionine-β-Synthase (CBS)",
+        "cofactors": "PLP (Vit B6); condensation → Cystathionine",
+        "reversible": false,
+        "disorder": {
+          "name": "Classical Homocystinuria (Type I)",
+          "disorderId": 35,
+          "branch": [
+            "CBS deficiency → ↑↑ Homocysteine and Methionine",
+            "Ectopia lentis (downward lens dislocation)",
+            "Marfanoid tall stature, mental retardation",
+            "High DVT/PE risk (Hcy damages endothelium)",
+            "Treatment: B6 (if responsive), B12, folate, low-Met diet"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Cystathionine",
+        "enzyme": "Cystathionase (Cystathionine-γ-Lyase)",
+        "cofactors": "PLP (Vit B6); cleaves to Cysteine + Homoserine",
+        "reversible": false,
+        "disorder": {
+          "name": "Cystathioninuria",
+          "disorderId": null,
+          "branch": [
+            "Cystathionase deficiency → ↑ Cystathionine in urine",
+            "Generally benign condition",
+            "Responds to high-dose Vitamin B6 (PLP)",
+            "Homocysteine can be remethylated back to Methionine via B12/Folate"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Cysteine (non-essential AA) + Homoserine",
+    "nextPathways": []
+  },
+  {
+    "id": 42,
+    "name": "Phenylalanine and Tyrosine Catabolism",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Phenylalanine → Tyrosine → intermediates → Fumarate + Acetoacetate. Both glucogenic and ketogenic. Liver-based pathway. Multiple enzyme deficiencies give distinct disorders at each step.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Phenylalanine",
+        "enzyme": "Phenylalanine Hydroxylase (PAH)",
+        "cofactors": "Tetrahydrobiopterin (BH4) + NADPH + O₂; BH4 regenerated by DHPR",
+        "reversible": false,
+        "disorder": {
+          "name": "Phenylketonuria (PKU)",
+          "disorderId": 29,
+          "branch": [
+            "PAH deficiency → ↑↑ Phenylalanine",
+            "Shunted to neurotoxic phenyl ketones (phenylacetate, phenyllactate)",
+            "Mental retardation, microcephaly, fair skin, mousy odour",
+            "Newborn Guthrie test screening (blood Phe >20 mg/dl)",
+            "Treatment: low-Phe diet + Tyr supplementation (lifelong)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Tyrosine",
+        "enzyme": "Tyrosine Transaminase (Tyrosine Aminotransferase)",
+        "cofactors": "PLP; transamination → p-Hydroxyphenylpyruvate (pHPPA)",
+        "reversible": true,
+        "disorder": {
+          "name": "Tyrosinaemia Type II (Richner-Hanhart)",
+          "disorderId": 31,
+          "branch": [
+            "Tyrosine transaminase deficient",
+            "↑↑ Tyrosine → crystallises in cornea and skin",
+            "Dendritic corneal ulcers (photophobia)",
+            "Palmoplantar keratosis (hyperkeratosis of palms and soles)",
+            "Treatment: low Phe + Tyr diet"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "p-Hydroxyphenylpyruvate",
+        "enzyme": "p-Hydroxyphenylpyruvate Dioxygenase",
+        "cofactors": "Vit C (Ascorbate) + O₂; also hydroxylates ring → Homogentisate",
+        "reversible": false,
+        "disorder": {
+          "name": "Tyrosinaemia Type III",
+          "disorderId": 32,
+          "branch": [
+            "pHPPA dioxygenase deficiency",
+            "Transient neonatal tyrosinaemia (usually benign)",
+            "Responds to Ascorbate supplementation",
+            "Nitisinone (NTBC) inhibits this enzyme therapeutically in Type I"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Homogentisate",
+        "enzyme": "Homogentisate Oxidase (Homogentisate 1,2-Dioxygenase)",
+        "cofactors": "O₂ + Fe²⁺; ring cleavage → Maleylacetoacetate",
+        "reversible": false,
+        "disorder": {
+          "name": "Alkaptonuria",
+          "disorderId": 33,
+          "branch": [
+            "Homogentisate oxidase deficient",
+            "HGA accumulates → polymerises to black 'alkaptone' pigment",
+            "Urine turns black on standing (diagnostic)",
+            "Ochronosis: black pigment deposits in cartilage, ear, sclerae",
+            "Severe debilitating arthritis in later life"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Maleylacetoacetate → Fumarylacetoacetate",
+        "enzyme": "Maleylacetoacetate Isomerase (requires Glutathione)",
+        "cofactors": "GSH as cofactor",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Fumarylacetoacetate",
+        "enzyme": "Fumarylacetoacetate Hydrolase (FAH)",
+        "cofactors": "Hydrolysis → Fumarate + Acetoacetate",
+        "reversible": false,
+        "disorder": {
+          "name": "Tyrosinaemia Type I (Hepatorenal)",
+          "disorderId": 30,
+          "branch": [
+            "FAH deficiency → fumarylacetoacetate accumulates (toxic)",
+            "Succinylacetone formed → potent inhibitor of ALA dehydratase",
+            "Liver failure, renal tubular dysfunction (Fanconi syndrome)",
+            "Cabbage-like odour; hepatocellular carcinoma risk",
+            "Treatment: Nitisinone (NTBC) + low Phe/Tyr diet"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Fumarate (→ TCA/Gluconeogenesis) + Acetoacetate (→ Ketolysis)",
+    "nextPathways": [
+      {
+        "id": 6,
+        "entryStep": 7
+      },
+      {
+        "id": 21,
+        "entryStep": 2
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "BCAA Catabolism (Val, Leu, Ile)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Catabolism of branched-chain amino acids — Valine (glucogenic → Succinyl-CoA), Leucine (ketogenic → Acetyl-CoA + Acetoacetate), Isoleucine (both → Acetyl-CoA + Propionyl-CoA). Mainly in skeletal muscle, heart, brain (minimal in liver). Entirely mitochondrial.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "BCAA (Val / Leu / Ile)",
+        "enzyme": "Branched-Chain Aminotransferase (BCAT)",
+        "cofactors": "PLP; transamination → α-keto acid derivatives",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Branched-Chain α-Keto Acids",
+        "enzyme": "Branched-Chain α-Keto Acid Dehydrogenase (BCKD) Complex — Rate-Limiting",
+        "cofactors": "TPP + Lipoate + FAD + NAD⁺ + CoA (same cofactors as PDH); oxidative decarboxylation → Acyl-CoA derivatives",
+        "reversible": false,
+        "disorder": {
+          "name": "Maple Syrup Urine Disease (MSUD)",
+          "disorderId": 34,
+          "branch": [
+            "BCKD complex deficient → BCAA and keto acids accumulate",
+            "Burnt sugar / maple syrup odour of urine",
+            "Severe neonatal encephalopathy, seizures, mental retardation",
+            "Leucine most neurotoxic (causes brain oedema)",
+            "Treatment: BCAA-restricted diet; high-dose Thiamine (if responsive)",
+            "Positive DNPH test (yellow precipitate)"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Isovaleryl-CoA (from Leucine branch)",
+        "enzyme": "Isovaleryl-CoA Dehydrogenase (IVD)",
+        "cofactors": "FAD → FADH₂",
+        "reversible": false,
+        "disorder": {
+          "name": "Isovaleric Acidaemia",
+          "disorderId": 47,
+          "branch": [
+            "IVD deficiency → isovaleryl-CoA accumulates",
+            "Isovaleric acid: characteristic 'sweaty feet' cheesy odour",
+            "Metabolic acidosis (ketoacidosis), hypoglycaemia",
+            "Positive DNPH test; elevated C5 acylcarnitine on MS/MS"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Acyl-CoA Derivatives (per BCAA)",
+        "enzyme": "Subsequent mitochondrial oxidation steps",
+        "cofactors": "Val → Succinyl-CoA (via Propionyl-CoA + B12); Leu → Acetoacetate + Acetyl-CoA; Ile → Propionyl-CoA + Acetyl-CoA",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Succinyl-CoA (Val) + Acetyl-CoA/Acetoacetate (Leu) + Acetyl-CoA/Propionyl-CoA (Ile)",
+    "nextPathways": [
+      6
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Kynurenine Pathway (Tryptophan → Niacin)",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Tryptophan catabolism via kynurenine pathway generates NAD⁺/Niacin. 60 mg dietary tryptophan → 1 mg Niacin. Vitamin B6 (PLP) is essential cofactor. Blockade leads to functional niacin deficiency and pellagra.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Tryptophan",
+        "enzyme": "Tryptophan Pyrrolase (Tryptophan 2,3-Dioxygenase)",
+        "cofactors": "Heme (Fe²⁺) + O₂; induced by cortisol and tryptophan",
+        "reversible": false,
+        "disorder": {
+          "name": "Carcinoid Syndrome",
+          "disorderId": null,
+          "branch": [
+            "Carcinoid tumour diverts up to 60% tryptophan → Serotonin synthesis",
+            "Kynurenine pathway starved of substrate → Niacin deficiency",
+            "Pellagra symptoms: dermatitis, diarrhoea, dementia",
+            "5-HIAA elevated in urine (serotonin metabolite) → diagnostic"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "N-Formylkynurenine",
+        "enzyme": "Formamidase",
+        "cofactors": "Hydrolysis → Kynurenine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Kynurenine",
+        "enzyme": "Kynurenine Hydroxylase",
+        "cofactors": "NADPH + O₂ → 3-Hydroxykynurenine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "3-Hydroxykynurenine",
+        "enzyme": "Kynureninase",
+        "cofactors": "PLP (Vit B6); cleavage → 3-Hydroxyanthranilate + Alanine",
+        "reversible": false,
+        "disorder": {
+          "name": "Vit B6 Deficiency / INH-Induced Pellagra",
+          "disorderId": 75,
+          "branch": [
+            "Kynureninase requires PLP → B6 deficiency blocks this step",
+            "3-Hydroxykynurenine shunted → Xanthurenic acid",
+            "↑ Urinary xanthurenic acid = diagnostic test for B6 deficiency",
+            "Isoniazid (INH) is B6 antagonist → induces B6 deficiency → pellagra",
+            "Hartnup disease: Trp not absorbed → pellagra-like rash"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "3-Hydroxyanthranilate",
+        "enzyme": "3-Hydroxyanthranilate Oxidase → Quinolinate Phosphoribosyl Transferase (QPRTase)",
+        "cofactors": "PRPP; Quinolinate → Nicotinic acid mononucleotide → NAD⁺",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "NAD⁺ / NADP⁺ (Niacin-containing coenzymes) + Alanine",
+    "nextPathways": []
+  },
+  {
+    "id": 45,
+    "name": "GABA Shunt",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Alternative route from Glutamate → Succinate in the brain, bypassing α-KG dehydrogenase step of TCA. GABA is the major inhibitory neurotransmitter in CNS. PLP essential for both enzymatic steps. Step 1 cytoplasmic, steps 2–3 mitochondrial.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glutamate (brain cytoplasm)",
+        "enzyme": "Glutamate Decarboxylase",
+        "cofactors": "PLP (Vit B6); irreversible; CO₂ released",
+        "reversible": false,
+        "disorder": {
+          "name": "Infantile Convulsions (B6 Deficiency)",
+          "disorderId": null,
+          "branch": [
+            "Glutamate decarboxylase requires PLP",
+            "B6 deficiency → ↓ GABA synthesis → loss of CNS inhibition",
+            "Neonatal seizures unresponsive to anticonvulsants",
+            "Respond dramatically to IV Pyridoxine (B6)",
+            "Pyridoxine-dependent epilepsy: genetic variant needs pharmacological B6 doses"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "GABA (γ-Aminobutyric Acid)",
+        "enzyme": "GABA Transaminase (GABA-T)",
+        "cofactors": "PLP; transamination → Succinic Semialdehyde",
+        "reversible": false,
+        "disorder": {
+          "name": "Valproate — GABA-T Inhibitor",
+          "disorderId": null,
+          "branch": [
+            "Sodium valproate inhibits GABA transaminase (GABA oxidase)",
+            "↑ GABA levels in synaptic cleft → enhanced inhibition",
+            "Used in epilepsy, bipolar disorder, migraine prophylaxis",
+            "GABA-T also inhibited by Vigabatrin (γ-vinyl GABA) — irreversible"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Succinic Semialdehyde",
+        "enzyme": "Succinic Semialdehyde Dehydrogenase",
+        "cofactors": "NAD⁺ → NADH; oxidation → Succinate",
+        "reversible": false,
+        "disorder": {
+          "name": "Succinic Semialdehyde Dehydrogenase Deficiency",
+          "disorderId": null,
+          "branch": [
+            "Rare autosomal recessive disorder",
+            "↑ γ-Hydroxybutyric acid (GHB) in urine, CSF, plasma",
+            "Developmental delay, hypotonia, ataxia, seizures",
+            "Hydroxybutyric aciduria on urine organic acids"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Succinate → TCA Cycle",
+    "nextPathways": [
+      {
+        "id": 6,
+        "entryStep": 6
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Catecholamine Synthesis",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Tyrosine → DOPA → Dopamine → Norepinephrine → Epinephrine. Occurs in adrenal medulla, sympathetic ganglia, and brain. Rate-limiting step: Tyrosine Hydroxylase (TH). SAM donates methyl for final step.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Tyrosine",
+        "enzyme": "Tyrosine Hydroxylase (TH) — Rate-Limiting Committed Step",
+        "cofactors": "BH4 + NADPH + O₂; BH4 regenerated by DHPR; inhibited by catecholamines (feedback)",
+        "reversible": false,
+        "disorder": {
+          "name": "Parkinson's Disease (Dopamine Deficiency)",
+          "disorderId": 101,
+          "branch": [
+            "Loss of dopaminergic neurons in substantia nigra",
+            "↓ Dopamine → loss of inhibition of motor pathway → rigidity, tremor",
+            "Lewy bodies (α-synuclein aggregates) in neurons",
+            "L-DOPA + Carbidopa (DDC inhibitor) → restores dopamine",
+            "Carbidopa prevents peripheral DOPA decarboxylation"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "DOPA (Dihydroxyphenylalanine)",
+        "enzyme": "DOPA Decarboxylase (Aromatic Amino Acid Decarboxylase)",
+        "cofactors": "PLP (Vit B6); irreversible decarboxylation → Dopamine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Dopamine",
+        "enzyme": "Dopamine-β-Hydroxylase",
+        "cofactors": "Vit C (Ascorbate) + Cu²⁺ + O₂; hydroxylation → Norepinephrine (stored in chromaffin granules)",
+        "reversible": false,
+        "disorder": {
+          "name": "Pheochromocytoma",
+          "disorderId": null,
+          "branch": [
+            "Chromaffin cell tumour (adrenal medulla)",
+            "Excess catecholamine secretion",
+            "Episodic hypertension, palpitations, headache, sweating ('5 Ps')",
+            "↑ Urinary VMA (vanillylmandelic acid) — catecholamine metabolite",
+            "VMA formed by MAO + COMT degradation"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Norepinephrine",
+        "enzyme": "N-Methyl Transferase (PNMT)",
+        "cofactors": "SAM (methyl donor); SAH released; only in adrenal medulla (induced by cortisol from adrenal cortex)",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Epinephrine (Adrenaline) → secreted into blood",
+    "nextPathways": []
+  },
+  {
+    "id": 47,
+    "name": "Serotonin and Melatonin Synthesis",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Tryptophan → Serotonin (5-HT) in brain, platelets, GIT. Serotonin → Melatonin in pineal gland (darkness-induced). PLP essential for decarboxylation. SAM for methylation step. Serotonin catabolised to 5-HIAA.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Tryptophan",
+        "enzyme": "Tryptophan Hydroxylase (TPH)",
+        "cofactors": "BH4 + NADPH + O₂; forms 5-Hydroxy Tryptophan",
+        "reversible": false,
+        "disorder": {
+          "name": "Carcinoid Syndrome / Depression",
+          "disorderId": null,
+          "branch": [
+            "Carcinoid: ↑↑ serotonin synthesis → flushing, diarrhoea, wheezing",
+            "5-HIAA in urine (diagnostic for carcinoid)",
+            "Depression: ↓ serotonin → SSRIs inhibit reuptake → ↑ synaptic 5-HT",
+            "Hartnup: ↓ Trp absorption → ↓ serotonin + ↓ niacin"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "5-Hydroxy Tryptophan",
+        "enzyme": "Aromatic Amino Acid Decarboxylase (AADC)",
+        "cofactors": "PLP; decarboxylation → Serotonin (5-HT)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Serotonin (5-HT) — in Pineal Gland",
+        "enzyme": "Acetylase (Arylalkylamine N-acetyltransferase — AANAT)",
+        "cofactors": "Acetyl-CoA; rhythm driven by darkness/melatonin pathway",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "N-Acetyl Serotonin",
+        "enzyme": "Methyl Transferase (HIOMT)",
+        "cofactors": "SAM; methylation → Melatonin",
+        "reversible": false,
+        "disorder": {
+          "name": "Circadian Rhythm Disorders",
+          "disorderId": null,
+          "branch": [
+            "Melatonin regulates sleep-wake cycle and circadian rhythms",
+            "Pineal gland secretion controlled by light/dark cycles (SCN)",
+            "Exogenous melatonin used for jet lag, insomnia",
+            "Serotonin catabolism: MAO → 5-HIAA → excreted in urine"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Melatonin (pineal) + Serotonin (brain/gut/platelets)",
+    "nextPathways": []
+  },
+  {
+    "id": 48,
+    "name": "Melanin Synthesis",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "Tyrosine → DOPA → DOPAquinone → Melanin in melanosomes of melanocytes. Tyrosinase (Cu²⁺-dependent) catalyses first two steps. Eumelanin (black/brown) vs Pheomelanin (red/yellow) depending on cysteine availability.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Tyrosine",
+        "enzyme": "Tyrosinase",
+        "cofactors": "Cu²⁺ metalloenzyme; O₂; hydroxylation → DOPA",
+        "reversible": false,
+        "disorder": {
+          "name": "Albinism",
+          "disorderId": 105,
+          "branch": [
+            "Tyrosinase absent → no DOPA → no melanin",
+            "Total lack of pigment in skin, hair, iris (oculocutaneous albinism)",
+            "Photophobia, nystagmus, high skin cancer risk",
+            "Autosomal recessive; multiple genetic subtypes",
+            "Menke's disease: Cu²⁺ transport defect → secondary tyrosinase failure"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "DOPA",
+        "enzyme": "Tyrosinase (second oxidation)",
+        "cofactors": "Cu²⁺; oxidation → DOPAquinone",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "DOPAquinone",
+        "enzyme": "Spontaneous polymerisation (Eumelanin pathway)",
+        "cofactors": "→ Leucodopachrome → 5,6-dihydroxyindole → Black/Brown Eumelanin",
+        "reversible": false,
+        "disorder": {
+          "name": "Vitiligo (Leucoderma)",
+          "disorderId": 131,
+          "branch": [
+            "Autoimmune destruction of melanocytes in patches",
+            "Loss of pigment in localised skin areas",
+            "Associated with thyroid disease, T1DM, pernicious anaemia",
+            "MSH (Melanocyte Stimulating Hormone) normally stimulates melanin dispersal"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "DOPAquinone + Cysteine",
+        "enzyme": "Spontaneous (Pheomelanin pathway)",
+        "cofactors": "→ Cysteinyl-DOPA → Red/Yellow Pheomelanin",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "Eumelanin (black/brown) or Pheomelanin (red/yellow) → UV protection",
+    "nextPathways": []
+  },
+  {
+    "id": 49,
+    "name": "Ubiquitin–Proteasome Pathway",
+    "biomolecule": "Amino Acids",
+    "color": "#2980b9",
+    "description": "ATP-dependent degradation of short-lived, misfolded, or abnormal proteins. Ubiquitin tags mark proteins for 26S proteasome digestion. Discovered by Ciechanover, Hershko & Rose (Nobel 2004). PEST sequences target rapid degradation.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Target Protein + Ubiquitin",
+        "enzyme": "E1 (Ubiquitin-Activating Enzyme)",
+        "cofactors": "ATP; forms high-energy thioester bond with ubiquitin",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Ubiquitin-E1 Complex",
+        "enzyme": "E2 (Ubiquitin-Conjugating Enzyme)",
+        "cofactors": "Transfers ubiquitin from E1 to E2",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Ubiquitin-E2 + Target Protein",
+        "enzyme": "E3 (Ubiquitin Ligase) — determines substrate specificity",
+        "cofactors": "Attaches ubiquitin to Lys residue on target; polyubiquitination (4+ chains required)",
+        "reversible": false,
+        "disorder": {
+          "name": "Angelman Syndrome / Von Hippel-Lindau",
+          "disorderId": null,
+          "branch": [
+            "E3 ligase (UBE3A) defect → Angelman syndrome",
+            "Mental retardation, seizures, inappropriate laughter",
+            "VHL E3 ligase defect → HIF-α not degraded → ↑ VEGF → angiomas",
+            "Cachexia in cancer/AIDS: inflammatory cytokines activate ubiquitin pathway → muscle wasting"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Polyubiquitinated Protein",
+        "enzyme": "26S Proteasome (20S core + 19S regulatory caps)",
+        "cofactors": "ATP for unfolding; proteases in 20S barrel digest protein → oligopeptides",
+        "reversible": false,
+        "disorder": {
+          "name": "Parkinson's / Alzheimer's — Proteasome Overload",
+          "disorderId": 101,
+          "branch": [
+            "Misfolded α-synuclein overwhelms proteasome in Parkinson's",
+            "Lewy bodies = failed proteasomal clearance",
+            "Alzheimer's: amyloid-β and tau resist degradation",
+            "Bortezomib: proteasome inhibitor used in multiple myeloma treatment"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Oligopeptides (5–6 AA) → further hydrolysis to free amino acids",
+    "nextPathways": []
+  },
+  {
+    "id": 50,
+    "name": "Heme Biosynthesis (Porphyrin Synthesis)",
+    "biomolecule": "Heme",
+    "color": "#c0392b",
+    "description": "Synthesis of heme from Succinyl-CoA + Glycine. Occurs in bone marrow (80%) and liver (20%). First and last 3 steps in mitochondria; middle steps in cytosol. Rate-limiting enzyme: ALA Synthase (requires PLP). Lead and INH inhibit key steps.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Succinyl-CoA + Glycine (mitochondria)",
+        "enzyme": "ALA Synthase (δ-Aminolevulinate Synthase) — Rate-Limiting",
+        "cofactors": "PLP (Vit B6); Mg²⁺; produces ALA + CO₂; inhibited by heme (feedback) and glucose (high glucose suppresses)",
+        "reversible": false,
+        "disorder": {
+          "name": "Sideroblastic Anaemia (INH-induced)",
+          "disorderId": 128,
+          "branch": [
+            "Isoniazid (INH) is Vit B6 antagonist → PLP unavailable",
+            "ALA synthase impaired → haem synthesis fails",
+            "Iron accumulates in mitochondria → ring sideroblasts on marrow biopsy",
+            "Sideroblastic anaemia; responds to Pyridoxine (B6) supplementation"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "δ-Aminolevulinate (ALA) — cytosol",
+        "enzyme": "ALA Dehydratase (PBG Synthase)",
+        "cofactors": "2 ALA → PBG; Zn²⁺ required; inhibited by Lead",
+        "reversible": false,
+        "disorder": {
+          "name": "Lead Poisoning / Plumbism",
+          "disorderId": 120,
+          "branch": [
+            "Lead binds SH-groups → inhibits ALA dehydratase AND ferrochelatase",
+            "↑ ALA in urine (neurotoxic) → peripheral neuropathy, wrist drop",
+            "Basophilic stippling of RBCs (aggregated RNA)",
+            "Microcytic hypochromic anaemia (like iron deficiency)",
+            "Burton's line (blue lead deposits on gums)",
+            "Treatment: EDTA chelation therapy"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Porphobilinogen (PBG) — cytosol",
+        "enzyme": "PBG Deaminase (HMBS / Uroporphyrinogen-I Synthase)",
+        "cofactors": "4 PBG → linear HMB tetrapyrrole; then UPG-III Cosynthase → UPG-III",
+        "reversible": false,
+        "disorder": {
+          "name": "Acute Intermittent Porphyria (AIP)",
+          "disorderId": 54,
+          "branch": [
+            "PBG deaminase deficient",
+            "↑ ALA and PBG → neurotoxic accumulation",
+            "Acute abdominal pain, neuropathy, psychosis — NO photosensitivity",
+            "Urine turns red/purple on standing (PBG → porphyrins)",
+            "Avoid: barbiturates, alcohol, OCP, sulfonamides → all induce ALA synthase → worsen AIP",
+            "Treatment: haematin infusion + high glucose (suppress ALA synthase)"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Uroporphyrinogen III (UPG-III) — cytosol",
+        "enzyme": "UPG Decarboxylase",
+        "cofactors": "Decarboxylation of 4 acetate side chains → CPG-III",
+        "reversible": false,
+        "disorder": {
+          "name": "Porphyria Cutanea Tarda (PCT)",
+          "disorderId": 55,
+          "branch": [
+            "UPG decarboxylase deficiency (most common porphyria)",
+            "↑ Uroporphyrins → photosensitivity, skin blistering",
+            "Blisters, scarring, hypertrichosis on light-exposed skin",
+            "Associated with alcohol, hepatitis C, iron overload",
+            "Treatment: phlebotomy + low-dose chloroquine"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Coproporphyrinogen III (CPG-III) — enters mitochondria",
+        "enzyme": "CPG Oxidase",
+        "cofactors": "O₂; oxidative decarboxylation → PPG-III",
+        "reversible": false,
+        "disorder": {
+          "name": "Hereditary Coproporphyria (HCP)",
+          "disorderId": 59,
+          "branch": [
+            "CPG oxidase deficient",
+            "Both acute attacks (like AIP) AND photosensitivity",
+            "Coproporphyrins excreted in urine and faeces"
+          ]
+        }
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Protoporphyrinogen III (PPG-III) — mitochondria",
+        "enzyme": "PPG Oxidase",
+        "cofactors": "O₂; 6-electron oxidation → Protoporphyrin IX",
+        "reversible": false,
+        "disorder": {
+          "name": "Variegate Porphyria",
+          "disorderId": 129,
+          "branch": [
+            "PPG oxidase deficient",
+            "Acute attacks + photosensitivity (South African type)",
+            "Characteristic faecal porphyrins"
+          ]
+        }
+      },
+      {
+        "stepNum": 7,
+        "molecule": "Protoporphyrin IX — mitochondria",
+        "enzyme": "Ferrochelatase (Haem Synthase)",
+        "cofactors": "Fe²⁺ (ferrous iron); inhibited by Lead; requires Fe²⁺ not Fe³⁺",
+        "reversible": false,
+        "disorder": {
+          "name": "Erythropoietic Protoporphyria (EPP)",
+          "disorderId": 57,
+          "branch": [
+            "Ferrochelatase deficiency → protoporphyrin accumulates in RBCs",
+            "Severe photosensitivity; RBC fluorescence under UV",
+            "Liver damage from protoporphyrin accumulation",
+            "Treatment: sun avoidance; beta-carotene"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Heme (Fe²⁺-Protoporphyrin IX) → Hb, myoglobin, cytochromes, catalase",
+    "nextPathways": [
+      51
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Heme Catabolism (Heme → Bilirubin)",
+    "biomolecule": "Heme",
+    "color": "#c0392b",
+    "description": "Degradation of heme from senescent RBCs (120-day lifespan) in reticuloendothelial cells of liver, spleen, bone marrow. Only reaction in human body producing CO as byproduct. Generates 250–300 mg bilirubin daily.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Haemoglobin (from aged RBCs)",
+        "enzyme": "RE Cell Phagocytosis",
+        "cofactors": "Globin → amino acids (recycled); heme ring liberated",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Heme",
+        "enzyme": "Haem Oxygenase System (microsomal)",
+        "cofactors": "NADPH + O₂; alpha-methenyl bridge cleaved; CO released (only endogenous CO source); Fe²⁺ released → recycled",
+        "reversible": false,
+        "disorder": {
+          "name": "Haemolytic Jaundice (Pre-hepatic)",
+          "disorderId": null,
+          "branch": [
+            "Excessive RBC destruction → ↑↑ haem degradation",
+            "↑ Unconjugated bilirubin (lipid-soluble, albumin-bound)",
+            "↑ Urobilinogen in stool and urine",
+            "Normal conjugated bilirubin",
+            "Causes: G6PD deficiency, sickle cell, thalassaemia, ABO incompatibility"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Biliverdin (green pigment)",
+        "enzyme": "Biliverdin Reductase",
+        "cofactors": "NADPH; reduction → Bilirubin (yellow-orange pigment)",
+        "reversible": false,
+        "disorder": {
+          "name": "Shunt Bilirubin (15% of total)",
+          "disorderId": null,
+          "branch": [
+            "10–15% bilirubin from bone marrow directly",
+            "Heme/Hb precursors degraded before leaving marrow (ineffective erythropoiesis)",
+            "↑ in porphyrias and megaloblastic anaemia",
+            "Identified by rapid excretion of radiolabelled glycine (within 10 days)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Unconjugated Bilirubin (lipophilic) → bound to albumin → transported to liver",
+    "nextPathways": [
+      52
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Bilirubin Transport, Conjugation and Excretion",
+    "biomolecule": "Heme",
+    "color": "#c0392b",
+    "description": "Unconjugated bilirubin (UCB) transported on albumin to liver → uptaken by hepatocytes → conjugated with glucuronic acid → secreted into bile → bacterial reduction in gut → urobilinogen → excreted in stool/urine.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Unconjugated Bilirubin (in plasma)",
+        "enzyme": "Albumin binding (passive)",
+        "cofactors": "1 albumin carries 2 bilirubin; indirect bilirubin (water-insoluble)",
+        "reversible": false,
+        "disorder": {
+          "name": "Kernicterus / Drug Displacement",
+          "disorderId": null,
+          "branch": [
+            "Free UCB (unbound) crosses blood-brain barrier",
+            "Deposits in basal ganglia → kernicterus (brain damage in neonates)",
+            "Normal: UCB >20 mg/dl saturates albumin → free UCB rises",
+            "Aspirin, sulfonamides, penicillin → displace bilirubin from albumin",
+            "Phototherapy: isomerises UCB to water-soluble isomers for excretion"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Bilirubin (at sinusoidal surface)",
+        "enzyme": "Hepatocyte Uptake (active transport)",
+        "cofactors": "Carrier-mediated; intracellular binding to Ligandin (Y protein) and Z protein",
+        "reversible": false,
+        "disorder": {
+          "name": "Gilbert's Syndrome",
+          "disorderId": 115,
+          "branch": [
+            "Impaired hepatic UCB uptake AND mild conjugation defect",
+            "UCB mildly elevated (<4 mg/dl); benign, common (5% population)",
+            "Jaundice triggered by fasting, stress, illness",
+            "Normal liver enzymes; normal urine bilirubin",
+            "UGT1A1 promoter mutation (TA repeat)"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Bilirubin (in hepatocyte ER)",
+        "enzyme": "UDP-Glucuronosyl Transferase (UGT) / Bilirubin-UDP-Glucuronosyl Transferase",
+        "cofactors": "UDP-Glucuronic acid (from glucuronic acid pathway); forms BMG then BDG (bilirubin diglucuronide = direct bilirubin)",
+        "reversible": false,
+        "disorder": {
+          "name": "Crigler-Najjar Syndrome",
+          "disorderId": 113,
+          "branch": [
+            "Type I: Complete UGT absence → extreme UCB (20–45 mg/dl) → kernicterus → death in infancy",
+            "Type II: Partial UGT → UCB <20 mg/dl; responds to Phenobarbitone (induces UGT)",
+            "Neonatal jaundice: transient low UGT → physiological jaundice (d1–d7)",
+            "Phenobarbitone induces UGT → used to treat Gilbert's and Crigler-Najjar Type II"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Conjugated Bilirubin (BDG)",
+        "enzyme": "MRP-2 (Multidrug Resistance Protein 2 / MOAT)",
+        "cofactors": "Active transport against concentration gradient into bile canaliculi — rate-limiting step of heme catabolism",
+        "reversible": false,
+        "disorder": {
+          "name": "Dubin-Johnson Syndrome / Rotor Syndrome",
+          "disorderId": 116,
+          "branch": [
+            "Dubin-Johnson: MRP-2 mutation → conjugated bilirubin regurgitates into blood",
+            "Black liver (dark pigment accumulation) — pathognomonic",
+            "BSP test: secondary peak at 90 min",
+            "Rotor: OATP 1B1/1B3 mutation → hepatic re-uptake of conjugated BR fails",
+            "Both: conjugated hyperbilirubinaemia, benign prognosis"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "BDG (in intestinal lumen)",
+        "enzyme": "Bacterial β-glucuronidases + Reductases",
+        "cofactors": "Deconjugation → free bilirubin → reduced to Urobilinogen (UBG) and Stercobilinogen (SBG)",
+        "reversible": false,
+        "disorder": {
+          "name": "Obstructive (Post-hepatic) Jaundice",
+          "disorderId": null,
+          "branch": [
+            "Bile duct blocked (gallstone, pancreatic carcinoma)",
+            "BDG cannot reach intestine → no UBG formed",
+            "Clay-coloured stools (no stercobilin)",
+            "Bilirubinuria (direct bilirubin filtered by kidney → dark urine)",
+            "Urine urobilinogen = absent",
+            "Acholic stools + dark urine = obstructive jaundice"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Stercobilin (brown stool colour) + Urobilin (yellow urine colour) — 20% UBG reabsorbed (enterohepatic circulation)",
+    "nextPathways": []
+  },
+  {
+    "id": 53,
+    "name": "De Novo Purine Synthesis",
+    "biomolecule": "Nucleotides",
+    "color": "#d35400",
+    "description": "Synthesis of purine ring directly on ribose-5-phosphate. Costs 6 ATP per nucleotide. Occurs in liver cytoplasm. Purine ring atoms: N1 (Asp), C2 (Formate via THFA), N3 (Gln), C4,C5,N7 (Gly), C6 (CO₂), N9 (Gln), C8 (Formate). IMP is the first purine nucleotide formed.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Ribose-5-Phosphate",
+        "enzyme": "PRPP Synthetase",
+        "cofactors": "ATP → AMP + Pᵢ; forms PRPP (Phosphoribosyl Pyrophosphate)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "PRPP",
+        "enzyme": "Glutamine-PRPP Amidotransferase — Committed Rate-Limiting Step",
+        "cofactors": "Glutamine + H₂O; releases PPᵢ; forms 5-phosphoribosylamine; inhibited by AMP, GMP, IMP (feedback)",
+        "reversible": false,
+        "disorder": {
+          "name": "Primary Gout (PRPP Synthetase Overactivity)",
+          "disorderId": 49,
+          "branch": [
+            "PRPP synthetase overactivity OR loss of feedback inhibition",
+            "↑ PRPP → ↑ de novo purine synthesis → ↑ uric acid",
+            "Hyperuricaemia → monosodium urate crystals in joints",
+            "Podagra: acute arthritis of big toe",
+            "Treatment: Allopurinol (xanthine oxidase suicide inhibitor)"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "5-Phosphoribosylamine",
+        "enzyme": "Sequential Ring-Building Enzymes (Steps 3–10)",
+        "cofactors": "Gly, Formate (N10-formyl-THFA), Gln, CO₂, Asp; multiple ATP consumed",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Inosine Monophosphate (IMP)",
+        "enzyme": "Adenylosuccinate Synthetase (for AMP) / IMP Dehydrogenase (for GMP)",
+        "cofactors": "GTP for AMP branch; NAD⁺ + ATP for GMP branch; cross-regulation (AMP synthesis needs GTP; GMP synthesis needs ATP)",
+        "reversible": false,
+        "disorder": {
+          "name": "ADA Deficiency (SCID)",
+          "disorderId": 51,
+          "branch": [
+            "Adenosine Deaminase absent → Adenosine and dATP accumulate",
+            "dATP powerfully inhibits Ribonucleotide Reductase → no dNTPs → no DNA synthesis",
+            "Lymphocytes cannot proliferate → T and B cell immunodeficiency (SCID)",
+            "Treatment: bone marrow transplant or ADA gene therapy",
+            "Pentostatin inhibits ADA (used in hairy cell leukaemia)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "AMP / GMP → ADP/GDP → ATP/GTP",
+    "nextPathways": [
+      55
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Purine Salvage Pathway",
+    "biomolecule": "Nucleotides",
+    "color": "#d35400",
+    "description": "Recycling of preformed purine bases to nucleotides. Economises energy vs de novo synthesis. Essential in RBCs and brain (minimal de novo capacity). HGPRTase salvages hypoxanthine and guanine; APRTase salvages adenine. PRPP is mandatory ribose donor.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Adenine",
+        "enzyme": "Adenine Phosphoribosyl Transferase (APRTase)",
+        "cofactors": "PRPP → AMP + PPᵢ",
+        "reversible": false,
+        "disorder": {
+          "name": "APRTase Deficiency",
+          "disorderId": null,
+          "branch": [
+            "Adenine not salvaged → oxidised to 2,8-dihydroxyadenine",
+            "Insoluble crystals → kidney stones",
+            "Diagnosed by orange-red crystals in urine",
+            "Treatment: Allopurinol (prevents oxidation of adenine)"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Hypoxanthine",
+        "enzyme": "HGPRTase (Hypoxanthine-Guanine Phosphoribosyl Transferase)",
+        "cofactors": "PRPP → IMP + PPᵢ",
+        "reversible": false,
+        "disorder": {
+          "name": "Lesch-Nyhan Syndrome",
+          "disorderId": 50,
+          "branch": [
+            "HGPRTase absent (X-linked recessive)",
+            "Hypoxanthine and Guanine not salvaged → degraded → ↑↑ Uric acid (9–11 mg/dl)",
+            "PRPP accumulates → drives ↑ de novo purine synthesis",
+            "Hyperuricaemia, gout, renal stones",
+            "Self-mutilation (biting lips, fingers) — pathognomonic",
+            "Mental retardation, choreoathetosis, spasticity",
+            "Treatment: Allopurinol (uric acid) + behavioural management"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Guanine",
+        "enzyme": "HGPRTase",
+        "cofactors": "PRPP → GMP + PPᵢ",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "IMP / AMP / GMP → re-enter nucleotide pool",
+    "nextPathways": []
+  },
+  {
+    "id": 55,
+    "name": "Purine Nucleotide Degradation (Uric Acid Formation)",
+    "biomolecule": "Nucleotides",
+    "color": "#d35400",
+    "description": "Catabolism of AMP and GMP → Uric acid. Humans lack uricase (found in other mammals) → cannot convert uric acid to soluble allantoin. Uric acid has low solubility (6.8 mg/dl at pH 7.4) → precipitates as monosodium urate crystals.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "AMP",
+        "enzyme": "AMP Deaminase",
+        "cofactors": "Releases NH₃; forms IMP",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "IMP + GMP",
+        "enzyme": "5'-Nucleotidase",
+        "cofactors": "Dephosphorylation → Inosine + Guanosine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Inosine + Guanosine",
+        "enzyme": "Purine Nucleoside Phosphorylase (PNP)",
+        "cofactors": "Phosphorolysis → Hypoxanthine + Guanine + Ribose-1-P",
+        "reversible": false,
+        "disorder": {
+          "name": "PNP Deficiency",
+          "disorderId": null,
+          "branch": [
+            "PNP absent → inosine and guanosine accumulate → dGTP accumulates",
+            "Inhibits ribonucleotide reductase → T cell deficiency (primarily)",
+            "Combined immunodeficiency but B cells relatively spared",
+            "Recurrent infections, autoimmune phenomena"
+          ]
+        }
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Guanine",
+        "enzyme": "Guanase (Guanine Deaminase)",
+        "cofactors": "NH₃ released; Guanine → Xanthine",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Hypoxanthine → Xanthine → Uric Acid",
+        "enzyme": "Xanthine Oxidase (two successive oxidations)",
+        "cofactors": "FAD + Mo + Fe²⁺ + O₂; produces H₂O₂ as byproduct",
+        "reversible": false,
+        "disorder": {
+          "name": "Gout / Xanthinuria",
+          "disorderId": 49,
+          "branch": [
+            "Gout: ↑ Uric acid (>7 mg/dl) → MSU crystal deposition in joints",
+            "Podagra (1st MTP joint), tophi, urate nephropathy",
+            "Allopurinol → competitive substrate → mechanism-based inhibition of XO → ↑ Hypoxanthine/Xanthine (more soluble)",
+            "Xanthinuria: XO deficiency → ↓ Uric acid → xanthine stones",
+            "Rasburicase: recombinant uricase (tumour lysis syndrome treatment)"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "Uric Acid → excreted in urine (350–600 mg/day)",
+    "nextPathways": []
+  },
+  {
+    "id": 56,
+    "name": "De Novo Pyrimidine Synthesis",
+    "biomolecule": "Nucleotides",
+    "color": "#d35400",
+    "description": "Pyrimidine ring synthesised FIRST, then attached to PRPP (opposite to purine synthesis). First 3 enzymes form CAD trifunctional complex. Step 4 in mitochondria (unique). Rate-limiting: CPS-II (cytoplasmic; uses glutamine). CPS-I (mitochondrial) is for Urea Cycle.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Glutamine + HCO₃⁻ + 2 ATP",
+        "enzyme": "CPS-II (Carbamoyl Phosphate Synthetase II) — cytoplasmic",
+        "cofactors": "2 ATP; glutamine (not free NH₃); inhibited by UTP; activated by PRPP",
+        "reversible": false,
+        "disorder": {
+          "name": "Secondary Orotic Aciduria (OTC Deficiency)",
+          "disorderId": 41,
+          "branch": [
+            "OTC deficiency → excess Carbamoyl-P leaks from mitochondria to cytosol",
+            "Enters pyrimidine pathway → floods CPS-II step",
+            "↑↑ Orotic acid synthesised → excreted in urine",
+            "Key distinguishing feature of OTC deficiency from CPS-I deficiency",
+            "No orotic aciduria in CPS-I deficiency"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Carbamoyl Phosphate + Aspartate",
+        "enzyme": "Aspartate Transcarbamoylase (ATC)",
+        "cofactors": "Condensation; inhibited by CTP (feedback)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Carbamoyl Aspartate",
+        "enzyme": "Dihydroorotase (DHOase)",
+        "cofactors": "Ring closure; forms Dihydroorotic acid",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "Dihydroorotic Acid → Orotic Acid (mitochondria)",
+        "enzyme": "Dihydroorotate Dehydrogenase (DHODH)",
+        "cofactors": "NAD⁺ → NADH; only mitochondrial step; inhibited by Leflunomide",
+        "reversible": false,
+        "disorder": {
+          "name": "Leflunomide (DHODH Inhibitor)",
+          "disorderId": null,
+          "branch": [
+            "Leflunomide inhibits DHODH → ↓ UMP synthesis → ↓ lymphocyte proliferation",
+            "Used as immunosuppressant in rheumatoid arthritis",
+            "Teriflunomide (active metabolite) used in multiple sclerosis"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Orotic Acid + PRPP",
+        "enzyme": "OPRTase (Orotate Phosphoribosyl Transferase)",
+        "cofactors": "PRPP → OMP + PPᵢ",
+        "reversible": false,
+        "disorder": {
+          "name": "Hereditary Orotic Aciduria",
+          "disorderId": 53,
+          "branch": [
+            "OPRTase and/or OMP decarboxylase deficient",
+            "Cannot convert orotic acid to UMP",
+            "Orotic acid crystals in urine",
+            "Megaloblastic anaemia (unresponsive to B12/folate)",
+            "Retarded growth",
+            "Treatment: Uridine supplementation (bypasses block + restores UTP feedback)"
+          ]
+        }
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Orotidylic Acid (OMP)",
+        "enzyme": "OMP Decarboxylase (OMPDC)",
+        "cofactors": "CO₂ released; forms UMP — first pyrimidine nucleotide",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 7,
+        "molecule": "UMP → UDP → UTP",
+        "enzyme": "UMP Kinase + Nucleoside Diphosphate Kinase",
+        "cofactors": "2 ATP consumed",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 8,
+        "molecule": "UTP",
+        "enzyme": "CTP Synthetase",
+        "cofactors": "Glutamine + ATP; amination → CTP",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "UMP / CTP → dUMP → dTMP (via Thymidylate Synthase)",
+    "nextPathways": [
+      58
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Pyrimidine Degradation",
+    "biomolecule": "Nucleotides",
+    "color": "#d35400",
+    "description": "Pyrimidines degraded to highly water-soluble products (β-alanine and β-amino isobutyrate) — unlike purines (insoluble uric acid). No clinical stone formation. β-alanine used for carnosine and CoA synthesis.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Cytosine",
+        "enzyme": "Cytosine Deaminase",
+        "cofactors": "NH₃ released; → Uracil",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 2,
+        "molecule": "Uracil / Thymine",
+        "enzyme": "Dihydropyrimidine Dehydrogenase (DPD)",
+        "cofactors": "NADPH; reduction → Dihydrouracil / Dihydrothymine",
+        "reversible": false,
+        "disorder": {
+          "name": "DPD Deficiency — 5-FU Toxicity",
+          "disorderId": null,
+          "branch": [
+            "DPD normally inactivates 5-Fluorouracil (5-FU)",
+            "DPD deficiency → 5-FU not degraded → severe drug toxicity",
+            "Mucositis, myelosuppression, neurotoxicity after standard 5-FU dose",
+            "DPYD gene testing recommended before 5-FU chemotherapy"
+          ]
+        }
+      },
+      {
+        "stepNum": 3,
+        "molecule": "Dihydrouracil",
+        "enzyme": "Dihydropyrimidinase",
+        "cofactors": "Ring opening → β-Ureidopropionate",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "β-Ureidopropionate",
+        "enzyme": "β-Ureidopropionase",
+        "cofactors": "Cleavage → β-Alanine + CO₂ + NH₃",
+        "reversible": false,
+        "disorder": {
+          "name": "Pseudouridinuria",
+          "disorderId": null,
+          "branch": [
+            "Pseudouridine (from tRNA) cannot be degraded",
+            "Excreted unchanged in urine",
+            "No clinical consequences — detected on urine metabolomics"
+          ]
+        }
+      },
+      {
+        "stepNum": 5,
+        "molecule": "Thymine → β-Amino Isobutyrate (parallel pathway)",
+        "enzyme": "Same enzyme cascade as Uracil",
+        "cofactors": "NADPH; products: β-Aminoisobutyrate + CO₂ + NH₃",
+        "reversible": false,
+        "disorder": null
+      }
+    ],
+    "finalMolecule": "β-Alanine (→ Carnosine / CoA) + β-Amino Isobutyrate (→ excreted in urine)",
+    "nextPathways": []
+  },
+  {
+    "id": 58,
+    "name": "Deoxyribonucleotide Synthesis (Ribonucleotide Reductase)",
+    "biomolecule": "Nucleotides",
+    "color": "#d35400",
+    "description": "Reduction of ribonucleoside diphosphates (NDPs) → deoxyribonucleoside diphosphates (dNDPs) for DNA synthesis. Rate-limiting step for DNA replication. Requires NADPH via Thioredoxin system. Balances dNTP pools.",
+    "steps": [
+      {
+        "stepNum": 1,
+        "molecule": "Ribonucleoside Diphosphates (ADP, GDP, CDP, UDP)",
+        "enzyme": "Ribonucleotide Reductase (RNR)",
+        "cofactors": "NADPH → Thioredoxin (reduced) → RNR; non-heme Fe; reduces 2'-OH to 2'-H",
+        "reversible": false,
+        "disorder": {
+          "name": "ADA Deficiency (SCID)",
+          "disorderId": 51,
+          "branch": [
+            "ADA deficiency → ↑ dATP (from deoxyadenosine)",
+            "dATP is potent general inhibitor of RNR",
+            "All dNTP pools depleted → DNA replication blocked",
+            "Lymphocytes cannot proliferate (rapidly dividing cells most affected)",
+            "SCID: absent T and B cells → fatal infections in infancy without treatment"
+          ]
+        }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "dADP, dGDP, dCDP, dUDP",
+        "enzyme": "Nucleoside Diphosphate Kinase (NDPK)",
+        "cofactors": "ATP → phosphorylation → dNTPs (dATP, dGTP, dCTP, dUTP)",
+        "reversible": true,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "dUTP",
+        "enzyme": "dUTPase",
+        "cofactors": "Rapidly converts dUTP → dUMP + PPᵢ (prevents dU incorporation into DNA)",
+        "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 4,
+        "molecule": "dUMP",
+        "enzyme": "Thymidylate Synthase",
+        "cofactors": "N5,N10-Methylene-THFA → methyl donor; DHF produced (must be regenerated by DHFR)",
+        "reversible": false,
+        "disorder": {
+          "name": "Methotrexate / 5-FU — Cancer Targets",
+          "disorderId": null,
+          "branch": [
+            "Methotrexate: DHF reductase inhibitor → THFA not regenerated → thymidylate synthase starved",
+            "5-FU → FdUMP: suicide inhibitor of thymidylate synthase",
+            "Both drugs → ↓ dTMP → DNA synthesis failure",
+            "Cancer cells (rapidly dividing) most susceptible",
+            "Leucovorin (folinic acid) used as rescue to replenish THFA"
+          ]
+        }
+      }
+    ],
+    "finalMolecule": "dTMP / dATP / dGTP / dCTP → DNA synthesis",
+    "nextPathways": []
+  }
+]

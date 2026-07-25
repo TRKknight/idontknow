@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "name": "Vitamin A",
+    "alias": "Retinol",
+    "type": "fat-soluble",
+    "coenzyme": "11-cis-Retinal (visual pigment), Retinoic acid (gene expression via RAR/RXR nuclear receptors)",
+    "chemicalNature": "All compounds with vitamin A activity are known as retinoids, which include retinol (alcohol), retinal (aldehyde), and retinoic acid (acid).",
+    "functions": [
+      "Gene Expression: Retinoic acid acts like a steroid hormone, binding to nuclear receptors (RAR and RXR) to regulate gene transcription and tissue differentiation.",
+      "Reproduction: Retinol is necessary for normal reproduction; deficiency can lead to miscarriages in females or sterility in males.",
+      "Anti-oxidant: Carotenoids (like beta-carotene) serve as anti-oxidants, potentially reducing the risk of cancers and heart attacks.",
+      "Epithelial Maintenance: Vitamin A is essential for the healthy maintenance of skin and mucous membranes by regulating keratin synthesis."
+    ],
+    "absorption": "Absorption occurs in the small intestine (duodenum and jejunum). Beta-carotene from plants is cleaved into retinal and then reduced to retinol. In the intestinal mucosal cell, retinol is esterified, incorporated into chylomicrons, and transported to the liver. Stored primarily in liver stellate cells as retinol palmitate. Transported in blood bound to Retinol Binding Protein (RBP).",
+    "enzymes": ["Retinal isomerase", "Alcohol Dehydrogenase (ADH)", "Lecithin retinol acyltransferase (LRAT)"],
+    "pathwayIds": [],
+    "rda": "Adults: 750–1000 µg/day. Children: 400–600 µg/day. Pregnancy/Lactation: 1000–1200 µg/day.",
+    "sources": "Animal Sources: Liver, fish liver oils (cod, shark), egg yolk, butter, and milk. Plant Sources: Beta-carotene is abundant in carrots, papaya, mango, pumpkin, and green leafy vegetables (spinach, amaranth).",
+    "inhibitors": "Citral: A component of orange peel that acts as an anti-vitamin, inhibiting Vitamin A activity. Alcohol: Ethanol competes for the enzyme Alcohol Dehydrogenase, which can impair Vitamin A metabolism.",
+    "deficiency": {
+      "name": "Xerophthalmia / Night Blindness",
+      "findings": ["Night blindness (nyctalopia)", "Bitot spots", "Xerosis conjunctivae", "Keratomalacia", "Follicular hyperkeratosis (Phrynoderma)"],
+      "clinical": "Night blindness is earliest sign. Xerophthalmia: dryness and keratinization of conjunctiva and cornea. Bitot's spots: greyish-white triangular plaques on sclera. Keratomalacia: progressive corneal softening leading to total blindness. Follicular hyperkeratosis: rough dry skin. Increased susceptibility to respiratory and GI infections."
+    },
+    "toxicity": "Acute: massive doses cause severe headache, vomiting, drowsiness, bulging fontanelles in infants. Chronic (Hypervitaminosis A): anorexia, hyperostosis (painful bone swelling), hepatomegaly, pruritus, hair loss, teratogenic.",
+    "mnemonic": "A = Anti-oxidant, Aldehyde (retinal), Acid (retinoic), Alcohol (retinol). Zinc is cofactor for ADH in retinol metabolism.",
+    "relatedDisorderIds": [67],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "Photoisomerization", "description": "When light strikes the retina, Rhodopsin (11-cis-retinal + opsin) undergoes a conformational change through intermediates (Bathorhodopsin, Lumirhodopsin, etc.) to form all-trans-retinal and free opsin.", "location": "Photoreceptor cells (rods and cones) and retinal pigment epithelium (RPE)", "enzyme": null },
+      { "step": 2, "title": "Nerve Impulse", "description": "This isomerization activates the G-protein transducin, which leads to a decrease in cyclic GMP and triggers a nerve impulse.", "location": "Retina", "enzyme": null },
+      { "step": 3, "title": "Regeneration (in the dark)", "description": "All-trans-retinal is isomerized back to 11-cis-retinal by retinal isomerase in the RPE. Alternatively, all-trans-retinal is transported to the liver, reduced to all-trans-retinol by Alcohol Dehydrogenase (ADH), isomerized to 11-cis-retinol, and then oxidized to 11-cis-retinal to return to the retina.", "location": "Retinal pigment epithelium (RPE) or Liver", "enzyme": "retinal isomerase; Alcohol Dehydrogenase (ADH)" },
+      { "step": 4, "title": "Recombination", "description": "11-cis-retinal recombines with opsin to regenerate Rhodopsin.", "location": null, "enzyme": null }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Vitamin D",
+    "alias": "Calciferol",
+    "type": "fat-soluble",
+    "coenzyme": "Calcitriol (1,25-Dihydroxycholecalciferol) — steroid hormone acting via nuclear receptors",
+    "chemicalNature": "Vitamin D exists in several forms, which are all steroid derivatives: Cholecalciferol (Vitamin D3), the naturally occurring form in animal tissues and synthesized in human skin; Ergocalciferol (Vitamin D2), the form derived from ergot; 7-Dehydrocholesterol, the precursor (provitamin) in the epidermis; and Calcitriol (1,25-dihydroxy cholecalciferol), the physiologically active hormonal form.",
+    "functions": [
+      "Intestinal Calcium Absorption: Induces synthesis of Calbindin (calcium-binding protein) in intestinal villi cells, facilitating active transport of calcium into the blood.",
+      "Bone Mineralization: Stimulates osteoblasts to secrete alkaline phosphatase, increasing local phosphate concentrations and promoting hydroxy apatite crystal deposition into bone matrix.",
+      "Renal Conservation: Increases reabsorption of both calcium and phosphorus in the renal tubules.",
+      "Cellular Differentiation: Coordinates the remodeling action of osteoclasts and osteoblasts."
+    ],
+    "absorption": "Dietary Vitamin D is absorbed in the small intestine alongside other lipids; requires bile salts for micellar formation. Transported in blood bound to Vitamin D Binding Protein (VDBP), an alpha-2 globulin. Stored primarily in the liver (as 25-HCC) and in adipose tissue.",
+    "enzymes": ["25-Hydroxylase (liver)", "1α-Hydroxylase (kidney)", "24-Hydroxylase"],
+    "pathwayIds": [],
+    "rda": "Adults: 5–10 µg (200–400 IU) per day. Children: 10 µg (400 IU) per day. Pregnancy and Lactation: 10–1200 µg per day depending on guidelines. Elderly (>60 years): 600 IU per day.",
+    "sources": "Best Sources: Fish liver oils (cod, shark) are extremely rich. Good Sources: Egg yolk, whole milk, and fatty fish. Environmental Source: Regular exposure to sunlight remains the most important natural source.",
+    "inhibitors": "Dietary: High phytate content in cereals can reduce absorption. Drug Interactions: Anticonvulsant therapy (phenytoin) interferes with metabolism. Diseases: Obstructive jaundice and steatorrhea impair absorption; renal or hepatic diseases block activation steps.",
+    "deficiency": {
+      "name": "Rickets / Osteomalacia",
+      "findings": ["↓ Ca²⁺", "↓ Phosphate", "↑ ALP", "↓ 25-OH D", "Looser's zones (pseudofractures)"],
+      "clinical": "Rickets (children): bow legs (genu varum) or knock-knees, rickety rosary (beading of ribs), frontal bossing, delayed closure of cranial sutures. Osteomalacia (adults): softened pliable bones, increased fracture risk, proximal myopathy. Hallmark radiological sign: Looser's zones."
+    },
+    "toxicity": "Hypervitaminosis D (>1500–2000 IU/day): hypercalcemia, metastatic calcification in kidneys and blood vessels, anorexia, polyuria, intense thirst, headache, vomiting. Excessive sun exposure does NOT cause toxicity.",
+    "mnemonic": "D = 7-DHC → cholecalciferol → 25-OH (liver) → 1,25-(OH)₂ (kidney, regulated by PTH). Sunshine vitamin.",
+    "relatedDisorderIds": [68, 69],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "Endogenous Synthesis in Skin", "description": "When skin is exposed to UV light (290–315 nm), the B-ring of 7-dehydrocholesterol opens to form secosterol, which undergoes spontaneous isomerization to become Vitamin D3 (cholecalciferol).", "location": "Skin (Malpighian layer of epidermis)", "enzyme": null },
+      { "step": 2, "title": "Hydroxylation in Liver", "description": "Cholecalciferol is hydroxylated at the 25th position to form 25-hydroxy cholecalciferol (25-HCC), the major storage form.", "location": "Liver", "enzyme": "25-hydroxylase" },
+      { "step": 3, "title": "Hydroxylation in Kidney", "description": "25-HCC is hydroxylated at the 1st position to produce 1,25-dihydroxy cholecalciferol (Calcitriol), the active hormonal form. Regulated by Parathyroid Hormone (PTH) and low serum calcium or phosphate.", "location": "Kidney", "enzyme": "1-alpha hydroxylase" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Vitamin E",
+    "alias": "Tocopherol",
+    "type": "fat-soluble",
+    "coenzyme": "Lipid-soluble chain-breaking antioxidant (α-tocopherol is most biologically active form)",
+    "chemicalNature": "Vitamin E consists of a chromane ring (tocol) system attached to an isoprenoid side chain. There are eight naturally occurring tocopherols. Alpha-tocopherol (5,7,8-trimethyl tocol) possesses the greatest biological activity.",
+    "functions": [
+      "Membrane Protection: Protects structural and functional integrity of all cell membranes by quenching lipid peroxidation.",
+      "RBC Integrity: Protects red blood cells from hemolysis caused by free radical attack.",
+      "Prevention of Atherosclerosis: Reduces cardiovascular disease risk by preventing oxidation of Low-Density Lipoprotein (LDL).",
+      "Anti-Aging: Minimizes cumulative free radical damage, slowing the aging process.",
+      "Immune System Support: Boosts the body's immune response.",
+      "Mitochondrial Function: Forms integral part of mitochondrial membranes, maintaining efficiency of biological oxidation."
+    ],
+    "absorption": "Absorbed in the small intestine, requiring bile salts for micellar formation. Incorporated into chylomicrons for transport through the lymphatic system into the bloodstream. Stored primarily in adipose tissue. Normal serum concentration: 0.5 to 1.8 mg/dl.",
+    "enzymes": ["Tocopherol transfer protein (α-TTP)"],
+    "pathwayIds": [],
+    "rda": "Adult Males: 10 mg/day. Adult Females: 8 mg/day. Pregnancy: 10–11 mg/day. Lactation: 12 mg/day. Old Age: 10 mg/day. Note: 15 mg ≈ 33 IU.",
+    "sources": "Richest Sources: Vegetable oils (wheat germ oil, sunflower oil, safflower oil, cotton seed oil). Other Good Sources: Whole cereals, nuts, and green leafy vegetables. Animal Sources: Small amounts in meat and milk. Notable Absence: Fish liver oils are devoid of Vitamin E.",
+    "inhibitors": "Selenium Synergy: Synergistic relationship with Selenium (component of glutathione peroxidase). PUFA Interaction: Dietary requirement is proportional to intake of Polyunsaturated Fatty Acids (PUFA).",
+    "deficiency": {
+      "name": "Vitamin E Deficiency",
+      "findings": ["↑ RBC fragility / hemolysis", "↓ Plasma α-tocopherol", "Acanthocytosis (spiny RBCs)", "Creatinuria", "Muscular weakness"],
+      "clinical": "Rare in humans. In adults: increased RBC fragility, muscular weakness, creatinuria. In malabsorption: peripheral neuropathy, ataxia, acanthocytosis. Associated with Phrynoderma (toad skin — hyperkeratosis). In animals: sterility, muscular dystrophy."
+    },
+    "toxicity": "Doses exceeding 1000 IU/day may act as mild anticoagulant, increasing hemorrhagic tendency. Interferes with vitamin K metabolism.",
+    "mnemonic": "E = Essential for Erythrocyte integrity, anti-oxidant. Synergy with Selenium (glutathione peroxidase). Requirement proportional to PUFA intake.",
+    "relatedDisorderIds": [70],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "Quenching Reaction", "description": "Vitamin E intercepts highly reactive peroxyl free radicals (ROO•) generated during lipid peroxidation.", "location": "Lipid phase of cell membranes", "enzyme": null },
+      { "step": 2, "title": "Molecular Action", "description": "The phenolic hydrogen of alpha-tocopherol (T-OH) reacts with the peroxyl radical to form a hydroperoxide (ROOH) and a tocoperoxyl radical (TO•).", "location": "Lipid phase of cell membranes", "enzyme": null },
+      { "step": 3, "title": "Termination", "description": "The resulting tocoperoxyl radical is relatively stable and does not continue the oxidative chain reaction. It may further react with another peroxyl radical to form inactive, stable products.", "location": "Lipid phase of cell membranes", "enzyme": null },
+      { "step": 4, "title": "Replenishment", "description": "Only traces of tocopherol are needed to protect large amounts of fat; however, the vitamin is consumed and must be replenished by daily dietary intake.", "location": null, "enzyme": null }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Vitamin K",
+    "alias": "Phylloquinone / Menaquinone",
+    "type": "fat-soluble",
+    "coenzyme": "Cofactor for γ-glutamyl carboxylase (post-translational carboxylation of Gla residues)",
+    "chemicalNature": "Vitamin K compounds are naphthoquinone derivatives with varying isoprenoid side chains. Three primary forms: Vitamin K1 (Phylloquinone/Phytomenadione) from green plants; Vitamin K2 (Menaquinone) synthesized by gut bacterial flora; Vitamin K3 (Menadione), a synthetic water-soluble form.",
+    "functions": [
+      "Blood Coagulation: Mandatory for post-translational modification of clotting Factors II (prothrombin), VII, IX, and X, and proteins C, S, and Z. Gamma-carboxylation allows calcium binding for activation on platelet surfaces.",
+      "Bone Metabolism: Required for carboxylation of osteocalcin, a protein synthesized by osteoblasts that binds to hydroxyapatite crystals in bone matrix.",
+      "Other Roles: Involved in vascular biology protein modification and serves as a redox reagent in oxidative phosphorylation."
+    ],
+    "absorption": "Absorbed in the small intestine alongside lipids via chylomicrons; requires bile salts. Transported in plasma bound to beta-lipoproteins. Stored in the liver. Stores are relatively limited compared to other fat-soluble vitamins.",
+    "enzymes": ["γ-Glutamyl carboxylase", "Vitamin K epoxide reductase (VKOR / quinone reductase)", "Vitamin K reductase"],
+    "pathwayIds": [29],
+    "rda": "Adults: Approximately 55 µg/day (latest ICMR guidelines) or generally 50–100 µg/day. Infants/Children: Roughly 1 µg/kg body weight. Prophylaxis: 0.5 to 1.0 mg injected into all newborns at birth to prevent HDN.",
+    "sources": "Richest Sources: Green leafy vegetables such as spinach, cauliflower, and cabbage. Other Sources: Soya bean oil, wheat germ, kiwi, and banana. Endogenous Source: Bacterial synthesis in the colon.",
+    "inhibitors": "Warfarin and Dicoumarol: Competitive inhibitors of quinone reductase (epoxide reductase), blocking regeneration of active Vitamin K hydroquinone. Antibiotics: Prolonged use destroys gut bacterial flora. Anticonvulsants (phenytoin, barbiturates) and antituberculosis drugs (isoniazid, rifampicin) can increase deficiency risk in newborns.",
+    "deficiency": {
+      "name": "Vitamin K Deficiency / Hemorrhagic Disease of Newborn",
+      "findings": ["↑ PT (prolonged)", "↑ aPTT (mild)", "↓ Factors II, VII, IX, X", "PIVKA", "Prolonged clotting time"],
+      "clinical": "HDN in newborns: cephalic hematoma, intracranial/intra-abdominal hemorrhages. Adults: bruising, petechiae, ecchymoses, mucosal bleeds. Risk factors: fat malabsorption, antibiotics (destroy gut flora), warfarin therapy, obstructive jaundice."
+    },
+    "toxicity": "Rare with K1/K2. Synthetic menadione (K3) can cause hemolysis, hyperbilirubinemia, and kernicterus in newborns.",
+    "mnemonic": "K = Koagulation (German) — Factors II, VII, IX, X + Proteins C, S, Z need γ-carboxylation via K cycle.",
+    "relatedDisorderIds": [71],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "Carboxylation", "description": "The enzyme gamma-glutamyl carboxylase utilizes reduced Vitamin K (hydroquinone), CO₂, and O₂ to carboxylate glutamate residues on specific proteins, forming gamma-carboxyglutamic acid (GCG).", "location": "Microsomes", "enzyme": "gamma-glutamyl carboxylase" },
+      { "step": 2, "title": "Epoxidation", "description": "During the carboxylation reaction, Vitamin K hydroquinone is oxidized into Vitamin K epoxide.", "location": "Microsomes", "enzyme": null },
+      { "step": 3, "title": "Regeneration (Vitamin K Cycle)", "description": "The epoxide is reduced back to the quinone form by epoxide reductase, then further reduced to the active hydroquinone form by quinone reductase (Vitamin K reductase).", "location": "Microsomes", "enzyme": "epoxide reductase; quinone reductase (Vitamin K reductase)" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Thiamine",
+    "alias": "B1",
+    "type": "water-soluble",
+    "coenzyme": "TPP (Thiamine Pyrophosphate / Thiamine Diphosphate)",
+    "chemicalNature": "Thiamine consists of a substituted pyrimidine ring connected to a substituted thiazole ring by a methylene bridge. The biologically active form is Thiamine Pyrophosphate (TPP), also known as thiamine diphosphate, formed via the enzyme thiamine pyrophosphotransferase requiring ATP.",
+    "functions": [
+      "Energy Production: By facilitating the entry of pyruvate into the TCA cycle, thiamine plays an indispensable role in the generation of ATP from glucose.",
+      "Nucleotide Synthesis: Through the transketolase reaction in the HMP shunt, it helps produce ribose-5-phosphate, a precursor for DNA and RNA.",
+      "Neurotransmission: Thiamine is involved in the synthesis of neurotransmitters and the maintenance of nerve membrane integrity."
+    ],
+    "absorption": "Thiamine is readily absorbed in the small intestine. Transported through the bloodstream to various tissues, where it is phosphorylated into active TPP form. As a water-soluble vitamin, it is not stored in significant quantities; excess is excreted in urine. Regular dietary supply is necessary.",
+    "enzymes": ["Pyruvate Dehydrogenase (PDH) complex", "α-Ketoglutarate Dehydrogenase complex", "Transketolase", "Branched-Chain α-Ketoacid Dehydrogenase (BCKDH)"],
+    "pathwayIds": [5, 6, 7, 43],
+    "rda": "Adults: 1.0 to 1.5 mg/day (approximately 0.5 mg per 1000 kcal). Pregnancy and Lactation: Approximately 1.5 mg/day.",
+    "sources": "Rich Sources: Aleurone layer of cereals, unpolished rice, whole wheat flour, yeast, and oilseeds. Good Sources: Pulses (legumes), green leafy vegetables, liver, eggs, meat, and fish. Note: Partially destroyed by heat during cooking.",
+    "inhibitors": "Alcohol: Ethanol inhibits intestinal absorption and interferes with conversion to active TPP form, and increases metabolic demand. Polished Rice: The polishing process removes the aleurone layer containing thiamine, making polished rice a functional antagonist.",
+    "deficiency": {
+      "name": "Beriberi / Wernicke-Korsakoff Syndrome",
+      "findings": ["↑ Pyruvate", "↑ Lactate (lactic acidosis)", "↓ RBC Transketolase activity", "↑ TPP effect"],
+      "clinical": "Wet Beriberi: high-output cardiac failure, edema, cardiomegaly. Dry Beriberi: peripheral neuropathy, muscular wasting, foot drop. Infantile Beriberi: sleeplessness, restlessness in infants of thiamine-deficient mothers. Wernicke Encephalopathy (GOA triad): Global confusion, Ophthalmoplegia, Ataxia. Korsakoff Psychosis: amnestic gaps, confabulation, loss of recent memory."
+    },
+    "toxicity": "Rare — excess excreted in urine. No known toxicity from oral intake.",
+    "mnemonic": "B1 = BeriBeri = needs TPP for 4 key decarboxylations (PDH, α-KGDH, Transketolase, BCKDH). Anti-beriberi factor.",
+    "relatedDisorderIds": [72],
+    "important": true,
+    "cycles": []
+  },
+  {
+    "id": 6,
+    "name": "Riboflavin",
+    "alias": "B2",
+    "type": "water-soluble",
+    "coenzyme": "FAD (Flavin Adenine Dinucleotide), FMN (Flavin Mononucleotide)",
+    "chemicalNature": "Riboflavin is composed of a dimethyl isoalloxazine ring linked to ribitol. It exists in three primary forms: Riboflavin (free vitamin form), Flavin Mononucleotide (FMN, active co-enzyme), and Flavin Adenine Dinucleotide (FAD, major active co-enzyme).",
+    "functions": [
+      "TCA Cycle: FAD is a required co-enzyme for Succinate dehydrogenase (converting succinate to fumarate) and the alpha-ketoglutarate dehydrogenase complex.",
+      "Energy Production: Integral part of the Pyruvate dehydrogenase (PDH) complex linking glycolysis to the Citric Acid Cycle.",
+      "Lipid Metabolism: FAD is essential for Acyl-CoA dehydrogenase, the first enzyme in beta-oxidation of fatty acids.",
+      "Electron Transport Chain: FMN is a component of NADH dehydrogenase (Complex I); FADH₂ enters at Complex II, yielding 1.5 ATP per molecule.",
+      "Other Reactions: Involved in purine degradation via Xanthine oxidase and oxidation of amino acids via L-amino acid oxidase."
+    ],
+    "absorption": "Synthesized by intestinal bacterial flora, though dietary intake is primary. Absorption is simple without specific carrier proteins. As a water-soluble vitamin, has no significant storage; excess is rapidly excreted in urine (giving yellow tint). Regular dietary supply is mandatory.",
+    "enzymes": ["Succinate Dehydrogenase (Complex II)", "Acyl-CoA Dehydrogenase", "NADH Dehydrogenase (Complex I)", "Xanthine Oxidase", "Monoamine Oxidase", "Glutathione Reductase", "α-Ketoglutarate Dehydrogenase complex"],
+    "pathwayIds": [6, 15, 27],
+    "rda": "Adults: Approximately 1.5 mg/day. Pregnancy and Lactation: 1.7–2.0 mg/day. Elderly: Additional 0.2 to 0.4 mg/day.",
+    "sources": "Rich Sources: Liver, dried yeast, eggs, and whole milk. Good Sources: Fish, whole cereals, legumes (pulses), and green leafy vegetables (e.g., spinach). Ubiquitously synthesized by green plants and microorganisms.",
+    "inhibitors": "Alcoholism: Chronic alcohol intake impairs absorption and utilization. Antibiotics: Prolonged use can destroy intestinal flora that synthesizes riboflavin. Dietary Factors: Diets reliant on refined carbohydrates lacking dairy or animal proteins are risk factors.",
+    "deficiency": {
+      "name": "Ariboflavinosis",
+      "findings": ["↓ RBC Glutathione Reductase activity", "Magenta tongue (glossitis)", "Angular stomatitis (cheilosis)", "Circumcorneal vascularization"],
+      "clinical": "Glossitis: magenta-colored swollen painful tongue. Cheilosis: dry scaly lips with ulcerations at corners of mouth (angular stomatitis). Ocular: circumcorneal vascularization (hallmark), photophobia, blurred vision. Dermatitis: dry scaly skin lesions. Risk: alcoholism, antibiotics, refined carbohydrate diet."
+    },
+    "toxicity": "Rare — excess excreted in urine (bright yellow discoloration). No well-documented toxic manifestations.",
+    "mnemonic": "B2 = 2 Flavins (FAD, FMN). First identified as 'yellow enzyme'. Succinate DH and Acyl-CoA DH need FAD.",
+    "relatedDisorderIds": [73],
+    "important": true,
+    "cycles": []
+  },
+  {
+    "id": 7,
+    "name": "Niacin",
+    "alias": "B3",
+    "type": "water-soluble",
+    "coenzyme": "NAD⁺, NADP⁺ (Nicotinamide adenine dinucleotide / NADP)",
+    "chemicalNature": "Chemical Name: Pyridine-3-carboxylic acid. Forms: Niacin (Nicotinic acid) — the free acid form; Niacinamide (Nicotinamide) — the acid amide form, the active version in tissues; Co-enzyme forms: NAD⁺ and NADP⁺.",
+    "functions": [
+      "NAD⁺ Dependent Reactions: Primarily involved in catabolic pathways for energy generation. Mandatory co-enzyme for Glycolysis (lactate dehydrogenase, GAPDH), TCA Cycle (pyruvate dehydrogenase, alpha-ketoglutarate dehydrogenase), and Lipid Metabolism (beta-hydroxy acyl CoA dehydrogenase).",
+      "NADP⁺ Dependent Reactions: Primarily involved in reductive biosynthesis and protection against oxidative stress: Fatty acid and cholesterol synthesis, and HMP Shunt regenerating reduced glutathione to protect RBCs.",
+      "Non-redox Roles: NAD⁺ serves as a substrate for ADP-ribosylation, important for DNA repair and signaling."
+    ],
+    "absorption": "Readily absorbed from the gastrointestinal tract. Distributed to various tissues where it is converted into NAD⁺ and NADP⁺. No significant storage; excess excreted in urine. Regular dietary supply is mandatory.",
+    "enzymes": ["GAPDH", "Lactate Dehydrogenase", "Pyruvate Dehydrogenase", "β-Hydroxyacyl-CoA Dehydrogenase", "Glutamate Dehydrogenase", "HMG-CoA Reductase"],
+    "pathwayIds": [1, 5, 6, 15, 19, 20, 22, 44],
+    "rda": "Adults: 20 mg/day. Pregnancy/Lactation: 22–25 mg/day.",
+    "sources": "Rich Sources: Dried yeast, liver, whole cereals, and rice polishings. Good Sources: Meat, fish, legumes, peanuts, and eggs. Note: Milk and eggs are rich in tryptophan, making them excellent pellagra-preventing foods despite low pre-formed niacin.",
+    "inhibitors": "Dietary: Maize (corn) — low tryptophan with niacin in bound unabsorbable form (Niacytin); Jowar (sorghum) — high leucine inhibits QPRT causing Leucine Pellagra. Drug-Nutrient: Isoniazid (INH) is a structural antagonist of Vitamin B6, preventing niacin synthesis from tryptophan. Disease: Hartnup Disease; Carcinoid Syndrome (tryptophan diverted to serotonin).",
+    "deficiency": {
+      "name": "Pellagra",
+      "findings": ["↓ Urinary N¹-methylnicotinamide", "Photosensitive dermatitis", "↑ Tryptophan (blocked conversion)", "Secondary B6 deficiency may contribute"],
+      "clinical": "Classic 4 D's: Dermatitis (photosensitive, Casal necklace around neck, gloved hand dermatitis), Diarrhea (severe, bloody, mucous), Dementia (irritability, poor memory, hallucinations), Death. Causes: corn/maize diet (niacytin — bound niacin, low tryptophan), Hartnup disease, carcinoid syndrome, INH therapy."
+    },
+    "toxicity": "Pharmacological doses (>50 mg/day): intense flushing (histamine-mediated), itching, burning. Chronic: hepatotoxicity (slow-release forms), hyperglycemia, hyperuricemia.",
+    "mnemonic": "B3 = 3 D's (Dermatitis, Diarrhea, Dementia) + Death = Pellagra. Tryptophan → B3 via Kynurenine pathway (needs B6). 60 mg tryptophan = 1 mg niacin.",
+    "relatedDisorderIds": [74],
+    "important": true,
+    "cycles": []
+  },
+  {
+    "id": 8,
+    "name": "Pantothenic Acid",
+    "alias": "B5",
+    "type": "water-soluble",
+    "coenzyme": "Coenzyme A (CoA-SH), Acyl Carrier Protein (ACP)",
+    "chemicalNature": "Pantothenic acid consists of beta-alanine and D-pantoic acid joined by an amide linkage. Active forms: Co-enzyme A (CoA) — a complex nucleotide containing pantothenic acid and beta-mercaptoethanol amine, with the active thiol (-SH) group (abbreviated CoA-SH); and Acyl Carrier Protein (ACP), a component of the fatty acid synthase complex.",
+    "functions": [
+      "Acetyl CoA: Central to the TCA cycle, fatty acid synthesis, cholesterol synthesis, and synthesis of acetylcholine (neurotransmitter).",
+      "Succinyl CoA: Vital intermediate in the Citric Acid Cycle, gluconeogenesis, and heme synthesis.",
+      "HMG CoA: Required for synthesis of cholesterol and ketone bodies.",
+      "Acyl Carrier Protein (ACP): Essential for de novo synthesis of fatty acids via the fatty acid synthase complex."
+    ],
+    "absorption": "Readily absorbed in the intestine. Transported through blood to tissues to be converted into CoA. No significant storage; excess excreted in urine. Intestinal bacterial flora can synthesize adequate quantities.",
+    "enzymes": ["Citrate Synthase", "Pyruvate Dehydrogenase (E2)", "β-Ketoacyl-ACP Synthase", "HMG-CoA Synthase", "Carnitine Palmitoyltransferase"],
+    "pathwayIds": [5, 6, 15, 16, 18, 20, 22],
+    "rda": "Adults: 10 mg/day.",
+    "sources": "Animal Sources: Liver, egg yolk, and milk. Other Sources: Dried yeast, peanuts, and whole-grain cereals.",
+    "inhibitors": "No specific pharmacological antagonists identified. Utilization can be compromised by severe malnutrition or chronic alcoholism, which generally impairs all B-complex vitamins.",
+    "deficiency": {
+      "name": "Pantothenic Acid Deficiency (extremely rare)",
+      "findings": ["Burning paresthesias in lower extremities", "Gait disturbance (staggering)", "Sleep disturbances", "Anemia (reduced heme synthesis)"],
+      "clinical": "Gopalan's Burning Foot Syndrome: burning lightning-like pain in lower extremities, staggering gait due to impaired coordination, sleep disturbances. Deficiency extremely rare due to ubiquitous food distribution and gut bacterial synthesis. Experimental deficiency: anemia, reduced steroidogenesis, adrenal necrosis."
+    },
+    "toxicity": "Rare — excess excreted in urine. No toxic manifestations reported in humans.",
+    "mnemonic": "B5 = Pantos (Greek = everywhere). CoA has 5 components. 'Anti-egg white injury factor' — fundamental building block of CoA.",
+    "relatedDisorderIds": [],
+    "important": false,
+    "cycles": [
+      { "step": 1, "title": "Phosphorylation", "description": "Pantothenic acid is phosphorylated using ATP to form 4-phospho-pantothenic acid.", "location": null, "enzyme": null },
+      { "step": 2, "title": "Cysteine Conjugation", "description": "4-phospho-pantothenic acid reacts with ATP and Cysteine to form 4-phospho-pantothenyl cysteine.", "location": null, "enzyme": null },
+      { "step": 3, "title": "Decarboxylation", "description": "4-phospho-pantothenyl cysteine undergoes decarboxylation (losing CO₂) to form 4-phospho-pantotheine.", "location": null, "enzyme": null },
+      { "step": 4, "title": "Adenylation", "description": "Adenylation occurs using ATP (releasing PPi) to form Dephospho CoA.", "location": null, "enzyme": null },
+      { "step": 5, "title": "Final Phosphorylation", "description": "A final phosphorylation using ATP converts Dephospho CoA into Co-enzyme A.", "location": null, "enzyme": null }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Pyridoxine",
+    "alias": "B6",
+    "type": "water-soluble",
+    "coenzyme": "PLP (Pyridoxal Phosphate)",
+    "chemicalNature": "Vitamin B6 is a family of three related pyridine derivatives: Pyridoxine (alcohol form, found in plants), Pyridoxal (aldehyde form), Pyridoxamine (amine form), and Pyridoxal Phosphate (PLP, the active co-enzyme form synthesized by pyridoxal kinase using ATP).",
+    "functions": [
+      "Transamination: Essential for transfer of amino groups (e.g., ALT and AST enzymes).",
+      "Decarboxylation: Required to synthesize GABA (from glutamate), Serotonin (from tryptophan), and Histamine (from histidine).",
+      "Trans-sulfuration: Necessary for conversion of Homocysteine to Cysteine via cystathionine.",
+      "Heme Synthesis: Co-enzyme for ALA synthase, the rate-limiting step in porphyrin and heme production.",
+      "Niacin Production: Essential for Kynureninase enzyme in tryptophan-to-niacin conversion.",
+      "Glycogenolysis: Part of glycogen phosphorylase enzyme, facilitating glucose release from glycogen."
+    ],
+    "absorption": "Readily absorbed in the small intestine. Distributed to various tissues via the bloodstream. Unlike most water-soluble vitamins, about 70–80% of the body's PLP is stored in skeletal muscles, bound to glycogen phosphorylase.",
+    "enzymes": ["ALT (GPT)", "AST (GOT)", "Aromatic L-Amino Acid Decarboxylase (DOPA decarboxylase)", "Cystathionine β-Synthase", "Serine Hydroxymethyltransferase", "Glutamate Decarboxylase (GAD)", "ALA Synthase (rate-limiting for heme)", "Kynureninase (tryptophan → niacin)", "Glycogen Phosphorylase"],
+    "pathwayIds": [13, 32, 37, 41, 45, 46],
+    "rda": "Adults: 1.0 to 2.0 mg/day. Pregnancy and Lactation: 2.5 mg/day.",
+    "sources": "Rich Sources: Yeast, rice polishings, wheat germ, and legumes (pulses). Animal Sources: Egg yolk, milk, meat, and fish. Plant Sources: Green leafy vegetables and oilseeds.",
+    "inhibitors": "Isoniazid (INH): Structural antagonist that inhibits pyridoxal kinase, preventing B6 activation, leading to peripheral neuropathy. Alcohol (Ethanol): Metabolized to acetaldehyde, which enhances PLP degradation. Cycloserine: Acts as an antagonist. Oral Contraceptives: May induce mild deficiency.",
+    "deficiency": {
+      "name": "Pyridoxine Deficiency",
+      "findings": ["↑ Urinary xanthurenic acid (post-tryptophan load)", "Microcytic hypochromic anemia", "Secondary ↑ homocysteine", "Convulsions (low GABA)", "Pellagra-like syndrome (secondary niacin deficiency)"],
+      "clinical": "Neurological: convulsions (infants — low GABA), peripheral neuritis, demyelination. Dermatological: seborrheic dermatitis, glossitis, cheilosis. Hematological: hypochromic microcytic anemia (impaired heme synthesis via ALA synthase). INH therapy and oral contraceptives increase B6 requirement."
+    },
+    "toxicity": "Sensory neuropathy with doses >100 mg/day: numbness, muscle weakness, imbalance. Reversible upon discontinuation.",
+    "mnemonic": "B6 = PLP = Amino Acid Metabolism (transamination, decarboxylation, deamination). 70-80% stored in skeletal muscles bound to glycogen phosphorylase.",
+    "relatedDisorderIds": [75, 35],
+    "important": true,
+    "cycles": []
+  },
+  {
+    "id": 10,
+    "name": "Biotin",
+    "alias": "B7",
+    "type": "water-soluble",
+    "coenzyme": "Biocytin (biotinyl-lysine — covalently bound carboxyl carrier)",
+    "chemicalNature": "Biotin consists of an imidazole ring fused with a thiophene ring, featuring a valeric acid side chain. The active co-enzyme form is Biocytin, formed when the carboxyl group of biotin forms an amide linkage with the epsilon-amino group of a lysine residue within the apo-enzyme.",
+    "functions": [
+      "Acetyl CoA Carboxylase: Adds CO₂ to acetyl CoA to form malonyl CoA, the rate-limiting step in fatty acid synthesis.",
+      "Pyruvate Carboxylase: Converts pyruvate to oxaloacetate, a critical step in gluconeogenesis providing substrate for the TCA cycle.",
+      "Propionyl-CoA Carboxylase: Involved in metabolism of odd-chain fatty acids and amino acids like valine and isoleucine.",
+      "Beta-methylcrotonyl-CoA Carboxylase: Necessary for proper catabolism of leucine.",
+      "Other Roles: Involved in purine ring synthesis (contributing C6) and the malic enzyme reaction."
+    ],
+    "absorption": "Absorbed primarily in the small intestine. Requirements partially met by normal bacterial flora of the gut. As a water-soluble vitamin, not stored in significant amounts.",
+    "enzymes": ["Acetyl-CoA Carboxylase (ACC)", "Pyruvate Carboxylase (PC)", "Propionyl-CoA Carboxylase (PCC)", "β-Methylcrotonyl-CoA Carboxylase (MCC)"],
+    "pathwayIds": [2, 16, 17],
+    "rda": "Adults: 200 to 300 µg/day. Infants/Children: Approximately 1 µg/kg body weight.",
+    "sources": "Animal Sources: Egg yolk, liver, and milk. Plant Sources: Cereals, spinach, mushrooms, peanuts, soybeans, and rice.",
+    "inhibitors": "Avidin (Raw Egg Whites): Thermolabile protein in raw egg albumin that binds four molecules of biotin, creating a complex that cannot be absorbed. Boiling inactivates avidin. Antibacterial Drugs: Prolonged use of broad-spectrum antibiotics can destroy intestinal flora responsible for biotin synthesis.",
+    "deficiency": {
+      "name": "Biotin Deficiency",
+      "findings": ["Periorificial dermatitis", "Alopecia", "Atrophic glossitis", "Paresthesia / tingling", "↑ Urinary 3-hydroxyisovalerate"],
+      "clinical": "Dermatological: red scaly (periorificial) rash around nose, eyes, and mouth. Atrophic glossitis (smooth swollen tongue). Alopecia: significant hair loss/thinning. Neurological: tingling in extremities, muscle pain, hyperesthesia; in severe cases hallucinations. Risk factors: raw egg white ingestion (avidin), TPN without biotin, prolonged antibiotics (destroy gut flora)."
+    },
+    "toxicity": "Rare — excess excreted in urine. No toxic manifestations reported.",
+    "mnemonic": "B7 = 7 Carboxylases — ACC, PC, PCC, MCC (4 biotin enzymes). Avidin in raw egg whites binds 4 biotin molecules. Boiling inactivates avidin.",
+    "relatedDisorderIds": [46],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "CO₂ Capture", "description": "Biotin captures a molecule of CO₂ in an ATP-dependent reaction, forming a carbonic phosphoric anhydride intermediate.", "location": null, "enzyme": null },
+      { "step": 2, "title": "Carboxy-Biotin Complex Formation", "description": "CO₂ is attached to one of the nitrogen atoms in the biotin imidazole ring, forming a carboxy-biotin-enzyme complex.", "location": null, "enzyme": null },
+      { "step": 3, "title": "Carboxyl Group Transfer", "description": "The activated carboxyl group is transferred from the biotin complex to the specific substrate of the enzyme.", "location": null, "enzyme": null }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Folate",
+    "alias": "B9",
+    "type": "water-soluble",
+    "coenzyme": "THF (Tetrahydrofolate) — carrier of one-carbon units (formyl, methyl, methylene)",
+    "chemicalNature": "Folic acid is composed of three constituents: Pteridine ring, Para-amino benzoic acid (PABA), and Glutamic acid. The pteridine and PABA together are known as pteroic acid. In nature, it exists as polyglutamates (up to seven glutamate residues). The biologically active co-enzyme form is Tetrahydrofolate (THF or THFA).",
+    "functions": [
+      "DNA Synthesis: Essential for conversion of dUMP to dTMP (thymidylate synthesis), required for DNA replication.",
+      "Purine Synthesis: Contributes the C2 and C8 atoms to the purine ring structure.",
+      "Amino Acid Metabolism: Necessary for conversion of homocysteine to methionine (in conjunction with Vitamin B12).",
+      "Histidine Catabolism: Required for removal of the formimino group from FIGLU (formiminoglutamic acid).",
+      "Protein Synthesis: Involved in formylation of methionyl-tRNA in mitochondria."
+    ],
+    "absorption": "Readily absorbed in the upper jejunum. Dietary polyglutamates must be converted to mono-glutamate by intestinal enzymes before absorption. Transported in blood primarily by beta globulins. Not stored in significant quantities; rapidly destroyed by light. Tissue uptake via potocytosis using caveolae.",
+    "enzymes": ["Serine Hydroxymethyltransferase", "Thymidylate Synthase", "Methionine Synthase", "AICAR Transformylase", "GAR Transformylase", "Dihydrofolate Reductase (DHFR)"],
+    "pathwayIds": [37, 53, 56, 58],
+    "rda": "Adults: 100–200 µg/day. Pregnancy: 300–400 µg/day. Lactation: 150–300 µg/day.",
+    "sources": "Rich Sources: Green leafy vegetables (spinach), yeast, and pulses. Moderate Sources: Cereals, oilseeds, and eggs. Poor Source: Milk is notably low in folic acid.",
+    "inhibitors": "Methotrexate: Structural analogue of folate inhibiting dihydrofolate reductase, preventing THF regeneration. Sulphonamides: Compete with PABA in bacterial folate synthesis. Anticonvulsants (phenytoin, phenobarbitone): Inhibit intestinal enzymes for folate absorption. The Folate Trap: In B12 deficiency, folate is trapped as N5-methyl-THF.",
+    "deficiency": {
+      "name": "Folate Deficiency / Megaloblastic Anemia",
+      "findings": ["↑ MCV (>100 fL)", "↑ Homocysteine", "↑ Urinary FIGLU (after histidine load)", "↑ AICAR", "Hypersegmented neutrophils", "Megaloblastic bone marrow"],
+      "clinical": "Megaloblastic anemia: nuclear-cytoplasmic asynchrony, pancytopenia. Neural tube defects (spina bifida, anencephaly) in pregnancy. Cardiovascular: homocysteinemia → increased MI risk. Oncological: linked to bronchial and cervical carcinomas. Biochemical marker: FIGLU excretion after histidine loading. Commonest vitamin deficiency in India."
+    },
+    "toxicity": ">1 mg/day can mask B12 deficiency → precipitates irreversible nerve damage. Large parenteral doses can crystallize in kidney tubules. Lowers anticonvulsant levels.",
+    "mnemonic": "B9 = 9 Months of pregnancy — prevent NTD (spina bifida). Folium = leaf (green leafy vegetables). THF = Universal one-carbon carrier.",
+    "relatedDisorderIds": [76, 35],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "Reduction to Dihydrofolate", "description": "Folic acid is reduced to Dihydrofolate (DHF) by folate reductase using NADPH as co-factor.", "location": null, "enzyme": "folate reductase (dihydrofolate reductase)" },
+      { "step": 2, "title": "Reduction to Tetrahydrofolate", "description": "Dihydrofolate is reduced to Tetrahydrofolate (THF) by folate reductase using NADPH as co-factor. THF functions as the universal acceptor and donor of one-carbon units (formyl, methyl, methylene).", "location": null, "enzyme": "folate reductase (dihydrofolate reductase)" }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Cobalamin",
+    "alias": "B12",
+    "type": "water-soluble",
+    "coenzyme": "Methylcobalamin (MeCbl — cytoplasm), Adenosylcobalamin (AdoCbl — mitochondria)",
+    "chemicalNature": "Vitamin B12 consists of a Corrin ring (four pyrrole rings coordinated with a single cobalt atom) linked to a substituted benzimidazole ring. Forms: Cyanocobalamin (stable oral form), Hydroxycobalamin (injectable/therapeutic form), Adenosylcobalamin (Ado-B12, major storage form in liver, mitochondrial co-enzyme), and Methylcobalamin (major form in blood/cytoplasm, cytoplasmic co-enzyme).",
+    "functions": [
+      "DNA Synthesis: By regenerating free THF, Vitamin B12 indirectly facilitates dTMP synthesis for DNA replication in rapidly dividing cells.",
+      "Nerve Health: Mandatory for myelin sheath formation; ensures proper methylation of phosphatidyl ethanolamine to phosphatidyl choline, a major myelin component.",
+      "Amino Acid Metabolism: Involved in conversion of homocysteine to methionine, preventing toxic homocysteine accumulation."
+    ],
+    "absorption": "Gastric pepsin releases B12 from food proteins; it binds to cobalophilin (R-protein) from saliva. In duodenum, pancreatic trypsin releases B12, which then binds to Intrinsic Factor (IF) from gastric parietal cells. The IF-B12 complex travels to the ileum, binds to cubilin receptors, and is internalized. Transported by transcobalamin II (TC II). 2–3 mg stored in liver, sufficient for 2–3 years.",
+    "enzymes": ["Methionine Synthase (MeCbl)", "Methylmalonyl-CoA Mutase (AdoCbl)"],
+    "pathwayIds": [17, 37],
+    "rda": "Adults: 1.0 to 3.0 µg/day. Pregnancy and Lactation: 1.5 to 2.0 µg/day.",
+    "sources": "Rich Sources: Animal-origin foods only — liver (richest), meat, fish, and egg yolk. Other Sources: Milk and curd (lactobacillus bacteria can synthesize it). Note: Not present in vegetables; strict vegetarians are susceptible to deficiency.",
+    "inhibitors": "Autoantibodies: In pernicious anemia, antibodies against Intrinsic Factor or gastric parietal cells prevent absorption. Gastric Resection: Eliminates Intrinsic Factor source, requiring lifelong B12 injections. Fish Tapeworm (Diphyllobothrium latum): Consumes B12. Drugs: Anticonvulsants (phenytoin, barbiturates). Folate Trap: B12 deficiency traps folate in methyl form.",
+    "deficiency": {
+      "name": "Vitamin B12 Deficiency / Pernicious Anemia",
+      "findings": ["↑ Homocysteine", "↑ Methylmalonic acid (MMA)", "↑ MCV (>100 fL)", "Methylmalonic aciduria", "↑ Urinary FIGLU (folate trap)", "↓ Holotranscobalamin II"],
+      "clinical": "Hematological: megaloblastic anemia, hypersegmented neutrophils, pallor, tiredness. Neurological: subacute combined degeneration of spinal cord (posterior column → vibration/proprioception loss, lateral corticospinal tract → spasticity, paresthesias). Dermatological: reversible hyperpigmentation of knuckles and oral mucosa (~10%). Causes: pernicious anemia (autoantibodies to IF/parietal cells), gastrectomy, vegan diet, fish tapeworm, Crohn's."
+    },
+    "toxicity": "Rare — excess excreted. No known toxicity. Only vitamin containing a metal ion (cobalt).",
+    "mnemonic": "B12 = 2 reactions: Methylmalonyl-CoA Mutase + Methionine Synthase. Extrinsic Factor of Castle. 2-3 mg stored in liver = 2-3 year supply.",
+    "relatedDisorderIds": [77, 45, 35],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "Methionine Synthase Reaction", "description": "Methylcobalamin transfers a methyl group from N5-methyl-tetrahydrofolate to homocysteine, producing methionine and regenerating free tetrahydrofolate (THF). This is the only known way to release THF from its trapped methyl form.", "location": "Cytoplasm", "enzyme": "Methionine synthase" },
+      { "step": 2, "title": "Methylmalonyl-CoA Mutase Reaction", "description": "Adenosylcobalamin is necessary for the isomerization of L-methylmalonyl-CoA to succinyl-CoA, which then enters the TCA cycle. Vital for metabolism of odd-chain fatty acids and certain amino acids.", "location": "Mitochondria", "enzyme": "Methylmalonyl-CoA mutase" }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Ascorbic Acid",
+    "alias": "C",
+    "type": "water-soluble",
+    "coenzyme": "Electron donor (reducing agent) for hydroxylation reactions",
+    "chemicalNature": "Ascorbic acid is a water-soluble vitamin whose structure closely resembles carbohydrates. Its strong reducing properties are attributed to its double-bonded enediol carbons. Only L-ascorbic acid and dehydroascorbic acid possess antiscorbutic activity; D-isomer is inactive. Easily destroyed by heat, alkali, and prolonged storage (~70% lost during cooking).",
+    "functions": [
+      "Collagen Synthesis: Essential for post-translational hydroxylation of proline and lysine residues; maintains iron co-factor in reduced ferrous state for prolyl and lysyl hydroxylases.",
+      "Iron Metabolism: Enhances iron absorption by reducing ferric iron (Fe³⁺) to the more absorbable ferrous state (Fe²⁺).",
+      "Antioxidant Role: Acts as an aqueous-phase antioxidant, protecting cells against reactive oxygen species (ROS) and free radicals.",
+      "Amino Acid Metabolism: Required for metabolism of tryptophan (to serotonin) and tyrosine (to homogentisic acid).",
+      "Folic Acid Metabolism: Assists folate reductase in reducing folic acid to tetrahydrofolate (THFA), aiding RBC maturation.",
+      "Hemoglobin Protection: Helps reconvert met-hemoglobin back to functional hemoglobin."
+    ],
+    "absorption": "Readily absorbed from the gastrointestinal tract. Circulates in plasma at normal levels of 0.7 to 1.2 mg/dl. Found in high concentrations in WBCs (25 mg/100 cc) and healing wounds. Excreted in urine either unchanged or as its metabolite oxalic acid.",
+    "enzymes": ["Prolyl Hydroxylase (collagen synthesis)", "Lysyl Hydroxylase", "Dopamine β-Hydroxylase", "Peptidylglycine α-Amidating Monooxygenase (PAM)"],
+    "pathwayIds": [8, 46],
+    "rda": "Adults: Approximately 70–75 mg/day. Pregnancy and Lactation: 100 mg/day. Elderly: Higher intake (100 mg) advised.",
+    "sources": "Richest Source: Amla (Indian gooseberry). Other Rich Sources: Guava, lime, lemon, and oranges. Good Sources: Green leafy vegetables (spinach, amaranth), tomatoes, and sprouting pulses. Poor Source: Milk is notably very low in Vitamin C.",
+    "inhibitors": "Drugs: Oral contraceptive pills and chronic alcohol consumption lower Vitamin C levels. Environmental Factors: Cooking and storage rapidly destroy the vitamin's potency.",
+    "deficiency": {
+      "name": "Scurvy",
+      "findings": ["↓ Plasma ascorbate", "Petechiae", "Ecchymoses", "Gingival hypertrophy / bleeding", "Delayed wound healing", "Microcytic hypochromic anemia"],
+      "clinical": "Hemorrhagic tendency: petechiae, ecchymoses, bleeding into joints/retina due to fragile capillaries. Oral: swollen spongy bleeding gums (gingivitis), tooth loss. Infantile Barlow's disease: weak bones prone to fractures. Impaired wound healing. Anemia (microcytic hypochromic — from blood loss + reduced iron absorption). Risk factors: alcoholism, elderly, restrictive diets, smokers (increased requirement)."
+    },
+    "toxicity": ">2000 mg/day: GI upset, diarrhea (osmotic), increased oxalate excretion → oxalate renal stones, iron overload (enhances iron absorption — caution in hemochromatosis).",
+    "mnemonic": "C = Collagen (prolyl & lysyl hydroxylase), Catecholamines (DBH), Cofactor for iron absorption. Humans lack L-gulonolactone oxidase. Richest source: Amla (Indian gooseberry).",
+    "relatedDisorderIds": [87],
+    "important": true,
+    "cycles": [
+      { "step": 1, "title": "Biosynthesis (in animals)", "description": "Most plants and animals synthesize ascorbic acid from glucose via the glucuronic acid pathway. Humans, higher primates, guinea pigs, and bats cannot synthesize it due to lack of the enzyme L-gulonolactone oxidase (gene deletion).", "location": null, "enzyme": "L-gulonolactone oxidase (missing in humans)" },
+      { "step": 2, "title": "Catabolism", "description": "Ascorbic acid is oxidized to dehydroascorbic acid, which can be further metabolized into diketo-L-gulonic acid and finally into oxalic acid.", "location": null, "enzyme": null }
+    ]
+  }
+]

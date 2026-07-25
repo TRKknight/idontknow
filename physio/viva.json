@@ -1,0 +1,1076 @@
+[
+  {
+    "id": 1,
+    "cat": "Laws",
+    "name": "Starling / Frank-Starling Law",
+    "def": "Force of cardiac contraction is directly proportional to the initial length (end-diastolic volume) of the muscle fiber."
+  },
+  {
+    "id": 2,
+    "cat": "Laws",
+    "name": "Poiseuille's Law",
+    "def": "Rate of blood flow ∝ ΔP·r⁴ / (8ηL). Flow increases dramatically with vessel radius."
+  },
+  {
+    "id": 3,
+    "cat": "Laws",
+    "name": "Ohm's Law",
+    "def": "Blood flow = ΔPressure / Resistance. Hemodynamic analogue of electrical Ohm's Law."
+  },
+  {
+    "id": 4,
+    "cat": "Laws",
+    "name": "Law of Laplace",
+    "def": "Wall tension in a sphere: T = P·r / 2. Explains why small alveoli tend to collapse into large ones."
+  },
+  {
+    "id": 5,
+    "cat": "Laws",
+    "name": "Landsteiner's Law",
+    "def": "In ABO system, if an agglutinogen is present on the RBC, the corresponding agglutinin is absent from plasma."
+  },
+  {
+    "id": 6,
+    "cat": "Laws",
+    "name": "Bell-Magendie Law",
+    "def": "Dorsal spinal roots are sensory; ventral roots are motor. Established the anatomical basis of reflex arcs."
+  },
+  {
+    "id": 7,
+    "cat": "Laws",
+    "name": "Einthoven's Law",
+    "def": "In ECG bipolar limb leads: Lead II = Lead I + Lead III. Defines the Einthoven triangle."
+  },
+  {
+    "id": 8,
+    "cat": "Laws",
+    "name": "Fick's Law of Diffusion",
+    "def": "Net gas diffusion rate ∝ (surface area × ΔP) / membrane thickness. Basis of lung diffusion capacity."
+  },
+  {
+    "id": 9,
+    "cat": "Laws",
+    "name": "Boyle's Law",
+    "def": "At constant temperature, gas volume is inversely proportional to pressure (PV = constant)."
+  },
+  {
+    "id": 10,
+    "cat": "Laws",
+    "name": "Charles' Law",
+    "def": "At constant pressure, gas volume is directly proportional to absolute temperature."
+  },
+  {
+    "id": 11,
+    "cat": "Laws",
+    "name": "Dalton's Law",
+    "def": "Total pressure of a gas mixture = sum of partial pressures of each individual gas."
+  },
+  {
+    "id": 12,
+    "cat": "Laws",
+    "name": "Henry's Law",
+    "def": "Amount of gas dissolved in liquid ∝ its partial pressure above the liquid."
+  },
+  {
+    "id": 13,
+    "cat": "Laws",
+    "name": "Graham's Law",
+    "def": "Rate of gas diffusion ∝ 1/√molecular weight. By this law O₂ (MW 32) diffuses faster than CO₂ (MW 44) in air; however, CO₂ diffuses ~20× faster than O₂ across biological membranes due to its far higher solubility (Fick's Law)."
+  },
+  {
+    "id": 14,
+    "cat": "Laws",
+    "name": "Avogadro's Law",
+    "def": "Equal volumes of any gas at same temperature and pressure contain equal numbers of molecules."
+  },
+  {
+    "id": 15,
+    "cat": "Laws",
+    "name": "All-or-None Law",
+    "def": "A tissue either responds maximally to a threshold stimulus or does not respond at all. Applies to cardiac muscle and individual nerve fibers."
+  },
+  {
+    "id": 16,
+    "cat": "Laws",
+    "name": "Law of the Intestine",
+    "def": "Bolus of food causes contraction orad (behind) and relaxation aborad (ahead) — basis of peristalsis."
+  },
+  {
+    "id": 17,
+    "cat": "Laws",
+    "name": "Weber-Fechner Law",
+    "def": "Perceived sensation ∝ log(stimulus intensity). Explains why we hear in decibels."
+  },
+  {
+    "id": 18,
+    "cat": "Laws",
+    "name": "Power Law (Stevens)",
+    "def": "Relates actual stimulus strength to perceived signal strength by a power function (ψ = k·φⁿ)."
+  },
+  {
+    "id": 19,
+    "cat": "Laws",
+    "name": "Law of Projection",
+    "def": "Stimulation of a sensory pathway at any point causes sensation to be referred to the original receptor location."
+  },
+  {
+    "id": 20,
+    "cat": "Laws",
+    "name": "Marey's Law",
+    "def": "Heart rate is inversely proportional to blood pressure (baroreceptor basis)."
+  },
+  {
+    "id": 21,
+    "cat": "Laws",
+    "name": "Monro-Kellie Doctrine",
+    "def": "Total volume in the rigid cranium (brain + blood + CSF) is constant; increase in one must be offset by decrease in another."
+  },
+  {
+    "id": 22,
+    "cat": "Laws",
+    "name": "Bernoulli Principle",
+    "def": "As fluid velocity increases, its lateral pressure decreases. Explains murmurs, Venturi effect, and airway dynamics."
+  },
+  {
+    "id": 23,
+    "cat": "Laws",
+    "name": "Ideal Gas Law",
+    "def": "PV = nRT. Approximates gas behaviour in respiratory physiology under varying pressures and temperatures."
+  },
+  {
+    "id": 24,
+    "cat": "Laws",
+    "name": "Law of Forward Conduction",
+    "def": "At a chemical synapse, impulses travel only from presynaptic to postsynaptic neuron — enforces one-directional signalling."
+  },
+  {
+    "id": 25,
+    "cat": "Equations",
+    "name": "Nernst Equation",
+    "def": "Calculates equilibrium potential for a single ion: E = (RT/zF) × ln([X]o/[X]i)."
+  },
+  {
+    "id": 26,
+    "cat": "Equations",
+    "name": "Goldman-Hodgkin-Katz (GHK)",
+    "def": "Calculates resting membrane potential when multiple ions (Na⁺, K⁺, Cl⁻) and their permeabilities are considered."
+  },
+  {
+    "id": 27,
+    "cat": "Equations",
+    "name": "Henderson-Hasselbalch",
+    "def": "pH = pKa + log([HCO₃⁻] / 0.03×PaCO₂). Used to interpret acid-base status."
+  },
+  {
+    "id": 28,
+    "cat": "Equations",
+    "name": "Bohr's Equation",
+    "def": "Estimates physiological dead space: Vd/Vt = (PaCO₂ − PeCO₂) / PaCO₂."
+  },
+  {
+    "id": 29,
+    "cat": "Equations",
+    "name": "Bazett's Formula",
+    "def": "Corrects QT interval for heart rate: QTc = QT / √RR. Normal QTc < 440 ms."
+  },
+  {
+    "id": 30,
+    "cat": "Equations",
+    "name": "Radford's Formula",
+    "def": "Predicts anatomical dead space (mL) ≈ 2.2 × body weight (lbs)."
+  },
+  {
+    "id": 31,
+    "cat": "Equations",
+    "name": "Dubois Formula",
+    "def": "Calculates body surface area (m²) from height and weight; used to derive cardiac index."
+  },
+  {
+    "id": 32,
+    "cat": "Equations",
+    "name": "Fick Principle",
+    "def": "Cardiac output = O₂ consumption / (arterial O₂ − venous O₂). Gold-standard method for measuring cardiac output."
+  },
+  {
+    "id": 33,
+    "cat": "Equations",
+    "name": "Poiseuille-Hagen Formula",
+    "def": "Resistance = 8ηL / πr⁴. Relates viscosity, tube length, and radius to flow resistance."
+  },
+  {
+    "id": 34,
+    "cat": "Equations",
+    "name": "Erlanger-Gasser Classification",
+    "def": "Classifies nerve fibers by diameter and conduction velocity: Aα > Aβ > Aγ > Aδ > B > C."
+  },
+  {
+    "id": 35,
+    "cat": "Effects",
+    "name": "Bohr Effect",
+    "def": "↑H⁺ or ↑CO₂ shifts O₂-Hb dissociation curve right → lower O₂ affinity → easier O₂ unloading in tissues."
+  },
+  {
+    "id": 36,
+    "cat": "Effects",
+    "name": "Haldane Effect",
+    "def": "Oxygenation of Hb in lungs displaces CO₂, doubling CO₂ release. Complement of the Bohr effect."
+  },
+  {
+    "id": 37,
+    "cat": "Effects",
+    "name": "Hamburger Shift (Chloride Shift)",
+    "def": "In tissues, HCO₃⁻ exits RBC in exchange for Cl⁻ to maintain electrical neutrality."
+  },
+  {
+    "id": 38,
+    "cat": "Effects",
+    "name": "Gibbs-Donnan Effect",
+    "def": "Asymmetric ion distribution across a membrane caused by the presence of nondiffusible charged proteins on one side."
+  },
+  {
+    "id": 39,
+    "cat": "Effects",
+    "name": "Treppe (Staircase)",
+    "def": "Progressive increase in contraction force during rapid, repeated stimulation of a previously resting muscle."
+  },
+  {
+    "id": 40,
+    "cat": "Effects",
+    "name": "Bowditch Phenomenon",
+    "def": "Increased heart rate → increased force of contraction (positive force-frequency relationship)."
+  },
+  {
+    "id": 41,
+    "cat": "Effects",
+    "name": "Fenn Effect",
+    "def": "Muscle uses extra energy proportional to the external work it performs."
+  },
+  {
+    "id": 42,
+    "cat": "Effects",
+    "name": "Post-Extrasystolic Potentiation",
+    "def": "The beat after a compensatory pause (following an ectopic beat) is stronger than normal due to increased Ca²⁺ loading."
+  },
+  {
+    "id": 43,
+    "cat": "Effects",
+    "name": "Post-Tetanic Potentiation",
+    "def": "Twitch amplitude is increased immediately after a tetanic contraction ends."
+  },
+  {
+    "id": 44,
+    "cat": "Effects",
+    "name": "Anrep Effect",
+    "def": "Acute ↑ afterload → compensatory ↑ myocardial contractility. Intrinsic cardiac autoregulation."
+  },
+  {
+    "id": 45,
+    "cat": "Effects",
+    "name": "Wolff-Chaikoff Effect",
+    "def": "Very high iodide dose acutely inhibits thyroid hormone synthesis (organification block)."
+  },
+  {
+    "id": 46,
+    "cat": "Effects",
+    "name": "Jod-Basedow Phenomenon",
+    "def": "Excess iodine administration triggers hyperthyroidism in a susceptible thyroid gland."
+  },
+  {
+    "id": 47,
+    "cat": "Effects",
+    "name": "Aldosterone Escape",
+    "def": "After 3-5 days of excess aldosterone, kidneys escape Na⁺ retention via ANP and pressure natriuresis."
+  },
+  {
+    "id": 48,
+    "cat": "Effects",
+    "name": "Purkinje Shift",
+    "def": "In dim light the eye shifts maximum sensitivity from ~555 nm (photopic) to ~505 nm (scotopic)."
+  },
+  {
+    "id": 49,
+    "cat": "Effects",
+    "name": "Lewis-Hunting Response",
+    "def": "Rhythmic vasoconstriction then vasodilation during sustained cold exposure — protects against frostbite."
+  },
+  {
+    "id": 50,
+    "cat": "Effects",
+    "name": "Latch-Bridge Mechanism",
+    "def": "Smooth muscle cross-bridges lock in a low-energy state, sustaining tension without continued ATP hydrolysis."
+  },
+  {
+    "id": 51,
+    "cat": "Effects",
+    "name": "Clasp-Knife Phenomenon",
+    "def": "Sudden collapse of resistance when a spastic limb is passively stretched (Golgi tendon organ activation)."
+  },
+  {
+    "id": 52,
+    "cat": "Effects",
+    "name": "Windkessel Effect",
+    "def": "Large elastic arteries buffer pulsatile flow from the heart into a more continuous peripheral flow."
+  },
+  {
+    "id": 53,
+    "cat": "Effects",
+    "name": "Alpha Block (Arousal Response)",
+    "def": "Disappearance of alpha rhythm (8-13 Hz) on EEG upon eye opening or mental effort; replaced by desynchronised beta waves."
+  },
+  {
+    "id": 54,
+    "cat": "Effects",
+    "name": "Déjà Vu",
+    "def": "Inappropriate sense of familiarity with a new situation; associated with temporal lobe activity."
+  },
+  {
+    "id": 55,
+    "cat": "Effects",
+    "name": "Dale's Phenomenon",
+    "def": "A neuron releases the same neurotransmitter(s) at all of its synaptic terminals. Basis for classifying neurons as 'cholinergic', 'dopaminergic', etc."
+  },
+  {
+    "id": 56,
+    "cat": "Effects",
+    "name": "Renshaw Inhibition",
+    "def": "Motor neurons activate Renshaw cells (inhibitory interneurons) that feed back to inhibit the same motor neurons."
+  },
+  {
+    "id": 57,
+    "cat": "Effects",
+    "name": "P Factor (Lewis Factor)",
+    "def": "Chemical substance (likely K⁺) that accumulates in ischemic muscle and stimulates nociceptors — responsible for anginal pain."
+  },
+  {
+    "id": 58,
+    "cat": "Effects",
+    "name": "Place Principle",
+    "def": "Different frequencies stimulate specific tonotopic locations along the basilar membrane, enabling pitch discrimination."
+  },
+  {
+    "id": 59,
+    "cat": "Effects",
+    "name": "Volley Principle",
+    "def": "Groups of auditory nerve fibres fire in volleys to encode high-frequency sound information beyond the limit of a single fibre."
+  },
+  {
+    "id": 60,
+    "cat": "Effects",
+    "name": "Mittelschmerz",
+    "def": "Brief lower abdominal pain at mid-cycle ovulation caused by minor peritoneal irritation from follicular fluid release."
+  },
+  {
+    "id": 61,
+    "cat": "Effects",
+    "name": "Dumping Syndrome",
+    "def": "Post-gastrectomy rapid gastric emptying → osmotic fluid shift into gut → weakness, sweating, palpitations after meals."
+  },
+  {
+    "id": 62,
+    "cat": "Effects",
+    "name": "Occlusion",
+    "def": "When inputs to a neuronal pool overlap, combined response is less than the arithmetic sum of individual responses."
+  },
+  {
+    "id": 63,
+    "cat": "Effects",
+    "name": "Subliminal Fringe (Summation)",
+    "def": "Inputs that individually fail to reach threshold can summate to produce a supramaximal combined response."
+  },
+  {
+    "id": 64,
+    "cat": "Reflexes",
+    "name": "Bainbridge Reflex",
+    "def": "Atrial wall stretch (↑venous return) → ↑heart rate via vagal inhibition and sympathetic activation."
+  },
+  {
+    "id": 65,
+    "cat": "Reflexes",
+    "name": "Bezold-Jarisch Reflex",
+    "def": "Chemical stimulation of ventricular/coronary C-fiber receptors → classic triad of bradycardia, hypotension, and apnea (followed by rapid shallow breathing). Also called coronary chemoreflex."
+  },
+  {
+    "id": 66,
+    "cat": "Reflexes",
+    "name": "Hering-Breuer Reflex",
+    "def": "Lung inflation activates pulmonary stretch receptors → inhibits further inspiration (inflation reflex)."
+  },
+  {
+    "id": 67,
+    "cat": "Reflexes",
+    "name": "Head’s Paradoxical Reflex",
+    "def": "Strong lung inflation paradoxically stimulates further inspiratory effort (opposite of Hering-Breuer)."
+  },
+  {
+    "id": 68,
+    "cat": "Reflexes",
+    "name": "Cushing's Reflex",
+    "def": "↑Intracranial pressure → intense systemic hypertension + bradycardia + irregular respirations (= Cushing's triad). Driven by direct CO₂/ischaemia stimulation of the RVLM."
+  },
+  {
+    "id": 69,
+    "cat": "Reflexes",
+    "name": "J (Juxtacapillary) Reflex",
+    "def": "Pulmonary congestion stimulates J receptors → rapid shallow breathing (dyspnea)."
+  },
+  {
+    "id": 70,
+    "cat": "Reflexes",
+    "name": "Axon Reflex",
+    "def": "Antidromic conduction in sensory C fibers after skin injury releases substance P → local arteriolar dilation (flare)."
+  },
+  {
+    "id": 71,
+    "cat": "Reflexes",
+    "name": "Enterogastric Reflex",
+    "def": "Duodenal distension or fat/acid → inhibits gastric motility and secretion."
+  },
+  {
+    "id": 72,
+    "cat": "Reflexes",
+    "name": "Gastrocolic Reflex",
+    "def": "Stomach distension after a meal → ↑colonic motility (explains postprandial urge to defecate)."
+  },
+  {
+    "id": 73,
+    "cat": "Reflexes",
+    "name": "Micturition Reflex",
+    "def": "Bladder stretch receptors → parasympathetic detrusor contraction + urethral sphincter relaxation."
+  },
+  {
+    "id": 74,
+    "cat": "Reflexes",
+    "name": "Mass Reflex",
+    "def": "After severe spinal cord injury, a minor stimulus below the lesion triggers widespread flexor spasms + bowel/bladder evacuation."
+  },
+  {
+    "id": 75,
+    "cat": "Reflexes",
+    "name": "Vestibulo-Ocular Reflex",
+    "def": "Head rotation → compensatory eye movement in the opposite direction to stabilise retinal image."
+  },
+  {
+    "id": 76,
+    "cat": "Reflexes",
+    "name": "Accommodation Reflex",
+    "def": "Near vision: lens thickens (ciliary muscle contracts), pupils constrict, eyes converge."
+  },
+  {
+    "id": 77,
+    "cat": "Reflexes",
+    "name": "Pupillary Light Reflex",
+    "def": "Light → optic nerve → pretectal nucleus → bilateral Edinger-Westphal → pupil constriction."
+  },
+  {
+    "id": 78,
+    "cat": "Reflexes",
+    "name": "Consensual Light Reflex",
+    "def": "Light in one eye → constriction of the OPPOSITE pupil (bilateral efferent limb of light reflex)."
+  },
+  {
+    "id": 79,
+    "cat": "Reflexes",
+    "name": "Tympanic (Acoustic) Reflex",
+    "def": "Loud sound → contraction of stapedius and tensor tympani → stiffens ossicular chain, protects cochlea."
+  },
+  {
+    "id": 80,
+    "cat": "Reflexes",
+    "name": "Phillipson's / Crossed Extensor Reflex",
+    "def": "Noxious stimulus to one limb → flexion of that limb + extension of the contralateral limb."
+  },
+  {
+    "id": 81,
+    "cat": "Reflexes",
+    "name": "Peristaltic (Myenteric) Reflex",
+    "def": "Contraction orad + relaxation aborad to a gut bolus — the basis of normal propulsion."
+  },
+  {
+    "id": 82,
+    "cat": "Syndromes",
+    "name": "Brown-Séquard Syndrome",
+    "def": "Spinal cord hemisection: ipsilateral motor loss + fine touch/proprioception loss; contralateral pain/temperature loss."
+  },
+  {
+    "id": 83,
+    "cat": "Syndromes",
+    "name": "Horner's Syndrome",
+    "def": "Sympathetic chain damage: ptosis, miosis, anhidrosis (enophthalmos) on the ipsilateral side."
+  },
+  {
+    "id": 84,
+    "cat": "Syndromes",
+    "name": "Klüver-Bucy Syndrome",
+    "def": "Bilateral amygdala damage: hyperorality, hypersexuality, visual agnosia, fearlessness, and placidity."
+  },
+  {
+    "id": 85,
+    "cat": "Syndromes",
+    "name": "WPW Syndrome",
+    "def": "Bundle of Kent bypasses AV node → short PR, delta wave, wide QRS, risk of re-entrant tachycardia."
+  },
+  {
+    "id": 86,
+    "cat": "Syndromes",
+    "name": "LGL Syndrome",
+    "def": "Pre-excitation via James fibers: short PR interval but NORMAL QRS (unlike WPW)."
+  },
+  {
+    "id": 87,
+    "cat": "Syndromes",
+    "name": "Wenckebach (Mobitz I)",
+    "def": "Progressive PR prolongation until a QRS is dropped, then cycle repeats. AV nodal block."
+  },
+  {
+    "id": 88,
+    "cat": "Syndromes",
+    "name": "Stokes-Adams Syndrome",
+    "def": "Sudden loss of consciousness due to transient complete heart block → cardiac asystole."
+  },
+  {
+    "id": 89,
+    "cat": "Syndromes",
+    "name": "Sick Sinus Syndrome",
+    "def": "SA node dysfunction → inappropriate bradycardia, sinus arrest, tachy-brady syndrome."
+  },
+  {
+    "id": 90,
+    "cat": "Syndromes",
+    "name": "Long QT Syndrome",
+    "def": "Delayed ventricular repolarisation (KVLQT1 mutation etc.) → risk of torsades de pointes and sudden death."
+  },
+  {
+    "id": 91,
+    "cat": "Syndromes",
+    "name": "Zollinger-Ellison Syndrome",
+    "def": "Gastrinoma (often in pancreas/duodenum) → massive gastrin excess → peptic ulceration + diarrhea."
+  },
+  {
+    "id": 92,
+    "cat": "Syndromes",
+    "name": "Bartter Syndrome",
+    "def": "Loss-of-function mutation in thick ascending loop transporters → hypokalemia, metabolic alkalosis, high renin/aldosterone, normotension."
+  },
+  {
+    "id": 93,
+    "cat": "Syndromes",
+    "name": "Gitelman Syndrome",
+    "def": "Like Bartter but affects DCT thiazide-sensitive transporter → also hypomagnesemia + hypocalciuria."
+  },
+  {
+    "id": 94,
+    "cat": "Syndromes",
+    "name": "Liddle's Syndrome",
+    "def": "Gain-of-function ENaC mutation → looks like hyperaldosteronism but renin and aldosterone are LOW."
+  },
+  {
+    "id": 95,
+    "cat": "Syndromes",
+    "name": "Gordon Syndrome",
+    "def": "Pseudohypoaldosteronism Type II: hyperkalemia + hypertension with normal GFR. Opposite of Bartter."
+  },
+  {
+    "id": 96,
+    "cat": "Syndromes",
+    "name": "Fanconi Syndrome",
+    "def": "Generalised proximal tubule dysfunction: glucosuria, aminoaciduria, phosphaturia, bicarbonaturia."
+  },
+  {
+    "id": 97,
+    "cat": "Syndromes",
+    "name": "Hartnup Disease",
+    "def": "Defective neutral amino acid transporter in intestine and proximal tubule → pellagra-like rash, ataxia."
+  },
+  {
+    "id": 98,
+    "cat": "Syndromes",
+    "name": "Kallmann Syndrome",
+    "def": "GnRH neuron migration failure → hypogonadotropic hypogonadism + anosmia (absent olfactory bulbs)."
+  },
+  {
+    "id": 99,
+    "cat": "Syndromes",
+    "name": "Addison's Disease",
+    "def": "Primary adrenal insufficiency: fatigue, hyperpigmentation, hypotension, hyponatremia, hyperkalemia."
+  },
+  {
+    "id": 100,
+    "cat": "Syndromes",
+    "name": "Cushing's Syndrome",
+    "def": "Chronic cortisol excess: central obesity, moon face, buffalo hump, striae, hypertension."
+  },
+  {
+    "id": 101,
+    "cat": "Syndromes",
+    "name": "Hashimoto's Disease",
+    "def": "Autoimmune thyroiditis: anti-TPO antibodies destroy follicles → hypothyroidism. Most common thyroid disease."
+  },
+  {
+    "id": 102,
+    "cat": "Syndromes",
+    "name": "Ménière's Disease",
+    "def": "Endolymphatic hydrops: episodic vertigo + fluctuating sensorineural hearing loss + tinnitus + aural fullness."
+  },
+  {
+    "id": 103,
+    "cat": "Syndromes",
+    "name": "Weber Syndrome",
+    "def": "Midbrain lesion at CN III nucleus: ipsilateral CN III palsy + contralateral hemiplegia."
+  },
+  {
+    "id": 104,
+    "cat": "Syndromes",
+    "name": "Millard-Gubler Syndrome",
+    "def": "Pons lesion: ipsilateral CN VI & VII palsy + contralateral hemiplegia."
+  },
+  {
+    "id": 105,
+    "cat": "Syndromes",
+    "name": "Avellis Syndrome",
+    "def": "Paralysis of CN X (vagus) of one side (LMN type) + contralateral hemiplegia (crossed hemiplegia). Lesion in the medulla."
+  },
+  {
+    "id": 106,
+    "cat": "Syndromes",
+    "name": "Adiposogenital (Fröhlich) Syndrome",
+    "def": "Hypothalamic damage → hypogonadism + obesity. Distinct from simple obesity."
+  },
+  {
+    "id": 107,
+    "cat": "Syndromes",
+    "name": "Lambert-Eaton Syndrome",
+    "def": "Autoimmune attack on presynaptic Ca²⁺ channels at NMJ → proximal weakness that IMPROVES with repetition."
+  },
+  {
+    "id": 108,
+    "cat": "Syndromes",
+    "name": "Guillain-Barré Syndrome",
+    "def": "Acute immune demyelination of peripheral nerves → ascending flaccid paralysis, areflexia."
+  },
+  {
+    "id": 109,
+    "cat": "Syndromes",
+    "name": "Metabolic Syndrome (Syndrome X)",
+    "def": "Cluster: central obesity + insulin resistance + hypertension + dyslipidaemia + hyperglycaemia."
+  },
+  {
+    "id": 110,
+    "cat": "Syndromes",
+    "name": "Zellweger Syndrome",
+    "def": "Peroxisome biogenesis disorder: absent peroxisomes → accumulation of very-long-chain fatty acids. Neonatal."
+  },
+  {
+    "id": 111,
+    "cat": "Syndromes",
+    "name": "Hirschsprung's Disease",
+    "def": "Congenital absence of myenteric ganglion cells in colon → failure of relaxation → functional obstruction."
+  },
+  {
+    "id": 112,
+    "cat": "Syndromes",
+    "name": "Pendred Syndrome",
+    "def": "Defective thyroid organification of iodine + sensorineural deafness (pendrin mutation)."
+  },
+  {
+    "id": 113,
+    "cat": "Syndromes",
+    "name": "Monge's Disease",
+    "def": "Chronic Mountain Sickness: polycythaemia, pulmonary hypertension, cor pulmonale in long-term highlanders."
+  },
+  {
+    "id": 114,
+    "cat": "Syndromes",
+    "name": "Stein-Leventhal (PCOS)",
+    "def": "Polycystic ovarian syndrome: hyperandrogenism, chronic anovulation, insulin resistance."
+  },
+  {
+    "id": 115,
+    "cat": "Syndromes",
+    "name": "Chiari-Frommel Syndrome",
+    "def": "Persistent galactorrhoea + amenorrhoea + uterine atrophy after childbirth (hyperprolactinaemia)."
+  },
+  {
+    "id": 116,
+    "cat": "Syndromes",
+    "name": "Menetrier Disease",
+    "def": "Giant rugal folds + protein-losing gastropathy + increased mucus; premalignant."
+  },
+  {
+    "id": 117,
+    "cat": "Syndromes",
+    "name": "Sjögren's Syndrome",
+    "def": "Autoimmune exocrinopathy: xerostomia + xerophthalmia. Anti-Ro (SS-A) and Anti-La (SS-B) antibodies."
+  },
+  {
+    "id": 118,
+    "cat": "Syndromes",
+    "name": "Raynaud's Disease",
+    "def": "Episodic digital vasospasm in response to cold/stress → white → blue → red colour changes."
+  },
+  {
+    "id": 119,
+    "cat": "Syndromes",
+    "name": "Buerger's Disease",
+    "def": "Thromboangiitis obliterans: inflammatory arterial occlusion in young male smokers → claudication, gangrene."
+  },
+  {
+    "id": 120,
+    "cat": "Syndromes",
+    "name": "Huntington's Disease",
+    "def": "CAG repeat expansion in huntingtin gene → progressive chorea, dementia, psychiatric symptoms."
+  },
+  {
+    "id": 121,
+    "cat": "Syndromes",
+    "name": "Tetralogy of Fallot",
+    "def": "Four defects: VSD + pulmonary stenosis + overriding aorta + RVH → right-to-left shunt → cyanotic 'blue baby'."
+  },
+  {
+    "id": 122,
+    "cat": "Syndromes",
+    "name": "Barrett's Oesophagus",
+    "def": "Intestinal metaplasia of oesophageal squamous epithelium due to chronic GORD; premalignant."
+  },
+  {
+    "id": 123,
+    "cat": "Syndromes",
+    "name": "Ebstein's Anomaly",
+    "def": "Apical displacement of tricuspid valve leaflets → atrialized RV → intermittent cyanosis + arrhythmias."
+  },
+  {
+    "id": 124,
+    "cat": "Syndromes",
+    "name": "Duchenne / Becker Muscular Dystrophy",
+    "def": "X-linked dystrophin gene mutations → progressive muscle degeneration. Duchenne = absent dystrophin; Becker = reduced."
+  },
+  {
+    "id": 125,
+    "cat": "Syndromes",
+    "name": "Whipple's Disease",
+    "def": "Tropheryma whipplei infection → malabsorption, diarrhea, arthralgias, PAS-positive macrophages in lamina propria."
+  },
+  {
+    "id": 126,
+    "cat": "Syndromes",
+    "name": "Refsum Disease",
+    "def": "Phytanic acid oxidase deficiency (peroxisomal) → accumulation of phytanic acid → neuropathy, retinitis, ataxia."
+  },
+  {
+    "id": 127,
+    "cat": "Tests & Signs",
+    "name": "Argyll Robertson Pupil",
+    "def": "Accommodation present but light reflex absent. Seen in neurosyphilis. Mnemonic: ARP (Accommodation Reflex Present) / PRA (Pupillary Reflex Absent)."
+  },
+  {
+    "id": 128,
+    "cat": "Tests & Signs",
+    "name": "Adie Tonic Pupil",
+    "def": "Ciliary ganglion lesion: dilated pupil with very slow (tonic) response to light and accommodation."
+  },
+  {
+    "id": 129,
+    "cat": "Tests & Signs",
+    "name": "Romberg Sign",
+    "def": "Loss of balance when standing with feet together and eyes closed → posterior column/proprioception lesion."
+  },
+  {
+    "id": 130,
+    "cat": "Tests & Signs",
+    "name": "Babinski Sign",
+    "def": "Extension (dorsiflexion) of big toe on plantar stimulation → upper motor neuron lesion."
+  },
+  {
+    "id": 131,
+    "cat": "Tests & Signs",
+    "name": "Chvostek's Sign",
+    "def": "Tapping facial nerve at parotid → ipsilateral facial muscle twitch; indicates hypocalcaemia."
+  },
+  {
+    "id": 132,
+    "cat": "Tests & Signs",
+    "name": "Trousseau's Sign",
+    "def": "Carpal spasm with BP cuff inflated above systolic for 3 minutes; indicates hypocalcaemia."
+  },
+  {
+    "id": 133,
+    "cat": "Tests & Signs",
+    "name": "Corrigan's Pulse",
+    "def": "Water-hammer (collapsing) pulse of aortic regurgitation — rapid upstroke and sudden collapse."
+  },
+  {
+    "id": 134,
+    "cat": "Tests & Signs",
+    "name": "Cannon Wave",
+    "def": "Giant 'a' wave in JVP when right atrium contracts against closed tricuspid valve (complete heart block)."
+  },
+  {
+    "id": 135,
+    "cat": "Tests & Signs",
+    "name": "Charcot's Triad (cerebellar)",
+    "def": "Nystagmus + intention tremor + scanning speech — classic triad of cerebellar disease (e.g., MS)."
+  },
+  {
+    "id": 136,
+    "cat": "Tests & Signs",
+    "name": "Myerson's Sign",
+    "def": "Inability to suppress blink to repeated glabellar taps — seen in Parkinson's disease."
+  },
+  {
+    "id": 137,
+    "cat": "Tests & Signs",
+    "name": "Queckenstedt Test",
+    "def": "During LP, compress jugular veins → CSF pressure should rise rapidly; failure suggests spinal subarachnoid block."
+  },
+  {
+    "id": 138,
+    "cat": "Tests & Signs",
+    "name": "Schilling Test",
+    "def": "Two-stage test: oral radioactive B₁₂ ± intrinsic factor to identify cause of B₁₂ malabsorption."
+  },
+  {
+    "id": 139,
+    "cat": "Tests & Signs",
+    "name": "Hollander (Insulin) Test",
+    "def": "Insulin-induced hypoglycaemia stimulates vagus → measures gastric acid output (tests vagotomy completeness)."
+  },
+  {
+    "id": 140,
+    "cat": "Tests & Signs",
+    "name": "Jendrassik's Maneuver",
+    "def": "Patient hooks fingers and pulls apart → reinforces patellar/ankle reflexes by reducing cortical inhibition."
+  },
+  {
+    "id": 141,
+    "cat": "Tests & Signs",
+    "name": "Rinne's Test",
+    "def": "Tuning fork: AC > BC = normal or sensorineural; BC > AC = conductive deafness."
+  },
+  {
+    "id": 142,
+    "cat": "Tests & Signs",
+    "name": "Weber's Test",
+    "def": "Tuning fork on vertex: lateralises to BETTER ear in sensorineural, WORSE ear in conductive deafness."
+  },
+  {
+    "id": 143,
+    "cat": "Tests & Signs",
+    "name": "Ishihara Charts",
+    "def": "Pseudoisochromatic plates using coloured dots to screen for red-green colour blindness."
+  },
+  {
+    "id": 144,
+    "cat": "Tests & Signs",
+    "name": "Spinnbarkeit Test",
+    "def": "Measures the elasticity/stretchability of cervical mucus — peaks at ovulation due to oestrogen effect."
+  },
+  {
+    "id": 145,
+    "cat": "Tests & Signs",
+    "name": "Van den Bergh Test",
+    "def": "Differentiates conjugated (direct) from unconjugated (indirect) bilirubin in serum."
+  },
+  {
+    "id": 146,
+    "cat": "Tests & Signs",
+    "name": "Barany's Chair",
+    "def": "Rotating chair used to test semicircular canal function by inducing nystagmus."
+  },
+  {
+    "id": 147,
+    "cat": "Tests & Signs",
+    "name": "Bjerrum Screen",
+    "def": "Tangent screen used to map the central visual field and detect scotomas."
+  },
+  {
+    "id": 148,
+    "cat": "Tests & Signs",
+    "name": "Auer Bodies",
+    "def": "Abnormal azurophilic primary granules in myeloid blasts — pathognomonic of AML."
+  },
+  {
+    "id": 149,
+    "cat": "Tests & Signs",
+    "name": "Howell-Jolly Bodies",
+    "def": "Nuclear remnants in RBCs — seen post-splenectomy, in haemolytic anaemia, megaloblastic anaemia."
+  },
+  {
+    "id": 150,
+    "cat": "Tests & Signs",
+    "name": "Arneth Count",
+    "def": "Classification of neutrophils by number of nuclear lobes; left shift (fewer lobes) = immature cells; right shift = hypersegmentation."
+  },
+  {
+    "id": 151,
+    "cat": "Tests & Signs",
+    "name": "Barr Body",
+    "def": "Condensed inactive X chromosome visible in female cell nuclei; number = (X chromosomes − 1)."
+  },
+  {
+    "id": 152,
+    "cat": "Tests & Signs",
+    "name": "Snellen's Chart",
+    "def": "Standardised chart of letters at distance to measure visual acuity (6/6 or 20/20 is normal)."
+  },
+  {
+    "id": 153,
+    "cat": "Tests & Signs",
+    "name": "Jaeger's Chart",
+    "def": "Near-vision chart (J1–J7) used to assess reading vision and presbyopia."
+  },
+  {
+    "id": 154,
+    "cat": "Tests & Signs",
+    "name": "Caloric Test",
+    "def": "Ice water irrigation of ear canal → tests oculovestibular reflex; absent response indicates brainstem death."
+  },
+  {
+    "id": 155,
+    "cat": "Tests & Signs",
+    "name": "Doll's Eyes Response",
+    "def": "Passive head rotation → eyes should move opposite (brainstem intact); absent = brainstem lesion."
+  },
+  {
+    "id": 156,
+    "cat": "Bodies & Cells",
+    "name": "Herring Bodies",
+    "def": "Axonal dilations in the posterior pituitary containing neurosecretory granules (ADH and oxytocin)."
+  },
+  {
+    "id": 157,
+    "cat": "Bodies & Cells",
+    "name": "Kupffer Cells",
+    "def": "Resident macrophages lining hepatic sinusoids — phagocytose bacteria and old RBCs."
+  },
+  {
+    "id": 158,
+    "cat": "Bodies & Cells",
+    "name": "Purkinje Fibers",
+    "def": "Fastest conducting cells of the cardiac conduction system (2-4 m/s); also large inhibitory neurons in cerebellar cortex."
+  },
+  {
+    "id": 159,
+    "cat": "Bodies & Cells",
+    "name": "Renshaw Cells",
+    "def": "Inhibitory glycinergic interneurons in spinal cord ventral horn — provide recurrent inhibition to motor neurons."
+  },
+  {
+    "id": 160,
+    "cat": "Bodies & Cells",
+    "name": "Node of Ranvier",
+    "def": "Unmyelinated gap between Schwann cell segments on a myelinated axon — site of saltatory conduction."
+  },
+  {
+    "id": 161,
+    "cat": "Bodies & Cells",
+    "name": "Tamm-Horsfall Protein",
+    "def": "Glycoprotein synthesised by thick ascending limb cells; most abundant urinary protein, forms urinary casts."
+  },
+  {
+    "id": 162,
+    "cat": "Bodies & Cells",
+    "name": "C-Peptide",
+    "def": "By-product of proinsulin cleavage; equimolar with insulin; marker of endogenous insulin secretion."
+  },
+  {
+    "id": 163,
+    "cat": "Bodies & Cells",
+    "name": "K-Complexes",
+    "def": "High-amplitude negative-positive EEG waves in NREM Stage 2 sleep; also triggered by external stimuli."
+  },
+  {
+    "id": 164,
+    "cat": "Bodies & Cells",
+    "name": "Sleep Spindles",
+    "def": "Bursts of 12-14 Hz oscillations in NREM Stage 2 generated by thalamic reticular nucleus."
+  },
+  {
+    "id": 165,
+    "cat": "Bodies & Cells",
+    "name": "Spaces of Disse",
+    "def": "Perisinusoidal spaces between hepatocytes and sinusoidal endothelium — allow exchange of proteins and lipoproteins."
+  },
+  {
+    "id": 166,
+    "cat": "Bodies & Cells",
+    "name": "Brunner's Glands",
+    "def": "Submucosal glands in the duodenum secreting alkaline mucus to neutralise gastric acid entering the duodenum."
+  },
+  {
+    "id": 167,
+    "cat": "Bodies & Cells",
+    "name": "Pre-Bötzinger Complex",
+    "def": "Pacemaker neuron cluster in the ventral medulla acting as the central pattern generator for respiratory rhythm."
+  },
+  {
+    "id": 168,
+    "cat": "Anatomy",
+    "name": "Papez Circuit",
+    "def": "Neural loop: hippocampus → mammillary bodies → anterior thalamus → cingulate cortex → entorhinal cortex → hippocampus. Critical for memory and emotion."
+  },
+  {
+    "id": 169,
+    "cat": "Breathing",
+    "name": "Kussmaul Breathing",
+    "def": "Deep, rapid, laboured breathing; compensatory hyperventilation in metabolic acidosis (e.g., DKA)."
+  },
+  {
+    "id": 170,
+    "cat": "Breathing",
+    "name": "Cheyne-Stokes Breathing",
+    "def": "Waxing-and-waning tidal volume with periodic apnea; caused by delayed feedback from low cardiac output to central chemoreceptors. Seen in heart failure, bilateral cerebral hemisphere lesions, and high altitude."
+  },
+  {
+    "id": 171,
+    "cat": "Breathing",
+    "name": "Biot's Respiration",
+    "def": "Clusters of breaths then unpredictable apnea; caused by dorsal medullary lesions or raised ICP."
+  },
+  {
+    "id": 172,
+    "cat": "Breathing",
+    "name": "Ondine's Curse",
+    "def": "Loss of automatic respiratory drive (medullary pacemaker lesion) requiring voluntary control to breathe."
+  },
+  {
+    "id": 173,
+    "cat": "Breathing",
+    "name": "Apneustic Breathing",
+    "def": "Prolonged inspiratory gasps with brief expiration; caused by lesion of the pneumotaxic centre in the pons."
+  },
+  {
+    "id": 174,
+    "cat": "Theories",
+    "name": "Young-Helmholtz Theory",
+    "def": "Trichromatic colour vision based on three cone types: L (red), M (green), S (blue). Colour blindness = missing one cone type."
+  },
+  {
+    "id": 175,
+    "cat": "Theories",
+    "name": "Sliding-Filament Theory",
+    "def": "Muscle contraction occurs by thin actin filaments sliding over thick myosin filaments — sarcomere shortens but filaments do not."
+  },
+  {
+    "id": 176,
+    "cat": "Theories",
+    "name": "Walk-Along (Ratchet) Theory",
+    "def": "Myosin cross-bridges attach, pull (powerstroke), detach, and reattach further along actin in a cyclical ratchet."
+  },
+  {
+    "id": 177,
+    "cat": "Theories",
+    "name": "Traveling Wave Hypothesis",
+    "def": "Sound sets up a wave along the basilar membrane; each frequency peaks at a specific location (tonotopy)."
+  },
+  {
+    "id": 178,
+    "cat": "Theories",
+    "name": "Milieu Intérieur",
+    "def": "Claude Bernard's concept: the internal fluid environment must remain constant for cells to function optimally."
+  },
+  {
+    "id": 179,
+    "cat": "Theories",
+    "name": "Hayflick Limit",
+    "def": "Normal human somatic cells can divide ~50-70 times before entering senescence due to telomere shortening."
+  }
+]

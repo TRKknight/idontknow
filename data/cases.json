@@ -1,0 +1,3812 @@
+[
+  {
+    "id": 1,
+    "disorderId": 1,
+    "stem": "A 45-year-old obese man presents with polyuria, polydipsia, and fatigue for 3 months. Fasting blood glucose is 210 mg/dL. HbA1c is 9.2%. He has no ketonuria.",
+    "question": "What is the most likely diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Type 1 Diabetes Mellitus"
+      },
+      {
+        "letter": "B",
+        "text": "Type 2 Diabetes Mellitus"
+      },
+      {
+        "letter": "C",
+        "text": "Diabetic Ketoacidosis"
+      },
+      {
+        "letter": "D",
+        "text": "Cushing Syndrome"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Obese middle-aged patient with hyperglycemia, high HbA1c, no ketonuria \u2014 classic Type 2 DM with relative insulin deficiency.",
+    "difficulty": "easy",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 2,
+    "disorderId": 2,
+    "stem": "A 19-year-old Type 1 diabetic presents with vomiting, deep rapid breathing, and confusion. pH 7.1, glucose 450 mg/dL, bicarbonate 10 mEq/L. Urine is strongly positive for ketones.",
+    "question": "What is the underlying metabolic defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Relative insulin resistance"
+      },
+      {
+        "letter": "B",
+        "text": "Absolute or profound insulin deficiency causing ketogenesis"
+      },
+      {
+        "letter": "C",
+        "text": "Glucagon deficiency"
+      },
+      {
+        "letter": "D",
+        "text": "Pyruvate kinase deficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Absolute insulin deficiency leads to uncontrolled lipolysis and ketogenesis, causing high anion gap metabolic acidosis \u2014 DKA.",
+    "difficulty": "easy",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 3,
+    "disorderId": 3,
+    "stem": "A 7-year-old child on insulin therapy for Type 1 DM is found unconscious. Blood glucose is 28 mg/dL. She responds to IV dextrose within minutes.",
+    "question": "What is the most likely cause of her presentation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Diabetic ketoacidosis"
+      },
+      {
+        "letter": "B",
+        "text": "Insulin overdose causing hypoglycemia"
+      },
+      {
+        "letter": "C",
+        "text": "Von Gierke Disease"
+      },
+      {
+        "letter": "D",
+        "text": "McArdle Disease"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Rapid response to dextrose with very low glucose confirms hypoglycemia secondary to insulin excess.",
+    "difficulty": "easy",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 4,
+    "disorderId": 4,
+    "stem": "A 2-week-old neonate develops jaundice, hepatomegaly, vomiting, and cataracts after initiating formula feeds. Urine shows reducing substances but glucose oxidase test is negative. E. coli sepsis is detected.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Galactokinase"
+      },
+      {
+        "letter": "B",
+        "text": "Lactase"
+      },
+      {
+        "letter": "C",
+        "text": "Galactose-1-phosphate uridyltransferase (GALT)"
+      },
+      {
+        "letter": "D",
+        "text": "Aldolase B"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Classic galactosemia: GALT deficiency causes galactose-1-phosphate accumulation \u2192 liver damage, cataracts, E. coli susceptibility.",
+    "difficulty": "medium",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 5,
+    "disorderId": 5,
+    "stem": "A 3-month-old is found to have cataracts on routine examination. Urine reducing substances are positive. The infant is otherwise well with no liver disease. Newborn screen flags galactose elevation.",
+    "question": "What is the most likely diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Classic Galactosemia (GALT deficiency)"
+      },
+      {
+        "letter": "B",
+        "text": "Galactokinase Deficiency"
+      },
+      {
+        "letter": "C",
+        "text": "Hereditary Fructose Intolerance"
+      },
+      {
+        "letter": "D",
+        "text": "Lactose Intolerance"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Galactokinase deficiency causes only cataracts (galactitol accumulation) \u2014 no liver disease, no sepsis risk, unlike classic galactosemia.",
+    "difficulty": "medium",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 6,
+    "disorderId": 6,
+    "stem": "A 6-month-old develops vomiting, hypoglycemia, and hepatomegaly immediately after introduction of fruit juice. Symptoms resolve on fructose-free diet.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Fructokinase"
+      },
+      {
+        "letter": "B",
+        "text": "Aldolase B"
+      },
+      {
+        "letter": "C",
+        "text": "Fructose-1,6-bisphosphatase"
+      },
+      {
+        "letter": "D",
+        "text": "Glucose-6-phosphatase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Aldolase B deficiency causes fructose-1-phosphate accumulation \u2192 hepatotoxicity and hypoglycemia on fructose ingestion.",
+    "difficulty": "medium",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 7,
+    "disorderId": 7,
+    "stem": "A child is incidentally found to have fructosuria on a routine urine screen. He is completely asymptomatic. His diet has included fruit for months without any symptoms.",
+    "question": "What is the likely diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hereditary Fructose Intolerance"
+      },
+      {
+        "letter": "B",
+        "text": "Fructose-1,6-Bisphosphatase Deficiency"
+      },
+      {
+        "letter": "C",
+        "text": "Essential Fructosuria"
+      },
+      {
+        "letter": "D",
+        "text": "Galactosemia"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Fructokinase deficiency is benign \u2014 fructose spills into urine but causes no metabolic harm.",
+    "difficulty": "easy",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 8,
+    "disorderId": 8,
+    "stem": "A 25-year-old African-American man develops bloating, flatulence, and diarrhea 2 hours after drinking milk. Symptoms do not occur with yogurt or cheese.",
+    "question": "What is the underlying defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Galactokinase deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Intestinal lactase deficiency"
+      },
+      {
+        "letter": "C",
+        "text": "Sucrase-isomaltase deficiency"
+      },
+      {
+        "letter": "D",
+        "text": "GLUT5 transporter defect"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Lactase brush border deficiency is most common in adults of African descent \u2014 undigested lactose is fermented by colonic bacteria.",
+    "difficulty": "easy",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 9,
+    "disorderId": 9,
+    "stem": "A 4-month-old infant develops severe fasting hypoglycemia and lactic acidosis. Symptoms are triggered by prolonged fasting or febrile illness. Hepatomegaly is present. Galactose and fructose loads worsen hypoglycemia.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Glucose-6-phosphatase"
+      },
+      {
+        "letter": "B",
+        "text": "Pyruvate carboxylase"
+      },
+      {
+        "letter": "C",
+        "text": "Fructose-1,6-bisphosphatase"
+      },
+      {
+        "letter": "D",
+        "text": "Phosphoenolpyruvate carboxykinase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "F-1,6-BPase deficiency blocks gluconeogenesis \u2014 fasting causes hypoglycemia and lactate accumulation. Both fructose and galactose feed into the pathway before the block.",
+    "difficulty": "hard",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 10,
+    "disorderId": 10,
+    "stem": "A routine urine dipstick in an otherwise healthy adult shows pentosuria. Further testing reveals L-xylulose in the urine. The patient has no symptoms. This is found exclusively in Ashkenazi Jews.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Diabetes mellitus"
+      },
+      {
+        "letter": "B",
+        "text": "Essential Pentosuria"
+      },
+      {
+        "letter": "C",
+        "text": "Fanconi Syndrome"
+      },
+      {
+        "letter": "D",
+        "text": "Galactosuria"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Xylitol dehydrogenase deficiency causes L-xylulose excretion \u2014 a benign condition common in Ashkenazi Jews, often confused with diabetes on dipstick.",
+    "difficulty": "medium",
+    "tags": [
+      "A"
+    ]
+  },
+  {
+    "id": 11,
+    "disorderId": 11,
+    "stem": "A 6-month-old presents with hepatomegaly, doll-like facies, fasting hypoglycemia, and lactic acidosis. Glucose-6-phosphate accumulates. Glycogen is normal in structure but increased in quantity in liver and kidney.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Debranching enzyme"
+      },
+      {
+        "letter": "B",
+        "text": "Glycogen phosphorylase"
+      },
+      {
+        "letter": "C",
+        "text": "Glucose-6-phosphatase"
+      },
+      {
+        "letter": "D",
+        "text": "Branching enzyme"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Von Gierke Disease (GSD I): G6Pase deficiency blocks release of free glucose \u2192 severe fasting hypoglycemia, lactic acidosis, doll-like facies.",
+    "difficulty": "medium",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 12,
+    "disorderId": 12,
+    "stem": "A 5-month-old presents with hypotonia, cardiomegaly, and respiratory failure. Muscle biopsy shows massive lysosomal glycogen accumulation. CK is elevated. The infant dies of cardiac failure by 2 years.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muscle phosphorylase"
+      },
+      {
+        "letter": "B",
+        "text": "Lysosomal acid maltase (\u03b1-1,4-glucosidase)"
+      },
+      {
+        "letter": "C",
+        "text": "Glucose-6-phosphatase"
+      },
+      {
+        "letter": "D",
+        "text": "Debranching enzyme"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Pompe Disease: lysosomal acid maltase deficiency causes glycogen accumulation in lysosomes \u2014 cardiomegaly is hallmark. Alglucosidase alfa (Myozyme) is treatment.",
+    "difficulty": "medium",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 13,
+    "disorderId": 13,
+    "stem": "A 2-year-old has hepatomegaly, mild hypoglycemia, and muscle weakness. Glycogen with abnormally short outer chains is found. Blood glucose partially recovers with glucagon. Fasting hypoglycemia is mild.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Von Gierke Disease"
+      },
+      {
+        "letter": "B",
+        "text": "Pompe Disease"
+      },
+      {
+        "letter": "C",
+        "text": "Cori Disease (GSD III)"
+      },
+      {
+        "letter": "D",
+        "text": "Andersen Disease"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Debranching enzyme deficiency (Cori) \u2014 limit dextrin accumulates. Partial glucagon response distinguishes it from GSD I.",
+    "difficulty": "hard",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 14,
+    "disorderId": 14,
+    "stem": "A 1-year-old with progressive hepatomegaly develops cirrhosis and liver failure. Liver biopsy shows abnormal glycogen with very long outer chains (amylopectin-like). Death from liver failure occurs in childhood.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Debranching enzyme"
+      },
+      {
+        "letter": "B",
+        "text": "Branching enzyme"
+      },
+      {
+        "letter": "C",
+        "text": "Liver phosphorylase"
+      },
+      {
+        "letter": "D",
+        "text": "Glucose-6-phosphatase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Andersen Disease: branching enzyme deficiency causes amylopectin-like glycogen \u2014 poorly soluble, triggers inflammatory reaction and cirrhosis.",
+    "difficulty": "hard",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 15,
+    "disorderId": 15,
+    "stem": "A 25-year-old athlete develops severe muscle cramps and myoglobinuria during intense exercise. Symptoms improve with rest. Forearm ischemic exercise test shows no rise in venous lactate.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muscle phosphofructokinase"
+      },
+      {
+        "letter": "B",
+        "text": "Muscle glycogen phosphorylase"
+      },
+      {
+        "letter": "C",
+        "text": "Liver phosphorylase"
+      },
+      {
+        "letter": "D",
+        "text": "Phosphoglycerate mutase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "McArdle Disease: muscle phosphorylase deficiency \u2014 muscle glycogen cannot be broken down during exercise. No lactate rise on ischemic exercise test is classic.",
+    "difficulty": "medium",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 16,
+    "disorderId": 16,
+    "stem": "A 3-year-old has asymptomatic hepatomegaly detected on exam. Fasting hypoglycemia is mild. Glucagon response is normal. Liver biopsy shows excess glycogen. Growth is mildly delayed. Symptoms often improve after puberty.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GSD I (Von Gierke)"
+      },
+      {
+        "letter": "B",
+        "text": "GSD III (Cori)"
+      },
+      {
+        "letter": "C",
+        "text": "GSD VI (Hers Disease)"
+      },
+      {
+        "letter": "D",
+        "text": "GSD II (Pompe)"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Hers Disease: liver phosphorylase deficiency \u2014 mild benign course, improves with age, no cardiac or severe hypoglycemia.",
+    "difficulty": "hard",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 17,
+    "disorderId": 17,
+    "stem": "A 20-year-old presents with exercise intolerance, cramps, and myoglobinuria. Unlike McArdle Disease, RBCs show hemolytic anemia. Forearm test shows no venous lactate rise. He has hyperuricemia.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Muscle glycogen phosphorylase"
+      },
+      {
+        "letter": "B",
+        "text": "Muscle phosphofructokinase-1"
+      },
+      {
+        "letter": "C",
+        "text": "Phosphoglycerate kinase"
+      },
+      {
+        "letter": "D",
+        "text": "Aldolase A"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Tarui Disease (GSD VII): PFK-1 deficiency \u2014 identical to McArdle clinically but additionally causes hemolytic anemia as RBCs also rely on PFK-1.",
+    "difficulty": "hard",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 18,
+    "disorderId": 18,
+    "stem": "A 2-year-old boy has hepatomegaly and mild exercise intolerance. Lab shows elevated CK. Electron transport studies show defective phosphorylase kinase in muscle. Liver function is normal. Prognosis is generally good.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "GSD V (McArdle)"
+      },
+      {
+        "letter": "B",
+        "text": "GSD VI (Hers)"
+      },
+      {
+        "letter": "C",
+        "text": "GSD IX"
+      },
+      {
+        "letter": "D",
+        "text": "GSD III (Cori)"
+      }
+    ],
+    "answer": "C",
+    "explanation": "GSD IX: phosphorylase kinase deficiency \u2014 enzyme that activates glycogen phosphorylase is absent; mild phenotype, good prognosis.",
+    "difficulty": "hard",
+    "tags": [
+      "B"
+    ]
+  },
+  {
+    "id": 19,
+    "disorderId": 19,
+    "stem": "A 35-year-old man has tendon xanthomas on his Achilles tendons and corneal arcus. LDL is 450 mg/dL. His father died of MI at 45. Total cholesterol is 600 mg/dL. He has a family history of premature CAD.",
+    "question": "What is the underlying defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "LDL receptor defect or Apo B-100 mutation"
+      },
+      {
+        "letter": "B",
+        "text": "Lipoprotein lipase deficiency"
+      },
+      {
+        "letter": "C",
+        "text": "VLDL overproduction"
+      },
+      {
+        "letter": "D",
+        "text": "ABCA1 mutation"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Familial Hypercholesterolemia: LDL receptor defect causes markedly elevated LDL, tendon xanthomas, and premature coronary artery disease.",
+    "difficulty": "easy",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 20,
+    "disorderId": 20,
+    "stem": "A 50-year-old obese diabetic man has TG of 900 mg/dL and a creamy top layer on standing serum. He drinks alcohol regularly. He has no pancreatitis. VLDL is markedly elevated.",
+    "question": "What type of hyperlipidemia is this?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Type I \u2014 LPL deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Type IIa \u2014 LDL receptor defect"
+      },
+      {
+        "letter": "C",
+        "text": "Type IV \u2014 VLDL overproduction"
+      },
+      {
+        "letter": "D",
+        "text": "Type III \u2014 Apo E defect"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Hypertriglyceridemia Type IV: VLDL overproduction, often triggered by obesity, diabetes, alcohol \u2014 TG elevated, cholesterol normal/mildly raised.",
+    "difficulty": "medium",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 21,
+    "disorderId": 21,
+    "stem": "A 55-year-old with both elevated LDL and TG has palmar xanthomas (xanthoma striata palmaris) and tuberous xanthomas. Apo E2/E2 genotype is found. VLDL remnants (IDL) are elevated.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Familial Hypercholesterolemia (Type IIa)"
+      },
+      {
+        "letter": "B",
+        "text": "Mixed Hyperlipidemia Type III (Broad Beta Disease)"
+      },
+      {
+        "letter": "C",
+        "text": "Lipoprotein Lipase Deficiency (Type I)"
+      },
+      {
+        "letter": "D",
+        "text": "Tangier Disease"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Type III (Dysbetalipo-proteinemia): Apo E2 defect impairs IDL clearance \u2192 elevated IDL, palmar and tuberous xanthomas.",
+    "difficulty": "hard",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 22,
+    "disorderId": 22,
+    "stem": "A 3-year-old with failure to thrive has fat malabsorption, acanthocytosis of RBCs, ataxia, and retinitis pigmentosa. Serum cholesterol and triglycerides are extremely low. No chylomicrons or VLDL are detectable.",
+    "question": "Which protein is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apolipoprotein B"
+      },
+      {
+        "letter": "B",
+        "text": "Microsomal Triglyceride Transfer Protein (MTP)"
+      },
+      {
+        "letter": "C",
+        "text": "Apo C-II"
+      },
+      {
+        "letter": "D",
+        "text": "Lipoprotein Lipase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Abetalipoproteinemia: MTP deficiency prevents Apo B assembly \u2192 no chylomicrons or VLDL \u2192 fat malabsorption and fat-soluble vitamin deficiency.",
+    "difficulty": "hard",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 23,
+    "disorderId": 23,
+    "stem": "A 15-year-old has massively enlarged, orange-yellow tonsils. HDL is virtually absent. He has peripheral neuropathy and corneal infiltrates. Cholesterol esters accumulate in tissues.",
+    "question": "What is the underlying defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apo A-I deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "LCAT deficiency"
+      },
+      {
+        "letter": "C",
+        "text": "ABCA1 gene mutation (cholesterol efflux defect)"
+      },
+      {
+        "letter": "D",
+        "text": "LPL deficiency"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Tangier Disease: ABCA1 defect blocks cholesterol efflux from cells to HDL \u2192 near-absent HDL, cholesterol ester storage in reticuloendothelial tissues (orange tonsils).",
+    "difficulty": "hard",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 24,
+    "disorderId": 24,
+    "stem": "A 5-year-old presents with recurrent pancreatitis, eruptive xanthomas, and hepatosplenomegaly. TG is 4,000 mg/dL. Serum appears creamy (lipemic). Symptoms improve on a very low-fat diet.",
+    "question": "Which enzyme or cofactor is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hepatic lipase"
+      },
+      {
+        "letter": "B",
+        "text": "Lipoprotein lipase or Apo C-II"
+      },
+      {
+        "letter": "C",
+        "text": "LCAT"
+      },
+      {
+        "letter": "D",
+        "text": "MTP"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Type I hyperlipoproteinemia: LPL or its activator Apo C-II deficiency \u2192 chylomicrons cannot be cleared \u2192 massive hypertriglyceridemia, pancreatitis.",
+    "difficulty": "medium",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 25,
+    "disorderId": 25,
+    "stem": "A 3-month-old infant has hypotonia, cardiomyopathy, and fasting hypoglycemia with hypoketosis. Plasma and urine carnitine levels are very low. IV carnitine infusion dramatically improves condition.",
+    "question": "What is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "MCAD"
+      },
+      {
+        "letter": "B",
+        "text": "Carnitine or its translocase"
+      },
+      {
+        "letter": "C",
+        "text": "Propionyl-CoA carboxylase"
+      },
+      {
+        "letter": "D",
+        "text": "Acyl-CoA synthetase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Carnitine deficiency blocks fatty acid transport into mitochondria \u2192 no beta-oxidation \u2192 hypoketotic hypoglycemia and cardiomyopathy.",
+    "difficulty": "medium",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 26,
+    "disorderId": 26,
+    "stem": "A 3-month-old SIDS near-miss infant has hypoketotic hypoglycemia triggered by fasting. C8 acylcarnitine is elevated on newborn screen. Urine shows dicarboxylic acids. No ketonemia despite low glucose.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "VLCAD"
+      },
+      {
+        "letter": "B",
+        "text": "Medium-chain acyl-CoA dehydrogenase (MCAD)"
+      },
+      {
+        "letter": "C",
+        "text": "LCHAD"
+      },
+      {
+        "letter": "D",
+        "text": "Carnitine palmitoyltransferase I"
+      }
+    ],
+    "answer": "B",
+    "explanation": "MCAD deficiency: most common fatty acid oxidation disorder. C8 acylcarnitine elevation on newborn screen is diagnostic. Hypoketotic hypoglycemia is hallmark.",
+    "difficulty": "medium",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 27,
+    "disorderId": 27,
+    "stem": "A newborn has hypotonia, large fontanelle, hepatomegaly, and seizures. MRI shows neuronal migration defect. Blood shows elevated VLCFA, pipecolic acid, and phytanic acid. Peroxisomes are absent on liver biopsy.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Refsum Disease"
+      },
+      {
+        "letter": "B",
+        "text": "X-linked Adrenoleukodystrophy"
+      },
+      {
+        "letter": "C",
+        "text": "Zellweger Syndrome"
+      },
+      {
+        "letter": "D",
+        "text": "Niemann-Pick Disease"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Zellweger Syndrome: PEX gene mutation prevents peroxisome biogenesis \u2192 VLCFA accumulation, neuronal migration failure, early death.",
+    "difficulty": "hard",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 28,
+    "disorderId": 28,
+    "stem": "A 20-year-old develops retinitis pigmentosa, peripheral sensory neuropathy, cerebellar ataxia, and ichthyosis. Phytanic acid levels are markedly elevated. Symptoms improve on a phytanic acid-restricted diet.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Alpha-methylacyl-CoA racemase"
+      },
+      {
+        "letter": "B",
+        "text": "Phytanoyl-CoA hydroxylase (phytanic acid alpha-oxidase)"
+      },
+      {
+        "letter": "C",
+        "text": "Very long chain acyl-CoA dehydrogenase"
+      },
+      {
+        "letter": "D",
+        "text": "GlcNAc-phosphotransferase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Refsum Disease: failure of phytanic acid alpha-oxidation \u2192 phytanic acid accumulation in tissues. Dietary restriction of dairy/ruminant fats is effective.",
+    "difficulty": "hard",
+    "tags": [
+      "C"
+    ]
+  },
+  {
+    "id": 29,
+    "disorderId": 29,
+    "stem": "A newborn screen flags elevated phenylalanine (850 \u03bcmol/L). The infant is placed on phenylalanine-restricted diet. Without treatment, he would develop musty odor urine, severe intellectual disability, and fair skin.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tyrosine transaminase"
+      },
+      {
+        "letter": "B",
+        "text": "Phenylalanine hydroxylase"
+      },
+      {
+        "letter": "C",
+        "text": "Homogentisate oxidase"
+      },
+      {
+        "letter": "D",
+        "text": "Fumarylacetoacetate hydrolase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "PKU: PAH deficiency \u2192 Phe accumulates, competes with tyrosine transport into CNS, causing intellectual disability. Phenylalanine restriction prevents this.",
+    "difficulty": "easy",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 30,
+    "disorderId": 30,
+    "stem": "A 3-month-old has jaundice, hepatomegaly, and renal tubular dysfunction (Fanconi syndrome). Cabbage-like odor is noted. Urine shows succinylacetone. He develops hepatocellular carcinoma in childhood.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tyrosine aminotransferase"
+      },
+      {
+        "letter": "B",
+        "text": "4-Hydroxyphenylpyruvate dioxygenase"
+      },
+      {
+        "letter": "C",
+        "text": "Fumarylacetoacetate hydrolase (FAH)"
+      },
+      {
+        "letter": "D",
+        "text": "Phenylalanine hydroxylase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Tyrosinemia Type I: FAH deficiency \u2192 fumarylacetoacetate and succinylacetone accumulate \u2192 liver disease, Fanconi syndrome, HCC risk.",
+    "difficulty": "hard",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 31,
+    "disorderId": 31,
+    "stem": "A child has painful palmoplantar keratosis and corneal erosions (pseudoherpetic keratitis). Plasma tyrosine is markedly elevated. Liver function is normal. No succinylacetone is found.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tyrosinemia Type I"
+      },
+      {
+        "letter": "B",
+        "text": "Tyrosinemia Type II (Richner-Hanhart Syndrome)"
+      },
+      {
+        "letter": "C",
+        "text": "Alkaptonuria"
+      },
+      {
+        "letter": "D",
+        "text": "PKU"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Tyrosinemia Type II: tyrosine transaminase deficiency \u2192 tyrosine crystal deposition in skin and cornea. No liver involvement.",
+    "difficulty": "hard",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 32,
+    "disorderId": 32,
+    "stem": "An infant has transiently elevated tyrosine on newborn screen. Neurological symptoms are mild. 4-hydroxyphenylpyruvate is elevated in urine. No succinylacetone. Liver and eyes are normal. Vitamin C supplementation helps.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tyrosinemia Type I"
+      },
+      {
+        "letter": "B",
+        "text": "Tyrosinemia Type II"
+      },
+      {
+        "letter": "C",
+        "text": "Tyrosinemia Type III"
+      },
+      {
+        "letter": "D",
+        "text": "Alkaptonuria"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Tyrosinemia Type III: 4-HPD deficiency \u2014 mildest form, mainly neurological, responds partly to vitamin C.",
+    "difficulty": "hard",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 33,
+    "disorderId": 33,
+    "stem": "A 40-year-old has urine that turns black on standing. He has back pain and X-ray shows calcification of intervertebral discs (ochronosis). His earwax and sclera appear darkened.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Phenylalanine hydroxylase"
+      },
+      {
+        "letter": "B",
+        "text": "Tyrosine transaminase"
+      },
+      {
+        "letter": "C",
+        "text": "Homogentisate oxidase"
+      },
+      {
+        "letter": "D",
+        "text": "FAH"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Alkaptonuria: homogentisate oxidase deficiency \u2192 homogentisic acid accumulates \u2192 black urine, ochronosis (dark pigment in connective tissue), arthritis.",
+    "difficulty": "medium",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 34,
+    "disorderId": 34,
+    "stem": "A neonate has encephalopathy, maple syrup-smelling urine, and feeding difficulties. Plasma shows elevated leucine, isoleucine, and valine. He deteriorates rapidly without dietary intervention.",
+    "question": "Which enzyme complex is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Propionyl-CoA carboxylase"
+      },
+      {
+        "letter": "B",
+        "text": "Branched-chain \u03b1-ketoacid dehydrogenase (BCKD)"
+      },
+      {
+        "letter": "C",
+        "text": "Isovaleryl-CoA dehydrogenase"
+      },
+      {
+        "letter": "D",
+        "text": "Glutaryl-CoA dehydrogenase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "MSUD: BCKD complex deficiency \u2192 branched-chain amino acids and their ketoacids accumulate \u2192 neurotoxicity. Cofactor: Thiamine (TPP).",
+    "difficulty": "medium",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 35,
+    "disorderId": 35,
+    "stem": "A tall, marfanoid 16-year-old with downward lens dislocation is found to have high plasma homocysteine. He has a history of DVT and stroke. His urine nitroprusside test is positive. He responds to high-dose pyridoxine.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Methionine adenosyltransferase"
+      },
+      {
+        "letter": "B",
+        "text": "Cystathionine \u03b2-synthase"
+      },
+      {
+        "letter": "C",
+        "text": "MTHFR"
+      },
+      {
+        "letter": "D",
+        "text": "Homocysteine methyltransferase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Homocystinuria: CBS deficiency \u2192 homocysteine accumulates \u2192 Marfanoid habitus, downward ectopia lentis, thrombosis. B6 (pyridoxine) is cofactor \u2014 responsive cases treated with B6.",
+    "difficulty": "medium",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 36,
+    "disorderId": 36,
+    "stem": "A child has pellagra-like rash on sun-exposed areas, cerebellar ataxia, and psychiatric symptoms. Urine amino acid screen shows neutral aminoaciduria. Nicotinic acid supplementation improves symptoms.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pellagra (Niacin deficiency)"
+      },
+      {
+        "letter": "B",
+        "text": "Hartnup Disease"
+      },
+      {
+        "letter": "C",
+        "text": "Cystinuria"
+      },
+      {
+        "letter": "D",
+        "text": "Phenylketonuria"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hartnup Disease: neutral amino acid transporter defect \u2192 tryptophan malabsorption \u2192 niacin deficiency \u2192 pellagra-like symptoms. Niacin supplementation bypasses the block.",
+    "difficulty": "medium",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 37,
+    "disorderId": 37,
+    "stem": "A 25-year-old male has recurrent kidney stones (radiopaque, hexagonal). Stone analysis confirms cystine. He has a family history of urolithiasis. Urine COLA amino acids are elevated (cystine, ornithine, lysine, arginine).",
+    "question": "What is the underlying defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cystathionine \u03b2-synthase deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Defective renal/intestinal COLA amino acid transporter"
+      },
+      {
+        "letter": "C",
+        "text": "Lysosomal cystine transporter defect"
+      },
+      {
+        "letter": "D",
+        "text": "Xanthine oxidase deficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Cystinuria: transporter defect for COLA amino acids \u2192 cystine precipitates in alkaline urine forming hexagonal stones. Alkalinization of urine and hydration are treatments.",
+    "difficulty": "medium",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 38,
+    "disorderId": 38,
+    "stem": "A child has elevated plasma histidine. He has mild speech delay. Urine imidazole compounds are elevated. Histidase enzyme activity is reduced in skin fibroblasts. The condition is largely benign.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hartnup Disease"
+      },
+      {
+        "letter": "B",
+        "text": "Histidinemia"
+      },
+      {
+        "letter": "C",
+        "text": "Maple Syrup Urine Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Homocystinuria"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Histidinemia: histidase deficiency \u2014 mostly benign, incidentally found on newborn screen. Mild speech delay in some cases.",
+    "difficulty": "easy",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 39,
+    "disorderId": 39,
+    "stem": "A 3-year-old has photophobia, renal Fanconi syndrome, and growth retardation. Slit-lamp shows cystine crystals in the cornea. Leukocyte cystine levels are elevated. Cysteamine therapy is used.",
+    "question": "What is the underlying defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Renal COLA transporter defect"
+      },
+      {
+        "letter": "B",
+        "text": "Cystathionine \u03b2-synthase deficiency"
+      },
+      {
+        "letter": "C",
+        "text": "Defective lysosomal cystinosin transporter"
+      },
+      {
+        "letter": "D",
+        "text": "Phytanoyl-CoA hydroxylase deficiency"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Cystinosis: cystinosin transporter defect \u2192 cystine accumulates in lysosomes of all cells \u2192 corneal crystals, renal Fanconi, photophobia. Cysteamine depletes lysosomal cystine.",
+    "difficulty": "hard",
+    "tags": [
+      "D"
+    ]
+  },
+  {
+    "id": 40,
+    "disorderId": 40,
+    "stem": "A newborn becomes lethargic, has seizures, and is found to have plasma ammonia of 1,200 \u03bcmol/L. Citrulline is low. No orotic acid in urine. Glutamine is elevated. He has no known family history.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "OTC"
+      },
+      {
+        "letter": "B",
+        "text": "Carbamoyl phosphate synthetase I (CPS-I)"
+      },
+      {
+        "letter": "C",
+        "text": "Argininosuccinate synthetase"
+      },
+      {
+        "letter": "D",
+        "text": "Arginase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "CPS-I deficiency: first enzyme of urea cycle \u2014 low citrulline, no orotic acid (unlike OTC), massive hyperammonemia. Autosomal recessive.",
+    "difficulty": "hard",
+    "tags": [
+      "E"
+    ]
+  },
+  {
+    "id": 41,
+    "disorderId": 41,
+    "stem": "A 3-day-old male has hyperammonemia, low citrulline, and markedly elevated orotic acid in urine. Mother is an asymptomatic carrier with episodic headaches after protein meals. He enters a coma.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "CPS-I"
+      },
+      {
+        "letter": "B",
+        "text": "Ornithine transcarbamoylase (OTC)"
+      },
+      {
+        "letter": "C",
+        "text": "Argininosuccinate synthetase"
+      },
+      {
+        "letter": "D",
+        "text": "Arginase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "OTC deficiency (X-linked): most common urea cycle defect. Carbamoyl phosphate overflows into pyrimidine synthesis \u2192 elevated orotic acid in urine.",
+    "difficulty": "medium",
+    "tags": [
+      "E"
+    ]
+  },
+  {
+    "id": 42,
+    "disorderId": 42,
+    "stem": "A neonate has hyperammonemia with markedly elevated citrulline in blood and urine. Orotic acid is elevated. AST and ALT are normal. Argininosuccinate is absent.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "OTC"
+      },
+      {
+        "letter": "B",
+        "text": "CPS-I"
+      },
+      {
+        "letter": "C",
+        "text": "Argininosuccinate synthetase"
+      },
+      {
+        "letter": "D",
+        "text": "Argininosuccinate lyase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Citrullinemia: ASS deficiency \u2192 citrulline cannot be converted to argininosuccinate \u2192 marked citrullinemia.",
+    "difficulty": "hard",
+    "tags": [
+      "E"
+    ]
+  },
+  {
+    "id": 43,
+    "disorderId": 43,
+    "stem": "A child has hyperammonemia, elevated citrulline, and argininosuccinate in blood and CSF. She has brittle, trichorrhexis nodosa hair. Liver function is mild impaired.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Argininosuccinate synthetase"
+      },
+      {
+        "letter": "B",
+        "text": "Argininosuccinate lyase"
+      },
+      {
+        "letter": "C",
+        "text": "Arginase"
+      },
+      {
+        "letter": "D",
+        "text": "OTC"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Argininosuccinic Aciduria: ASL deficiency \u2192 argininosuccinate accumulates. Trichorrhexis nodosa (fragile hair) is a distinguishing feature.",
+    "difficulty": "hard",
+    "tags": [
+      "E"
+    ]
+  },
+  {
+    "id": 44,
+    "disorderId": 44,
+    "stem": "An older child has progressive spastic diplegia, hyperammonemia (mild, episodic), and markedly elevated plasma arginine. Urinary guanidino compounds are elevated.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Argininosuccinate lyase"
+      },
+      {
+        "letter": "B",
+        "text": "Arginase"
+      },
+      {
+        "letter": "C",
+        "text": "OTC"
+      },
+      {
+        "letter": "D",
+        "text": "CPS-I"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Argininemia: arginase deficiency \u2014 presents late with spasticity and intellectual disability rather than acute hyperammonemic crisis. Plasma arginine markedly elevated.",
+    "difficulty": "hard",
+    "tags": [
+      "E"
+    ]
+  },
+  {
+    "id": 45,
+    "disorderId": 45,
+    "stem": "A 1-week-old infant has metabolic acidosis, hyperammonemia, and neutropenia. Urine organic acids show elevated methylmalonic acid. He has low B12 or a mutase deficiency.",
+    "question": "Which enzyme or cofactor is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Propionyl-CoA carboxylase"
+      },
+      {
+        "letter": "B",
+        "text": "Isovaleryl-CoA dehydrogenase"
+      },
+      {
+        "letter": "C",
+        "text": "Methylmalonyl-CoA mutase or adenosyl-B12"
+      },
+      {
+        "letter": "D",
+        "text": "Glutaryl-CoA dehydrogenase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Methylmalonic Acidemia: mutase or adenosyl-B12 deficiency \u2192 MMA accumulates \u2192 metabolic acidosis, hyperammonemia, neutropenia. Treated with B12 in responsive forms.",
+    "difficulty": "medium",
+    "tags": [
+      "F"
+    ]
+  },
+  {
+    "id": 46,
+    "disorderId": 46,
+    "stem": "A neonate has metabolic acidosis, hyperammonemia, and elevated propionic acid in blood. Neutropenia and thrombocytopenia are found. Urine shows 3-hydroxypropionic acid.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Methylmalonyl-CoA mutase"
+      },
+      {
+        "letter": "B",
+        "text": "Propionyl-CoA carboxylase"
+      },
+      {
+        "letter": "C",
+        "text": "Isovaleryl-CoA dehydrogenase"
+      },
+      {
+        "letter": "D",
+        "text": "Acetyl-CoA carboxylase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Propionic Acidemia: propionyl-CoA carboxylase deficiency (needs biotin) \u2192 propionic acid accumulates \u2192 metabolic acidosis. Biotin supplementation helps biotin-responsive cases.",
+    "difficulty": "medium",
+    "tags": [
+      "F"
+    ]
+  },
+  {
+    "id": 47,
+    "disorderId": 47,
+    "stem": "A neonate has a distinctive sweaty feet odor, metabolic acidosis, and encephalopathy. Elevated isovalerylcarnitine is found on newborn screen. Glycine conjugation of isovaleryl-CoA produces isovalerylglycine in urine.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Propionyl-CoA carboxylase"
+      },
+      {
+        "letter": "B",
+        "text": "MCAD"
+      },
+      {
+        "letter": "C",
+        "text": "Isovaleryl-CoA dehydrogenase"
+      },
+      {
+        "letter": "D",
+        "text": "Glutaryl-CoA dehydrogenase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Isovaleric Acidemia: IVD deficiency \u2192 isovaleric acid (sweaty feet odor) accumulates. Glycine and carnitine supplementation are used to conjugate the toxic metabolite.",
+    "difficulty": "medium",
+    "tags": [
+      "F"
+    ]
+  },
+  {
+    "id": 48,
+    "disorderId": 48,
+    "stem": "A 9-month-old develops acute encephalopathy after a febrile illness. He is found to have macrocephaly. MRI shows bilateral striatal necrosis. Urine shows elevated glutaric acid and 3-hydroxyglutaric acid.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Isovaleryl-CoA dehydrogenase"
+      },
+      {
+        "letter": "B",
+        "text": "Glutaryl-CoA dehydrogenase"
+      },
+      {
+        "letter": "C",
+        "text": "Propionyl-CoA carboxylase"
+      },
+      {
+        "letter": "D",
+        "text": "MCAD"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Glutaric Acidemia Type I: GAD deficiency \u2192 glutaric and 3-hydroxyglutaric acid accumulate \u2192 striatal injury during catabolic stress. Macrocephaly is a clue.",
+    "difficulty": "hard",
+    "tags": [
+      "F"
+    ]
+  },
+  {
+    "id": 49,
+    "disorderId": 49,
+    "stem": "A 45-year-old obese man presents with acute severe pain in his right great toe. The joint is red, hot, and swollen. Serum uric acid is 11 mg/dL. He drinks beer daily and takes low-dose aspirin.",
+    "question": "What is the underlying metabolic defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "HGPRTase deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Uric acid overproduction or underexcretion"
+      },
+      {
+        "letter": "C",
+        "text": "ADA deficiency"
+      },
+      {
+        "letter": "D",
+        "text": "Xanthine oxidase overactivity"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Gout: urate overproduction (PRPP synthetase) or underexcretion (low-dose aspirin blocks renal urate secretion) \u2192 sodium urate crystal deposition in joints.",
+    "difficulty": "easy",
+    "tags": [
+      "G"
+    ]
+  },
+  {
+    "id": 50,
+    "disorderId": 50,
+    "stem": "A 3-year-old boy with intellectual disability exhibits self-mutilation (lip and finger biting), hyperuricemia, and choreoathetosis. His mother is a carrier but unaffected. Uric acid is grossly elevated.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adenosine deaminase"
+      },
+      {
+        "letter": "B",
+        "text": "PRPP synthetase"
+      },
+      {
+        "letter": "C",
+        "text": "HGPRTase (HPRT1)"
+      },
+      {
+        "letter": "D",
+        "text": "Xanthine oxidase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Lesch-Nyhan Syndrome: X-linked HGPRTase deficiency \u2192 no purine salvage \u2192 massive uric acid production + neurological dysfunction (dopaminergic pathways). Self-mutilation is pathognomonic.",
+    "difficulty": "medium",
+    "tags": [
+      "G"
+    ]
+  },
+  {
+    "id": 51,
+    "disorderId": 51,
+    "stem": "A 6-month-old has recurrent severe infections with absent T and B cell lymphocytes. Chest X-ray shows absent thymic shadow. Lymphocyte count is very low. Deoxyadenosine triphosphate accumulates in lymphocytes.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Purine nucleoside phosphorylase"
+      },
+      {
+        "letter": "B",
+        "text": "HGPRTase"
+      },
+      {
+        "letter": "C",
+        "text": "Adenosine deaminase (ADA)"
+      },
+      {
+        "letter": "D",
+        "text": "Xanthine oxidase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "ADA-SCID: dATP accumulates \u2192 lymphotoxic \u2192 combined T+B cell immunodeficiency. First disease treated with gene therapy.",
+    "difficulty": "medium",
+    "tags": [
+      "G"
+    ]
+  },
+  {
+    "id": 52,
+    "disorderId": 52,
+    "stem": "A patient has very low serum uric acid. Urinary xanthine and hypoxanthine are elevated. He forms xanthine kidney stones. Allopurinol would worsen xanthine stone formation. He has no gout.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "HGPRTase"
+      },
+      {
+        "letter": "B",
+        "text": "ADA"
+      },
+      {
+        "letter": "C",
+        "text": "Xanthine oxidase"
+      },
+      {
+        "letter": "D",
+        "text": "PRPP synthetase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Xanthinuria: xanthine oxidase deficiency \u2192 xanthine and hypoxanthine cannot be converted to uric acid \u2192 xanthinuria, low uric acid, xanthine stones.",
+    "difficulty": "medium",
+    "tags": [
+      "G"
+    ]
+  },
+  {
+    "id": 53,
+    "disorderId": 53,
+    "stem": "A 6-month-old with megaloblastic anemia has elevated orotic acid in urine. He does not respond to B12 or folate. Growth retardation is present. No hyperammonemia.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "OTC Deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Hereditary Orotic Aciduria"
+      },
+      {
+        "letter": "C",
+        "text": "Folate Deficiency"
+      },
+      {
+        "letter": "D",
+        "text": "Dihydroorotase deficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hereditary Orotic Aciduria: OPRTase + OMP decarboxylase deficiency \u2192 pyrimidine synthesis block \u2192 orotic acid accumulation, megaloblastic anemia unresponsive to B12/folate. Treated with uridine.",
+    "difficulty": "hard",
+    "tags": [
+      "G"
+    ]
+  },
+  {
+    "id": 54,
+    "disorderId": 54,
+    "stem": "A 30-year-old woman has recurrent attacks of severe colicky abdominal pain, port-wine urine, and acute psychiatric symptoms triggered by fasting, alcohol, and certain drugs (barbiturates, OCP). Motor neuropathy develops.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Uroporphyrinogen III cosynthase"
+      },
+      {
+        "letter": "B",
+        "text": "Uroporphyrinogen decarboxylase"
+      },
+      {
+        "letter": "C",
+        "text": "PBG deaminase (HMBS)"
+      },
+      {
+        "letter": "D",
+        "text": "ALA dehydratase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Acute Intermittent Porphyria: HMBS deficiency \u2192 PBG and ALA accumulate. Neurovisceral attacks, NO photosensitivity. Autosomal dominant. Glucose and hemin are treatments.",
+    "difficulty": "medium",
+    "tags": [
+      "H"
+    ]
+  },
+  {
+    "id": 55,
+    "disorderId": 55,
+    "stem": "A 45-year-old woman with alcoholic liver disease develops blistering, fragile skin on sun-exposed areas and hypertrichosis. No abdominal pain or neurological symptoms. Urine fluoresces pink under Wood's lamp.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "PBG deaminase"
+      },
+      {
+        "letter": "B",
+        "text": "Uroporphyrinogen decarboxylase"
+      },
+      {
+        "letter": "C",
+        "text": "Ferrochelatase"
+      },
+      {
+        "letter": "D",
+        "text": "Coproporphyrinogen oxidase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "PCT: URO-D deficiency (acquired or hereditary) \u2192 uroporphyrin accumulation \u2192 photosensitive blistering skin. No neurological features. Phlebotomy and chloroquine are treatments.",
+    "difficulty": "medium",
+    "tags": [
+      "H"
+    ]
+  },
+  {
+    "id": 56,
+    "disorderId": 56,
+    "stem": "A newborn has severe photosensitivity, mutilating blistering with scarring, and red-stained diapers (porphyrinuria). Teeth fluoresce pink (erythrodontia). Hemolytic anemia is present. Splenomegaly develops.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ferrochelatase"
+      },
+      {
+        "letter": "B",
+        "text": "UPG-III cosynthase"
+      },
+      {
+        "letter": "C",
+        "text": "URO-D"
+      },
+      {
+        "letter": "D",
+        "text": "PBG deaminase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "CEP (G\u00fcnther Disease): UPG-III-cosynthase deficiency \u2192 type I isomers accumulate \u2192 severe photosensitivity, erythrodontia, hemolysis. Most severe porphyria.",
+    "difficulty": "hard",
+    "tags": [
+      "H"
+    ]
+  },
+  {
+    "id": 57,
+    "disorderId": 57,
+    "stem": "A 25-year-old has severe burning pain in sun-exposed skin within minutes of sunlight without blistering. He has no abdominal crises. Fluorescence microscopy of RBCs shows red fluorescence. Liver disease can develop.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "URO-D"
+      },
+      {
+        "letter": "B",
+        "text": "PBG deaminase"
+      },
+      {
+        "letter": "C",
+        "text": "Heme synthase (ferrochelatase)"
+      },
+      {
+        "letter": "D",
+        "text": "ALA synthase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "EPP: ferrochelatase deficiency \u2192 protoporphyrin IX accumulates in RBCs \u2192 immediate phototoxic burning. No blisters. Liver disease from protoporphyrin deposition.",
+    "difficulty": "hard",
+    "tags": [
+      "H"
+    ]
+  },
+  {
+    "id": 58,
+    "disorderId": 58,
+    "stem": "A child has hyperammonemia, homocitrullinuria, and elevated plasma ornithine. His parents are consanguineous. MRI shows white matter changes. He does not have OTC deficiency.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Citrullinemia"
+      },
+      {
+        "letter": "B",
+        "text": "HHH Syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Argininemia"
+      },
+      {
+        "letter": "D",
+        "text": "Argininosuccinic Aciduria"
+      }
+    ],
+    "answer": "B",
+    "explanation": "HHH Syndrome: mitochondrial ornithine transporter (ORNT1) defect \u2192 ornithine cannot enter the mitochondrial matrix \u2192 urea cycle block \u2192 hyperammonemia, hyperornithinemia, homocitrullinuria.",
+    "difficulty": "hard",
+    "tags": [
+      "H"
+    ]
+  },
+  {
+    "id": 59,
+    "disorderId": 59,
+    "stem": "A patient has both neurovisceral attacks (like AIP) AND photosensitive blistering skin lesions. Stool porphyrin analysis shows elevated coproporphyrin III. Drug triggers are the same as AIP.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Acute Intermittent Porphyria"
+      },
+      {
+        "letter": "B",
+        "text": "Porphyria Cutanea Tarda"
+      },
+      {
+        "letter": "C",
+        "text": "Hereditary Coproporphyria"
+      },
+      {
+        "letter": "D",
+        "text": "EPP"
+      }
+    ],
+    "answer": "C",
+    "explanation": "HCP: coproporphyrinogen III oxidase deficiency \u2192 neurovisceral attacks AND skin blistering. Combined features distinguish it from pure AIP or PCT.",
+    "difficulty": "hard",
+    "tags": [
+      "H"
+    ]
+  },
+  {
+    "id": 60,
+    "disorderId": 60,
+    "stem": "A child exposed to lead-contaminated paint presents with severe colic, encephalopathy, and markedly elevated ALA in urine. Basophilic stippling of RBCs is seen. No PBG is detected in urine.",
+    "question": "Which enzyme is inhibited by lead?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "PBG deaminase"
+      },
+      {
+        "letter": "B",
+        "text": "ALA dehydratase and ferrochelatase"
+      },
+      {
+        "letter": "C",
+        "text": "URO-D"
+      },
+      {
+        "letter": "D",
+        "text": "Coproporphyrinogen oxidase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Lead inhibits ALA dehydratase (most sensitive) and ferrochelatase \u2192 ALA accumulates, heme synthesis fails. The genetic form (plumboporphyria) is the rarest porphyria.",
+    "difficulty": "hard",
+    "tags": [
+      "H"
+    ]
+  },
+  {
+    "id": 61,
+    "disorderId": 61,
+    "stem": "A 20-year-old African-American has chronic hemolytic anemia, painful vaso-occlusive crises, dactylitis, and splenic autoinfarction. Peripheral smear shows sickle-shaped RBCs under deoxygenation.",
+    "question": "What is the molecular defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Deletion of \u03b1-globin genes"
+      },
+      {
+        "letter": "B",
+        "text": "Glu\u2192Val substitution at position 6 of \u03b2-globin"
+      },
+      {
+        "letter": "C",
+        "text": "HbC mutation (Glu\u2192Lys)"
+      },
+      {
+        "letter": "D",
+        "text": "G6PD deficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Sickle Cell Anemia: single nucleotide change (GAG\u2192GTG) \u2192 glutamate replaced by valine in \u03b2-globin \u2192 HbS polymerizes when deoxygenated \u2192 sickling.",
+    "difficulty": "easy",
+    "tags": [
+      "I"
+    ]
+  },
+  {
+    "id": 62,
+    "disorderId": 62,
+    "stem": "A Mediterranean child has severe hypochromic microcytic anemia requiring monthly blood transfusions. Skull X-ray shows hair-on-end appearance. Liver and spleen are enlarged. HbA is virtually absent; HbF is predominant.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Iron Deficiency Anemia"
+      },
+      {
+        "letter": "B",
+        "text": "Sickle Cell Anemia"
+      },
+      {
+        "letter": "C",
+        "text": "\u03b2-Thalassemia Major"
+      },
+      {
+        "letter": "D",
+        "text": "G6PD Deficiency"
+      }
+    ],
+    "answer": "C",
+    "explanation": "\u03b2-Thalassemia Major: absent \u03b2-globin \u2192 excess \u03b1-chains precipitate \u2192 severe hemolytic anemia, extramedullary hematopoiesis causing bone changes and organomegaly.",
+    "difficulty": "medium",
+    "tags": [
+      "I"
+    ]
+  },
+  {
+    "id": 63,
+    "disorderId": 63,
+    "stem": "A pregnant woman has mild microcytic anemia. HbA2 is elevated at 4.5%. She is otherwise asymptomatic. Her partner is also a carrier. She is concerned about the risk to her child.",
+    "question": "What is her diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Iron Deficiency Anemia"
+      },
+      {
+        "letter": "B",
+        "text": "\u03b2-Thalassemia Minor (Trait)"
+      },
+      {
+        "letter": "C",
+        "text": "Sickle Cell Trait"
+      },
+      {
+        "letter": "D",
+        "text": "Anemia of Chronic Disease"
+      }
+    ],
+    "answer": "B",
+    "explanation": "\u03b2-Thalassemia Minor: heterozygous state \u2014 mild anemia, elevated HbA2 (>3.5%). If both parents are carriers, 25% risk of thalassemia major in offspring.",
+    "difficulty": "easy",
+    "tags": [
+      "I"
+    ]
+  },
+  {
+    "id": 64,
+    "disorderId": 64,
+    "stem": "A 25-year-old African-American man develops dark urine and hemolytic anemia 2 days after starting primaquine for malaria prophylaxis. Heinz bodies are seen on smear. He recovers spontaneously.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pyruvate kinase"
+      },
+      {
+        "letter": "B",
+        "text": "Glucose-6-phosphate dehydrogenase (G6PD)"
+      },
+      {
+        "letter": "C",
+        "text": "Glutathione peroxidase"
+      },
+      {
+        "letter": "D",
+        "text": "Hexokinase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "G6PD deficiency: X-linked, oxidant drugs deplete NADPH \u2192 glutathione oxidised \u2192 Heinz body formation \u2192 intravascular hemolysis. Self-limiting as new RBCs have more G6PD.",
+    "difficulty": "medium",
+    "tags": [
+      "I"
+    ]
+  },
+  {
+    "id": 65,
+    "disorderId": 65,
+    "stem": "A patient on dapsone develops cyanosis unresponsive to oxygen. Blood is chocolate-brown in colour. SpO2 is falsely high on pulse oximetry. IV methylene blue reverses cyanosis rapidly.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hemoglobin S disease"
+      },
+      {
+        "letter": "B",
+        "text": "Carboxyhemoglobinemia"
+      },
+      {
+        "letter": "C",
+        "text": "Methemoglobinemia"
+      },
+      {
+        "letter": "D",
+        "text": "Sulfhemoglobinemia"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Methemoglobinemia: Fe\u00b2\u207a oxidized to Fe\u00b3\u207a \u2192 cannot bind O\u2082 \u2192 functional anemia, chocolate-brown blood, cyanosis. Methylene blue reduces MetHb via NADPH pathway.",
+    "difficulty": "medium",
+    "tags": [
+      "I"
+    ]
+  },
+  {
+    "id": 66,
+    "disorderId": 66,
+    "stem": "A 15-year-old has chronic hemolytic anemia since birth. Splenomegaly is present. Unlike G6PD deficiency, hemolysis is non-episodic. Blood smear shows echinocytes. ATP is depleted in RBCs despite high 2,3-BPG.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "G6PD"
+      },
+      {
+        "letter": "B",
+        "text": "Pyruvate Kinase"
+      },
+      {
+        "letter": "C",
+        "text": "Hexokinase"
+      },
+      {
+        "letter": "D",
+        "text": "Phosphoglycerate kinase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "PK deficiency: most common hereditary non-spherocytic hemolytic anemia \u2014 RBCs cannot generate ATP via glycolysis \u2192 chronic hemolysis. High 2,3-BPG paradoxically compensates (right shift of O\u2082 curve).",
+    "difficulty": "medium",
+    "tags": [
+      "I"
+    ]
+  },
+  {
+    "id": 67,
+    "disorderId": 67,
+    "stem": "A 6-year-old in a refugee camp has night blindness, xerosis of the conjunctiva, and Bitot's spots. His diet consists mainly of rice with no green vegetables or animal products.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin D"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin A"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin K"
+      },
+      {
+        "letter": "D",
+        "text": "Riboflavin"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Vitamin A deficiency: retinol is required for rhodopsin synthesis (night vision) and epithelial integrity. Bitot's spots (keratin debris) are early corneal signs.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 68,
+    "disorderId": 68,
+    "stem": "A 2-year-old has bowing of legs, craniotabes, and rachitic rosary. He lives in northern England with minimal sun exposure. Alkaline phosphatase is elevated. X-ray shows cupped, frayed metaphyses.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin K"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin C"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin D"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin A"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Vitamin D deficiency rickets: inadequate calcitriol \u2192 impaired calcium absorption \u2192 hypocalcemia \u2192 PTH rise \u2192 bone demineralization and epiphyseal plate changes.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 69,
+    "disorderId": 69,
+    "stem": "A 60-year-old housebound woman with chronic kidney disease has bone pain, proximal muscle weakness, and pseudofractures (Looser zones) on X-ray. Calcium is low, ALP high. She has no leg bowing.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Osteoporosis"
+      },
+      {
+        "letter": "B",
+        "text": "Rickets"
+      },
+      {
+        "letter": "C",
+        "text": "Osteomalacia"
+      },
+      {
+        "letter": "D",
+        "text": "Paget Disease"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Osteomalacia: vitamin D deficiency in adults \u2192 unmineralized osteoid \u2192 Looser zones (stress fractures), muscle weakness. Renal disease impairs 1\u03b1-hydroxylation.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 70,
+    "disorderId": 70,
+    "stem": "A 20-year-old with abetalipoproteinemia develops progressive ataxia, areflexia, and retinitis pigmentosa. Serum vitamin E levels are undetectable despite supplementation without fat carrier.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin A"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin D"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin E (Tocopherol)"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin K"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Vitamin E deficiency: fat-soluble, requires chylomicrons for absorption. Neurological triad: ataxia, areflexia, retinitis pigmentosa. Seen in fat malabsorption syndromes.",
+    "difficulty": "medium",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 71,
+    "disorderId": 71,
+    "stem": "A 5-day-old neonate not given vitamin K prophylaxis develops bleeding from the umbilicus, scalp, and gastrointestinal tract. PT is prolonged, PTT is prolonged. Platelet count and bleeding time are normal.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin C"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin E"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin K"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin D"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Vitamin K deficiency: factors II, VII, IX, X require vitamin K for \u03b3-carboxylation. Neonates have sterile gut (no bacterial K synthesis). Prolonged PT is earliest sign.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 72,
+    "disorderId": 72,
+    "stem": "A chronic alcoholic in South-East Asia has cardiac failure with peripheral edema and high cardiac output (wet beriberi). A second patient with similar history has bilateral foot drop and sensory loss (dry beriberi).",
+    "question": "Which vitamin deficiency explains both presentations?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin B2 (Riboflavin)"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin B1 (Thiamine)"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin B3 (Niacin)"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin B6 (Pyridoxine)"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Thiamine deficiency: TPP is cofactor for PDH, \u03b1KGDH, transketolase. Wet beriberi = high-output cardiac failure; dry beriberi = peripheral neuropathy; Wernicke's = CNS.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 73,
+    "disorderId": 73,
+    "stem": "A malnourished child has angular stomatitis, cheilosis, magenta-colored tongue (glossitis), and corneal vascularization. No neurological symptoms. Urine shows low riboflavin.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "B1 (Thiamine)"
+      },
+      {
+        "letter": "B",
+        "text": "B2 (Riboflavin)"
+      },
+      {
+        "letter": "C",
+        "text": "B3 (Niacin)"
+      },
+      {
+        "letter": "D",
+        "text": "B6 (Pyridoxine)"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Riboflavin deficiency (ariboflavinosis): FAD/FMN deficiency \u2192 angular stomatitis, cheilosis, magenta glossitis, corneal neovascularization. No neurological features.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 74,
+    "disorderId": 74,
+    "stem": "A 40-year-old living on corn-based diet (without lime processing) has the 4 Ds: Dermatitis on sun-exposed skin, Diarrhea, Dementia, and Death. His diet contains adequate protein but lacks a specific B vitamin.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "B6"
+      },
+      {
+        "letter": "B",
+        "text": "B12"
+      },
+      {
+        "letter": "C",
+        "text": "B3 (Niacin)"
+      },
+      {
+        "letter": "D",
+        "text": "Folate"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Pellagra: niacin (B3) deficiency, often from corn diet (tryptophan-poor, niacin bound as niacytin). The 4 Ds are classic. Isoniazid also causes pellagra by inhibiting B6.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 75,
+    "disorderId": 75,
+    "stem": "A TB patient on isoniazid (INH) develops peripheral neuropathy, seborrheic dermatitis, and microcytic sideroblastic anemia. Adding pyridoxine to his regimen resolves symptoms.",
+    "question": "Which vitamin does INH deplete?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "B1"
+      },
+      {
+        "letter": "B",
+        "text": "B12"
+      },
+      {
+        "letter": "C",
+        "text": "B6 (Pyridoxine)"
+      },
+      {
+        "letter": "D",
+        "text": "Folate"
+      }
+    ],
+    "answer": "C",
+    "explanation": "INH is a B6 antagonist \u2014 it combines with PLP to form an inactive hydrazone. PLP is cofactor for aminotransferases and ALA synthase \u2192 neuropathy and sideroblastic anemia.",
+    "difficulty": "medium",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 76,
+    "disorderId": 76,
+    "stem": "A pregnant woman has megaloblastic anemia, hypersegmented neutrophils, and elevated plasma homocysteine. Serum B12 is normal. Her diet lacks green leafy vegetables. Her baby is at risk for neural tube defects.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "B12"
+      },
+      {
+        "letter": "B",
+        "text": "Folate"
+      },
+      {
+        "letter": "C",
+        "text": "B6"
+      },
+      {
+        "letter": "D",
+        "text": "Thiamine"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Folate deficiency: THF is required for nucleotide synthesis \u2192 megaloblastic anemia. Unlike B12 deficiency, no neurological symptoms. Neural tube defect risk is the key prenatal issue.",
+    "difficulty": "easy",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 77,
+    "disorderId": 77,
+    "stem": "A 65-year-old strict vegan has megaloblastic anemia, subacute combined degeneration of the spinal cord (posterior and lateral columns), and glossitis. Serum B12 is very low. Intrinsic factor antibodies are positive.",
+    "question": "What is the deficiency?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Folate"
+      },
+      {
+        "letter": "B",
+        "text": "B6"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin B12 (Cobalamin)"
+      },
+      {
+        "letter": "D",
+        "text": "B1"
+      }
+    ],
+    "answer": "C",
+    "explanation": "B12 deficiency (pernicious anemia): intrinsic factor absence \u2192 B12 malabsorption \u2192 megaloblastic anemia + neurological damage (SACD). Folate cannot correct the neurological component.",
+    "difficulty": "medium",
+    "tags": [
+      "J"
+    ]
+  },
+  {
+    "id": 78,
+    "disorderId": 78,
+    "stem": "A 30-year-old woman with menorrhagia has fatigue, pallor, and brittle nails (koilonychia). MCV is 68 fL. Serum ferritin is 4 ng/mL. She craves ice (pagophagia).",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Thalassemia Minor"
+      },
+      {
+        "letter": "B",
+        "text": "Iron Deficiency Anemia"
+      },
+      {
+        "letter": "C",
+        "text": "Anemia of Chronic Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Sideroblastic Anemia"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Iron deficiency anemia: most common anemia worldwide. Low ferritin (storage iron), low MCV, koilonychia, pica (ice craving). Menorrhagia is leading cause in women.",
+    "difficulty": "easy",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 79,
+    "disorderId": 79,
+    "stem": "A 45-year-old Bantu man who brews traditional beer in iron pots has hepatosplenomegaly and elevated serum ferritin. Liver biopsy shows iron deposits mainly in Kupffer cells. He has not received blood transfusions.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hereditary Hemochromatosis"
+      },
+      {
+        "letter": "B",
+        "text": "Hemosiderosis (Bantu Siderosis)"
+      },
+      {
+        "letter": "C",
+        "text": "Wilson Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Transfusion Hemosiderosis"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hemosiderosis: acquired iron overload from dietary excess (iron pots) \u2014 iron in macrophages/Kupffer cells, no significant organ damage unlike hemochromatosis.",
+    "difficulty": "medium",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 80,
+    "disorderId": 80,
+    "stem": "A 45-year-old man presents with bronze skin, diabetes mellitus, cirrhosis, and arthropathy of the metacarpophalangeal joints. Serum ferritin is 3,500 ng/mL. Transferrin saturation is 92%. His brother is similarly affected.",
+    "question": "What is the underlying defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ceruloplasmin deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "HFE gene mutation causing excessive iron absorption"
+      },
+      {
+        "letter": "C",
+        "text": "ABCA1 mutation"
+      },
+      {
+        "letter": "D",
+        "text": "Ferritin mutation"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hereditary Hemochromatosis: HFE gene (C282Y) \u2192 hepcidin suppression \u2192 unchecked iron absorption \u2192 bronze diabetes, cirrhosis, arthropathy. Treatment: phlebotomy.",
+    "difficulty": "medium",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 81,
+    "disorderId": 81,
+    "stem": "A 14-year-old has Kayser-Fleischer rings on slit-lamp exam, liver cirrhosis, hemolytic anemia, and psychiatric symptoms. Serum ceruloplasmin is very low. 24-hour urine copper is elevated.",
+    "question": "Which gene is mutated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ATP7A"
+      },
+      {
+        "letter": "B",
+        "text": "ATP7B"
+      },
+      {
+        "letter": "C",
+        "text": "HFE"
+      },
+      {
+        "letter": "D",
+        "text": "ABCA1"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Wilson Disease: ATP7B mutation \u2192 copper cannot be excreted into bile or incorporated into ceruloplasmin \u2192 copper deposits in liver, brain, cornea (KF rings). Penicillamine chelates copper.",
+    "difficulty": "medium",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 82,
+    "disorderId": 82,
+    "stem": "A 3-month-old boy has hypotonia, seizures, kinky (steely) hair, hypothermia, and failure to thrive. Serum copper and ceruloplasmin are very low. He does not respond to oral copper supplementation.",
+    "question": "Which gene is mutated?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "ATP7B (Wilson)"
+      },
+      {
+        "letter": "B",
+        "text": "ATP7A (Menkes)"
+      },
+      {
+        "letter": "C",
+        "text": "HFE"
+      },
+      {
+        "letter": "D",
+        "text": "ABCA1"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Menkes Disease: X-linked ATP7A mutation \u2192 copper cannot be absorbed from gut or cross blood-brain barrier \u2192 copper deficiency in brain \u2192 kinky hair, neurodegeneration.",
+    "difficulty": "hard",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 83,
+    "disorderId": 83,
+    "stem": "A 6-month-old on exclusively breast-fed diet develops perioral and perianal rash, alopecia, and diarrhea. Plasma zinc is very low. Alkaline phosphatase (zinc-dependent) is low. Symptoms resolve dramatically with zinc supplementation.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Biotin deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Acrodermatitis Enteropathica (Zinc Deficiency)"
+      },
+      {
+        "letter": "C",
+        "text": "Cystic Fibrosis"
+      },
+      {
+        "letter": "D",
+        "text": "Hartnup Disease"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Zinc deficiency (acrodermatitis enteropathica): SLC39A4 transporter defect \u2192 zinc malabsorption \u2192 perioral/perianal rash, alopecia, diarrhea. Breast milk has lower zinc in mutation carriers.",
+    "difficulty": "medium",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 84,
+    "disorderId": 84,
+    "stem": "A pregnant woman from a landlocked mountainous region gives birth to a child with goiter, intellectual disability, and short stature. The mother also has a goiter. The region's soil is iodine-poor.",
+    "question": "What is the primary deficiency?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Selenium"
+      },
+      {
+        "letter": "B",
+        "text": "Iodine"
+      },
+      {
+        "letter": "C",
+        "text": "Zinc"
+      },
+      {
+        "letter": "D",
+        "text": "Fluoride"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Iodine deficiency: goitrogen or iodine-poor diet \u2192 inadequate thyroid hormone synthesis \u2192 goiter (TSH-driven gland enlargement), cretinism if deficient in utero.",
+    "difficulty": "easy",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 85,
+    "disorderId": 85,
+    "stem": "A 10-year-old from a region with 5 ppm fluoride in water has white/brown mottled, pitted enamel on permanent teeth. The lesions are cosmetic but the teeth are otherwise hard.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin D deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Dental Fluorosis"
+      },
+      {
+        "letter": "C",
+        "text": "Amelogenesis Imperfecta"
+      },
+      {
+        "letter": "D",
+        "text": "Zinc Deficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Dental fluorosis: excess fluoride during enamel formation (>2 ppm) \u2192 hypomineralization and hypermineralization zones \u2192 mottled, pitted enamel. No structural tooth weakening.",
+    "difficulty": "easy",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 86,
+    "disorderId": 86,
+    "stem": "A child from Keshan county, China has cardiomyopathy and skeletal myopathy. The region's soil has negligible selenium. Selenium supplementation prevents new cases. Coxsackievirus acts as a co-factor.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Zinc deficiency"
+      },
+      {
+        "letter": "B",
+        "text": "Iodine deficiency"
+      },
+      {
+        "letter": "C",
+        "text": "Selenium Deficiency (Keshan Disease)"
+      },
+      {
+        "letter": "D",
+        "text": "Iron Deficiency"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Keshan Disease: selenium deficiency \u2192 reduced glutathione peroxidase \u2192 oxidative myocardial damage, especially with viral co-infection.",
+    "difficulty": "medium",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 87,
+    "disorderId": 87,
+    "stem": "A sailor on a long voyage develops perifollicular hemorrhages, corkscrew hairs, swollen bleeding gums, and poor wound healing. His diet has lacked fresh fruit for 3 months.",
+    "question": "Which vitamin is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin D"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin K"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin C (Ascorbic Acid)"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin A"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Scurvy: vitamin C deficiency \u2192 impaired collagen synthesis (prolyl hydroxylase needs ascorbate) \u2192 perifollicular hemorrhage, corkscrew hairs, bleeding gums, wound dehiscence.",
+    "difficulty": "easy",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 88,
+    "disorderId": 88,
+    "stem": "A post-thyroidectomy patient develops Trousseau's sign (carpopedal spasm on BP cuff inflation) and Chvostek's sign. ECG shows prolonged QT interval. Serum calcium is 6.5 mg/dL.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hypercalcemia"
+      },
+      {
+        "letter": "B",
+        "text": "Hypocalcemic Tetany"
+      },
+      {
+        "letter": "C",
+        "text": "Hyperkalemia"
+      },
+      {
+        "letter": "D",
+        "text": "Hypomagnesemia"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hypocalcemic tetany: accidental parathyroid removal \u2192 low PTH \u2192 hypocalcemia \u2192 increased neuromuscular excitability. Trousseau and Chvostek signs are classic.",
+    "difficulty": "easy",
+    "tags": [
+      "K"
+    ]
+  },
+  {
+    "id": 89,
+    "disorderId": 89,
+    "stem": "A 40-year-old Ashkenazi Jew has hepatosplenomegaly, bone pain, and pancytopenia. Bone marrow biopsy shows crinkled paper macrophages (Gaucher cells). Serum acid phosphatase is elevated.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hexosaminidase A"
+      },
+      {
+        "letter": "B",
+        "text": "Acid sphingomyelinase"
+      },
+      {
+        "letter": "C",
+        "text": "\u03b2-Glucocerebrosidase (\u03b2-Glucosidase)"
+      },
+      {
+        "letter": "D",
+        "text": "\u03b1-Galactosidase"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Gaucher Disease: \u03b2-glucocerebrosidase deficiency \u2192 glucocerebroside accumulates in macrophages (Gaucher cells). Most common lysosomal storage disease. ERT (imiglucerase) is treatment.",
+    "difficulty": "medium",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 90,
+    "disorderId": 90,
+    "stem": "A 6-month-old has hepatosplenomegaly, cherry-red spot on macula, and progressive neurodegeneration. Bone marrow shows foam cells. Unlike Tay-Sachs, liver and spleen are both enlarged.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hexosaminidase A"
+      },
+      {
+        "letter": "B",
+        "text": "Acid Sphingomyelinase"
+      },
+      {
+        "letter": "C",
+        "text": "\u03b2-Glucocerebrosidase"
+      },
+      {
+        "letter": "D",
+        "text": "Arylsulfatase A"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Niemann-Pick Disease: sphingomyelin accumulates in foam cells in all organs including liver/spleen/brain. Cherry-red spot present but hepatosplenomegaly distinguishes it from Tay-Sachs.",
+    "difficulty": "medium",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 91,
+    "disorderId": 91,
+    "stem": "A 5-month-old Ashkenazi Jewish infant has progressive weakness, exaggerated startle to sound, cherry-red spot on macula, and psychomotor regression. No hepatosplenomegaly. Hexosaminidase A activity is absent.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Niemann-Pick Disease"
+      },
+      {
+        "letter": "B",
+        "text": "Tay-Sachs Disease"
+      },
+      {
+        "letter": "C",
+        "text": "Gaucher Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Krabbe Disease"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Tay-Sachs: HexA deficiency \u2192 GM2 ganglioside accumulation in neurons. Cherry-red spot, hyperacusis, NO organomegaly. Lethal by age 4 in classic form.",
+    "difficulty": "medium",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 92,
+    "disorderId": 92,
+    "stem": "A 35-year-old male has burning neuropathy in hands and feet since adolescence, angiokeratomas on his skin, corneal whorl opacity (cornea verticillata), and renal failure. His female cousin has milder symptoms.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "\u03b2-Galactosidase"
+      },
+      {
+        "letter": "B",
+        "text": "\u03b1-Galactosidase A"
+      },
+      {
+        "letter": "C",
+        "text": "Arylsulfatase A"
+      },
+      {
+        "letter": "D",
+        "text": "Sphingomyelinase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Fabry Disease: X-linked \u03b1-galactosidase A deficiency \u2192 globotriaosylceramide accumulates. Angiokeratomas, painful neuropathy, renal failure, cardiomyopathy. Enzyme replacement available.",
+    "difficulty": "hard",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 93,
+    "disorderId": 93,
+    "stem": "A 4-month-old has irritability, hypertonicity, and then hypotonia, optic atrophy, and seizures. CSF protein is markedly elevated. Nerve biopsy shows globoid cells (multinucleated macrophages with galactocerebroside). Death by age 2.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Arylsulfatase A"
+      },
+      {
+        "letter": "B",
+        "text": "Sphingomyelinase"
+      },
+      {
+        "letter": "C",
+        "text": "\u03b2-Galactocerebrosidase"
+      },
+      {
+        "letter": "D",
+        "text": "Hexosaminidase A"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Krabbe Disease: \u03b2-galactocerebrosidase deficiency \u2192 galactocerebroside + psychosine accumulate \u2192 globoid cells, rapidly progressive fatal leukodystrophy.",
+    "difficulty": "hard",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 94,
+    "disorderId": 94,
+    "stem": "A 2-year-old has progressive gait disturbance and regression of speech. Nerve conduction velocities are reduced (demyelination). Urine shows sulfatides. Brain MRI shows symmetric white matter disease (butterfly pattern).",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "\u03b2-Galactocerebrosidase"
+      },
+      {
+        "letter": "B",
+        "text": "Arylsulfatase A"
+      },
+      {
+        "letter": "C",
+        "text": "Hexosaminidase A"
+      },
+      {
+        "letter": "D",
+        "text": "Sphingomyelinase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Metachromatic Leukodystrophy: arylsulfatase A deficiency \u2192 sulfatides accumulate \u2192 demyelination of peripheral and central nervous system. Urine sulfatides confirm.",
+    "difficulty": "hard",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 95,
+    "disorderId": 95,
+    "stem": "A 2-year-old with coarse facial features, corneal clouding, hepatosplenomegaly, and dysostosis multiplex develops intellectual disability. Dermatan and heparan sulfate are elevated in urine. Inheritance is autosomal recessive.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Iduronate-2-sulfatase"
+      },
+      {
+        "letter": "B",
+        "text": "\u03b1-L-Iduronidase"
+      },
+      {
+        "letter": "C",
+        "text": "N-acetylgalactosamine-4-sulfatase"
+      },
+      {
+        "letter": "D",
+        "text": "Heparan sulphamidase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hurler Syndrome (MPS I): \u03b1-L-iduronidase deficiency \u2192 dermatan + heparan sulfate accumulate \u2192 gargoylism, corneal clouding, intellectual disability. Autosomal recessive.",
+    "difficulty": "medium",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 96,
+    "disorderId": 96,
+    "stem": "A 4-year-old boy has coarse features, hepatosplenomegaly, aggressive behavior, and deafness \u2014 but NO corneal clouding. His mother's brother has similar features. Urine dermatan and heparan sulfate are elevated.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "\u03b1-L-Iduronidase (Hurler)"
+      },
+      {
+        "letter": "B",
+        "text": "Iduronate-2-sulfatase (Hunter)"
+      },
+      {
+        "letter": "C",
+        "text": "Heparan sulphamidase"
+      },
+      {
+        "letter": "D",
+        "text": "N-acetylgalactosamine-4-sulfatase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hunter Syndrome (MPS II): X-linked iduronate-2-sulfatase deficiency \u2014 same as Hurler but NO corneal clouding, milder, X-linked. Pebbly ivory skin lesions are classic.",
+    "difficulty": "medium",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 97,
+    "disorderId": 97,
+    "stem": "An adult develops progressive proximal muscle weakness and respiratory failure requiring ventilator support. Muscle biopsy shows acid phosphatase-positive vacuoles. Serum CK is elevated. Alglucosidase alfa is prescribed.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "McArdle Disease"
+      },
+      {
+        "letter": "B",
+        "text": "Pompe Disease (late-onset)"
+      },
+      {
+        "letter": "C",
+        "text": "Cori Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Tarui Disease"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Late-onset Pompe: residual acid maltase activity \u2192 slower progression, mainly myopathy and respiratory failure without the infantile cardiomegaly. ERT extends survival.",
+    "difficulty": "medium",
+    "tags": [
+      "L"
+    ]
+  },
+  {
+    "id": 98,
+    "disorderId": 98,
+    "stem": "A 4-year-old has behavioral problems, intellectual disability, hyperactivity, and coarse features. Urine shows heparan sulfate. No corneal clouding. No organomegaly. There are four subtypes (A\u2013D) based on enzyme defect.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hurler Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Hunter Syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Sanfilippo Syndrome (MPS III)"
+      },
+      {
+        "letter": "D",
+        "text": "Morquio Syndrome"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Sanfilippo: heparan sulfate accumulation predominantly affects CNS \u2192 severe behavioral problems and intellectual disability are hallmark. Minimal somatic features.",
+    "difficulty": "hard",
+    "tags": [
+      "M"
+    ]
+  },
+  {
+    "id": 99,
+    "disorderId": 99,
+    "stem": "A 5-year-old has short stature with a short trunk, kyphoscoliosis, and corneal clouding but normal intelligence. Urine shows keratan sulfate. X-ray shows platyspondyly and odontoid hypoplasia (atlanto-axial instability risk).",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hurler Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Morquio Syndrome (MPS IV)"
+      },
+      {
+        "letter": "C",
+        "text": "Maroteaux-Lamy Syndrome"
+      },
+      {
+        "letter": "D",
+        "text": "Hunter Syndrome"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Morquio Syndrome: keratan sulfate accumulation \u2192 skeletal dysplasia, corneal clouding, normal intellect. Odontoid hypoplasia poses risk of cervical myelopathy.",
+    "difficulty": "hard",
+    "tags": [
+      "M"
+    ]
+  },
+  {
+    "id": 100,
+    "disorderId": 100,
+    "stem": "A child has coarse features, corneal clouding, hepatosplenomegaly, and dysostosis multiplex \u2014 similar to Hurler but with NORMAL intelligence. Dermatan sulfate is in the urine.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hurler Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Maroteaux-Lamy Syndrome (MPS VI)"
+      },
+      {
+        "letter": "C",
+        "text": "Morquio Syndrome"
+      },
+      {
+        "letter": "D",
+        "text": "Sanfilippo Syndrome"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Maroteaux-Lamy: N-acetylgalactosamine-4-sulfatase deficiency \u2192 dermatan sulfate accumulation. Clinically resembles Hurler but intelligence is preserved.",
+    "difficulty": "hard",
+    "tags": [
+      "M"
+    ]
+  },
+  {
+    "id": 101,
+    "disorderId": 101,
+    "stem": "A 65-year-old retired farmer has resting pill-rolling tremor, cogwheel rigidity, bradykinesia, and shuffling gait. Symptoms respond to levodopa. Substantia nigra shows Lewy bodies on post-mortem.",
+    "question": "What is the underlying neurochemical defect?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cholinergic neuron loss"
+      },
+      {
+        "letter": "B",
+        "text": "Loss of dopaminergic neurons in the substantia nigra"
+      },
+      {
+        "letter": "C",
+        "text": "Serotonin deficiency"
+      },
+      {
+        "letter": "D",
+        "text": "GABA deficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Parkinson Disease: dopaminergic neuron degeneration in substantia nigra pars compacta \u2192 dopamine deficiency \u2192 TRAP symptoms. Lewy bodies (\u03b1-synuclein) are histological hallmark.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 102,
+    "disorderId": 102,
+    "stem": "A 70-year-old woman has progressive memory loss, language difficulties, and behavioral changes. MRI shows cortical atrophy. CSF shows elevated tau and low A\u03b242. APOE \u03b54 allele is present.",
+    "question": "What is the pathological hallmark?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lewy body accumulation"
+      },
+      {
+        "letter": "B",
+        "text": "TDP-43 aggregates"
+      },
+      {
+        "letter": "C",
+        "text": "Amyloid-\u03b2 plaques and tau neurofibrillary tangles"
+      },
+      {
+        "letter": "D",
+        "text": "Prion protein misfolding"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Alzheimer Disease: A\u03b2 plaques (extracellular) from APP cleavage + tau tangles (intracellular) \u2192 synaptic loss and neurodegeneration. APOE \u03b54 is major genetic risk factor.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 103,
+    "disorderId": 103,
+    "stem": "A 3-year-old refugee has pitting edema, ascites, and a potbelly. He looks apathetic with flaky paint dermatitis. His hair is reddish and easily plucked. Albumin is very low. Calorie intake is borderline adequate.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Marasmus"
+      },
+      {
+        "letter": "B",
+        "text": "Kwashiorkor"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin A Deficiency"
+      },
+      {
+        "letter": "D",
+        "text": "Iron Deficiency"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Kwashiorkor: severe protein deficiency \u2192 low albumin \u2192 oncotic pressure loss \u2192 edema, ascites. 'Flaky paint' rash, hair changes, fatty liver (fat cannot be exported without apolipoprotein).",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 104,
+    "disorderId": 104,
+    "stem": "A 2-year-old has severe wasting of muscle and subcutaneous fat \u2014 she looks like a skeleton with skin. No edema. She is alert and hungry. Weight is <60% of expected. She comes from a famine region.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Kwashiorkor"
+      },
+      {
+        "letter": "B",
+        "text": "Marasmus"
+      },
+      {
+        "letter": "C",
+        "text": "Celiac Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Inflammatory Bowel Disease"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Marasmus: total calorie and protein deficiency \u2192 muscle and fat wasting, no edema (albumin maintained by catabolism). Alert appearance distinguishes from kwashiorkor.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 105,
+    "disorderId": 105,
+    "stem": "A newborn has diffuse hypopigmentation of skin and hair, and pink-red irises. Visual acuity is poor (nystagmus). He is otherwise well. Tyrosinase enzyme activity is absent in hair bulb.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "PKU"
+      },
+      {
+        "letter": "B",
+        "text": "Vitiligo"
+      },
+      {
+        "letter": "C",
+        "text": "Albinism"
+      },
+      {
+        "letter": "D",
+        "text": "Homocystinuria"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Albinism: tyrosinase deficiency \u2192 melanin cannot be synthesized from tyrosine \u2192 hypopigmentation of skin, hair, and eyes. Visual problems from lack of retinal pigment.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 106,
+    "disorderId": 106,
+    "stem": "A newborn born to a mother with severe iodine deficiency has coarse features, a large tongue, umbilical hernia, hypotonia, and prolonged neonatal jaundice. Thyroid hormone levels are very low.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Down Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Congenital Hypothyroidism (Cretinism)"
+      },
+      {
+        "letter": "C",
+        "text": "Pompe Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Beckwith-Wiedemann Syndrome"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Cretinism: congenital thyroid hormone deficiency (often from maternal iodine deficiency) \u2192 intellectual disability, growth retardation, coarse features. Newborn screen detects it.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 107,
+    "disorderId": 107,
+    "stem": "A 35-year-old from an iodine-deficient inland region has a visible neck swelling that moves on swallowing. TFTs show normal T3/T4. TSH is mildly elevated. No symptoms of hypo- or hyperthyroidism.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Thyroid carcinoma"
+      },
+      {
+        "letter": "B",
+        "text": "Simple (Euthyroid) Goiter"
+      },
+      {
+        "letter": "C",
+        "text": "Hyperthyroidism"
+      },
+      {
+        "letter": "D",
+        "text": "Thyroiditis"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Simple goiter: iodine deficiency \u2192 low T4 \u2192 elevated TSH \u2192 diffuse thyroid hyperplasia. TFTs remain normal once gland compensates. Prophylaxis: iodized salt.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 108,
+    "disorderId": 108,
+    "stem": "A 40-year-old man has enlarged hands, jaw prognathism, widely spaced teeth, and macroglossia developing over years. Fasting GH is elevated and does not suppress after glucose load. IGF-1 is high.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gigantism"
+      },
+      {
+        "letter": "B",
+        "text": "Acromegaly"
+      },
+      {
+        "letter": "C",
+        "text": "Cushing Disease"
+      },
+      {
+        "letter": "D",
+        "text": "Hyperthyroidism"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Acromegaly: excess GH after epiphyseal closure \u2192 acral enlargement, soft tissue overgrowth. GH not suppressible with glucose load is diagnostic. Often from pituitary adenoma.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 109,
+    "disorderId": 109,
+    "stem": "A 35-year-old woman has central obesity, purple striae, hypertension, proximal muscle weakness, and easy bruising. 24-hour urine cortisol is 4\u00d7 normal. Low-dose dexamethasone fails to suppress cortisol.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Addison Disease"
+      },
+      {
+        "letter": "B",
+        "text": "Metabolic Syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Cushing Syndrome"
+      },
+      {
+        "letter": "D",
+        "text": "Hypothyroidism"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Cushing Syndrome: excess cortisol \u2192 central obesity, purple striae, hypertension, glucose intolerance, osteoporosis, immune suppression. Failure to suppress on low-dose DST confirms.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 110,
+    "disorderId": 110,
+    "stem": "A 35-year-old woman has fatigue, weight loss, hyperpigmentation of skin creases and buccal mucosa, hyponatremia, hyperkalemia, and postural hypotension. Morning cortisol is very low. ACTH is markedly elevated.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cushing Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Addison Disease"
+      },
+      {
+        "letter": "C",
+        "text": "Secondary Adrenal Insufficiency"
+      },
+      {
+        "letter": "D",
+        "text": "Conn Syndrome"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Addison Disease: primary adrenal insufficiency \u2192 low cortisol + aldosterone \u2192 hyperpigmentation (high ACTH stimulates melanocortin receptors), hyponatremia, hyperkalemia.",
+    "difficulty": "medium",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 111,
+    "disorderId": 111,
+    "stem": "A neonate on phenylbutazone for a fever develops jaundice. Direct and indirect bilirubin are both normal; only free bilirubin is elevated. The drug displaces bilirubin from albumin, raising free bilirubin levels.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Crigler-Najjar Type I"
+      },
+      {
+        "letter": "B",
+        "text": "Gilbert Syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Phenylbutazone-Induced Jaundice"
+      },
+      {
+        "letter": "D",
+        "text": "Neonatal Jaundice"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Drug-induced displacement of bilirubin from albumin \u2192 elevated unconjugated free bilirubin \u2192 risk of kernicterus in neonates. Avoid drugs displacing bilirubin in newborns.",
+    "difficulty": "hard",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 112,
+    "disorderId": 112,
+    "stem": "A 3-day-old neonate develops jaundice. Total bilirubin is 14 mg/dL, all unconjugated. Direct Coombs is negative. The infant is breastfed and clinically well. Bilirubin normalises by day 10.",
+    "question": "What is the most likely cause?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Crigler-Najjar Type I"
+      },
+      {
+        "letter": "B",
+        "text": "Biliary atresia"
+      },
+      {
+        "letter": "C",
+        "text": "Neonatal (Physiological) Jaundice"
+      },
+      {
+        "letter": "D",
+        "text": "Dubin-Johnson Syndrome"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Physiological neonatal jaundice: transient UDP-glucuronosyltransferase immaturity \u2192 unconjugated hyperbilirubinemia peaking day 3\u20134. Benign and self-limiting.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 113,
+    "disorderId": 113,
+    "stem": "A neonate has severe unconjugated hyperbilirubinemia from birth requiring intensive phototherapy and then exchange transfusion. All other liver function tests are normal. Bilirubin glucuronidation is completely absent in liver biopsy.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gilbert Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Dubin-Johnson Syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Crigler-Najjar Type I"
+      },
+      {
+        "letter": "D",
+        "text": "Crigler-Najjar Type II"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Crigler-Najjar Type I: complete absence of UGT1A1 \u2192 lifelong severe unconjugated hyperbilirubinemia \u2192 kernicterus without daily phototherapy. Liver transplant is curative.",
+    "difficulty": "medium",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 114,
+    "disorderId": 114,
+    "stem": "A teenager has chronic mild unconjugated hyperbilirubinemia. Liver biopsy shows ~10% UGT activity. Phenobarbital reduces bilirubin to near-normal by inducing residual enzyme. No kernicterus.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Crigler-Najjar Type I"
+      },
+      {
+        "letter": "B",
+        "text": "Crigler-Najjar Type II"
+      },
+      {
+        "letter": "C",
+        "text": "Gilbert Syndrome"
+      },
+      {
+        "letter": "D",
+        "text": "Rotor Syndrome"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Crigler-Najjar Type II (Arias Syndrome): partial UGT deficiency (~10% activity) \u2192 milder unconjugated hyperbilirubinemia, responds to phenobarbital. Kernicterus rare.",
+    "difficulty": "hard",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 115,
+    "disorderId": 115,
+    "stem": "A 22-year-old medical student notices mild jaundice during exam stress and fasting. Bilirubin is 2.5 mg/dL, entirely unconjugated. All other LFTs are normal. Bilirubin normalises after eating. No family history of liver disease.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Crigler-Najjar Type II"
+      },
+      {
+        "letter": "B",
+        "text": "Hemolytic anemia"
+      },
+      {
+        "letter": "C",
+        "text": "Gilbert Syndrome"
+      },
+      {
+        "letter": "D",
+        "text": "Rotor Syndrome"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Gilbert Syndrome: mildly reduced UGT1A1 (33% activity) \u2192 unconjugated hyperbilirubinemia triggered by fasting or stress. Completely benign. Affects 5-10% of population.",
+    "difficulty": "easy",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 116,
+    "disorderId": 116,
+    "stem": "A young adult has chronic conjugated hyperbilirubinemia and normal liver enzymes. Liver biopsy shows black pigment in hepatocytes. Urine coproporphyrin I:III ratio is reversed. Liver appears grossly black.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rotor Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Dubin-Johnson Syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Crigler-Najjar"
+      },
+      {
+        "letter": "D",
+        "text": "Gilbert Syndrome"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Dubin-Johnson: MRP-2 defect \u2192 conjugated bilirubin cannot be excreted \u2192 black pigment (polymerized epinephrine metabolites) accumulates. Benign, normal lifespan.",
+    "difficulty": "medium",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 117,
+    "disorderId": 117,
+    "stem": "A patient has conjugated hyperbilirubinemia and normal liver enzymes. Unlike Dubin-Johnson, liver biopsy is histologically normal. Total urine coproporphyrin is elevated. Liver is not pigmented.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dubin-Johnson Syndrome"
+      },
+      {
+        "letter": "B",
+        "text": "Rotor Syndrome"
+      },
+      {
+        "letter": "C",
+        "text": "Crigler-Najjar"
+      },
+      {
+        "letter": "D",
+        "text": "PCT"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Rotor Syndrome: OATP1B1/1B3 defect \u2192 hepatic reuptake of conjugated bilirubin impaired \u2192 conjugated hyperbilirubinemia. Normal liver histology distinguishes it from Dubin-Johnson.",
+    "difficulty": "hard",
+    "tags": [
+      "N"
+    ]
+  },
+  {
+    "id": 118,
+    "disorderId": 118,
+    "stem": "A factory worker is found unconscious in an enclosed space. He has cherry-red skin, altered consciousness, and severe lactic acidosis. 100% O2 shows minimal improvement. Hydroxocobalamin is administered.",
+    "question": "What toxin is responsible?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Carbon monoxide"
+      },
+      {
+        "letter": "B",
+        "text": "Cyanide"
+      },
+      {
+        "letter": "C",
+        "text": "Methanol"
+      },
+      {
+        "letter": "D",
+        "text": "Organophosphate"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Cyanide poisoning: inhibits cytochrome oxidase a3 \u2192 ETC block \u2192 histotoxic hypoxia \u2192 lactic acidosis. Cherry-red skin from oxygenated venous blood. O2 doesn't help \u2014 cells cannot use it.",
+    "difficulty": "medium",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 119,
+    "disorderId": 119,
+    "stem": "A driver rescued from a garage with a running engine has headache, confusion, and nausea. SpO2 reads normal. COHb is 35%. Skin is cherry-red. He improves on 100% O2.",
+    "question": "What is the mechanism of toxicity?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cytochrome oxidase inhibition"
+      },
+      {
+        "letter": "B",
+        "text": "Carboxyhemoglobin formation \u2014 CO binds Hb with 250\u00d7 affinity of O2"
+      },
+      {
+        "letter": "C",
+        "text": "MetHb formation"
+      },
+      {
+        "letter": "D",
+        "text": "Cholinesterase inhibition"
+      }
+    ],
+    "answer": "B",
+    "explanation": "CO poisoning: carboxyhemoglobin shifts O2 dissociation curve left \u2192 tissue hypoxia despite normal pO2. Pulse oximetry cannot distinguish COHb from OxyHb \u2014 falsely normal.",
+    "difficulty": "medium",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 120,
+    "disorderId": 120,
+    "stem": "A 5-year-old living in an old house eats paint chips. He has abdominal colic, encephalopathy, and basophilic stippling of RBCs. ALA in urine is markedly elevated. Serum lead level is 85 \u03bcg/dL.",
+    "question": "Which enzymes does lead inhibit?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cytochrome oxidase and complex I"
+      },
+      {
+        "letter": "B",
+        "text": "ALA dehydratase and ferrochelatase"
+      },
+      {
+        "letter": "C",
+        "text": "Acetylcholinesterase"
+      },
+      {
+        "letter": "D",
+        "text": "G6PD"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Lead inhibits ALA dehydratase (most sensitive) and ferrochelatase \u2192 heme synthesis blocked, ALA accumulates \u2192 basophilic stippling, encephalopathy, colic. EDTA chelation is treatment.",
+    "difficulty": "medium",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 121,
+    "disorderId": 121,
+    "stem": "A factory worker exposed to mercury vapor develops tremor, erethism (mercury madness \u2014 shyness, irritability, memory loss), and gingivitis. Urine mercury is elevated. He works in a chlor-alkali plant.",
+    "question": "What is the mechanism of mercury toxicity?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cytochrome oxidase inhibition"
+      },
+      {
+        "letter": "B",
+        "text": "Inhibition of thiol (-SH) containing enzymes"
+      },
+      {
+        "letter": "C",
+        "text": "ALA dehydratase inhibition"
+      },
+      {
+        "letter": "D",
+        "text": "Acetylcholinesterase inhibition"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Mercury binds sulfhydryl groups \u2192 inhibits thiol-containing enzymes throughout the body \u2192 neurological (tremor, erethism), renal, and GI toxicity.",
+    "difficulty": "medium",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 122,
+    "disorderId": 122,
+    "stem": "A farmer presents with excessive secretions (SLUDGE: Salivation, Lacrimation, Urination, Defecation, GI upset, Emesis), miosis, bradycardia, and muscle fasciculations. He was spraying pesticides without protection.",
+    "question": "What is the mechanism of toxicity?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cytochrome oxidase inhibition"
+      },
+      {
+        "letter": "B",
+        "text": "Nicotinic receptor blockade"
+      },
+      {
+        "letter": "C",
+        "text": "Irreversible acetylcholinesterase inhibition \u2192 ACh accumulation"
+      },
+      {
+        "letter": "D",
+        "text": "Monoamine oxidase inhibition"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Organophosphate: irreversible AChE inhibition \u2192 ACh accumulates at muscarinic and nicotinic synapses \u2192 SLUDGE + muscle fasciculations/paralysis. Atropine + pralidoxime (2-PAM) is treatment.",
+    "difficulty": "medium",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 123,
+    "disorderId": 123,
+    "stem": "A suicidal patient drinks windshield washer fluid. He develops severe anion gap metabolic acidosis, visual disturbance (snowfield vision), and optic disk hyperemia. Serum osmol gap is elevated.",
+    "question": "What is the toxic metabolite?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Acetaldehyde"
+      },
+      {
+        "letter": "B",
+        "text": "Oxalic acid"
+      },
+      {
+        "letter": "C",
+        "text": "Formic acid (from formaldehyde)"
+      },
+      {
+        "letter": "D",
+        "text": "Lactic acid"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Methanol poisoning: alcohol dehydrogenase converts methanol \u2192 formaldehyde \u2192 formic acid \u2192 inhibits cytochrome oxidase in retinal cells \u2192 blindness. Fomepizole blocks ADH.",
+    "difficulty": "hard",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 124,
+    "disorderId": 124,
+    "stem": "A child drinks antifreeze. Serum osmol gap is elevated. He develops oliguric renal failure 24 hours later. Urine microscopy shows calcium oxalate crystals (envelope-shaped).",
+    "question": "What is the toxic metabolite?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Formic acid"
+      },
+      {
+        "letter": "B",
+        "text": "Acetaldehyde"
+      },
+      {
+        "letter": "C",
+        "text": "Oxalic acid"
+      },
+      {
+        "letter": "D",
+        "text": "Glycolic acid"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Ethylene glycol: metabolized to oxalic acid \u2192 calcium oxalate crystalluria \u2192 acute tubular necrosis and renal failure. Fomepizole is antidote.",
+    "difficulty": "hard",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 125,
+    "disorderId": 125,
+    "stem": "A 6-month-old has coarse features, gingival hyperplasia, and psychomotor retardation. Lysosomal enzymes are absent from lysosomes but markedly elevated in serum. Mannose-6-phosphate is absent on lysosomal enzymes.",
+    "question": "Which enzyme is deficient?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "\u03b1-L-Iduronidase"
+      },
+      {
+        "letter": "B",
+        "text": "GlcNAc-phosphotransferase"
+      },
+      {
+        "letter": "C",
+        "text": "Lysosomal acid phosphatase"
+      },
+      {
+        "letter": "D",
+        "text": "Hexosaminidase A"
+      }
+    ],
+    "answer": "B",
+    "explanation": "I-Cell Disease: GlcNAc-phosphotransferase deficiency \u2192 no mannose-6-phosphate tag \u2192 lysosomal enzymes secreted extracellularly instead of trafficked to lysosomes.",
+    "difficulty": "hard",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 126,
+    "disorderId": 126,
+    "stem": "A 30-year-old woman has acute painless visual loss in one eye. Her maternal uncle has similar history. Mitochondrial DNA testing shows a point mutation in the ND4 gene (Complex I subunit). Inheritance is maternal.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Multiple Sclerosis"
+      },
+      {
+        "letter": "B",
+        "text": "Leber's Hereditary Optic Neuropathy (LHON)"
+      },
+      {
+        "letter": "C",
+        "text": "Glaucoma"
+      },
+      {
+        "letter": "D",
+        "text": "Retinitis Pigmentosa"
+      }
+    ],
+    "answer": "B",
+    "explanation": "LHON: mitochondrial DNA mutation in Complex I subunits \u2192 defective oxidative phosphorylation in optic nerve \u2192 painless central visual loss. Maternal inheritance pattern is key.",
+    "difficulty": "hard",
+    "tags": [
+      "O"
+    ]
+  },
+  {
+    "id": 127,
+    "disorderId": 127,
+    "stem": "A 65-year-old man has back pain and fatigue. Serum protein electrophoresis shows an M-spike. Urine shows Bence Jones protein. Bone X-rays reveal multiple punched-out lytic lesions. Serum calcium is elevated. ESR is 120 mm/hr.",
+    "question": "What is the diagnosis?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Metastatic prostate cancer"
+      },
+      {
+        "letter": "B",
+        "text": "Multiple Myeloma"
+      },
+      {
+        "letter": "C",
+        "text": "Waldenstrom Macroglobulinemia"
+      },
+      {
+        "letter": "D",
+        "text": "Chronic Lymphocytic Leukemia"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Multiple Myeloma: malignant plasma cell proliferation \u2192 monoclonal immunoglobulin (M-spike), Bence Jones proteinuria, osteolytic lesions, hypercalcemia, renal failure.",
+    "difficulty": "medium",
+    "tags": [
+      "O"
+    ]
+  }
+]

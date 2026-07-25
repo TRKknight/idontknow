@@ -1,0 +1,19 @@
+{
+  "name": "Brute Forcing Medicine",
+  "short_name": "Bx",
+  "description": "Medical biochemistry reference: disorders, metabolic pathways, normal values, and vitamins",
+  "id": "/idontknow/",
+  "start_url": "/idontknow/",
+  "scope": "/idontknow/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait",
+  "categories": ["medical", "education", "reference"],
+  "icons": [
+    { "src": "icons/icon-192.png",   "sizes": "192x192",   "type": "image/png" },
+    { "src": "icons/icon-384.png",   "sizes": "384x384",   "type": "image/png" },
+    { "src": "icons/icon-512.png",   "sizes": "512x512",   "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-1024.png",  "sizes": "1024x1024", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,788 @@
+[
+  {
+    "id": 1,
+    "name": "Calcium (Ca)",
+    "type": "macromineral",
+    "alias": "Ca",
+    "coenzyme": "Ionized Ca²⁺ (intracellular second messenger; Factor IV in coagulation)",
+    "chemicalNature": "Calcium is the most abundant mineral in the body and is essential for normal growth and maintenance. It acts as a master regulator for numerous physiological processes including bone health, muscle contraction, and cell signaling. Total body content is approximately 1 to 1.5 kg, with 99% in bones and teeth and 1% in ECF.",
+    "functions": [
+      "Bone/Teeth Formation: Bulk use for structural integrity.",
+      "Enzyme Activation: Via the regulatory protein Calmodulin (activating various kinases) or direct activation (e.g., lipase, coagulation factors).",
+      "Muscle Contraction: Mediates excitation and contraction by interacting with Troponin C.",
+      "Blood Coagulation: Known as Factor IV in the clotting cascade.",
+      "Other: Nerve conduction, hormone secretion (insulin, PTH), second messenger systems, and myocardial stability (prolongs systole)."
+    ],
+    "absorption": "Absorption occurs primarily in the first and second parts of the duodenum through an energy-dependent active transport mechanism involving the carrier protein Calbindin. Factors increasing absorption: Vitamin D (Calcitriol), Parathyroid hormone (PTH), gastric acidity, and specific amino acids like Lysine and Arginine. Factors decreasing absorption: Phytic acid (in cereals), oxalates (in leafy vegetables), malabsorption of fats (forming insoluble calcium soaps), and high phosphate content. In blood, calcium exists in three forms: Ionized (active form, 50% or 5 mg/dl), Complexed with anions (citrate/phosphate, 5-10% or 1 mg/dl), and Protein-bound (non-diffusible, 40-45% or 4 mg/dl). Bones serve as the primary reservoir. Of the 500 mg ingested daily, about 400 mg is excreted in feces and 100 mg through urine.",
+    "sources": "Milk is the best source (100 mg/100 ml). Eggs, fish, and vegetables are medium sources. Although cereals have low calcium content, they form the major source in the Indian diet due to the bulk quantity consumed.",
+    "rda": "Adults: 500 mg/day. Children: 1200 mg/day. Pregnancy/Lactation: 1500 mg/day. Over age 50: 1500 mg/day to prevent osteoporosis.",
+    "inhibitors": "Phytic acid (in cereals), oxalates (in leafy vegetables), malabsorption of fats (forming insoluble calcium soaps), and high phosphate content.",
+    "deficiency": {
+      "name": "Tetany / Rickets / Osteomalacia",
+      "findings": [
+        "Muscle cramps and twitching (ionized calcium < 4.7 mg/dl)",
+        "Soft pliable bones and deformities in children",
+        "Softened bones or decreased bone mass in adults",
+        "Positive Chvostek and Trousseau signs"
+      ],
+      "clinical": "Tetany: characterized by muscle cramps and twitching (ionized calcium < 4.7 mg/dl). Rickets: soft, pliable bones and deformities in children. Osteomalacia/Osteoporosis: softened bones or decreased bone mass in adults."
+    },
+    "toxicity": "Hypercalcemia (> 11 mg/dl) leads to metastatic calcification (calcinosis) in soft tissues like the kidneys (stones) and blood vessels.",
+    "mnemonic": "",
+    "normalRange": "9 to 11 mg/dl (2.1 to 2.5 mmol/L)",
+    "regulation": "Controlled by a narrow feedback loop: PTH and Calcitriol increase serum calcium, while Calcitonin decreases it.",
+    "enzymes": [
+      "Calmodulin",
+      "Troponin C"
+    ],
+    "relatedDisorderIds": [
+      88,
+      68,
+      69
+    ],
+    "important": true,
+    "pathwayIds": [
+      29
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Phosphorus (P)",
+    "type": "macromineral",
+    "alias": "P",
+    "coenzyme": "ATP, GTP, creatine phosphate; component of DNA/RNA backbone and phosphodiester bonds",
+    "chemicalNature": "Phosphorus is a vital major element and the primary intracellular anion required for energy metabolism and genetic coding. Total body content is about 1 kg, with 80% in the bones and teeth, 10% in muscle, and the rest distributed in other cells.",
+    "functions": [
+      "Energy Production: Essential component of ATP, GTP, and creatine phosphate.",
+      "Nucleic Acids: Forms the phosphodiester backbone of DNA and RNA.",
+      "Metabolic Intermediate: Formation of sugar-phosphates (e.g., glucose-6-phosphate) and phospholipids.",
+      "Buffers: Important buffer system in blood and urine."
+    ],
+    "absorption": "Facilitated by Calcitriol. High calcium intake decreases absorption (due to the reciprocal relationship). Exists in plasma in monovalent and divalent forms (ratio 1:4 at pH 7.4). Primarily stored in the skeleton. Excretion mainly through urine (500 mg/day); regulated by a renal threshold of 2 mg/dl.",
+    "sources": "Milk (100 mg/dl), cereals, nuts, and meat are good sources.",
+    "rda": "Approximately 500 mg/day for adults.",
+    "inhibitors": "High calcium intake (due to the reciprocal relationship).",
+    "deficiency": {
+      "name": "Hypophosphatemia",
+      "findings": [
+        "Caused by malnutrition",
+        "Vitamin D deficiency",
+        "Hyperparathyroidism",
+        "Fanconi's syndrome"
+      ],
+      "clinical": "Caused by malnutrition, Vitamin D deficiency, hyperparathyroidism, or Fanconi's syndrome."
+    },
+    "toxicity": "Hyperphosphatemia: seen in renal failure, hypoparathyroidism, or Vitamin D toxicity.",
+    "mnemonic": "",
+    "normalRange": "3 to 4 mg/dl in adults; 5 to 6 mg/dl in children.",
+    "regulation": "Regulated by PTH (increases urinary loss), Calcitonin (increases urinary loss), and FGF-23 (inhibits renal reabsorption).",
+    "enzymes": [],
+    "relatedDisorderIds": [
+      68,
+      69
+    ],
+    "important": false,
+    "pathwayIds": [
+      4,
+      7,
+      14
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Magnesium (Mg)",
+    "type": "macromineral",
+    "alias": "Mg",
+    "coenzyme": "Mg²⁺-ATP complex (activator of ATP-dependent enzymes)",
+    "chemicalNature": "Magnesium is the fourth most abundant cation in the body and the second most prevalent intracellular cation. It is a critical activator for over 300 enzymes. Total body content is about 25 g, with approximately 60% complexed with calcium in the bone.",
+    "functions": [
+      "Enzyme Activation: Essential for enzymes requiring ATP (e.g., hexokinase, PFK, adenyl cyclase).",
+      "Neuromuscular: Lowers neuromuscular irritability (antagonistic to the effects of high calcium).",
+      "Metabolism: Required for insulin-dependent glucose uptake."
+    ],
+    "absorption": "Absorption occurs in the intestine; it is reabsorbed from the loop of Henle in the kidneys. Roughly 70% exists in a free state, and 30% is protein-bound (primarily to albumin). Primarily stored in the bones and muscles. Excretion mainly through the kidneys.",
+    "sources": "Cereals, beans, green leafy vegetables, and fish.",
+    "rda": "400 mg/day for men and 300 mg/day for women.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "Hypomagnesemia",
+      "findings": [
+        "Neuromuscular hyper-irritability",
+        "Cardiac arrhythmias",
+        "Symptoms identical to hypocalcemia (tetany) that only resolve with magnesium supplementation"
+      ],
+      "clinical": "Often seen in alcoholism, chronic diarrhea, or diuretic therapy. Symptoms include neuromuscular hyper-irritability and cardiac arrhythmias."
+    },
+    "toxicity": "Hypermagnesemia: usually due to excessive antacid intake or renal failure. Causes lethargy, respiratory depression, and bradycardia.",
+    "mnemonic": "",
+    "normalRange": "1.8 to 2.2 mg/dl",
+    "regulation": "Homeostasis is maintained by intestinal absorption and renal excretion.",
+    "enzymes": [
+      "Hexokinase",
+      "Phosphofructokinase (PFK)",
+      "Adenyl cyclase"
+    ],
+    "relatedDisorderIds": [
+      88,
+      1,
+      2
+    ],
+    "important": false,
+    "pathwayIds": [
+      1,
+      6
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sodium (Na)",
+    "type": "macromineral",
+    "alias": "Na",
+    "coenzyme": "Na⁺ (maintenance of membrane potential via Na⁺/K⁺ ATPase)",
+    "chemicalNature": "Sodium is the major cation of the extracellular fluid (ECF). It is primarily responsible for regulating the ECF volume, water balance, and osmotic pressure. Total body sodium is approximately 4000 mEq, distributed as 50% in bones, 40% in ECF, and 10% in soft tissues.",
+    "functions": [
+      "Regulation of ECF volume",
+      "Maintenance of acid-base balance (via sodium bicarbonate)",
+      "Nerve impulse conduction",
+      "Muscle contraction"
+    ],
+    "absorption": "Sodium is actively absorbed in the small intestine and 99% of the filtered load is reabsorbed by the renal tubules. Aldosterone stimulates sodium reabsorption in the distal tubules. Atrial natriuretic peptides inhibit reabsorption to eliminate excess sodium. The sodium-potassium ATPase pump maintains high extracellular and low intracellular sodium concentrations. Excretion primarily through the urine, running parallel to dietary intake.",
+    "sources": "Primarily table salt (NaCl) and processed foods.",
+    "rda": "Approximately 5–10 g/day, mainly in the form of sodium chloride.",
+    "inhibitors": "Atrial natriuretic peptides inhibit reabsorption to eliminate excess sodium.",
+    "deficiency": {
+      "name": "Hyponatremia",
+      "findings": [
+        "Hypotension",
+        "Drowsiness",
+        "Muscle cramps",
+        "Confusion"
+      ],
+      "clinical": "Causes include vomiting, diarrhea, and Addison's disease. Symptoms include hypotension, drowsiness, muscle cramps, and confusion."
+    },
+    "toxicity": "Hypernatremia: seen in Cushing's syndrome or dehydration. Symptoms include thirst, restlessness, and dry mucous membranes.",
+    "mnemonic": "",
+    "normalRange": "136–145 mEq/L",
+    "regulation": "Controlled by the renin-angiotensin-aldosterone system (which retains sodium) and Anti-Diuretic Hormone (ADH) (which regulates water reabsorption alongside sodium).",
+    "enzymes": [
+      "Na⁺/K⁺ ATPase"
+    ],
+    "relatedDisorderIds": [
+      110,
+      109
+    ],
+    "important": true,
+    "pathwayIds": []
+  },
+  {
+    "id": 5,
+    "name": "Potassium (K)",
+    "type": "macromineral",
+    "alias": "K",
+    "coenzyme": "K⁺ (maintenance of membrane potential; cardiac and neuromuscular function)",
+    "chemicalNature": "Potassium is the major intracellular cation. It maintains intracellular osmotic pressure and determines the cellular membrane potential. Total content is about 3500 mEq, with 75% located in skeletal muscle.",
+    "functions": [
+      "Depolarization and contraction of the heart",
+      "Nerve impulse transmission",
+      "Maintenance of intracellular osmotic pressure"
+    ],
+    "absorption": "Readily absorbed; the majority of filtered potassium is reabsorbed in the proximal tubules. Actively transported into cells by the sodium-potassium pump. 90% through the kidneys and 10% through the gastrointestinal tract. Excretion is increased by aldosterone.",
+    "sources": "Banana, orange, potato, tender coconut water, beans, and dates.",
+    "rda": "3–4 g/day",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "Hypokalemia",
+      "findings": [
+        "Muscular weakness",
+        "Fatigue",
+        "Cardiac arrhythmias"
+      ],
+      "clinical": "Manifests as muscular weakness, fatigue, and cardiac arrhythmias."
+    },
+    "toxicity": "Hyperkalemia: a life-threatening condition characterized by bradycardia, cardiac arrest, and specific ECG changes (elevated T waves).",
+    "mnemonic": "",
+    "normalRange": "3.5–5 mEq/L",
+    "regulation": "Influenced by aldosterone (increases excretion) and hydrogen ion concentration (redistribution occurs in acidosis/alkalosis).",
+    "enzymes": [
+      "Na⁺/K⁺ ATPase"
+    ],
+    "relatedDisorderIds": [
+      2,
+      110,
+      109
+    ],
+    "important": true,
+    "pathwayIds": []
+  },
+  {
+    "id": 6,
+    "name": "Chloride (Cl)",
+    "type": "macromineral",
+    "alias": "Cl",
+    "coenzyme": "Cl⁻ (chloride shift; gastric HCl formation)",
+    "chemicalNature": "The major anion of the ECF, its metabolism generally runs parallel to sodium. Concentration is high in plasma (105 mEq/L) and highest in the Cerebrospinal Fluid (CSF) (125 mEq/L).",
+    "functions": [
+      "Formation of HCl in gastric juice",
+      "Maintenance of electrical neutrality",
+      "The chloride shift during gas transport in RBCs"
+    ],
+    "absorption": "Absorbed and excreted in parallel with sodium in the renal tubules.",
+    "sources": "Dietary salt (NaCl)",
+    "rda": "Parallel to sodium intake; daily excretion is 5–8 g.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "Hypochloremia",
+      "findings": [
+        "Seen in excessive vomiting",
+        "Addison's disease"
+      ],
+      "clinical": "Seen in excessive vomiting (loss of HCl) and Addison's disease."
+    },
+    "toxicity": "Hyperchloremia: occurs in dehydration, Cushing's syndrome, and renal tubular acidosis.",
+    "mnemonic": "",
+    "normalRange": "96–106 mEq/L",
+    "regulation": "",
+    "enzymes": [
+      "CFTR chloride channel"
+    ],
+    "relatedDisorderIds": [
+      110,
+      109
+    ],
+    "important": false,
+    "pathwayIds": []
+  },
+  {
+    "id": 7,
+    "name": "Sulfur (S)",
+    "type": "macromineral",
+    "alias": "S",
+    "coenzyme": "Component of sulfur-containing amino acids (cysteine, methionine) and various co-enzymes",
+    "chemicalNature": "Essential for the structure of sulfur-containing amino acids (cysteine and methionine) and various co-enzymes. Proteins contain about 1% sulfur by weight.",
+    "functions": [
+      "Formation of disulfide bridges in proteins (e.g., insulin)",
+      "Constituent of chondroitin sulfate in cartilage",
+      "Keratin in hair/nails",
+      "Active sites of many enzymes"
+    ],
+    "absorption": "Absorbed as part of dietary proteins/amino acids. All sulfur groups are oxidized in the liver to sulfate (SO₄) and excreted in urine (~1 g/day).",
+    "sources": "Sulfur-containing amino acids in protein-rich foods.",
+    "rda": "",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "",
+      "findings": [],
+      "clinical": ""
+    },
+    "toxicity": "",
+    "mnemonic": "",
+    "normalRange": "0.5–1.5 mEq/L",
+    "regulation": "Excretion is proportional to protein intake.",
+    "enzymes": [],
+    "relatedDisorderIds": [
+      35
+    ],
+    "important": false,
+    "pathwayIds": [
+      31,
+      41
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Iron (Fe)",
+    "type": "micromineral",
+    "alias": "Fe",
+    "coenzyme": "Heme (Fe²⁺ in hemoglobin, myoglobin, cytochromes); Fe-S clusters in electron transport",
+    "chemicalNature": "Iron is a precious and unique element because its homeostasis is regulated at the level of absorption rather than excretion; it is often referred to as a one-way element. It is essential for oxygen transport, cellular respiration, and various redox reactions. Total body content is 3 to 5 g, distributed as 75% in hemoglobin, 5% in myoglobin, and 15% in storage forms like ferritin.",
+    "functions": [
+      "Essential constituent of hemoglobin and myoglobin (oxygen transport/storage)",
+      "Cytochromes (electron transport)",
+      "Enzymes like catalase and peroxidase"
+    ],
+    "absorption": "Absorption occurs in the upper duodenum. Ferric iron (Fe³⁺) from food must be reduced to the ferrous state (Fe²⁺) to be absorbed via the DMT-1 transporter into mucosal cells. Factors increasing absorption: Ascorbic acid (Vitamin C), gastric HCl, and cysteine. Factors decreasing absorption: Phytic acid (cereals), oxalic acid (leafy vegetables), calcium, copper, and lead. Transported in the blood by Transferrin, a beta-1 globulin that carries two ferric atoms per molecule. Primarily stored as Ferritin (in the liver, spleen, and bone marrow) and Hemosiderin. Excretion is negligible; losses occur mainly through bleeding (menstruation) and the constant desquamation of skin and intestinal cells.",
+    "sources": "Leafy vegetables, pulses, liver, meat, and jaggery are rich sources. Cereals are a major source in the Indian diet due to the volume consumed. Milk is a very poor source.",
+    "rda": "Adults: 20 mg/day (males) and 20–25 mg/day (females). Pregnancy: 40–50 mg/day.",
+    "inhibitors": "Phytic acid (cereals), oxalic acid (leafy vegetables), calcium, copper, and lead inhibit absorption.",
+    "deficiency": {
+      "name": "Iron Deficiency Anemia",
+      "findings": [
+        "Microcytic hypochromic anemia",
+        "Apathy and lethargy",
+        "Plummer-Wilson syndrome (dysphagia)",
+        "Decreased hemoglobin and ferritin",
+        "Increased TIBC"
+      ],
+      "clinical": "Characterized by microcytic hypochromic anemia. Symptoms include apathy, lethargy, and Plummer-Wilson syndrome (dysphagia). Decreased hemoglobin and ferritin, and increased TIBC are hallmarks of deficiency."
+    },
+    "toxicity": "Hemosiderosis (excess iron) and Hemochromatosis, which presents as the triad of bronze diabetes, cirrhosis, and skin discoloration.",
+    "mnemonic": "",
+    "normalRange": "Serum iron is 100–150 µg/dl. TIBC (Total Iron Binding Capacity) is about 400 mg/dl.",
+    "regulation": "Controlled by the Mucosal Block Theory and the hormone Hepcidin, which downregulates the iron exporter ferroportin.",
+    "enzymes": [
+      "Catalase",
+      "Peroxidase",
+      "DMT-1",
+      "Transferrin",
+      "Ferroportin"
+    ],
+    "relatedDisorderIds": [
+      78,
+      79,
+      80,
+      62,
+      128,
+      120,
+      118,
+      119,
+      65,
+      57
+    ],
+    "important": true,
+    "pathwayIds": [
+      6,
+      50,
+      51
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Copper (Cu)",
+    "type": "micromineral",
+    "alias": "Cu",
+    "coenzyme": "Cu²⁺ (cofactor for cytochrome c oxidase, superoxide dismutase, lysyl oxidase, tyrosinase)",
+    "chemicalNature": "Copper is an essential trace element required for the activity of several critical enzymes involved in respiration, connective tissue integrity, and iron metabolism. Total body content is 100 mg, distributed in the liver, brain, muscles, and kidneys.",
+    "functions": [
+      "Mandatory for hemoglobin synthesis (as ferroxidase)",
+      "Melanin formation (Tyrosinase)",
+      "Collagen cross-linking (Lysyl oxidase)",
+      "Antioxidant defense (SOD)"
+    ],
+    "absorption": "Only about 10% of dietary copper is absorbed. High intake of Zinc, cadmium, or phytates interferes with copper uptake. 90% is bound to Ceruloplasmin (blue-colored alpha-2 globulin), and 10% is loosely bound to Albumin for transport to tissues. Stored primarily in the liver as Hepatocuprein or within metallothionein. Excretion primarily through the bile.",
+    "sources": "Cereals, meat, liver, and nuts. Milk is very poor in copper.",
+    "rda": "1.5–3 mg/day for adults.",
+    "inhibitors": "High intake of Zinc, cadmium, or phytates interferes with copper uptake.",
+    "deficiency": {
+      "name": "Menke's Kinky Hair Syndrome",
+      "findings": [
+        "Growth failure",
+        "Steely hair",
+        "Microcytic normochromic anemia",
+        "Hypopigmentation"
+      ],
+      "clinical": "Menke's Kinky Hair Syndrome (X-linked defect in copper transport) characterized by growth failure and steely hair. Also causes microcytic normochromic anemia and hypopigmentation."
+    },
+    "toxicity": "Wilson's Disease (hepatolenticular degeneration) due to defective biliary excretion, leading to copper accumulation in the brain and liver, and the appearance of Kayser-Fleischer (KF) rings in the cornea.",
+    "mnemonic": "",
+    "normalRange": "Serum ceruloplasmin is 25–50 mg/dl. Plasma copper is 70–150 µg/dl.",
+    "regulation": "",
+    "enzymes": [
+      "Ceruloplasmin (ferroxidase)",
+      "Tyrosinase",
+      "Lysyl oxidase",
+      "Superoxide Dismutase (SOD)"
+    ],
+    "relatedDisorderIds": [
+      82,
+      81
+    ],
+    "important": false,
+    "pathwayIds": [
+      46,
+      48
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Zinc (Zn)",
+    "type": "micromineral",
+    "alias": "Zn",
+    "coenzyme": "Zn²⁺ (catalytic/structural cofactor for >300 enzymes)",
+    "chemicalNature": "Zinc is a constituent of more than 300 enzymes and is vital for protein biosynthesis, wound healing, and immune function. Total content is 2 g; 60% is in skeletal muscle and 30% in bones. High concentrations are found in the prostate and the hippocampus of the brain.",
+    "functions": [
+      "Essential for enzymes like Carbonic anhydrase, ALP, and Alcohol dehydrogenase",
+      "Stabilizes insulin in pancreatic beta cells",
+      "Required for taste sensation via the protein Gusten"
+    ],
+    "absorption": "Absorption is interfered by calcium, iron, copper, and phytates. Stored in the liver in combination with metallothionein. Excretion primarily through pancreatic juice and sweat.",
+    "sources": "Grains, beans, nuts, cheese, meat, and shellfish.",
+    "rda": "8–10 mg/day for adults; increases to 15–20 mg/day during pregnancy.",
+    "inhibitors": "Calcium, iron, copper, and phytates interfere with absorption.",
+    "deficiency": {
+      "name": "Acrodermatitis enteropathica",
+      "findings": [
+        "Poor wound healing",
+        "Alopecia (hair loss)",
+        "Hypogeusia (loss of taste)"
+      ],
+      "clinical": "Acrodermatitis enteropathica (recessive defect in absorption). Other signs include poor wound healing, alopecia (hair loss), and hypogeusia (loss of taste)."
+    },
+    "toxicity": "Excess intake (>1000 mg/day) causes acute symptoms like fever, excessive salivation, and anemia. Inhaling zinc oxide fumes leads to welder's toxicity.",
+    "mnemonic": "",
+    "normalRange": "50–100 µg/dl",
+    "regulation": "",
+    "enzymes": [
+      "Carbonic anhydrase",
+      "Alkaline Phosphatase (ALP)",
+      "Alcohol dehydrogenase",
+      "Metallothionein"
+    ],
+    "relatedDisorderIds": [
+      83
+    ],
+    "important": true,
+    "pathwayIds": [
+      30,
+      50
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Iodine (I)",
+    "type": "micromineral",
+    "alias": "I",
+    "coenzyme": "I⁻ (component of thyroid hormones T₃ and T₄)",
+    "chemicalNature": "Iodine is one of the three major micronutrients whose deficiency is a significant public health issue in India. Its sole known biological role in humans is as a critical component for the synthesis of thyroid hormones, thyroxine (T₄) and tri-iodothyronine (T₃). Total body iodine content is approximately 25 to 30 mg, with about 80% stored in the thyroid gland.",
+    "functions": [
+      "Iodine is essential for the production of T₃ and T₄, which regulate the basal metabolic rate (BMR)",
+      "Thermogenesis",
+      "Protein synthesis"
+    ],
+    "absorption": "The thyroid gland actively takes up and concentrates iodide from the blood via a carrier mechanism stimulated by Thyroid Stimulating Hormone (TSH). Goitrogens interfere with iodine uptake or utilization (found in cabbage, tapioca, cassava, maize, and mustard seeds). Iodine circulates in the blood primarily bound to proteins, with total protein-bound iodine (PBI) level of about 10 µg/dl. Carried by thyroxine-binding globulin (TBG), transthyretin, and albumin. Stored as colloid (thyroglobulin) within the thyroid acini. Iodine not utilized for hormone synthesis is salvaged or excreted.",
+    "sources": "Primary sources include drinking water, seaweeds, fish, cereals, and vegetables. The program of iodinating common salt has significantly increased its availability in the diet.",
+    "rda": "150 to 200 µg/day for adults.",
+    "inhibitors": "Goitrogens interfere with iodine uptake or utilization. These are found in foods like cabbage, tapioca, cassava, maize, and mustard seeds.",
+    "deficiency": {
+      "name": "Goiter / Hypothyroidism / Cretinism",
+      "findings": [
+        "Goiter (enlargement of the thyroid gland)",
+        "Hypothyroidism",
+        "Cretinism (mental and physical retardation in children)"
+      ],
+      "clinical": "Deficiency leads to Goiter (enlargement of the thyroid gland) and Hypothyroidism. In children, severe deficiency causes Cretinism, characterized by mental and physical retardation."
+    },
+    "toxicity": "While generally safe, excessive iodine intake can contribute to primary hyperthyroidism in certain conditions.",
+    "mnemonic": "",
+    "normalRange": "5 to 10 µg/dl in blood",
+    "regulation": "The uptake and synthesis of iodine into thyroid hormones are regulated by TSH through a negative feedback loop involving serum T₃ and T₄ levels.",
+    "enzymes": [
+      "Thyroglobulin",
+      "Thyroid peroxidase"
+    ],
+    "relatedDisorderIds": [
+      84,
+      107,
+      106
+    ],
+    "important": true,
+    "pathwayIds": [
+      22
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Fluoride (F)",
+    "type": "micromineral",
+    "alias": "F",
+    "coenzyme": "F⁻ (forms fluoroapatite in teeth and bones)",
+    "chemicalNature": "Fluoride is primarily known for its role in preventing dental caries (decay). It is often described as a two-edged sword because both its deficiency and its excess are associated with disease. Ingested fluoride is a cumulative toxin that primarily accumulates in the bones and teeth.",
+    "functions": [
+      "Makes teeth resistant to acid attack by forming a protective fluoroapatite layer on the enamel",
+      "Strengthens bones and helps prevent osteoporosis"
+    ],
+    "absorption": "Fluoride is absorbed through the consumption of water and certain foods. It becomes incorporated into the hydration shell surrounding apatite crystals in bones and teeth.",
+    "sources": "The main source is drinking water. Other fluoride-rich sources include sea fish, cheese, tea, and jowar (sorghum).",
+    "rda": "1 to 2 mg/day, which is typically met if drinking water contains 0.5 to 0.9 ppm of fluoride.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "Dental Caries / Osteoporosis",
+      "findings": [
+        "Increased incidence of dental caries",
+        "Osteoporosis"
+      ],
+      "clinical": "Deficiency (water levels <0.5 ppm) is associated with an increased incidence of dental caries and osteoporosis."
+    },
+    "toxicity": "Dental Fluorosis: mottling, discoloration, and pitting of teeth (>5 ppm). Skeletal Fluorosis: bone deformities like genu valgum (knock-knees), kyphosis, and brittle bones due to osteosclerosis (>20 ppm). Gastrointestinal: levels >2 ppm can cause chronic diarrhea and loss of appetite.",
+    "mnemonic": "",
+    "normalRange": "Approximately 4 µg/100 ml in blood",
+    "regulation": "Its levels in the body are largely determined by environmental exposure and the concentration in the local water supply.",
+    "enzymes": [],
+    "relatedDisorderIds": [
+      85
+    ],
+    "important": false,
+    "pathwayIds": [
+      1
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Selenium (Se)",
+    "type": "micromineral",
+    "alias": "Se",
+    "coenzyme": "Selenocysteine (21st amino acid); component of glutathione peroxidase and 5'-deiodinase",
+    "chemicalNature": "Selenium is an essential trace element that acts as a powerful nonspecific intracellular antioxidant. Its intake is highly dependent on the selenium content of the soil where crops are grown. It is also the defining component of the 21st amino acid, selenocysteine. It is found in many tissues but has its highest concentration in the testis, specifically in the mid-piece of spermatozoa.",
+    "functions": [
+      "Glutathione peroxidase: scavenges peroxides to protect against oxidative stress",
+      "5'-deiodinase: converts T₄ to the active T₃ hormone (Se deficiency can lead to hypothyroidism)",
+      "Thioredoxin reductase and Selenoprotein P"
+    ],
+    "absorption": "Carried in the blood as Selenoprotein P, a glycoprotein. Highly concentrated in the mid-piece of spermatozoa.",
+    "sources": "",
+    "rda": "50 to 100 µg/day for adults. Increases to 70 µg/day during pregnancy and lactation.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "Keshan Disease",
+      "findings": [
+        "Dilated cardiomyopathy",
+        "Multifocal myocardial necrosis",
+        "Arrhythmias",
+        "Liver necrosis",
+        "Muscular dystrophy",
+        "Impaired sperm development"
+      ],
+      "clinical": "Keshan Disease: an endemic dilated cardiomyopathy characterized by multifocal myocardial necrosis and arrhythmias. Also associated with liver necrosis, muscular dystrophy, and impaired sperm development."
+    },
+    "toxicity": "Selenosis: symptoms include hair loss, falling of nails, weight loss, and a characteristic garlicky odor in the breath due to the presence of dimethyl selenide.",
+    "mnemonic": "",
+    "normalRange": "50 to 100 µg/dl",
+    "regulation": "Selenium acts synergistically with Vitamin E; an adequate supply of one can partially reduce the requirement for the other.",
+    "enzymes": [
+      "Glutathione peroxidase",
+      "5'-deiodinase",
+      "Thioredoxin reductase",
+      "Selenoprotein P"
+    ],
+    "relatedDisorderIds": [
+      86
+    ],
+    "important": false,
+    "pathwayIds": []
+  },
+  {
+    "id": 14,
+    "name": "Chromium (Cr)",
+    "type": "micromineral",
+    "alias": "Cr",
+    "coenzyme": "Cr³⁺ (enhances insulin binding to receptors)",
+    "chemicalNature": "Chromium is a trace element that exists in biologically active trivalent (Cr³⁺) and hexavalent (Cr⁶⁺) states. While its exact biological functions are not fully understood, it is recognized as necessary for proper glucose metabolism. Total body content is approximately 6 mg, which typically decreases as a person ages.",
+    "functions": [
+      "Improves the efficiency of insulin binding to its receptors on peripheral cells, thereby aiding glucose tolerance",
+      "Used in diagnostic medicine in its radioactive form (⁵⁷Cr) to tag red blood cells to calculate their lifespan and rate of hemolysis"
+    ],
+    "absorption": "Chromium has an affinity for transferrin identical to that of iron, meaning the two ions compete for binding to this transport protein in the blood.",
+    "sources": "Natural dietary intake is supplemented by cooking in stainless steel containers, which increases the chromium content of food. Tobacco is also noted to be rich in chromium.",
+    "rda": "Approximately 30 to 50 µg/day. The upper safe limit for intake is 200 µg/day.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "Chromium Deficiency",
+      "findings": [
+        "Impaired glucose tolerance",
+        "Impaired growth",
+        "Decrease in fertility and sperm count"
+      ],
+      "clinical": "Deficiency leads to impaired glucose tolerance, impaired growth, and a decrease in fertility and sperm count."
+    },
+    "toxicity": "Chromium toxicity is an occupational hazard for workers in the tanning industry. It can cause liver and kidney damage and is considered potentially carcinogenic, particularly in relation to tobacco use.",
+    "mnemonic": "",
+    "normalRange": "Approximately 25 ng/dl in blood",
+    "regulation": "",
+    "enzymes": [
+      "Transferrin"
+    ],
+    "relatedDisorderIds": [
+      1
+    ],
+    "important": false,
+    "pathwayIds": []
+  },
+  {
+    "id": 15,
+    "name": "Lithium (Li)",
+    "type": "micromineral",
+    "alias": "Li",
+    "coenzyme": "Li⁺ (inhibitor of inositol phosphatase; therapeutic for bipolar disorder)",
+    "chemicalNature": "Lithium is the lightest alkali metal (atomic number 3) and is considered an essential growth factor in tissue culture. In humans, it is found in skeletal muscles (2–200 ng/g wet weight), with higher concentrations residing in the brain.",
+    "functions": [
+      "Used therapeutically to treat manic-depressive psychosis (bipolar disorders) because it counteracts both mania and depression",
+      "Works by inhibiting inositol phosphatase, elevating serotonin levels, and reducing catecholamines in brain tissue"
+    ],
+    "absorption": "Specific metabolic pathways for dietary lithium are not detailed, though its use as a therapeutic agent requires constant monitoring of blood levels due to its narrow margin of safety.",
+    "sources": "",
+    "rda": "The mean daily intake of lithium is approximately 50 µg/day.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "",
+      "findings": [],
+      "clinical": ""
+    },
+    "toxicity": "Lithium becomes toxic at levels around 12 µg/ml. Intoxication can lead to hypothyroidism, hyperparathyroidism, and significant kidney damage.",
+    "mnemonic": "",
+    "normalRange": "Therapeutically optimum plasma concentration is 7 to 10 µg/ml.",
+    "regulation": "",
+    "enzymes": [
+      "Inositol phosphatase"
+    ],
+    "relatedDisorderIds": [
+      107
+    ],
+    "important": false,
+    "pathwayIds": []
+  },
+  {
+    "id": 16,
+    "name": "Nickel (Ni)",
+    "type": "micromineral",
+    "alias": "Ni",
+    "coenzyme": "Ni²⁺ (constituent of urease and methylcoenzyme reductase)",
+    "chemicalNature": "Nickel is a trace element necessary for the production of pigments in fish, birds, and insects. Its exact human functions remain obscure, though it is required for the activity of certain enzymes. It is found in hair, with higher concentrations in females (4 ppm) than in males (1 ppm).",
+    "functions": [
+      "Constituent of the enzymes urease and methylcoenzyme reductase",
+      "Acts as an inhibitor for both acid phosphatase and nucleotide phosphatase (NTP)"
+    ],
+    "absorption": "",
+    "sources": "",
+    "rda": "Approximately 500 µg/day.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "Nickel Deficiency",
+      "findings": [
+        "Decreased utilization of iron"
+      ],
+      "clinical": "Deficiency may lead to the decreased utilization of iron."
+    },
+    "toxicity": "High concentrations of nickel are potentially carcinogenic. Some chocolate preparations have been found to contain nickel levels exceeding permitted safety standards.",
+    "mnemonic": "",
+    "normalRange": "Approximately 0.5 µg/dl in plasma",
+    "regulation": "",
+    "enzymes": [
+      "Urease",
+      "Methylcoenzyme reductase",
+      "Acid phosphatase",
+      "Nucleotide phosphatase (NTP)"
+    ],
+    "relatedDisorderIds": [],
+    "important": false,
+    "pathwayIds": []
+  },
+  {
+    "id": 17,
+    "name": "Lead (Pb)",
+    "type": "toxic",
+    "alias": "Pb",
+    "coenzyme": "None (toxic mineral)",
+    "chemicalNature": "Lead is the most common environmental poison in India. It is a non-essential, cumulative toxin that is not biodegradable. Lead accumulates in tissues over years. Approximately 90% is stored in bones, 9% in the blood, and 1% in the brain and kidneys.",
+    "functions": [],
+    "absorption": "Absorption occurs via ingestion or inhalation. Absorption is enhanced by iron deficiency and inhibited by calcium. Transported in the blood and primarily stored in the skeleton. Excretion is negligible, making it a cumulative poison.",
+    "sources": "Major sources include lead-based paint (especially in children's toys), contaminated water, soil, and dust. Other sources include vehicle exhaust (tetraethyl lead), lead pipes, newspapers, and tobacco (15 µg per pack). It is often used as an adulterant in curcumin (lead chromate).",
+    "rda": "None; it is a toxin. Acceptable blood levels are generally considered less than 5 mg/dl.",
+    "inhibitors": "Calcium inhibits lead absorption (1 molecule of calcium inhibits the absorption of 1000 molecules of lead). Iron deficiency enhances absorption.",
+    "deficiency": {
+      "name": "",
+      "findings": [],
+      "clinical": ""
+    },
+    "toxicity": "Lead inhibits at least eight enzymes in the heme synthesis pathway, most notably ALA dehydratase and ferrochelatase, leading to microcytic hypochromic anemia. Symptoms include abdominal colic, irritability, kidney damage, and a characteristic blue line along the gums. Characterized by basophilic stippling of RBCs (due to ribosome agglutination) and the presence of ring sideroblasts in bone marrow.",
+    "mnemonic": "",
+    "normalRange": "Acceptable limit is < 5 mg/dl. Toxicity manifestations begin at > 10 mg/dl in children and > 25 mg/dl in adults.",
+    "regulation": "",
+    "enzymes": [
+      "ALA dehydratase",
+      "Ferrochelatase"
+    ],
+    "relatedDisorderIds": [
+      120,
+      78,
+      128,
+      60
+    ],
+    "important": false,
+    "pathwayIds": [
+      50
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Aluminium (Al)",
+    "type": "toxic",
+    "alias": "Al",
+    "coenzyme": "None (toxic mineral)",
+    "chemicalNature": "Aluminium is the third most abundant element in the earth's crust and is a recognized neurotoxin.",
+    "functions": [],
+    "absorption": "Only a portion of ingested aluminium is absorbed. Aluminium itself inhibits the absorption of calcium, phosphorus, and iron. Only about 100 µg/day can be eliminated through urine.",
+    "sources": "Found in packing/building materials, paint pigments, antacids, cosmetics, and aluminium cooking vessels.",
+    "rda": "None. The tolerable upper limit for absorption is 1 mg/day.",
+    "inhibitors": "Aluminium itself inhibits the absorption of calcium, phosphorus, and iron.",
+    "deficiency": {
+      "name": "",
+      "findings": [],
+      "clinical": ""
+    },
+    "toxicity": "Stimulates free radical production and interferes with heme synthesis. It is strongly implicated in the development of Alzheimer's disease and Parkinson's disease by precipitating precursor proteins and causing dendrite degeneration. Chronic toxicity also causes osteomalacia.",
+    "mnemonic": "",
+    "normalRange": "",
+    "regulation": "",
+    "enzymes": [],
+    "relatedDisorderIds": [
+      69
+    ],
+    "important": false,
+    "pathwayIds": []
+  },
+  {
+    "id": 19,
+    "name": "Cadmium (Cd)",
+    "type": "toxic",
+    "alias": "Cd",
+    "coenzyme": "None (toxic mineral)",
+    "chemicalNature": "A toxic mineral contaminant with no biological function.",
+    "functions": [],
+    "absorption": "High intake of cadmium interferes with the absorption of copper. Binds to metallothionein in the liver, kidneys, and intestine, which helps to neutralize its toxic effects.",
+    "sources": "Enters the body as a contaminant in food and water.",
+    "rda": "",
+    "inhibitors": "High intake of cadmium interferes with the absorption of copper.",
+    "deficiency": {
+      "name": "",
+      "findings": [],
+      "clinical": ""
+    },
+    "toxicity": "Toxic accumulation in soft tissues leads to systemic damage.",
+    "mnemonic": "",
+    "normalRange": "",
+    "regulation": "",
+    "enzymes": [
+      "Metallothionein"
+    ],
+    "relatedDisorderIds": [],
+    "important": false,
+    "pathwayIds": []
+  },
+  {
+    "id": 20,
+    "name": "Mercury (Hg)",
+    "type": "toxic",
+    "alias": "Hg",
+    "coenzyme": "None (toxic mineral)",
+    "chemicalNature": "A common industrial poison that exists in elemental, inorganic, and organic forms.",
+    "functions": [],
+    "absorption": "Organic mercury is readily absorbed from the GI tract, while elemental mercury is absorbed via inhalation. Urinary excretion increases during chronic poisoning.",
+    "sources": "Elemental mercury vapor from broken thermometers or sphygmomanometers. Organic mercury (methyl mercury) is primarily found in contaminated fish.",
+    "rda": "None.",
+    "inhibitors": "",
+    "deficiency": {
+      "name": "",
+      "findings": [],
+      "clinical": ""
+    },
+    "toxicity": "Minamata disease (organic mercury poisoning) is characterized by the triad of dysarthria, ataxia, and visual field constriction. Methylation of mercury makes it lipophilic, increasing its ability to cross cell membranes and cause severe neurotoxicity.",
+    "mnemonic": "",
+    "normalRange": "Normal is < 1 mg/dl. Symptoms appear at 2–5 mg/dl, and 15 mg/dl is fatal.",
+    "regulation": "",
+    "enzymes": [],
+    "relatedDisorderIds": [
+      121
+    ],
+    "important": false,
+    "pathwayIds": []
+  }
+]
