@@ -3,10 +3,10 @@ import { MECHANISMS, getMechanism } from "./src/mechanisms.js";
 import PnCNotesViewer, { PnCNoteCard } from "./src/PnCNotesViewer.jsx";
 import ClinicalConditionsViewer from "./src/ClinicalConditionsViewer.jsx";
 
-const DATA_URL = "/physio_viva.json";
-const REFLEX_URL = "/physio_reflex_details.json";
-const NOTES_URL = "/physio_notes.json";
-const CLINICAL_URL = "/physio_clinical.json";
+const DATA_URL = "viva.json";
+const REFLEX_URL = "reflex_details.json";
+const NOTES_URL = "notes.json";
+const CLINICAL_URL = "clinical.json";
 
 const CAT_COLORS = {
   Laws: "#185FA5", Equations: "#3B6D11", Effects: "#534AB7",
