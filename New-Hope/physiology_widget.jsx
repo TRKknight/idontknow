@@ -382,11 +382,19 @@ const REFLEX_MECH_MAP = {
   "Sudomotor Reflex (Axon Reflex in Sweating)": "Sudomotor Reflex (Axon Reflex in Sweating)",
 };
 
+function mechNorm(s) {
+  return s.toLowerCase().replace(/[\u2018\u2019']/g, "'").replace(/\s+/g, " ").trim();
+}
+
 function getReflexMechanism(name) {
   const key = REFLEX_MECH_MAP[name];
-  if (key) return MECHANISMS[key] || null;
+  if (key && MECHANISMS[key]) return MECHANISMS[key];
+  const nn = mechNorm(name);
+  for (const [mk, mv] of Object.entries(REFLEX_MECH_MAP)) {
+    if (mechNorm(mk) === nn) return MECHANISMS[mv] || null;
+  }
   for (const [mk, mv] of Object.entries(MECHANISMS)) {
-    if (mk.toLowerCase().includes(name.toLowerCase())) return mv;
+    if (mechNorm(mk).includes(nn)) return mv;
   }
   return null;
 }
@@ -397,6 +405,7 @@ function normReflex(n) {
 
 function getReflexDetail(name, reflexes) {
   const nn = normReflex(name);
+  const nTokens = nn.split(" ").filter(Boolean);
   for (const r of reflexes) {
     const rn = normReflex(r.name);
     if (rn === nn) return r;
@@ -405,7 +414,21 @@ function getReflexDetail(name, reflexes) {
     const rn = normReflex(r.name);
     if (rn.includes(nn) || nn.includes(rn)) return r;
   }
-  return null;
+  let best = null;
+  let bestExtra = Infinity;
+  for (const r of reflexes) {
+    const rTokens = normReflex(r.name).split(" ").filter(Boolean);
+    const short = nTokens.length <= rTokens.length ? nTokens : rTokens;
+    const long = nTokens.length <= rTokens.length ? rTokens : nTokens;
+    if (short.every(t => long.includes(t))) {
+      const extra = Math.abs(nTokens.length - rTokens.length);
+      if (extra < bestExtra) {
+        bestExtra = extra;
+        best = r;
+      }
+    }
+  }
+  return best;
 }
 
 const DETAIL_SYS_ORDER = ["Spinal", "Cardiovascular", "Respiratory", "Visceral", "Endocrine", "Brainstem"];
@@ -433,23 +456,43 @@ function highlightMatch(text, q) {
 function MechanismFlowchart({ name }) {
   const steps = getReflexMechanism(name);
   if (!steps) return null;
+  const isHeader = (s) => /^[A-Za-z][A-Za-z ().'/&\-]*:$/.test(s) && s.length < 80;
+  const renderBold = (s) => {
+    const parts = s.split("**");
+    return parts.map((p, k) =>
+      k % 2 === 1 ? <strong key={k} style={{ fontWeight: 700 }}>{p}</strong> : p
+    );
+  };
+  let num = 0;
   return (
     <div style={{ marginTop: 12, borderTop: "0.5px solid var(--color-border-tertiary)", paddingTop: 12 }}>
       <div style={{ fontSize: 11, fontWeight: 600, color: "var(--color-text-secondary)", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 10 }}>Mechanism Flowchart</div>
       <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-        {steps.map((step, i) => (
-          <div key={i} style={{ display: "flex", gap: 10, alignItems: "stretch" }}>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: 24, flexShrink: 0 }}>
-              <div style={{ width: 22, height: 22, borderRadius: "50%", background: "#185FA5", color: "#fff", fontSize: 11, fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                {i + 1}
+        {steps.map((step, i) => {
+          if (isHeader(step)) {
+            return (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, margin: "6px 0 2px" }}>
+                <span style={{ width: 22, height: 2, background: "#185FA5", borderRadius: 1, flexShrink: 0 }} />
+                <span style={{ fontSize: 12.5, fontWeight: 700, color: "var(--color-text-primary)", letterSpacing: "0.02em" }}>{step.replace(/\*\*/g, "")}</span>
               </div>
-              {i < steps.length - 1 && <div style={{ width: 1.5, flex: 1, background: "var(--color-border-secondary)", minHeight: 16 }} />}
+            );
+          }
+          num += 1;
+          const n = num;
+          return (
+            <div key={i} style={{ display: "flex", gap: 10, alignItems: "stretch" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: 24, flexShrink: 0 }}>
+                <div style={{ width: 22, height: 22, borderRadius: "50%", background: "#185FA5", color: "#fff", fontSize: 11, fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  {n}
+                </div>
+                {i < steps.length - 1 && <div style={{ width: 1.5, flex: 1, background: "var(--color-border-secondary)", minHeight: 16 }} />}
+              </div>
+              <div style={{ fontSize: 13, color: "var(--color-text-primary)", lineHeight: 1.5, paddingBottom: i < steps.length - 1 ? 14 : 0 }}>
+                {renderBold(step)}
+              </div>
             </div>
-            <div style={{ fontSize: 13, color: "var(--color-text-primary)", lineHeight: 1.5, paddingBottom: i < steps.length - 1 ? 14 : 0 }}>
-              {step}
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
