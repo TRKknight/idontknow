@@ -5569,7 +5569,9 @@ function VitaminEditForm({
 function ClinicalVignetteView({
   vignette,
   onBack,
-  dark
+  dark,
+  allDisorders,
+  onOpenDisorder
 }) {
   const [taken, setTaken] = useState(new Set());
   const [score, setScore] = useState(100);
@@ -5577,6 +5579,7 @@ function ClinicalVignetteView({
   const [showPicker, setShow] = useState(false);
   const [correct, setCorrect] = useState(false);
   const [wrongMsg, setWrongMsg] = useState(null);
+  const [attempted, setAttempted] = useState(false);
   const pickerRef = useRef(null);
   useEffect(() => {
     if (showPicker && pickerRef.current) pickerRef.current.scrollIntoView({
@@ -5587,6 +5590,7 @@ function ClinicalVignetteView({
   const actions = vignette.actions || [];
   const rawDiffs = vignette.differentials || [];
   const criticals = new Set(vignette.critical_ids || []);
+  const linkedDis = vignette.disorderId ? (allDisorders || []).find(d => d.id === vignette.disorderId || d.num === vignette.disorderId) : null;
   const takenArr = actions.filter(a => taken.has(a.id));
   const remaining = actions.filter(a => !taken.has(a.id));
   const [shuffledDiffs, setShuffledDiffs] = useState(() => {
@@ -5598,6 +5602,8 @@ function ClinicalVignetteView({
     return arr;
   });
   const diffs = shuffledDiffs || rawDiffs;
+  const confirmedDx = diffs.find(d => d.status === 'confirmed');
+  const finalDiagnosis = confirmedDx ? confirmedDx.disease : vignette.diagnosis;
   function shuffleDiffs() {
     const arr = [...rawDiffs];
     for (let i = arr.length - 1; i > 0; i--) {
@@ -5608,12 +5614,12 @@ function ClinicalVignetteView({
   }
   function takeAction(a) {
     if (taken.has(a.id)) return;
+    if (a.cost >= 3 && !attempted) return;
     setTaken(new Set([...taken, a.id]));
     setScore(s => Math.max(0, s - a.cost * 8));
   }
   function handlePickDiagnosis() {
-    const confirmedDx = diffs.find(d => d.status === 'confirmed');
-    const correctAnswer = confirmedDx ? confirmedDx.disease : vignette.diagnosis;
+    const correctAnswer = finalDiagnosis;
     if (picked === correctAnswer) {
       setCorrect(true);
       setShow(false);
@@ -5621,6 +5627,7 @@ function ClinicalVignetteView({
       setWrongMsg(`Not correct. Score -15!`);
       setScore(s => Math.max(0, s - 15));
       setPicked(null);
+      setAttempted(true);
     }
   }
   const totalPossible = actions.reduce((s, a) => s + a.cost * 8, 0);
@@ -5778,37 +5785,41 @@ function ClinicalVignetteView({
       gridTemplateColumns: '1fr 1fr',
       gap: 8
     }
-  }, remaining.map(a => /*#__PURE__*/React.createElement("button", {
-    key: a.id,
-    onClick: () => takeAction(a),
-    style: {
-      padding: '10px 8px',
-      borderRadius: 8,
-      borderTop: `1px solid ${DK.border(dark)}`,
-      borderRight: `1px solid ${DK.border(dark)}`,
-      borderBottom: `1px solid ${DK.border(dark)}`,
-      background: dark ? '#1a1a1a' : '#fefefe',
-      color: DK.text(dark),
-      fontSize: 11,
-      cursor: 'pointer',
-      fontFamily: 'Georgia,serif',
-      textAlign: 'left',
-      lineHeight: 1.4,
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 4,
-      transition: 'all 0.15s'
-    }
-  }, /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontSize: 14
-    }
-  }, a.label), /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontSize: 10,
-      color: DK.muted(dark)
-    }
-  }, "\u23F1 ", a.cost, " \xD7 8 pts"))))), score <= 0 && !correct && /*#__PURE__*/React.createElement("div", {
+  }, remaining.map(a => {
+    const locked = a.cost >= 3 && !attempted;
+    return /*#__PURE__*/React.createElement("button", {
+      key: a.id,
+      onClick: () => takeAction(a),
+      disabled: locked,
+      style: {
+        padding: '10px 8px',
+        borderRadius: 8,
+        borderTop: `1px solid ${DK.border(dark)}`,
+        borderRight: `1px solid ${DK.border(dark)}`,
+        borderBottom: `1px solid ${DK.border(dark)}`,
+        background: locked ? (dark ? '#151515' : '#f5f3ef') : (dark ? '#1a1a1a' : '#fefefe'),
+        color: locked ? DK.muted(dark) : DK.text(dark),
+        fontSize: 11,
+        cursor: locked ? 'not-allowed' : 'pointer',
+        fontFamily: 'Georgia,serif',
+        textAlign: 'left',
+        lineHeight: 1.4,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 4,
+        transition: 'all 0.15s'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 14
+      }
+    }, locked ? "\uD83D\uDD12 " + a.label : a.label), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 10,
+        color: DK.muted(dark)
+      }
+    }, locked ? "Requires a diagnosis attempt" : "\u23F1 " + a.cost + " \xD7 8 pts"));
+  }))), score <= 0 && !correct && /*#__PURE__*/React.createElement("div", {
     style: {
       background: dark ? '#2a1a1a' : '#fdf0f0',
       border: `1px solid ${dark ? '#4a2a2a' : '#e8c8c8'}`,
@@ -5950,7 +5961,7 @@ function ClinicalVignetteView({
       color: DK.text(dark),
       marginBottom: 6
     }
-  }, /*#__PURE__*/React.createElement("strong", null, vignette.diagnosis)), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("strong", null, finalDiagnosis)), /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
       justifyContent: 'center',
@@ -6002,13 +6013,22 @@ function ClinicalVignetteView({
       fontSize: 9,
       color: DK.sub(dark)
     }
-  }, "ACTIONS"))), vignette.disorderId && /*#__PURE__*/React.createElement("div", {
+  }, "ACTIONS"))), linkedDis && /*#__PURE__*/React.createElement("button", {
+    onClick: () => onOpenDisorder(linkedDis),
     style: {
       marginTop: 10,
       fontSize: 11,
-      color: DK.sub(dark)
+      background: 'none',
+      borderTop: 'none',
+      borderRight: 'none',
+      borderLeft: 'none',
+      borderBottom: '1px solid #e8c56a',
+      color: '#e8c56a',
+      cursor: 'pointer',
+      fontFamily: 'Georgia,serif',
+      padding: 0
     }
-  }, "View the full disorder card for more details.")), /*#__PURE__*/React.createElement("div", {
+  }, "View ", linkedDis.disorder, " Card \u2192")), /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: 12,
       fontWeight: 'bold',
@@ -7765,6 +7785,9 @@ function App() {
   const [physioClinical, setPhysioClinical] = useState([]);
   const [lightbox, setLightbox] = useState(null);
   const physioRef = useRef(null);
+  const feedRef = useRef(null);
+  const darkRef = useRef(dark);
+  useEffect(() => { darkRef.current = dark; }, [dark]);
   const [physioMode, setPhysioMode] = useState('home');
   const [physioCat, setPhysioCat] = useState('All');
   const [physioSearch, setPhysioSearch] = useState('');
@@ -7790,18 +7813,34 @@ function App() {
     }
   }, [dark, screen, physioMode, physioCat, physioSearch, visibility]);
   useEffect(() => {
+    if (feedRef.current && screen === 'feed') {
+      feedRef.current.contentWindow.postMessage({
+        type: 'theme',
+        dark
+      }, '*');
+    }
+  }, [dark, screen]);
+  useEffect(() => {
     function onMessage(e) {
       const origin = e.origin || '';
       const loc = window.location;
       const trusted = origin === loc.origin || origin === 'http://localhost:8000' || origin === 'https://localhost:8000' || origin === 'http://127.0.0.1:8000' || origin === 'https://127.0.0.1:8000';
       if (!trusted) return;
       if (e.data && e.data.type === 'theme-from-physio') {
-        if (typeof e.data.dark === 'boolean' && e.data.dark !== dark) {
+        if (typeof e.data.dark === 'boolean' && e.data.dark !== darkRef.current) {
           setDark(e.data.dark);
         }
       }
       if (e.data && e.data.type === 'physio-request-theme') {
-        if (physioRef.current) physioRef.current.contentWindow.postMessage({ type: 'theme', dark }, '*');
+        if (physioRef.current) physioRef.current.contentWindow.postMessage({ type: 'theme', dark: darkRef.current }, '*');
+      }
+      if (e.data && e.data.type === 'feed-request-theme') {
+        if (feedRef.current) feedRef.current.contentWindow.postMessage({ type: 'theme', dark: darkRef.current }, '*');
+      }
+      if (e.data && e.data.type === 'theme-from-feed') {
+        if (typeof e.data.dark === 'boolean' && e.data.dark !== darkRef.current) {
+          setDark(e.data.dark);
+        }
       }
       if (e.data && e.data.type === 'physio-nav') {
         setPhysioMode(e.data.mode || 'home');
@@ -9249,7 +9288,8 @@ function App() {
       fontFamily: 'Georgia,serif'
     }
   }, "\uD83D\uDCF0 BFM Feed")), /*#__PURE__*/React.createElement("iframe", {
-    src: "feed/index.html",
+    ref: feedRef,
+    src: "feed/index.html?dark=" + (dark ? 1 : 0),
     style: {
       flex: 1,
       width: '100%',
@@ -9257,7 +9297,15 @@ function App() {
       borderRight: 'none',
       borderLeft: 'none'
     },
-    title: "BFM Feed"
+    title: "BFM Feed",
+    onLoad: () => {
+      if (feedRef.current) {
+        feedRef.current.contentWindow.postMessage({
+          type: 'theme',
+          dark
+        }, '*');
+      }
+    }
   })), screen === 'clinical-vignettes' && !adminConfig && visibility['clinical-vignettes'] !== false && /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',
@@ -9397,7 +9445,12 @@ function App() {
     key: openVignette.id,
     vignette: openVignette,
     dark: dark,
-    onBack: () => setOpenVignette(null)
+    allDisorders: allData,
+    onBack: () => setOpenVignette(null),
+    onOpenDisorder: d => {
+      setSel(d);
+      navigateTo('disorders');
+    }
   }) : /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',

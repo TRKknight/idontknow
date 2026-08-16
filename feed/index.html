@@ -4,17 +4,39 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <title>BFM Feed</title>
+<script>
+  (function () {
+    var m = location.search.match(/[?&]dark=(\d)/);
+    var isDark = m ? m[1] === '1' : localStorage.getItem('biochem-dark') === '1';
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+  })();
+</script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
+  :root, :root[data-theme="dark"] {
     --bg: #0f0f0f;
     --surface: #1a1a1a;
     --border: #2a2a2a;
+    --border-strong: #444;
     --text: #f0f0f0;
     --sub: #999;
     --muted: #555;
     --card: #1e1e1e;
+    --hdr-glass: rgba(15,15,15,0.92);
+  }
+
+  :root[data-theme="light"] {
+    --bg: #faf7f2;
+    --surface: #fff;
+    --border: #e8e2d9;
+    --border-strong: #c8c2b8;
+    --text: #1a1a1a;
+    --sub: #666;
+    --muted: #999;
+    --card: #fff;
+    --hdr-glass: rgba(250,247,242,0.92);
   }
 
   html, body {
@@ -30,7 +52,7 @@
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
-    background: rgba(15,15,15,0.92);
+    background: var(--hdr-glass);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 12px 16px;
@@ -39,7 +61,7 @@
     justify-content: space-between;
     border-bottom: 1px solid var(--border);
   }
-  #header .title { font-size: 15px; font-weight: bold; color: #fff; letter-spacing: 0.3px; }
+  #header .title { font-size: 15px; font-weight: bold; color: var(--text); letter-spacing: 0.3px; }
   #header .sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
   #header .badge {
     font-size: 11px;
@@ -127,7 +149,7 @@
   .card-hook {
     font-size: 19px;
     font-weight: bold;
-    color: #fff;
+    color: var(--text);
     line-height: 1.4;
     margin-bottom: 12px;
   }
@@ -209,7 +231,7 @@
     cursor: pointer;
     text-align: center;
   }
-  .reveal-close:hover { color: var(--sub); border-color: #444; }
+  .reveal-close:hover { color: var(--sub); border-color: var(--border-strong); }
 
   /* ── Loading card ── */
   .card-loading {
@@ -313,6 +335,23 @@ let isLoading = false;
 let BATCH = 3;
 let strategyOffset = 0;
 let hookCache = {};
+
+function applyTheme(isDark) {
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+  try { localStorage.setItem('biochem-dark', isDark ? '1' : '0'); } catch (e) {}
+}
+
+window.addEventListener('message', (e) => {
+  const d = e.data;
+  if (d && d.type === 'theme' && typeof d.dark === 'boolean') {
+    applyTheme(d.dark);
+  }
+});
+
+if (window.parent !== window) {
+  try { window.parent.postMessage({ type: 'feed-request-theme' }, '*'); } catch (e) {}
+}
 
 function stripMd(s) { return (s || '').replace(/\*\*(.+?)\*\*/g, '$1'); }
 function firstSentence(s) {

@@ -6,7 +6,7 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Feeding & family history",
+        "label": "📋 Feeding & family history",
         "cost": 1,
         "critical": true,
         "clue": "Parents report jitteriness and lethargy 3-4 hours after feeds. An older sibling died at 8 months with similar symptoms and 'an enlarged liver'. Baby is exclusively breastfed every 3 hours.",
@@ -14,7 +14,7 @@
       },
       {
         "id": "exam_general",
-        "label": "\ud83e\ude7a General & growth assessment",
+        "label": "🩺 General & growth assessment",
         "cost": 1,
         "critical": false,
         "clue": "Weight 5.2 kg (<3rd centile), length 60 cm (<3rd centile). Round face with full cheeks. Subcostal fat pads present. Muscle bulk reduced.",
@@ -22,7 +22,7 @@
       },
       {
         "id": "exam_abdo",
-        "label": "\ud83e\ude7a Abdominal examination",
+        "label": "🩺 Abdominal examination",
         "cost": 1,
         "critical": false,
         "clue": "Liver firm, smooth, palpable 6 cm below right costal margin. Spleen not palpable. No ascites, no caput medusae.",
@@ -30,7 +30,7 @@
       },
       {
         "id": "exam_neuro",
-        "label": "\ud83e\ude7a Neurological examination",
+        "label": "🩺 Neurological examination",
         "cost": 1,
         "critical": false,
         "clue": "Lethargic but arousable. Cranial nerves intact. Mild hypotonia. Deep tendon reflexes 2+. No focal deficits, no seizures.",
@@ -38,7 +38,7 @@
       },
       {
         "id": "test_fast_glucose",
-        "label": "\ud83e\uddea Fasting blood glucose",
+        "label": "🧪 Fasting blood glucose",
         "cost": 1,
         "critical": true,
         "clue": "Fasting glucose: 38 mg/dL (normal 70-100). After 4-hour fast: 28 mg/dL with clinical deterioration.",
@@ -46,7 +46,7 @@
       },
       {
         "id": "test_lactate",
-        "label": "\ud83e\uddea Serum lactate",
+        "label": "🧪 Serum lactate",
         "cost": 1,
         "critical": true,
         "clue": "Lactate: 6.5 mmol/L (normal <2.0). No improvement after glucose administration.",
@@ -54,7 +54,7 @@
       },
       {
         "id": "test_uric_acid",
-        "label": "\ud83e\uddea Serum uric acid",
+        "label": "🧪 Serum uric acid",
         "cost": 1,
         "critical": true,
         "clue": "Uric acid: 9.2 mg/dL (normal 2-5.5).",
@@ -62,7 +62,7 @@
       },
       {
         "id": "test_lipids",
-        "label": "\ud83e\uddea Lipid profile",
+        "label": "🧪 Lipid profile",
         "cost": 1,
         "critical": true,
         "clue": "Triglycerides: 850 mg/dL (normal <150). Total cholesterol: 280 mg/dL. HDL: low. Plasma appears lipaemic.",
@@ -70,7 +70,7 @@
       },
       {
         "id": "test_ua",
-        "label": "\ud83e\uddea Urinalysis",
+        "label": "🧪 Urinalysis",
         "cost": 1,
         "critical": true,
         "clue": "Specific gravity 1.025. pH 5.5. Glucose: negative. Ketones: moderate positive. No protein, no blood.",
@@ -78,7 +78,7 @@
       },
       {
         "id": "test_lft",
-        "label": "\ud83e\uddea Liver function tests",
+        "label": "🧪 Liver function tests",
         "cost": 1,
         "critical": false,
         "clue": "ALT 68 U/L, AST 82 U/L (mildly elevated). GGT 45 U/L. Bilirubin normal. Albumin 3.2 g/dL (slightly low). PT/APTT normal.",
@@ -86,15 +86,15 @@
       },
       {
         "id": "test_ammonia",
-        "label": "\ud83e\uddea Plasma ammonia",
+        "label": "🧪 Plasma ammonia",
         "cost": 1,
         "critical": false,
-        "clue": "Ammonia: 28 \u03bcmol/L (normal 15-55).",
-        "finding": "Normal ammonia \u2014 rules out urea cycle disorders"
+        "clue": "Ammonia: 28 μmol/L (normal 15-55).",
+        "finding": "Normal ammonia — rules out urea cycle disorders"
       },
       {
         "id": "test_abg",
-        "label": "\ud83e\uddea Arterial blood gas",
+        "label": "🧪 Arterial blood gas",
         "cost": 1,
         "critical": false,
         "clue": "pH 7.31 (normal 7.35-7.45). pCO2 32 mmHg. HCO3 16 mmol/L. Base excess -6. Anion gap: 22.",
@@ -102,23 +102,23 @@
       },
       {
         "id": "test_acylcarn",
-        "label": "\ud83e\uddea Plasma acylcarnitine profile",
+        "label": "🧪 Plasma acylcarnitine profile",
         "cost": 2,
         "critical": false,
         "clue": "Normal acylcarnitine profile. No abnormal species detected. Free carnitine normal.",
-        "finding": "Normal \u2014 rules out fatty acid oxidation disorders (MCAD, VLCAD, carnitine deficiency)"
+        "finding": "Normal — rules out fatty acid oxidation disorders (MCAD, VLCAD, carnitine deficiency)"
       },
       {
         "id": "test_glucagon",
-        "label": "\u26a1 Glucagon stimulation test (fasting)",
+        "label": "⚡ Glucagon stimulation test (fasting)",
         "cost": 2,
         "critical": true,
-        "clue": "After 4-hour fast: 1 mg IM glucagon \u2192 glucose rises from 28 to 32 mg/dL at 30 min (minimal response, expected rise >30 mg/dL). Postprandial glucagon also shows no response.",
-        "finding": "Glucagon unresponsiveness \u2014 indicates inability to mobilise hepatic glycogen"
+        "clue": "After 4-hour fast: 1 mg IM glucagon → glucose rises from 28 to 32 mg/dL at 30 min (minimal response, expected rise >30 mg/dL). Postprandial glucagon also shows no response.",
+        "finding": "Glucagon unresponsiveness — indicates inability to mobilise hepatic glycogen"
       },
       {
         "id": "imaging_us",
-        "label": "\ud83d\udd2c Abdominal ultrasound",
+        "label": "🔬 Abdominal ultrasound",
         "cost": 2,
         "critical": false,
         "clue": "Liver span 10 cm (markedly enlarged). Homogeneous echotexture. No focal lesions. No biliary dilation. Normal kidneys, spleen, pancreas.",
@@ -126,11 +126,11 @@
       },
       {
         "id": "test_liver_biopsy",
-        "label": "\u26a1 Liver biopsy with enzyme assay",
+        "label": "⚡ Liver biopsy with enzyme assay",
         "cost": 3,
         "critical": true,
         "clue": "Light microscopy: marked glycogen accumulation in hepatocytes. PAS-positive, diastase-labile. Electron microscopy: normal glycogen structure. Enzyme assay: glucose-6-phosphatase (G6Pase) activity <2% of normal. Glycogen content 6x normal.",
-        "finding": "G6Pase deficiency confirmed \u2014 definitive diagnosis of Von Gierke disease"
+        "finding": "Glucose-6-phosphatase (G6Pase) activity <2% of normal — severe deficiency"
       }
     ],
     "critical_ids": [
@@ -149,7 +149,7 @@
       {
         "disease": "Von Gierke Disease (GSD I)",
         "status": "confirmed",
-        "reason": "G6Pase deficiency \u2192 fasting hypoglycaemia, lactate \u2191, uric acid \u2191, TG \u2191\u2191. Glucagon unresponsive. Biopsy confirms."
+        "reason": "G6Pase deficiency → fasting hypoglycaemia, lactate ↑, uric acid ↑, TG ↑↑. Glucagon unresponsive. Biopsy confirms."
       },
       {
         "disease": "Cori Disease (GSD III)",
@@ -164,7 +164,7 @@
       {
         "disease": "MCAD Deficiency",
         "status": "ruled-out",
-        "reason": "Hypoketotic hypoglycaemia \u2014 ketones would be LOW/absent. Normal acylcarnitine profile."
+        "reason": "Hypoketotic hypoglycaemia — ketones would be LOW/absent. Normal acylcarnitine profile."
       },
       {
         "disease": "Glycogen Synthase Def. (GSD 0)",
@@ -180,15 +180,15 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Perinatal & family history",
+        "label": "📋 Perinatal & family history",
         "cost": 1,
         "critical": true,
         "clue": "Term delivery, normal BW 3.2 kg. Breastfeeding poorly since day 3. Sibling died at 2 weeks with lethargy and seizures, no diagnosis. Consanguinity: parents are first cousins.",
-        "finding": "Consanguinity + sibling death from encephalopathy \u2192 strong suspicion of autosomal recessive metabolic disorder"
+        "finding": "Consanguinity + sibling death from encephalopathy → strong suspicion of autosomal recessive metabolic disorder"
       },
       {
         "id": "exam_neuro",
-        "label": "\ud83e\ude7a Neurological examination",
+        "label": "🩺 Neurological examination",
         "cost": 1,
         "critical": false,
         "clue": "Comatose, no response to pain. Pupils sluggishly reactive. Intermittent opisthotonus. Hypertonia with brisk reflexes. Bilateral Babinski sign. Moro reflex absent.",
@@ -196,23 +196,23 @@
       },
       {
         "id": "exam_odor",
-        "label": "\ud83e\ude7a Note body fluid odour",
+        "label": "🩺 Note body fluid odour",
         "cost": 1,
         "critical": true,
         "clue": "Urine and cerumen have a distinctive sweet, caramel-like odour reminiscent of maple syrup. Also detectable on the baby's breath.",
-        "finding": "Pathognomonic maple syrup odour"
+        "finding": "Distinctive sweet, caramel-like odour (reminiscent of maple syrup)"
       },
       {
         "id": "test_bg",
-        "label": "\ud83e\uddea Blood glucose",
+        "label": "🧪 Blood glucose",
         "cost": 1,
         "critical": false,
         "clue": "Glucose: 82 mg/dL (normal).",
-        "finding": "Normoglycaemia \u2014 rules out hypoglycaemic encephalopathy"
+        "finding": "Normoglycaemia — rules out hypoglycaemic encephalopathy"
       },
       {
         "id": "test_electrolytes",
-        "label": "\ud83e\uddea Serum electrolytes + anion gap",
+        "label": "🧪 Serum electrolytes + anion gap",
         "cost": 1,
         "critical": false,
         "clue": "Na 138, K 4.8, Cl 100, HCO3 18. Anion gap: 20 (elevated). pH 7.28. pCO2 35. BE -6.",
@@ -220,75 +220,75 @@
       },
       {
         "id": "test_ammonia",
-        "label": "\ud83e\uddea Plasma ammonia",
+        "label": "🧪 Plasma ammonia",
         "cost": 1,
         "critical": true,
-        "clue": "Ammonia: 35 \u03bcmol/L (normal 15-55).",
-        "finding": "Normal ammonia \u2014 rules out urea cycle disorders"
+        "clue": "Ammonia: 35 μmol/L (normal 15-55).",
+        "finding": "Normal ammonia — rules out urea cycle disorders"
       },
       {
         "id": "test_amino_acids",
-        "label": "\ud83e\uddea Plasma amino acid profile",
+        "label": "🧪 Plasma amino acid profile",
         "cost": 2,
         "critical": true,
-        "clue": "Leucine: 2150 \u03bcmol/L (normal 50-150). Isoleucine: 980 \u03bcmol/L (normal 20-80). Valine: 1450 \u03bcmol/L (normal 100-300). Alloisoleucine: PRESENT (pathognomonic).",
-        "finding": "Markedly elevated branched-chain amino acids + alloisoleucine (pathognomonic for MSUD)"
+        "clue": "Leucine: 2150 μmol/L (normal 50-150). Isoleucine: 980 μmol/L (normal 20-80). Valine: 1450 μmol/L (normal 100-300). Alloisoleucine: PRESENT.",
+        "finding": "Markedly elevated branched-chain amino acids + alloisoleucine present"
       },
       {
         "id": "test_oa",
-        "label": "\ud83e\uddea Urine organic acids",
+        "label": "🧪 Urine organic acids",
         "cost": 2,
         "critical": true,
-        "clue": "Massive elevation of branched-chain ketoacids: \u03b1-ketoisocaproate, \u03b1-keto-\u03b2-methylvalerate, \u03b1-ketoisovalerate. No methylmalonic acid. No propionic acid.",
-        "finding": "BCKA elevation with no methylmalonic/propionic acid \u2014 rules out MMA/PA"
+        "clue": "Massive elevation of branched-chain ketoacids: α-ketoisocaproate, α-keto-β-methylvalerate, α-ketoisovalerate. No methylmalonic acid. No propionic acid.",
+        "finding": "BCKA elevation with no methylmalonic/propionic acid — rules out MMA/PA"
       },
       {
         "id": "test_gs",
-        "label": "\ud83e\uddea Plasma glycine",
+        "label": "🧪 Plasma glycine",
         "cost": 1,
         "critical": false,
-        "clue": "Glycine: 220 \u03bcmol/L (normal 150-350).",
-        "finding": "Normal glycine \u2014 rules out nonketotic hyperglycinaemia"
+        "clue": "Glycine: 220 μmol/L (normal 150-350).",
+        "finding": "Normal glycine — rules out nonketotic hyperglycinaemia"
       },
       {
         "id": "test_acylcarn",
-        "label": "\ud83e\uddea Acylcarnitine profile (dried blood spot)",
+        "label": "🧪 Acylcarnitine profile (dried blood spot)",
         "cost": 1,
         "critical": false,
         "clue": "Normal acylcarnitine profile. No abnormal species.",
-        "finding": "Normal \u2014 rules out fatty acid oxidation and organic acidaemias"
+        "finding": "Normal — rules out fatty acid oxidation and organic acidaemias"
       },
       {
         "id": "test_csf",
-        "label": "\ud83e\uddea CSF analysis",
+        "label": "🧪 CSF analysis",
         "cost": 2,
         "critical": false,
         "clue": "Opening pressure normal. Cells: 2 WBC. Protein 45 mg/dL. Glucose 65 mg/dL (serum 82). CSF amino acids show markedly elevated BCAA. No organisms.",
-        "finding": "CSF BCAA elevation mirrors plasma \u2014 no meningitis"
+        "finding": "CSF BCAA elevation mirrors plasma — no meningitis"
       },
       {
         "id": "imaging_brain",
-        "label": "\ud83d\udd2c Brain MRI",
+        "label": "🔬 Brain MRI",
         "cost": 3,
         "critical": false,
         "clue": "Diffuse cerebral oedema with restricted diffusion in deep white matter, basal ganglia, and brainstem. 'Mickey Mouse' sign on DWI (symmetrical involvement of cerebellar peduncles, cerebral peduncles, and globus pallidus).",
-        "finding": "Characteristic MSUD neuroimaging \u2014 'Mickey Mouse' sign"
+        "finding": "Characteristic MSUD neuroimaging — 'Mickey Mouse' sign"
       },
       {
         "id": "test_dna",
-        "label": "\u26a1 Genetic analysis (BCKDHA/B/C/D)",
+        "label": "⚡ Genetic analysis (BCKDHA/B/C/D)",
         "cost": 3,
         "critical": false,
-        "clue": "Homozygous missense mutation in BCKDHA gene (E1\u03b1 subunit). Parents heterozygous. Confirms MSUD type 1A.",
-        "finding": "BCKDHA mutation confirmed \u2014 molecular diagnosis of MSUD"
+        "clue": "Homozygous missense mutation in BCKDHA gene (E1α subunit). Parents heterozygous. No parental phenotypes.",
+        "finding": "Homozygous BCKDHA (E1α) mutation — branched-chain α-ketoacid dehydrogenase defect"
       },
       {
         "id": "test_enzyme",
-        "label": "\u26a1 Fibroblast BCKDH enzyme assay",
+        "label": "⚡ Fibroblast BCKDH enzyme assay",
         "cost": 3,
         "critical": false,
         "clue": "BCKDH complex activity: 4% of normal in cultured skin fibroblasts. Activity undetectable in leucocytes.",
-        "finding": "BCKDH enzyme deficiency confirmed \u2014 definitive biochemical diagnosis"
+        "finding": "BCKDH complex activity 4% of normal — severe deficiency"
       }
     ],
     "critical_ids": [
@@ -299,7 +299,7 @@
       "test_ammonia"
     ],
     "diagnosis": "Maple Syrup Urine Disease (MSUD)",
-    "disorderId": null,
+    "disorderId": 34,
     "differentials": [
       {
         "disease": "Maple Syrup Urine Disease (MSUD)",
@@ -340,7 +340,7 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Present & past history",
+        "label": "📋 Present & past history",
         "cost": 1,
         "critical": true,
         "clue": "Recurrent episodes since age 25, often triggered by fasting, alcohol, or oral contraceptive pills. Family history: mother had 'stomach attacks' and skin blisters. No gallstones, no hepatitis risk factors.",
@@ -348,7 +348,7 @@
       },
       {
         "id": "exam_skin",
-        "label": "\ud83e\ude7a Skin examination",
+        "label": "🩺 Skin examination",
         "cost": 1,
         "critical": false,
         "clue": "Dorsum of hands and forearms: vesicles, bullae, erosions, and milia in various stages of healing. Skin fragility. Hypertrichosis on temples. No jaundice, no pallor.",
@@ -356,7 +356,7 @@
       },
       {
         "id": "exam_abdo",
-        "label": "\ud83e\ude7a Abdominal examination",
+        "label": "🩺 Abdominal examination",
         "cost": 1,
         "critical": false,
         "clue": "Abdomen mildly distended, tympanitic. Bowel sounds absent. Mild diffuse tenderness, no guarding or rebound. Liver span 10 cm (normal). Spleen not palpable.",
@@ -364,55 +364,55 @@
       },
       {
         "id": "exam_vitals",
-        "label": "\ud83e\ude7a Vital signs + CVS exam",
+        "label": "🩺 Vital signs + CVS exam",
         "cost": 1,
         "critical": false,
-        "clue": "BP 165/98 mmHg, HR 112 bpm, RR 20, Temp 37.1\u00b0C. Tachycardia, hypertension. No murmurs. Peripheral pulses intact.",
+        "clue": "BP 165/98 mmHg, HR 112 bpm, RR 20, Temp 37.1°C. Tachycardia, hypertension. No murmurs. Peripheral pulses intact.",
         "finding": "Hypertension and tachycardia (autonomic dysfunction)"
       },
       {
         "id": "test_ua",
-        "label": "\ud83e\uddea Urinalysis + Wood's lamp",
+        "label": "🧪 Urinalysis + Wood's lamp",
         "cost": 1,
         "critical": true,
-        "clue": "Urine: dark reddish-brown. Dipstick: positive for porphobilinogen (PBG) and \u03b4-aminolevulinic acid (ALA). Under Wood's lamp: urine shows pink-red fluorescence. Bilirubin negative. Urobilinogen normal.",
-        "finding": "PBG and ALA positive with pink fluorescence \u2014 pathognomonic for acute porphyria"
+        "clue": "Urine: dark reddish-brown. Dipstick: positive for porphobilinogen (PBG) and δ-aminolevulinic acid (ALA). Under Wood's lamp: urine shows pink-red fluorescence. Bilirubin negative. Urobilinogen normal.",
+        "finding": "PBG and ALA positive with pink fluorescence"
       },
       {
         "id": "test_urine_porph",
-        "label": "\ud83e\uddea Urine porphyrin fractionation",
+        "label": "🧪 Urine porphyrin fractionation",
         "cost": 2,
         "critical": true,
         "clue": "PBG: 45 mg/L (normal <2). ALA: 30 mg/L (normal <5). Uroporphyrin: moderately elevated. Coproporphyrin: normal.",
-        "finding": "Markedly elevated PBG and ALA with moderate uroporphyrin \u2014 confirms acute porphyria"
+        "finding": "Markedly elevated PBG and ALA with moderate uroporphyrin"
       },
       {
         "id": "test_lft",
-        "label": "\ud83e\uddea Liver function + bilirubin",
+        "label": "🧪 Liver function + bilirubin",
         "cost": 1,
         "critical": false,
         "clue": "Total bilirubin 0.6 mg/dL. ALT 28, AST 32, ALP 85, GGT 22. Albumin 4.0. PT/APTT normal.",
-        "finding": "Normal LFTs \u2014 rules out hepatobiliary disease as cause"
+        "finding": "Normal LFTs — rules out hepatobiliary disease as cause"
       },
       {
         "id": "test_pancreas",
-        "label": "\ud83e\uddea Serum amylase + lipase",
+        "label": "🧪 Serum amylase + lipase",
         "cost": 1,
         "critical": false,
         "clue": "Amylase 45 U/L (normal <100). Lipase 22 U/L (normal <60).",
-        "finding": "Normal pancreatic enzymes \u2014 rules out pancreatitis"
+        "finding": "Normal pancreatic enzymes — rules out pancreatitis"
       },
       {
         "id": "test_renal",
-        "label": "\ud83e\uddea Renal function + electrolytes",
+        "label": "🧪 Renal function + electrolytes",
         "cost": 1,
         "critical": false,
         "clue": "Creatinine 0.7 mg/dL. BUN 12 mg/dL. Na 138, K 3.8, Cl 98, HCO3 24. Normal.",
-        "finding": "Normal renal function \u2014 no acute kidney injury"
+        "finding": "Normal renal function — no acute kidney injury"
       },
       {
         "id": "test_blood_porph",
-        "label": "\ud83e\uddea Plasma porphyrin fluorescence scan",
+        "label": "🧪 Plasma porphyrin fluorescence scan",
         "cost": 2,
         "critical": false,
         "clue": "Plasma fluorescence peak at 615-620 nm (characteristic of PBG deaminase deficiency). No peak at 626 nm (rules out variegate porphyria).",
@@ -420,43 +420,43 @@
       },
       {
         "id": "test_faecal_porph",
-        "label": "\ud83e\uddea Faecal porphyrin analysis",
+        "label": "🧪 Faecal porphyrin analysis",
         "cost": 2,
         "critical": false,
         "clue": "Faecal coproporphyrin: mildly elevated. Faecal protoporphyrin: normal. No coproporphyrin III/I isomer ratio elevation.",
-        "finding": "No marked faecal porphyrin elevation \u2014 rules out HCP and VP"
+        "finding": "No marked faecal porphyrin elevation — rules out HCP and VP"
       },
       {
         "id": "imaging_us",
-        "label": "\ud83d\udd2c Abdominal ultrasound",
+        "label": "🔬 Abdominal ultrasound",
         "cost": 2,
         "critical": false,
         "clue": "Normal liver, normal gallbladder (no stones), normal pancreas. Mild small bowel dilatation with fluid levels (ileus).",
-        "finding": "No gallstones, no biliary pathology \u2014 ileus secondary to porphyria"
+        "finding": "No gallstones, no biliary pathology — ileus secondary to porphyria"
       },
       {
         "id": "test_enzyme",
-        "label": "\u26a1 RBC PBG deaminase enzyme assay",
+        "label": "⚡ RBC PBG deaminase enzyme assay",
         "cost": 3,
         "critical": true,
         "clue": "Erythrocyte PBG deaminase (hydroxymethylbilane synthase) activity: 38% of normal. Family screening: patient's mother and one sibling also have ~40% activity.",
-        "finding": "PBG deaminase deficiency confirmed \u2014 definitive diagnosis of AIP"
+        "finding": "Erythrocyte PBG deaminase (HMBS) activity 38% of normal — partial deficiency"
       },
       {
         "id": "test_dna",
-        "label": "\u26a1 HMBS gene sequencing",
+        "label": "⚡ HMBS gene sequencing",
         "cost": 3,
         "critical": false,
         "clue": "Heterozygous missense mutation in HMBS gene (exon 10, c.517C>T, p.Arg173Trp). Same mutation found in affected mother.",
-        "finding": "HMBS mutation confirmed \u2014 molecular diagnosis of AIP"
+        "finding": "Heterozygous HMBS missense mutation (exon 10, c.517C>T), shared with affected mother"
       },
       {
         "id": "test_lead",
-        "label": "\ud83e\uddea Blood lead level",
+        "label": "🧪 Blood lead level",
         "cost": 1,
         "critical": false,
-        "clue": "Blood lead: 3 \u03bcg/dL (normal <10). No basophilic stippling on peripheral smear.",
-        "finding": "Normal lead level \u2014 rules out lead poisoning (which can mimic AIP)"
+        "clue": "Blood lead: 3 μg/dL (normal <10). No basophilic stippling on peripheral smear.",
+        "finding": "Normal lead level — rules out lead poisoning (which can mimic AIP)"
       }
     ],
     "critical_ids": [
@@ -466,12 +466,12 @@
       "test_enzyme"
     ],
     "diagnosis": "Acute Intermittent Porphyria (AIP)",
-    "disorderId": null,
+    "disorderId": 54,
     "differentials": [
       {
         "disease": "Acute Intermittent Porphyria (AIP)",
         "status": "confirmed",
-        "reason": "PBG deaminase deficiency \u2192 \u2191\u2191 PBG/ALA. Acute neurovisceral attacks. Photosensitivity. AD inheritance. Plasma fluorescence peak 615-620 nm."
+        "reason": "PBG deaminase deficiency → ↑↑ PBG/ALA. Acute neurovisceral attacks. Photosensitivity. AD inheritance. Plasma fluorescence peak 615-620 nm."
       },
       {
         "disease": "Variegate Porphyria (VP)",
@@ -491,7 +491,7 @@
       {
         "disease": "Lead Poisoning",
         "status": "ruled-out",
-        "reason": "Lead level normal. No basophilic stippling. Lead inhibits ALA dehydratase \u2192 \u2191 ALA but NOT PBG."
+        "reason": "Lead level normal. No basophilic stippling. Lead inhibits ALA dehydratase → ↑ ALA but NOT PBG."
       },
       {
         "disease": "Pancreatitis / Biliary Colic",
@@ -507,7 +507,7 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Birth & Feeding History",
+        "label": "📋 Birth & Feeding History",
         "cost": 1,
         "critical": false,
         "clue": "Born at term, normal delivery. Exclusively breastfed. No family history of metabolic disease. No newborn screen performed.",
@@ -515,15 +515,15 @@
       },
       {
         "id": "exam_skin",
-        "label": "\ud83e\ude7a Skin & Hair Examination",
+        "label": "🩺 Skin & Hair Examination",
         "cost": 1,
         "critical": true,
         "clue": "Skin is fairer than expected for ethnicity. Hair has a lighter hue than parents. Eczematous rash on trunk.",
-        "finding": "Hypopigmentation relative to parents \u2014 tyrosine/melanin pathway affected"
+        "finding": "Hypopigmentation relative to parents — tyrosine/melanin pathway affected"
       },
       {
         "id": "exam_neuro",
-        "label": "\ud83e\ude7a Neurological Examination",
+        "label": "🩺 Neurological Examination",
         "cost": 1,
         "critical": false,
         "clue": "Reduced social smiling. Mild hypotonia. Head circumference normal. No focal deficits.",
@@ -531,75 +531,75 @@
       },
       {
         "id": "test_sepsis_screen",
-        "label": "\ud83e\uddea Blood Culture + CRP + FBC",
+        "label": "🧪 Blood Culture + CRP + FBC",
         "cost": 1,
         "critical": false,
-        "clue": "Blood culture: no growth. CRP: 2 mg/L (normal). WBC: 8.2 \u00d710\u2079/L, normal differential. No evidence of infection.",
-        "finding": "Sepsis excluded \u2014 not the cause of lethargy"
+        "clue": "Blood culture: no growth. CRP: 2 mg/L (normal). WBC: 8.2 ×10⁹/L, normal differential. No evidence of infection.",
+        "finding": "Sepsis excluded — not the cause of lethargy"
       },
       {
         "id": "test_tsh",
-        "label": "\ud83e\uddea TSH + Free T4",
+        "label": "🧪 TSH + Free T4",
         "cost": 1,
         "critical": false,
         "clue": "TSH: 2.1 mU/L (normal). Free T4: 14 pmol/L (normal). Congenital hypothyroidism excluded.",
-        "finding": "Thyroid function normal \u2014 hypothyroidism excluded"
+        "finding": "Thyroid function normal — hypothyroidism excluded"
       },
       {
         "id": "test_urine_odour",
-        "label": "\ud83e\ude7a Urine Odour Assessment",
+        "label": "🩺 Urine Odour Assessment",
         "cost": 1,
         "critical": true,
-        "clue": "Urine has a distinctly musty, mousy odour \u2014 phenylacetic acid. Diaper smells strongly.",
-        "finding": "Musty/mousy urine odour \u2014 phenylacetic acid accumulation"
+        "clue": "Urine has a distinctly musty, mousy odour — phenylacetic acid. Diaper smells strongly.",
+        "finding": "Musty/mousy urine odour — phenylacetic acid accumulation"
       },
       {
         "id": "test_urine_red_sub",
-        "label": "\ud83e\uddea Urine Reducing Substances",
+        "label": "🧪 Urine Reducing Substances",
         "cost": 1,
         "critical": false,
         "clue": "Clinitest negative. No reducing substances in urine. Galactosemia and hereditary fructose intolerance excluded.",
-        "finding": "No reducing substances \u2014 galactosemia/HFI excluded"
+        "finding": "No reducing substances — galactosemia/HFI excluded"
       },
       {
         "id": "test_ammonia",
-        "label": "\ud83e\uddea Plasma Ammonia",
+        "label": "🧪 Plasma Ammonia",
         "cost": 1,
         "critical": false,
-        "clue": "Ammonia: 42 \u03bcmol/L (normal). Urea cycle defect excluded \u2014 no hyperammonaemia.",
-        "finding": "Normal ammonia \u2014 urea cycle defect excluded"
+        "clue": "Ammonia: 42 μmol/L (normal). Urea cycle defect excluded — no hyperammonaemia.",
+        "finding": "Normal ammonia — urea cycle defect excluded"
       },
       {
         "id": "test_plasma_aa",
-        "label": "\ud83e\uddea Plasma Amino Acids",
+        "label": "🧪 Plasma Amino Acids",
         "cost": 2,
         "critical": true,
-        "clue": "Phenylalanine: 1,840 \u03bcmol/L (normal <120). Tyrosine: low. Branched-chain amino acids normal. All other amino acids normal.",
-        "finding": "Isolated markedly elevated phenylalanine \u2014 PKU"
+        "clue": "Phenylalanine: 1,840 μmol/L (normal <120). Tyrosine: low. Branched-chain amino acids normal. All other amino acids normal.",
+        "finding": "Isolated markedly elevated phenylalanine — PKU"
       },
       {
         "id": "test_ferric_chloride",
-        "label": "\ud83e\uddea Urine Ferric Chloride Test",
+        "label": "🧪 Urine Ferric Chloride Test",
         "cost": 1,
         "critical": false,
-        "clue": "Urine turns blue-green \u2014 phenylpyruvic acid present. Positive for PKU. (Also positive in MSUD \u2014 not definitive alone.)",
-        "finding": "Positive ferric chloride \u2014 phenylpyruvic acid present"
+        "clue": "Urine turns blue-green — phenylpyruvic acid present. (Reaction also seen in MSUD — not specific alone.)",
+        "finding": "Positive ferric chloride — phenylpyruvic acid present"
       },
       {
         "id": "test_bcaa",
-        "label": "\ud83e\uddea Branched-Chain Amino Acids (Urine)",
+        "label": "🧪 Branched-Chain Amino Acids (Urine)",
         "cost": 2,
         "critical": false,
-        "clue": "Leucine, isoleucine, valine: all normal in urine. MSUD excluded \u2014 no branched-chain aminoaciduria.",
-        "finding": "Normal BCAA \u2014 MSUD excluded"
+        "clue": "Leucine, isoleucine, valine: all normal in urine. MSUD excluded — no branched-chain aminoaciduria.",
+        "finding": "Normal BCAA — MSUD excluded"
       },
       {
         "id": "test_pterin",
-        "label": "\u26a1 Urine Pterins + DHPR Activity",
+        "label": "⚡ Urine Pterins + DHPR Activity",
         "cost": 3,
         "critical": true,
-        "clue": "Biopterin profile normal. DHPR activity normal. PAH deficiency confirmed \u2014 not BH4 deficiency (malignant PKU).",
-        "finding": "Classic PKU \u2014 PAH deficient, BH4 pathway intact"
+        "clue": "Biopterin profile normal. DHPR activity normal. No evidence of BH4 deficiency.",
+        "finding": "Normal biopterin profile and DHPR activity — BH4 pathway intact"
       }
     ],
     "critical_ids": [
@@ -614,12 +614,12 @@
       {
         "disease": "Phenylketonuria (PKU)",
         "status": "confirmed",
-        "reason": "Phenylalanine >1800 \u03bcmol/L, musty odour, hypopigmentation, normal BH4 pathway, no newborn screen"
+        "reason": "Phenylalanine >1800 μmol/L, musty odour, hypopigmentation, normal BH4 pathway, no newborn screen"
       },
       {
         "disease": "BH4 Deficiency (Malignant PKU)",
         "status": "ruled-out",
-        "reason": "Urine pterins and DHPR activity normal \u2014 BH4 synthesis and recycling intact"
+        "reason": "Urine pterins and DHPR activity normal — BH4 synthesis and recycling intact"
       },
       {
         "disease": "MSUD",
@@ -629,99 +629,99 @@
       {
         "disease": "Congenital Hypothyroidism",
         "status": "ruled-out",
-        "reason": "TSH and free T4 normal \u2014 hypothyroidism excluded early"
+        "reason": "TSH and free T4 normal — hypothyroidism excluded early"
       },
       {
         "disease": "Sepsis/Meningitis",
         "status": "ruled-out",
-        "reason": "Blood culture negative, CRP normal, WBC normal \u2014 no infective cause"
+        "reason": "Blood culture negative, CRP normal, WBC normal — no infective cause"
       }
     ]
   },
   {
     "id": 5,
     "title": "Male Neonate with Hyperammonaemia and Orotic Aciduria",
-    "presentation": "A 3-day-old boy becomes lethargic and feeds poorly. By day 4 he is unarousable and requires ventilatory support. Plasma ammonia is 950 \u03bcmol/L. His mother recalls episodes of headache and vomiting after high-protein meals but was never investigated.",
+    "presentation": "A 3-day-old boy becomes lethargic and feeds poorly. By day 4 he is unarousable and requires ventilatory support. Plasma ammonia is 950 μmol/L. His mother recalls episodes of headache and vomiting after high-protein meals but was never investigated.",
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Family & Maternal History",
+        "label": "📋 Family & Maternal History",
         "cost": 1,
         "critical": true,
-        "clue": "Mother has episodic headaches, vomiting, protein aversion \u2014 never diagnosed. A maternal uncle died in infancy with 'brain swelling'. X-linked pattern suspected.",
-        "finding": "Maternal carrier history \u2014 X-linked inheritance"
+        "clue": "Mother has episodic headaches, vomiting, protein aversion — never diagnosed. A maternal uncle died in infancy with 'brain swelling'. X-linked pattern suspected.",
+        "finding": "Maternal carrier history — X-linked inheritance"
       },
       {
         "id": "test_sepsis",
-        "label": "\ud83e\uddea Blood Culture + CRP + Lumbar Puncture",
+        "label": "🧪 Blood Culture + CRP + Lumbar Puncture",
         "cost": 1,
         "critical": false,
         "clue": "Blood culture: no growth at 48h. CRP: 4 mg/L. CSF: clear, no organisms, normal glucose and protein. Sepsis and meningitis excluded.",
-        "finding": "No infection \u2014 encephalopathy is metabolic"
+        "finding": "No infection — encephalopathy is metabolic"
       },
       {
         "id": "test_glucose",
-        "label": "\ud83e\uddea Blood Glucose",
+        "label": "🧪 Blood Glucose",
         "cost": 1,
         "critical": false,
         "clue": "Glucose: 4.2 mmol/L (normal). Hypoglycaemia excluded as cause of encephalopathy.",
-        "finding": "Normal glucose \u2014 hypoglycaemic encephalopathy excluded"
+        "finding": "Normal glucose — hypoglycaemic encephalopathy excluded"
       },
       {
         "id": "test_ammonia",
-        "label": "\ud83e\uddea Plasma Ammonia",
+        "label": "🧪 Plasma Ammonia",
         "cost": 1,
         "critical": true,
-        "clue": "Ammonia: 950 \u03bcmol/L (normal <80 neonates). Critically elevated \u2014 urea cycle defect or organic acidaemia.",
-        "finding": "Severe hyperammonaemia \u2014 metabolic emergency"
+        "clue": "Ammonia: 950 μmol/L (normal <80 neonates). Critically elevated — urea cycle defect or organic acidaemia.",
+        "finding": "Severe hyperammonaemia — metabolic emergency"
       },
       {
         "id": "test_abg",
-        "label": "\ud83e\uddea Blood Gas + Anion Gap",
+        "label": "🧪 Blood Gas + Anion Gap",
         "cost": 1,
         "critical": false,
-        "clue": "pH 7.48, bicarbonate 28 (respiratory alkalosis). Anion gap: 12 (normal). No acidosis \u2014 organic acidaemia less likely.",
-        "finding": "Respiratory alkalosis, normal anion gap \u2014 against organic acidaemia"
+        "clue": "pH 7.48, bicarbonate 28 (respiratory alkalosis). Anion gap: 12 (normal). No acidosis — organic acidaemia less likely.",
+        "finding": "Respiratory alkalosis, normal anion gap — against organic acidaemia"
       },
       {
         "id": "test_plasma_aa",
-        "label": "\ud83e\uddea Plasma Amino Acids",
+        "label": "🧪 Plasma Amino Acids",
         "cost": 2,
         "critical": true,
-        "clue": "Citrulline: 5 \u03bcmol/L (very low). Glutamine markedly elevated. Arginine low. No argininosuccinate detected.",
-        "finding": "Very low citrulline \u2014 block at or before OTC step"
+        "clue": "Citrulline: 5 μmol/L (very low). Glutamine markedly elevated. Arginine low. No argininosuccinate detected.",
+        "finding": "Very low citrulline — block at or before OTC step"
       },
       {
         "id": "test_urine_oa",
-        "label": "\ud83e\uddea Urine Organic Acids",
+        "label": "🧪 Urine Organic Acids",
         "cost": 2,
         "critical": false,
         "clue": "No elevated methylmalonic, propionic, or isovaleric acid. Organic acidaemia excluded as cause of hyperammonaemia.",
-        "finding": "Normal organic acids \u2014 organic acidaemia excluded"
+        "finding": "Normal organic acids — organic acidaemia excluded"
       },
       {
         "id": "test_urine_orotic",
-        "label": "\ud83e\uddea Urine Orotic Acid",
+        "label": "🧪 Urine Orotic Acid",
         "cost": 2,
         "critical": true,
-        "clue": "Orotic acid: massively elevated. Carbamoyl phosphate overflows into pyrimidine synthesis pathway \u2014 this distinguishes OTC from CPS-I.",
-        "finding": "Elevated orotic acid \u2014 OTC deficiency, not CPS-I"
+        "clue": "Orotic acid: massively elevated. Carbamoyl phosphate overflows into pyrimidine synthesis pathway — this distinguishes OTC from CPS-I.",
+        "finding": "Elevated orotic acid — OTC deficiency, not CPS-I"
       },
       {
         "id": "test_acylcarn",
-        "label": "\ud83e\uddea Plasma Acylcarnitine Profile",
+        "label": "🧪 Plasma Acylcarnitine Profile",
         "cost": 2,
         "critical": false,
         "clue": "Acylcarnitine profile normal. No fatty acid oxidation defect. Propionic or methylmalonic acidaemia excluded.",
-        "finding": "Normal acylcarnitines \u2014 FAO defect excluded"
+        "finding": "Normal acylcarnitines — FAO defect excluded"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 OTC Gene Sequencing",
+        "label": "⚡ OTC Gene Sequencing",
         "cost": 3,
         "critical": true,
         "clue": "Hemizygous pathogenic variant in OTC gene confirmed. Mother is heterozygous carrier. X-linked recessive confirmed.",
-        "finding": "OTC gene mutation \u2014 X-linked recessive"
+        "finding": "Hemizygous pathogenic variant in an X-linked urea cycle gene; mother heterozygous carrier"
       }
     ],
     "critical_ids": [
@@ -742,22 +742,22 @@
       {
         "disease": "CPS-I Deficiency",
         "status": "ruled-out",
-        "reason": "CPS-I also gives low citrulline but orotic acid is NORMAL \u2014 carbamoyl phosphate does not overflow into pyrimidine pathway"
+        "reason": "CPS-I also gives low citrulline but orotic acid is NORMAL — carbamoyl phosphate does not overflow into pyrimidine pathway"
       },
       {
         "disease": "Citrullinemia (ASS Deficiency)",
         "status": "ruled-out",
-        "reason": "Citrullinemia shows markedly ELEVATED citrulline \u2014 here citrulline is very low"
+        "reason": "Citrullinemia shows markedly ELEVATED citrulline — here citrulline is very low"
       },
       {
         "disease": "Neonatal Sepsis/Meningitis",
         "status": "ruled-out",
-        "reason": "Culture negative, CRP normal, CSF clear \u2014 encephalopathy is purely metabolic"
+        "reason": "Culture negative, CRP normal, CSF clear — encephalopathy is purely metabolic"
       },
       {
         "disease": "Organic Acidaemia (MMA/PA)",
         "status": "ruled-out",
-        "reason": "Organic acidaemias cause metabolic acidosis with elevated anion gap \u2014 pH and anion gap normal here, organic acids normal"
+        "reason": "Organic acidaemias cause metabolic acidosis with elevated anion gap — pH and anion gap normal here, organic acids normal"
       }
     ]
   },
@@ -768,7 +768,7 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Family History & Diet",
+        "label": "📋 Family History & Diet",
         "cost": 1,
         "critical": false,
         "clue": "Father is tall. A maternal aunt had a stroke at 28. Normal diet, no restrictions. No joint hypermobility. No prior cardiac investigation.",
@@ -776,75 +776,75 @@
       },
       {
         "id": "test_echo",
-        "label": "\ud83d\udd2c Echocardiogram",
+        "label": "🔬 Echocardiogram",
         "cost": 2,
         "critical": false,
         "clue": "No mitral valve prolapse. Aortic root diameter 28mm (normal). No aortic dilatation or dissection. Heart structurally normal.",
-        "finding": "Normal echo \u2014 aortic dilatation absent, Marfan less likely"
+        "finding": "Normal echo — aortic dilatation absent, Marfan less likely"
       },
       {
         "id": "test_fbn1",
-        "label": "\u26a1 FBN1 Gene Sequencing (Marfan)",
+        "label": "⚡ FBN1 Gene Sequencing (Marfan)",
         "cost": 3,
         "critical": false,
         "clue": "No pathogenic variant in FBN1 gene. Marfan syndrome genetically excluded.",
-        "finding": "FBN1 normal \u2014 Marfan syndrome excluded"
+        "finding": "FBN1 normal — Marfan syndrome excluded"
       },
       {
         "id": "test_coag",
-        "label": "\ud83e\uddea Thrombophilia Screen (Factor V Leiden, Protein C/S, Antithrombin)",
+        "label": "🧪 Thrombophilia Screen (Factor V Leiden, Protein C/S, Antithrombin)",
         "cost": 2,
         "critical": false,
         "clue": "Factor V Leiden: negative. Protein C, S, antithrombin: normal. Antiphospholipid antibodies: negative. No inherited thrombophilia found.",
-        "finding": "Standard thrombophilia screen negative \u2014 does not explain DVT"
+        "finding": "Standard thrombophilia screen negative — does not explain DVT"
       },
       {
         "id": "exam_eye",
-        "label": "\ud83e\ude7a Slit-Lamp Examination",
+        "label": "🩺 Slit-Lamp Examination",
         "cost": 1,
         "critical": true,
-        "clue": "Bilateral ectopia lentis \u2014 lenses displaced DOWNWARD and nasally. Marfan causes upward dislocation. This direction is characteristic of homocystinuria.",
-        "finding": "Downward lens dislocation \u2014 homocystinuria, not Marfan"
+        "clue": "Bilateral ectopia lentis — lenses displaced DOWNWARD and nasally. Marfan causes upward dislocation. This direction is characteristic of homocystinuria.",
+        "finding": "Downward lens dislocation — homocystinuria, not Marfan"
       },
       {
         "id": "test_urine_nitro",
-        "label": "\ud83e\uddea Urine Sodium Nitroprusside Test",
+        "label": "🧪 Urine Sodium Nitroprusside Test",
         "cost": 1,
         "critical": true,
-        "clue": "Urine turns cherry-red \u2014 positive for disulfide compounds including homocysteine. Rapid bedside screen.",
-        "finding": "Positive nitroprusside \u2014 homocystinuria"
+        "clue": "Urine turns cherry-red — positive for disulfide compounds including homocysteine. Rapid bedside screen.",
+        "finding": "Positive nitroprusside — homocystinuria"
       },
       {
         "id": "test_plasma_aa",
-        "label": "\ud83e\uddea Plasma Amino Acids + Total Homocysteine",
+        "label": "🧪 Plasma Amino Acids + Total Homocysteine",
         "cost": 2,
         "critical": true,
-        "clue": "Methionine: markedly elevated. Total homocysteine: 280 \u03bcmol/L (normal <15). Cystine: low. CBS deficiency confirmed biochemically.",
-        "finding": "Elevated methionine and homocysteine \u2014 CBS deficiency"
+        "clue": "Methionine: markedly elevated. Total homocysteine: 280 μmol/L (normal <15). Cystine: low.",
+        "finding": "Elevated methionine and homocysteine with low cystine"
       },
       {
         "id": "test_b6_trial",
-        "label": "\ud83e\uddea Pyridoxine Trial (B6 100mg/day \u00d7 4 weeks)",
+        "label": "🧪 Pyridoxine Trial (B6 100mg/day × 4 weeks)",
         "cost": 2,
         "critical": true,
-        "clue": "Plasma homocysteine falls 60% on high-dose B6 \u2014 B6-responsive CBS deficiency confirmed. B6 (PLP) is cofactor for cystathionine \u03b2-synthase.",
-        "finding": "B6-responsive homocystinuria"
+        "clue": "Plasma homocysteine falls 60% on high-dose B6 — B6-responsive pattern. B6 (PLP) is cofactor for cystathionine β-synthase.",
+        "finding": "Homocysteine falls 60% on high-dose B6 — B6-responsive pattern"
       },
       {
         "id": "test_mthfr",
-        "label": "\ud83e\uddea MTHFR Gene Mutation Screen",
+        "label": "🧪 MTHFR Gene Mutation Screen",
         "cost": 2,
         "critical": false,
-        "clue": "MTHFR C677T: heterozygous (mild effect). However methionine is markedly elevated here \u2014 MTHFR deficiency causes LOW methionine. This variant is not causative.",
-        "finding": "MTHFR variant not causative \u2014 methionine elevated, not low"
+        "clue": "MTHFR C677T: heterozygous (mild effect). However methionine is markedly elevated here — MTHFR deficiency causes LOW methionine. This variant is not causative.",
+        "finding": "MTHFR variant not causative — methionine elevated, not low"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 CBS Gene Sequencing",
+        "label": "⚡ CBS Gene Sequencing",
         "cost": 3,
         "critical": false,
         "clue": "Compound heterozygous pathogenic variants in CBS gene confirmed. Autosomal recessive.",
-        "finding": "CBS mutation confirmed \u2014 homocystinuria"
+        "finding": "Compound heterozygous CBS gene variants — autosomal recessive"
       }
     ],
     "critical_ids": [
@@ -864,22 +864,22 @@
       {
         "disease": "Marfan Syndrome",
         "status": "ruled-out",
-        "reason": "Marfan: UPWARD lens dislocation, aortic dilatation, normal homocysteine, FBN1 mutation \u2014 all absent here"
+        "reason": "Marfan: UPWARD lens dislocation, aortic dilatation, normal homocysteine, FBN1 mutation — all absent here"
       },
       {
         "disease": "Inherited Thrombophilia (Factor V Leiden)",
         "status": "ruled-out",
-        "reason": "Standard thrombophilia screen entirely negative \u2014 does not explain lens dislocation or elevated homocysteine"
+        "reason": "Standard thrombophilia screen entirely negative — does not explain lens dislocation or elevated homocysteine"
       },
       {
         "disease": "MTHFR Deficiency",
         "status": "ruled-out",
-        "reason": "MTHFR deficiency causes LOW methionine and elevated homocysteine \u2014 here methionine is markedly elevated, pointing to CBS deficiency"
+        "reason": "MTHFR deficiency causes LOW methionine and elevated homocysteine — here methionine is markedly elevated, pointing to CBS deficiency"
       },
       {
         "disease": "Familial Hypercoagulable State",
         "status": "ruled-out",
-        "reason": "Cannot explain lens dislocation or marfanoid habitus \u2014 homocysteine is the unifying metabolite"
+        "reason": "Cannot explain lens dislocation or marfanoid habitus — homocysteine is the unifying metabolite"
       }
     ]
   },
@@ -890,75 +890,75 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Feeding & Family History",
+        "label": "📋 Feeding & Family History",
         "cost": 1,
         "critical": true,
-        "clue": "Exclusively formula-fed. Sibling died of SIDS at 4 months \u2014 no metabolic workup done. Parents non-consanguineous, Northern European.",
-        "finding": "SIDS sibling \u2014 autosomal recessive FAO defect suspected"
+        "clue": "Exclusively formula-fed. Sibling died of SIDS at 4 months — no metabolic workup done. Parents non-consanguineous, Northern European.",
+        "finding": "SIDS sibling — autosomal recessive FAO defect suspected"
       },
       {
         "id": "test_glucose_ketones",
-        "label": "\ud83e\uddea Blood Glucose + Ketones",
+        "label": "🧪 Blood Glucose + Ketones",
         "cost": 1,
         "critical": true,
-        "clue": "Glucose: 1.2 mmol/L. Blood ketones: 0.1 mmol/L (expected >3.0 in fasting state). Hypoketotic hypoglycaemia \u2014 cannot oxidise fat.",
-        "finding": "Hypoketotic hypoglycaemia \u2014 fatty acid oxidation defect"
+        "clue": "Glucose: 1.2 mmol/L. Blood ketones: 0.1 mmol/L (expected >3.0 in fasting state). Hypoketotic hypoglycaemia — cannot oxidise fat.",
+        "finding": "Hypoketotic hypoglycaemia — fatty acid oxidation defect"
       },
       {
         "id": "test_insulin",
-        "label": "\ud83e\uddea Insulin + C-Peptide (during hypoglycaemia)",
+        "label": "🧪 Insulin + C-Peptide (during hypoglycaemia)",
         "cost": 2,
         "critical": false,
-        "clue": "Insulin: 1.2 mU/L (appropriately suppressed). C-peptide: suppressed. Hyperinsulinism excluded \u2014 insulin is not driving the hypoglycaemia.",
-        "finding": "Insulin suppressed \u2014 hyperinsulinism excluded"
+        "clue": "Insulin: 1.2 mU/L (appropriately suppressed). C-peptide: suppressed. Hyperinsulinism excluded — insulin is not driving the hypoglycaemia.",
+        "finding": "Insulin suppressed — hyperinsulinism excluded"
       },
       {
         "id": "test_cortisol_gh",
-        "label": "\ud83e\uddea Cortisol + Growth Hormone (stress sample)",
+        "label": "🧪 Cortisol + Growth Hormone (stress sample)",
         "cost": 2,
         "critical": false,
-        "clue": "Cortisol: 680 nmol/L (appropriately elevated). GH: 22 mU/L (elevated). Counter-regulatory response intact \u2014 not adrenal or pituitary cause.",
-        "finding": "Normal counter-regulatory hormones \u2014 endocrine cause excluded"
+        "clue": "Cortisol: 680 nmol/L (appropriately elevated). GH: 22 mU/L (elevated). Counter-regulatory response intact — not adrenal or pituitary cause.",
+        "finding": "Normal counter-regulatory hormones — endocrine cause excluded"
       },
       {
         "id": "test_lft",
-        "label": "\ud83e\uddea Liver Function Tests + CK",
+        "label": "🧪 Liver Function Tests + CK",
         "cost": 1,
         "critical": false,
-        "clue": "ALT 85 U/L (mildly elevated). CK: 420 U/L (mildly elevated). Consistent with metabolic myopathy and hepatic involvement \u2014 nonspecific.",
-        "finding": "Mildly elevated ALT and CK \u2014 nonspecific metabolic stress"
+        "clue": "ALT 85 U/L (mildly elevated). CK: 420 U/L (mildly elevated). Consistent with metabolic myopathy and hepatic involvement — nonspecific.",
+        "finding": "Mildly elevated ALT and CK — nonspecific metabolic stress"
       },
       {
         "id": "test_acylcarnitine",
-        "label": "\ud83e\uddea Plasma Acylcarnitine Profile",
+        "label": "🧪 Plasma Acylcarnitine Profile",
         "cost": 2,
         "critical": true,
-        "clue": "C8 (octanoylcarnitine): markedly elevated. C6 and C10 also elevated. C8:C10 ratio >2. This pattern is diagnostic for MCAD deficiency.",
-        "finding": "Elevated C8 acylcarnitine \u2014 MCAD deficiency"
+        "clue": "C8 (octanoylcarnitine): markedly elevated. C6 and C10 also elevated. C8:C10 ratio >2. This pattern is characteristic of a fatty acid oxidation defect.",
+        "finding": "Elevated C8 acylcarnitine — MCAD deficiency"
       },
       {
         "id": "test_urine_oa",
-        "label": "\ud83e\uddea Urine Organic Acids",
+        "label": "🧪 Urine Organic Acids",
         "cost": 2,
         "critical": false,
         "clue": "Elevated medium-chain dicarboxylic acids: suberic, sebacic, adipic acids. Hexanoylglycine present. Consistent with MCAD deficiency.",
-        "finding": "Medium-chain dicarboxylic aciduria \u2014 MCAD"
+        "finding": "Medium-chain dicarboxylic aciduria — MCAD"
       },
       {
         "id": "test_gsd_screen",
-        "label": "\ud83e\uddea Lactate + Glucagon Stimulation Test",
+        "label": "🧪 Lactate + Glucagon Stimulation Test",
         "cost": 2,
         "critical": false,
-        "clue": "Lactate normal (1.1 mmol/L). Glucagon response: glucose rises 2 mmol/L (adequate). GSD type I and III less likely \u2014 glycogen stores mobilisable.",
-        "finding": "Normal lactate, adequate glucagon response \u2014 GSD excluded"
+        "clue": "Lactate normal (1.1 mmol/L). Glucagon response: glucose rises 2 mmol/L (adequate). GSD type I and III less likely — glycogen stores mobilisable.",
+        "finding": "Normal lactate, adequate glucagon response — GSD excluded"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 ACADM Gene Analysis",
+        "label": "⚡ ACADM Gene Analysis",
         "cost": 3,
         "critical": true,
-        "clue": "Homozygous c.985A>G (K329E) \u2014 most common MCAD mutation in Northern Europeans. Confirms diagnosis.",
-        "finding": "ACADM K329E homozygous \u2014 MCAD deficiency confirmed"
+        "clue": "Homozygous c.985A>G (K329E) — most common mutation in Northern Europeans.",
+        "finding": "ACADM c.985A>G (K329E) homozygous — common acyl-CoA dehydrogenase variant"
       }
     ],
     "critical_ids": [
@@ -978,7 +978,7 @@
       {
         "disease": "Hyperinsulinism (Congenital)",
         "status": "ruled-out",
-        "reason": "Insulin appropriately suppressed during hypoglycaemia \u2014 hyperinsulinism requires elevated or non-suppressed insulin"
+        "reason": "Insulin appropriately suppressed during hypoglycaemia — hyperinsulinism requires elevated or non-suppressed insulin"
       },
       {
         "disease": "GSD Type I (Von Gierke)",
@@ -988,12 +988,12 @@
       {
         "disease": "Carnitine Deficiency",
         "status": "ruled-out",
-        "reason": "Primary carnitine deficiency: very low total carnitine, C8 not specifically elevated \u2014 acylcarnitine profile here is diagnostic for MCAD"
+        "reason": "Primary carnitine deficiency: very low total carnitine, C8 not specifically elevated — acylcarnitine profile here is diagnostic for MCAD"
       },
       {
         "disease": "Adrenal Insufficiency",
         "status": "ruled-out",
-        "reason": "Cortisol appropriately elevated at 680 nmol/L during stress \u2014 adrenal axis intact"
+        "reason": "Cortisol appropriately elevated at 680 nmol/L during stress — adrenal axis intact"
       }
     ]
   },
@@ -1004,15 +1004,15 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Psychiatric & Neurological History",
+        "label": "📋 Psychiatric & Neurological History",
         "cost": 1,
         "critical": false,
         "clue": "Behaviour change preceded liver symptoms. School performance declined over 1 year. Occasional dysphagia. No alcohol. Parents note drooling at times.",
-        "finding": "Neuropsychiatric onset \u2014 organic cause likely"
+        "finding": "Neuropsychiatric onset — organic cause likely"
       },
       {
         "id": "test_viral_hep",
-        "label": "\ud83e\uddea Hepatitis A, B, C, E Serology",
+        "label": "🧪 Hepatitis A, B, C, E Serology",
         "cost": 1,
         "critical": false,
         "clue": "HBsAg: negative. Anti-HCV: negative. HAV IgM: negative. HEV IgM: negative. All viral hepatitis excluded.",
@@ -1020,15 +1020,15 @@
       },
       {
         "id": "test_autoimmune",
-        "label": "\ud83e\uddea Autoimmune Screen (ANA, ASMA, LKM-1, IgG)",
+        "label": "🧪 Autoimmune Screen (ANA, ASMA, LKM-1, IgG)",
         "cost": 1,
         "critical": false,
-        "clue": "ANA: 1:40 (weakly positive \u2014 nonspecific). ASMA: negative. Anti-LKM-1: negative. IgG: 14 g/L (normal). Autoimmune hepatitis unlikely.",
-        "finding": "Autoimmune hepatitis excluded \u2014 antibodies negative or weakly positive"
+        "clue": "ANA: 1:40 (weakly positive — nonspecific). ASMA: negative. Anti-LKM-1: negative. IgG: 14 g/L (normal). Autoimmune hepatitis unlikely.",
+        "finding": "Autoimmune hepatitis excluded — antibodies negative or weakly positive"
       },
       {
         "id": "test_alcohol",
-        "label": "\ud83e\uddea GGT + CDT + Alcohol History",
+        "label": "🧪 GGT + CDT + Alcohol History",
         "cost": 1,
         "critical": false,
         "clue": "GGT mildly elevated (50 U/L). CDT (carbohydrate-deficient transferrin): negative. Urine ethanol: undetectable. Alcohol excluded.",
@@ -1036,67 +1036,67 @@
       },
       {
         "id": "test_tft",
-        "label": "\ud83e\uddea Thyroid Function Tests",
+        "label": "🧪 Thyroid Function Tests",
         "cost": 1,
         "critical": false,
         "clue": "TSH and free T4 normal. Hyperthyroidism excluded as cause of tremor and psychiatric symptoms.",
-        "finding": "Thyroid function normal \u2014 thyroid excluded"
+        "finding": "Thyroid function normal — thyroid excluded"
       },
       {
         "id": "exam_eye",
-        "label": "\ud83e\ude7a Slit-Lamp Examination",
+        "label": "🩺 Slit-Lamp Examination",
         "cost": 1,
         "critical": true,
-        "clue": "Kayser-Fleischer rings bilaterally \u2014 golden-brown copper deposits at periphery of cornea in Descemet membrane. Pathognomonic.",
-        "finding": "Kayser-Fleischer rings \u2014 pathognomonic for Wilson disease"
+        "clue": "Kayser-Fleischer rings bilaterally — golden-brown copper deposits at periphery of cornea in Descemet membrane.",
+        "finding": "Kayser-Fleischer rings present bilaterally"
       },
       {
         "id": "exam_neuro",
-        "label": "\ud83e\ude7a Neurological Examination",
+        "label": "🩺 Neurological Examination",
         "cost": 1,
         "critical": false,
         "clue": "Wing-beating tremor. Dysarthria. Mild cogwheel rigidity. No pyramidal signs. Basal ganglia involvement.",
-        "finding": "Wing-beating tremor, dysarthria \u2014 basal ganglia copper toxicity"
+        "finding": "Wing-beating tremor, dysarthria — basal ganglia copper toxicity"
       },
       {
         "id": "test_ceruloplasmin",
-        "label": "\ud83e\uddea Serum Ceruloplasmin",
+        "label": "🧪 Serum Ceruloplasmin",
         "cost": 1,
         "critical": true,
-        "clue": "Ceruloplasmin: 0.04 g/L (normal 0.2\u20130.4). Markedly low \u2014 cannot incorporate copper. Note: ceruloplasmin can be low in malnutrition too \u2014 needs confirmation.",
-        "finding": "Very low ceruloplasmin \u2014 copper metabolism defect"
+        "clue": "Ceruloplasmin: 0.04 g/L (normal 0.2–0.4). Markedly low — cannot incorporate copper. Note: ceruloplasmin can be low in malnutrition too — needs confirmation.",
+        "finding": "Very low ceruloplasmin — copper metabolism defect"
       },
       {
         "id": "test_serum_copper",
-        "label": "\ud83e\uddea Serum Total Copper",
+        "label": "🧪 Serum Total Copper",
         "cost": 1,
         "critical": false,
-        "clue": "Serum total copper: 7 \u03bcmol/L (low-normal). Misleading \u2014 most serum copper is bound to ceruloplasmin. Free (non-caeruloplasmin) copper is what's elevated.",
-        "finding": "Total serum copper low-normal \u2014 misleading, does not exclude Wilson disease"
+        "clue": "Serum total copper: 7 μmol/L (low-normal). Misleading — most serum copper is bound to ceruloplasmin. Free (non-caeruloplasmin) copper is what's elevated.",
+        "finding": "Total serum copper low-normal — misleading, does not exclude Wilson disease"
       },
       {
         "id": "test_urine_copper",
-        "label": "\ud83e\uddea 24-Hour Urine Copper",
+        "label": "🧪 24-Hour Urine Copper",
         "cost": 2,
         "critical": true,
-        "clue": "24h urine copper: 380 \u03bcg/day (normal <40). Markedly elevated \u2014 copper excreted in excess as free copper spills into urine.",
-        "finding": "Elevated 24h urine copper \u2014 copper overload confirmed"
+        "clue": "24h urine copper: 380 μg/day (normal <40). Markedly elevated — copper excreted in excess as free copper spills into urine.",
+        "finding": "Elevated 24h urine copper — excess free copper spill"
       },
       {
         "id": "test_liver_biopsy",
-        "label": "\ud83d\udd2c Liver Biopsy + Hepatic Copper Quantification",
+        "label": "🔬 Liver Biopsy + Hepatic Copper Quantification",
         "cost": 3,
         "critical": false,
-        "clue": "Hepatic copper: 650 \u03bcg/g dry weight (normal <50). Micro/macrovesicular steatosis. No cirrhosis yet. Confirms massive hepatic copper deposition.",
-        "finding": "Hepatic copper 650 \u03bcg/g \u2014 massive copper accumulation"
+        "clue": "Hepatic copper: 650 μg/g dry weight (normal <50). Micro/macrovesicular steatosis. No cirrhosis yet. Confirms massive hepatic copper deposition.",
+        "finding": "Hepatic copper 650 μg/g — massive copper accumulation"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 ATP7B Gene Sequencing",
+        "label": "⚡ ATP7B Gene Sequencing",
         "cost": 3,
         "critical": true,
         "clue": "Compound heterozygous ATP7B mutations confirmed. Autosomal recessive inheritance.",
-        "finding": "ATP7B mutation \u2014 Wilson disease confirmed"
+        "finding": "Compound heterozygous ATP7B mutations — autosomal recessive"
       }
     ],
     "critical_ids": [
@@ -1111,17 +1111,17 @@
       {
         "disease": "Wilson Disease",
         "status": "confirmed",
-        "reason": "KF rings, low ceruloplasmin, elevated 24h urine copper, hepatic copper 650 \u03bcg/g, ATP7B mutation, neuropsychiatric onset"
+        "reason": "KF rings, low ceruloplasmin, elevated 24h urine copper, hepatic copper 650 μg/g, ATP7B mutation, neuropsychiatric onset"
       },
       {
         "disease": "Autoimmune Hepatitis",
         "status": "ruled-out",
-        "reason": "ANA weakly positive (nonspecific), ASMA and LKM-1 negative, IgG normal \u2014 KF rings and copper studies confirm Wilson"
+        "reason": "ANA weakly positive (nonspecific), ASMA and LKM-1 negative, IgG normal — KF rings and copper studies confirm Wilson"
       },
       {
         "disease": "Viral Hepatitis",
         "status": "ruled-out",
-        "reason": "Full viral hepatitis serology negative \u2014 viral cause excluded"
+        "reason": "Full viral hepatitis serology negative — viral cause excluded"
       },
       {
         "disease": "Alcohol-Related Liver Disease",
@@ -1131,7 +1131,7 @@
       {
         "disease": "Primary Psychiatric Disorder",
         "status": "ruled-out",
-        "reason": "Psychiatric symptoms are secondary to copper toxicity in basal ganglia \u2014 KF rings and copper studies confirm organic cause"
+        "reason": "Psychiatric symptoms are secondary to copper toxicity in basal ganglia — KF rings and copper studies confirm organic cause"
       }
     ]
   },
@@ -1142,83 +1142,83 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Feeding & Family History",
+        "label": "📋 Feeding & Family History",
         "cost": 1,
         "critical": false,
         "clue": "Standard cow's milk formula (contains lactose) since birth. First child. Parents are cousins (consanguineous). No prior illness.",
-        "finding": "Lactose-containing formula + consanguinity \u2014 galactosaemia likely"
+        "finding": "Lactose-containing formula + consanguinity — galactosaemia likely"
       },
       {
         "id": "test_sepsis",
-        "label": "\ud83e\uddea Blood Culture + Sepsis Screen",
+        "label": "🧪 Blood Culture + Sepsis Screen",
         "cost": 1,
         "critical": false,
-        "clue": "E. coli bacteraemia confirmed. CRP: 180 mg/L. WBC: 22 \u00d710\u2079/L. Sepsis is real \u2014 but is it the primary diagnosis or a complication?",
-        "finding": "E. coli sepsis confirmed \u2014 but may be secondary to galactosaemia"
+        "clue": "E. coli bacteraemia confirmed. CRP: 180 mg/L. WBC: 22 ×10⁹/L. Sepsis is real — but is it the primary diagnosis or a complication?",
+        "finding": "E. coli sepsis confirmed — may be secondary to an underlying metabolic cause"
       },
       {
         "id": "test_bilirubins",
-        "label": "\ud83e\uddea Serum Bilirubin (Direct + Indirect)",
+        "label": "🧪 Serum Bilirubin (Direct + Indirect)",
         "cost": 1,
         "critical": false,
-        "clue": "Total bilirubin: 180 \u03bcmol/L. Direct (conjugated): 140 \u03bcmol/L. Predominantly conjugated \u2014 hepatocellular or biliary cause.",
-        "finding": "Conjugated hyperbilirubinaemia \u2014 liver disease, not haemolysis"
+        "clue": "Total bilirubin: 180 μmol/L. Direct (conjugated): 140 μmol/L. Predominantly conjugated — hepatocellular or biliary cause.",
+        "finding": "Conjugated hyperbilirubinaemia — liver disease, not haemolysis"
       },
       {
         "id": "test_biliary_us",
-        "label": "\ud83d\udd2c Abdominal Ultrasound (Biliary)",
+        "label": "🔬 Abdominal Ultrasound (Biliary)",
         "cost": 2,
         "critical": false,
         "clue": "Gallbladder and bile ducts normal. No biliary dilatation. Common bile duct normal. Liver enlarged and echogenic. Biliary atresia less likely.",
-        "finding": "Normal biliary anatomy \u2014 biliary atresia less likely"
+        "finding": "Normal biliary anatomy — biliary atresia less likely"
       },
       {
         "id": "test_torch",
-        "label": "\ud83e\uddea TORCH Serology (CMV, Rubella, Toxoplasma, HSV)",
+        "label": "🧪 TORCH Serology (CMV, Rubella, Toxoplasma, HSV)",
         "cost": 2,
         "critical": false,
         "clue": "All TORCH serology negative. Congenital infection excluded as cause of liver disease and cataracts.",
-        "finding": "TORCH negative \u2014 congenital infection excluded"
+        "finding": "TORCH negative — congenital infection excluded"
       },
       {
         "id": "exam_eye",
-        "label": "\ud83e\ude7a Ophthalmological Examination",
+        "label": "🩺 Ophthalmological Examination",
         "cost": 1,
         "critical": true,
-        "clue": "Oil-droplet cataracts bilaterally on fundoscopy \u2014 nuclear cataracts from galactitol accumulation in lens. Not seen in biliary atresia or sepsis alone.",
-        "finding": "Oil-droplet cataracts \u2014 galactose accumulation in lens"
+        "clue": "Oil-droplet cataracts bilaterally on fundoscopy — nuclear cataracts from galactitol accumulation in lens. Not seen in biliary atresia or sepsis alone.",
+        "finding": "Oil-droplet cataracts — galactose accumulation in lens"
       },
       {
         "id": "test_urine_red_sub",
-        "label": "\ud83e\uddea Urine Reducing Substances (Clinitest vs Glucose Oxidase)",
+        "label": "🧪 Urine Reducing Substances (Clinitest vs Glucose Oxidase)",
         "cost": 1,
         "critical": true,
-        "clue": "Clinitest positive (reducing substance present). Glucose oxidase strip negative. Non-glucose reducing sugar \u2014 galactose or galactose-1-phosphate.",
-        "finding": "Non-glucose reducing substance \u2014 galactosuria"
+        "clue": "Clinitest positive (reducing substance present). Glucose oxidase strip negative. Non-glucose reducing sugar — galactose or galactose-1-phosphate.",
+        "finding": "Non-glucose reducing substance — galactosuria"
       },
       {
         "id": "test_rbc_galt",
-        "label": "\ud83e\uddea RBC GALT Enzyme Assay",
+        "label": "🧪 RBC GALT Enzyme Assay",
         "cost": 2,
         "critical": true,
-        "clue": "Galactose-1-phosphate uridyltransferase (GALT) activity: <1% of normal. Severely deficient. Diagnostic of classic galactosaemia.",
-        "finding": "Absent GALT \u2014 classic galactosaemia confirmed"
+        "clue": "Galactose-1-phosphate uridyltransferase (GALT) activity: <1% of normal. Severely deficient.",
+        "finding": "GALT activity <1% of normal — severely deficient"
       },
       {
         "id": "test_galactokinase",
-        "label": "\ud83e\uddea RBC Galactokinase Assay",
+        "label": "🧪 RBC Galactokinase Assay",
         "cost": 2,
         "critical": false,
-        "clue": "Galactokinase activity: normal. Galactokinase deficiency causes only cataracts without liver disease \u2014 excluded here by normal activity.",
-        "finding": "Galactokinase normal \u2014 galactokinase deficiency excluded"
+        "clue": "Galactokinase activity: normal. Galactokinase deficiency causes only cataracts without liver disease — excluded here by normal activity.",
+        "finding": "Galactokinase normal — galactokinase deficiency excluded"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 GALT Gene Sequencing",
+        "label": "⚡ GALT Gene Sequencing",
         "cost": 3,
         "critical": false,
-        "clue": "Homozygous Q188R mutation in GALT \u2014 most common severe galactosaemia mutation.",
-        "finding": "Q188R GALT homozygous \u2014 classic galactosaemia confirmed"
+        "clue": "Homozygous Q188R mutation in GALT — most common severe galactosaemia mutation.",
+        "finding": "Homozygous Q188R GALT variant — severe galactose-1-phosphate uridyltransferase deficiency"
       }
     ],
     "critical_ids": [
@@ -1237,7 +1237,7 @@
       {
         "disease": "Neonatal Sepsis (Primary)",
         "status": "ruled-out",
-        "reason": "E. coli sepsis here is a known complication of galactosaemia \u2014 cataracts and galactosuria cannot be explained by sepsis alone"
+        "reason": "E. coli sepsis here is a known complication of galactosaemia — cataracts and galactosuria cannot be explained by sepsis alone"
       },
       {
         "disease": "Biliary Atresia",
@@ -1247,12 +1247,12 @@
       {
         "disease": "TORCH Infection",
         "status": "ruled-out",
-        "reason": "Full TORCH serology negative \u2014 congenital infection excluded"
+        "reason": "Full TORCH serology negative — congenital infection excluded"
       },
       {
         "disease": "Galactokinase Deficiency",
         "status": "ruled-out",
-        "reason": "Galactokinase deficiency: cataracts only, no liver disease, no sepsis risk \u2014 galactokinase enzyme activity normal here"
+        "reason": "Galactokinase deficiency: cataracts only, no liver disease, no sepsis risk — galactokinase enzyme activity normal here"
       }
     ]
   },
@@ -1263,75 +1263,75 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Ethnic & Family History",
+        "label": "📋 Ethnic & Family History",
         "cost": 1,
         "critical": true,
         "clue": "Ashkenazi Jewish background. Father had splenomegaly. No lymphadenopathy. No fever, night sweats, or weight loss. No alcohol.",
-        "finding": "Ashkenazi ethnicity + family splenomegaly \u2014 Gaucher disease likely"
+        "finding": "Ashkenazi ethnicity + family splenomegaly — Gaucher disease likely"
       },
       {
         "id": "test_fbc_film",
-        "label": "\ud83e\uddea Full Blood Count + Film",
+        "label": "🧪 Full Blood Count + Film",
         "cost": 1,
         "critical": false,
-        "clue": "Hb 8.2 g/dL, WBC 2.4 \u00d710\u2079/L, Platelets 68 \u00d710\u2079/L. Film: no blasts, no abnormal lymphocytes, no tear-drop cells. Hypersplenism pattern.",
-        "finding": "Pancytopenia \u2014 hypersplenism, no malignant cells on film"
+        "clue": "Hb 8.2 g/dL, WBC 2.4 ×10⁹/L, Platelets 68 ×10⁹/L. Film: no blasts, no abnormal lymphocytes, no tear-drop cells. Hypersplenism pattern.",
+        "finding": "Pancytopenia — hypersplenism, no malignant cells on film"
       },
       {
         "id": "test_ldh_uric",
-        "label": "\ud83e\uddea LDH + Uric Acid + Beta-2 Microglobulin",
+        "label": "🧪 LDH + Uric Acid + Beta-2 Microglobulin",
         "cost": 1,
         "critical": false,
-        "clue": "LDH: 380 U/L (mildly elevated \u2014 nonspecific). Uric acid: 5.2 mg/dL (normal). Beta-2 microglobulin: 2.1 mg/L (borderline). Lymphoma not excluded yet.",
-        "finding": "Mildly elevated LDH \u2014 nonspecific, lymphoma not excluded by these alone"
+        "clue": "LDH: 380 U/L (mildly elevated — nonspecific). Uric acid: 5.2 mg/dL (normal). Beta-2 microglobulin: 2.1 mg/L (borderline). Lymphoma not excluded yet.",
+        "finding": "Mildly elevated LDH — nonspecific, lymphoma not excluded by these alone"
       },
       {
         "id": "test_ct_chest_abd",
-        "label": "\ud83d\udd2c CT Chest/Abdomen/Pelvis",
+        "label": "🔬 CT Chest/Abdomen/Pelvis",
         "cost": 2,
         "critical": false,
         "clue": "Massive splenomegaly confirmed. Liver enlarged. No lymphadenopathy in chest, abdomen, or pelvis. No focal lesions. No ascites. Lymphoma less likely without lymphadenopathy.",
-        "finding": "Splenomegaly + hepatomegaly, no lymphadenopathy \u2014 lymphoma less likely"
+        "finding": "Splenomegaly + hepatomegaly, no lymphadenopathy — lymphoma less likely"
       },
       {
         "id": "test_bm_biopsy",
-        "label": "\ud83d\udd2c Bone Marrow Biopsy + Trephine",
+        "label": "🔬 Bone Marrow Biopsy + Trephine",
         "cost": 2,
         "critical": true,
-        "clue": "Gaucher cells \u2014 large macrophages with crinkled tissue-paper cytoplasm (glucocerebroside-laden). No malignant cells, no fibrosis. Dry tap not encountered.",
-        "finding": "Gaucher cells on marrow \u2014 pathognomonic"
+        "clue": "Gaucher cells — large macrophages with crinkled tissue-paper cytoplasm (glucocerebroside-laden). No malignant cells, no fibrosis. Dry tap not encountered.",
+        "finding": "Gaucher cells on marrow"
       },
       {
         "id": "test_flow_cytometry",
-        "label": "\ud83e\uddea Flow Cytometry (Peripheral Blood)",
+        "label": "🧪 Flow Cytometry (Peripheral Blood)",
         "cost": 2,
         "critical": false,
         "clue": "No clonal B or T cell population. No CD5+/CD23+ CLL pattern. No hairy cells. Lymphoproliferative disorder excluded.",
-        "finding": "No clonal lymphocyte population \u2014 lymphoma/CLL/HCL excluded"
+        "finding": "No clonal lymphocyte population — lymphoma/CLL/HCL excluded"
       },
       {
         "id": "test_glucocerebrosidase",
-        "label": "\ud83e\uddea Leukocyte \u03b2-Glucocerebrosidase Activity",
+        "label": "🧪 Leukocyte β-Glucocerebrosidase Activity",
         "cost": 2,
         "critical": true,
-        "clue": "Enzyme activity: 8% of normal in dried blood spot. Markedly deficient. Diagnostic of Gaucher disease.",
-        "finding": "\u03b2-Glucocerebrosidase deficient \u2014 Gaucher disease confirmed"
+        "clue": "Enzyme activity: 8% of normal in dried blood spot. Markedly deficient.",
+        "finding": "β-Glucocerebrosidase activity 8% of normal — markedly deficient"
       },
       {
         "id": "test_chitotriosidase",
-        "label": "\ud83e\uddea Plasma Chitotriosidase + CCL18",
+        "label": "🧪 Plasma Chitotriosidase + CCL18",
         "cost": 2,
         "critical": false,
-        "clue": "Chitotriosidase: 4,800 nmol/h/mL (markedly elevated \u2014 normal <150). CCL18 elevated. Disease activity biomarkers for monitoring treatment response.",
-        "finding": "Markedly elevated chitotriosidase \u2014 Gaucher disease activity"
+        "clue": "Chitotriosidase: 4,800 nmol/h/mL (markedly elevated — normal <150). CCL18 elevated. Disease activity biomarkers for monitoring treatment response.",
+        "finding": "Markedly elevated chitotriosidase — Gaucher disease activity"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 GBA Gene Sequencing",
+        "label": "⚡ GBA Gene Sequencing",
         "cost": 3,
         "critical": false,
-        "clue": "N370S/N370S homozygous \u2014 most common Gaucher mutation in Ashkenazi Jews. Type 1 (non-neuronopathic) confirmed.",
-        "finding": "GBA N370S homozygous \u2014 Gaucher Type 1"
+        "clue": "N370S/N370S homozygous — most common Gaucher mutation in Ashkenazi Jews. Type 1 (non-neuronopathic) confirmed.",
+        "finding": "GBA N370S/N370S homozygous — common Ashkenazi Jewish variant"
       }
     ],
     "critical_ids": [
@@ -1345,7 +1345,7 @@
       {
         "disease": "Gaucher Disease Type 1",
         "status": "confirmed",
-        "reason": "Ashkenazi ethnicity, massive splenomegaly, Gaucher cells on marrow, deficient \u03b2-glucocerebrosidase, N370S mutation"
+        "reason": "Ashkenazi ethnicity, massive splenomegaly, Gaucher cells on marrow, deficient β-glucocerebrosidase, N370S mutation"
       },
       {
         "disease": "Lymphoma (Hodgkin/Non-Hodgkin)",
@@ -1376,75 +1376,75 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Ethnic & Family History",
+        "label": "📋 Ethnic & Family History",
         "cost": 1,
         "critical": true,
         "clue": "Both parents Ashkenazi Jewish. A maternal cousin diagnosed with a lysosomal storage disorder. No prior screening. No consanguinity.",
-        "finding": "Ashkenazi ethnicity + family storage disorder \u2014 Tay-Sachs likely"
+        "finding": "Ashkenazi ethnicity + family storage disorder — Tay-Sachs likely"
       },
       {
         "id": "exam_fundus",
-        "label": "\ud83e\ude7a Fundoscopy",
+        "label": "🩺 Fundoscopy",
         "cost": 1,
         "critical": true,
-        "clue": "Cherry-red spot at fovea bilaterally \u2014 pale surrounding retina from lipid-laden ganglion cells, fovea is spared and appears red.",
-        "finding": "Cherry-red spot \u2014 ganglion cell storage"
+        "clue": "Cherry-red spot at fovea bilaterally — pale surrounding retina from lipid-laden ganglion cells, fovea is spared and appears red.",
+        "finding": "Cherry-red spot — ganglion cell storage"
       },
       {
         "id": "exam_abdomen",
-        "label": "\ud83e\ude7a Abdominal Examination",
+        "label": "🩺 Abdominal Examination",
         "cost": 1,
         "critical": true,
-        "clue": "No hepatomegaly. No splenomegaly. Abdomen soft and flat. This is a critical negative finding \u2014 absence of organomegaly narrows the diagnosis.",
-        "finding": "No organomegaly \u2014 distinguishes Tay-Sachs from Niemann-Pick"
+        "clue": "No hepatomegaly. No splenomegaly. Abdomen soft and flat. This is a critical negative finding — absence of organomegaly narrows the diagnosis.",
+        "finding": "No organomegaly — helps distinguish the sphingolipidoses"
       },
       {
         "id": "exam_neuro",
-        "label": "\ud83e\ude7a Neurological Examination",
+        "label": "🩺 Neurological Examination",
         "cost": 1,
         "critical": false,
-        "clue": "Hypotonia. Loss of head control. Hyperacusis \u2014 exaggerated blink/startle to hand clap. No seizures yet. Progressive neurodegeneration.",
+        "clue": "Hypotonia. Loss of head control. Hyperacusis — exaggerated blink/startle to hand clap. No seizures yet. Progressive neurodegeneration.",
         "finding": "Progressive regression, hyperacusis"
       },
       {
         "id": "test_mri_brain",
-        "label": "\ud83d\udd2c Brain MRI",
+        "label": "🔬 Brain MRI",
         "cost": 2,
         "critical": false,
-        "clue": "Bilateral thalamic signal abnormality (T2 hypointensity). White matter changes developing. Consistent with lysosomal storage disorder \u2014 not specific to Tay-Sachs.",
-        "finding": "Thalamic signal change \u2014 lysosomal storage, nonspecific"
+        "clue": "Bilateral thalamic signal abnormality (T2 hypointensity). White matter changes developing. Consistent with lysosomal storage disorder — not specific to Tay-Sachs.",
+        "finding": "Thalamic signal change — lysosomal storage, nonspecific"
       },
       {
         "id": "test_hex_total",
-        "label": "\ud83e\uddea Total Hexosaminidase Activity",
+        "label": "🧪 Total Hexosaminidase Activity",
         "cost": 1,
         "critical": false,
-        "clue": "Total hexosaminidase: normal. This is misleading \u2014 HexB compensates for absent HexA, so total activity appears normal. Must fractionate.",
-        "finding": "Total hexosaminidase normal \u2014 MISLEADING, must check HexA separately"
+        "clue": "Total hexosaminidase: normal. This is misleading — HexB compensates for absent HexA, so total activity appears normal. Must fractionate.",
+        "finding": "Total hexosaminidase normal — MISLEADING, must check HexA separately"
       },
       {
         "id": "test_hex_a",
-        "label": "\ud83e\uddea Hexosaminidase A Activity (Fractionated)",
+        "label": "🧪 Hexosaminidase A Activity (Fractionated)",
         "cost": 2,
         "critical": true,
-        "clue": "HexA activity: <1% of normal. HexB activity: normal. Isolated HexA deficiency \u2014 Tay-Sachs confirmed. Sandhoff would show absent HexA AND HexB.",
-        "finding": "Absent HexA, normal HexB \u2014 Tay-Sachs (not Sandhoff)"
+        "clue": "HexA activity: <1% of normal. HexB activity: normal. Isolated HexA deficiency. (Sandhoff would show absent HexA AND HexB.)",
+        "finding": "Absent HexA with normal HexB — isolated HexA deficiency"
       },
       {
         "id": "test_sphingomyelinase",
-        "label": "\ud83e\uddea Acid Sphingomyelinase Activity",
+        "label": "🧪 Acid Sphingomyelinase Activity",
         "cost": 2,
         "critical": false,
-        "clue": "Sphingomyelinase activity: normal. Niemann-Pick A excluded \u2014 sphingomyelinase is deficient in Niemann-Pick, not here.",
-        "finding": "Normal sphingomyelinase \u2014 Niemann-Pick excluded"
+        "clue": "Sphingomyelinase activity: normal. Niemann-Pick A excluded — sphingomyelinase is deficient in Niemann-Pick, not here.",
+        "finding": "Normal sphingomyelinase — Niemann-Pick excluded"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 HEXA Gene Sequencing",
+        "label": "⚡ HEXA Gene Sequencing",
         "cost": 3,
         "critical": false,
-        "clue": "Homozygous 4-bp insertion in exon 11 of HEXA \u2014 classic Ashkenazi Jewish Tay-Sachs mutation. Confirms diagnosis.",
-        "finding": "HEXA mutation confirmed \u2014 classic Tay-Sachs"
+        "clue": "Homozygous 4-bp insertion in exon 11 of HEXA — classic Ashkenazi Jewish mutation.",
+        "finding": "Homozygous 4-bp insertion in exon 11 of HEXA — Ashkenazi Jewish variant"
       }
     ],
     "critical_ids": [
@@ -1463,12 +1463,12 @@
       {
         "disease": "Niemann-Pick Disease Type A",
         "status": "ruled-out",
-        "reason": "Niemann-Pick always has hepatosplenomegaly \u2014 absent here. Sphingomyelinase normal, not deficient"
+        "reason": "Niemann-Pick always has hepatosplenomegaly — absent here. Sphingomyelinase normal, not deficient"
       },
       {
         "disease": "Sandhoff Disease",
         "status": "ruled-out",
-        "reason": "Sandhoff: both HexA AND HexB absent. Here only HexA absent. Total hexosaminidase is normal \u2014 misleading if not fractionated"
+        "reason": "Sandhoff: both HexA AND HexB absent. Here only HexA absent. Total hexosaminidase is normal — misleading if not fractionated"
       },
       {
         "disease": "Gaucher Disease",
@@ -1489,31 +1489,31 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Family, Alcohol & Transfusion History",
+        "label": "📋 Family, Alcohol & Transfusion History",
         "cost": 1,
         "critical": true,
         "clue": "Non-drinker. Brother has cirrhosis of unknown cause. Father died of liver cancer at 52. Northern European ancestry. No blood transfusions, no IV drug use.",
-        "finding": "Family clustering of liver disease \u2014 hereditary condition, not lifestyle"
+        "finding": "Family clustering of liver disease — hereditary condition, not lifestyle"
       },
       {
         "id": "test_lft",
-        "label": "\ud83e\uddea Liver Function Tests",
+        "label": "🧪 Liver Function Tests",
         "cost": 1,
         "critical": false,
-        "clue": "ALT 68 U/L (mildly elevated). AST 55 U/L. Bilirubin normal. ALP normal. GGT 80 U/L. Mild hepatocellular pattern \u2014 nonspecific.",
-        "finding": "Mild hepatocellular inflammation \u2014 nonspecific"
+        "clue": "ALT 68 U/L (mildly elevated). AST 55 U/L. Bilirubin normal. ALP normal. GGT 80 U/L. Mild hepatocellular pattern — nonspecific.",
+        "finding": "Mild hepatocellular inflammation — nonspecific"
       },
       {
         "id": "test_alcohol",
-        "label": "\ud83e\uddea GGT + CDT + Alcohol Markers",
+        "label": "🧪 GGT + CDT + Alcohol Markers",
         "cost": 1,
         "critical": false,
         "clue": "GGT mildly elevated (as above). CDT: negative. Urine ethanol: negative. Mean corpuscular volume: normal. Alcohol-related liver disease excluded.",
-        "finding": "Alcohol markers negative \u2014 alcoholic liver disease excluded"
+        "finding": "Alcohol markers negative — alcoholic liver disease excluded"
       },
       {
         "id": "test_viral_hep",
-        "label": "\ud83e\uddea Hepatitis B + C Serology",
+        "label": "🧪 Hepatitis B + C Serology",
         "cost": 1,
         "critical": false,
         "clue": "HBsAg: negative. Anti-HBc: negative. Anti-HCV: negative. Viral hepatitis excluded as cause.",
@@ -1521,43 +1521,43 @@
       },
       {
         "id": "test_iron_studies",
-        "label": "\ud83e\uddea Iron Studies (Serum Iron, TIBC, Ferritin, Transferrin Saturation)",
+        "label": "🧪 Iron Studies (Serum Iron, TIBC, Ferritin, Transferrin Saturation)",
         "cost": 1,
         "critical": true,
         "clue": "Ferritin: 4,200 ng/mL (normal <300). Transferrin saturation: 88% (normal <45%). Serum iron markedly elevated. Massive iron overload confirmed.",
-        "finding": "Ferritin 4200, transferrin saturation 88% \u2014 iron overload"
+        "finding": "Ferritin 4200, transferrin saturation 88% — iron overload"
       },
       {
         "id": "test_ceruloplasmin",
-        "label": "\ud83e\uddea Serum Ceruloplasmin + Urine Copper",
+        "label": "🧪 Serum Ceruloplasmin + Urine Copper",
         "cost": 1,
         "critical": false,
-        "clue": "Ceruloplasmin: 0.22 g/L (normal). 24h urine copper: 18 \u03bcg (normal). Wilson disease excluded \u2014 copper metabolism normal.",
-        "finding": "Normal copper studies \u2014 Wilson disease excluded"
+        "clue": "Ceruloplasmin: 0.22 g/L (normal). 24h urine copper: 18 μg (normal). Wilson disease excluded — copper metabolism normal.",
+        "finding": "Normal copper studies — Wilson disease excluded"
       },
       {
         "id": "test_xray_joints",
-        "label": "\ud83d\udd2c X-ray of Hands",
+        "label": "🔬 X-ray of Hands",
         "cost": 1,
         "critical": false,
         "clue": "Chondrocalcinosis of MCP joints (calcium pyrophosphate deposition). Hook-shaped osteophytes on 2nd and 3rd MCPs. Classic haemochromatosis arthropathy.",
-        "finding": "MCP chondrocalcinosis \u2014 classic haemochromatosis arthropathy"
+        "finding": "MCP chondrocalcinosis — classic haemochromatosis arthropathy"
       },
       {
         "id": "test_liver_mri",
-        "label": "\ud83d\udd2c Liver MRI (T2* Sequence)",
+        "label": "🔬 Liver MRI (T2* Sequence)",
         "cost": 2,
         "critical": false,
-        "clue": "Marked hepatic iron deposition on T2* (low signal liver). No cirrhosis. No focal lesion. Cardiac T2* normal \u2014 no cardiac iron overload yet.",
+        "clue": "Marked hepatic iron deposition on T2* (low signal liver). No cirrhosis. No focal lesion. Cardiac T2* normal — no cardiac iron overload yet.",
         "finding": "Hepatic iron overload on MRI"
       },
       {
         "id": "test_hfe",
-        "label": "\u26a1 HFE Gene Analysis (C282Y/H63D)",
+        "label": "⚡ HFE Gene Analysis (C282Y/H63D)",
         "cost": 3,
         "critical": true,
-        "clue": "Homozygous C282Y in HFE gene \u2014 most common hereditary haemochromatosis genotype (>90% of cases in Northern Europeans).",
-        "finding": "HFE C282Y homozygous \u2014 hereditary haemochromatosis confirmed"
+        "clue": "Homozygous C282Y in HFE gene — most common genotype in Northern Europeans.",
+        "finding": "HFE C282Y homozygous — most common HFE genotype in Northern Europeans"
       }
     ],
     "critical_ids": [
@@ -1576,12 +1576,12 @@
       {
         "disease": "Alcoholic Liver Disease",
         "status": "ruled-out",
-        "reason": "Non-drinker, CDT negative, urine ethanol negative, MCV normal \u2014 HFE mutation confirms hereditary cause"
+        "reason": "Non-drinker, CDT negative, urine ethanol negative, MCV normal — HFE mutation confirms hereditary cause"
       },
       {
         "disease": "Wilson Disease",
         "status": "ruled-out",
-        "reason": "Ceruloplasmin and urine copper entirely normal \u2014 copper metabolism intact"
+        "reason": "Ceruloplasmin and urine copper entirely normal — copper metabolism intact"
       },
       {
         "disease": "Viral Hepatitis B or C",
@@ -1602,75 +1602,75 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Drug, Diet & Family History",
+        "label": "📋 Drug, Diet & Family History",
         "cost": 1,
         "critical": true,
         "clue": "Primaquine started 3 days ago. Previously tolerated quinine. Triggers in family: fava beans, dapsone, nitrofurantoin. Brother had similar episode with dapsone.",
-        "finding": "Oxidant drug-triggered haemolysis \u2014 G6PD deficiency likely"
+        "finding": "Oxidant drug-triggered haemolysis — G6PD deficiency likely"
       },
       {
         "id": "test_coombs",
-        "label": "\ud83e\uddea Direct & Indirect Coombs Test",
+        "label": "🧪 Direct & Indirect Coombs Test",
         "cost": 1,
         "critical": false,
-        "clue": "Direct Coombs: negative. Indirect Coombs: negative. Autoimmune haemolytic anaemia excluded \u2014 haemolysis is non-immune.",
-        "finding": "Coombs negative \u2014 AIHA excluded"
+        "clue": "Direct Coombs: negative. Indirect Coombs: negative. Autoimmune haemolytic anaemia excluded — haemolysis is non-immune.",
+        "finding": "Coombs negative — AIHA excluded"
       },
       {
         "id": "test_fbc_film",
-        "label": "\ud83e\uddea Blood Film + Reticulocyte Count",
+        "label": "🧪 Blood Film + Reticulocyte Count",
         "cost": 1,
         "critical": true,
-        "clue": "Heinz bodies on crystal violet stain \u2014 denatured Hb precipitates. Bite cells (degmacytes). Polychromasia. Reticulocytosis 12%. No sickle cells, no spherocytes.",
-        "finding": "Heinz bodies + bite cells \u2014 oxidative haemolysis"
+        "clue": "Heinz bodies on crystal violet stain — denatured Hb precipitates. Bite cells (degmacytes). Polychromasia. Reticulocytosis 12%. No sickle cells, no spherocytes.",
+        "finding": "Heinz bodies + bite cells — oxidative haemolysis"
       },
       {
         "id": "test_lft_ldh",
-        "label": "\ud83e\uddea LDH + Haptoglobin + Indirect Bilirubin",
+        "label": "🧪 LDH + Haptoglobin + Indirect Bilirubin",
         "cost": 1,
         "critical": false,
-        "clue": "LDH 980 U/L (elevated). Haptoglobin: undetectable. Indirect bilirubin elevated. Confirms intravascular haemolysis. Nonspecific \u2014 does not identify cause.",
-        "finding": "Intravascular haemolysis confirmed \u2014 nonspecific"
+        "clue": "LDH 980 U/L (elevated). Haptoglobin: undetectable. Indirect bilirubin elevated. Confirms intravascular haemolysis. Nonspecific — does not identify cause.",
+        "finding": "Intravascular haemolysis confirmed — nonspecific"
       },
       {
         "id": "test_hb_electrophoresis",
-        "label": "\ud83e\uddea Haemoglobin Electrophoresis",
+        "label": "🧪 Haemoglobin Electrophoresis",
         "cost": 2,
         "critical": false,
         "clue": "HbA: 97%, HbA2: 2.4%, HbS: 0%, HbC: 0%. Normal haemoglobin electrophoresis. Sickle cell disease and HbC disease excluded.",
-        "finding": "Normal Hb electrophoresis \u2014 haemoglobinopathy excluded"
+        "finding": "Normal Hb electrophoresis — haemoglobinopathy excluded"
       },
       {
         "id": "test_pnhscreen",
-        "label": "\ud83e\uddea Flow Cytometry (CD55/CD59 for PNH)",
+        "label": "🧪 Flow Cytometry (CD55/CD59 for PNH)",
         "cost": 2,
         "critical": false,
         "clue": "CD55 and CD59 expression normal on RBCs and WBCs. Paroxysmal nocturnal haemoglobinuria excluded.",
-        "finding": "PNH excluded \u2014 complement-mediated haemolysis not present"
+        "finding": "PNH excluded — complement-mediated haemolysis not present"
       },
       {
         "id": "test_g6pd",
-        "label": "\ud83e\uddea G6PD Enzyme Assay",
+        "label": "🧪 G6PD Enzyme Assay",
         "cost": 2,
         "critical": true,
-        "clue": "G6PD activity: 5% of normal. Tested 2 weeks after episode (young RBCs have more G6PD \u2014 test during crisis underestimates deficiency). Severely deficient.",
-        "finding": "G6PD deficiency confirmed \u2014 5% activity"
+        "clue": "G6PD activity: 5% of normal. Tested 2 weeks after episode (young RBCs have more G6PD — test during crisis underestimates deficiency). Severely deficient.",
+        "finding": "G6PD activity 5% of normal — tested 2 weeks after the episode"
       },
       {
         "id": "test_pk",
-        "label": "\ud83e\uddea Pyruvate Kinase Assay",
+        "label": "🧪 Pyruvate Kinase Assay",
         "cost": 2,
         "critical": false,
-        "clue": "Pyruvate kinase activity: normal. PK deficiency excluded \u2014 PK deficiency causes chronic non-episodic haemolysis without Heinz bodies.",
-        "finding": "PK normal \u2014 pyruvate kinase deficiency excluded"
+        "clue": "Pyruvate kinase activity: normal. PK deficiency excluded — PK deficiency causes chronic non-episodic haemolysis without Heinz bodies.",
+        "finding": "PK normal — pyruvate kinase deficiency excluded"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 G6PD Gene Analysis",
+        "label": "⚡ G6PD Gene Analysis",
         "cost": 3,
         "critical": false,
-        "clue": "G202A mutation (G6PD A- variant) \u2014 most common African variant. Hemizygous in this male. Confirms X-linked inheritance.",
-        "finding": "G6PD A- variant \u2014 X-linked"
+        "clue": "G202A mutation (G6PD A- variant) — most common African variant. Hemizygous in this male — X-linked pattern.",
+        "finding": "G202A (G6PD A-) hemizygous — common African variant"
       }
     ],
     "critical_ids": [
@@ -1689,22 +1689,22 @@
       {
         "disease": "Autoimmune Haemolytic Anaemia",
         "status": "ruled-out",
-        "reason": "Direct and indirect Coombs both negative \u2014 immune-mediated haemolysis excluded"
+        "reason": "Direct and indirect Coombs both negative — immune-mediated haemolysis excluded"
       },
       {
         "disease": "Sickle Cell Anaemia",
         "status": "ruled-out",
-        "reason": "No sickle cells on film, haemoglobin electrophoresis normal \u2014 HbS absent"
+        "reason": "No sickle cells on film, haemoglobin electrophoresis normal — HbS absent"
       },
       {
         "disease": "Pyruvate Kinase Deficiency",
         "status": "ruled-out",
-        "reason": "PK deficiency causes chronic non-episodic haemolysis with echinocytes not bite cells \u2014 PK activity normal here"
+        "reason": "PK deficiency causes chronic non-episodic haemolysis with echinocytes not bite cells — PK activity normal here"
       },
       {
         "disease": "Paroxysmal Nocturnal Haemoglobinuria",
         "status": "ruled-out",
-        "reason": "CD55 and CD59 expression normal on flow cytometry \u2014 complement-mediated haemolysis excluded"
+        "reason": "CD55 and CD59 expression normal on flow cytometry — complement-mediated haemolysis excluded"
       }
     ]
   },
@@ -1715,75 +1715,75 @@
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Birth & Developmental History",
+        "label": "📋 Birth & Developmental History",
         "cost": 1,
         "critical": false,
-        "clue": "Normal birth. Development normal until 6 months. Progressive neurological deterioration. Self-biting began age 2 \u2014 distressed by own behaviour. No family history in males.",
-        "finding": "Progressive regression with compulsive self-mutilation \u2014 not static CP"
+        "clue": "Normal birth. Development normal until 6 months. Progressive neurological deterioration. Self-biting began age 2 — distressed by own behaviour. No family history in males.",
+        "finding": "Progressive regression with compulsive self-mutilation — not static CP"
       },
       {
         "id": "test_mri_brain",
-        "label": "\ud83d\udd2c Brain MRI",
+        "label": "🔬 Brain MRI",
         "cost": 2,
         "critical": false,
         "clue": "Basal ganglia signal abnormality (caudate and putamen). Cortex preserved. No structural lesion, no periventricular leukomalacia. Basal ganglia dysfunction.",
-        "finding": "Basal ganglia changes \u2014 not typical CP (periventricular injury)"
+        "finding": "Basal ganglia changes — not typical CP (periventricular injury)"
       },
       {
         "id": "test_metabolic_screen",
-        "label": "\ud83e\uddea Plasma Amino Acids + Urine Organic Acids",
+        "label": "🧪 Plasma Amino Acids + Urine Organic Acids",
         "cost": 2,
         "critical": false,
         "clue": "Plasma amino acids: normal. Urine organic acids: normal. No aminoacidopathy, no organic acidaemia. Metabolic screen does not identify the defect here.",
-        "finding": "Amino acids and organic acids normal \u2014 standard metabolic screen unhelpful"
+        "finding": "Amino acids and organic acids normal — standard metabolic screen unhelpful"
       },
       {
         "id": "exam_neuro",
-        "label": "\ud83e\ude7a Neurological Examination",
+        "label": "🩺 Neurological Examination",
         "cost": 1,
         "critical": true,
-        "clue": "Choreoathetosis, dystonia, hyperreflexia. Compulsive self-biting of lips and fingers \u2014 child appears distressed by own actions. Intellectual disability. This is pathognomonic.",
-        "finding": "Compulsive self-mutilation + choreoathetosis \u2014 Lesch-Nyhan pattern"
+        "clue": "Choreoathetosis, dystonia, hyperreflexia. Compulsive self-biting of lips and fingers — child appears distressed by own actions. Intellectual disability.",
+        "finding": "Compulsive self-mutilation + choreoathetosis — Lesch-Nyhan pattern"
       },
       {
         "id": "exam_joints",
-        "label": "\ud83e\ude7a Joint & Skin Examination",
+        "label": "🩺 Joint & Skin Examination",
         "cost": 1,
         "critical": false,
-        "clue": "Swollen tender first MTP joint. Tophi on ears. Gouty arthritis in a toddler \u2014 extraordinarily unusual. Points to massive urate overproduction.",
-        "finding": "Childhood gout + tophi \u2014 gross purine overproduction"
+        "clue": "Swollen tender first MTP joint. Tophi on ears. Gouty arthritis in a toddler — extraordinarily unusual. Points to massive urate overproduction.",
+        "finding": "Childhood gout + tophi — gross purine overproduction"
       },
       {
         "id": "test_uric_acid",
-        "label": "\ud83e\uddea Serum Uric Acid + 24h Urine Uric Acid",
+        "label": "🧪 Serum Uric Acid + 24h Urine Uric Acid",
         "cost": 1,
         "critical": true,
-        "clue": "Serum urate: 11.8 mg/dL. 24h urine uric acid: 1,800 mg (normal <600 in children). Overproduction confirmed \u2014 not merely underexcretion.",
-        "finding": "Gross urate overproduction \u2014 not renal underexcretion"
+        "clue": "Serum urate: 11.8 mg/dL. 24h urine uric acid: 1,800 mg (normal <600 in children). Overproduction confirmed — not merely underexcretion.",
+        "finding": "Gross urate overproduction — not renal underexcretion"
       },
       {
         "id": "test_renal",
-        "label": "\ud83e\uddea Renal Function + Urinalysis",
+        "label": "🧪 Renal Function + Urinalysis",
         "cost": 1,
         "critical": false,
         "clue": "Creatinine normal. eGFR normal. No haematuria. Uric acid crystals in urine. Renal failure as cause of hyperuricaemia excluded.",
-        "finding": "Normal renal function \u2014 hyperuricaemia is not from renal failure"
+        "finding": "Normal renal function — hyperuricaemia is not from renal failure"
       },
       {
         "id": "test_hprt",
-        "label": "\ud83e\uddea RBC HGPRTase Enzyme Activity",
+        "label": "🧪 RBC HGPRTase Enzyme Activity",
         "cost": 2,
         "critical": true,
-        "clue": "HGPRTase (HPRT) activity: <1% of normal in RBC lysate. Complete deficiency. No purine salvage \u2014 de novo synthesis unchecked.",
-        "finding": "Absent HGPRTase \u2014 Lesch-Nyhan syndrome confirmed"
+        "clue": "HGPRTase (HPRT) activity: <1% of normal in RBC lysate. Complete deficiency. No purine salvage — de novo synthesis unchecked.",
+        "finding": "HGPRTase (HPRT) activity <1% of normal — complete deficiency"
       },
       {
         "id": "test_genetics",
-        "label": "\u26a1 HPRT1 Gene Sequencing",
+        "label": "⚡ HPRT1 Gene Sequencing",
         "cost": 3,
         "critical": false,
         "clue": "Hemizygous pathogenic variant in HPRT1 gene. Mother confirmed carrier (heterozygous). X-linked recessive pattern.",
-        "finding": "HPRT1 mutation \u2014 X-linked recessive"
+        "finding": "Hemizygous HPRT1 gene variant; mother confirmed heterozygous carrier"
       }
     ],
     "critical_ids": [
@@ -1802,7 +1802,7 @@
       {
         "disease": "Cerebral Palsy",
         "status": "ruled-out",
-        "reason": "CP is static \u2014 progressive regression, normal uric acid in CP, no self-mutilation as a feature, MRI shows basal ganglia not periventricular injury"
+        "reason": "CP is static — progressive regression, normal uric acid in CP, no self-mutilation as a feature, MRI shows basal ganglia not periventricular injury"
       },
       {
         "disease": "Primary Gout (PRPP Synthetase Superactivity)",
@@ -1812,83 +1812,83 @@
       {
         "disease": "Organic Acidaemia",
         "status": "ruled-out",
-        "reason": "Plasma amino acids and urine organic acids entirely normal \u2014 standard metabolic screen unhelpful and negative"
+        "reason": "Plasma amino acids and urine organic acids entirely normal — standard metabolic screen unhelpful and negative"
       },
       {
         "disease": "Renal Failure-induced Hyperuricaemia",
         "status": "ruled-out",
-        "reason": "Renal function entirely normal \u2014 hyperuricaemia is from overproduction, not underexcretion"
+        "reason": "Renal function entirely normal — hyperuricaemia is from overproduction, not underexcretion"
       }
     ]
   },
   {
     "id": 15,
     "title": "Woman with PKU Planning Pregnancy",
-    "presentation": "A 26-year-old woman with known PKU becomes pregnant at 8 weeks. She had relaxed her phenylalanine-restricted diet 18 months before conception. Her pre-pregnancy phenylalanine levels were elevated at 900 \u03bcmol/L. She is now urgently concerned about her unborn child.",
+    "presentation": "A 26-year-old woman with known PKU becomes pregnant at 8 weeks. She had relaxed her phenylalanine-restricted diet 18 months before conception. Her pre-pregnancy phenylalanine levels were elevated at 900 μmol/L. She is now urgently concerned about her unborn child.",
     "actions": [
       {
         "id": "history",
-        "label": "\ud83d\udccb Dietary Compliance & Conception History",
+        "label": "📋 Dietary Compliance & Conception History",
         "cost": 1,
         "critical": true,
-        "clue": "Diet relaxed 18 months before conception \u2014 Phe up to 900 \u03bcmol/L during this period. Now 8 weeks pregnant. Critical window for organogenesis already partly elapsed.",
-        "finding": "Elevated maternal Phe during organogenesis \u2014 teratogenic window breached"
+        "clue": "Diet relaxed 18 months before conception — Phe up to 900 μmol/L during this period. Now 8 weeks pregnant. Critical window for organogenesis already partly elapsed.",
+        "finding": "Elevated maternal Phe during organogenesis — teratogenic window breached"
       },
       {
         "id": "test_maternal_phe",
-        "label": "\ud83e\uddea Maternal Plasma Phenylalanine (Weekly)",
+        "label": "🧪 Maternal Plasma Phenylalanine (Weekly)",
         "cost": 1,
         "critical": true,
-        "clue": "Current Phe: 750 \u03bcmol/L. Target in pregnancy: 120\u2013360 \u03bcmol/L. Dietary restriction and Phe-free formula urgently restarted.",
-        "finding": "Maternal Phe 750 \u2014 above safe pregnancy range"
+        "clue": "Current Phe: 750 μmol/L. Target in pregnancy: 120–360 μmol/L. Dietary restriction and Phe-free formula urgently restarted.",
+        "finding": "Maternal Phe 750 — above safe pregnancy range"
       },
       {
         "id": "test_maternal_bh4",
-        "label": "\ud83e\uddea BH4 (Sapropterin) Challenge",
+        "label": "🧪 BH4 (Sapropterin) Challenge",
         "cost": 2,
         "critical": false,
         "clue": "No significant Phe reduction after BH4 loading. Mother has BH4-non-responsive PAH deficiency. Diet remains the only management option for her.",
-        "finding": "BH4-non-responsive \u2014 dietary restriction only"
+        "finding": "BH4-non-responsive — dietary restriction only"
       },
       {
         "id": "test_fetal_genetics",
-        "label": "\ud83e\uddea Fetal PAH Genotyping (CVS at 11 weeks)",
+        "label": "🧪 Fetal PAH Genotyping (CVS at 11 weeks)",
         "cost": 2,
         "critical": false,
-        "clue": "Father: heterozygous PAH carrier. Fetus: heterozygous PAH carrier only. Fetus will NOT have PKU. However, fetal brain damage is from maternal Phe crossing placenta \u2014 not fetal enzyme deficiency.",
-        "finding": "Fetus is carrier only \u2014 fetal PKU excluded, but maternal Phe is still teratogenic"
+        "clue": "Father: heterozygous PAH carrier. Fetus: heterozygous PAH carrier only. Fetus will NOT have PKU. However, fetal brain damage is from maternal Phe crossing placenta — not fetal enzyme deficiency.",
+        "finding": "Fetus is carrier only — fetal PKU excluded, but maternal Phe is still teratogenic"
       },
       {
         "id": "test_fetal_us_early",
-        "label": "\ud83d\udd2c Nuchal Translucency + 12-week Ultrasound",
+        "label": "🔬 Nuchal Translucency + 12-week Ultrasound",
         "cost": 1,
         "critical": false,
         "clue": "NT: 1.8mm (normal). No structural anomaly detected at 12 weeks. Normal at this stage does not exclude later microcephaly or cardiac defect.",
-        "finding": "Normal 12-week scan \u2014 does not exclude later manifestations"
+        "finding": "Normal 12-week scan — does not exclude later manifestations"
       },
       {
         "id": "test_fetal_us_anomaly",
-        "label": "\ud83d\udd2c Fetal Anomaly Scan (20 weeks)",
+        "label": "🔬 Fetal Anomaly Scan (20 weeks)",
         "cost": 2,
         "critical": true,
-        "clue": "Fetal head circumference on 3rd centile \u2014 early microcephaly developing. Cardiac four-chamber view: VSD detected. Features of maternal PKU embryopathy.",
-        "finding": "Microcephaly + VSD \u2014 maternal PKU embryopathy"
+        "clue": "Fetal head circumference on 3rd centile — early microcephaly developing. Cardiac four-chamber view: VSD detected. Features of maternal PKU embryopathy.",
+        "finding": "Microcephaly + VSD — maternal PKU embryopathy"
       },
       {
         "id": "test_fetal_echo",
-        "label": "\ud83d\udd2c Fetal Echocardiogram",
+        "label": "🔬 Fetal Echocardiogram",
         "cost": 2,
         "critical": false,
-        "clue": "Perimembranous VSD confirmed. No other cardiac defects. Consistent with maternal PKU embryopathy \u2014 cardiac defects occur in 10-15% of affected pregnancies.",
-        "finding": "VSD confirmed \u2014 maternal Phe teratogenicity"
+        "clue": "Perimembranous VSD confirmed. No other cardiac defects.",
+        "finding": "VSD confirmed — structural cardiac defect"
       },
       {
         "id": "test_fetal_mri",
-        "label": "\u26a1 Fetal Brain MRI (30 weeks)",
+        "label": "⚡ Fetal Brain MRI (30 weeks)",
         "cost": 3,
         "critical": true,
-        "clue": "Reduced cerebral cortical development. White matter signal abnormality. Pachygyria pattern. Confirms brain injury from first-trimester maternal Phe exposure \u2014 irreversible.",
-        "finding": "Fetal brain malformation \u2014 maternal PKU embryopathy irreversible"
+        "clue": "Reduced cerebral cortical development. White matter signal abnormality. Pachygyria pattern. Brain injury from first-trimester exposure — irreversible.",
+        "finding": "Fetal brain malformation — consistent with early teratogenic exposure"
       }
     ],
     "critical_ids": [
@@ -1903,27 +1903,27 @@
       {
         "disease": "Maternal PKU Syndrome",
         "status": "confirmed",
-        "reason": "Known maternal PKU, Phe 900 \u03bcmol/L in first trimester, fetal microcephaly, VSD, brain malformation on MRI \u2014 classic embryopathy"
+        "reason": "Known maternal PKU, Phe 900 μmol/L in first trimester, fetal microcephaly, VSD, brain malformation on MRI — classic embryopathy"
       },
       {
         "disease": "Fetal PKU",
         "status": "ruled-out",
-        "reason": "CVS confirms fetus is only a heterozygous carrier \u2014 fetal enzyme is intact. Damage is from maternal Phe crossing placenta"
+        "reason": "CVS confirms fetus is only a heterozygous carrier — fetal enzyme is intact. Damage is from maternal Phe crossing placenta"
       },
       {
         "disease": "Congenital Rubella Syndrome",
         "status": "ruled-out",
-        "reason": "Maternal rubella serology negative \u2014 maternal PKU fully explains all cardiac and neurological findings"
+        "reason": "Maternal rubella serology negative — maternal PKU fully explains all cardiac and neurological findings"
       },
       {
         "disease": "Chromosomal Abnormality (Trisomy 21)",
         "status": "ruled-out",
-        "reason": "NT normal at 12 weeks, chromosomal microarray normal on CVS sample \u2014 trisomy excluded"
+        "reason": "NT normal at 12 weeks, chromosomal microarray normal on CVS sample — trisomy excluded"
       },
       {
         "disease": "Isolated Congenital Heart Disease",
         "status": "ruled-out",
-        "reason": "VSD occurs in the context of elevated maternal Phe with microcephaly \u2014 not isolated, consistent with systemic teratogenic effect"
+        "reason": "VSD occurs in the context of elevated maternal Phe with microcephaly — not isolated, consistent with systemic teratogenic effect"
       }
     ]
   }
