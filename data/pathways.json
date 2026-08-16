@@ -80,19 +80,19 @@
         "cofactors": "NAD⁺ → NADH + H⁺; Pᵢ added",
         "reversible": true,
         "disorder": {
-          "name": "Inhibited by Iodoacetate / Arsenite",
+          "name": "Inhibited by Iodoacetate / Arsenate",
           "disorderId": null,
           "branch": [
             "Iodoacetate blocks this enzyme",
-            "Arsenite also inhibits at this step",
-            "Fluoride inhibits Enolase (step 9) — used in blood tubes to preserve glucose"
+            "Arsenate replaces Pᵢ → forms 1-arseno-3-phosphoglycerate → hydrolyses spontaneously",
+            "Uncouples substrate-level ATP production (1,3-BPG never forms)"
           ]
         }
       },
       {
         "stepNum": 7,
         "molecule": "1,3-Bisphosphoglycerate (×2)",
-        "enzyme": "Bisphosphoglycerate Kinase (Phosphoglycerate Kinase)",
+        "enzyme": "Phosphoglycerate Kinase (PGK)",
         "cofactors": "ADP → ATP (×2) — 1st substrate-level phosphorylation",
         "reversible": true,
         "disorder": null
@@ -413,12 +413,12 @@
       {
         "stepNum": 1,
         "molecule": "Pyruvate",
-        "enzyme": "E1: Pyruvate Decarboxylase",
+        "enzyme": "E1: Pyruvate Dehydrogenase",
         "cofactors": "TPP (Thiamine Pyrophosphate) + Mg²⁺; CO₂ released",
         "reversible": false,
         "disorder": {
           "name": "Wernicke-Korsakoff Syndrome (Thiamine Deficiency)",
-          "disorderId": null,
+          "disorderId": 72,
           "branch": [
             "Thiamine (B1) deficiency (chronic alcoholism)",
             "TPP unavailable → E1 fails",
@@ -633,7 +633,7 @@
         "reversible": true,
         "disorder": {
           "name": "Wernicke-Korsakoff (Transketolase)",
-          "disorderId": null,
+          "disorderId": 72,
           "branch": [
             "Transketolase requires TPP (Thiamine/B1)",
             "In thiamine deficiency, transketolase fails",
@@ -704,7 +704,7 @@
         "reversible": false,
         "disorder": {
           "name": "Scurvy (Vitamin C Deficiency)",
-          "disorderId": null,
+          "disorderId": 87,
           "branch": [
             "Humans lack L-gulonolactone oxidase",
             "Cannot synthesise Vitamin C endogenously",
@@ -1209,7 +1209,7 @@
         "cofactors": "ATP + CO₂ + Biotin + Mn²⁺; inhibited by Palmitoyl-CoA; activated by Citrate",
         "reversible": false,
         "disorder": {
-          "name": "Regulation by Malonyl-CoA",
+          "name": "Malonyl-CoA Inhibits CAT-I (Cross-Pathway Regulation)",
           "disorderId": null,
           "branch": [
             "Malonyl-CoA product inhibits CAT-I → prevents β-oxidation",
@@ -2033,7 +2033,7 @@
         "reversible": false,
         "disorder": {
           "name": "Vitamin K Deficiency / Haemorrhagic Disease",
-          "disorderId": null,
+          "disorderId": 71,
           "branch": [
             "Factors II, VII, IX, X cannot bind calcium → inactive",
             "Prolonged PT (prothrombin time) and APTT",
@@ -2145,16 +2145,7 @@
         "enzyme": "Aminopeptidases + Dipeptidases + Tripeptidases (intestinal brush border)",
         "cofactors": "Act on N-terminal end; final release of free amino acids",
         "reversible": false,
-        "disorder": {
-          "name": "Hartnup Disease / Cystinuria",
-          "disorderId": 37,
-          "branch": [
-            "Hartnup: defective neutral AA transporter (SLC6A19) in intestine and kidney",
-            "Tryptophan not absorbed → pellagra-like rash, ataxia",
-            "Cystinuria: defective COLA transporter → cystine stones",
-            "Celiac disease: villous atrophy → reduced absorptive surface for AAs"
-          ]
-        }
+        "disorder": null
       }
     ],
     "finalMolecule": "Free Amino Acids → portal blood → liver",
@@ -2555,6 +2546,14 @@
         "enzyme": "THFA Reductase (Methylenetetrahydrofolate reductase — MTHFR)",
         "cofactors": "FADH₂; irreversible reduction → N⁵-Methyl-THFA (metabolic sink)",
         "reversible": false,
+        "disorder": null
+      },
+      {
+        "stepNum": 3,
+        "molecule": "N⁵-Methyl-THFA + Homocysteine",
+        "enzyme": "Methionine Synthase (requires Methyl-B12)",
+        "cofactors": "Methylcobalamin (Vit B12); regenerates Methionine + THFA",
+        "reversible": false,
         "disorder": {
           "name": "Folate Trap (Vit B12 Deficiency)",
           "disorderId": 77,
@@ -2567,14 +2566,6 @@
             "↓ Methionine → ↑ Homocysteine → thrombosis risk"
           ]
         }
-      },
-      {
-        "stepNum": 3,
-        "molecule": "N⁵-Methyl-THFA + Homocysteine",
-        "enzyme": "Methionine Synthase (requires Methyl-B12)",
-        "cofactors": "Methylcobalamin (Vit B12); regenerates Methionine + THFA",
-        "reversible": false,
-        "disorder": null
       },
       {
         "stepNum": 4,
@@ -3144,7 +3135,7 @@
         "reversible": false,
         "disorder": {
           "name": "Infantile Convulsions (B6 Deficiency)",
-          "disorderId": null,
+          "disorderId": 75,
           "branch": [
             "Glutamate decarboxylase requires PLP",
             "B6 deficiency → ↓ GABA synthesis → loss of CNS inhibition",
@@ -3666,17 +3657,7 @@
         "enzyme": "Hepatocyte Uptake (active transport)",
         "cofactors": "Carrier-mediated; intracellular binding to Ligandin (Y protein) and Z protein",
         "reversible": false,
-        "disorder": {
-          "name": "Gilbert's Syndrome",
-          "disorderId": 115,
-          "branch": [
-            "Impaired hepatic UCB uptake AND mild conjugation defect",
-            "UCB mildly elevated (<4 mg/dl); benign, common (5% population)",
-            "Jaundice triggered by fasting, stress, illness",
-            "Normal liver enzymes; normal urine bilirubin",
-            "UGT1A1 promoter mutation (TA repeat)"
-          ]
-        }
+        "disorder": null
       },
       {
         "stepNum": 3,
@@ -3685,11 +3666,13 @@
         "cofactors": "UDP-Glucuronic acid (from glucuronic acid pathway); forms BMG then BDG (bilirubin diglucuronide = direct bilirubin)",
         "reversible": false,
         "disorder": {
-          "name": "Crigler-Najjar Syndrome",
+          "name": "Gilbert's Syndrome / Crigler-Najjar Syndrome",
           "disorderId": 113,
           "branch": [
-            "Type I: Complete UGT absence → extreme UCB (20–45 mg/dl) → kernicterus → death in infancy",
-            "Type II: Partial UGT → UCB <20 mg/dl; responds to Phenobarbitone (induces UGT)",
+            "Gilbert's: UGT1A1 promoter mutation (TA repeat) → mild UCB elevation (<4 mg/dl); benign, common (5% population)",
+            "Gilbert's: jaundice triggered by fasting, stress, illness; normal liver enzymes; normal urine bilirubin",
+            "Crigler-Najjar Type I: Complete UGT absence → extreme UCB (20–45 mg/dl) → kernicterus → death in infancy",
+            "Crigler-Najjar Type II: Partial UGT → UCB <20 mg/dl; responds to Phenobarbitone (induces UGT)",
             "Neonatal jaundice: transient low UGT → physiological jaundice (d1–d7)",
             "Phenobarbitone induces UGT → used to treat Gilbert's and Crigler-Najjar Type II"
           ]
@@ -3749,14 +3732,6 @@
         "enzyme": "PRPP Synthetase",
         "cofactors": "ATP → AMP + Pᵢ; forms PRPP (Phosphoribosyl Pyrophosphate)",
         "reversible": false,
-        "disorder": null
-      },
-      {
-        "stepNum": 2,
-        "molecule": "PRPP",
-        "enzyme": "Glutamine-PRPP Amidotransferase — Committed Rate-Limiting Step",
-        "cofactors": "Glutamine + H₂O; releases PPᵢ; forms 5-phosphoribosylamine; inhibited by AMP, GMP, IMP (feedback)",
-        "reversible": false,
         "disorder": {
           "name": "Primary Gout (PRPP Synthetase Overactivity)",
           "disorderId": 49,
@@ -3768,6 +3743,14 @@
             "Treatment: Allopurinol (xanthine oxidase suicide inhibitor)"
           ]
         }
+      },
+      {
+        "stepNum": 2,
+        "molecule": "PRPP",
+        "enzyme": "Glutamine-PRPP Amidotransferase — Committed Rate-Limiting Step",
+        "cofactors": "Glutamine + H₂O; releases PPᵢ; forms 5-phosphoribosylamine; inhibited by AMP, GMP, IMP (feedback)",
+        "reversible": false,
+        "disorder": null
       },
       {
         "stepNum": 3,
@@ -3783,17 +3766,7 @@
         "enzyme": "Adenylosuccinate Synthetase (for AMP) / IMP Dehydrogenase (for GMP)",
         "cofactors": "GTP for AMP branch; NAD⁺ + ATP for GMP branch; cross-regulation (AMP synthesis needs GTP; GMP synthesis needs ATP)",
         "reversible": false,
-        "disorder": {
-          "name": "ADA Deficiency (SCID)",
-          "disorderId": 51,
-          "branch": [
-            "Adenosine Deaminase absent → Adenosine and dATP accumulate",
-            "dATP powerfully inhibits Ribonucleotide Reductase → no dNTPs → no DNA synthesis",
-            "Lymphocytes cannot proliferate → T and B cell immunodeficiency (SCID)",
-            "Treatment: bone marrow transplant or ADA gene therapy",
-            "Pentostatin inhibits ADA (used in hairy cell leukaemia)"
-          ]
-        }
+        "disorder": null
       }
     ],
     "finalMolecule": "AMP / GMP → ADP/GDP → ATP/GTP",
@@ -4055,13 +4028,15 @@
         "cofactors": "NADPH; reduction → Dihydrouracil / Dihydrothymine",
         "reversible": false,
         "disorder": {
-          "name": "DPD Deficiency — 5-FU Toxicity",
+          "name": "DPD Deficiency — 5-FU Toxicity / Pseudouridinuria",
           "disorderId": null,
           "branch": [
             "DPD normally inactivates 5-Fluorouracil (5-FU)",
             "DPD deficiency → 5-FU not degraded → severe drug toxicity",
             "Mucositis, myelosuppression, neurotoxicity after standard 5-FU dose",
-            "DPYD gene testing recommended before 5-FU chemotherapy"
+            "DPYD gene testing recommended before 5-FU chemotherapy",
+            "Pseudouridine (from tRNA) not further degraded → excreted unchanged in urine (marker of DPD deficiency)",
+            "No clinical consequences — detected on urine metabolomics"
           ]
         }
       },
@@ -4079,15 +4054,7 @@
         "enzyme": "β-Ureidopropionase",
         "cofactors": "Cleavage → β-Alanine + CO₂ + NH₃",
         "reversible": false,
-        "disorder": {
-          "name": "Pseudouridinuria",
-          "disorderId": null,
-          "branch": [
-            "Pseudouridine (from tRNA) cannot be degraded",
-            "Excreted unchanged in urine",
-            "No clinical consequences — detected on urine metabolomics"
-          ]
-        }
+        "disorder": null
       },
       {
         "stepNum": 5,
