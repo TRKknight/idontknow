@@ -602,7 +602,27 @@ function PathwayViewer({
         color: DK.sub(dark),
         fontStyle: 'italic'
       }
-    }, step.cofactors), /*#__PURE__*/React.createElement("div", {
+    }, step.cofactors), step.location && step.location !== 'Not specified' && step.energy && step.energy !== '0' && /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 8,
+        marginTop: 3,
+        fontSize: 10,
+        color: DK.muted(dark)
+      }
+    }, /*#__PURE__*/React.createElement("span", null, "\uD83D\uDCCD ", step.location), /*#__PURE__*/React.createElement("span", null, "\u26A1 ", step.energy)), step.location && step.location !== 'Not specified' && (step.energy === '0' || !step.energy) && /*#__PURE__*/React.createElement("div", {
+      style: {
+        marginTop: 3,
+        fontSize: 10,
+        color: DK.muted(dark)
+      }
+    }, "\uD83D\uDCCD ", step.location), step.energy && step.energy !== '0' && (!step.location || step.location === 'Not specified') && /*#__PURE__*/React.createElement("div", {
+      style: {
+        marginTop: 3,
+        fontSize: 10,
+        color: DK.muted(dark)
+      }
+    }, "\u26A1 ", step.energy), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: 11,
         color: DK.muted(dark),
