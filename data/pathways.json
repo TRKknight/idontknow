@@ -20,7 +20,9 @@
             "Haemolytic anaemia",
             "↓ 2,3-BPG → high O₂ affinity of Hb"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 2,
@@ -28,7 +30,9 @@
         "enzyme": "Phosphoglucose Isomerase",
         "cofactors": null,
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -45,7 +49,9 @@
             "Exercise intolerance, cramps, myoglobinuria",
             "Haemolytic anaemia (RBCs also lack PFK-1)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 4,
@@ -63,7 +69,9 @@
             "Inhibits aldolase → glycolysis blocked",
             "Jaundice, vomiting, hepatomegaly after fruit intake"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -71,7 +79,9 @@
         "enzyme": "Triose Phosphate Isomerase",
         "cofactors": "DHAP ⇌ G3P (only G3P continues)",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 6,
@@ -87,7 +97,9 @@
             "Arsenate replaces Pᵢ → forms 1-arseno-3-phosphoglycerate → hydrolyses spontaneously",
             "Uncouples substrate-level ATP production (1,3-BPG never forms)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "+2 NADH"
       },
       {
         "stepNum": 7,
@@ -95,7 +107,9 @@
         "enzyme": "Phosphoglycerate Kinase (PGK)",
         "cofactors": "ADP → ATP (×2) — 1st substrate-level phosphorylation",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "+2 ATP (SLP)"
       },
       {
         "stepNum": 8,
@@ -103,7 +117,9 @@
         "enzyme": "Phosphoglycerate Mutase",
         "cofactors": null,
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 9,
@@ -119,7 +135,9 @@
             "Stops glycolysis in RBCs in blood collection tubes",
             "Used clinically to prevent ex-vivo glucose consumption"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 10,
@@ -136,7 +154,9 @@
             "↓ ATP → RBC membrane failure and haemolysis",
             "Chronic non-spherocytic haemolytic anaemia"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "+2 ATP (SLP)"
       }
     ],
     "finalMolecule": "Pyruvate (×2)",
@@ -171,7 +191,9 @@
             "Progressive neurological deterioration",
             "Mental retardation"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "-6 ATP equiv"
       },
       {
         "stepNum": 2,
@@ -179,7 +201,9 @@
         "enzyme": "Malate-Aspartate Shuttle (export mechanism)",
         "cofactors": "OAA → Malate (cannot cross membrane as OAA)",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Inner mitochondrial membrane",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -195,7 +219,9 @@
             "Severe fasting hypoglycaemia",
             "Lactic acidosis and hyperammonaemia"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-2 GTP"
       },
       {
         "stepNum": 4,
@@ -203,7 +229,9 @@
         "enzyme": "Reversible Glycolytic Enzymes (Enolase, Mutase, PGK, GAPDH)",
         "cofactors": "Reverse glycolytic steps 9→6",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -220,7 +248,9 @@
             "Ketosis during fasting",
             "Presents in neonatal period"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 6,
@@ -228,7 +258,9 @@
         "enzyme": "Phosphoglucose Isomerase",
         "cofactors": null,
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 7,
@@ -245,7 +277,9 @@
             "G6P shunted → ↑ Lactate, ↑ Uric acid, ↑ Triglycerides",
             "Hepatomegaly, doll-like face, massive liver"
           ]
-        }
+        },
+        "location": "Cytosol (ER)",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Free Glucose → bloodstream",
@@ -266,7 +300,9 @@
         "enzyme": "Hexokinase / Glucokinase",
         "cofactors": "ATP → ADP + Pᵢ",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 2,
@@ -274,7 +310,9 @@
         "enzyme": "Phosphoglucomutase",
         "cofactors": null,
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -282,7 +320,9 @@
         "enzyme": "UDP-Glucose Pyrophosphorylase (UDPG-PPase)",
         "cofactors": "UTP → PPᵢ",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-1 UTP"
       },
       {
         "stepNum": 4,
@@ -290,7 +330,9 @@
         "enzyme": "Glycogenin (self-glucosylating primer protein)",
         "cofactors": "Initiates glycogen chain on Tyr residue",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -306,7 +348,9 @@
             "Fasting hypoglycaemia (no glycogen reserve)",
             "Postprandial hyperglycaemia"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 6,
@@ -323,7 +367,9 @@
             "Triggers fibrotic reaction in liver",
             "Hepatosplenomegaly → cirrhosis → early death"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Branched Glycogen",
@@ -353,7 +399,9 @@
             "'Second wind' phenomenon",
             "Liver phosphorylase absent (Hers) → hepatomegaly, mild hypoglycaemia"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "+1 Pᵢ"
       },
       {
         "stepNum": 2,
@@ -370,7 +418,9 @@
             "Hepatomegaly, fasting hypoglycaemia",
             "Muscle weakness (myopathy)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -378,7 +428,9 @@
         "enzyme": "Phosphoglucomutase",
         "cofactors": "G1P → G6P",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -395,7 +447,9 @@
             "Massive hepatomegaly",
             "↑ Lactate, uric acid, triglycerides"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Free Glucose (liver) → bloodstream / G6P → Glycolysis (muscle)",
@@ -426,7 +480,9 @@
             "Wernicke: confusion, ataxia, ophthalmoplegia",
             "Korsakoff: memory loss, confabulation"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "0 (CO₂ released)"
       },
       {
         "stepNum": 2,
@@ -443,7 +499,9 @@
             "↑ Pyruvate accumulates → lactic acidosis",
             "Also inhibits α-KG dehydrogenase (TCA)"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 3,
@@ -460,7 +518,9 @@
             "Progressive neurological loss",
             "Leigh syndrome (subacute necrotising encephalopathy)"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "Acetyl-CoA → TCA Cycle",
@@ -482,7 +542,9 @@
         "enzyme": "Citrate Synthase",
         "cofactors": "H₂O; inhibited by ATP, NADH, Citrate",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -499,7 +561,9 @@
             "TCA cycle blocked at citrate",
             "Citrate accumulates → cell death"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -507,7 +571,9 @@
         "enzyme": "Isocitrate Dehydrogenase — Rate-Limiting Step",
         "cofactors": "NAD⁺ → NADH + H⁺; CO₂ released; Mg²⁺; activated by ADP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "+3 NADH"
       },
       {
         "stepNum": 4,
@@ -524,7 +590,9 @@
             "Also blocks PDH complex",
             "Succinyl-CoA (heme precursor) depleted"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 5,
@@ -532,7 +600,9 @@
         "enzyme": "Succinate Thiokinase (Succinyl-CoA Synthetase)",
         "cofactors": "GDP + Pᵢ → GTP (substrate-level phosphorylation)",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "+1 GTP (SLP)"
       },
       {
         "stepNum": 6,
@@ -549,7 +619,9 @@
             "FADH₂ not generated → less ATP",
             "Classic example of competitive inhibition"
           ]
-        }
+        },
+        "location": "Inner mitochondrial membrane",
+        "energy": "+1 FADH₂"
       },
       {
         "stepNum": 7,
@@ -557,7 +629,9 @@
         "enzyme": "Fumarase (Fumarate Hydratase)",
         "cofactors": "H₂O added",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 8,
@@ -565,7 +639,9 @@
         "enzyme": "Malate Dehydrogenase",
         "cofactors": "NAD⁺ → NADH + H⁺",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "+3 NADH"
       }
     ],
     "finalMolecule": "Oxaloacetate (regenerated → cycle repeats)",
@@ -599,7 +675,9 @@
             "Heinz bodies (oxidised Hb) in RBCs",
             "X-linked recessive; most common enzyme deficiency worldwide"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "+2 NADPH"
       },
       {
         "stepNum": 2,
@@ -607,7 +685,9 @@
         "enzyme": "Gluconolactonase",
         "cofactors": "H₂O",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -615,7 +695,9 @@
         "enzyme": "6-Phosphogluconate Dehydrogenase (6-PGD)",
         "cofactors": "NADP⁺ → NADPH + H⁺; CO₂ released",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "+1 NADPH + CO₂"
       },
       {
         "stepNum": 4,
@@ -623,7 +705,9 @@
         "enzyme": "Phosphopentose Isomerase / Phosphopentose Epimerase",
         "cofactors": "→ Ribose-5-P (isomerase) or Xylulose-5-P (epimerase)",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -641,7 +725,9 @@
             "NADPH production also impaired",
             "Neurological symptoms: ataxia, confusion"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Fructose-6-P + G3P (→ Glycolysis) + Ribose-5-P (→ Nucleotide synthesis)",
@@ -670,7 +756,9 @@
         "enzyme": "UDP-Glucose Pyrophosphorylase",
         "cofactors": "UTP → PPᵢ",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-1 UTP"
       },
       {
         "stepNum": 2,
@@ -678,7 +766,9 @@
         "enzyme": "UDPG-Dehydrogenase",
         "cofactors": "2 NAD⁺ → 2 NADH + H⁺",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (ER)",
+        "energy": "+2 NADH"
       },
       {
         "stepNum": 3,
@@ -686,7 +776,9 @@
         "enzyme": "UDP-Glucuronosyltransferase (conjugation)",
         "cofactors": "Conjugates bilirubin, steroids, drugs → water-soluble",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER membrane",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -694,7 +786,9 @@
         "enzyme": "Glucuronate Reductase",
         "cofactors": "NADPH → NADP⁺",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "+1 NADPH"
       },
       {
         "stepNum": 5,
@@ -711,7 +805,9 @@
             "Must obtain from diet (citrus, vegetables)",
             "Deficiency → weak collagen → bleeding gums, loose teeth"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 6,
@@ -728,7 +824,9 @@
             "Benign — no clinical symptoms",
             "Gives false positive in old urine glucose tests (Benedict's)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       }
     ],
     "finalMolecule": "D-Xylulose-5-Phosphate → HMP Shunt",
@@ -762,7 +860,9 @@
             "Also: Diabetic neuropathy (Schwann cells) and retinopathy",
             "Aldose reductase inhibitors used to prevent this"
           ]
-        }
+        },
+        "location": "Cytosol (lens, Schwann cells)",
+        "energy": "+1 NADPH consumed"
       },
       {
         "stepNum": 2,
@@ -779,7 +879,9 @@
             "Accumulates irreversibly → osmotic cataract",
             "Galactitol from galactose accumulates similarly (Galactosemia)"
           ]
-        }
+        },
+        "location": "Cytosol (absent in lens)",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Fructose (→ Fructose metabolism or used by sperm)",
@@ -812,7 +914,9 @@
             "Excreted freely in urine",
             "Completely benign — no symptoms"
           ]
-        }
+        },
+        "location": "Cytosol (liver)",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 2,
@@ -830,7 +934,9 @@
             "Liver damage, jaundice, vomiting after sucrose/fruit intake",
             "Treatment: strict elimination of fructose and sucrose"
           ]
-        }
+        },
+        "location": "Cytosol (liver)",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -838,7 +944,9 @@
         "enzyme": "Triose Kinase (for glyceraldehyde)",
         "cofactors": "ATP → ADP; converts glyceraldehyde → G3P",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 4,
@@ -846,7 +954,9 @@
         "enzyme": "Triose Phosphate Isomerase",
         "cofactors": "DHAP ⇌ G3P",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "2× Glyceraldehyde-3-Phosphate → Glycolysis",
@@ -880,7 +990,9 @@
             "Milder than classic galactosemia — no liver damage",
             "Treatment: galactose-free diet"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 2,
@@ -899,7 +1011,9 @@
             "E. coli sepsis risk in neonates",
             "Treatment: strict lactose and galactose-free diet"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -907,7 +1021,9 @@
         "enzyme": "UDP-Galactose-4-Epimerase",
         "cofactors": null,
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -915,7 +1031,9 @@
         "enzyme": "Releases Glucose-1-Phosphate (via further phosphorylysis)",
         "cofactors": "UDP recycled → pathway continues",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Glucose-1-Phosphate → Glycogenesis or Glycolysis",
@@ -943,7 +1061,9 @@
         "enzyme": "Glycolysis (anaerobic, in muscle)",
         "cofactors": "Produces 2 ATP net under anaerobic conditions",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (muscle)",
+        "energy": "+2 ATP (anaerobic)"
       },
       {
         "stepNum": 2,
@@ -960,7 +1080,9 @@
             "Lactate accumulation → metabolic acidosis",
             "Muscle cramps from local lactate accumulation"
           ]
-        }
+        },
+        "location": "Cytosol (muscle)",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 3,
@@ -968,7 +1090,9 @@
         "enzyme": "Lactate Dehydrogenase (LDH) — liver",
         "cofactors": "NAD⁺ → NADH + H⁺; reverse reaction in well-oxygenated liver",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (liver)",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 4,
@@ -976,7 +1100,9 @@
         "enzyme": "Gluconeogenesis (Pyruvate Carboxylase → PEPCK → … → G6Pase)",
         "cofactors": "Costs 6 ATP total",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol + Mitochondria (liver)",
+        "energy": "-6 ATP equiv"
       }
     ],
     "finalMolecule": "Glucose → released back to muscle",
@@ -997,7 +1123,9 @@
         "enzyme": "Aminotransferases (transfer NH₂ to pyruvate)",
         "cofactors": "PLP (Pyridoxal Phosphate / Vit B6)",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (muscle)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1005,7 +1133,9 @@
         "enzyme": "Alanine Transaminase (ALT/GPT)",
         "cofactors": "PLP; α-KG → Glutamate (amino group acceptor)",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (muscle)",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1013,7 +1143,9 @@
         "enzyme": "ALT (liver) — reverse transamination",
         "cofactors": "PLP; releases NH₃ → Urea cycle",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Blood",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1030,7 +1162,9 @@
             "↑ ALT in blood = marker of liver damage (reverse reaction)",
             "↑ Urea production during catabolism"
           ]
-        }
+        },
+        "location": "Cytosol + Mitochondria (liver)",
+        "energy": "-6 ATP equiv"
       }
     ],
     "finalMolecule": "Glucose → returned to muscle; NH₃ → Urea (liver)",
@@ -1060,7 +1194,9 @@
             "↑ 2,3-BPG → right shift of ODC → O₂ delivered to tissues",
             "Partially compensates for anaemia (adaptive)"
           ]
-        }
+        },
+        "location": "Cytosol (RBC)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1077,7 +1213,9 @@
             "↓ 2,3-BPG → left shift of ODC → Hb holds O₂ tightly",
             "O₂ not released to tissues effectively"
           ]
-        }
+        },
+        "location": "Cytosol (RBC)",
+        "energy": "0"
       }
     ],
     "finalMolecule": "3-Phosphoglycerate → re-enters Glycolysis at Step 8",
@@ -1109,7 +1247,9 @@
             "PPᵢ hydrolysed by pyrophosphatase → drives reaction forward",
             "Carnitine deficiency prevents downstream transport (see Carnitine Shuttle)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-2 ATP equiv"
       },
       {
         "stepNum": 2,
@@ -1127,7 +1267,9 @@
             "Exercise intolerance and muscle cramps",
             "Seen in preterm infants (cannot synthesise carnitine)"
           ]
-        }
+        },
+        "location": "Inner mitochondrial membrane",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1146,7 +1288,9 @@
             "Suberylglycine in urine (pathognomonic)",
             "Neonatal screening: ↑ C8 acylcarnitine"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "+1 FADH₂"
       },
       {
         "stepNum": 4,
@@ -1154,7 +1298,9 @@
         "enzyme": "Enoyl-CoA Hydratase",
         "cofactors": "H₂O added",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -1162,7 +1308,9 @@
         "enzyme": "L-β-Hydroxy Acyl-CoA Dehydrogenase",
         "cofactors": "NAD⁺ → NADH + H⁺",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 6,
@@ -1170,7 +1318,9 @@
         "enzyme": "Thiolase (β-Ketothiolase)",
         "cofactors": "CoA-SH; releases Acetyl-CoA + shortened Acyl-CoA",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Acetyl-CoA (→ TCA Cycle) + FADH₂ + NADH (→ ETC) — cycle repeats with shortened chain",
@@ -1192,7 +1342,9 @@
         "enzyme": "Citrate Synthase (for export via Citrate Shuttle)",
         "cofactors": "Condenses with OAA → Citrate for transport to cytosol",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix (export)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1200,7 +1352,9 @@
         "enzyme": "ATP-Citrate Lyase",
         "cofactors": "ATP + CoA → Acetyl-CoA + OAA regenerated",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 3,
@@ -1217,7 +1371,9 @@
             "Glucagon/epinephrine → phosphorylate and inactivate ACC",
             "Statins → ↑ AMPK → inactivate ACC → ↓ FA synthesis"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-1 ATP (biotin)"
       },
       {
         "stepNum": 4,
@@ -1225,7 +1381,9 @@
         "enzyme": "Fatty Acid Synthase (FAS) Complex — Condensation",
         "cofactors": "Ketoacyl synthase (CE); CO₂ released; chain attached to ACP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (FAS)",
+        "energy": "-2 NADPH + CO₂"
       },
       {
         "stepNum": 5,
@@ -1233,7 +1391,9 @@
         "enzyme": "Ketoacyl Reductase",
         "cofactors": "NADPH → NADP⁺",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (FAS)",
+        "energy": "-1 NADPH"
       },
       {
         "stepNum": 6,
@@ -1241,7 +1401,9 @@
         "enzyme": "Dehydratase",
         "cofactors": "H₂O removed",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (FAS)",
+        "energy": "0"
       },
       {
         "stepNum": 7,
@@ -1249,7 +1411,9 @@
         "enzyme": "Enoyl Reductase",
         "cofactors": "NADPH → NADP⁺; chain now 4C saturated",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (FAS)",
+        "energy": "-1 NADPH"
       },
       {
         "stepNum": 8,
@@ -1257,7 +1421,9 @@
         "enzyme": "Thioesterase (after 7 full cycles)",
         "cofactors": "H₂O; releases Palmitate (16C) from ACP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (FAS)",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Palmitate (16:0) → further elongation, desaturation, or esterification",
@@ -1281,7 +1447,9 @@
         "enzyme": "Successive β-Oxidation cycles (same as even-chain)",
         "cofactors": "FAD, NAD⁺, CoA; produces Acetyl-CoA until 5C remains",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1299,7 +1467,9 @@
             "Vomiting, lethargy in neonatal period",
             "Inhibits Urea cycle → secondary hyperammonaemia"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 3,
@@ -1307,7 +1477,9 @@
         "enzyme": "Racemase (Methylmalonyl-CoA Epimerase)",
         "cofactors": "Converts D → L isomer",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1326,7 +1498,9 @@
             "Hypoglycaemia, ketoacidosis, hyperammonaemia",
             "Treatment: Vit B12 supplementation if B12-responsive form"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "0 (B12-dependent)"
       }
     ],
     "finalMolecule": "Succinyl-CoA → TCA Cycle (gluconeogenic — can form oxaloacetate → glucose)",
@@ -1359,7 +1533,9 @@
             "Glycerol-3-P must be derived from DHAP (glycolysis)",
             "Hence FA re-esterification in adipose requires active glycolysis (glucose)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-1 ATP (liver only)"
       },
       {
         "stepNum": 2,
@@ -1367,7 +1543,9 @@
         "enzyme": "Glycerol-3-P Acyltransferase",
         "cofactors": "Fatty Acyl-CoA (C1 position)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER membrane",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1375,7 +1553,9 @@
         "enzyme": "1-Acyl Glycerol-3-P Acyltransferase",
         "cofactors": "2nd Fatty Acyl-CoA (C2 position)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER membrane",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1383,7 +1563,9 @@
         "enzyme": "Phosphatidate Phosphatase (Lipin)",
         "cofactors": "H₂O; releases Pᵢ",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -1400,7 +1582,9 @@
             "LPL or Apo C-II deficiency → TAG not cleared → lipaemia",
             "Eruptive xanthomas and pancreatitis risk at very high TAG levels"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Triacylglycerol (TAG) → stored in adipose or packaged into VLDL (liver)",
@@ -1434,7 +1618,9 @@
             "Glucagon:Insulin ratio markedly increased",
             "FFA also → VLDL synthesis → hypertriglyceridaemia"
           ]
-        }
+        },
+        "location": "Cytosol (adipocyte)",
+        "energy": "0 (cAMP-dependent)"
       },
       {
         "stepNum": 2,
@@ -1442,7 +1628,9 @@
         "enzyme": "Hormone-Sensitive Lipase (HSL) continues",
         "cofactors": null,
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (adipocyte)",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1450,7 +1638,9 @@
         "enzyme": "MAG Lipase (monoglyceride lipase)",
         "cofactors": null,
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (adipocyte)",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Glycerol (→ liver gluconeogenesis) + 3 Free Fatty Acids (→ β-oxidation)",
@@ -1475,7 +1665,9 @@
         "enzyme": "Thiolase",
         "cofactors": "Condensation reaction",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1483,7 +1675,9 @@
         "enzyme": "HMG-CoA Synthase — Rate-Limiting Step",
         "cofactors": "+ 1 more Acetyl-CoA; inhibited by Malonyl-CoA (level 2 regulation)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1491,7 +1685,9 @@
         "enzyme": "HMG-CoA Lyase",
         "cofactors": "Releases Acetyl-CoA; mitochondrial isoform",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1510,7 +1706,9 @@
             "Kussmaul breathing (hyperventilation to blow off CO₂)",
             "Ketonuria positive; Rothera's test positive"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 5,
@@ -1518,7 +1716,9 @@
         "enzyme": "Non-enzymatic decarboxylation of Acetoacetate",
         "cofactors": "Spontaneous; produces characteristic breath odour",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Acetoacetate + β-Hydroxybutyrate (exported to tissues) + Acetone (exhaled)",
@@ -1539,7 +1739,9 @@
         "enzyme": "β-Hydroxybutyrate Dehydrogenase",
         "cofactors": "NAD⁺ → NADH + H⁺; regenerates Acetoacetate",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondria",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 2,
@@ -1556,7 +1758,9 @@
             "If liver used its own ketones, the brain would be deprived",
             "RBCs also cannot use ketones (no mitochondria)"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1564,7 +1768,9 @@
         "enzyme": "Thiolase",
         "cofactors": "+ CoA-SH → 2 Acetyl-CoA",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondria",
+        "energy": "0"
       }
     ],
     "finalMolecule": "2 Acetyl-CoA → TCA Cycle for complete oxidation",
@@ -1585,7 +1791,9 @@
         "enzyme": "Acetoacetyl-CoA Thiolase",
         "cofactors": "Condensation",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1593,7 +1801,9 @@
         "enzyme": "HMG-CoA Synthase (cytosolic isoform)",
         "cofactors": "+ 1 Acetyl-CoA",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1610,7 +1820,9 @@
             "Tendon xanthomas, corneal arcus, premature CAD",
             "Statins competitively inhibit HMG-CoA reductase → ↓ endogenous cholesterol → ↑ LDL receptor expression"
           ]
-        }
+        },
+        "location": "ER membrane",
+        "energy": "-2 NADPH"
       },
       {
         "stepNum": 4,
@@ -1618,7 +1830,9 @@
         "enzyme": "Mevalonate Kinase, Phosphomevalonate Kinase, Decarboxylase",
         "cofactors": "3 ATP total; → Isopentenyl pyrophosphate (IPP, 5C)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol + ER",
+        "energy": "-3 ATP"
       },
       {
         "stepNum": 5,
@@ -1626,7 +1840,9 @@
         "enzyme": "Prenyltransferases (sequential condensations)",
         "cofactors": "6 × IPP → Squalene (30C) via Farnesyl-PP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-6 ATP (×6 IPP)"
       },
       {
         "stepNum": 6,
@@ -1634,7 +1850,9 @@
         "enzyme": "Squalene Epoxidase + Cyclase (Oxidosqualene cyclase)",
         "cofactors": "NADPH + O₂; forms steroid ring system",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER membrane",
+        "energy": "-NADPH + O₂"
       },
       {
         "stepNum": 7,
@@ -1642,7 +1860,9 @@
         "enzyme": "Multiple ER enzymes (demethylation, double-bond migrations)",
         "cofactors": "Several NADPH-dependent steps",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER membrane",
+        "energy": "-NADPH"
       }
     ],
     "finalMolecule": "Cholesterol (27C) → bile acids, steroid hormones, vitamin D, cell membranes",
@@ -1673,7 +1893,9 @@
             "If bile salts ↓ → cholesterol precipitates → gallstones",
             "Cholestyramine (bile acid resin) forces liver to convert more cholesterol → bile acids"
           ]
-        }
+        },
+        "location": "ER (liver)",
+        "energy": "0 (NADPH + O₂)"
       },
       {
         "stepNum": 2,
@@ -1681,7 +1903,9 @@
         "enzyme": "Multiple hydroxylation and side-chain cleavage enzymes",
         "cofactors": "Remove 3C as propionate; add hydroxyl groups",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER (liver)",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1689,7 +1913,9 @@
         "enzyme": "Bile Acid-CoA Synthetase + Conjugating Enzyme",
         "cofactors": "Conjugated with Glycine (glycocholate) or Taurine (taurocholate)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER + Golgi (liver)",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1697,7 +1923,9 @@
         "enzyme": "Gut bacteria (7-α-dehydroxylase) in colon",
         "cofactors": "Forms secondary bile acids: Deoxycholic acid + Lithocholic acid",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Bile canaliculi + Intestinal lumen",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Secondary Bile Acids → partially reabsorbed (enterohepatic circulation) → excreted in faeces",
@@ -1726,7 +1954,9 @@
             "Acanthocytosis (spiny RBCs)",
             "Retinitis pigmentosa, ataxia"
           ]
-        }
+        },
+        "location": "ER (liver)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1744,7 +1974,9 @@
             "Hepatomegaly, acute pancreatitis",
             "Type I hyperlipoproteinaemia"
           ]
-        }
+        },
+        "location": "Capillary endothelium (LPL)",
+        "energy": "0 (Apo C-II)"
       },
       {
         "stepNum": 3,
@@ -1752,7 +1984,9 @@
         "enzyme": "Hepatic Lipase (HL)",
         "cofactors": "Further TAG hydrolysis; cholesterol esters acquired from HDL via CETP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1770,7 +2004,9 @@
             "Premature atherosclerosis and MI",
             "Treatment: statins, bile acid resins, PCSK9 inhibitors"
           ]
-        }
+        },
+        "location": "Plasma (LDL receptor)",
+        "energy": "0 (LDL-R)"
       }
     ],
     "finalMolecule": "Cholesterol delivered to peripheral tissues and liver",
@@ -1799,7 +2035,9 @@
             "Orange-yellow tonsils (cholesterol ester deposits)",
             "Hepatosplenomegaly, peripheral neuropathy"
           ]
-        }
+        },
+        "location": "Plasma membrane (peripheral cells)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1816,7 +2054,9 @@
             "Cannot be excreted → accumulates in cornea, RBCs",
             "Corneal clouding, anaemia, progressive renal failure"
           ]
-        }
+        },
+        "location": "Plasma",
+        "energy": "0 (Apo A-I)"
       },
       {
         "stepNum": 3,
@@ -1824,7 +2064,9 @@
         "enzyme": "CETP (Cholesterol Ester Transfer Protein)",
         "cofactors": "Exchanges CE from HDL for TAG from VLDL/LDL → forms HDL-2",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma",
+        "energy": "0 (CETP)"
       },
       {
         "stepNum": 4,
@@ -1832,7 +2074,9 @@
         "enzyme": "SR-B1 (Scavenger Receptor B1) — hepatic uptake",
         "cofactors": "Selective lipid uptake; Apo A-I recycled",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma (liver)",
+        "energy": "0 (SR-B1)"
       }
     ],
     "finalMolecule": "Cholesterol → liver → bile acids → excreted in faeces",
@@ -1856,7 +2100,9 @@
         "enzyme": "ABC-A1 / ABC-G1 — cholesterol efflux from cells",
         "cofactors": "Free cholesterol transferred to HDL surface",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma membrane",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1864,7 +2110,9 @@
         "enzyme": "LCAT (activated by Apo A-I)",
         "cofactors": "Lecithin donates fatty acid to cholesterol → Cholesterol Ester (CE); CE moves to HDL core → spherical HDL-3",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1872,7 +2120,9 @@
         "enzyme": "CETP (Cholesterol Ester Transfer Protein)",
         "cofactors": "Transfers CE from HDL to VLDL/LDL in exchange for TAG → HDL-2 formed; relieves LCAT product inhibition",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1880,7 +2130,9 @@
         "enzyme": "Hepatic Lipase (HL)",
         "cofactors": "Hydrolyses surface TAG and phospholipids → HDL-3 reformed (cycle continues)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -1888,7 +2140,9 @@
         "enzyme": "SR-B1 Receptor (liver)",
         "cofactors": "Selective CE uptake; Apo A-I released back into circulation",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Plasma (liver)",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Cholesterol delivered to liver for bile synthesis; Apo A-I recycled to restart cycle",
@@ -1907,7 +2161,9 @@
         "enzyme": "Thiokinase (Acyl-CoA Synthetase)",
         "cofactors": "ATP → AMP + PPᵢ (2 high-energy bonds); CoA-SH",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-2 ATP equiv"
       },
       {
         "stepNum": 2,
@@ -1925,7 +2181,9 @@
             "Carnitine synthesised from Lysine + Methionine (requires Vit C)",
             "Preterm infants especially vulnerable"
           ]
-        }
+        },
+        "location": "Outer mitochondrial membrane",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1942,7 +2200,9 @@
             "Muscle cramps during fasting/exercise",
             "Non-ketotic hypoglycaemia"
           ]
-        }
+        },
+        "location": "Inner mitochondrial membrane",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -1950,7 +2210,9 @@
         "enzyme": "CAT-II (Carnitine Acyl Transferase II) — inner membrane, matrix side",
         "cofactors": "Regenerates Acyl-CoA + free carnitine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Long-Chain Acyl-CoA (in matrix) → β-Oxidation",
@@ -1974,7 +2236,9 @@
         "enzyme": "Citrate Synthase",
         "cofactors": "Condenses to form Citrate",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -1991,7 +2255,9 @@
             "Citrate also inhibits PFK-1 → slows glycolysis when energy sufficient",
             "Links mitochondrial energy status to cytosolic FA synthesis"
           ]
-        }
+        },
+        "location": "Inner mitochondrial membrane",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1999,7 +2265,9 @@
         "enzyme": "ATP-Citrate Lyase",
         "cofactors": "ATP + CoA → Acetyl-CoA + Oxaloacetate + ADP + Pᵢ",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 4,
@@ -2007,7 +2275,9 @@
         "enzyme": "Malate Dehydrogenase → NADPH generation via Malic Enzyme",
         "cofactors": "OAA → Malate (NADH); Malate → Pyruvate + NADPH (Malic Enzyme); Pyruvate re-enters mitochondria",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "+1 NADPH"
       }
     ],
     "finalMolecule": "Acetyl-CoA (cytosol) → De Novo FA Synthesis",
@@ -2041,7 +2311,9 @@
             "Treatment: Vitamin K injection",
             "Warfarin → anticoagulation by blocking this step"
           ]
-        }
+        },
+        "location": "ER (liver)",
+        "energy": "0 (γ-carboxylation)"
       },
       {
         "stepNum": 2,
@@ -2059,7 +2331,9 @@
             "Antidote: Vitamin K1 (phylloquinone) injection",
             "INR monitored for anticoagulation therapy"
           ]
-        }
+        },
+        "location": "ER (liver)",
+        "energy": "-NADH"
       },
       {
         "stepNum": 3,
@@ -2067,7 +2341,9 @@
         "enzyme": "Vitamin K Reductase (DT-diaphorase)",
         "cofactors": "NADH → completes the cycle; regenerates active Hydroquinone",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "ER (liver)",
+        "energy": "-NADH"
       }
     ],
     "finalMolecule": "Vitamin K Hydroquinone (recycled for next γ-carboxylation reaction)",
@@ -2095,7 +2371,9 @@
             "Overgrowth of gut bacteria",
             "Associated with pernicious anaemia (also affects IF secretion)"
           ]
-        }
+        },
+        "location": "Stomach lumen",
+        "energy": "0 (HCl)"
       },
       {
         "stepNum": 2,
@@ -2112,7 +2390,9 @@
             "Excess pepsin activity in ZE syndrome (gastrinoma)",
             "PPI drugs inhibit H⁺/K⁺-ATPase → ↓ HCl → ↓ pepsin activation"
           ]
-        }
+        },
+        "location": "Stomach lumen",
+        "energy": "0 (H₂O)"
       },
       {
         "stepNum": 3,
@@ -2129,7 +2409,9 @@
             "Severe abdominal pain, raised serum amylase/lipase",
             "Haemorrhagic pancreatitis can be fatal"
           ]
-        }
+        },
+        "location": "Duodenal lumen",
+        "energy": "0 (enterokinase)"
       },
       {
         "stepNum": 4,
@@ -2137,7 +2419,9 @@
         "enzyme": "Chymotrypsin + Elastase + Carboxypeptidases A & B",
         "cofactors": "All activated by trypsin; Carboxypeptidases require Zn²⁺",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Duodenal lumen",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -2145,7 +2429,9 @@
         "enzyme": "Aminopeptidases + Dipeptidases + Tripeptidases (intestinal brush border)",
         "cofactors": "Act on N-terminal end; final release of free amino acids",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Intestinal brush border",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Free Amino Acids → portal blood → liver",
@@ -2173,7 +2459,9 @@
             "Also elevated in cholestatic liver disease and drug induction",
             "GGT induction by alcohol: ↑ microsomal enzyme synthesis"
           ]
-        }
+        },
+        "location": "Plasma membrane (kidney, intestine)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -2181,7 +2469,9 @@
         "enzyme": "γ-Glutamyl Cyclotransferase",
         "cofactors": "Releases free amino acid into cell; forms 5-Oxoproline",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -2198,7 +2488,9 @@
             "Metabolic acidosis and haemolytic anaemia",
             "Raised urinary pyroglutamate (oxoproline)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-ATP"
       },
       {
         "stepNum": 4,
@@ -2206,7 +2498,9 @@
         "enzyme": "γ-Glutamyl-Cysteine Synthetase",
         "cofactors": "ATP; condensation with cysteine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-ATP"
       },
       {
         "stepNum": 5,
@@ -2214,7 +2508,9 @@
         "enzyme": "Glutathione Synthetase",
         "cofactors": "ATP; condensation with glycine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-ATP"
       }
     ],
     "finalMolecule": "Glutathione (regenerated) → cycle restarts",
@@ -2242,7 +2538,9 @@
             "De Ritis ratio: AST:ALT >2 suggests alcoholic hepatitis",
             "Normal ALT: 7–56 U/L"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 2,
@@ -2259,7 +2557,9 @@
             "Vitamin B6 deficiency → ↓ transaminase activity",
             "Exceptions: Lysine, Threonine, Proline — do NOT undergo transamination"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       }
     ],
     "finalMolecule": "Glutamate (collects amino groups) → Oxidative Deamination in liver mitochondria",
@@ -2292,7 +2592,9 @@
             "Encephalopathy, asterixis (flapping tremor)",
             "Liver failure → reduced GDH activity → NH₃ accumulation"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 2,
@@ -2300,7 +2602,9 @@
         "enzyme": "Minor: L-Amino Acid Oxidase",
         "cofactors": "FMN; produces H₂O₂ (minor pathway)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondrial matrix",
+        "energy": "0 (FMN)"
       }
     ],
     "finalMolecule": "NH₃ → Urea Cycle | α-KG → TCA Cycle",
@@ -2325,7 +2629,9 @@
         "enzyme": "Aminotransferases (Transamination Step)",
         "cofactors": "PLP; transfers NH₂ to α-KG → forms Glutamate",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (peripheral)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -2333,7 +2639,9 @@
         "enzyme": "Bloodstream transport",
         "cofactors": "Free glutamate or as glutamine; carried to hepatic portal circulation",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Blood",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -2350,7 +2658,9 @@
             "NH₃ inhibits α-KG dehydrogenase → TCA cycle blocked",
             "α-KG depleted → brain energy failure → coma"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix (liver)",
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "NH₃ → Urea Cycle | Carbon skeleton → TCA/Gluconeogenesis",
@@ -2379,7 +2689,9 @@
         "enzyme": "Serine Dehydratase",
         "cofactors": "PLP (Vit B6)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 2,
@@ -2387,7 +2699,9 @@
         "enzyme": "Threonine Dehydratase (for Threonine → α-Ketobutyrate + NH₃)",
         "cofactors": "PLP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 3,
@@ -2395,7 +2709,9 @@
         "enzyme": "Cysteine Desulfhydrase",
         "cofactors": "PLP; releases H₂S + NH₃",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 4,
@@ -2412,7 +2728,9 @@
             "Urocanic acid absent in skin (no UV protection)",
             "Positive ferric chloride test in urine (grey-green)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Pyruvate / α-Ketobutyrate + NH₃ → Urea Cycle",
@@ -2445,7 +2763,9 @@
             "Vomiting, lethargy, encephalopathy, coma",
             "No secondary orotic aciduria (distinguishes from OTC deficiency)"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "-2 ATP"
       },
       {
         "stepNum": 2,
@@ -2463,7 +2783,9 @@
             "Protein aversion, episodic encephalopathy",
             "Treatment: low-protein diet + Na benzoate/phenylacetate"
           ]
-        }
+        },
+        "location": "Mitochondrial matrix",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -2480,7 +2802,9 @@
             "Hyperammonaemia, vomiting, liver failure",
             "Citrullinuria (1–2 g/day)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-2 ATP (→ AMP + PPᵢ)"
       },
       {
         "stepNum": 4,
@@ -2497,7 +2821,9 @@
             "Argininosuccinate in blood and urine",
             "Hyperammonaemia + hepatomegaly"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -2514,7 +2840,9 @@
             "Milder hyperammonaemia (partial cycle activity)",
             "Symptoms appear later in childhood (unlike other UCDs)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Urea → excreted in urine | Ornithine → recycled into mitochondria",
@@ -2538,7 +2866,9 @@
         "enzyme": "Serine Hydroxymethyl Transferase",
         "cofactors": "PLP; transfers methylene group → Glycine + N⁵,N¹⁰-Methylene-THFA",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 2,
@@ -2546,7 +2876,9 @@
         "enzyme": "THFA Reductase (Methylenetetrahydrofolate reductase — MTHFR)",
         "cofactors": "FADH₂; irreversible reduction → N⁵-Methyl-THFA (metabolic sink)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-FADH₂ (consumed)"
       },
       {
         "stepNum": 3,
@@ -2565,7 +2897,9 @@
             "↓ dTMP synthesis → Megaloblastic anaemia",
             "↓ Methionine → ↑ Homocysteine → thrombosis risk"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (B12)"
       },
       {
         "stepNum": 4,
@@ -2582,7 +2916,9 @@
             "↑ Urinary FIGLU after histidine load = diagnostic test for folate deficiency",
             "Methotrexate blocks DHF→THFA → starves cells of one-carbon units"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -2599,7 +2935,9 @@
             "Cancer cells (high proliferation) most affected",
             "Methotrexate blocks DHF reductase → same net effect"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "dTMP (DNA), Purines (DNA/RNA), Methionine (transmethylation)",
@@ -2618,7 +2956,9 @@
         "enzyme": "Serine Decarboxylase",
         "cofactors": "PLP; decarboxylation → Ethanolamine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 2,
@@ -2626,7 +2966,9 @@
         "enzyme": "Methyl Transferase (×3)",
         "cofactors": "3 × SAM (each costs 1 ATP); methylation → Choline",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-3 SAM"
       },
       {
         "stepNum": 3,
@@ -2634,7 +2976,9 @@
         "enzyme": "Choline Dehydrogenase",
         "cofactors": "NAD⁺; oxidation → Betaine (Trimethyl Glycine)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -2651,7 +2995,9 @@
             "Reduces homocysteine levels even without B12",
             "Dimethylglycine donates 2 more one-carbon units to THFA pool"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -2668,7 +3014,9 @@
             "Severe neonatal seizures and mental retardation",
             "Primary Hyperoxaluria: glyoxalate (glycine metabolite) → oxalate → kidney stones"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "+1 NAD⁺"
       }
     ],
     "finalMolecule": "Glycine → THFA one-carbon pool replenished",
@@ -2687,7 +3035,9 @@
         "enzyme": "Component A: Glycine Decarboxylase",
         "cofactors": "PLP; decarboxylates glycine; CO₂ released",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondria",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 2,
@@ -2695,7 +3045,9 @@
         "enzyme": "Component B: Amino Methyl Transferase",
         "cofactors": "Lipoamide prosthetic group; transfers methylamine to THFA",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondria",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -2703,7 +3055,9 @@
         "enzyme": "Component C: Methylene THFA Synthase",
         "cofactors": "THFA acceptor; NH₃ released",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondria",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -2721,7 +3075,9 @@
             "No ketosis (distinguishes from organic acidaemias)",
             "Treated partially with sodium benzoate (scavenges glycine)"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "NH₃ + CO₂ + NADH + N⁵,N¹⁰-Methylene-THFA",
@@ -2740,7 +3096,9 @@
         "enzyme": "Amidotransferase (Transamidinase)",
         "cofactors": "Transfers amidino group from Arg to Gly; releases Ornithine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondria (kidney)",
+        "energy": "0 (Arg → Orn)"
       },
       {
         "stepNum": 2,
@@ -2748,7 +3106,9 @@
         "enzyme": "Methyl Transferase (liver cytoplasm)",
         "cofactors": "SAM (methyl donor) → SAH; methylation forms Creatine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (liver)",
+        "energy": "-1 SAM"
       },
       {
         "stepNum": 3,
@@ -2765,7 +3125,9 @@
             "Troponin I more sensitive/specific now used",
             "Muscular dystrophies: ↑↑ CK-MM (skeletal muscle isoform)"
           ]
-        }
+        },
+        "location": "Cytosol (muscle)",
+        "energy": "0 (CK)"
       },
       {
         "stepNum": 4,
@@ -2783,7 +3145,9 @@
             "↑ Serum creatinine → ↓ GFR → kidney disease",
             "Normal serum creatinine: 0.6–1.2 mg/dL"
           ]
-        }
+        },
+        "location": "Spontaneous",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Creatinine → excreted in urine (GFR marker)",
@@ -2811,7 +3175,9 @@
             "SAH is a potent product inhibitor of methyltransferases",
             "SAH → Homocysteine + Adenosine (by adenosine homocysteinase)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-ATP → SAM"
       },
       {
         "stepNum": 2,
@@ -2819,7 +3185,9 @@
         "enzyme": "Various Methyl Transferases",
         "cofactors": "SAM donates methyl group to acceptor molecules",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -2827,7 +3195,9 @@
         "enzyme": "Adenosine Homocysteinase",
         "cofactors": "Hydrolysis → Homocysteine + Adenosine",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -2845,7 +3215,9 @@
             "High DVT/PE risk (Hcy damages endothelium)",
             "Treatment: B6 (if responsive), B12, folate, low-Met diet"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 5,
@@ -2862,7 +3234,9 @@
             "Responds to high-dose Vitamin B6 (PLP)",
             "Homocysteine can be remethylated back to Methionine via B12/Folate"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       }
     ],
     "finalMolecule": "Cysteine (non-essential AA) + Homoserine",
@@ -2891,7 +3265,9 @@
             "Newborn Guthrie test screening (blood Phe >20 mg/dl)",
             "Treatment: low-Phe diet + Tyr supplementation (lifelong)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (BH4 + NADPH)"
       },
       {
         "stepNum": 2,
@@ -2909,7 +3285,9 @@
             "Palmoplantar keratosis (hyperkeratosis of palms and soles)",
             "Treatment: low Phe + Tyr diet"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 3,
@@ -2926,7 +3304,9 @@
             "Responds to Ascorbate supplementation",
             "Nitisinone (NTBC) inhibits this enzyme therapeutically in Type I"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (Vit C)"
       },
       {
         "stepNum": 4,
@@ -2944,7 +3324,9 @@
             "Ochronosis: black pigment deposits in cartilage, ear, sclerae",
             "Severe debilitating arthritis in later life"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -2952,7 +3334,9 @@
         "enzyme": "Maleylacetoacetate Isomerase (requires Glutathione)",
         "cofactors": "GSH as cofactor",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (GSH)"
       },
       {
         "stepNum": 6,
@@ -2970,7 +3354,9 @@
             "Cabbage-like odour; hepatocellular carcinoma risk",
             "Treatment: Nitisinone (NTBC) + low Phe/Tyr diet"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Fumarate (→ TCA/Gluconeogenesis) + Acetoacetate (→ Ketolysis)",
@@ -2998,7 +3384,9 @@
         "enzyme": "Branched-Chain Aminotransferase (BCAT)",
         "cofactors": "PLP; transamination → α-keto acid derivatives",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 2,
@@ -3017,7 +3405,9 @@
             "Treatment: BCAA-restricted diet; high-dose Thiamine (if responsive)",
             "Positive DNPH test (yellow precipitate)"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "0 (TPP + NAD⁺)"
       },
       {
         "stepNum": 3,
@@ -3034,7 +3424,9 @@
             "Metabolic acidosis (ketoacidosis), hypoglycaemia",
             "Positive DNPH test; elevated C5 acylcarnitine on MS/MS"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "+1 FADH₂"
       },
       {
         "stepNum": 4,
@@ -3042,7 +3434,9 @@
         "enzyme": "Subsequent mitochondrial oxidation steps",
         "cofactors": "Val → Succinyl-CoA (via Propionyl-CoA + B12); Leu → Acetoacetate + Acetyl-CoA; Ile → Propionyl-CoA + Acetyl-CoA",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Mitochondria",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Succinyl-CoA (Val) + Acetyl-CoA/Acetoacetate (Leu) + Acetyl-CoA/Propionyl-CoA (Ile)",
@@ -3072,7 +3466,9 @@
             "Pellagra symptoms: dermatitis, diarrhoea, dementia",
             "5-HIAA elevated in urine (serotonin metabolite) → diagnostic"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (Heme)"
       },
       {
         "stepNum": 2,
@@ -3080,7 +3476,9 @@
         "enzyme": "Formamidase",
         "cofactors": "Hydrolysis → Kynurenine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -3088,7 +3486,9 @@
         "enzyme": "Kynurenine Hydroxylase",
         "cofactors": "NADPH + O₂ → 3-Hydroxykynurenine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "+1 NADPH"
       },
       {
         "stepNum": 4,
@@ -3106,7 +3506,9 @@
             "Isoniazid (INH) is B6 antagonist → induces B6 deficiency → pellagra",
             "Hartnup disease: Trp not absorbed → pellagra-like rash"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 5,
@@ -3114,7 +3516,9 @@
         "enzyme": "3-Hydroxyanthranilate Oxidase → Quinolinate Phosphoribosyl Transferase (QPRTase)",
         "cofactors": "PRPP; Quinolinate → Nicotinic acid mononucleotide → NAD⁺",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "NAD⁺ / NADP⁺ (Niacin-containing coenzymes) + Alanine",
@@ -3143,7 +3547,9 @@
             "Respond dramatically to IV Pyridoxine (B6)",
             "Pyridoxine-dependent epilepsy: genetic variant needs pharmacological B6 doses"
           ]
-        }
+        },
+        "location": "Cytosol (brain)",
+        "energy": "0 (PLP, CO₂)"
       },
       {
         "stepNum": 2,
@@ -3160,7 +3566,9 @@
             "Used in epilepsy, bipolar disorder, migraine prophylaxis",
             "GABA-T also inhibited by Vigabatrin (γ-vinyl GABA) — irreversible"
           ]
-        }
+        },
+        "location": "Mitochondria (brain)",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 3,
@@ -3177,7 +3585,9 @@
             "Developmental delay, hypotonia, ataxia, seizures",
             "Hydroxybutyric aciduria on urine organic acids"
           ]
-        }
+        },
+        "location": "Mitochondria (brain)",
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "Succinate → TCA Cycle",
@@ -3211,7 +3621,9 @@
             "L-DOPA + Carbidopa (DDC inhibitor) → restores dopamine",
             "Carbidopa prevents peripheral DOPA decarboxylation"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (BH4)"
       },
       {
         "stepNum": 2,
@@ -3219,7 +3631,9 @@
         "enzyme": "DOPA Decarboxylase (Aromatic Amino Acid Decarboxylase)",
         "cofactors": "PLP (Vit B6); irreversible decarboxylation → Dopamine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 3,
@@ -3237,7 +3651,9 @@
             "↑ Urinary VMA (vanillylmandelic acid) — catecholamine metabolite",
             "VMA formed by MAO + COMT degradation"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (Vit C + Cu²⁺)"
       },
       {
         "stepNum": 4,
@@ -3245,7 +3661,9 @@
         "enzyme": "N-Methyl Transferase (PNMT)",
         "cofactors": "SAM (methyl donor); SAH released; only in adrenal medulla (induced by cortisol from adrenal cortex)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (SAM)"
       }
     ],
     "finalMolecule": "Epinephrine (Adrenaline) → secreted into blood",
@@ -3273,7 +3691,9 @@
             "Depression: ↓ serotonin → SSRIs inhibit reuptake → ↑ synaptic 5-HT",
             "Hartnup: ↓ Trp absorption → ↓ serotonin + ↓ niacin"
           ]
-        }
+        },
+        "location": "Cytosol (brain, platelets)",
+        "energy": "0 (BH4)"
       },
       {
         "stepNum": 2,
@@ -3281,7 +3701,9 @@
         "enzyme": "Aromatic Amino Acid Decarboxylase (AADC)",
         "cofactors": "PLP; decarboxylation → Serotonin (5-HT)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 3,
@@ -3289,7 +3711,9 @@
         "enzyme": "Acetylase (Arylalkylamine N-acetyltransferase — AANAT)",
         "cofactors": "Acetyl-CoA; rhythm driven by darkness/melatonin pathway",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol (pineal)",
+        "energy": "0 (Acetyl-CoA)"
       },
       {
         "stepNum": 4,
@@ -3306,7 +3730,9 @@
             "Exogenous melatonin used for jet lag, insomnia",
             "Serotonin catabolism: MAO → 5-HIAA → excreted in urine"
           ]
-        }
+        },
+        "location": "Cytosol (pineal)",
+        "energy": "0 (SAM)"
       }
     ],
     "finalMolecule": "Melatonin (pineal) + Serotonin (brain/gut/platelets)",
@@ -3335,7 +3761,9 @@
             "Autosomal recessive; multiple genetic subtypes",
             "Menke's disease: Cu²⁺ transport defect → secondary tyrosinase failure"
           ]
-        }
+        },
+        "location": "Melanosome",
+        "energy": "0 (Cu²⁺ + O₂)"
       },
       {
         "stepNum": 2,
@@ -3343,7 +3771,9 @@
         "enzyme": "Tyrosinase (second oxidation)",
         "cofactors": "Cu²⁺; oxidation → DOPAquinone",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Melanosome",
+        "energy": "0 (Cu²⁺)"
       },
       {
         "stepNum": 3,
@@ -3360,7 +3790,9 @@
             "Associated with thyroid disease, T1DM, pernicious anaemia",
             "MSH (Melanocyte Stimulating Hormone) normally stimulates melanin dispersal"
           ]
-        }
+        },
+        "location": "Melanosome",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -3368,7 +3800,9 @@
         "enzyme": "Spontaneous (Pheomelanin pathway)",
         "cofactors": "→ Cysteinyl-DOPA → Red/Yellow Pheomelanin",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Melanosome",
+        "energy": "0 (Cys)"
       }
     ],
     "finalMolecule": "Eumelanin (black/brown) or Pheomelanin (red/yellow) → UV protection",
@@ -3387,7 +3821,9 @@
         "enzyme": "E1 (Ubiquitin-Activating Enzyme)",
         "cofactors": "ATP; forms high-energy thioester bond with ubiquitin",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-ATP"
       },
       {
         "stepNum": 2,
@@ -3395,7 +3831,9 @@
         "enzyme": "E2 (Ubiquitin-Conjugating Enzyme)",
         "cofactors": "Transfers ubiquitin from E1 to E2",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -3412,7 +3850,9 @@
             "VHL E3 ligase defect → HIF-α not degraded → ↑ VEGF → angiomas",
             "Cachexia in cancer/AIDS: inflammatory cytokines activate ubiquitin pathway → muscle wasting"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -3429,7 +3869,9 @@
             "Alzheimer's: amyloid-β and tau resist degradation",
             "Bortezomib: proteasome inhibitor used in multiple myeloma treatment"
           ]
-        }
+        },
+        "location": "Cytosol (26S proteasome)",
+        "energy": "-ATP"
       }
     ],
     "finalMolecule": "Oligopeptides (5–6 AA) → further hydrolysis to free amino acids",
@@ -3457,7 +3899,9 @@
             "Iron accumulates in mitochondria → ring sideroblasts on marrow biopsy",
             "Sideroblastic anaemia; responds to Pyridoxine (B6) supplementation"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "0 (PLP)"
       },
       {
         "stepNum": 2,
@@ -3476,7 +3920,9 @@
             "Burton's line (blue lead deposits on gums)",
             "Treatment: EDTA chelation therapy"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -3495,7 +3941,9 @@
             "Avoid: barbiturates, alcohol, OCP, sulfonamides → all induce ALA synthase → worsen AIP",
             "Treatment: haematin infusion + high glucose (suppress ALA synthase)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -3513,7 +3961,9 @@
             "Associated with alcohol, hepatitis C, iron overload",
             "Treatment: phlebotomy + low-dose chloroquine"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -3529,7 +3979,9 @@
             "Both acute attacks (like AIP) AND photosensitivity",
             "Coproporphyrins excreted in urine and faeces"
           ]
-        }
+        },
+        "location": "Cytosol (→ mitochondria)",
+        "energy": "0"
       },
       {
         "stepNum": 6,
@@ -3545,7 +3997,9 @@
             "Acute attacks + photosensitivity (South African type)",
             "Characteristic faecal porphyrins"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "0"
       },
       {
         "stepNum": 7,
@@ -3562,7 +4016,9 @@
             "Liver damage from protoporphyrin accumulation",
             "Treatment: sun avoidance; beta-carotene"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "0 (Fe²⁺)"
       }
     ],
     "finalMolecule": "Heme (Fe²⁺-Protoporphyrin IX) → Hb, myoglobin, cytochromes, catalase",
@@ -3583,7 +4039,9 @@
         "enzyme": "RE Cell Phagocytosis",
         "cofactors": "Globin → amino acids (recycled); heme ring liberated",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "RE cells (spleen, liver)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -3601,7 +4059,9 @@
             "Normal conjugated bilirubin",
             "Causes: G6PD deficiency, sickle cell, thalassaemia, ABO incompatibility"
           ]
-        }
+        },
+        "location": "Microsomes (RE cells)",
+        "energy": "+1 NADPH + CO₂"
       },
       {
         "stepNum": 3,
@@ -3618,7 +4078,9 @@
             "↑ in porphyrias and megaloblastic anaemia",
             "Identified by rapid excretion of radiolabelled glycine (within 10 days)"
           ]
-        }
+        },
+        "location": "Cytosol (RE cells)",
+        "energy": "+1 NADPH"
       }
     ],
     "finalMolecule": "Unconjugated Bilirubin (lipophilic) → bound to albumin → transported to liver",
@@ -3649,7 +4111,9 @@
             "Aspirin, sulfonamides, penicillin → displace bilirubin from albumin",
             "Phototherapy: isomerises UCB to water-soluble isomers for excretion"
           ]
-        }
+        },
+        "location": "Plasma (blood)",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -3657,7 +4121,9 @@
         "enzyme": "Hepatocyte Uptake (active transport)",
         "cofactors": "Carrier-mediated; intracellular binding to Ligandin (Y protein) and Z protein",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Hepatocyte (sinusoidal)",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -3676,7 +4142,9 @@
             "Neonatal jaundice: transient low UGT → physiological jaundice (d1–d7)",
             "Phenobarbitone induces UGT → used to treat Gilbert's and Crigler-Najjar Type II"
           ]
-        }
+        },
+        "location": "Hepatocyte (ER)",
+        "energy": "0 (UDP-GlcUA)"
       },
       {
         "stepNum": 4,
@@ -3694,7 +4162,9 @@
             "Rotor: OATP 1B1/1B3 mutation → hepatic re-uptake of conjugated BR fails",
             "Both: conjugated hyperbilirubinaemia, benign prognosis"
           ]
-        }
+        },
+        "location": "Hepatocyte (canalicular)",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -3713,7 +4183,9 @@
             "Urine urobilinogen = absent",
             "Acholic stools + dark urine = obstructive jaundice"
           ]
-        }
+        },
+        "location": "Intestinal lumen",
+        "energy": "0"
       }
     ],
     "finalMolecule": "Stercobilin (brown stool colour) + Urobilin (yellow urine colour) — 20% UBG reabsorbed (enterohepatic circulation)",
@@ -3742,7 +4214,9 @@
             "Podagra: acute arthritis of big toe",
             "Treatment: Allopurinol (xanthine oxidase suicide inhibitor)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-ATP → AMP"
       },
       {
         "stepNum": 2,
@@ -3750,7 +4224,9 @@
         "enzyme": "Glutamine-PRPP Amidotransferase — Committed Rate-Limiting Step",
         "cofactors": "Glutamine + H₂O; releases PPᵢ; forms 5-phosphoribosylamine; inhibited by AMP, GMP, IMP (feedback)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -3758,7 +4234,9 @@
         "enzyme": "Sequential Ring-Building Enzymes (Steps 3–10)",
         "cofactors": "Gly, Formate (N10-formyl-THFA), Gln, CO₂, Asp; multiple ATP consumed",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-multiple ATP"
       },
       {
         "stepNum": 4,
@@ -3766,7 +4244,9 @@
         "enzyme": "Adenylosuccinate Synthetase (for AMP) / IMP Dehydrogenase (for GMP)",
         "cofactors": "GTP for AMP branch; NAD⁺ + ATP for GMP branch; cross-regulation (AMP synthesis needs GTP; GMP synthesis needs ATP)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       }
     ],
     "finalMolecule": "AMP / GMP → ADP/GDP → ATP/GTP",
@@ -3796,7 +4276,9 @@
             "Diagnosed by orange-red crystals in urine",
             "Treatment: Allopurinol (prevents oxidation of adenine)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PRPP)"
       },
       {
         "stepNum": 2,
@@ -3816,7 +4298,9 @@
             "Mental retardation, choreoathetosis, spasticity",
             "Treatment: Allopurinol (uric acid) + behavioural management"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PRPP)"
       },
       {
         "stepNum": 3,
@@ -3824,7 +4308,9 @@
         "enzyme": "HGPRTase",
         "cofactors": "PRPP → GMP + PPᵢ",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (PRPP)"
       }
     ],
     "finalMolecule": "IMP / AMP / GMP → re-enter nucleotide pool",
@@ -3843,7 +4329,9 @@
         "enzyme": "AMP Deaminase",
         "cofactors": "Releases NH₃; forms IMP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -3851,7 +4339,9 @@
         "enzyme": "5'-Nucleotidase",
         "cofactors": "Dephosphorylation → Inosine + Guanosine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -3868,7 +4358,9 @@
             "Combined immunodeficiency but B cells relatively spared",
             "Recurrent infections, autoimmune phenomena"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -3876,7 +4368,9 @@
         "enzyme": "Guanase (Guanine Deaminase)",
         "cofactors": "NH₃ released; Guanine → Xanthine",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -3894,7 +4388,9 @@
             "Xanthinuria: XO deficiency → ↓ Uric acid → xanthine stones",
             "Rasburicase: recombinant uricase (tumour lysis syndrome treatment)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (XO: FAD + Mo)"
       }
     ],
     "finalMolecule": "Uric Acid → excreted in urine (350–600 mg/day)",
@@ -3923,7 +4419,9 @@
             "Key distinguishing feature of OTC deficiency from CPS-I deficiency",
             "No orotic aciduria in CPS-I deficiency"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "-2 ATP (Gln)"
       },
       {
         "stepNum": 2,
@@ -3931,7 +4429,9 @@
         "enzyme": "Aspartate Transcarbamoylase (ATC)",
         "cofactors": "Condensation; inhibited by CTP (feedback)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -3939,7 +4439,9 @@
         "enzyme": "Dihydroorotase (DHOase)",
         "cofactors": "Ring closure; forms Dihydroorotic acid",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -3955,7 +4457,9 @@
             "Used as immunosuppressant in rheumatoid arthritis",
             "Teriflunomide (active metabolite) used in multiple sclerosis"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "+1 NADH"
       },
       {
         "stepNum": 5,
@@ -3974,7 +4478,9 @@
             "Retarded growth",
             "Treatment: Uridine supplementation (bypasses block + restores UTP feedback)"
           ]
-        }
+        },
+        "location": "Cytosol",
+        "energy": "0 (PRPP)"
       },
       {
         "stepNum": 6,
@@ -3982,7 +4488,9 @@
         "enzyme": "OMP Decarboxylase (OMPDC)",
         "cofactors": "CO₂ released; forms UMP — first pyrimidine nucleotide",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 7,
@@ -3990,7 +4498,9 @@
         "enzyme": "UMP Kinase + Nucleoside Diphosphate Kinase",
         "cofactors": "2 ATP consumed",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "-2 ATP"
       },
       {
         "stepNum": 8,
@@ -3998,7 +4508,9 @@
         "enzyme": "CTP Synthetase",
         "cofactors": "Glutamine + ATP; amination → CTP",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0 (Gln + ATP)"
       }
     ],
     "finalMolecule": "UMP / CTP → dUMP → dTMP (via Thymidylate Synthase)",
@@ -4019,7 +4531,9 @@
         "enzyme": "Cytosine Deaminase",
         "cofactors": "NH₃ released; → Uracil",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 2,
@@ -4038,7 +4552,9 @@
             "Pseudouridine (from tRNA) not further degraded → excreted unchanged in urine (marker of DPD deficiency)",
             "No clinical consequences — detected on urine metabolomics"
           ]
-        }
+        },
+        "location": "Mitochondria",
+        "energy": "+2 NADPH"
       },
       {
         "stepNum": 3,
@@ -4046,7 +4562,9 @@
         "enzyme": "Dihydropyrimidinase",
         "cofactors": "Ring opening → β-Ureidopropionate",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -4054,7 +4572,9 @@
         "enzyme": "β-Ureidopropionase",
         "cofactors": "Cleavage → β-Alanine + CO₂ + NH₃",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 5,
@@ -4062,7 +4582,9 @@
         "enzyme": "Same enzyme cascade as Uracil",
         "cofactors": "NADPH; products: β-Aminoisobutyrate + CO₂ + NH₃",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "+2 NADPH"
       }
     ],
     "finalMolecule": "β-Alanine (→ Carnosine / CoA) + β-Amino Isobutyrate (→ excreted in urine)",
@@ -4091,7 +4613,9 @@
             "Lymphocytes cannot proliferate (rapidly dividing cells most affected)",
             "SCID: absent T and B cells → fatal infections in infancy without treatment"
           ]
-        }
+        },
+        "location": "Nucleus + Cytosol",
+        "energy": "+NADPH (Thioredoxin)"
       },
       {
         "stepNum": 2,
@@ -4099,7 +4623,9 @@
         "enzyme": "Nucleoside Diphosphate Kinase (NDPK)",
         "cofactors": "ATP → phosphorylation → dNTPs (dATP, dGTP, dCTP, dUTP)",
         "reversible": true,
-        "disorder": null
+        "disorder": null,
+        "location": "Nucleus + Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -4107,7 +4633,9 @@
         "enzyme": "dUTPase",
         "cofactors": "Rapidly converts dUTP → dUMP + PPᵢ (prevents dU incorporation into DNA)",
         "reversible": false,
-        "disorder": null
+        "disorder": null,
+        "location": "Nucleus + Cytosol",
+        "energy": "0"
       },
       {
         "stepNum": 4,
@@ -4125,7 +4653,9 @@
             "Cancer cells (rapidly dividing) most susceptible",
             "Leucovorin (folinic acid) used as rescue to replenish THFA"
           ]
-        }
+        },
+        "location": "Nucleus + Cytosol",
+        "energy": "+Methylene-THFA → DHF"
       }
     ],
     "finalMolecule": "dTMP / dATP / dGTP / dCTP → DNA synthesis",

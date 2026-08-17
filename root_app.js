@@ -652,7 +652,15 @@ function PathwayViewer({
         alignItems: 'center',
         gap: 4
       }
-    }, "\u26A0\uFE0F ", step.disorder.name, " ", branchOpen ? '\u25B2' : '\u25BC')), !isLast && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    }, "\u26A0\uFE0F ", step.disorder.name, " ", branchOpen ? '\u25B2' : '\u25BC')), !isLast && /*#__PURE__*/React.createElement(React.Fragment, null, step.reversible && /*#__PURE__*/React.createElement("div", {
+      style: {
+        width: 0,
+        height: 0,
+        borderLeft: '6px solid transparent',
+        borderRight: '6px solid transparent',
+        borderBottom: `8px solid ${arrowCol}`
+      }
+    }), /*#__PURE__*/React.createElement("div", {
       style: {
         width: 2,
         height: 10,
