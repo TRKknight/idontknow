@@ -573,7 +573,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Mitochondrial matrix",
-        "energy": "+3 NADH"
+        "energy": "+1 NADH + CO₂"
       },
       {
         "stepNum": 4,
@@ -592,7 +592,7 @@
           ]
         },
         "location": "Mitochondrial matrix",
-        "energy": "+1 NADH"
+        "energy": "+1 NADH + CO₂"
       },
       {
         "stepNum": 5,
@@ -641,7 +641,7 @@
         "reversible": true,
         "disorder": null,
         "location": "Mitochondrial matrix",
-        "energy": "+3 NADH"
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "Oxaloacetate (regenerated → cycle repeats)",
