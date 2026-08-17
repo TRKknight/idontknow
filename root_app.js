@@ -392,6 +392,101 @@ const BIO_CATS = [{
   icon: "\uD83E\uDE78"
 }];
 
+
+// ── Energetics Helpers ──────────────────────────────────────────────────
+function parseEnergy(str) {
+  if (!str || str === '0') return { atp: 0, gtp: 0, nadh: 0, fadh2: 0, nadph: 0 };
+  var r = { atp: 0, gtp: 0, nadh: 0, fadh2: 0, nadph: 0 };
+  var parts = str.split(',').map(function(s) { return s.trim(); });
+  for (var i = 0; i < parts.length; i++) {
+    var p = parts[i];
+    var neg = p.charAt(0) === '-';
+    var abs = neg ? p.slice(1) : p;
+    var m = abs.match(/([\d.]+)?\s*(ATP|GTP|NADH|FADH\u2082|NADPH)/i);
+    if (m) {
+      var amt = (parseFloat(m[1]) || 1) * (neg ? -1 : 1);
+      var key = m[2].toLowerCase().replace(/\u2082/, '2');
+      if (key in r) r[key] += amt;
+    }
+  }
+  return r;
+}
+function energyColor(parsed) {
+  var vals = [parsed.atp, parsed.gtp, parsed.nadh, parsed.fadh2];
+  var hasPos = vals.some(function(v) { return v > 0; });
+  var hasNeg = vals.some(function(v) { return v < 0; });
+  if (hasPos && hasNeg) return 'mixed';
+  if (hasNeg) return 'consume';
+  if (hasPos) return 'produce';
+  return 'neutral';
+}
+function energyBg(type, dark) {
+  if (type === 'consume') return dark ? 'rgba(192,57,43,0.18)' : 'rgba(231,76,60,0.12)';
+  if (type === 'produce') return dark ? 'rgba(39,174,96,0.18)' : 'rgba(46,204,113,0.12)';
+  if (type === 'mixed') return dark ? 'rgba(241,196,15,0.18)' : 'rgba(241,196,15,0.12)';
+  return 'transparent';
+}
+function getMultiplier(pwId, stepNum, inputKey) {
+  var m = ENERG_MULT[pwId];
+  if (!m) return 1;
+  var km = m[inputKey] || m['default'] || {};
+  return km[stepNum] || 1;
+}
+function calcStepE(step, pwId, inputKey) {
+  var p = parseEnergy(step.energy);
+  var mult = getMultiplier(pwId, step.stepNum, inputKey);
+  return { atp: p.atp * mult, gtp: p.gtp * mult, nadh: p.nadh * mult, fadh2: p.fadh2 * mult, nadph: p.nadph * mult, mult: mult };
+}
+function sumPathE(steps, pwId, inputKey) {
+  var tot = { atp: 0, gtp: 0, nadh: 0, fadh2: 0, nadph: 0 };
+  for (var i = 0; i < steps.length; i++) {
+    var e = calcStepE(steps[i], pwId, inputKey);
+    for (var k in tot) tot[k] += e[k] || 0;
+  }
+  return tot;
+}
+
+var MOL_LBL = { atp: 'ATP', gtp: 'GTP', nadh: 'NADH', fadh2: 'FADH\u2082', nadph: 'NADPH' };
+var MOL_CLR = { atp: '#e74c3c', gtp: '#e67e22', nadh: '#3498db', fadh2: '#9b59b6', nadph: '#1abc9c' };
+var ETC_YIELD = { nadh: 2.5, fadh2: 1.5 };
+
+var ENERG_MULT = {
+  1: { 'default': {1:1,2:1,3:1,4:1,5:1,6:1,7:1,8:1,9:1,10:1} },
+  2: { 'default': {1:1,2:1,3:1,4:1,5:1,6:1,7:1}, pyruvate: {1:0.5,2:0.5,3:0.5,4:0.5,5:0.5,6:0.5,7:0.5} },
+  5: { 'default': {1:2,2:2,3:2} },
+  6: { 'default': {1:1,2:1,3:1,4:1,5:1,6:1,7:1,8:1}, glucose: {1:2,2:2,3:2,4:2,5:2,6:2,7:2,8:2} },
+  12: { 'default': {1:1,2:1,3:1,4:1} },
+  13: { 'default': {1:1,2:1,3:1,4:1} },
+  15: { 'default': {1:1,2:1,3:7,4:7,5:7,6:7}, stearate: {1:1,2:1,3:8,4:8,5:8,6:8}, myristate: {1:1,2:1,3:6,4:6,5:6,6:6} },
+  16: { 'default': {1:1,2:1,3:1,4:7,5:7,6:7,7:7,8:1} },
+  36: { 'default': {1:1,2:1,3:1,4:1,5:1} },
+};
+
+var INPUT_OPTIONS = {
+  1: [{ key: 'default', label: '1 Glucose' }],
+  2: [{ key: 'default', label: '2 Pyruvate \u2192 1 Glucose' }, { key: 'pyruvate', label: '1 Pyruvate' }],
+  6: [{ key: 'default', label: '1 Acetyl-CoA (1 turn)' }, { key: 'glucose', label: '1 Glucose (\u00D72 turns)' }],
+  15: [{ key: 'default', label: '1 Palmitate (16C)' }, { key: 'stearate', label: '1 Stearate (18C)' }, { key: 'myristate', label: '1 Myristate (14C)' }],
+};
+
+var PATHWAY_CHAINS = [
+  { name: 'Glucose \u2192 CO\u2082 + H\u2082O (aerobic)', ids: [1,5,6], icon: '\uD83D\uDD25', mults: {1:1, 5:2, 6:2} },
+  { name: 'Pyruvate \u2192 Urea', ids: [34,36], icon: '\uD83E\uDDEC', mults: {34:1, 36:1} },
+];
+
+var BIOSYNTHESIS = [
+  { name: '1 Palmitate (16C)', atp: 7, nadph: 14, icon: '\uD83E\uDDD1\u200D\uD83C\uDF73', pathways: [15] },
+  { name: '1 Glucose (from 2 Pyruvate)', atp: 4, gtp: 2, nadh: 2, icon: '\uD83C\uDF6C', pathways: [2] },
+  { name: '1 Urea (from 2 NH\u2083)', atp: 4, icon: '\uD83E\uDDEC', pathways: [36] },
+  { name: '1 Cholesterol', atp: 18, nadph: 16, icon: '\uD83E\uDDC0', pathways: [22] },
+];
+
+var CATABOLISM = [
+  { name: '1 Palmitate (16C)', nadh: 31, fadh2: 15, gtp: 8, atp: -2, atpEquiv: 106, icon: '\uD83D\uDD25', pathways: [15] },
+  { name: '1 Glucose (aerobic)', nadh: 10, fadh2: 2, atp: 2, gtp: 2, atpEquiv: 32, icon: '\u26A1', pathways: [1] },
+];
+
+
 // \u2500\u2500 Pathway Step Viewer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function PathwayViewer({
   pathway,
@@ -405,6 +500,9 @@ function PathwayViewer({
   const [revealed, setRevealed] = useState(pathway.jumpToStep || 1);
   const [showAll, setShowAll] = useState(false);
   const [expandedBranch, setExpandedBranch] = useState(null);
+  const [energetics, setEnergetics] = useState(false);
+  const [inputKey, setInputKey] = useState("default");
+  const [energHover, setEnergHover] = useState(null);
   const bottomRef = useRef(null);
   useEffect(() => {
     if (pathway.jumpToStep) setRevealed(pathway.jumpToStep);
@@ -499,7 +597,18 @@ function PathwayViewer({
       fontSize: 11,
       color: '#888'
     }
-  }, Math.min(visible, total), "/", total, " steps"), darkToggle), /*#__PURE__*/React.createElement("div", {
+  }, Math.min(visible, total), "/", total, " steps"), React.createElement("button", {
+      onClick: function() { setEnergetics(function(e){return !e;}); },
+      style: {
+        padding: "5px 14px", borderRadius: 20,
+        border: energetics ? "1.5px solid #f39c12" : "1px solid " + (dark ? "#444" : "#bbb"),
+        background: energetics ? (dark ? "#2a1f00" : "#fff8e1") : "transparent",
+        color: energetics ? "#f39c12" : (dark ? "#888" : "#aaa"),
+        fontSize: 12, cursor: "pointer", fontFamily: "Georgia,serif",
+        fontWeight: energetics ? "600" : "normal",
+        transition: "all 0.2s", outline: "none"
+      }
+    }, "\u26A1 Energetics"), darkToggle), /*#__PURE__*/React.createElement("div", {
     style: {
       height: 3,
       background: '#333',
@@ -528,7 +637,129 @@ function PathwayViewer({
       padding: '20px 16px 140px',
       overflowY: 'auto'
     }
-  }, steps.slice(0, visible).map((step, idx) => {
+  },
+      /* Energetics Summary Panel */
+      energetics && (() => {
+        var tot = sumPathE(steps, pathway.id, inputKey);
+        var totalE = tot.atp + tot.gtp + tot.nadh * 2.5 + tot.fadh2 * 1.5;
+        var _pnl = { margin: '0 12px 12px', padding: '14px 16px', background: dark ? '#141418' : '#ffffff', border: '1px solid ' + (dark ? '#2a2a30' : '#e2e2e6'), borderRadius: 12, fontFamily: 'Georgia,serif' };
+        var _hdr = { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 };
+        var _btn = function(active, clr) { return { fontSize: 11, padding: '4px 12px', borderRadius: 20, border: '1px solid ' + (active ? clr : (dark ? '#444' : '#bbb')), background: active ? clr + '18' : 'transparent', color: active ? clr : (dark ? '#777' : '#999'), cursor: 'pointer', fontFamily: 'Georgia,serif', transition: 'all 0.2s', outline: 'none' }; };
+        var _tblH = { display: 'grid', gridTemplateColumns: '100px 1fr 1fr 1fr', fontSize: 11, borderBottom: '2px solid ' + (dark ? '#2a2a30' : '#e8e8ec') };
+        var _thC = { padding: '6px 10px', fontWeight: '600', color: dark ? '#888' : '#999', textTransform: 'uppercase', letterSpacing: 0.5, fontSize: 10, textAlign: 'center', borderRight: '1px solid ' + (dark ? '#1a1a1e' : '#f0f0f4') };
+        return React.createElement('div', { style: _pnl },
+          React.createElement('div', { style: _hdr },
+            React.createElement('div', { style: { fontWeight: 'bold', color: '#e8c56a', fontSize: 14 } }, '\u26A1 Energetics Summary'),
+            React.createElement('div', { style: { display: 'flex', gap: 6, alignItems: 'center' } },
+              INPUT_OPTIONS[pathway.id] && INPUT_OPTIONS[pathway.id].length > 1 && React.createElement('select', {
+                value: inputKey,
+                onChange: function(ev) { setInputKey(ev.target.value); },
+                style: { fontSize: 11, padding: '4px 8px', borderRadius: 20, border: '1px solid ' + (dark ? '#444' : '#ccc'), background: dark ? '#1a1a1e' : '#f5f5f7', color: dark ? '#ccc' : '#333', outline: 'none', fontFamily: 'Georgia,serif', cursor: 'pointer' }
+              }, INPUT_OPTIONS[pathway.id].map(function(opt) { return React.createElement('option', { key: opt.key, value: opt.key }, opt.label); })),
+            )
+          ),
+          React.createElement('div', { style: _tblH },
+            React.createElement('div', { style: _thC }, 'Molecule'),
+            React.createElement('div', { style: _thC }, 'Consumed'),
+            React.createElement('div', { style: _thC }, 'Produced'),
+            React.createElement('div', { style: Object.assign({}, _thC, { borderRight: 'none' }) }, 'Net')
+          ),
+          ['atp','gtp','nadh','fadh2'].map(function(m, ri) {
+            var consumed = tot[m] < 0 ? tot[m] : 0;
+            var produced = tot[m] > 0 ? tot[m] : 0;
+            var netRaw = tot[m];
+            var etcMult = (m === 'nadh') ? ETC_YIELD.nadh : (m === 'fadh2') ? ETC_YIELD.fadh2 : 1;
+            var net = netRaw * etcMult;
+            var netColor = net < 0 ? '#c0392b' : net > 0 ? '#27ae60' : (dark ? '#555' : '#bbb');
+            var rowBg = ri % 2 === 0 ? 'transparent' : (dark ? 'rgba(255,255,255,0.015)' : 'rgba(0,0,0,0.015)');
+            var _td = { padding: '7px 10px', textAlign: 'center', borderRight: '1px solid ' + (dark ? '#1a1a1e' : '#f0f0f4'), background: rowBg, fontSize: 12, fontVariantNumeric: 'tabular-nums' };
+            var netLabel = (m === 'nadh' || m === 'fadh2') ? (net !== 0 ? (net > 0 ? '+' : '') + (Math.round(net * 10) / 10) + ' ATP' : '0') : (net !== 0 ? (net > 0 ? '+' : '') + net : '0');
+            return React.createElement('div', { key: m, style: { display: 'grid', gridTemplateColumns: '100px 1fr 1fr 1fr', borderBottom: '1px solid ' + (dark ? '#1a1a1e' : '#f4f4f8') } },
+              React.createElement('div', { style: Object.assign({}, _td, { textAlign: 'left', fontWeight: '600', color: dark ? '#aaa' : '#555' }) }, MOL_LBL[m]),
+              React.createElement('div', { style: Object.assign({}, _td, { color: consumed !== 0 ? '#e74c3c' : (dark ? '#444' : '#ccc'), fontWeight: consumed !== 0 ? '600' : 'normal' }) }, consumed !== 0 ? consumed : '\u2014'),
+              React.createElement('div', { style: Object.assign({}, _td, { color: produced !== 0 ? '#27ae60' : (dark ? '#444' : '#ccc'), fontWeight: produced !== 0 ? '600' : 'normal' }) }, produced !== 0 ? '+' + produced : '\u2014'),
+              React.createElement('div', { style: Object.assign({}, _td, { borderRight: 'none', color: netColor, fontWeight: '700', fontSize: 12 }) }, netLabel)
+            );
+          }),
+          React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '100px 1fr 1fr 1fr', background: dark ? '#1a1a0a' : '#fffdf5', borderRadius: '0 0 12px 12px', borderTop: '2px solid ' + (dark ? '#2a2a10' : '#f0e8c0') } },
+            React.createElement('div', { style: { padding: '8px 10px', fontWeight: '700', textAlign: 'left', color: '#e8c56a', fontSize: 12 } }, 'Total'),
+            React.createElement('div', { style: { padding: '8px 10px', textAlign: 'center', color: dark ? '#444' : '#ccc' } }, '\u2014'),
+            React.createElement('div', { style: { padding: '8px 10px', textAlign: 'center', color: dark ? '#444' : '#ccc' } }, '\u2014'),
+            React.createElement('div', { style: { padding: '8px 10px', textAlign: 'center', color: totalE >= 0 ? '#27ae60' : '#c0392b', fontWeight: '700', fontSize: 13 } }, (totalE > 0 ? '+' : '') + (Math.round(totalE * 10) / 10) + ' ATP')
+          )
+        );
+      })(),
+
+      /* Cross-Pathway Chains */
+      energetics && PATHWAY_CHAINS.some(function(ch) { return ch.ids.indexOf(pathway.id) !== -1; }) && (() => {
+        var _pnl = { margin: '0 12px 12px', padding: '14px 16px', background: dark ? '#141418' : '#ffffff', border: '1px solid ' + (dark ? '#2a2a30' : '#e2e2e6'), borderRadius: 12, fontFamily: 'Georgia,serif' };
+        return React.createElement('div', { style: _pnl },
+          React.createElement('div', { style: { fontWeight: 'bold', marginBottom: 10, color: '#f39c12', fontSize: 14 } }, '\uD83D\uDD17 Cross-Pathway Chains'),
+          PATHWAY_CHAINS.filter(function(ch) { return ch.ids.indexOf(pathway.id) !== -1; }).map(function(ch, ci) {
+            var chainTot = { atp: 0, gtp: 0, nadh: 0, fadh2: 0, nadph: 0 };
+            ch.ids.forEach(function(id) {
+              var pw = allPathways.find(function(p) { return p.id === id; });
+              if (pw) {
+                var cm = ch.mults && ch.mults[id] ? ch.mults[id] : 1;
+                (pw.steps || []).forEach(function(s) {
+                  var e = parseEnergy(s.energy);
+                  for (var k in chainTot) chainTot[k] += (e[k] || 0) * cm;
+                });
+              }
+            });
+            var chainTotal = chainTot.atp + chainTot.gtp + chainTot.nadh * 2.5 + chainTot.fadh2 * 1.5;
+            return React.createElement('div', { key: ci, style: { padding: '8px 0', borderTop: ci > 0 ? '1px solid ' + (dark ? '#1a1a1e' : '#f0f0f4') : 'none' } },
+              React.createElement('div', { style: { color: dark ? '#ddd' : '#333', fontWeight: '600', marginBottom: 3 } }, ch.icon + ' ' + ch.name),
+              React.createElement('div', { style: { color: dark ? '#666' : '#aaa', fontSize: 11, marginBottom: 4 } }, ch.ids.map(function(id) {
+                var pw = allPathways.find(function(p) { return p.id === id; });
+                return pw ? pw.name : id;
+              }).join(' \u2192 ')),
+              React.createElement('div', { style: { color: chainTotal >= 0 ? '#27ae60' : '#c0392b', fontWeight: '700', fontSize: 13 } }, 'Chain net: ' + (chainTotal > 0 ? '+' : '') + (Math.round(chainTotal * 10) / 10) + ' ATP equiv')
+            );
+          })
+        );
+      })(),
+
+      /* Biosynthesis Cost Panel */
+      energetics && BIOSYNTHESIS.some(function(b) { return b.pathways.indexOf(pathway.id) !== -1; }) && (() => {
+        var _pnl = { margin: '0 12px 12px', padding: '14px 16px', background: dark ? '#141418' : '#ffffff', border: '1px solid ' + (dark ? '#2a2a30' : '#e2e2e6'), borderRadius: 12, fontFamily: 'Georgia,serif' };
+        return React.createElement('div', { style: _pnl },
+          React.createElement('div', { style: { fontWeight: 'bold', marginBottom: 10, color: '#3498db', fontSize: 14 } }, '\uD83C\uDFD7\uFE0F Biosynthesis Cost'),
+          BIOSYNTHESIS.filter(function(b) { return b.pathways.indexOf(pathway.id) !== -1; }).map(function(b, bi) {
+            var parts = [];
+            if (b.atp) parts.push(b.atp + ' ATP');
+            if (b.gtp) parts.push(b.gtp + ' GTP');
+            if (b.nadph) parts.push(b.nadph + ' NADPH');
+            if (b.nadh) parts.push(b.nadh + ' NADH');
+            return React.createElement('div', { key: bi, style: { padding: '6px 0', borderTop: bi > 0 ? '1px solid ' + (dark ? '#1a1a1e' : '#f0f0f4') : 'none' } },
+              React.createElement('div', { style: { color: dark ? '#ddd' : '#333', fontWeight: '600', marginBottom: 2 } }, b.icon + ' ' + b.name),
+              React.createElement('div', { style: { color: '#c0392b', fontWeight: '600', fontSize: 12 } }, parts.join(' + '))
+            );
+          })
+        );
+      })(),
+
+      /* Catabolism Yield Panel */
+      energetics && CATABOLISM.some(function(cy) { return cy.pathways.indexOf(pathway.id) !== -1; }) && (() => {
+        var _pnl = { margin: '0 12px 12px', padding: '14px 16px', background: dark ? '#141418' : '#ffffff', border: '1px solid ' + (dark ? '#2a2a30' : '#e2e2e6'), borderRadius: 12, fontFamily: 'Georgia,serif' };
+        return React.createElement('div', { style: _pnl },
+          React.createElement('div', { style: { fontWeight: 'bold', marginBottom: 10, color: '#e74c3c', fontSize: 14 } }, '\uD83D\uDD25 Catabolism Yield'),
+          CATABOLISM.filter(function(cy) { return cy.pathways.indexOf(pathway.id) !== -1; }).map(function(cy, ci) {
+            var parts = [];
+            if (cy.atp && cy.atp !== 0) parts.push((cy.atp > 0 ? '' : cy.atp) + ' ATP');
+            if (cy.gtp) parts.push(cy.gtp + ' GTP');
+            if (cy.nadh) parts.push(cy.nadh + ' NADH');
+            if (cy.fadh2) parts.push(cy.fadh2 + ' FADH\u2082');
+            return React.createElement('div', { key: ci, style: { padding: '6px 0', borderTop: ci > 0 ? '1px solid ' + (dark ? '#1a1a1e' : '#f0f0f4') : 'none' } },
+              React.createElement('div', { style: { color: dark ? '#ddd' : '#333', fontWeight: '600', marginBottom: 2 } }, cy.icon + ' ' + cy.name),
+              React.createElement('div', { style: { color: '#27ae60', fontWeight: '700', fontSize: 13 } }, '+' + cy.atpEquiv + ' ATP equiv'),
+              React.createElement('div', { style: { color: dark ? '#666' : '#aaa', fontSize: 11, marginTop: 1 } }, parts.join(' + '))
+            );
+          })
+        );
+      })(),
+
+  steps.slice(0, visible).map((step, idx) => {
     const isLast = idx === steps.length - 1;
     const branchKey = `${pathway.id}-${idx}`;
     const branchOpen = expandedBranch === branchKey;
@@ -581,13 +812,18 @@ function PathwayViewer({
       }
     }), /*#__PURE__*/React.createElement("div", {
       style: {
-        background: dark ? '#252010' : '#f5f0e8',
-        border: `1px solid ${dark ? '#3a3010' : '#e0d8cc'}`,
+        background: (energetics ? energyBg(energyColor(parseEnergy(step.energy)), dark) : (dark ? '#252010' : '#f5f0e8')),
+        border: energetics ? ('2px solid ' + (energyColor(parseEnergy(step.energy)) === 'consume' ? '#c0392b' : energyColor(parseEnergy(step.energy)) === 'produce' ? '#27ae60' : energyColor(parseEnergy(step.energy)) === 'mixed' ? '#f39c12' : (dark ? '#3a3010' : '#e0d8cc'))) : (`1px solid ${dark ? '#3a3010' : '#e0d8cc'}`),
         borderRadius: 8,
         padding: '7px 12px',
         margin: '2px 0',
         width: '100%',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        transition: 'background 0.3s, border 0.3s',
+        position: 'relative',
+        cursor: energetics && step.energy && step.energy !== '0' ? 'help' : 'default',
+        onMouseEnter: energetics ? function() { setEnergHover(idx); } : undefined,
+        onMouseLeave: energetics ? function() { setEnergHover(null); } : undefined
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
@@ -802,7 +1038,40 @@ function PathwayViewer({
     }, meta?.icon, " ", np.name, " \u2192 Step ", entryStep);
   })))), /*#__PURE__*/React.createElement("div", {
     ref: bottomRef
-  })), /*#__PURE__*/React.createElement("div", {
+  })),
+  /* Floating Energetics Tooltip */
+      energetics && energHover !== null && steps[energHover] && (() => {
+        var step = steps[energHover];
+        var p = parseEnergy(step.energy);
+        var mult = getMultiplier(pathway.id, step.stepNum, inputKey);
+        var tot = sumPathE(steps, pathway.id, inputKey);
+        var lines = [];
+        if (step.energy && step.energy !== '0') {
+          lines.push('\u26A1 Raw: ' + step.energy);
+          if (mult > 1) lines.push('\uD83D\uDD22 Multiplier: \u00D7' + mult);
+          ['atp','gtp','nadh','fadh2','nadph'].forEach(function(m) {
+            var v = (p[m] || 0) * mult;
+            if (v !== 0) lines.push((v > 0 ? '+' : '') + v + ' ' + MOL_LBL[m]);
+          });
+        }
+        var totalE = tot.atp + tot.gtp + tot.nadh * 2.5 + tot.fadh2 * 1.5;
+        lines.push('Pathway net: ' + (totalE > 0 ? '+' : '') + (Math.round(totalE * 10) / 10) + ' ATP equiv');
+        return React.createElement('div', {
+          style: {
+            position: 'fixed', bottom: 80, left: 16, right: 16, maxWidth: 420, margin: '0 auto',
+            background: dark ? '#1a1a22' : '#fff', border: '1px solid ' + (dark ? '#2a2a30' : '#e2e2e6'),
+            borderRadius: 12, padding: '12px 16px', fontSize: 12, zIndex: 100,
+            fontFamily: 'Georgia,serif', boxShadow: '0 8px 32px rgba(0,0,0,0.2)'
+          }
+        },
+          React.createElement('div', { style: { fontWeight: 'bold', marginBottom: 4, color: '#f39c12' } },
+            'Step ' + step.stepNum + ': ' + step.enzyme),
+          lines.map(function(l, i) {
+            return React.createElement('div', { key: i, style: { color: DK.sub(dark), lineHeight: 1.6 } }, l);
+          })
+        );
+      })(),
+  /*#__PURE__*/React.createElement("div", {
     style: {
       position: 'fixed',
       bottom: 0,
