@@ -193,7 +193,7 @@
           ]
         },
         "location": "Mitochondrial matrix",
-        "energy": "-6 ATP equiv"
+        "energy": "-2 ATP"
       },
       {
         "stepNum": 2,
@@ -231,7 +231,7 @@
         "reversible": true,
         "disorder": null,
         "location": "Cytosol",
-        "energy": "0"
+        "energy": "-2 ATP, -2 NADH"
       },
       {
         "stepNum": 5,
@@ -501,7 +501,7 @@
           ]
         },
         "location": "Mitochondrial matrix",
-        "energy": "+1 NADH"
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -677,7 +677,7 @@
           ]
         },
         "location": "Cytosol",
-        "energy": "+2 NADPH"
+        "energy": "+1 NADPH"
       },
       {
         "stepNum": 2,
@@ -788,7 +788,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Cytosol",
-        "energy": "+1 NADPH"
+        "energy": "-1 NADPH"
       },
       {
         "stepNum": 5,
@@ -826,7 +826,7 @@
           ]
         },
         "location": "Cytosol",
-        "energy": "-1 ATP"
+        "energy": "0"
       }
     ],
     "finalMolecule": "D-Xylulose-5-Phosphate → HMP Shunt",
@@ -881,7 +881,7 @@
           ]
         },
         "location": "Cytosol (absent in lens)",
-        "energy": "0"
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "Fructose (→ Fructose metabolism or used by sperm)",
@@ -1082,7 +1082,7 @@
           ]
         },
         "location": "Cytosol (muscle)",
-        "energy": "+1 NADH"
+        "energy": "-1 NADH"
       },
       {
         "stepNum": 3,
@@ -1144,7 +1144,7 @@
         "cofactors": "PLP; releases NH₃ → Urea cycle",
         "reversible": true,
         "disorder": null,
-        "location": "Blood",
+        "location": "Cytosol (liver)",
         "energy": "0"
       },
       {
@@ -1383,7 +1383,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Cytosol (FAS)",
-        "energy": "-2 NADPH + CO₂"
+        "energy": "0 (CO₂ released)"
       },
       {
         "stepNum": 5,
@@ -1708,7 +1708,7 @@
           ]
         },
         "location": "Mitochondrial matrix",
-        "energy": "+1 NADH"
+        "energy": "-1 NADH"
       },
       {
         "stepNum": 5,
@@ -2878,7 +2878,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Cytosol",
-        "energy": "-FADH₂ (consumed)"
+        "energy": "-1 NADH"
       },
       {
         "stepNum": 3,
@@ -2937,7 +2937,7 @@
           ]
         },
         "location": "Cytosol",
-        "energy": "+1 NADH"
+        "energy": "0"
       }
     ],
     "finalMolecule": "dTMP (DNA), Purines (DNA/RNA), Methionine (transmethylation)",
@@ -3016,7 +3016,7 @@
           ]
         },
         "location": "Cytosol",
-        "energy": "+1 NAD⁺"
+        "energy": "+1 NADH"
       }
     ],
     "finalMolecule": "Glycine → THFA one-carbon pool replenished",
@@ -3127,7 +3127,7 @@
           ]
         },
         "location": "Cytosol (muscle)",
-        "energy": "0 (CK)"
+        "energy": "-1 ATP"
       },
       {
         "stepNum": 4,
@@ -3407,7 +3407,7 @@
           ]
         },
         "location": "Mitochondria",
-        "energy": "0 (TPP + NAD⁺)"
+        "energy": "+1 NADH + CO₂"
       },
       {
         "stepNum": 3,
@@ -3488,7 +3488,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Cytosol",
-        "energy": "+1 NADPH"
+        "energy": "-1 NADPH"
       },
       {
         "stepNum": 4,
@@ -4061,7 +4061,7 @@
           ]
         },
         "location": "Microsomes (RE cells)",
-        "energy": "+1 NADPH + CO₂"
+        "energy": "-3 NADPH + CO"
       },
       {
         "stepNum": 3,
@@ -4080,7 +4080,7 @@
           ]
         },
         "location": "Cytosol (RE cells)",
-        "energy": "+1 NADPH"
+        "energy": "-1 NADPH"
       }
     ],
     "finalMolecule": "Unconjugated Bilirubin (lipophilic) → bound to albumin → transported to liver",
@@ -4510,7 +4510,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Cytosol",
-        "energy": "0 (Gln + ATP)"
+        "energy": "-1 ATP"
       }
     ],
     "finalMolecule": "UMP / CTP → dUMP → dTMP (via Thymidylate Synthase)",
@@ -4554,7 +4554,7 @@
           ]
         },
         "location": "Mitochondria",
-        "energy": "+2 NADPH"
+        "energy": "-2 NADPH"
       },
       {
         "stepNum": 3,
@@ -4584,7 +4584,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Cytosol",
-        "energy": "+2 NADPH"
+        "energy": "-2 NADPH"
       }
     ],
     "finalMolecule": "β-Alanine (→ Carnosine / CoA) + β-Amino Isobutyrate (→ excreted in urine)",
