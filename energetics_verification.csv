@@ -1,0 +1,266 @@
+Pathway ID,Pathway Name,Step Num,Enzyme,Location,Energy,Reversible
+1,"Glycolysis",1,"Hexokinase / Glucokinase","Cytosol","-1 ATP",false
+1,"Glycolysis",2,"Phosphoglucose Isomerase","Cytosol","0",true
+1,"Glycolysis",3,"Phosphofructokinase-1 (PFK-1) — Rate-Limiting Step","Cytosol","-1 ATP",false
+1,"Glycolysis",4,"Aldolase A (muscle) / Aldolase B (liver)","Cytosol","0",true
+1,"Glycolysis",5,"Triose Phosphate Isomerase","Cytosol","0",true
+1,"Glycolysis",6,"G3P Dehydrogenase","Cytosol","+2 NADH",true
+1,"Glycolysis",7,"Phosphoglycerate Kinase (PGK)","Cytosol","+2 ATP (SLP)",true
+1,"Glycolysis",8,"Phosphoglycerate Mutase","Cytosol","0",true
+1,"Glycolysis",9,"Enolase","Cytosol","0",true
+1,"Glycolysis",10,"Pyruvate Kinase","Cytosol","+2 ATP (SLP)",false
+2,"Gluconeogenesis",1,"Pyruvate Carboxylase","Mitochondrial matrix","-2 ATP",false
+2,"Gluconeogenesis",2,"Malate-Aspartate Shuttle (export mechanism)","Inner mitochondrial membrane","0",true
+2,"Gluconeogenesis",3,"PEPCK (Phosphoenolpyruvate Carboxykinase)","Cytosol","-2 GTP",false
+2,"Gluconeogenesis",4,"Reversible Glycolytic Enzymes (Enolase, Mutase, PGK, GAPDH)","Cytosol","-2 ATP, -2 NADH",true
+2,"Gluconeogenesis",5,"Fructose-1,6-Bisphosphatase","Cytosol","0",false
+2,"Gluconeogenesis",6,"Phosphoglucose Isomerase","Cytosol","0",true
+2,"Gluconeogenesis",7,"Glucose-6-Phosphatase (liver and kidney only)","Cytosol (ER)","0",false
+3,"Glycogenesis",1,"Hexokinase / Glucokinase","Cytosol","-1 ATP",false
+3,"Glycogenesis",2,"Phosphoglucomutase","Cytosol","0",true
+3,"Glycogenesis",3,"UDP-Glucose Pyrophosphorylase (UDPG-PPase)","Cytosol","-1 UTP",true
+3,"Glycogenesis",4,"Glycogenin (self-glucosylating primer protein)","Cytosol","0",false
+3,"Glycogenesis",5,"Glycogen Synthase — Key Regulatory Enzyme","Cytosol","0",false
+3,"Glycogenesis",6,"Branching Enzyme (Amylo-1,4→1,6-transglucosidase)","Cytosol","0",false
+4,"Glycogenolysis",1,"Glycogen Phosphorylase — Key Regulatory Enzyme","Cytosol","+1 Pᵢ",false
+4,"Glycogenolysis",2,"Debranching Enzyme (bifunctional: Transferase + α₁→6 Glucosidase)","Cytosol","0",false
+4,"Glycogenolysis",3,"Phosphoglucomutase","Cytosol","0",true
+4,"Glycogenolysis",4,"Glucose-6-Phosphatase (liver and kidney ONLY)","Cytosol","0",false
+5,"Pyruvate Dehydrogenase (PDH) Complex",1,"E1: Pyruvate Dehydrogenase","Mitochondrial matrix","0 (CO₂ released)",false
+5,"Pyruvate Dehydrogenase (PDH) Complex",2,"E2: Dihydrolipoyl Transacetylase","Mitochondrial matrix","0",false
+5,"Pyruvate Dehydrogenase (PDH) Complex",3,"E3: Dihydrolipoyl Dehydrogenase","Mitochondrial matrix","+1 NADH",false
+6,"TCA / Krebs / Citric Acid Cycle",1,"Citrate Synthase","Mitochondrial matrix","0",false
+6,"TCA / Krebs / Citric Acid Cycle",2,"Aconitase","Mitochondrial matrix","0",true
+6,"TCA / Krebs / Citric Acid Cycle",3,"Isocitrate Dehydrogenase — Rate-Limiting Step","Mitochondrial matrix","+1 NADH + CO₂",false
+6,"TCA / Krebs / Citric Acid Cycle",4,"α-Ketoglutarate Dehydrogenase Complex","Mitochondrial matrix","+1 NADH + CO₂",false
+6,"TCA / Krebs / Citric Acid Cycle",5,"Succinate Thiokinase (Succinyl-CoA Synthetase)","Mitochondrial matrix","+1 GTP (SLP)",true
+6,"TCA / Krebs / Citric Acid Cycle",6,"Succinate Dehydrogenase (Complex II of ETC)","Inner mitochondrial membrane","+1 FADH₂",false
+6,"TCA / Krebs / Citric Acid Cycle",7,"Fumarase (Fumarate Hydratase)","Mitochondrial matrix","0",true
+6,"TCA / Krebs / Citric Acid Cycle",8,"Malate Dehydrogenase","Mitochondrial matrix","+1 NADH",true
+7,"HMP Shunt (Pentose Phosphate Pathway)",1,"G6PD (Glucose-6-Phosphate Dehydrogenase) — Rate-Limiting Step","Cytosol","+1 NADPH",false
+7,"HMP Shunt (Pentose Phosphate Pathway)",2,"Gluconolactonase","Cytosol","0",true
+7,"HMP Shunt (Pentose Phosphate Pathway)",3,"6-Phosphogluconate Dehydrogenase (6-PGD)","Cytosol","+1 NADPH + CO₂",false
+7,"HMP Shunt (Pentose Phosphate Pathway)",4,"Phosphopentose Isomerase / Phosphopentose Epimerase","Cytosol","0",true
+7,"HMP Shunt (Pentose Phosphate Pathway)",5,"Transketolase (TPP-dependent) + Transaldolase","Cytosol","0",true
+8,"Glucuronic Acid Pathway",1,"UDP-Glucose Pyrophosphorylase","Cytosol","-1 UTP",true
+8,"Glucuronic Acid Pathway",2,"UDPG-Dehydrogenase","Cytosol (ER)","+2 NADH",false
+8,"Glucuronic Acid Pathway",3,"UDP-Glucuronosyltransferase (conjugation)","ER membrane","0",false
+8,"Glucuronic Acid Pathway",4,"Glucuronate Reductase","Cytosol","-1 NADPH",false
+8,"Glucuronic Acid Pathway",5,"Lactonase → L-Gulonolactone oxidase (ABSENT in humans)","Cytosol","0",false
+8,"Glucuronic Acid Pathway",6,"Xylitol Dehydrogenase (NAD⁺) → Xylulose Reductase","Cytosol","0",false
+9,"Polyol (Sorbitol) Pathway",1,"Aldose Reductase","Cytosol (lens, Schwann cells)","-1 NADPH",false
+9,"Polyol (Sorbitol) Pathway",2,"Sorbitol Dehydrogenase","Cytosol (absent in lens)","+1 NADH",false
+10,"Fructose Metabolism",1,"Fructokinase","Cytosol (liver)","-1 ATP",false
+10,"Fructose Metabolism",2,"Aldolase B (liver-specific)","Cytosol (liver)","0",false
+10,"Fructose Metabolism",3,"Triose Kinase (for glyceraldehyde)","Cytosol","-1 ATP",false
+10,"Fructose Metabolism",4,"Triose Phosphate Isomerase","Cytosol","0",true
+11,"Galactose Metabolism",1,"Galactokinase","Cytosol","-1 ATP",false
+11,"Galactose Metabolism",2,"Galactose-1-P Uridyltransferase (GALT) — Rate-Limiting","Cytosol","0",false
+11,"Galactose Metabolism",3,"UDP-Galactose-4-Epimerase","Cytosol","0",true
+11,"Galactose Metabolism",4,"Releases Glucose-1-Phosphate (via further phosphorylysis)","Cytosol","0",true
+12,"Cori Cycle (Lactic Acid Cycle)",1,"Glycolysis (anaerobic, in muscle)","Cytosol (muscle)","+2 ATP (anaerobic)",false
+12,"Cori Cycle (Lactic Acid Cycle)",2,"Lactate Dehydrogenase (LDH)","Cytosol (muscle)","-1 NADH",true
+12,"Cori Cycle (Lactic Acid Cycle)",3,"Lactate Dehydrogenase (LDH) — liver","Cytosol (liver)","+1 NADH",true
+12,"Cori Cycle (Lactic Acid Cycle)",4,"Gluconeogenesis (Pyruvate Carboxylase → PEPCK → … → G6Pase)","Cytosol + Mitochondria (liver)","-6 ATP equiv",false
+13,"Glucose–Alanine (Cahill) Cycle",1,"Aminotransferases (transfer NH₂ to pyruvate)","Cytosol (muscle)","0",true
+13,"Glucose–Alanine (Cahill) Cycle",2,"Alanine Transaminase (ALT/GPT)","Cytosol (muscle)","0",true
+13,"Glucose–Alanine (Cahill) Cycle",3,"ALT (liver) — reverse transamination","Cytosol (liver)","0",true
+13,"Glucose–Alanine (Cahill) Cycle",4,"Gluconeogenesis","Cytosol + Mitochondria (liver)","-6 ATP equiv",false
+14,"BPG Shunt (Rapaport–Leubering Cycle)",1,"Bisphosphoglycerate Mutase (BPGM)","Cytosol (RBC)","0",false
+14,"BPG Shunt (Rapaport–Leubering Cycle)",2,"BPG-Phosphatase","Cytosol (RBC)","0",false
+15,"β-Oxidation of Fatty Acids",1,"Thiokinase (Acyl-CoA Synthetase)","Cytosol","-2 ATP equiv",false
+15,"β-Oxidation of Fatty Acids",2,"CAT-I (Carnitine Acyl Transferase I) — Rate-Limiting","Inner mitochondrial membrane","0",false
+15,"β-Oxidation of Fatty Acids",3,"Acyl-CoA Dehydrogenase (SCAD/MCAD/LCAD based on chain length)","Mitochondrial matrix","+1 FADH₂",false
+15,"β-Oxidation of Fatty Acids",4,"Enoyl-CoA Hydratase","Mitochondrial matrix","0",true
+15,"β-Oxidation of Fatty Acids",5,"L-β-Hydroxy Acyl-CoA Dehydrogenase","Mitochondrial matrix","+1 NADH",true
+15,"β-Oxidation of Fatty Acids",6,"Thiolase (β-Ketothiolase)","Mitochondrial matrix","0",true
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",1,"Citrate Synthase (for export via Citrate Shuttle)","Mitochondrial matrix (export)","0",false
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",2,"ATP-Citrate Lyase","Cytosol","0",false
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",3,"Acetyl-CoA Carboxylase (ACC) — Committed Rate-Limiting Step","Cytosol","-1 ATP (biotin)",false
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",4,"Fatty Acid Synthase (FAS) Complex — Condensation","Cytosol (FAS)","0 (CO₂ released)",false
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",5,"Ketoacyl Reductase","Cytosol (FAS)","-1 NADPH",false
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",6,"Dehydratase","Cytosol (FAS)","0",false
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",7,"Enoyl Reductase","Cytosol (FAS)","-1 NADPH",false
+16,"De Novo Fatty Acid Synthesis (Lynen's Spiral)",8,"Thioesterase (after 7 full cycles)","Cytosol (FAS)","0",false
+17,"Oxidation of Odd-Chain Fatty Acids",1,"Successive β-Oxidation cycles (same as even-chain)","Mitochondrial matrix","0",false
+17,"Oxidation of Odd-Chain Fatty Acids",2,"Propionyl-CoA Carboxylase","Mitochondrial matrix","-1 ATP",false
+17,"Oxidation of Odd-Chain Fatty Acids",3,"Racemase (Methylmalonyl-CoA Epimerase)","Mitochondrial matrix","0",true
+17,"Oxidation of Odd-Chain Fatty Acids",4,"Methylmalonyl-CoA Mutase","Mitochondrial matrix","0 (B12-dependent)",false
+18,"Triacylglycerol Synthesis (Lipogenesis)",1,"Glycerol Kinase (liver only) / Glycerol-3-P Dehydrogenase (adipose)","Cytosol","-1 ATP (liver only)",false
+18,"Triacylglycerol Synthesis (Lipogenesis)",2,"Glycerol-3-P Acyltransferase","ER membrane","0",false
+18,"Triacylglycerol Synthesis (Lipogenesis)",3,"1-Acyl Glycerol-3-P Acyltransferase","ER membrane","0",false
+18,"Triacylglycerol Synthesis (Lipogenesis)",4,"Phosphatidate Phosphatase (Lipin)","Cytosol","0",false
+18,"Triacylglycerol Synthesis (Lipogenesis)",5,"Diacylglycerol Acyltransferase (DGAT)","Cytosol","0",false
+19,"Lipolysis (Fat Mobilisation)",1,"Hormone-Sensitive Lipase (HSL) — activated by phosphorylation via PKA","Cytosol (adipocyte)","0 (cAMP-dependent)",false
+19,"Lipolysis (Fat Mobilisation)",2,"Hormone-Sensitive Lipase (HSL) continues","Cytosol (adipocyte)","0",false
+19,"Lipolysis (Fat Mobilisation)",3,"MAG Lipase (monoglyceride lipase)","Cytosol (adipocyte)","0",false
+20,"Ketogenesis",1,"Thiolase","Mitochondrial matrix","0",true
+20,"Ketogenesis",2,"HMG-CoA Synthase — Rate-Limiting Step","Mitochondrial matrix","0",false
+20,"Ketogenesis",3,"HMG-CoA Lyase","Mitochondrial matrix","0",false
+20,"Ketogenesis",4,"β-Hydroxybutyrate Dehydrogenase","Mitochondrial matrix","-1 NADH",true
+20,"Ketogenesis",5,"Non-enzymatic decarboxylation of Acetoacetate","Mitochondrial matrix","0",false
+21,"Ketolysis (Ketone Body Utilisation)",1,"β-Hydroxybutyrate Dehydrogenase","Mitochondria","+1 NADH",true
+21,"Ketolysis (Ketone Body Utilisation)",2,"Thiophorase (Acetoacetate-Succinyl-CoA Transferase)","Mitochondria","0",false
+21,"Ketolysis (Ketone Body Utilisation)",3,"Thiolase","Mitochondria","0",true
+22,"Cholesterol Biosynthesis (Mevalonate Pathway)",1,"Acetoacetyl-CoA Thiolase","Cytosol","0",true
+22,"Cholesterol Biosynthesis (Mevalonate Pathway)",2,"HMG-CoA Synthase (cytosolic isoform)","Cytosol","0",false
+22,"Cholesterol Biosynthesis (Mevalonate Pathway)",3,"HMG-CoA Reductase — Rate-Limiting Committed Step","ER membrane","-2 NADPH",false
+22,"Cholesterol Biosynthesis (Mevalonate Pathway)",4,"Mevalonate Kinase, Phosphomevalonate Kinase, Decarboxylase","Cytosol + ER","-3 ATP",false
+22,"Cholesterol Biosynthesis (Mevalonate Pathway)",5,"Prenyltransferases (sequential condensations)","Cytosol","-6 ATP (×6 IPP)",false
+22,"Cholesterol Biosynthesis (Mevalonate Pathway)",6,"Squalene Epoxidase + Cyclase (Oxidosqualene cyclase)","ER membrane","-NADPH + O₂",false
+22,"Cholesterol Biosynthesis (Mevalonate Pathway)",7,"Multiple ER enzymes (demethylation, double-bond migrations)","ER membrane","-NADPH",false
+23,"Bile Acid Synthesis",1,"7-α-Hydroxylase (CYP7A1) — Rate-Limiting Step","ER (liver)","0 (O₂-dependent hydroxylation)",false
+23,"Bile Acid Synthesis",2,"Multiple hydroxylation and side-chain cleavage enzymes","ER (liver)","0",false
+23,"Bile Acid Synthesis",3,"Bile Acid-CoA Synthetase + Conjugating Enzyme","ER + Golgi (liver)","0",false
+23,"Bile Acid Synthesis",4,"Gut bacteria (7-α-dehydroxylase) in colon","Bile canaliculi + Intestinal lumen","0",false
+24,"Lipoprotein Cascade (VLDL → IDL → LDL)",1,"VLDL Assembly (MTP + Apo B-100)","ER (liver)","0",false
+24,"Lipoprotein Cascade (VLDL → IDL → LDL)",2,"Lipoprotein Lipase (LPL) — at capillary endothelium","Capillary endothelium (LPL)","0 (Apo C-II)",false
+24,"Lipoprotein Cascade (VLDL → IDL → LDL)",3,"Hepatic Lipase (HL)","Plasma","0",false
+24,"Lipoprotein Cascade (VLDL → IDL → LDL)",4,"LDL Receptor (Apo B-100 receptor) — receptor-mediated endocytosis","Plasma (LDL receptor)","0 (LDL-R)",false
+25,"Reverse Cholesterol Transport",1,"ABC-A1 and ABC-G1 transporters","Plasma membrane (peripheral cells)","0",false
+25,"Reverse Cholesterol Transport",2,"LCAT (Lecithin-Cholesterol Acyl Transferase)","Plasma","0 (Apo A-I)",false
+25,"Reverse Cholesterol Transport",3,"CETP (Cholesterol Ester Transfer Protein)","Plasma","0 (CETP)",false
+25,"Reverse Cholesterol Transport",4,"SR-B1 (Scavenger Receptor B1) — hepatic uptake","Plasma (liver)","0 (SR-B1)",false
+26,"HDL Cycle",1,"ABC-A1 / ABC-G1 — cholesterol efflux from cells","Plasma membrane","0",false
+26,"HDL Cycle",2,"LCAT (activated by Apo A-I)","Plasma","0",false
+26,"HDL Cycle",3,"CETP (Cholesterol Ester Transfer Protein)","Plasma","0",false
+26,"HDL Cycle",4,"Hepatic Lipase (HL)","Plasma","0",false
+26,"HDL Cycle",5,"SR-B1 Receptor (liver)","Plasma (liver)","0",false
+27,"Carnitine Shuttle",1,"Thiokinase (Acyl-CoA Synthetase)","Cytosol","-2 ATP equiv",false
+27,"Carnitine Shuttle",2,"CAT-I (Carnitine Acyl Transferase I) — outer mitochondrial membrane","Outer mitochondrial membrane","0",false
+27,"Carnitine Shuttle",3,"Translocase (inner mitochondrial membrane carrier)","Inner mitochondrial membrane","0",false
+27,"Carnitine Shuttle",4,"CAT-II (Carnitine Acyl Transferase II) — inner membrane, matrix side","Mitochondrial matrix","0",false
+28,"Citrate Shuttle (Tricarboxylate Carrier System)",1,"Citrate Synthase","Mitochondrial matrix","0",false
+28,"Citrate Shuttle (Tricarboxylate Carrier System)",2,"Tricarboxylate Carrier","Inner mitochondrial membrane","0",false
+28,"Citrate Shuttle (Tricarboxylate Carrier System)",3,"ATP-Citrate Lyase","Cytosol","-1 ATP",false
+28,"Citrate Shuttle (Tricarboxylate Carrier System)",4,"Malate Dehydrogenase → NADPH generation via Malic Enzyme","Cytosol","+1 NADPH",true
+29,"Vitamin K Cycle (Epoxide Cycle)",1,"γ-Glutamyl Carboxylase","ER (liver)","0 (γ-carboxylation)",false
+29,"Vitamin K Cycle (Epoxide Cycle)",2,"Vitamin K Epoxide Reductase (VKOR)","ER (liver)","-NADH",false
+29,"Vitamin K Cycle (Epoxide Cycle)",3,"Vitamin K Reductase (DT-diaphorase)","ER (liver)","-NADH",false
+30,"Proteolysis (Protein Digestion)",1,"HCl (Gastric Acid)","Stomach lumen","0 (HCl)",false
+30,"Proteolysis (Protein Digestion)",2,"Pepsin (endopeptidase)","Stomach lumen","0 (H₂O)",false
+30,"Proteolysis (Protein Digestion)",3,"Trypsin (endopeptidase)","Duodenal lumen","0 (enterokinase)",false
+30,"Proteolysis (Protein Digestion)",4,"Chymotrypsin + Elastase + Carboxypeptidases A & B","Duodenal lumen","0",false
+30,"Proteolysis (Protein Digestion)",5,"Aminopeptidases + Dipeptidases + Tripeptidases (intestinal brush border)","Intestinal brush border","0",false
+31,"Meister Cycle (γ-Glutamyl Cycle)",1,"γ-Glutamyl Transferase (GGT / Transpeptidase)","Plasma membrane (kidney, intestine)","0",false
+31,"Meister Cycle (γ-Glutamyl Cycle)",2,"γ-Glutamyl Cyclotransferase","Cytosol","0",false
+31,"Meister Cycle (γ-Glutamyl Cycle)",3,"5-Oxoprolinase","Cytosol","-ATP",false
+31,"Meister Cycle (γ-Glutamyl Cycle)",4,"γ-Glutamyl-Cysteine Synthetase","Cytosol","-ATP",false
+31,"Meister Cycle (γ-Glutamyl Cycle)",5,"Glutathione Synthetase","Cytosol","-ATP",false
+32,"Transamination",1,"Alanine Transaminase (ALT / SGPT)","Cytosol","0 (PLP)",true
+32,"Transamination",2,"Aspartate Transaminase (AST / SGOT)","Cytosol","0 (PLP)",true
+33,"Oxidative Deamination",1,"Glutamate Dehydrogenase (GDH)","Mitochondrial matrix","+1 NADH",true
+33,"Oxidative Deamination",2,"Minor: L-Amino Acid Oxidase","Mitochondrial matrix","0 (FMN)",false
+34,"Trans-deamination (Combined Pathway)",1,"Aminotransferases (Transamination Step)","Cytosol (peripheral)","0",true
+34,"Trans-deamination (Combined Pathway)",2,"Bloodstream transport","Blood","0",false
+34,"Trans-deamination (Combined Pathway)",3,"Glutamate Dehydrogenase (GDH)","Mitochondrial matrix (liver)","+1 NADH",true
+35,"Non-oxidative Deamination",1,"Serine Dehydratase","Cytosol","0 (PLP)",false
+35,"Non-oxidative Deamination",2,"Threonine Dehydratase (for Threonine → α-Ketobutyrate + NH₃)","Cytosol","0 (PLP)",false
+35,"Non-oxidative Deamination",3,"Cysteine Desulfhydrase","Cytosol","0 (PLP)",false
+35,"Non-oxidative Deamination",4,"Histidase","Cytosol","0",false
+36,"Urea Cycle (Krebs–Henseleit / Ornithine Cycle)",1,"Carbamoyl Phosphate Synthetase I (CPS-I) — Rate-Limiting","Mitochondrial matrix","-2 ATP",false
+36,"Urea Cycle (Krebs–Henseleit / Ornithine Cycle)",2,"Ornithine Transcarbamoylase (OTC) — X-linked recessive","Mitochondrial matrix","0",false
+36,"Urea Cycle (Krebs–Henseleit / Ornithine Cycle)",3,"Argininosuccinate Synthetase","Cytosol","-2 ATP (→ AMP + PPᵢ)",false
+36,"Urea Cycle (Krebs–Henseleit / Ornithine Cycle)",4,"Argininosuccinate Lyase (Argininosuccinase)","Cytosol","0",false
+36,"Urea Cycle (Krebs–Henseleit / Ornithine Cycle)",5,"Arginase","Cytosol","0",false
+37,"One-Carbon Metabolism (Folate Cycle)",1,"Serine Hydroxymethyl Transferase","Cytosol","0 (PLP)",true
+37,"One-Carbon Metabolism (Folate Cycle)",2,"THFA Reductase (Methylenetetrahydrofolate reductase — MTHFR)","Cytosol","-1 NADH",false
+37,"One-Carbon Metabolism (Folate Cycle)",3,"Methionine Synthase (requires Methyl-B12)","Cytosol","0 (B12)",false
+37,"One-Carbon Metabolism (Folate Cycle)",4,"Used by Purine Synthesis (C2 and C8 of purine ring)","Cytosol","0",false
+37,"One-Carbon Metabolism (Folate Cycle)",5,"Thymidylate Synthase","Cytosol","0",false
+38,"Glycine–Serine–Choline Salvage Cycle",1,"Serine Decarboxylase","Cytosol","0 (PLP)",false
+38,"Glycine–Serine–Choline Salvage Cycle",2,"Methyl Transferase (×3)","Cytosol","-3 SAM",false
+38,"Glycine–Serine–Choline Salvage Cycle",3,"Choline Dehydrogenase","Cytosol","0",false
+38,"Glycine–Serine–Choline Salvage Cycle",4,"Betaine-Homocysteine Methyltransferase","Cytosol","0",false
+38,"Glycine–Serine–Choline Salvage Cycle",5,"Sarcosine Dehydrogenase + Glycine Cleavage System","Cytosol","+1 NADH",false
+39,"Glycine Cleavage System",1,"Component A: Glycine Decarboxylase","Mitochondria","0 (PLP)",true
+39,"Glycine Cleavage System",2,"Component B: Amino Methyl Transferase","Mitochondria","0",true
+39,"Glycine Cleavage System",3,"Component C: Methylene THFA Synthase","Mitochondria","0",true
+39,"Glycine Cleavage System",4,"Component D: Lipoamide Dehydrogenase","Mitochondria","+1 NADH",true
+40,"Creatine–Creatinine Cycle",1,"Amidotransferase (Transamidinase)","Mitochondria (kidney)","0 (Arg → Orn)",false
+40,"Creatine–Creatinine Cycle",2,"Methyl Transferase (liver cytoplasm)","Cytosol (liver)","-1 SAM",false
+40,"Creatine–Creatinine Cycle",3,"Creatine Kinase (CK)","Cytosol (muscle)","-1 ATP",true
+40,"Creatine–Creatinine Cycle",4,"Spontaneous Non-enzymatic Cyclisation","Spontaneous","0",false
+41,"Trans-sulfuration Pathway (Methionine → Cysteine)",1,"Methionine Adenosyl Transferase (MAT)","Cytosol","-ATP → SAM",false
+41,"Trans-sulfuration Pathway (Methionine → Cysteine)",2,"Various Methyl Transferases","Cytosol","0",false
+41,"Trans-sulfuration Pathway (Methionine → Cysteine)",3,"Adenosine Homocysteinase","Cytosol","0",true
+41,"Trans-sulfuration Pathway (Methionine → Cysteine)",4,"Cystathionine-β-Synthase (CBS)","Cytosol","0 (PLP)",false
+41,"Trans-sulfuration Pathway (Methionine → Cysteine)",5,"Cystathionase (Cystathionine-γ-Lyase)","Cytosol","0 (PLP)",false
+42,"Phenylalanine and Tyrosine Catabolism",1,"Phenylalanine Hydroxylase (PAH)","Cytosol","0 (BH4-dependent hydroxylation)",false
+42,"Phenylalanine and Tyrosine Catabolism",2,"Tyrosine Transaminase (Tyrosine Aminotransferase)","Cytosol","0 (PLP)",true
+42,"Phenylalanine and Tyrosine Catabolism",3,"p-Hydroxyphenylpyruvate Dioxygenase","Cytosol","0 (Vit C)",false
+42,"Phenylalanine and Tyrosine Catabolism",4,"Homogentisate Oxidase (Homogentisate 1,2-Dioxygenase)","Cytosol","0",false
+42,"Phenylalanine and Tyrosine Catabolism",5,"Maleylacetoacetate Isomerase (requires Glutathione)","Cytosol","0 (GSH)",false
+42,"Phenylalanine and Tyrosine Catabolism",6,"Fumarylacetoacetate Hydrolase (FAH)","Mitochondria","0",false
+43,"BCAA Catabolism (Val, Leu, Ile)",1,"Branched-Chain Aminotransferase (BCAT)","Cytosol","0 (PLP)",true
+43,"BCAA Catabolism (Val, Leu, Ile)",2,"Branched-Chain α-Keto Acid Dehydrogenase (BCKD) Complex — Rate-Limiting","Mitochondria","+1 NADH + CO₂",false
+43,"BCAA Catabolism (Val, Leu, Ile)",3,"Isovaleryl-CoA Dehydrogenase (IVD)","Mitochondria","+1 FADH₂",false
+43,"BCAA Catabolism (Val, Leu, Ile)",4,"Subsequent mitochondrial oxidation steps","Mitochondria","0",false
+44,"Kynurenine Pathway (Tryptophan → Niacin)",1,"Tryptophan Pyrrolase (Tryptophan 2,3-Dioxygenase)","Cytosol","0 (Heme)",false
+44,"Kynurenine Pathway (Tryptophan → Niacin)",2,"Formamidase","Cytosol","0",false
+44,"Kynurenine Pathway (Tryptophan → Niacin)",3,"Kynurenine Hydroxylase","Cytosol","-1 NADPH",false
+44,"Kynurenine Pathway (Tryptophan → Niacin)",4,"Kynureninase","Cytosol","0 (PLP)",false
+44,"Kynurenine Pathway (Tryptophan → Niacin)",5,"3-Hydroxyanthranilate Oxidase → Quinolinate Phosphoribosyl Transferase (QPRTase)","Cytosol","0",false
+45,"GABA Shunt",1,"Glutamate Decarboxylase","Cytosol (brain)","0 (PLP, CO₂)",false
+45,"GABA Shunt",2,"GABA Transaminase (GABA-T)","Mitochondria (brain)","0 (PLP)",false
+45,"GABA Shunt",3,"Succinic Semialdehyde Dehydrogenase","Mitochondria (brain)","+1 NADH",false
+46,"Catecholamine Synthesis",1,"Tyrosine Hydroxylase (TH) — Rate-Limiting Committed Step","Cytosol","0 (BH4)",false
+46,"Catecholamine Synthesis",2,"DOPA Decarboxylase (Aromatic Amino Acid Decarboxylase)","Cytosol","0 (PLP)",false
+46,"Catecholamine Synthesis",3,"Dopamine-β-Hydroxylase","Cytosol","0 (Vit C + Cu²⁺)",false
+46,"Catecholamine Synthesis",4,"N-Methyl Transferase (PNMT)","Cytosol","0 (SAM)",false
+47,"Serotonin and Melatonin Synthesis",1,"Tryptophan Hydroxylase (TPH)","Cytosol (brain, platelets)","0 (BH4)",false
+47,"Serotonin and Melatonin Synthesis",2,"Aromatic Amino Acid Decarboxylase (AADC)","Cytosol","0 (PLP)",false
+47,"Serotonin and Melatonin Synthesis",3,"Acetylase (Arylalkylamine N-acetyltransferase — AANAT)","Cytosol (pineal)","0 (Acetyl-CoA)",false
+47,"Serotonin and Melatonin Synthesis",4,"Methyl Transferase (HIOMT)","Cytosol (pineal)","0 (SAM)",false
+48,"Melanin Synthesis",1,"Tyrosinase","Melanosome","0 (Cu²⁺ + O₂)",false
+48,"Melanin Synthesis",2,"Tyrosinase (second oxidation)","Melanosome","0 (Cu²⁺)",false
+48,"Melanin Synthesis",3,"Spontaneous polymerisation (Eumelanin pathway)","Melanosome","0",false
+48,"Melanin Synthesis",4,"Spontaneous (Pheomelanin pathway)","Melanosome","0 (Cys)",false
+49,"Ubiquitin–Proteasome Pathway",1,"E1 (Ubiquitin-Activating Enzyme)","Cytosol","-ATP",false
+49,"Ubiquitin–Proteasome Pathway",2,"E2 (Ubiquitin-Conjugating Enzyme)","Cytosol","0",false
+49,"Ubiquitin–Proteasome Pathway",3,"E3 (Ubiquitin Ligase) — determines substrate specificity","Cytosol","0",false
+49,"Ubiquitin–Proteasome Pathway",4,"26S Proteasome (20S core + 19S regulatory caps)","Cytosol (26S proteasome)","-ATP",false
+50,"Heme Biosynthesis (Porphyrin Synthesis)",1,"ALA Synthase (δ-Aminolevulinate Synthase) — Rate-Limiting","Mitochondria","0 (PLP)",false
+50,"Heme Biosynthesis (Porphyrin Synthesis)",2,"ALA Dehydratase (PBG Synthase)","Cytosol","0",false
+50,"Heme Biosynthesis (Porphyrin Synthesis)",3,"PBG Deaminase (HMBS / Uroporphyrinogen-I Synthase)","Cytosol","0",false
+50,"Heme Biosynthesis (Porphyrin Synthesis)",4,"UPG Decarboxylase","Cytosol","0",false
+50,"Heme Biosynthesis (Porphyrin Synthesis)",5,"CPG Oxidase","Cytosol (→ mitochondria)","0",false
+50,"Heme Biosynthesis (Porphyrin Synthesis)",6,"PPG Oxidase","Mitochondria","0",false
+50,"Heme Biosynthesis (Porphyrin Synthesis)",7,"Ferrochelatase (Haem Synthase)","Mitochondria","0 (Fe²⁺)",false
+51,"Heme Catabolism (Heme → Bilirubin)",1,"RE Cell Phagocytosis","RE cells (spleen, liver)","0",false
+51,"Heme Catabolism (Heme → Bilirubin)",2,"Haem Oxygenase System (microsomal)","Microsomes (RE cells)","-3 NADPH + CO",false
+51,"Heme Catabolism (Heme → Bilirubin)",3,"Biliverdin Reductase","Cytosol (RE cells)","-1 NADPH",false
+52,"Bilirubin Transport, Conjugation and Excretion",1,"Albumin binding (passive)","Plasma (blood)","0",false
+52,"Bilirubin Transport, Conjugation and Excretion",2,"Hepatocyte Uptake (active transport)","Hepatocyte (sinusoidal)","0",false
+52,"Bilirubin Transport, Conjugation and Excretion",3,"UDP-Glucuronosyl Transferase (UGT) / Bilirubin-UDP-Glucuronosyl Transferase","Hepatocyte (ER)","0 (UDP-GlcUA)",false
+52,"Bilirubin Transport, Conjugation and Excretion",4,"MRP-2 (Multidrug Resistance Protein 2 / MOAT)","Hepatocyte (canalicular)","0",false
+52,"Bilirubin Transport, Conjugation and Excretion",5,"Bacterial β-glucuronidases + Reductases","Intestinal lumen","0",false
+53,"De Novo Purine Synthesis",1,"PRPP Synthetase","Cytosol","-ATP → AMP",false
+53,"De Novo Purine Synthesis",2,"Glutamine-PRPP Amidotransferase — Committed Rate-Limiting Step","Cytosol","0",false
+53,"De Novo Purine Synthesis",3,"Sequential Ring-Building Enzymes (Steps 3–10)","Cytosol","-multiple ATP",false
+53,"De Novo Purine Synthesis",4,"Adenylosuccinate Synthetase (for AMP) / IMP Dehydrogenase (for GMP)","Cytosol","0",false
+54,"Purine Salvage Pathway",1,"Adenine Phosphoribosyl Transferase (APRTase)","Cytosol","0 (PRPP)",false
+54,"Purine Salvage Pathway",2,"HGPRTase (Hypoxanthine-Guanine Phosphoribosyl Transferase)","Cytosol","0 (PRPP)",false
+54,"Purine Salvage Pathway",3,"HGPRTase","Cytosol","0 (PRPP)",false
+55,"Purine Nucleotide Degradation (Uric Acid Formation)",1,"AMP Deaminase","Cytosol","0",false
+55,"Purine Nucleotide Degradation (Uric Acid Formation)",2,"5'-Nucleotidase","Cytosol","0",false
+55,"Purine Nucleotide Degradation (Uric Acid Formation)",3,"Purine Nucleoside Phosphorylase (PNP)","Cytosol","0",false
+55,"Purine Nucleotide Degradation (Uric Acid Formation)",4,"Guanase (Guanine Deaminase)","Cytosol","0",false
+55,"Purine Nucleotide Degradation (Uric Acid Formation)",5,"Xanthine Oxidase (two successive oxidations)","Cytosol","0 (XO: FAD + Mo)",false
+56,"De Novo Pyrimidine Synthesis",1,"CPS-II (Carbamoyl Phosphate Synthetase II) — cytoplasmic","Cytosol","-2 ATP (Gln)",false
+56,"De Novo Pyrimidine Synthesis",2,"Aspartate Transcarbamoylase (ATC)","Cytosol","0",false
+56,"De Novo Pyrimidine Synthesis",3,"Dihydroorotase (DHOase)","Cytosol","0",false
+56,"De Novo Pyrimidine Synthesis",4,"Dihydroorotate Dehydrogenase (DHODH)","Mitochondria","+1 NADH",false
+56,"De Novo Pyrimidine Synthesis",5,"OPRTase (Orotate Phosphoribosyl Transferase)","Cytosol","0 (PRPP)",false
+56,"De Novo Pyrimidine Synthesis",6,"OMP Decarboxylase (OMPDC)","Cytosol","0",false
+56,"De Novo Pyrimidine Synthesis",7,"UMP Kinase + Nucleoside Diphosphate Kinase","Cytosol","-2 ATP",false
+56,"De Novo Pyrimidine Synthesis",8,"CTP Synthetase","Cytosol","-1 ATP",false
+57,"Pyrimidine Degradation",1,"Cytosine Deaminase","Cytosol","0",false
+57,"Pyrimidine Degradation",2,"Dihydropyrimidine Dehydrogenase (DPD)","Mitochondria","-2 NADPH",false
+57,"Pyrimidine Degradation",3,"Dihydropyrimidinase","Cytosol","0",true
+57,"Pyrimidine Degradation",4,"β-Ureidopropionase","Cytosol","0",false
+57,"Pyrimidine Degradation",5,"Same enzyme cascade as Uracil","Cytosol","-2 NADPH",false
+58,"Deoxyribonucleotide Synthesis (Ribonucleotide Reductase)",1,"Ribonucleotide Reductase (RNR)","Nucleus + Cytosol","+NADPH (Thioredoxin)",false
+58,"Deoxyribonucleotide Synthesis (Ribonucleotide Reductase)",2,"Nucleoside Diphosphate Kinase (NDPK)","Nucleus + Cytosol","0",true
+58,"Deoxyribonucleotide Synthesis (Ribonucleotide Reductase)",3,"dUTPase","Nucleus + Cytosol","0",false
+58,"Deoxyribonucleotide Synthesis (Ribonucleotide Reductase)",4,"Thymidylate Synthase","Nucleus + Cytosol","+Methylene-THFA → DHF",false

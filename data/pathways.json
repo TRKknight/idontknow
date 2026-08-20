@@ -862,7 +862,7 @@
           ]
         },
         "location": "Cytosol (lens, Schwann cells)",
-        "energy": "+1 NADPH consumed"
+        "energy": "-1 NADPH"
       },
       {
         "stepNum": 2,
@@ -1354,7 +1354,7 @@
         "reversible": false,
         "disorder": null,
         "location": "Cytosol",
-        "energy": "-1 ATP"
+        "energy": "0"
       },
       {
         "stepNum": 3,
@@ -1895,7 +1895,7 @@
           ]
         },
         "location": "ER (liver)",
-        "energy": "0 (NADPH + O₂)"
+        "energy": "0 (O₂-dependent hydroxylation)"
       },
       {
         "stepNum": 2,
@@ -3267,7 +3267,7 @@
           ]
         },
         "location": "Cytosol",
-        "energy": "0 (BH4 + NADPH)"
+        "energy": "0 (BH4-dependent hydroxylation)"
       },
       {
         "stepNum": 2,
