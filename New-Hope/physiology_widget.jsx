@@ -724,6 +724,7 @@ export default function App() {
 
   function handleModeChange(m) {
     setMode(m);
+    window.scrollTo(0, 0);
     if (m === "quiz") {
       const d = shuffle(filtered);
       setDeck(d); setIdx(0); setFlipped(false); setCorrect(0); setWrong(0); setDone(false);

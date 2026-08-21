@@ -8055,6 +8055,7 @@ function App() {
     setPrevSel(sel);
     setPrevPathway(openPathway);
     setScreen(s);
+    window.scrollTo(0, 0);
   }
   function goBack() {
     if (prevScreen) {
@@ -8066,8 +8067,10 @@ function App() {
       setPrevPathway(null);
       setTimeout(() => setPrevVitaminSel(null), 0);
       setTimeout(() => setPrevMineralSel(null), 0);
+      window.scrollTo(0, 0);
     } else {
       setScreen('home');
+      window.scrollTo(0, 0);
     }
   }
   const [normalVals, setNormalVals] = useState([]);
