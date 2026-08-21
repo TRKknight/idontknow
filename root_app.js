@@ -497,7 +497,7 @@ function PathwayViewer({
   dark,
   darkToggle
 }) {
-  const [revealed, setRevealed] = useState(pathway.jumpToStep || 1);
+  const [revealed, setRevealed] = useState((pathway.jumpToStep || 1) * 2);
   const [showAll, setShowAll] = useState(false);
   const [expandedBranch, setExpandedBranch] = useState(null);
   const [energetics, setEnergetics] = useState(false);
@@ -505,14 +505,14 @@ function PathwayViewer({
   const [energHover, setEnergHover] = useState(null);
   const bottomRef = useRef(null);
   useEffect(() => {
-    if (pathway.jumpToStep) setRevealed(pathway.jumpToStep);
+    if (pathway.jumpToStep) setRevealed(pathway.jumpToStep * 2);
   }, [pathway.id, pathway.jumpToStep]);
   const steps = pathway.steps || [];
   const total = steps.length;
   const visible = showAll ? total : revealed;
   const color = pathway.color || "#2980b9";
   function nextStep() {
-    if (revealed < total) {
+    if (revealed < total * 2) {
       setRevealed(r => r + 1);
       setTimeout(() => bottomRef.current?.scrollIntoView({
         behavior: 'smooth',
@@ -597,7 +597,7 @@ function PathwayViewer({
       fontSize: 11,
       color: '#888'
     }
-  }, Math.min(visible, total), "/", total, " steps"), React.createElement("button", {
+  }, Math.min(Math.ceil(visible / 2), total), "/", total, " steps"), React.createElement("button", {
       onClick: function() { setEnergetics(function(e){return !e;}); },
       style: {
         padding: "5px 14px", borderRadius: 20,
@@ -619,7 +619,7 @@ function PathwayViewer({
       height: '100%',
       borderRadius: 2,
       background: color,
-      width: `${Math.min(visible, total) / total * 100}%`,
+      width: `${Math.min(visible, total * 2) / (total * 2) * 100}%`,
       transition: 'width 0.3s'
     }
   }))), pathway.description && /*#__PURE__*/React.createElement("div", {
@@ -759,7 +759,7 @@ function PathwayViewer({
         );
       })(),
 
-  steps.slice(0, visible).map((step, idx) => {
+  steps.slice(0, showAll ? total : Math.ceil(revealed / 2)).map((step, idx) => {
     const isLast = idx === steps.length - 1;
     const branchKey = `${pathway.id}-${idx}`;
     const branchOpen = expandedBranch === branchKey;
@@ -785,9 +785,9 @@ function PathwayViewer({
         ...nodeStyle,
         borderColor: hasDisorder ? '#e67e22' : idx === 0 ? color : '#ddd',
         background: hasDisorder ? dark ? '#1a0f00' : '#fff8f0' : DK.card(dark),
-        animation: !showAll && idx === visible - 1 ? 'fadeIn 0.4s ease' : 'none'
+        animation: !showAll && revealed === idx * 2 + 1 ? 'fadeIn 0.4s ease' : 'none'
       }
-    }, step.molecule)), /*#__PURE__*/React.createElement("div", {
+    }, step.molecule)), (showAll || revealed >= idx * 2 + 2) && /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         width: '100%',
@@ -930,7 +930,7 @@ function PathwayViewer({
         borderRight: '6px solid transparent',
         borderTop: `8px solid ${arrowCol}`
       }
-    })))), hasDisorder && branchOpen && /*#__PURE__*/React.createElement("div", {
+    })))), (showAll || revealed >= idx * 2 + 2) && hasDisorder && branchOpen && /*#__PURE__*/React.createElement("div", {
       style: {
         width: '100%',
         maxWidth: 400,
@@ -973,7 +973,7 @@ function PathwayViewer({
         width: '100%'
       }
     }, "View ", linkedDis.disorder, " Card \u2192")));
-  }), pathway.finalMolecule && visible >= total && /*#__PURE__*/React.createElement("div", {
+  }), pathway.finalMolecule && (showAll || visible >= total * 2) && /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
       flexDirection: 'column',
@@ -1084,7 +1084,7 @@ function PathwayViewer({
       gap: 10,
       zIndex: 10
     }
-  }, !showAll && visible < total ? /*#__PURE__*/React.createElement("button", {
+  }, !showAll && visible < total * 2 ? /*#__PURE__*/React.createElement("button", {
     onClick: nextStep,
     style: {
       flex: 2,
@@ -1113,7 +1113,7 @@ function PathwayViewer({
   }, "\u2705 Complete!") : null, /*#__PURE__*/React.createElement("button", {
     onClick: () => {
       setShowAll(s => !s);
-      if (!showAll) setRevealed(total);
+      if (!showAll) setRevealed(total * 2);
     },
     style: {
       flex: 1,
