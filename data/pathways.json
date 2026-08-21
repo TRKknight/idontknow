@@ -677,14 +677,16 @@
           ]
         },
         "location": "Cytosol",
-        "energy": "+1 NADPH"
+        "energy": "+1 NADPH",
+        "activators": "NADP⁺ (substrate availability)",
+        "inhibitors": "NADPH (feedback inhibition)"
       },
       {
         "stepNum": 2,
         "molecule": "6-Phosphogluconolactone",
         "enzyme": "Gluconolactonase",
         "cofactors": "H₂O",
-        "reversible": true,
+        "reversible": false,
         "disorder": null,
         "location": "Cytosol",
         "energy": "0"
@@ -711,21 +713,51 @@
       },
       {
         "stepNum": 5,
-        "molecule": "Ribose-5-P + Xylulose-5-P",
-        "enzyme": "Transketolase (TPP-dependent) + Transaldolase",
-        "cofactors": "TPP (Thiamine); carbon rearrangement reactions",
+        "molecule": "Xylulose-5-P + Ribose-5-P",
+        "enzyme": "Transketolase (1st reaction)",
+        "cofactors": "TPP (Thiamine Pyrophosphate); transfers 2-carbon unit",
         "reversible": true,
         "disorder": {
-          "name": "Wernicke-Korsakoff (Transketolase)",
+          "name": "Thiamine Deficiency (Beriberi)",
           "disorderId": 72,
           "branch": [
-            "Transketolase requires TPP (Thiamine/B1)",
-            "In thiamine deficiency, transketolase fails",
-            "Pentoses cannot re-enter glycolysis",
-            "NADPH production also impaired",
-            "Neurological symptoms: ataxia, confusion"
+            "Transketolase requires TPP (Vitamin B1)",
+            "Thiamine deficiency impairs transketolase activity",
+            "Erythrocyte transketolase activation assay confirms deficiency",
+            "Pentoses cannot re-enter glycolysis efficiently",
+            "NADPH production also impaired"
           ]
         },
+        "location": "Cytosol",
+        "energy": "0"
+      },
+      {
+        "stepNum": 6,
+        "molecule": "Sedoheptulose-7-P + Glyceraldehyde-3-P",
+        "enzyme": "Transaldolase",
+        "cofactors": "Transfers 3-carbon unit",
+        "reversible": true,
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
+      },
+      {
+        "stepNum": 7,
+        "molecule": "Xylulose-5-P + Erythrose-4-P",
+        "enzyme": "Transketolase (2nd reaction)",
+        "cofactors": "TPP (Thiamine Pyrophosphate); transfers 2-carbon unit",
+        "reversible": true,
+        "disorder": null,
+        "location": "Cytosol",
+        "energy": "0"
+      },
+      {
+        "stepNum": 8,
+        "molecule": "Glyceraldehyde-3-P + Fructose-6-P",
+        "enzyme": "Glycolytic reversal (Aldolase / Isomerase)",
+        "cofactors": "Condensation and isomerisation of triose phosphates",
+        "reversible": true,
+        "disorder": null,
         "location": "Cytosol",
         "energy": "0"
       }
