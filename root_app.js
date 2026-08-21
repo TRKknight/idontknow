@@ -1181,6 +1181,7 @@ function PathwayBrowser({
             ...nextP,
             jumpToStep: jts
           } : nextP);
+          window.scrollTo(0, 0);
         } else setSelPathway(null);
       },
       onOpenDisorder: d => {
@@ -1314,7 +1315,7 @@ function PathwayBrowser({
     const meta = BIO_CATS.find(b => b.key === p.biomolecule);
     return /*#__PURE__*/React.createElement("div", {
       key: p.id,
-      onClick: () => setSelPathway(p),
+      onClick: () => { setSelPathway(p); window.scrollTo(0, 0); },
       style: {
         background: DK.card(dark),
         borderTop: `1px solid ${DK.border(dark)}`,
@@ -1894,8 +1895,8 @@ function PathwayAdminPanel({
       color: '#1a1a1a'
     }
   }, p.name)), /*#__PURE__*/React.createElement("button", {
-    onClick: () => setSelPathway(p),
-    style: {
+    onClick: () => { setSelPathway(p); window.scrollTo(0, 0); },
+      style: {
       padding: '5px 12px',
       borderRadius: 5,
       border: '1px solid #2980b9',
@@ -9417,7 +9418,7 @@ function App() {
       setOpenPathway(fromPathway || null);
       navigateTo('disorders');
     },
-    onPathwayChange: p => setOpenPathway(p)
+    onPathwayChange: p => { setOpenPathway(p); window.scrollTo(0, 0); }
   }), screen === 'normal-values' && !adminConfig && visibility['normal-values'] !== false && /*#__PURE__*/React.createElement(NormalValuesView, {
     data: normalVals,
     dark: dark,
