@@ -8700,7 +8700,7 @@ function App() {
   const [physioClinical, setPhysioClinical] = useState([]);
   const [lightbox, setLightbox] = useState(null);
   const physioRef = useRef(null);
-  const physioInitialSrc = useRef(`physio/index.html?dark=${dark ? 1 : 0}`);
+  const physioInitialSrc = useRef(null);
   const feedRef = useRef(null);
   const darkRef = useRef(dark);
   const drwRef = useRef(null);
@@ -8716,6 +8716,14 @@ function App() {
       }, '*');
     }
   }, [dark, screen]);
+  // The iframe src is stamped on each entry to the Physiology tab so a fresh
+  // mount never boots from a ?dark= value frozen at first render. While the tab
+  // stays open the theme is kept in sync by postMessage, so it never reloads.
+  const physioScreenRef = useRef(null);
+  if (physioScreenRef.current !== screen) {
+    physioScreenRef.current = screen;
+    physioInitialSrc.current = `physio/index.html?dark=${dark ? 1 : 0}`;
+  }
   useEffect(() => {
     if (physioRef.current && screen === 'physiology') {
       physioRef.current.contentWindow.postMessage({

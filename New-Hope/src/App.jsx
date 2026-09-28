@@ -1,5 +1,5 @@
 import PhysiologyWidget from "../physiology_widget.jsx";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ThemeToggle from "./ThemeToggle.jsx";
 
 function getInitialTheme() {
@@ -9,6 +9,7 @@ function getInitialTheme() {
 
 export default function App() {
   const [theme, setTheme] = useState(getInitialTheme);
+  const mountedRef = useRef(false);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -26,6 +27,13 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    // Track user-initiated changes only. Reporting the initial mount would
+    // race the parent's theme postMessage and can echo a stale ?dark= value
+    // back up, flipping the parent theme.
+    if (!mountedRef.current) {
+      mountedRef.current = true;
+      return;
+    }
     try { window.parent.postMessage({ type: 'theme-from-physio', dark: theme === 'dark' }, '*'); } catch(e) {}
   }, [theme]);
 
