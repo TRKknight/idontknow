@@ -6497,7 +6497,7 @@ function CasesView({
 }) {
   const [setup, setSetup] = useState(true);
   const [difficulty, setDifficulty] = useState('all');
-  const [tag, setTag] = useState('all');
+  const [tags, setTags] = useState([]);
   const [shuffle, setShuffle] = useState(false);
   const [queue, setQueue] = useState([]);
   const [idx, setIdx] = useState(0);
@@ -6510,7 +6510,7 @@ function CasesView({
   const [showFilters, setShow] = useState(false);
   const [showDisorder, setShowDisorder] = useState(null);
   const allTags = [...new Set(cases.flatMap(c => c.tags))].sort();
-  const filtered = cases.filter(c => (difficulty === 'all' || c.difficulty === difficulty) && (tag === 'all' || c.tags.includes(tag)));
+  const filtered = cases.filter(c => (difficulty === 'all' || c.difficulty === difficulty) && (tags.length === 0 || tags.some(t => c.tags.includes(t))));
   function shuffleOptions(c) {
     const opts = c.options.map((o, i) => ({
       ...o,
@@ -6702,12 +6702,12 @@ function CasesView({
         marginBottom: 20
       }
     }, /*#__PURE__*/React.createElement("button", {
-      onClick: () => setTag('all'),
+      onClick: () => setTags([]),
       style: {
         padding: '6px 12px',
         borderRadius: 6,
-        border: tag === 'all' ? '2px solid #e8c56a' : '1px solid ' + DK.border(dark),
-        background: tag === 'all' ? dark ? '#2a2a1a' : '#fef8e8' : DK.card(dark),
+        border: tags.length === 0 ? '2px solid #e8c56a' : '1px solid ' + DK.border(dark),
+        background: tags.length === 0 ? dark ? '#2a2a1a' : '#fef8e8' : DK.card(dark),
         color: DK.text(dark),
         fontSize: 11,
         cursor: 'pointer',
@@ -6719,12 +6719,12 @@ function CasesView({
       }
     }, "(", cases.length, ")")), allTags.map(t => /*#__PURE__*/React.createElement("button", {
       key: t,
-      onClick: () => setTag(t),
+      onClick: () => setTags(prev => prev.indexOf(t) === -1 ? [...prev, t] : prev.filter(x => x !== t)),
       style: {
         padding: '6px 12px',
         borderRadius: 6,
-        border: tag === t ? '2px solid #e8c56a' : '1px solid ' + DK.border(dark),
-        background: tag === t ? dark ? '#2a2a1a' : '#fef8e8' : DK.card(dark),
+        border: tags.indexOf(t) !== -1 ? '2px solid #e8c56a' : '1px solid ' + DK.border(dark),
+        background: tags.indexOf(t) !== -1 ? dark ? '#2a2a1a' : '#fef8e8' : DK.card(dark),
         color: DK.text(dark),
         fontSize: 11,
         cursor: 'pointer',
@@ -6928,30 +6928,30 @@ function CasesView({
       flexWrap: 'wrap'
     }
   }, /*#__PURE__*/React.createElement("button", {
-    onClick: () => setTag('all'),
+    onClick: () => setTags([]),
     style: {
       padding: '4px 10px',
       borderRadius: 12,
       borderTop: 'none',
       borderRight: 'none',
       borderLeft: 'none',
-      background: tag === 'all' ? '#e8c56a' : dark ? '#333' : '#eee',
-      color: tag === 'all' ? '#1a1a1a' : DK.text(dark),
+      background: tags.length === 0 ? '#e8c56a' : dark ? '#333' : '#eee',
+      color: tags.length === 0 ? '#1a1a1a' : DK.text(dark),
       fontSize: 11,
       cursor: 'pointer',
       fontFamily: 'Georgia,serif'
     }
   }, "All"), allTags.map(t => /*#__PURE__*/React.createElement("button", {
     key: t,
-    onClick: () => setTag(t),
+    onClick: () => setTags(prev => prev.indexOf(t) === -1 ? [...prev, t] : prev.filter(x => x !== t)),
     style: {
       padding: '4px 10px',
       borderRadius: 12,
       borderTop: 'none',
       borderRight: 'none',
       borderLeft: 'none',
-      background: tag === t ? '#e8c56a' : dark ? '#333' : '#eee',
-      color: tag === t ? '#1a1a1a' : DK.text(dark),
+      background: tags.indexOf(t) !== -1 ? '#e8c56a' : dark ? '#333' : '#eee',
+      color: tags.indexOf(t) !== -1 ? '#1a1a1a' : DK.text(dark),
       fontSize: 11,
       cursor: 'pointer',
       fontFamily: 'Georgia,serif'
@@ -7308,6 +7308,618 @@ function CasesView({
       pointerEvents: 'none'
     }
   }, "\uD83D\uDD0D Tap to zoom"))))));
+}
+
+// \u2500\u2500 MUHS PYQ Viewer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+function MuhsPyqView({
+  cases,
+  dark,
+  onBack
+}) {
+const [mode, setMode] = useState('browse');
+  const [paper, setPaper] = useState('all');
+  const [source, setSource] = useState('all');
+  const [topics, setTopics] = useState([]);
+  const [openCase, setOpenCase] = useState(null);
+  const [revealed, setRevealed] = useState(false);
+  const [shuffleQ, setShuffleQ] = useState(false);
+  const [setup, setSetup] = useState(true);
+  const [queue, setQueue] = useState([]);
+  const [idx, setIdx] = useState(0);
+  const [answered, setAnswered] = useState(false);
+  const [selected, setSelected] = useState(null);
+  const [score, setScore] = useState({ c: 0, t: 0 });
+const filtered = cases.filter(c => (paper === 'all' || c.paper === paper) && (topics.length === 0 || topics.indexOf(c.topic) !== -1));
+  const years = [...new Set(filtered.map(c => c.year))].sort((a, b) => b - a);
+  const paperCounts = { all: cases.length, I: cases.filter(c => c.paper === 'I').length, II: cases.filter(c => c.paper === 'II').length };
+  const topicsOrder = ['all', ...new Set(cases.map(c => c.topic))].sort((a, b) => a === 'all' ? -1 : b === 'all' ? 1 : a.localeCompare(b));
+  const current = queue[idx] || filtered[0];
+  const isCorrect = answered && selected === current?.mcq?.answer;
+  useEffect(() => {
+    if (setup) return;
+    setAnswered(false);
+    setSelected(null);
+  }, [current]);
+  function shuffleOptions(c) {
+    const opts = c.mcq.options.map((o, i) => ({ ...o, origIdx: i }));
+    for (let i = opts.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [opts[i], opts[j]] = [opts[j], opts[i]];
+    }
+    const letters = 'ABCDEFGH';
+    const newOpts = opts.map((o, i) => ({ ...o, letter: letters[i] }));
+    const newAnswer = letters[opts.findIndex(o => o.letter === c.mcq.answer)];
+    return { ...c, mcq: { ...c.mcq, options: newOpts, answer: newAnswer } };
+  }
+function buildQueue() {
+    return (shuffleQ ? [...filtered].sort(() => Math.random() - 0.5) : [...filtered]).map(shuffleOptions);
+  }
+  function startQuiz() {
+    setQueue(buildQueue());
+    setIdx(0);
+    setAnswered(false);
+    setSelected(null);
+    setSetup(false);
+  }
+  function handleSelect(letter) {
+    if (answered) return;
+    setSelected(letter);
+    setAnswered(true);
+    const correct = letter === current.mcq.answer;
+    setScore(s => ({ c: s.c + (correct ? 1 : 0), t: s.t + 1 }));
+  }
+  function handleNext() {
+    if (idx + 1 >= queue.length) {
+      setQueue([]);
+      setIdx(0);
+      setAnswered(false);
+      setSelected(null);
+      setScore({ c: 0, t: 0 });
+      setSetup(true);
+      return;
+    }
+    setIdx(i => i + 1);
+    setAnswered(false);
+    setSelected(null);
+  }
+  const openIdx = filtered.indexOf(openCase);
+  const metaBadge = (label, clr) => /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      padding: '2px 8px',
+      borderRadius: 10,
+      background: dark ? '#333' : '#eee',
+      color: clr || DK.sub(dark),
+      marginRight: 6,
+      marginBottom: 4,
+      display: 'inline-block'
+    }
+  }, label);
+  const backBtnStyle = {
+    background: 'none',
+    borderTop: 'none',
+    borderRight: 'none',
+    borderLeft: 'none',
+    color: '#aaa',
+    fontSize: 24,
+    cursor: 'pointer',
+    padding: '10px 14px',
+    marginLeft: -14,
+    lineHeight: 1
+  };
+  const tabBtn = (active) => ({
+    flex: 1,
+    padding: '9px',
+    borderRadius: 8,
+    border: active ? '2px solid #9b59b6' : '1px solid ' + DK.border(dark),
+    background: active ? (dark ? '#2a1a2a' : '#f6eff6') : DK.card(dark),
+    color: DK.text(dark),
+    fontSize: 13,
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    fontFamily: 'Georgia,serif'
+  });
+  const head = /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: DK.hdr(dark),
+      padding: '13px 16px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      position: 'sticky',
+      top: 0,
+      zIndex: 20
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: openCase ? () => setOpenCase(null) : onBack,
+    style: backBtnStyle
+  }, "\u2190"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 17,
+      fontWeight: 'bold',
+      color: '#fff',
+      flex: 1
+    }
+  }, openCase ? "MUHS PYQ" : "MUHS PYQs"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: '#888'
+    }
+  }, openCase ? (openIdx + 1) + " / " + filtered.length : cases.length + " PYQs"));
+  let body; // eslint-disable-line
+  if (openCase) {
+    body = /*#__PURE__*/React.createElement("div", {
+      key: openCase.id
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 6,
+        flexWrap: 'wrap',
+        marginBottom: 10
+      }
+    }, metaBadge(openCase.season ? openCase.season + " " + openCase.year : openCase.year + '', '#2980b9'), metaBadge("Paper " + openCase.paper, '#9b59b6'), metaBadge(openCase.difficulty, openCase.difficulty === 'easy' ? '#27ae60' : openCase.difficulty === 'medium' ? '#e67e22' : '#c0392b'), metaBadge(openCase.topic, '#2980b9')), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: DK.text(dark),
+        marginBottom: 10,
+        lineHeight: 1.3
+      }
+    }, openCase.title), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 14,
+        color: DK.text(dark),
+        lineHeight: 1.7,
+        marginBottom: 14,
+        background: DK.card(dark),
+        borderTop: `1px solid ${DK.border(dark)}`,
+        borderRight: `1px solid ${DK.border(dark)}`,
+        borderBottom: `1px solid ${DK.border(dark)}`,
+        borderLeft: '3px solid #9b59b6',
+        borderRadius: 8,
+        padding: 14
+      }
+    }, openCase.stem), /*#__PURE__*/React.createElement("ol", {
+      style: {
+        margin: '0 0 16px 0',
+        paddingLeft: 20
+      }
+    }, openCase.questions.map((q, i) => /*#__PURE__*/React.createElement("li", {
+      key: i,
+      style: {
+        fontSize: 13,
+        color: DK.text(dark),
+        lineHeight: 1.6,
+        marginBottom: 6
+      }
+    }, q))), /*#__PURE__*/React.createElement("button", {
+      onClick: () => setRevealed(v => !v),
+      style: {
+        width: '100%',
+        padding: 13,
+        borderRadius: 8,
+        borderTop: 'none',
+        borderRight: 'none',
+        borderLeft: 'none',
+        background: revealed ? (dark ? '#333' : '#eee') : '#9b59b6',
+        color: revealed ? DK.text(dark) : '#fff',
+        fontSize: 15,
+        fontWeight: 'bold',
+        cursor: 'pointer',
+        fontFamily: 'Georgia,serif',
+        marginBottom: 14
+      }
+    }, revealed ? "\uD83D\uDCA1 Hide Model Answer" : "\uD83D\uDCA1 Reveal Model Answer"), revealed && /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: dark ? '#15241a' : '#eef7ee',
+        borderRadius: 8,
+        padding: 14,
+        marginBottom: 14,
+        borderLeft: '3px solid #27ae60',
+        animation: 'fadeIn 0.3s ease'
+      }
+    }, openCase.modelAnswer.map((a, i) => /*#__PURE__*/React.createElement("div", {
+      key: i,
+      style: {
+        fontSize: 13,
+        color: DK.text(dark),
+        lineHeight: 1.65,
+        marginBottom: 8
+      }
+    }, /*#__PURE__*/React.createElement("strong", {
+      style: {
+        color: '#27ae60',
+        marginRight: 6
+      }
+    }, i + 1, "."), a))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 8,
+        marginTop: 6
+      }
+}, /*#__PURE__*/React.createElement("button", {
+      onClick: () => {
+        if (openIdx > 0) setOpenCase(filtered[openIdx - 1]);
+        setRevealed(false);
+      },
+      disabled: openIdx <= 0,
+      style: {
+        flex: 1,
+        padding: 12,
+        borderRadius: 8,
+        borderTop: 'none',
+        borderRight: 'none',
+        borderLeft: 'none',
+        background: openIdx <= 0 ? (dark ? '#222' : '#eee') : (dark ? '#333' : '#e8e2d9'),
+        color: openIdx <= 0 ? (dark ? '#555' : '#aaa') : DK.text(dark),
+        fontSize: 14,
+        cursor: openIdx <= 0 ? 'default' : 'pointer',
+        fontFamily: 'Georgia,serif'
+      }
+}, "\u2190 Previous"), /*#__PURE__*/React.createElement("button", {
+      onClick: () => {
+        if (openIdx < filtered.length - 1) setOpenCase(filtered[openIdx + 1]);
+        setRevealed(false);
+      },
+      disabled: openIdx >= filtered.length - 1,
+      style: {
+        flex: 1,
+        padding: 12,
+        borderRadius: 8,
+        borderTop: 'none',
+        borderRight: 'none',
+        borderLeft: 'none',
+        background: openIdx >= filtered.length - 1 ? (dark ? '#222' : '#eee') : '#9b59b6',
+        color: openIdx >= filtered.length - 1 ? (dark ? '#555' : '#aaa') : '#fff',
+        fontSize: 14,
+        cursor: openIdx >= filtered.length - 1 ? 'default' : 'pointer',
+        fontFamily: 'Georgia,serif'
+      }
+    }, "Next \u2192")));
+} else if (mode === 'browse') {
+    body = years.map(y => { // eslint-disable-line
+      const inYear = filtered.filter(c => c.year === y);
+      return /*#__PURE__*/React.createElement("div", {
+        key: y
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontSize: 15,
+          fontWeight: 'bold',
+          color: DK.text(dark),
+          margin: '14px 0 8px'
+        }
+      }, y, " \u2014 ", inYear.length, " case", inYear.length !== 1 ? 's' : ''), inYear.map(c => /*#__PURE__*/React.createElement("div", {
+        key: c.id,
+        onClick: () => {
+          setOpenCase(c);
+          setRevealed(false);
+        },
+        style: {
+          background: DK.card(dark),
+          borderRadius: 12,
+          padding: '14px 12px 8px',
+          marginBottom: 10,
+          borderTop: `1px solid ${DK.border(dark)}`,
+          borderRight: `1px solid ${DK.border(dark)}`,
+          borderBottom: `1px solid ${DK.border(dark)}`,
+          borderLeft: '4px solid #9b59b6',
+          cursor: 'pointer'
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontSize: 14,
+          fontWeight: 'bold',
+          color: DK.text(dark),
+          marginBottom: 6,
+          lineHeight: 1.4
+        }
+      }, c.title), /*#__PURE__*/React.createElement("div", {
+        style: {
+          display: 'flex',
+          flexWrap: 'wrap'
+        }
+}, metaBadge(c.season ? c.season + " " + c.year : '' + c.year, '#2980b9'), metaBadge("Paper " + c.paper, '#9b59b6'), metaBadge(c.difficulty, c.difficulty === 'easy' ? '#27ae60' : c.difficulty === 'medium' ? '#e67e22' : '#c0392b')))));
+    });
+  } else if (setup) {
+    body = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: DK.text(dark),
+        marginBottom: 4
+      }
+    }, "Configure Your Quiz"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        color: DK.sub(dark),
+        marginBottom: 20,
+        lineHeight: 1.5
+      }
+    }, "Converts each PYQ case into an MCQ. Pick a paper above, choose whether to shuffle, then start."), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        color: DK.text(dark),
+        marginBottom: 8
+      }
+    }, "Playback"), /*#__PURE__*/React.createElement("button", {
+      onClick: () => setShuffleQ(v => !v),
+      style: {
+        padding: '8px 16px',
+        borderRadius: 6,
+        borderTop: 'none',
+        borderRight: 'none',
+        borderLeft: 'none',
+        background: shuffleQ ? '#9b59b6' : (dark ? '#333' : '#eee'),
+        color: shuffleQ ? '#fff' : DK.text(dark),
+        fontSize: 12,
+        cursor: 'pointer',
+        fontFamily: 'Georgia,serif',
+        marginBottom: 24
+      }
+    }, "\uD83D\uDD00 Shuffle Questions ", shuffleQ ? 'ON' : 'OFF'), filtered.length > 0 ? /*#__PURE__*/React.createElement("button", {
+      onClick: startQuiz,
+      style: {
+        width: '100%',
+        padding: 14,
+        borderRadius: 8,
+        borderTop: 'none',
+        borderRight: 'none',
+        borderLeft: 'none',
+        background: '#9b59b6',
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: 'bold',
+        cursor: 'pointer',
+        fontFamily: 'Georgia,serif'
+      }
+    }, "Start Quiz \u2014 ", filtered.length, " question", filtered.length !== 1 ? 's' : '') : /*#__PURE__*/React.createElement("div", {
+      style: {
+        textAlign: 'center',
+        padding: 14,
+        color: '#c0392b',
+        fontSize: 13
+      }
+    }, "No cases match this paper."));
+  } else if (current) {
+    body = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        gap: 6,
+        flexWrap: 'wrap',
+        marginBottom: 10
+      }
+}, metaBadge(current.season ? current.season + " " + current.year : current.year + '', '#2980b9'), metaBadge("Paper " + current.paper, '#9b59b6'), metaBadge(current.difficulty, current.difficulty === 'easy' ? '#27ae60' : current.difficulty === 'medium' ? '#e67e22' : '#c0392b')), /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: DK.card(dark),
+        borderTop: `1px solid ${DK.border(dark)}`,
+        borderRight: `1px solid ${DK.border(dark)}`,
+        borderBottom: `1px solid ${DK.border(dark)}`,
+        borderRadius: 10,
+        padding: '16px',
+        marginBottom: 10
+      }
+    }, current.stem && /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        color: DK.sub(dark),
+        lineHeight: 1.6,
+        marginBottom: 10,
+        paddingBottom: 10,
+        borderBottom: `1px dashed ${DK.border(dark)}`
+      }
+    }, current.stem), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 13,
+        color: DK.text(dark),
+        lineHeight: 1.7,
+        marginBottom: 8
+      }
+    }, current.mcq.question), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 6
+      }
+    }, current.mcq.options.map(o => {
+      const isSel = selected === o.letter;
+      const isAns = o.letter === current.mcq.answer;
+      let bg, border, txt;
+      if (!answered) {
+        bg = dark ? '#1a1a1a' : '#fefefe';
+        border = DK.border(dark);
+        txt = DK.text(dark);
+      } else if (isSel && isAns) {
+        bg = dark ? '#1a3a1a' : '#d4edda';
+        border = '#27ae60';
+        txt = '#27ae60';
+      } else if (isSel && !isAns) {
+        bg = dark ? '#3a1a1a' : '#f8d7da';
+        border = '#c0392b';
+        txt = '#c0392b';
+      } else if (isAns) {
+        bg = dark ? '#1a2a1a' : '#e8f5ee';
+        border = '#27ae60';
+        txt = '#27ae60';
+      } else {
+        bg = dark ? '#1a1a1a' : '#fefefe';
+        border = DK.border(dark);
+        txt = DK.muted(dark);
+      }
+      return /*#__PURE__*/React.createElement("button", {
+        key: o.letter,
+        onClick: () => handleSelect(o.letter),
+        style: {
+          padding: '10px 12px',
+          borderRadius: 6,
+          border: `1px solid ${border}`,
+          background: bg,
+          color: txt,
+          fontSize: 13,
+          cursor: answered ? 'default' : 'pointer',
+          fontFamily: 'Georgia,serif',
+          textAlign: 'left',
+          lineHeight: 1.5,
+          transition: 'all 0.15s',
+          opacity: answered && !isSel && !isAns ? 0.5 : 1
+        }
+      }, /*#__PURE__*/React.createElement("strong", {
+        style: {
+          marginRight: 8
+        }
+      }, o.letter, "."), " ", o.text);
+    })), answered && current.mcq.explanation && /*#__PURE__*/React.createElement("div", {
+      style: {
+        marginTop: 14,
+        padding: '12px',
+        borderRadius: 8,
+        background: dark ? '#1a1a1a' : '#fafafa',
+        borderTop: `1px solid ${DK.border(dark)}`,
+        borderRight: `1px solid ${DK.border(dark)}`,
+        borderBottom: `1px solid ${DK.border(dark)}`,
+        borderLeft: `3px solid ${isCorrect ? '#27ae60' : '#c0392b'}`,
+        animation: 'fadeIn 0.3s ease'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        color: isCorrect ? '#27ae60' : '#c0392b',
+        marginBottom: 4
+      }
+    }, isCorrect ? '\u2713 Correct' : `\u2717 Incorrect \u2014 answer is ${current.mcq.answer}`), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12,
+        color: DK.sub(dark),
+        lineHeight: 1.6
+      }
+    }, current.mcq.explanation))));
+  }
+  const fixedFooter = mode === 'quiz' && !setup && current ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'fixed',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      padding: '12px 16px',
+      background: dark ? 'rgba(15,15,15,0.97)' : 'rgba(250,247,242,0.97)',
+      borderTop: `1px solid ${DK.border(dark)}`,
+      zIndex: 10
+    }
+  }, answered ? /*#__PURE__*/React.createElement("button", {
+    onClick: handleNext,
+    style: {
+      width: '100%',
+      padding: 13,
+      borderRadius: 8,
+      borderTop: 'none',
+      borderRight: 'none',
+      borderLeft: 'none',
+      background: '#9b59b6',
+      color: '#fff',
+      fontSize: 15,
+      fontWeight: 'bold',
+      cursor: 'pointer',
+      fontFamily: 'Georgia,serif'
+    }
+  }, idx + 1 >= queue.length ? '\uD83D\uDD04 Restart Quiz' : 'Next Question \u2192') : /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center',
+      fontSize: 11,
+      color: DK.muted(dark)
+    }
+  }, "Select an answer above")) : null;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      minHeight: '100vh',
+      background: DK.bg(dark),
+      fontFamily: 'Georgia,serif',
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, head, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      overflowY: 'auto',
+      padding: '16px 14px 120px'
+    }
+  }, !openCase && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setMode('browse'),
+    style: tabBtn(mode === 'browse')
+  }, "\uD83D\uDCDC Browse"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setMode('quiz'),
+    style: tabBtn(mode === 'quiz')
+  }, "\uD83C\uDFAF Quiz")), !openCase && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 6,
+      margin: '10px 0 4px'
+    }
+  }, ['all', 'I', 'II'].map(p => /*#__PURE__*/React.createElement("button", {
+    key: p,
+    onClick: () => setPaper(p),
+    style: {
+      flex: 1,
+      padding: '7px 6px',
+      borderRadius: 6,
+      border: paper === p ? '2px solid #9b59b6' : '1px solid ' + DK.border(dark),
+      background: paper === p ? (dark ? '#2a1a2a' : '#f6eff6') : DK.card(dark),
+      color: DK.text(dark),
+      fontSize: 11,
+      cursor: 'pointer',
+      fontFamily: 'Georgia,serif'
+    }
+  }, p === 'all' ? 'Both' : "Paper " + p, " (", paperCounts[p], ")"))), !openCase && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 6,
+      flexWrap: 'wrap',
+      margin: '2px 0 4px'
+    }
+  }, topicsOrder.map(t => /*#__PURE__*/React.createElement("button", {
+    key: t,
+    onClick: () => {
+      if (t === 'all') {
+        setTopics([]);
+      } else {
+        setTopics(prev => prev.indexOf(t) === -1 ? [...prev, t] : prev.filter(x => x !== t));
+      }
+    },
+    style: {
+      padding: '5px 10px',
+      borderRadius: 12,
+      border: (t === 'all' ? topics.length === 0 : topics.indexOf(t) !== -1) ? '2px solid #9b59b6' : '1px solid ' + DK.border(dark),
+      background: (t === 'all' ? topics.length === 0 : topics.indexOf(t) !== -1) ? (dark ? '#2a1a2a' : '#f6eff6') : DK.card(dark),
+      color: DK.text(dark),
+      fontSize: 11,
+      cursor: 'pointer',
+      fontFamily: 'Georgia,serif'
+    }
+  }, t === 'all' ? 'All Topics' : t, " (", t === 'all' ? paperCounts.all : cases.filter(c => c.topic === t).length, ")"))), !openCase && mode === 'quiz' && !setup && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      margin: '8px 0 12px'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: DK.sub(dark)
+    }
+  }, "Question ", idx + 1, " of ", queue.length), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      fontWeight: 'bold',
+      color: '#9b59b6'
+    }
+  }, "Score: ", score.c, " / ", score.t)), body), fixedFooter, /*#__PURE__*/React.createElement("style", null, `@keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }`));
 }
 
 // \u2500\u2500 Normal Values & RDA Viewer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
@@ -8079,15 +8691,19 @@ function App() {
   const [vignettes, setVignettes] = useState([]);
   const [openVignette, setOpenVignette] = useState(null);
   const [clinicalCases, setClinicalCases] = useState([]);
-  const [visibility, setVisibility] = useState({ disorders: true, pathways: true, 'normal-values': true, vitamins: true, minerals: true, physiology: true, feed: true, 'clinical-vignettes': true, 'clinical-cases': true, vignettes: true, 'biochem-home': true, 'physio-viva': true, 'physio-reflexes-explorer': true, 'physio-notes': true, 'physio-clinical': true });
+  const [muhsPyq, setMuhsPyq] = useState([]);
+  const [jambhulkar, setJambhulkar] = useState([]);
+  const [visibility, setVisibility] = useState({ disorders: true, pathways: true, 'normal-values': true, vitamins: true, minerals: true, physiology: true, feed: true, 'clinical-vignettes': true, 'clinical-cases': true, 'muhs-pyq': true, 'jambhulkar-pyq': true, vignettes: true, 'biochem-home': true, 'physio-viva': true, 'physio-reflexes-explorer': true, 'physio-notes': true, 'physio-clinical': true });
   const [physioViva, setPhysioViva] = useState([]);
   const [physioReflexDetails, setPhysioReflexDetails] = useState([]);
   const [physioNotes, setPhysioNotes] = useState([]);
   const [physioClinical, setPhysioClinical] = useState([]);
   const [lightbox, setLightbox] = useState(null);
   const physioRef = useRef(null);
+  const physioInitialSrc = useRef(`physio/index.html?dark=${dark ? 1 : 0}`);
   const feedRef = useRef(null);
   const darkRef = useRef(dark);
+  const drwRef = useRef(null);
   useEffect(() => { darkRef.current = dark; }, [dark]);
   const [physioMode, setPhysioMode] = useState('home');
   const [physioCat, setPhysioCat] = useState('All');
@@ -8098,6 +8714,10 @@ function App() {
         type: 'theme',
         dark
       }, '*');
+    }
+  }, [dark, screen]);
+  useEffect(() => {
+    if (physioRef.current && screen === 'physiology') {
       physioRef.current.contentWindow.postMessage({
         type: 'physio-nav-set',
         mode: physioMode,
@@ -8112,7 +8732,7 @@ function App() {
         clinical: visibility['physio-clinical']
       }, '*');
     }
-  }, [dark, screen, physioMode, physioCat, physioSearch, visibility]);
+  }, [screen, physioMode, physioCat, physioSearch, visibility]);
   useEffect(() => {
     if (feedRef.current && screen === 'feed') {
       feedRef.current.contentWindow.postMessage({
@@ -8168,7 +8788,8 @@ function App() {
     Promise.all([fetch('data/disorders.json').then(r => {
       if (!r.ok) throw new Error('data/disorders.json not found');
       return r.json();
-    }), fetch('data/pathways.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/normal_values.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vitamins.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/minerals.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vignettes.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/cases.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('visibility.json').then(r => r.ok ? r.json() : {}).catch(() => ({})), fetch('physio/viva.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/reflex_details.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/notes.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/clinical.json').then(r => r.ok ? r.json() : []).catch(() => [])]).then(([data, paths, nv, vits, mins, vign, cases, vis, pVi, pRD, pNo, pCl]) => {
+    }), fetch('data/pathways.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/normal_values.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vitamins.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/minerals.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vignettes.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/cases.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/muhs_pyq.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('visibility.json').then(r => r.ok ? r.json() : {}).catch(() => ({})), fetch('physio/viva.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/reflex_details.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/notes.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/clinical.json').then(r => r.ok ? r.json() : []).catch(() => [])]).then(([data, paths, nv, vits, mins, vign, cases, mpyq, vis, pVi, pRD, pNo, pCl]) => {
+      setMuhsPyq(mpyq);
       setAllData(data);
       setPathways(paths);
       setNormalVals(nv);
@@ -8241,7 +8862,7 @@ function App() {
       setSel(null);
       setOpenPathway(null);
       const sub = p.split('/')[2] || 'home';
-      setPhysioMode(sub === 'browse' || sub === 'quiz' || sub === 'reflex' || sub === 'reflexDetails' ? sub : 'home');
+      setPhysioMode(sub === 'browse' || sub === 'quiz' || sub === 'reflex' || sub === 'reflexDetails' || sub === 'notes' || sub === 'clinical' ? (sub === 'reflex' ? 'reflexDetails' : sub) : 'home');
       setPhysioCat(par.cat || 'All');
       setPhysioSearch(par.search || '');
     } else if (p === '/vignettes') {
@@ -8257,6 +8878,9 @@ function App() {
       setSel(null);
     } else if (p === '/clinical-vignettes') {
       setScreen('clinical-vignettes');
+      setSel(null);
+    } else if (p === '/muhs-pyq') {
+      setScreen('muhs-pyq');
       setSel(null);
     } else if (p === '/feed') {
       setScreen('feed');
@@ -8365,6 +8989,10 @@ function App() {
     }
     if (screen === 'clinical-vignettes') {
       window.location.hash = '#/clinical-vignettes';
+      return;
+    }
+    if (screen === 'muhs-pyq') {
+      window.location.hash = '#/muhs-pyq';
       return;
     }
     if (screen === 'feed') {
@@ -9473,7 +10101,7 @@ function App() {
       display: 'flex',
       alignItems: 'center',
       gap: 10,
-      padding: '8px 14px',
+      padding: '13px 16px',
       background: DK.hdr(dark),
       borderBottom: '1px solid ' + (dark ? '#2a2a2a' : '#e8e2d9'),
       flexShrink: 0,
@@ -9498,23 +10126,24 @@ function App() {
       borderRight: 'none',
       borderLeft: 'none',
       color: '#aaa',
-      fontSize: 20,
+      fontSize: 24,
       cursor: 'pointer',
-      padding: '4px 8px',
+      padding: '10px 14px',
+      marginLeft: -14,
       lineHeight: 1,
       fontFamily: 'Georgia,serif'
     }
   }, "\u2190"), /*#__PURE__*/React.createElement("span", {
     style: {
-      fontSize: 14,
-      fontWeight: 600,
+      fontSize: 17,
+      fontWeight: 'bold',
       color: '#fff',
       flex: 1,
       fontFamily: 'Georgia,serif'
     }
-  }, "\uD83E\uDDE0 Physiology")), /*#__PURE__*/React.createElement("iframe", {
+  }, "\uD83E\uDDE0 Physiology"), darkToggle), /*#__PURE__*/React.createElement("iframe", {
     ref: physioRef,
-    src: "physio/index.html?dark=" + (dark ? 1 : 0),
+    src: physioInitialSrc.current,
     style: {
       flex: 1,
       width: '100%',
@@ -9533,7 +10162,7 @@ function App() {
         const sub = pp.split('/')[2] || 'home';
         physioRef.current.contentWindow.postMessage({
           type: 'physio-nav-set',
-          mode: sub === 'browse' || sub === 'quiz' || sub === 'reflex' || sub === 'reflexDetails' ? sub : 'home',
+          mode: sub === 'browse' || sub === 'quiz' || sub === 'reflex' || sub === 'reflexDetails' || sub === 'notes' || sub === 'clinical' ? (sub === 'reflex' ? 'reflexDetails' : sub) : 'home',
           cat: new URLSearchParams(window.location.hash.split('?')[1] || '').get('cat') || 'All',
           search: new URLSearchParams(window.location.hash.split('?')[1] || '').get('search') || ''
         }, '*');
@@ -9704,7 +10333,40 @@ function App() {
         color: '#fff'
       }
     }, count, " ", d);
-  }))), visibility.vignettes !== false && /*#__PURE__*/React.createElement("div", {
+  }))), visibility['muhs-pyq'] !== false && /*#__PURE__*/React.createElement("div", {
+    onClick: () => {
+      navigateTo('muhs-pyq');
+    },
+    style: {
+      background: DK.card(dark),
+      borderRadius: 14,
+      padding: '24px 20px',
+      borderTop: `1px solid ${DK.border(dark)}`,
+      borderRight: `1px solid ${DK.border(dark)}`,
+      borderBottom: `1px solid ${DK.border(dark)}`,
+      cursor: 'pointer',
+      boxShadow: dark ? 'none' : '0 2px 12px rgba(0,0,0,0.07)',
+      borderLeft: '5px solid #9b59b6'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 36,
+      marginBottom: 10
+    }
+  }, "\uD83D\uDCDD"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 19,
+      fontWeight: 'bold',
+      color: DK.text(dark),
+      marginBottom: 5
+    }
+  }, "MUHS PYQs"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: DK.sub(dark),
+      lineHeight: 1.6
+    }
+  }, muhsPyq.length, " MUHS exam case questions (2018\u20132025). Browse each case with model answers, or quiz yourself with converted MCQs by paper.")), visibility.vignettes !== false && /*#__PURE__*/React.createElement("div", {
     onClick: () => {
       navigateTo('vignettes');
     },
@@ -9737,7 +10399,11 @@ function App() {
       color: DK.sub(dark),
       lineHeight: 1.6
     }
-  }, vignettes.length, " interactive simulation cases. Choose exams, labs, and tests to narrow the differential. Score based on diagnostic efficiency.")))), screen === 'clinical-cases' && !adminConfig && visibility['clinical-cases'] !== false && /*#__PURE__*/React.createElement(CasesView, {
+  }, vignettes.length, " interactive simulation cases. Choose exams, labs, and tests to narrow the differential. Score based on diagnostic efficiency.")))), screen === 'muhs-pyq' && !adminConfig && visibility['muhs-pyq'] !== false && /*#__PURE__*/React.createElement(MuhsPyqView, {
+    cases: muhsPyq,
+    dark: dark,
+    onBack: goBack
+  }), screen === 'clinical-cases' && !adminConfig && visibility['clinical-cases'] !== false && /*#__PURE__*/React.createElement(CasesView, {
     cases: clinicalCases,
     allDisorders: allData,
     dark: dark,
@@ -10163,6 +10829,7 @@ function App() {
     onClick: () => setSel(null)
   }, /*#__PURE__*/React.createElement("div", {
     style: s.drw,
+    ref: drwRef,
     onClick: e => e.stopPropagation()
   }, /*#__PURE__*/React.createElement("div", {
     style: {
@@ -10336,7 +11003,55 @@ function App() {
         }
       }, "Step ", stepNum, " \u2192"));
     })));
-  })()))), " ", lightbox && /*#__PURE__*/React.createElement(ImageLightbox, {
+  })(), (() => {
+      const selIdx = filtered.findIndex(d => d.id === sel.id);
+      if (selIdx < 0) return null;
+      const prev = selIdx > 0 ? filtered[selIdx - 1] : null;
+      const next = selIdx < filtered.length - 1 ? filtered[selIdx + 1] : null;
+      const navBtn = (has) => ({
+        flex: 1,
+        padding: "11px 12px",
+        borderRadius: 6,
+        borderTop: `1px solid ${DK.border(dark)}`,
+        borderRight: `1px solid ${DK.border(dark)}`,
+        borderBottom: `1px solid ${DK.border(dark)}`,
+        borderLeft: `1px solid ${DK.border(dark)}`,
+        background: has ? DK.surface(dark) : DK.bg(dark),
+        color: has ? DK.text(dark) : DK.muted(dark),
+        cursor: has ? "pointer" : "not-allowed",
+        fontSize: 13,
+        fontFamily: "Georgia,serif"
+      });
+      const goTo = d => {
+        setSel(d);
+        if (drwRef.current) drwRef.current.scrollTop = 0;
+      };
+      return /*#__PURE__*/React.createElement("div", {
+        style: {
+          marginTop: 18,
+          paddingTop: 16,
+          borderTop: `1px solid ${DK.border(dark)}`,
+          display: "flex",
+          alignItems: "center",
+          gap: 10
+        }
+      }, /*#__PURE__*/React.createElement("button", {
+        onClick: () => prev && goTo(prev),
+        disabled: !prev,
+        style: navBtn(prev)
+      }, "\u2190 Prev"), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontSize: 11,
+          color: DK.muted(dark),
+          fontFamily: "monospace",
+          whiteSpace: "nowrap"
+        }
+      }, selIdx + 1, " / ", filtered.length), /*#__PURE__*/React.createElement("button", {
+        onClick: () => next && goTo(next),
+        disabled: !next,
+        style: navBtn(next)
+      }, "Next \u2192"));
+    })()))), " ", lightbox && /*#__PURE__*/React.createElement(ImageLightbox, {
     src: lightbox,
     onClose: () => setLightbox(null)
   }));

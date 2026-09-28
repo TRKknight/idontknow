@@ -1,0 +1,318 @@
+# Physiology Notes Topics
+
+There are 314 note entries representing 314 unique topic names.
+
+- Abdominothoracic vs. Thoracoabdominal Breathing
+- Abnormal Breathing Patterns
+- Acetylcholine (ACh)
+- Achalasia Cardia
+- Actinin (Alpha-Actinin)
+- Action Potentials
+- Acute Oxygen Toxicity
+- Adipokines
+- Adrenal Cortical Layers
+- Adrenergic Receptors
+- Adynamic (Paralytic) Ileus
+- Albumin
+- Alimentary Tract Glands
+- Alveolar Epithelium
+- Alveolar Respiratory Membrane
+- Alveolus
+- Anemias
+- Anterior Pituitary Cells
+- Anterolateral Sensory Pathway
+- Antibodies (Immunoglobulins)
+- Anticoagulant and Antiplatelet Agents
+- Aortic and Carotid Baroreceptors
+- Apneustic Breathing
+- Appetite Juice
+- Aquaporins
+- Arachnoidal Villi and Granulations
+- Arterial System
+- Asphyxia Stages
+- Atherosclerosis
+- ATP (Adenosine Triphosphate)
+- Automatic or Reflexive Movements
+- Autonomic Failure
+- Autonomic Nervous System (ANS)
+- Bad Taste
+- Barrett’s Esophagus
+- Basal Cells
+- Basal Metabolic Rate (BMR)
+- Basilar Membrane
+- Bezold-Jarisch Reflex (BJR)
+- Bile Acids and Salts
+- Biot's and Apneustic Breathing
+- Bleeding and Clotting Disorders
+- Blind Loop Syndrome
+- Blood
+- Blood Pressure Variability (BPV)
+- Blood Types (ABO and Rh)
+- Blood-Brain Barrier (BBB)
+- Body Fluid Volume Abnormalities
+- Body Fluids
+- Body Tissues
+- Brain Waves
+- Brain Waves during Sleep
+- Breast
+- Bronchial Tone
+- Calmodulin
+- Capillary Pores
+- Cardiac Conductive System
+- Cardiac Muscle
+- Cardiac Tissues
+- Cell Membrane
+- Cerebral Dominance
+- Cerebrospinal Fluid (CSF)
+- Chemoreceptors
+- Chewing (Mastication)
+- Circulation
+- Clotting Factors
+- Cochlear Hair Cells
+- Collagen and Elastin Fibers
+- Composition of Milk
+- Control Systems
+- Cortical and Juxtamedullary Nephrons
+- Countercurrent Multiplication vs. Exchange
+- Crista Ampullaris
+- Cupula
+- Cyanosis
+- Cystic Fibrosis
+- Cytosol
+- Daily Water Intake and Output
+- Deep Breathing Difference (DBD)
+- Deglutition (Swallowing)
+- Dendritic Spines
+- Dense Bodies
+- Diabetes Mellitus
+- Dicrotic Notch
+- Drowning
+- Dumping Syndrome
+- Dynamic Lung
+- Ebner's Glands
+- Eccrine vs. Apocrine Glands
+- Electrotonic Potentials
+- Endocrine Hormones
+- Energy Systems in Sports
+- Enteric Nervous System (ENS)
+- Enterohepatic Circulation
+- Enterokinase (Enteropeptidase)
+- Erlanger–Gasser Classification
+- Esophageal Muscles
+- Exercise Pressor Reflex (EPR)
+- Extracellular Fluid (ECF)
+- Factors VIII and IX
+- Fast vs. Slow Pranayamas
+- Febrile Conditions
+- Fermentation Substrates
+- Fetal Hemoglobin (HbF)
+- Fibrin Fibers
+- Fibrinogen (Factor I)
+- Frank-Starling Mechanism
+- Free Fluid
+- Fungiform, Foliate, and Circumvallate Papillae
+- G-Protein (Second Messenger)
+- GABA (Gamma-Aminobutyric Acid) and Glycine
+- Gastric Gland Cell Types
+- Gastric Rugae
+- Gastrointestinal Muscle Organization
+- Geriatric Population
+- Ghrelin
+- GI Hormones
+- GI Mucosa Cell Types
+- GI Smooth Muscle
+- GI Sphincters
+- Glomerular Barrier and Capillary Membrane
+- Glomerular Capillary Filterability
+- Glomerular Capillary Pores
+- Glomus Cells
+- Glutamate
+- Glycophorins
+- Graded and Local Potentials
+- Granule Cells
+- Growth Spurt
+- Gustducin
+- Hair Cells
+- Heart Rate Response
+- Heart Sounds
+- Heat Production
+- Hemoglobin (Hb)
+- Hering–Breuer Reflexes
+- High Altitude Acclimatization
+- High-Pressure Nervous Syndrome (HPNS)
+- Hirschsprung Disease
+- Hormone Secretion and Clearance
+- HPA Axis (Hypothalamo-Pituitary-Adrenal Axis)
+- Hyperthyroidism
+- Hypothalamic Hormones
+- Hypothyroidism
+- Inherited Disorders of Hemoglobin
+- Insomnias vs. Hypersomnias
+- Inspiratory Neurons
+- Insulin and Glucagon
+- Insulin Receptor Signalling
+- Integrative Reflexes of the Spinal Cord
+- Intercalated Disks
+- Interstitial Cells of Cajal (ICC)
+- Intestinal Bacterial Flora
+- Intestinal Crypts of Lieberkühn
+- Intestinal Movements
+- Intracellular Fluid (ICF)
+- Intrinsic Factor
+- Ion Channels
+- Isotonic and Isometric Contractions
+- Isotonic and Isometric Exercises
+- Jugular Venous Pulse (JVP) Waves
+- Juxtaglomerular (JG) Cells
+- Kussmaul's Respiration
+- L-type Calcium Channels
+- Lactose Intolerance
+- Larynx and Vocal Cords
+- Lipid Bilayer
+- Lipids
+- Lung Compliance
+- Lungs and Chest Wall
+- Lysosomes
+- Macula
+- Malabsorption Syndrome
+- Maximum Expiratory Flow Volume Curve (MEFVC)
+- Membrane Potential
+- Menstrual Cycle Phases
+- Methods of Contraception
+- Micelles
+- Migrating Motor Complex (MMC)
+- Myenteric and Submucosal Plexuses
+- Myosin Filament
+- Myosin Head
+- Narcolepsy and Cataplexy
+- Necrosis and Apoptosis
+- Nerve and Muscle Action Potentials
+- Nerve Degeneration and Regeneration
+- Nerve Fibers
+- Neuronal Assemblies
+- Neuronal Soma
+- Neuropeptide Transmitters
+- Nicotinic Cholinergic Receptors
+- Nitric Oxide (NO)
+- Normal Lens
+- Olfactory Neurons
+- Olfactory Receptors
+- Ondine's Curse
+- Optics
+- Organ of Corti
+- Organelles
+- Orthopnea and Dyspnea
+- Osmolar Substances in Body Fluids
+- Outer Hair Cells
+- Pacemaker Potential
+- Pacinian Corpuscle
+- Pancreas Secretory Lobules
+- Paneth Cells
+- Pathological Q Waves
+- Pepsin
+- Pepsinogens
+- Peristaltic Rush
+- Pheochromocytoma
+- Physical Gas Laws
+- Physiological Shunt
+- Pinna and Tragus
+- Plasma Proteins
+- Plasmin and Plasminogen
+- Platelet Plug (Temporary Hemostatic Plug)
+- Platelets (Thrombocytes)
+- Pleura
+- Posterior Pituitary Hormones
+- Prestin
+- Primary Acid–Base Disturbances
+- Principal (P) vs. Intercalated (I) Cells
+- Propulsive vs. Mixing Patterns
+- Proteins
+- Proteoglycan Filaments
+- Prothrombin Activator
+- Prothrombin and Thrombin
+- Protoplasm
+- Pulmonary Capillaries
+- Pulmonary Circulation
+- Pulmonary Function Symbols
+- Pulmonary Hypertension
+- Pulmonary Interstitial Fluid
+- Pulmonary Surfactant
+- Pulmonary Vascular System
+- Pulmonary Volumes and Capacities
+- Purkinje Fibers
+- RBC Membrane
+- Red Blood Cells (Erythrocytes)
+- Reflexes
+- Reflux Esophagitis (GERD)
+- Renal Circulation
+- Renal System
+- Renal Tubules
+- Renin-Angiotensin-Aldosterone System (RAAS)
+- Respiratory Apparatus (Respiratory System)
+- Rhodopsin
+- Rigor Mortis
+- Rouleaux
+- SA Node (Sinoatrial Node)
+- Saliva
+- Saliva Composition
+- Salivary Glands
+- Secretory Juice Phases
+- Selye's General Adaptation Syndrome (GAS)
+- Sensory Receptors
+- Sensory Transmission
+- Serum
+- Serum and Plasma Proteins
+- Signal Transmission in Nerve Trunks
+- Sinus Arrhythmia
+- Skeletal Muscle
+- Skeletal Muscle Contraction
+- Sleep Apnea Syndrome
+- Slow and Fast Skeletal Muscle Fibers
+- Slow Waves (Basal Electrical Rhythm - BER)
+- Small-Molecule, Rapidly Acting Neurotransmitters
+- Smooth Muscle
+- Somnambulism
+- Spectrin and Ankyrin
+- Sperm (Spermatozoa)
+- Spinal Cord
+- Statoconia
+- Steatorrhea
+- Stem Cells
+- Stimulus
+- Stored Blood
+- Stress Responses
+- Sustentacular Cells
+- Sympathetic and Parasympathetic Function
+- Synapses
+- Synaptic Transmission
+- Synaptic Transmitters
+- Synaptic Vesicles
+- T-helper Cell Subsets
+- T-helper Cells
+- Tactile Receptors
+- Taste Cells
+- Taste Sensations
+- Tectorial Membrane
+- Teniae Coli and Haustra
+- Theories of Aging
+- Thermoregulation
+- Titin Molecule
+- Transcellular Fluid
+- Transplanted Lungs
+- Transverse Tubules (T Tubules)
+- Troponin-Tropomyosin Complex
+- TRP Family of Ion Channels
+- Type II Alveolar Cells (Type II Pneumocytes)
+- Types of Movements
+- Upper Airway (Upper Respiratory Tract)
+- Urine
+- Venous System
+- Vestibular Hair Cells
+- VIPoma
+- Visceral Smooth Muscle (Unitary Smooth Muscle)
+- Visual Field Defects
+- VO₂max (Maximal Oxygen Consumption)
+- Voltage-Gated Sodium and Potassium Channels
+- Vomeronasal Organ
+- White Blood Cells (Leucocytes)
+- Zollinger-Ellison Syndrome

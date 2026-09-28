@@ -4,13 +4,16 @@ import { CLINICAL_DATA } from "./clinical_data.js";
 const ALL_TABS = [...new Set(CLINICAL_DATA.map(e => e.tab).filter(Boolean))].sort();
 
 const TAB_COLORS = {
-  "Hematology and Immunology": "#c0392b",
-  "Cardiovascular System (CVS)": "#e74c3c",
-  "Respiratory System": "#2980b9",
-  "Gastrointestinal and Metabolic": "#e67e22",
-  "Renal and Acid-Base": "#27ae60",
-  "Endocrine and Reproductive": "#8e44ad",
-  "Integrative Physiology": "#1abc9c",
+  "GENERAL PHYSIOLOGY, CELL & NERVE-MUSCLE PHYSIOLOGY": "#1abc9c",
+  "HEMATOLOGY & IMMUNOLOGY": "#c0392b",
+  "CARDIOVASCULAR SYSTEM (CVS)": "#e74c3c",
+  "RESPIRATORY SYSTEM": "#2980b9",
+  "GASTROINTESTINAL SYSTEM (GIT)": "#e67e22",
+  "RENAL PHYSIOLOGY & BODY FLUIDS": "#27ae60",
+  "ENDOCRINE SYSTEM": "#8e44ad",
+  "REPRODUCTIVE PHYSIOLOGY": "#d35400",
+  "CENTRAL NERVOUS SYSTEM (CNS), MOTOR, SENSORY & AUTONOMIC SYSTEMS": "#34495e",
+  "SPECIAL SENSES (VISION, HEARING, TASTE & SMELL)": "#16a085",
 };
 
 const dotStyle = (tab) => ({
@@ -190,7 +193,11 @@ export default function ClinicalConditionsViewer({ data }) {
       ) : (
         <div style={{ display: "grid", gap: 8 }}>
           {filtered.map(e => (
-            <ClinicalNoteCard key={e.name} entry={e} query={query.trim().toLowerCase()} />
+            <ClinicalNoteCard
+              key={e.id ?? `${e.tab || "all"}:${e.name}`}
+              entry={e}
+              query={query.trim().toLowerCase()}
+            />
           ))}
         </div>
       )}

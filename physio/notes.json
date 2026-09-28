@@ -1,78 +1,6 @@
 [
   {
     "id": 1,
-    "name": "ATP (Adenosine Triphosphate)",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "ATP is frequently referred to as the **\"energy currency\"** of the cell because it is spent and remade continually. It is a highly labile nucleotide that is always available to release energy rapidly and almost explosively."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "It is a **\"high-energy\" compound**. Under the physical and chemical conditions of the body, each of its two high-energy phosphate bonds contains approximately **12,000 calories** of energy per mole."
-      },
-      "Functions": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Membrane Transport",
-            "text": "Energizing the transport of ions like sodium, potassium, and calcium through cell membranes."
-          },
-          {
-            "heading": "Synthesis",
-            "text": "Promoting the synthesis of proteins by ribosomes and other chemical compounds like phospholipids and cholesterol."
-          },
-          {
-            "heading": "Mechanical Work",
-            "text": "Supplying the energy needed for **muscle contraction**, as well as ciliary and ameboid motion."
-          },
-          {
-            "heading": "Muscle Relaxation",
-            "text": "Binding to the myosin head to cause detachment from actin filaments."
-          },
-          {
-            "heading": "Neurotransmission",
-            "text": "Serving as a neurotransmitter in the CNS and potentially the key excitatory transmitter released by carotid body glomus cells during hypoxia."
-          }
-        ]
-      },
-      "Location": {
-        "type": "text",
-        "text": "While found throughout the cytoplasm and nucleoplasm, **more than 95% of ATP** is synthesized within the **mitochondria**, often called the \"powerhouses\" of the cell. It is also found in specialized compartments like axon terminals and platelets."
-      },
-      "Components": {
-        "type": "text",
-        "text": "ATP is composed of the nitrogenous base **adenine**, the pentose sugar **ribose**, and **three phosphate radicals**."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Its formation is primarily controlled by **oxidative phosphorylation** in the mitochondria. When ATP is depleted, the resulting increase in **cyclic AMP (cAMP)** can activate enzymes like phosphorylase to liberate glucose and replenish ATP stores."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Glycolysis provides a small amount of ATP (~5%) in the absence of oxygen, while aerobic metabolism in the presence of oxygen is far more efficient. **Phosphocreatine** acts as a rapid buffer to reconstitute ATP in muscle fibers within a fraction of a second."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Luff’s Disease",
-            "text": "A condition that specifically affects mitochondrial energy transduction."
-          },
-          {
-            "heading": "Rigor Mortis",
-            "text": "Stiffening of muscles after death caused by the depletion of ATP, which prevents the detachment of myosin cross-bridges."
-          },
-          {
-            "heading": "Irreversible Shock",
-            "text": "Characterized by the severe depletion of cellular ATP."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 2,
     "name": "Abdominothoracic vs. Thoracoabdominal Breathing",
     "sections": {
       "Abdominothoracic Breathing": {
@@ -108,7 +36,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Abnormal Breathing Patterns",
     "sections": {
       "Types": {
@@ -147,7 +75,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Acetylcholine (ACh)",
     "sections": {
       "Characteristics": {
@@ -232,292 +160,7 @@
     }
   },
   {
-    "id": 5,
-    "name": "Antibodies (Immunoglobulins)",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "These are gamma-globulins (γ-globulins) formed by plasma cells. They constitute approximately 20% of all plasma proteins."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "They are large proteins with molecular weights ranging from 160,000 to 970,000. They possess an \"affinity constant\" (K_a), which measures how tightly they bind with an antigen."
-      },
-      "Functions": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Humoral Immunity",
-            "text": "Mediate the antibody-mediated immune response to protect against extracellular pathogens."
-          },
-          {
-            "heading": "Antigen Neutralization",
-            "text": "Cover toxic sites of antigenic agents to neutralize them."
-          },
-          {
-            "heading": "Agglutination and Precipitation",
-            "text": "Bind multiple particles together into clumps or render soluble antigens insoluble for easier phagocytosis."
-          },
-          {
-            "heading": "Opsonization",
-            "text": "Adhere to bacterial membranes and combine with complement products (like C3b) to make pathogens \"tasty\" to phagocytes."
-          },
-          {
-            "heading": "Lysis",
-            "text": "Occasionally directly attack and rupture the membranes of cellular agents."
-          },
-          {
-            "heading": "Newborn Protection",
-            "text": "IgG crosses the placenta to provide fetal immunity, and IgA is provided via breast milk."
-          }
-        ]
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found in the blood plasma, lymph, and body secretions such as tears and saliva."
-      },
-      "Components": {
-        "type": "text",
-        "text": "Composed of combinations of **light and heavy polypeptide chains**; most consist of two light and two heavy chains. Each chain has a **variable portion** (which attaches to a specific antigen) and a **constant portion** (which determines biological properties like diffusivity or membrane passage)."
-      },
-      "Types": {
-        "type": "text",
-        "text": "There are five general classes: **IgM, IgG, IgA, IgD, and IgE**."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Produced when specific B lymphocytes are activated by an antigen and transform into **plasma cells**. T-helper cells enhance this process by secreting lymphokines (Interleukins 4, 5, and 6)."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "**Cortisol** causes atrophy of lymphoid tissue and decreases antibody levels. The **secondary response** (subsequent exposure) is much more rapid and potent than the **primary response** due to memory B cells."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Autoimmune Diseases",
-            "text": "Development of antibodies against self-antigens (e.g., Myasthenia Gravis, Rheumatic Fever)."
-          },
-          {
-            "heading": "Allergy",
-            "text": "IgE antibodies (reagins) bind to mast cells and basophils, triggering the release of histamine."
-          },
-          {
-            "heading": "Transfusion Reactions",
-            "text": "Mismatched blood causes agglutinins to clump red cells, leading to hemolysis."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 6,
-    "name": "Anticoagulant and Antiplatelet Agents",
-    "sections": {
-      "Functions": {
-        "type": "text",
-        "text": "Delay or prevent the blood coagulation process and inhibit platelet aggregation to treat or prevent thrombosis."
-      },
-      "Types": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Anticoagulants",
-            "text": "Includes **Heparin** (intravenous, immediate action), **Warfarin/Coumarins** (oral, takes 4–5 days), and newer classes like thrombin and Factor Xa inhibitors."
-          },
-          {
-            "heading": "Antiplatelet Agents",
-            "text": "Includes **Aspirin** (inhibits cyclooxygenase), Dipyridamole, and Ticlopidine."
-          },
-          {
-            "heading": "In Vitro (Lab Use)",
-            "text": "EDTA (chelates calcium), Sodium Citrate, Oxalates, and Sodium Fluoride."
-          }
-        ]
-      },
-      "Mechanism of Action/Regulation": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Heparin",
-            "text": "Combines with **antithrombin III** to increase its effectiveness in removing thrombin by 100- to 1000-fold."
-          },
-          {
-            "heading": "Warfarin",
-            "text": "Inhibits the enzyme **VKOR c1**, preventing the conversion of Vitamin K to its active form, which is necessary for the synthesis of Factors II, VII, IX, and X."
-          },
-          {
-            "heading": "Aspirin",
-            "text": "Inhibits the synthesis of **thromboxane A₂**, which is a potent stimulator of platelet aggregation."
-          }
-        ]
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Thromboembolic Conditions",
-            "text": "Used to manage venous thromboembolism, ischemic heart disease, and stroke."
-          },
-          {
-            "heading": "Heparin-Induced Thrombocytopenia",
-            "text": "Managed using **Hirudin** (leech-derived thrombin inhibitor)."
-          },
-          {
-            "heading": "Bleeding Risk",
-            "text": "High INR levels in patients on therapy indicate an increased risk of hemorrhage."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 7,
-    "name": "Aortic and Carotid Baroreceptors",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "These are **stretch receptors** (also called pressoreceptors). They are branched, knobby terminals of myelinated nerve fibers known as **buffer nerves**."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "They respond rapidly to changes in arterial pressure, firing more frequently in response to a **rapidly changing pressure** than a stationary one. They are essentially inactive at pressures below 50–60 mmHg and reach a maximum firing rate at about 180 mmHg."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Act as a **negative feedback buffer system** to stabilize arterial pressure minute-to-minute. They are critical for maintaining blood pressure during **postural changes** (standing up)."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Abundant in the wall of each **carotid sinus** (internal carotid artery bifurcation) and the wall of the **aortic arch**."
-      },
-      "Components (Innervation)": {
-        "type": "list",
-        "items": [
-          {
-            "heading": null,
-            "text": "**Carotid baroreceptors** transmit signals via the **Hering nerve** and glossopharyngeal nerve (IX) to the medulla."
-          },
-          {
-            "heading": null,
-            "text": "**Aortic baroreceptors** transmit signals via the **vagus nerve** (X) to the medulla."
-          }
-        ]
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "When BP rises, they activate the **Nucleus Tractus Solitarius (NTS)**, which stimulates the vagus nerve (reducing heart rate) and inhibits the sympathetic nervous system (causing vasodilation)."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "They tend to **reset** in 1–2 days to the pressure level to which they are exposed, which can attenuate their long-term effectiveness."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "**Carotid Sinus Syndrome** occurs when receptors are hypersensitive, leading to intense vagal effects (bradycardia) even with mild neck pressure. Their denervation results in extreme blood pressure variability."
-      }
-    }
-  },
-  {
-    "id": 8,
-    "name": "Apneustic Breathing",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Characterized by a **prolonged inspiratory gasp** followed by a pause at full inspiration, interrupted only by a brief expiration."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Typically results from **lesions in the brainstem**, specifically the dorsolateral lower half of the **pons**."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "It occurs when the **apneustic center** in the caudal pons strongly activates the medullary inspiratory center because normal inhibitory checks from the pneumotaxic center or vagus nerve are absent."
-      }
-    }
-  },
-  {
-    "id": 9,
-    "name": "Appetite Juice",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "This is the term used to describe the **gastric juice secreted during the cephalic phase** of digestion."
-      },
-      "Functions": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Appetite Stimulation",
-            "text": "It **stimulates the appetite** and ensures that a sufficient volume of gastric juice is present in the stomach before food actually arrives."
-          },
-          {
-            "heading": "Meal Preparation",
-            "text": "It prepares the stomach for optimal digestion of an anticipated meal."
-          }
-        ]
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found in the **stomach**."
-      },
-      "Regulation": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Neural Pathway",
-            "text": "It is primarily **vagally mediated**, and the secretion is abolished if a bilateral vagotomy is performed."
-          },
-          {
-            "heading": "Central Control",
-            "text": "The cephalic phase is induced by neurogenic signals originating in the **cerebral cortex** and the **appetite centers** of the amygdala and hypothalamus."
-          }
-        ]
-      },
-      "Factors Affecting": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Stimuli",
-            "text": "It is elicited by the **sight, smell, thought, taste, and chewing of food**."
-          },
-          {
-            "heading": "Dietary Habits",
-            "text": "Taking soups or appetizers before a meal is a common practice used to stimulate the secretion of appetite juice."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 10,
-    "name": "Aquaporins",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "These are specialized **water channels** located within cell membranes."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "They provide a mechanism for the **rapid transport of water** through the lipid bilayer, which otherwise resists water movement."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found in diverse tissues, including the **nervous system** and the **kidney tubules**."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "In the kidneys, their presence and activity are regulated by **Antidiuretic Hormone (ADH)** to facilitate water reabsorption and concentration of urine."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Dysfunctions in aquaporin channels are identified as molecular mechanisms for various **human diseases** related to fluid balance"
-      }
-    }
-  },
-  {
-    "id": 11,
+    "id": 4,
     "name": "Achalasia Cardia",
     "sections": {
       "Characteristics": {
@@ -560,7 +203,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 5,
     "name": "Actinin (Alpha-Actinin)",
     "sections": {
       "Characteristics": {
@@ -582,7 +225,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 6,
     "name": "Action Potentials",
     "sections": {
       "Characteristics": {
@@ -654,7 +297,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 7,
     "name": "Acute Oxygen Toxicity",
     "sections": {
       "Characteristics": {
@@ -689,252 +332,7 @@
     }
   },
   {
-    "id": 15,
-    "name": "Arachnoidal Villi and Granulations",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "The **arachnoidal villi** are microscopic finger-like inward projections of the arachnoidal membrane. **Arachnoidal granulations** are macroscopic conglomerates of these villi that protrude into the venous sinuses."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "They function like **\"valves\"** that allow cerebrospinal fluid (CSF) and its contents to flow into the blood but prevent backward flow. The endothelial cells covering them have **vesicular passages** large enough to allow the passage of large molecules and even blood cells."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Their primary role is the **absorption of cerebrospinal fluid** into the venous blood of the dural sinuses."
-      },
-      "Location": {
-        "type": "text",
-        "text": "They project through the walls and into the **cerebral venous sinuses**."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "The valve action normally begins when CSF pressure is approximately **1.5 mmHg greater** than the pressure in the venous sinuses; if CSF pressure rises higher, the valves open more widely to maintain pressure."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Obstruction to the flow of CSF or its absorption through these structures can cause **hydrocephalus** (abnormal fluid accumulation). **Papilloedema** (swelling of the optic nerve) is a sign of the increased intracranial pressure that these structures help regulate."
-      }
-    }
-  },
-  {
-    "id": 16,
-    "name": "Arterial System",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A high-pressure system characterized by **strong vascular walls** and high velocity of blood flow. It contains approximately 13% to 15% of the total blood volume."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "Exhibits **high compliance** in the elastic arteries to dampen pressure fluctuations and **high resistance** in the muscular arterioles."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Transports **oxygenated blood under high pressure** from the heart to the tissues. It maintains steady blood flow during diastole via the **Windkessel effect** (elastic recoil)."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Extends from the **aorta** at the left ventricle to the **metarterioles**."
-      },
-      "Components": {
-        "type": "text",
-        "text": "Consists of the aorta, large and small arteries, arterioles, and metarterioles. The walls are composed of three layers: **tunica intima, tunica media** (thickest layer containing smooth muscle), and **tunica adventitia**."
-      },
-      "Types": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Elastic Vessels (Windkessel)",
-            "text": "Aorta and large arteries; more elastic tissue than muscle, making them highly stretchable."
-          },
-          {
-            "heading": "Muscular Vessels (Resistance)",
-            "text": "Small arteries and arterioles; more smooth muscle than elastic tissue, serving as the primary seat of **peripheral resistance**."
-          }
-        ]
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Richly supplied by **sympathetic fibers** (vasoconstrictor tone). Long-term pressure is regulated by the **kidneys** through fluid volume control and the renin-angiotensin system."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Systolic pressure is primarily affected by **cardiac output and arterial compliance**. Aging leads to increased wall thickness and **decreased compliance** (\"hardening\")."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "**Hypertension** (essential or secondary) results in stiffening of the vessel walls and promotes **atherosclerosis**. **Aortic stenosis** increases the velocity of flow but can decrease lateral perfusion to coronary arteries."
-      }
-    }
-  },
-  {
-    "id": 17,
-    "name": "Asphyxia Stages",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A condition defined by the combination of **hypoxemia** (low arterial oxygen), **hypercapnia** (excess carbon dioxide), and **metabolic acidemia**."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "The asphyxia accompanying birth (due to umbilical cord occlusion) serves as the signal to **activate the infant's respiratory center**."
-      },
-      "Types (Stages)": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Stage of Exaggerated Breathing",
-            "text": "Lasts 1–2 minutes. Features deep, rapid breathing, severe dyspnea, anxiety, and cyanosis."
-          },
-          {
-            "heading": "Stage of Convulsions",
-            "text": "Lasts about 1 minute. Features violent respiratory efforts, generalized muscular convulsions, **tachycardia, and hypertension**."
-          },
-          {
-            "heading": "Stage of Exhaustion and Collapse",
-            "text": "Lasts about 5 minutes. Suppression of cardiorespiratory activities occurs; convulsions cease, and breathing becomes **gasping** until it finally stops."
-          }
-        ]
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Caused by **mechanical obstruction** (suffocation, strangulation, drowning), trauma, or gas poisoning."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "**Perinatal asphyxia** is a leading cause of neonatal mortality and long-term neurological compromise. In **salt-water drowning**, the immediate cause of death is often identified as asphyxia."
-      }
-    }
-  },
-  {
-    "id": 18,
-    "name": "Atherosclerosis",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "The process of **narrowing the lumen** of blood vessels due to the deposition of **lipid materials** on the inner endothelial lining."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "Reduces **vascular compliance** and increases wall stiffness. It is a physiological process of degeneration that can be pathologically accelerated."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Begins in the **aorta and large arteries** during childhood and progresses to smaller arteries and arterioles with age. It is particularly dangerous in the **coronary and cerebral arteries**."
-      },
-      "Components": {
-        "type": "text",
-        "text": "Consists of **fibrofatty plaques**, cholesterol deposits, calcification, and hyperplasia of vascular smooth muscle."
-      },
-      "Factors Affecting": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Increases",
-            "text": "Hyperlipidemia, obesity, diabetes mellitus, hypertension, smoking, chronic stress, and a sedentary lifestyle. **Homocysteine** facilitates the process by damaging endothelial cells."
-          },
-          {
-            "heading": "Decreases",
-            "text": "Estrogen (which lowers blood cholesterol) and dietary modifications such as **restricting fat** and increasing fiber."
-          }
-        ]
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "A primary cause of **ischemic heart disease** (angina pectoris and myocardial infarction) and **cerebral stroke**. In **hypothyroidism**, the lack of thyroid hormone increases cholesterol, significantly accelerating atherosclerosis."
-      }
-    }
-  },
-  {
-    "id": 19,
-    "name": "Automatic or Reflexive Movements",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Involuntary motor activities produced by rhythmic neuronal discharge or sensory triggers."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Protects the body (e.g., **withdrawal reflexes**), maintains homeostasis (e.g., **autonomic reflexes**), and clears the digestive tract (e.g., **MMC**) ."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Regulated by centers in the **brainstem, spinal cord, heart**, and **enteric nervous system** ."
-      },
-      "Types": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Automatic Breathing",
-            "text": "Produced by the rhythmic discharge of neurons in the brainstem."
-          },
-          {
-            "heading": "Cardiac Automaticity",
-            "text": "The ability of pacemaker cells (SA/AV nodes) to self-excite."
-          },
-          {
-            "heading": "Somatic Reflexes",
-            "text": "Rapid skeletal muscle responses like the **stretch reflex** or withdrawal from pain."
-          },
-          {
-            "heading": "Migrating Motor Complex (MMC)",
-            "text": "Rhythmic cycles of motor activity that sweep the gut during fasting [History]."
-          }
-        ]
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Influenced by the **autonomic nervous system**, second messengers, and local metabolic factors [History, 210, 211]."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "**Ondine’s Curse** involves the loss of automatic breathing control [History]. **Adynamic (Paralytic) Ileus** is the cessation of reflexive GI peristalsis [History]."
-      }
-    }
-  },
-  {
-    "id": 20,
-    "name": "Autonomic Failure",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Disorders resulting from the dysfunction of the nervous system portion that controls **visceral activities**."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Can involve **medullary and pontine control areas**, the hypothalamus, or peripheral autonomic pathways."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Vasovagal Syncope",
-            "text": "A rapid fall in arterial pressure and loss of consciousness."
-          },
-          {
-            "heading": "Painless Myocardial Infarction",
-            "text": "Occurs in chronic diabetic patients due to **autonomic neuropathy**."
-          },
-          {
-            "heading": "Orthostatic Hypotension",
-            "text": "Failure of the baroreflex to maintain pressure during postural changes [History]."
-          },
-          {
-            "heading": "Gastrointestinal Disorders",
-            "text": "Includes **Achalasia Cardia** (failure of LES relaxation) and **Hirschsprung Disease** (congenital absence of plexuses) [History]."
-          },
-          {
-            "heading": "Sudden Infant Death Syndrome (SIDS)",
-            "text": "Linked to the loss of rhythmic activity in the respiratory center [History]."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 21,
+    "id": 8,
     "name": "Adipokines",
     "sections": {
       "Characteristics": {
@@ -998,7 +396,7 @@
     }
   },
   {
-    "id": 22,
+    "id": 9,
     "name": "Adrenal Cortical Layers",
     "sections": {
       "Characteristics": {
@@ -1076,7 +474,7 @@
     }
   },
   {
-    "id": 23,
+    "id": 10,
     "name": "Adrenergic Receptors",
     "sections": {
       "Characteristics": {
@@ -1140,7 +538,7 @@
     }
   },
   {
-    "id": 24,
+    "id": 11,
     "name": "Adynamic (Paralytic) Ileus",
     "sections": {
       "Characteristics": {
@@ -1184,151 +582,7 @@
     }
   },
   {
-    "id": 25,
-    "name": "Autonomic Nervous System (ANS)",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "The ANS is the segment of the nervous system that operates at a **subconscious level** to control most visceral functions. It is characterized by the **rapidity and intensity** with which it can alter body functions, such as doubling heart rate within seconds or inducing fainting through rapid pressure drops."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Its primary role is to regulate **visceral activities** including arterial pressure, gastrointestinal motility and secretion, urinary bladder emptying, sweating, and body temperature. It maintains **homeostasis**, coordinates responses to exercise and stress, and assists the endocrine system in regulating metabolic and reproductive functions."
-      },
-      "Location": {
-        "type": "text",
-        "text": "It is activated mainly by centers in the **spinal cord, brainstem, and hypothalamus**. Autonomic motor neurons are located in the **intermediolateral horn** of the spinal cord and specific brainstem cranial nerve nuclei."
-      },
-      "Components": {
-        "type": "text",
-        "text": "It consists of two major efferent subdivisions: the **sympathetic and parasympathetic** nervous systems. The **enteric nervous system (ENS)** is considered its third division. The system utilizes a two-neuron pathway consisting of **preganglionic and postganglionic** fibers."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "It often operates through **visceral reflexes**, where subconscious sensory signals from organs trigger subconscious reflex responses. It is influenced by higher brain areas like the **limbic cortex** and the hypothalamus."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Sympathetic and parasympathetic systems usually act in a **reciprocal or synergistic** fashion. **Sympathovagal balance** is essential for conducting visceral and metabolic functions smoothly."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "**Autonomic failure** can be primary (idiopathic) or secondary to diseases like diabetes, amyloidosis, or beriberi. Chronic dysregulation (imbalance) is a major contributor to degeneration, metabolic syndrome, and **premature death**."
-      }
-    }
-  },
-  {
-    "id": 26,
-    "name": "Bad Taste",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Refers to unpleasant, undesirable, or potentially lethal gustatory sensations."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Serves as a **protective mechanism** to warn the body against the ingestion of dangerous toxins, such as poisonous alkaloids."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Detected by **chemoreceptors (taste buds)** primarily on the tongue and in the pharyngeal region."
-      },
-      "Types": {
-        "type": "text",
-        "text": "Primarily associated with high-intensity **bitter** sensations."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "**Dysgeusia** is a distorted sense of taste where substances (like salty food) may taste bitter or offensive. Hallucinations of repulsive tastes or smells are features of **temporal lobe epilepsy**."
-      }
-    }
-  },
-  {
-    "id": 27,
-    "name": "Barrett’s Esophagus",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A condition characterized by **columnar metaplasia**, where the normal squamous epithelium of the esophagus is replaced by columnar epithelium."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "It develops in a small percentage of patients suffering from **chronic reflux esophagitis** (GERD)."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "It is identified as a **premalignant condition** due to the increased risk of esophageal cancer."
-      }
-    }
-  },
-  {
-    "id": 28,
-    "name": "Basal Cells",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "These are **undifferentiated stem cells**."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "They undergo constant mitosis to provide new cells for **differentiation and proliferation**, replacing older, specialized cells."
-      },
-      "Location": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Taste Bud",
-            "text": "Located at the base of the taste bud, where they replace receptor cells every 10 days."
-          },
-          {
-            "heading": "Skin",
-            "text": "Found in the **stratum germinativum (basale)**, the deepest layer of the epidermis, which is responsible for renewing the skin and contains melanocytes."
-          }
-        ]
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Failure of basal layer reproduction in certain tissues can lead to an insufficiency of functional cells."
-      }
-    }
-  },
-  {
-    "id": 29,
-    "name": "Basal Metabolic Rate (BMR)",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "The rate of energy expenditure measured under standardized **basal conditions**."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Serves as an indicator of the body's minimal energy requirements to maintain vital life processes."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Primarily controlled by **thyroid hormone**. **Sympathetic stimulation** can also increase the rate."
-      },
-      "Factors Affecting": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Increase",
-            "text": "Fever, **growth hormone**, and male sex hormones (testosterone)."
-          },
-          {
-            "heading": "Decrease",
-            "text": "**Sleep**, malnutrition, and the aging process."
-          }
-        ]
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Measured to evaluate metabolic health; it is significantly altered in **hypothyroidism and hyperthyroidism**."
-      }
-    }
-  },
-  {
-    "id": 30,
+    "id": 12,
     "name": "Albumin",
     "sections": {
       "Characteristics": {
@@ -1409,7 +663,7 @@
     }
   },
   {
-    "id": 31,
+    "id": 13,
     "name": "Alimentary Tract Glands",
     "sections": {
       "Functions": {
@@ -1474,7 +728,7 @@
     }
   },
   {
-    "id": 32,
+    "id": 14,
     "name": "Alveolar Epithelium",
     "sections": {
       "Characteristics": {
@@ -1522,7 +776,7 @@
     }
   },
   {
-    "id": 33,
+    "id": 15,
     "name": "Alveolar Respiratory Membrane",
     "sections": {
       "Characteristics": {
@@ -1561,7 +815,975 @@
     }
   },
   {
+    "id": 16,
+    "name": "Alveolus",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "The alveolus is the **functional unit of gas exchange** in the lungs. It is described as a tiny, thin-walled, and capillary-rich sac. There are approximately **300 million alveoli** in the adult lungs, with diameters ranging from 75 to 300 µm (averaging about 200 µm)."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "The total surface area of all alveoli combined is between **50 to 100 m²**, roughly the size of a tennis court. Surface tension at the air-liquid interface inside the alveoli creates an inward force that favors alveolar collapse."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Its primary role is to facilitate the **exchange of gases** (oxygen and carbon dioxide) between the air and the pulmonary capillary blood."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Alveoli are found in the terminal portions of the respiratory tree, budding off from **respiratory bronchioles and alveolar ducts**."
+      },
+      "Components": {
+        "type": "text",
+        "text": "The alveolus is lined by a thin layer of fluid containing **surfactant**. It is surrounded by an extensive network of **interconnecting capillaries**."
+      },
+      "Types (Cellular)": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Type I Alveolar Cells",
+            "text": "Thin epithelial cells that cover 95% of the alveolar surface area."
+          },
+          {
+            "heading": "Type II Alveolar Cells (Pneumocytes)",
+            "text": "Metabolically active cells containing mitochondria and **lamellar inclusion bodies**; they secrete surfactant and play a role in alveolar repair."
+          }
+        ]
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Alveolar stability is maintained by **pulmonary surfactant**, which reduces surface tension (more so in smaller alveoli), and the **principle of interdependence**, where adjacent alveoli provide mutual structural support."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "According to the **Law of Laplace**, the pressure required to keep an alveolus open is inversely proportional to its radius; thus, smaller alveoli would tend to collapse without surfactant."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Atelectasis",
+            "text": "The collapse of alveoli due to airway obstruction or lack of surfactant."
+          },
+          {
+            "heading": "Pneumonia",
+            "text": "An inflammatory condition where alveoli become filled with fluid and blood cells."
+          },
+          {
+            "heading": "Infant Respiratory Distress Syndrome (IRDS)",
+            "text": "Occurs in premature infants who lack sufficient surfactant, leading to labored breathing and lung collapse."
+          },
+          {
+            "heading": "Permanent Damage",
+            "text": "After adolescence, alveoli increase only in size, not number; thus, destruction of alveoli results in permanent lung damage."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "Anemias",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Defined as a **deficiency of hemoglobin** in the blood, which can be caused by either a decreased red blood cell (RBC) count or insufficient hemoglobin within the cells. Clinically, it is detected by assessing paleness in the **lower palpebral conjunctiva or nail beds**."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "Severe anemia decreases **blood viscosity** (to as low as 1.5 times that of water), which reduces resistance to blood flow and increases cardiac output. It significantly reduces the **oxygen content** of the blood even if arterial oxygen tension (PO₂) remains normal."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Tissue hypoxia resulting from anemia serves as a stimulus for the bone marrow to increase the rate of RBC production via **erythropoietin**."
+      },
+      "Components": {
+        "type": "text",
+        "text": "Evaluated using **RBC indices**, including Mean Corpuscular Volume (MCV), Mean Corpuscular Hemoglobin (MCH), and Mean Corpuscular Hemoglobin Concentration (MCHC)."
+      },
+      "Types": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Morphological",
+            "text": "Includes **Microcytic Hypochromic** (small, pale cells; e.g., Iron Deficiency, Thalassemia), **Normocytic Normochromic** (normal size/color; e.g., Blood Loss, Aplastic), and **Macrocytic** (large cells; e.g., Megaloblastic)."
+          },
+          {
+            "heading": "Etiological",
+            "text": "Classified into **decreased RBC production** (e.g., Aplastic, Pernicious) and **increased RBC destruction or loss** (e.g., Hemolytic, Hemorrhagic)."
+          }
+        ]
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Maturation requires **Iron, Vitamin B₁₂, and Folic Acid**. Other essential factors include protein, copper, and Vitamins C, A, and E."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "RBC production is primarily regulated by **tissue oxygenation**; low oxygen levels stimulate the kidneys (and 10% from the liver) to produce **erythropoietin**."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Iron Deficiency Anemia (IDA)",
+            "text": "The commonest form, often presenting with easy fatigability, **koilonychia** (spoon-shaped nails), and a glossy tongue."
+          },
+          {
+            "heading": "Pernicious Anemia",
+            "text": "A megaloblastic anemia caused by a lack of **intrinsic factor** (required for B₁₂ absorption) due to gastric atrophy."
+          },
+          {
+            "heading": "Sickle Cell Anemia",
+            "text": "A hereditary disorder where abnormal **Hemoglobin S** causes cells to take a sickle shape and rupture."
+          },
+          {
+            "heading": "Cyanosis",
+            "text": "Patients with severe anemia **almost never become cyanotic** because they lack enough total hemoglobin to reach the threshold of 5 g/dL of deoxygenated hemoglobin."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": "Anterior Pituitary Cells",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Also called the **adenohypophysis**, this part of the gland is rich in endocrine cells of **epithelioid nature** (derived embryologically from Rathke's pouch)."
+      },
+      "Location": {
+        "type": "text",
+        "text": "The **anterior lobe** of the pituitary gland, situated in the sella turcica at the base of the brain."
+      },
+      "Components": {
+        "type": "text",
+        "text": "Contains an extensive network of **fenestrated sinusoidal capillaries** to allow secreted hormones to enter circulation immediately."
+      },
+      "Types (Five Main Cell Types)": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Somatotropes (40–50%)",
+            "text": "Secrete **Growth Hormone (GH)**; they are acidophils."
+          },
+          {
+            "heading": "Lactotropes (10–25%)",
+            "text": "Secrete **Prolactin**; they are acidophils."
+          },
+          {
+            "heading": "Corticotrophs (10–20%)",
+            "text": "Secrete **ACTH** (Corticotropin); they are basophils."
+          },
+          {
+            "heading": "Thyrotrophs (3–5%)",
+            "text": "Secrete **TSH** (Thyrotropin); they are basophils."
+          },
+          {
+            "heading": "Gonadotrophs (10–15%)",
+            "text": "Secrete **LH and FSH**; they are basophils."
+          },
+          {
+            "heading": "Folliculostellate cells",
+            "text": "Identified as cytokine-secreting cells, specifically producing IL-6."
+          }
+        ]
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Secretion is controlled by **hypothalamic releasing and inhibitory hormones** (such as GHRH, TRH, CRH, GnRH, and Dopamine) conducted through the **hypothalamic-hypophysial portal vessels**."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Acidophilic Tumors",
+            "text": "Tumors of somatotropes that secrete large quantities of GH, leading to **gigantism or acromegaly**."
+          },
+          {
+            "heading": "Panhypopituitarism",
+            "text": "A condition involving the decreased secretion of all anterior pituitary hormones, often due to a destructive tumor."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "Anterolateral Sensory Pathway",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "This is one of the two major pathways for transmitting somatic sensory signals into the central nervous system; it is noted for transmitting **\"less critical\" sensory signals**."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "It transmits a broad spectrum of modalities, including **pain, thermal sensations** (warmth and cold), crude touch and pressure, tickle and itch, and sexual sensations."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Fibers cross immediately in the **spinal cord** to the opposite side and ascend in the anterior and lateral white columns."
+      },
+      "Components": {
+        "type": "text",
+        "text": "Anatomically divided into **anterior and lateral divisions**."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Pathologies such as **anterior myelopathy** or specific lesions can disrupt transmission within this system"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "Antibodies (Immunoglobulins)",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "These are gamma-globulins (γ-globulins) formed by plasma cells. They constitute approximately 20% of all plasma proteins."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "They are large proteins with molecular weights ranging from 160,000 to 970,000. They possess an \"affinity constant\" (K_a), which measures how tightly they bind with an antigen."
+      },
+      "Functions": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Humoral Immunity",
+            "text": "Mediate the antibody-mediated immune response to protect against extracellular pathogens."
+          },
+          {
+            "heading": "Antigen Neutralization",
+            "text": "Cover toxic sites of antigenic agents to neutralize them."
+          },
+          {
+            "heading": "Agglutination and Precipitation",
+            "text": "Bind multiple particles together into clumps or render soluble antigens insoluble for easier phagocytosis."
+          },
+          {
+            "heading": "Opsonization",
+            "text": "Adhere to bacterial membranes and combine with complement products (like C3b) to make pathogens \"tasty\" to phagocytes."
+          },
+          {
+            "heading": "Lysis",
+            "text": "Occasionally directly attack and rupture the membranes of cellular agents."
+          },
+          {
+            "heading": "Newborn Protection",
+            "text": "IgG crosses the placenta to provide fetal immunity, and IgA is provided via breast milk."
+          }
+        ]
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found in the blood plasma, lymph, and body secretions such as tears and saliva."
+      },
+      "Components": {
+        "type": "text",
+        "text": "Composed of combinations of **light and heavy polypeptide chains**; most consist of two light and two heavy chains. Each chain has a **variable portion** (which attaches to a specific antigen) and a **constant portion** (which determines biological properties like diffusivity or membrane passage)."
+      },
+      "Types": {
+        "type": "text",
+        "text": "There are five general classes: **IgM, IgG, IgA, IgD, and IgE**."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Produced when specific B lymphocytes are activated by an antigen and transform into **plasma cells**. T-helper cells enhance this process by secreting lymphokines (Interleukins 4, 5, and 6)."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "**Cortisol** causes atrophy of lymphoid tissue and decreases antibody levels. The **secondary response** (subsequent exposure) is much more rapid and potent than the **primary response** due to memory B cells."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Autoimmune Diseases",
+            "text": "Development of antibodies against self-antigens (e.g., Myasthenia Gravis, Rheumatic Fever)."
+          },
+          {
+            "heading": "Allergy",
+            "text": "IgE antibodies (reagins) bind to mast cells and basophils, triggering the release of histamine."
+          },
+          {
+            "heading": "Transfusion Reactions",
+            "text": "Mismatched blood causes agglutinins to clump red cells, leading to hemolysis."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": "Anticoagulant and Antiplatelet Agents",
+    "sections": {
+      "Functions": {
+        "type": "text",
+        "text": "Delay or prevent the blood coagulation process and inhibit platelet aggregation to treat or prevent thrombosis."
+      },
+      "Types": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Anticoagulants",
+            "text": "Includes **Heparin** (intravenous, immediate action), **Warfarin/Coumarins** (oral, takes 4–5 days), and newer classes like thrombin and Factor Xa inhibitors."
+          },
+          {
+            "heading": "Antiplatelet Agents",
+            "text": "Includes **Aspirin** (inhibits cyclooxygenase), Dipyridamole, and Ticlopidine."
+          },
+          {
+            "heading": "In Vitro (Lab Use)",
+            "text": "EDTA (chelates calcium), Sodium Citrate, Oxalates, and Sodium Fluoride."
+          }
+        ]
+      },
+      "Mechanism of Action/Regulation": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Heparin",
+            "text": "Combines with **antithrombin III** to increase its effectiveness in removing thrombin by 100- to 1000-fold."
+          },
+          {
+            "heading": "Warfarin",
+            "text": "Inhibits the enzyme **VKOR c1**, preventing the conversion of Vitamin K to its active form, which is necessary for the synthesis of Factors II, VII, IX, and X."
+          },
+          {
+            "heading": "Aspirin",
+            "text": "Inhibits the synthesis of **thromboxane A₂**, which is a potent stimulator of platelet aggregation."
+          }
+        ]
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Thromboembolic Conditions",
+            "text": "Used to manage venous thromboembolism, ischemic heart disease, and stroke."
+          },
+          {
+            "heading": "Heparin-Induced Thrombocytopenia",
+            "text": "Managed using **Hirudin** (leech-derived thrombin inhibitor)."
+          },
+          {
+            "heading": "Bleeding Risk",
+            "text": "High INR levels in patients on therapy indicate an increased risk of hemorrhage."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "name": "Aortic and Carotid Baroreceptors",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "These are **stretch receptors** (also called pressoreceptors). They are branched, knobby terminals of myelinated nerve fibers known as **buffer nerves**."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "They respond rapidly to changes in arterial pressure, firing more frequently in response to a **rapidly changing pressure** than a stationary one. They are essentially inactive at pressures below 50–60 mmHg and reach a maximum firing rate at about 180 mmHg."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Act as a **negative feedback buffer system** to stabilize arterial pressure minute-to-minute. They are critical for maintaining blood pressure during **postural changes** (standing up)."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Abundant in the wall of each **carotid sinus** (internal carotid artery bifurcation) and the wall of the **aortic arch**."
+      },
+      "Components (Innervation)": {
+        "type": "list",
+        "items": [
+          {
+            "heading": null,
+            "text": "**Carotid baroreceptors** transmit signals via the **Hering nerve** and glossopharyngeal nerve (IX) to the medulla."
+          },
+          {
+            "heading": null,
+            "text": "**Aortic baroreceptors** transmit signals via the **vagus nerve** (X) to the medulla."
+          }
+        ]
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "When BP rises, they activate the **Nucleus Tractus Solitarius (NTS)**, which stimulates the vagus nerve (reducing heart rate) and inhibits the sympathetic nervous system (causing vasodilation)."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "They tend to **reset** in 1–2 days to the pressure level to which they are exposed, which can attenuate their long-term effectiveness."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "**Carotid Sinus Syndrome** occurs when receptors are hypersensitive, leading to intense vagal effects (bradycardia) even with mild neck pressure. Their denervation results in extreme blood pressure variability."
+      }
+    }
+  },
+  {
+    "id": 23,
+    "name": "Apneustic Breathing",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Characterized by a **prolonged inspiratory gasp** followed by a pause at full inspiration, interrupted only by a brief expiration."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Typically results from **lesions in the brainstem**, specifically the dorsolateral lower half of the **pons**."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "It occurs when the **apneustic center** in the caudal pons strongly activates the medullary inspiratory center because normal inhibitory checks from the pneumotaxic center or vagus nerve are absent."
+      }
+    }
+  },
+  {
+    "id": 24,
+    "name": "Appetite Juice",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "This is the term used to describe the **gastric juice secreted during the cephalic phase** of digestion."
+      },
+      "Functions": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Appetite Stimulation",
+            "text": "It **stimulates the appetite** and ensures that a sufficient volume of gastric juice is present in the stomach before food actually arrives."
+          },
+          {
+            "heading": "Meal Preparation",
+            "text": "It prepares the stomach for optimal digestion of an anticipated meal."
+          }
+        ]
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found in the **stomach**."
+      },
+      "Regulation": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Neural Pathway",
+            "text": "It is primarily **vagally mediated**, and the secretion is abolished if a bilateral vagotomy is performed."
+          },
+          {
+            "heading": "Central Control",
+            "text": "The cephalic phase is induced by neurogenic signals originating in the **cerebral cortex** and the **appetite centers** of the amygdala and hypothalamus."
+          }
+        ]
+      },
+      "Factors Affecting": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Stimuli",
+            "text": "It is elicited by the **sight, smell, thought, taste, and chewing of food**."
+          },
+          {
+            "heading": "Dietary Habits",
+            "text": "Taking soups or appetizers before a meal is a common practice used to stimulate the secretion of appetite juice."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "name": "Aquaporins",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "These are specialized **water channels** located within cell membranes."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "They provide a mechanism for the **rapid transport of water** through the lipid bilayer, which otherwise resists water movement."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found in diverse tissues, including the **nervous system** and the **kidney tubules**."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "In the kidneys, their presence and activity are regulated by **Antidiuretic Hormone (ADH)** to facilitate water reabsorption and concentration of urine."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Dysfunctions in aquaporin channels are identified as molecular mechanisms for various **human diseases** related to fluid balance"
+      }
+    }
+  },
+  {
+    "id": 26,
+    "name": "Arachnoidal Villi and Granulations",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "The **arachnoidal villi** are microscopic finger-like inward projections of the arachnoidal membrane. **Arachnoidal granulations** are macroscopic conglomerates of these villi that protrude into the venous sinuses."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "They function like **\"valves\"** that allow cerebrospinal fluid (CSF) and its contents to flow into the blood but prevent backward flow. The endothelial cells covering them have **vesicular passages** large enough to allow the passage of large molecules and even blood cells."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Their primary role is the **absorption of cerebrospinal fluid** into the venous blood of the dural sinuses."
+      },
+      "Location": {
+        "type": "text",
+        "text": "They project through the walls and into the **cerebral venous sinuses**."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "The valve action normally begins when CSF pressure is approximately **1.5 mmHg greater** than the pressure in the venous sinuses; if CSF pressure rises higher, the valves open more widely to maintain pressure."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Obstruction to the flow of CSF or its absorption through these structures can cause **hydrocephalus** (abnormal fluid accumulation). **Papilloedema** (swelling of the optic nerve) is a sign of the increased intracranial pressure that these structures help regulate."
+      }
+    }
+  },
+  {
+    "id": 27,
+    "name": "Arterial System",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A high-pressure system characterized by **strong vascular walls** and high velocity of blood flow. It contains approximately 13% to 15% of the total blood volume."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "Exhibits **high compliance** in the elastic arteries to dampen pressure fluctuations and **high resistance** in the muscular arterioles."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Transports **oxygenated blood under high pressure** from the heart to the tissues. It maintains steady blood flow during diastole via the **Windkessel effect** (elastic recoil)."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Extends from the **aorta** at the left ventricle to the **metarterioles**."
+      },
+      "Components": {
+        "type": "text",
+        "text": "Consists of the aorta, large and small arteries, arterioles, and metarterioles. The walls are composed of three layers: **tunica intima, tunica media** (thickest layer containing smooth muscle), and **tunica adventitia**."
+      },
+      "Types": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Elastic Vessels (Windkessel)",
+            "text": "Aorta and large arteries; more elastic tissue than muscle, making them highly stretchable."
+          },
+          {
+            "heading": "Muscular Vessels (Resistance)",
+            "text": "Small arteries and arterioles; more smooth muscle than elastic tissue, serving as the primary seat of **peripheral resistance**."
+          }
+        ]
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Richly supplied by **sympathetic fibers** (vasoconstrictor tone). Long-term pressure is regulated by the **kidneys** through fluid volume control and the renin-angiotensin system."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Systolic pressure is primarily affected by **cardiac output and arterial compliance**. Aging leads to increased wall thickness and **decreased compliance** (\"hardening\")."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "**Hypertension** (essential or secondary) results in stiffening of the vessel walls and promotes **atherosclerosis**. **Aortic stenosis** increases the velocity of flow but can decrease lateral perfusion to coronary arteries."
+      }
+    }
+  },
+  {
+    "id": 28,
+    "name": "Asphyxia Stages",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A condition defined by the combination of **hypoxemia** (low arterial oxygen), **hypercapnia** (excess carbon dioxide), and **metabolic acidemia**."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "The asphyxia accompanying birth (due to umbilical cord occlusion) serves as the signal to **activate the infant's respiratory center**."
+      },
+      "Types (Stages)": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Stage of Exaggerated Breathing",
+            "text": "Lasts 1–2 minutes. Features deep, rapid breathing, severe dyspnea, anxiety, and cyanosis."
+          },
+          {
+            "heading": "Stage of Convulsions",
+            "text": "Lasts about 1 minute. Features violent respiratory efforts, generalized muscular convulsions, **tachycardia, and hypertension**."
+          },
+          {
+            "heading": "Stage of Exhaustion and Collapse",
+            "text": "Lasts about 5 minutes. Suppression of cardiorespiratory activities occurs; convulsions cease, and breathing becomes **gasping** until it finally stops."
+          }
+        ]
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Caused by **mechanical obstruction** (suffocation, strangulation, drowning), trauma, or gas poisoning."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "**Perinatal asphyxia** is a leading cause of neonatal mortality and long-term neurological compromise. In **salt-water drowning**, the immediate cause of death is often identified as asphyxia."
+      }
+    }
+  },
+  {
+    "id": 29,
+    "name": "Atherosclerosis",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "The process of **narrowing the lumen** of blood vessels due to the deposition of **lipid materials** on the inner endothelial lining."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "Reduces **vascular compliance** and increases wall stiffness. It is a physiological process of degeneration that can be pathologically accelerated."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Begins in the **aorta and large arteries** during childhood and progresses to smaller arteries and arterioles with age. It is particularly dangerous in the **coronary and cerebral arteries**."
+      },
+      "Components": {
+        "type": "text",
+        "text": "Consists of **fibrofatty plaques**, cholesterol deposits, calcification, and hyperplasia of vascular smooth muscle."
+      },
+      "Factors Affecting": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Increases",
+            "text": "Hyperlipidemia, obesity, diabetes mellitus, hypertension, smoking, chronic stress, and a sedentary lifestyle. **Homocysteine** facilitates the process by damaging endothelial cells."
+          },
+          {
+            "heading": "Decreases",
+            "text": "Estrogen (which lowers blood cholesterol) and dietary modifications such as **restricting fat** and increasing fiber."
+          }
+        ]
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "A primary cause of **ischemic heart disease** (angina pectoris and myocardial infarction) and **cerebral stroke**. In **hypothyroidism**, the lack of thyroid hormone increases cholesterol, significantly accelerating atherosclerosis."
+      }
+    }
+  },
+  {
+    "id": 30,
+    "name": "ATP (Adenosine Triphosphate)",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "ATP is frequently referred to as the **\"energy currency\"** of the cell because it is spent and remade continually. It is a highly labile nucleotide that is always available to release energy rapidly and almost explosively."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "It is a **\"high-energy\" compound**. Under the physical and chemical conditions of the body, each of its two high-energy phosphate bonds contains approximately **12,000 calories** of energy per mole."
+      },
+      "Functions": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Membrane Transport",
+            "text": "Energizing the transport of ions like sodium, potassium, and calcium through cell membranes."
+          },
+          {
+            "heading": "Synthesis",
+            "text": "Promoting the synthesis of proteins by ribosomes and other chemical compounds like phospholipids and cholesterol."
+          },
+          {
+            "heading": "Mechanical Work",
+            "text": "Supplying the energy needed for **muscle contraction**, as well as ciliary and ameboid motion."
+          },
+          {
+            "heading": "Muscle Relaxation",
+            "text": "Binding to the myosin head to cause detachment from actin filaments."
+          },
+          {
+            "heading": "Neurotransmission",
+            "text": "Serving as a neurotransmitter in the CNS and potentially the key excitatory transmitter released by carotid body glomus cells during hypoxia."
+          }
+        ]
+      },
+      "Location": {
+        "type": "text",
+        "text": "While found throughout the cytoplasm and nucleoplasm, **more than 95% of ATP** is synthesized within the **mitochondria**, often called the \"powerhouses\" of the cell. It is also found in specialized compartments like axon terminals and platelets."
+      },
+      "Components": {
+        "type": "text",
+        "text": "ATP is composed of the nitrogenous base **adenine**, the pentose sugar **ribose**, and **three phosphate radicals**."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Its formation is primarily controlled by **oxidative phosphorylation** in the mitochondria. When ATP is depleted, the resulting increase in **cyclic AMP (cAMP)** can activate enzymes like phosphorylase to liberate glucose and replenish ATP stores."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Glycolysis provides a small amount of ATP (~5%) in the absence of oxygen, while aerobic metabolism in the presence of oxygen is far more efficient. **Phosphocreatine** acts as a rapid buffer to reconstitute ATP in muscle fibers within a fraction of a second."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Luff’s Disease",
+            "text": "A condition that specifically affects mitochondrial energy transduction."
+          },
+          {
+            "heading": "Rigor Mortis",
+            "text": "Stiffening of muscles after death caused by the depletion of ATP, which prevents the detachment of myosin cross-bridges."
+          },
+          {
+            "heading": "Irreversible Shock",
+            "text": "Characterized by the severe depletion of cellular ATP."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "name": "Automatic or Reflexive Movements",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Involuntary motor activities produced by rhythmic neuronal discharge or sensory triggers."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Protects the body (e.g., **withdrawal reflexes**), maintains homeostasis (e.g., **autonomic reflexes**), and clears the digestive tract (e.g., **MMC**) ."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Regulated by centers in the **brainstem, spinal cord, heart**, and **enteric nervous system** ."
+      },
+      "Types": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Automatic Breathing",
+            "text": "Produced by the rhythmic discharge of neurons in the brainstem."
+          },
+          {
+            "heading": "Cardiac Automaticity",
+            "text": "The ability of pacemaker cells (SA/AV nodes) to self-excite."
+          },
+          {
+            "heading": "Somatic Reflexes",
+            "text": "Rapid skeletal muscle responses like the **stretch reflex** or withdrawal from pain."
+          },
+          {
+            "heading": "Migrating Motor Complex (MMC)",
+            "text": "Rhythmic cycles of motor activity that sweep the gut during fasting [History]."
+          }
+        ]
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Influenced by the **autonomic nervous system**, second messengers, and local metabolic factors [History, 210, 211]."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "**Ondine’s Curse** involves the loss of automatic breathing control [History]. **Adynamic (Paralytic) Ileus** is the cessation of reflexive GI peristalsis [History]."
+      }
+    }
+  },
+  {
+    "id": 32,
+    "name": "Autonomic Failure",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Disorders resulting from the dysfunction of the nervous system portion that controls **visceral activities**."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Can involve **medullary and pontine control areas**, the hypothalamus, or peripheral autonomic pathways."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Vasovagal Syncope",
+            "text": "A rapid fall in arterial pressure and loss of consciousness."
+          },
+          {
+            "heading": "Painless Myocardial Infarction",
+            "text": "Occurs in chronic diabetic patients due to **autonomic neuropathy**."
+          },
+          {
+            "heading": "Orthostatic Hypotension",
+            "text": "Failure of the baroreflex to maintain pressure during postural changes [History]."
+          },
+          {
+            "heading": "Gastrointestinal Disorders",
+            "text": "Includes **Achalasia Cardia** (failure of LES relaxation) and **Hirschsprung Disease** (congenital absence of plexuses) [History]."
+          },
+          {
+            "heading": "Sudden Infant Death Syndrome (SIDS)",
+            "text": "Linked to the loss of rhythmic activity in the respiratory center [History]."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "name": "Autonomic Nervous System (ANS)",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "The ANS is the segment of the nervous system that operates at a **subconscious level** to control most visceral functions. It is characterized by the **rapidity and intensity** with which it can alter body functions, such as doubling heart rate within seconds or inducing fainting through rapid pressure drops."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Its primary role is to regulate **visceral activities** including arterial pressure, gastrointestinal motility and secretion, urinary bladder emptying, sweating, and body temperature. It maintains **homeostasis**, coordinates responses to exercise and stress, and assists the endocrine system in regulating metabolic and reproductive functions."
+      },
+      "Location": {
+        "type": "text",
+        "text": "It is activated mainly by centers in the **spinal cord, brainstem, and hypothalamus**. Autonomic motor neurons are located in the **intermediolateral horn** of the spinal cord and specific brainstem cranial nerve nuclei."
+      },
+      "Components": {
+        "type": "text",
+        "text": "It consists of two major efferent subdivisions: the **sympathetic and parasympathetic** nervous systems. The **enteric nervous system (ENS)** is considered its third division. The system utilizes a two-neuron pathway consisting of **preganglionic and postganglionic** fibers."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "It often operates through **visceral reflexes**, where subconscious sensory signals from organs trigger subconscious reflex responses. It is influenced by higher brain areas like the **limbic cortex** and the hypothalamus."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Sympathetic and parasympathetic systems usually act in a **reciprocal or synergistic** fashion. **Sympathovagal balance** is essential for conducting visceral and metabolic functions smoothly."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "**Autonomic failure** can be primary (idiopathic) or secondary to diseases like diabetes, amyloidosis, or beriberi. Chronic dysregulation (imbalance) is a major contributor to degeneration, metabolic syndrome, and **premature death**."
+      }
+    }
+  },
+  {
     "id": 34,
+    "name": "Bad Taste",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Refers to unpleasant, undesirable, or potentially lethal gustatory sensations."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Serves as a **protective mechanism** to warn the body against the ingestion of dangerous toxins, such as poisonous alkaloids."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Detected by **chemoreceptors (taste buds)** primarily on the tongue and in the pharyngeal region."
+      },
+      "Types": {
+        "type": "text",
+        "text": "Primarily associated with high-intensity **bitter** sensations."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "**Dysgeusia** is a distorted sense of taste where substances (like salty food) may taste bitter or offensive. Hallucinations of repulsive tastes or smells are features of **temporal lobe epilepsy**."
+      }
+    }
+  },
+  {
+    "id": 35,
+    "name": "Barrett’s Esophagus",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A condition characterized by **columnar metaplasia**, where the normal squamous epithelium of the esophagus is replaced by columnar epithelium."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "It develops in a small percentage of patients suffering from **chronic reflux esophagitis** (GERD)."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "It is identified as a **premalignant condition** due to the increased risk of esophageal cancer."
+      }
+    }
+  },
+  {
+    "id": 36,
+    "name": "Basal Cells",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "These are **undifferentiated stem cells**."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "They undergo constant mitosis to provide new cells for **differentiation and proliferation**, replacing older, specialized cells."
+      },
+      "Location": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Taste Bud",
+            "text": "Located at the base of the taste bud, where they replace receptor cells every 10 days."
+          },
+          {
+            "heading": "Skin",
+            "text": "Found in the **stratum germinativum (basale)**, the deepest layer of the epidermis, which is responsible for renewing the skin and contains melanocytes."
+          }
+        ]
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Failure of basal layer reproduction in certain tissues can lead to an insufficiency of functional cells."
+      }
+    }
+  },
+  {
+    "id": 37,
+    "name": "Basal Metabolic Rate (BMR)",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "The rate of energy expenditure measured under standardized **basal conditions**."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Serves as an indicator of the body's minimal energy requirements to maintain vital life processes."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Primarily controlled by **thyroid hormone**. **Sympathetic stimulation** can also increase the rate."
+      },
+      "Factors Affecting": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Increase",
+            "text": "Fever, **growth hormone**, and male sex hormones (testosterone)."
+          },
+          {
+            "heading": "Decrease",
+            "text": "**Sleep**, malnutrition, and the aging process."
+          }
+        ]
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Measured to evaluate metabolic health; it is significantly altered in **hypothyroidism and hyperthyroidism**."
+      }
+    }
+  },
+  {
+    "id": 38,
     "name": "Basilar Membrane",
     "sections": {
       "Characteristics": {
@@ -1604,7 +1826,7 @@
     }
   },
   {
-    "id": 35,
+    "id": 39,
     "name": "Bezold-Jarisch Reflex (BJR)",
     "sections": {
       "Characteristics": {
@@ -1626,7 +1848,7 @@
     }
   },
   {
-    "id": 36,
+    "id": 40,
     "name": "Bile Acids and Salts",
     "sections": {
       "Characteristics": {
@@ -1699,7 +1921,7 @@
     }
   },
   {
-    "id": 37,
+    "id": 41,
     "name": "Biot's and Apneustic Breathing",
     "sections": {
       "Biot’s Breathing": {
@@ -1739,7 +1961,7 @@
     }
   },
   {
-    "id": 38,
+    "id": 42,
     "name": "Bleeding and Clotting Disorders",
     "sections": {
       "Characteristics": {
@@ -1791,7 +2013,7 @@
     }
   },
   {
-    "id": 39,
+    "id": 43,
     "name": "Blind Loop Syndrome",
     "sections": {
       "Characteristics": {
@@ -1801,228 +2023,6 @@
       "Clinical Correlates": {
         "type": "text",
         "text": "Damage to enterocytes or microvilli leads to **steatorrhea** (excessive fat in stools), which is a common feature of this syndrome"
-      }
-    }
-  },
-  {
-    "id": 40,
-    "name": "Alveolus",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "The alveolus is the **functional unit of gas exchange** in the lungs. It is described as a tiny, thin-walled, and capillary-rich sac. There are approximately **300 million alveoli** in the adult lungs, with diameters ranging from 75 to 300 µm (averaging about 200 µm)."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "The total surface area of all alveoli combined is between **50 to 100 m²**, roughly the size of a tennis court. Surface tension at the air-liquid interface inside the alveoli creates an inward force that favors alveolar collapse."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Its primary role is to facilitate the **exchange of gases** (oxygen and carbon dioxide) between the air and the pulmonary capillary blood."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Alveoli are found in the terminal portions of the respiratory tree, budding off from **respiratory bronchioles and alveolar ducts**."
-      },
-      "Components": {
-        "type": "text",
-        "text": "The alveolus is lined by a thin layer of fluid containing **surfactant**. It is surrounded by an extensive network of **interconnecting capillaries**."
-      },
-      "Types (Cellular)": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Type I Alveolar Cells",
-            "text": "Thin epithelial cells that cover 95% of the alveolar surface area."
-          },
-          {
-            "heading": "Type II Alveolar Cells (Pneumocytes)",
-            "text": "Metabolically active cells containing mitochondria and **lamellar inclusion bodies**; they secrete surfactant and play a role in alveolar repair."
-          }
-        ]
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Alveolar stability is maintained by **pulmonary surfactant**, which reduces surface tension (more so in smaller alveoli), and the **principle of interdependence**, where adjacent alveoli provide mutual structural support."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "According to the **Law of Laplace**, the pressure required to keep an alveolus open is inversely proportional to its radius; thus, smaller alveoli would tend to collapse without surfactant."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Atelectasis",
-            "text": "The collapse of alveoli due to airway obstruction or lack of surfactant."
-          },
-          {
-            "heading": "Pneumonia",
-            "text": "An inflammatory condition where alveoli become filled with fluid and blood cells."
-          },
-          {
-            "heading": "Infant Respiratory Distress Syndrome (IRDS)",
-            "text": "Occurs in premature infants who lack sufficient surfactant, leading to labored breathing and lung collapse."
-          },
-          {
-            "heading": "Permanent Damage",
-            "text": "After adolescence, alveoli increase only in size, not number; thus, destruction of alveoli results in permanent lung damage."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 41,
-    "name": "Anemias",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Defined as a **deficiency of hemoglobin** in the blood, which can be caused by either a decreased red blood cell (RBC) count or insufficient hemoglobin within the cells. Clinically, it is detected by assessing paleness in the **lower palpebral conjunctiva or nail beds**."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "Severe anemia decreases **blood viscosity** (to as low as 1.5 times that of water), which reduces resistance to blood flow and increases cardiac output. It significantly reduces the **oxygen content** of the blood even if arterial oxygen tension (PO₂) remains normal."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Tissue hypoxia resulting from anemia serves as a stimulus for the bone marrow to increase the rate of RBC production via **erythropoietin**."
-      },
-      "Components": {
-        "type": "text",
-        "text": "Evaluated using **RBC indices**, including Mean Corpuscular Volume (MCV), Mean Corpuscular Hemoglobin (MCH), and Mean Corpuscular Hemoglobin Concentration (MCHC)."
-      },
-      "Types": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Morphological",
-            "text": "Includes **Microcytic Hypochromic** (small, pale cells; e.g., Iron Deficiency, Thalassemia), **Normocytic Normochromic** (normal size/color; e.g., Blood Loss, Aplastic), and **Macrocytic** (large cells; e.g., Megaloblastic)."
-          },
-          {
-            "heading": "Etiological",
-            "text": "Classified into **decreased RBC production** (e.g., Aplastic, Pernicious) and **increased RBC destruction or loss** (e.g., Hemolytic, Hemorrhagic)."
-          }
-        ]
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Maturation requires **Iron, Vitamin B₁₂, and Folic Acid**. Other essential factors include protein, copper, and Vitamins C, A, and E."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "RBC production is primarily regulated by **tissue oxygenation**; low oxygen levels stimulate the kidneys (and 10% from the liver) to produce **erythropoietin**."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Iron Deficiency Anemia (IDA)",
-            "text": "The commonest form, often presenting with easy fatigability, **koilonychia** (spoon-shaped nails), and a glossy tongue."
-          },
-          {
-            "heading": "Pernicious Anemia",
-            "text": "A megaloblastic anemia caused by a lack of **intrinsic factor** (required for B₁₂ absorption) due to gastric atrophy."
-          },
-          {
-            "heading": "Sickle Cell Anemia",
-            "text": "A hereditary disorder where abnormal **Hemoglobin S** causes cells to take a sickle shape and rupture."
-          },
-          {
-            "heading": "Cyanosis",
-            "text": "Patients with severe anemia **almost never become cyanotic** because they lack enough total hemoglobin to reach the threshold of 5 g/dL of deoxygenated hemoglobin."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 42,
-    "name": "Anterior Pituitary Cells",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Also called the **adenohypophysis**, this part of the gland is rich in endocrine cells of **epithelioid nature** (derived embryologically from Rathke's pouch)."
-      },
-      "Location": {
-        "type": "text",
-        "text": "The **anterior lobe** of the pituitary gland, situated in the sella turcica at the base of the brain."
-      },
-      "Components": {
-        "type": "text",
-        "text": "Contains an extensive network of **fenestrated sinusoidal capillaries** to allow secreted hormones to enter circulation immediately."
-      },
-      "Types (Five Main Cell Types)": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Somatotropes (40–50%)",
-            "text": "Secrete **Growth Hormone (GH)**; they are acidophils."
-          },
-          {
-            "heading": "Lactotropes (10–25%)",
-            "text": "Secrete **Prolactin**; they are acidophils."
-          },
-          {
-            "heading": "Corticotrophs (10–20%)",
-            "text": "Secrete **ACTH** (Corticotropin); they are basophils."
-          },
-          {
-            "heading": "Thyrotrophs (3–5%)",
-            "text": "Secrete **TSH** (Thyrotropin); they are basophils."
-          },
-          {
-            "heading": "Gonadotrophs (10–15%)",
-            "text": "Secrete **LH and FSH**; they are basophils."
-          },
-          {
-            "heading": "Folliculostellate cells",
-            "text": "Identified as cytokine-secreting cells, specifically producing IL-6."
-          }
-        ]
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Secretion is controlled by **hypothalamic releasing and inhibitory hormones** (such as GHRH, TRH, CRH, GnRH, and Dopamine) conducted through the **hypothalamic-hypophysial portal vessels**."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Acidophilic Tumors",
-            "text": "Tumors of somatotropes that secrete large quantities of GH, leading to **gigantism or acromegaly**."
-          },
-          {
-            "heading": "Panhypopituitarism",
-            "text": "A condition involving the decreased secretion of all anterior pituitary hormones, often due to a destructive tumor."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 43,
-    "name": "Anterolateral Sensory Pathway",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "This is one of the two major pathways for transmitting somatic sensory signals into the central nervous system; it is noted for transmitting **\"less critical\" sensory signals**."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "It transmits a broad spectrum of modalities, including **pain, thermal sensations** (warmth and cold), crude touch and pressure, tickle and itch, and sexual sensations."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Fibers cross immediately in the **spinal cord** to the opposite side and ascend in the anterior and lateral white columns."
-      },
-      "Components": {
-        "type": "text",
-        "text": "Anatomically divided into **anterior and lateral divisions**."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Pathologies such as **anterior myelopathy** or specific lesions can disrupt transmission within this system"
       }
     }
   },
@@ -2251,70 +2251,6 @@
   },
   {
     "id": 48,
-    "name": "Body Fluids",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "The total water and dissolved solutes in the body, essential for maintaining the **\"milieu interieur\"**."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "Maintained in a state of **osmotic equilibrium** between compartments. They are characterized by **electroneutrality**, where the sum of cations equals the sum of anions in each compartment."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Provides the medium for all **cellular functions**, nutrient transport, and waste removal."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Divided into two major compartments: **Intracellular fluid (ICF)** and **Extracellular fluid (ECF)**."
-      },
-      "Components": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "ECF",
-            "text": "Includes **interstitial fluid** (~75% of ECF) and **plasma** (~25% of ECF). High in **Sodium (Na⁺)** and **Chloride (Cl⁻)**."
-          },
-          {
-            "heading": "ICF",
-            "text": "Located inside the cells; high in **Potassium (K⁺)**, magnesium, and proteins."
-          },
-          {
-            "heading": "Transcellular Fluid",
-            "text": "Specialized fluids in enclosed spaces like CSF, synovial, and intraocular fluids."
-          }
-        ]
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Controlled by the **kidneys** (renal control), **ADH**, the **thirst mechanism**, and the RAAS to maintain volume and osmolarity."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Total body water is influenced by **age, gender** (lower in females due to higher fat), and **body weight** (TBW \\approx 0.6 × body weight)."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Hyponatremia/Hypernatremia",
-            "text": "Abnormal plasma sodium concentrations."
-          },
-          {
-            "heading": "Acid-Base Disturbances",
-            "text": "Alterations in pH leading to acidosis or alkalosis."
-          },
-          {
-            "heading": "Dehydration",
-            "text": "A common and severe risk, particularly in children."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 49,
     "name": "Body Fluid Volume Abnormalities",
     "sections": {
       "Characteristics": {
@@ -2373,6 +2309,70 @@
           {
             "heading": "Shock",
             "text": "Severe volume depletion leading to circulatory failure."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "name": "Body Fluids",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "The total water and dissolved solutes in the body, essential for maintaining the **\"milieu interieur\"**."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "Maintained in a state of **osmotic equilibrium** between compartments. They are characterized by **electroneutrality**, where the sum of cations equals the sum of anions in each compartment."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Provides the medium for all **cellular functions**, nutrient transport, and waste removal."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Divided into two major compartments: **Intracellular fluid (ICF)** and **Extracellular fluid (ECF)**."
+      },
+      "Components": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "ECF",
+            "text": "Includes **interstitial fluid** (~75% of ECF) and **plasma** (~25% of ECF). High in **Sodium (Na⁺)** and **Chloride (Cl⁻)**."
+          },
+          {
+            "heading": "ICF",
+            "text": "Located inside the cells; high in **Potassium (K⁺)**, magnesium, and proteins."
+          },
+          {
+            "heading": "Transcellular Fluid",
+            "text": "Specialized fluids in enclosed spaces like CSF, synovial, and intraocular fluids."
+          }
+        ]
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Controlled by the **kidneys** (renal control), **ADH**, the **thirst mechanism**, and the RAAS to maintain volume and osmolarity."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Total body water is influenced by **age, gender** (lower in females due to higher fat), and **body weight** (TBW \\approx 0.6 × body weight)."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Hyponatremia/Hypernatremia",
+            "text": "Abnormal plasma sodium concentrations."
+          },
+          {
+            "heading": "Acid-Base Disturbances",
+            "text": "Alterations in pH leading to acidosis or alkalosis."
+          },
+          {
+            "heading": "Dehydration",
+            "text": "A common and severe risk, particularly in children."
           }
         ]
       }
@@ -3785,6 +3785,32 @@
   },
   {
     "id": 84,
+    "name": "Dicrotic Notch",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A characteristic notch visible on the **descending limb** of the aortic pressure curve and peripheral arterial pulse tracings."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "It occurs at the **beginning of the isovolumetric relaxation phase** of the cardiac cycle."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "It serves as a physiological marker representing the **closure of the aortic valve**."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found on the pressure curves of the **aorta** and **peripheral arteries**."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "The dicrotic notch is notably **absent** in a **water-hammer pulse** (also known as a collapsing or Corrigan's pulse), which is a diagnostic feature of **aortic regurgitation**."
+      }
+    }
+  },
+  {
+    "id": 85,
     "name": "Drowning",
     "sections": {
       "Characteristics": {
@@ -3845,7 +3871,7 @@
     }
   },
   {
-    "id": 85,
+    "id": 86,
     "name": "Dumping Syndrome",
     "sections": {
       "Characteristics": {
@@ -3868,7 +3894,7 @@
     }
   },
   {
-    "id": 86,
+    "id": 87,
     "name": "Dynamic Lung",
     "sections": {
       "Characteristics": {
@@ -3949,7 +3975,25 @@
     }
   },
   {
-    "id": 87,
+    "id": 88,
+    "name": "Ebner's Glands",
+    "sections": {
+      "Functions": {
+        "type": "text",
+        "text": "These glands secrete a specific **tastant-binding protein**. This protein's role is to **concentrate tastant molecules** and transport them directly to the membranes of the taste bud microvilli to facilitate taste perception."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "They possess specialized **transport and concentrating properties** for tastant molecules."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Located in the **tongue**, specifically associated with the gustatory (taste) system."
+      }
+    }
+  },
+  {
+    "id": 89,
     "name": "Eccrine vs. Apocrine Glands",
     "sections": {
       "Location": {
@@ -3980,7 +4024,7 @@
     }
   },
   {
-    "id": 88,
+    "id": 90,
     "name": "Electrotonic Potentials",
     "sections": {
       "Characteristics": {
@@ -4002,7 +4046,7 @@
     }
   },
   {
-    "id": 89,
+    "id": 91,
     "name": "Endocrine Hormones",
     "sections": {
       "Characteristics": {
@@ -4053,7 +4097,7 @@
     }
   },
   {
-    "id": 90,
+    "id": 92,
     "name": "Energy Systems in Sports",
     "sections": {
       "Characteristics": {
@@ -4096,7 +4140,7 @@
     }
   },
   {
-    "id": 91,
+    "id": 93,
     "name": "Enteric Nervous System (ENS)",
     "sections": {
       "Characteristics": {
@@ -4139,7 +4183,7 @@
     }
   },
   {
-    "id": 92,
+    "id": 94,
     "name": "Enterohepatic Circulation",
     "sections": {
       "Characteristics": {
@@ -4169,7 +4213,7 @@
     }
   },
   {
-    "id": 93,
+    "id": 95,
     "name": "Enterokinase (Enteropeptidase)",
     "sections": {
       "Characteristics": {
@@ -4195,7 +4239,7 @@
     }
   },
   {
-    "id": 94,
+    "id": 96,
     "name": "Erlanger–Gasser Classification",
     "sections": {
       "Characteristics": {
@@ -4272,7 +4316,7 @@
     }
   },
   {
-    "id": 95,
+    "id": 97,
     "name": "Esophageal Muscles",
     "sections": {
       "Characteristics": {
@@ -4311,7 +4355,7 @@
     }
   },
   {
-    "id": 96,
+    "id": 98,
     "name": "Exercise Pressor Reflex (EPR)",
     "sections": {
       "Characteristics": {
@@ -4354,7 +4398,7 @@
     }
   },
   {
-    "id": 97,
+    "id": 99,
     "name": "Extracellular Fluid (ECF)",
     "sections": {
       "Characteristics": {
@@ -4388,7 +4432,7 @@
     }
   },
   {
-    "id": 98,
+    "id": 100,
     "name": "Factors VIII and IX",
     "sections": {
       "Characteristics": {
@@ -4419,7 +4463,7 @@
     }
   },
   {
-    "id": 99,
+    "id": 101,
     "name": "Fast vs. Slow Pranayamas",
     "sections": {
       "Characteristics": {
@@ -4446,7 +4490,7 @@
     }
   },
   {
-    "id": 100,
+    "id": 102,
     "name": "Febrile Conditions",
     "sections": {
       "Characteristics": {
@@ -4480,7 +4524,7 @@
     }
   },
   {
-    "id": 101,
+    "id": 103,
     "name": "Fermentation Substrates",
     "sections": {
       "Characteristics": {
@@ -4515,7 +4559,7 @@
     }
   },
   {
-    "id": 102,
+    "id": 104,
     "name": "Fetal Hemoglobin (HbF)",
     "sections": {
       "Characteristics": {
@@ -4545,7 +4589,7 @@
     }
   },
   {
-    "id": 103,
+    "id": 105,
     "name": "Fibrin Fibers",
     "sections": {
       "Characteristics": {
@@ -4584,7 +4628,7 @@
     }
   },
   {
-    "id": 104,
+    "id": 106,
     "name": "Fibrinogen (Factor I)",
     "sections": {
       "Characteristics": {
@@ -4636,7 +4680,7 @@
     }
   },
   {
-    "id": 105,
+    "id": 107,
     "name": "Frank-Starling Mechanism",
     "sections": {
       "Characteristics": {
@@ -4666,7 +4710,7 @@
     }
   },
   {
-    "id": 106,
+    "id": 108,
     "name": "Free Fluid",
     "sections": {
       "Characteristics": {
@@ -4684,7 +4728,7 @@
     }
   },
   {
-    "id": 107,
+    "id": 109,
     "name": "Fungiform, Foliate, and Circumvallate Papillae",
     "sections": {
       "Location": {
@@ -4715,7 +4759,7 @@
     }
   },
   {
-    "id": 108,
+    "id": 110,
     "name": "G-Protein (Second Messenger)",
     "sections": {
       "Characteristics": {
@@ -4750,7 +4794,7 @@
     }
   },
   {
-    "id": 109,
+    "id": 111,
     "name": "GABA (Gamma-Aminobutyric Acid) and Glycine",
     "sections": {
       "Characteristics": {
@@ -4781,7 +4825,173 @@
     }
   },
   {
-    "id": 110,
+    "id": 112,
+    "name": "Gastric Gland Cell Types",
+    "sections": {
+      "Location": {
+        "type": "text",
+        "text": "Situated deep in the **mucosal infoldings** (pits) of the stomach wall."
+      },
+      "Types (and Secretions)": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Mucous Neck Cells",
+            "text": "Secrete mainly **mucus** for lubrication and protection."
+          },
+          {
+            "heading": "Chief (Peptic) Cells",
+            "text": "Secrete large quantities of **pepsinogen**, the precursor for protein-digesting pepsin."
+          },
+          {
+            "heading": "Parietal (Oxyntic) Cells",
+            "text": "Secrete **Hydrochloric acid (HCl)** and **Intrinsic Factor** (essential for B₁₂ absorption)."
+          },
+          {
+            "heading": "Enterochromaffin-like (ECL) Cells",
+            "text": "Secrete **histamine**."
+          },
+          {
+            "heading": "D Cells",
+            "text": "Secrete **somatostatin**, which has inhibitory effects."
+          },
+          {
+            "heading": "G Cells",
+            "text": "Located in the pyloric glands (antrum); secrete the hormone **Gastrin**."
+          }
+        ]
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "**Acetylcholine** released by parasympathetic nerves excites all these cell types. **Gastrin and Histamine** specifically and strongly stimulate acid secretion from **parietal cells**."
+      }
+    }
+  },
+  {
+    "id": 113,
+    "name": "Gastric Rugae",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "These are **large folds** or ridges of the thick gastric mucous membrane."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "They provide the stomach with **stretchability**, allowing it to serve as a **reservoir** that can hold 1.5 to 4 liters of food."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found in the **interior of the stomach**."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Formed and maintained by the contraction of the **muscularis mucosa**."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "They are **more prominent when the stomach is empty** and flatten out as the stomach distends with food."
+      }
+    }
+  },
+  {
+    "id": 114,
+    "name": "Gastrointestinal Muscle Organization",
+    "sections": {
+      "Location": {
+        "type": "text",
+        "text": "Present throughout the wall of the GI tract from the esophagus to the rectum."
+      },
+      "Components": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Inner Circular Layer",
+            "text": "Muscle fibers extend **around the gut**."
+          },
+          {
+            "heading": "Outer Longitudinal Layer",
+            "text": "Muscle fibers extend **longitudinally down** the intestinal tract."
+          }
+        ]
+      },
+      "Functions": {
+        "type": "text",
+        "text": "The circular layer regulates **mixing** and narrows the lumen, while the longitudinal layer facilitates **forward movement** and shortening of the segments."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "The **myenteric (Auerbach’s) plexus** is located between these two layers and primarily controls the **motility** of the tract."
+      }
+    }
+  },
+  {
+    "id": 115,
+    "name": "Geriatric Population",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Defined by the physiological process of **aging**, which involves a decline in various body systems."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "Characterized by **telomere shortening** and the \"Hayflick limit\" (finite number of cell divisions). There is a progressive **decline in homeostatic efficiency**."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Influenced by the accumulation of **free radicals** and a decrease in protective **antioxidants**. Physical inactivity can exacerbate **anabolic resistance** and inflammation."
+      },
+      "Clinical Correlates (Systemic Changes)": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "GI System",
+            "text": "Reduced taste, **decreased number of myenteric neurons** (leading to lower motility), delayed gastric emptying, and **degeneration of intestinal villi**, which impairs absorption."
+          },
+          {
+            "heading": "Musculoskeletal",
+            "text": "**Sarcopenia**, which is the loss of skeletal muscle mass and function."
+          },
+          {
+            "heading": "Pathology",
+            "text": "Higher risk for **neurodegenerative diseases** (Alzheimer's and Parkinson's), cancer (due to reduced apoptosis), and **chronic low-grade inflammation**."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 116,
+    "name": "Ghrelin",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A 28-amino acid polypeptide hormone. It is categorized as a systemic chemical messenger with effects that are more prominent than its local actions."
+      },
+      "Functions": {
+        "type": "list",
+        "items": [
+          {
+            "heading": null,
+            "text": "Acts as a strong **orexigenic agent** that increases food intake."
+          },
+          {
+            "heading": null,
+            "text": "Stimulates the secretion of **growth hormone** from the anterior pituitary."
+          }
+        ]
+      },
+      "Location": {
+        "type": "text",
+        "text": "Secreted mainly from the **stomach**. It exerts its hunger-stimulating effects by acting on the **arcuate nucleus** of the hypothalamus."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Its secretion is generally increased during fasting and decreased after food ingestion."
+      }
+    }
+  },
+  {
+    "id": 117,
     "name": "GI Hormones",
     "sections": {
       "Characteristics": {
@@ -4820,7 +5030,7 @@
     }
   },
   {
-    "id": 111,
+    "id": 118,
     "name": "GI Mucosa Cell Types",
     "sections": {
       "Location": {
@@ -4879,7 +5089,7 @@
     }
   },
   {
-    "id": 112,
+    "id": 119,
     "name": "GI Smooth Muscle",
     "sections": {
       "Characteristics": {
@@ -4917,7 +5127,7 @@
     }
   },
   {
-    "id": 113,
+    "id": 120,
     "name": "GI Sphincters",
     "sections": {
       "Characteristics": {
@@ -4960,173 +5170,7 @@
     }
   },
   {
-    "id": 114,
-    "name": "Gastric Gland Cell Types",
-    "sections": {
-      "Location": {
-        "type": "text",
-        "text": "Situated deep in the **mucosal infoldings** (pits) of the stomach wall."
-      },
-      "Types (and Secretions)": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Mucous Neck Cells",
-            "text": "Secrete mainly **mucus** for lubrication and protection."
-          },
-          {
-            "heading": "Chief (Peptic) Cells",
-            "text": "Secrete large quantities of **pepsinogen**, the precursor for protein-digesting pepsin."
-          },
-          {
-            "heading": "Parietal (Oxyntic) Cells",
-            "text": "Secrete **Hydrochloric acid (HCl)** and **Intrinsic Factor** (essential for B₁₂ absorption)."
-          },
-          {
-            "heading": "Enterochromaffin-like (ECL) Cells",
-            "text": "Secrete **histamine**."
-          },
-          {
-            "heading": "D Cells",
-            "text": "Secrete **somatostatin**, which has inhibitory effects."
-          },
-          {
-            "heading": "G Cells",
-            "text": "Located in the pyloric glands (antrum); secrete the hormone **Gastrin**."
-          }
-        ]
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "**Acetylcholine** released by parasympathetic nerves excites all these cell types. **Gastrin and Histamine** specifically and strongly stimulate acid secretion from **parietal cells**."
-      }
-    }
-  },
-  {
-    "id": 115,
-    "name": "Gastric Rugae",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "These are **large folds** or ridges of the thick gastric mucous membrane."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "They provide the stomach with **stretchability**, allowing it to serve as a **reservoir** that can hold 1.5 to 4 liters of food."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found in the **interior of the stomach**."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Formed and maintained by the contraction of the **muscularis mucosa**."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "They are **more prominent when the stomach is empty** and flatten out as the stomach distends with food."
-      }
-    }
-  },
-  {
-    "id": 116,
-    "name": "Gastrointestinal Muscle Organization",
-    "sections": {
-      "Location": {
-        "type": "text",
-        "text": "Present throughout the wall of the GI tract from the esophagus to the rectum."
-      },
-      "Components": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Inner Circular Layer",
-            "text": "Muscle fibers extend **around the gut**."
-          },
-          {
-            "heading": "Outer Longitudinal Layer",
-            "text": "Muscle fibers extend **longitudinally down** the intestinal tract."
-          }
-        ]
-      },
-      "Functions": {
-        "type": "text",
-        "text": "The circular layer regulates **mixing** and narrows the lumen, while the longitudinal layer facilitates **forward movement** and shortening of the segments."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "The **myenteric (Auerbach’s) plexus** is located between these two layers and primarily controls the **motility** of the tract."
-      }
-    }
-  },
-  {
-    "id": 117,
-    "name": "Geriatric Population",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Defined by the physiological process of **aging**, which involves a decline in various body systems."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "Characterized by **telomere shortening** and the \"Hayflick limit\" (finite number of cell divisions). There is a progressive **decline in homeostatic efficiency**."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Influenced by the accumulation of **free radicals** and a decrease in protective **antioxidants**. Physical inactivity can exacerbate **anabolic resistance** and inflammation."
-      },
-      "Clinical Correlates (Systemic Changes)": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "GI System",
-            "text": "Reduced taste, **decreased number of myenteric neurons** (leading to lower motility), delayed gastric emptying, and **degeneration of intestinal villi**, which impairs absorption."
-          },
-          {
-            "heading": "Musculoskeletal",
-            "text": "**Sarcopenia**, which is the loss of skeletal muscle mass and function."
-          },
-          {
-            "heading": "Pathology",
-            "text": "Higher risk for **neurodegenerative diseases** (Alzheimer's and Parkinson's), cancer (due to reduced apoptosis), and **chronic low-grade inflammation**."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 118,
-    "name": "Ghrelin",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A 28-amino acid polypeptide hormone. It is categorized as a systemic chemical messenger with effects that are more prominent than its local actions."
-      },
-      "Functions": {
-        "type": "list",
-        "items": [
-          {
-            "heading": null,
-            "text": "Acts as a strong **orexigenic agent** that increases food intake."
-          },
-          {
-            "heading": null,
-            "text": "Stimulates the secretion of **growth hormone** from the anterior pituitary."
-          }
-        ]
-      },
-      "Location": {
-        "type": "text",
-        "text": "Secreted mainly from the **stomach**. It exerts its hunger-stimulating effects by acting on the **arcuate nucleus** of the hypothalamus."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Its secretion is generally increased during fasting and decreased after food ingestion."
-      }
-    }
-  },
-  {
-    "id": 119,
+    "id": 121,
     "name": "Glomerular Barrier and Capillary Membrane",
     "sections": {
       "Characteristics": {
@@ -5156,7 +5200,7 @@
     }
   },
   {
-    "id": 120,
+    "id": 122,
     "name": "Glomerular Capillary Filterability",
     "sections": {
       "Properties": {
@@ -5183,7 +5227,7 @@
     }
   },
   {
-    "id": 121,
+    "id": 123,
     "name": "Glomerular Capillary Pores",
     "sections": {
       "Characteristics": {
@@ -5201,7 +5245,7 @@
     }
   },
   {
-    "id": 122,
+    "id": 124,
     "name": "Glomus Cells",
     "sections": {
       "Characteristics": {
@@ -5231,7 +5275,7 @@
     }
   },
   {
-    "id": 123,
+    "id": 125,
     "name": "Glutamate",
     "sections": {
       "Characteristics": {
@@ -5270,7 +5314,7 @@
     }
   },
   {
-    "id": 124,
+    "id": 126,
     "name": "Glycophorins",
     "sections": {
       "Characteristics": {
@@ -5313,7 +5357,7 @@
     }
   },
   {
-    "id": 125,
+    "id": 127,
     "name": "Graded and Local Potentials",
     "sections": {
       "Characteristics": {
@@ -5335,7 +5379,7 @@
     }
   },
   {
-    "id": 126,
+    "id": 128,
     "name": "Granule Cells",
     "sections": {
       "Location": {
@@ -5366,7 +5410,7 @@
     }
   },
   {
-    "id": 127,
+    "id": 129,
     "name": "Growth Spurt",
     "sections": {
       "Characteristics": {
@@ -5388,7 +5432,7 @@
     }
   },
   {
-    "id": 128,
+    "id": 130,
     "name": "Gustducin",
     "sections": {
       "Characteristics": {
@@ -5423,54 +5467,7 @@
     }
   },
   {
-    "id": 129,
-    "name": "HPA Axis (Hypothalamo-Pituitary-Adrenal Axis)",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A major neuroendocrine system that serves as the primary effector system for the body's response to **chronic stress**."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Coordinates the systemic response to stress by regulating the release of **Glucocorticoids (Cortisol)**. It facilitates metabolic adjustments and influences immune functions."
-      },
-      "Location/Components": {
-        "type": "text",
-        "text": "Consists of a hierarchical pathway involving the **hypothalamus**, the **anterior pituitary gland**, and the **adrenal cortex**."
-      },
-      "Regulation": {
-        "type": "list",
-        "items": [
-          {
-            "heading": null,
-            "text": "The hypothalamus secretes **Corticotropin-Releasing Hormone (CRH)** into the portal vessels."
-          },
-          {
-            "heading": null,
-            "text": "CRH stimulates the anterior pituitary to secrete **ACTH (Corticotropin)**."
-          },
-          {
-            "heading": null,
-            "text": "ACTH then stimulates the **adrenal cortex** to synthesize and secrete cortisol."
-          },
-          {
-            "heading": null,
-            "text": "The system is controlled by **negative feedback loops**, where increased cortisol inhibits further release of CRH and ACTH."
-          }
-        ]
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Activated by prolonged **emotional stress, anxiety, fear, or physical injury**."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Chronic over-activation of the HPA axis is associated with **depression, anxiety disorders, and PTSD**. It also leads to **suppressed immunity**"
-      }
-    }
-  },
-  {
-    "id": 130,
+    "id": 131,
     "name": "Hair Cells",
     "sections": {
       "Characteristics": {
@@ -5513,7 +5510,7 @@
     }
   },
   {
-    "id": 131,
+    "id": 132,
     "name": "Heart Rate Response",
     "sections": {
       "Properties": {
@@ -5561,7 +5558,7 @@
     }
   },
   {
-    "id": 132,
+    "id": 133,
     "name": "Heart Sounds",
     "sections": {
       "Characteristics": {
@@ -5600,7 +5597,7 @@
     }
   },
   {
-    "id": 133,
+    "id": 134,
     "name": "Heat Production",
     "sections": {
       "Characteristics": {
@@ -5639,7 +5636,7 @@
     }
   },
   {
-    "id": 134,
+    "id": 135,
     "name": "Hemoglobin (Hb)",
     "sections": {
       "Characteristics": {
@@ -5695,7 +5692,7 @@
     }
   },
   {
-    "id": 135,
+    "id": 136,
     "name": "Hering–Breuer Reflexes",
     "sections": {
       "Characteristics": {
@@ -5764,7 +5761,7 @@
     }
   },
   {
-    "id": 136,
+    "id": 137,
     "name": "High Altitude Acclimatization",
     "sections": {
       "Characteristics": {
@@ -5824,7 +5821,7 @@
     }
   },
   {
-    "id": 137,
+    "id": 138,
     "name": "High-Pressure Nervous Syndrome (HPNS)",
     "sections": {
       "Characteristics": {
@@ -5846,7 +5843,7 @@
     }
   },
   {
-    "id": 138,
+    "id": 139,
     "name": "Hirschsprung Disease",
     "sections": {
       "Characteristics": {
@@ -5860,7 +5857,7 @@
     }
   },
   {
-    "id": 139,
+    "id": 140,
     "name": "Hormone Secretion and Clearance",
     "sections": {
       "Characteristics": {
@@ -5920,7 +5917,54 @@
     }
   },
   {
-    "id": 140,
+    "id": 141,
+    "name": "HPA Axis (Hypothalamo-Pituitary-Adrenal Axis)",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A major neuroendocrine system that serves as the primary effector system for the body's response to **chronic stress**."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Coordinates the systemic response to stress by regulating the release of **Glucocorticoids (Cortisol)**. It facilitates metabolic adjustments and influences immune functions."
+      },
+      "Location/Components": {
+        "type": "text",
+        "text": "Consists of a hierarchical pathway involving the **hypothalamus**, the **anterior pituitary gland**, and the **adrenal cortex**."
+      },
+      "Regulation": {
+        "type": "list",
+        "items": [
+          {
+            "heading": null,
+            "text": "The hypothalamus secretes **Corticotropin-Releasing Hormone (CRH)** into the portal vessels."
+          },
+          {
+            "heading": null,
+            "text": "CRH stimulates the anterior pituitary to secrete **ACTH (Corticotropin)**."
+          },
+          {
+            "heading": null,
+            "text": "ACTH then stimulates the **adrenal cortex** to synthesize and secrete cortisol."
+          },
+          {
+            "heading": null,
+            "text": "The system is controlled by **negative feedback loops**, where increased cortisol inhibits further release of CRH and ACTH."
+          }
+        ]
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Activated by prolonged **emotional stress, anxiety, fear, or physical injury**."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Chronic over-activation of the HPA axis is associated with **depression, anxiety disorders, and PTSD**. It also leads to **suppressed immunity**"
+      }
+    }
+  },
+  {
+    "id": 142,
     "name": "Hyperthyroidism",
     "sections": {
       "Characteristics": {
@@ -5971,7 +6015,7 @@
     }
   },
   {
-    "id": 141,
+    "id": 143,
     "name": "Hypothalamic Hormones",
     "sections": {
       "Characteristics": {
@@ -6022,7 +6066,7 @@
     }
   },
   {
-    "id": 142,
+    "id": 144,
     "name": "Hypothyroidism",
     "sections": {
       "Characteristics": {
@@ -6086,7 +6130,7 @@
     }
   },
   {
-    "id": 143,
+    "id": 145,
     "name": "Inherited Disorders of Hemoglobin",
     "sections": {
       "Characteristics": {
@@ -6121,7 +6165,7 @@
     }
   },
   {
-    "id": 144,
+    "id": 146,
     "name": "Insomnias vs. Hypersomnias",
     "sections": {
       "Insomnias": {
@@ -6157,7 +6201,7 @@
     }
   },
   {
-    "id": 145,
+    "id": 147,
     "name": "Inspiratory Neurons",
     "sections": {
       "Characteristics": {
@@ -6179,37 +6223,7 @@
     }
   },
   {
-    "id": 146,
-    "name": "Insulin Receptor Signalling",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A complex cascade of intracellular events triggered by insulin binding to its specific receptor."
-      },
-      "Location": {
-        "type": "text",
-        "text": "The receptor is a membrane protein that **spans the cell membrane**."
-      },
-      "Components": {
-        "type": "text",
-        "text": "The receptor is a heterotetramer consisting of **two α subunits** (extracellular) and **two β subunits** (spanning the membrane into the cytosol)."
-      },
-      "Regulation (Mechanism)": {
-        "type": "text",
-        "text": "1. Insulin binds to the **α subunits**. 2. This triggers **autophosphorylation of the β subunits**, which induces **tyrosine kinase activity**. 3. This activates a phosphorylation cascade involving **Insulin Receptor Substrates (IRS)**, Shc, Grb2, Ras, and **MAP kinase**."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "The signaling pathway mediates effects on glucose, fat, and protein metabolism; for example, it recruits **GLUT4 transporters** to the cell surface to increase glucose uptake."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Defects in this signaling pathway (e.g., mutations or autoantibodies) lead to **insulin resistance** and Type 2 Diabetes."
-      }
-    }
-  },
-  {
-    "id": 147,
+    "id": 148,
     "name": "Insulin and Glucagon",
     "sections": {
       "Insulin": {
@@ -6269,7 +6283,37 @@
     }
   },
   {
-    "id": 148,
+    "id": 149,
+    "name": "Insulin Receptor Signalling",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A complex cascade of intracellular events triggered by insulin binding to its specific receptor."
+      },
+      "Location": {
+        "type": "text",
+        "text": "The receptor is a membrane protein that **spans the cell membrane**."
+      },
+      "Components": {
+        "type": "text",
+        "text": "The receptor is a heterotetramer consisting of **two α subunits** (extracellular) and **two β subunits** (spanning the membrane into the cytosol)."
+      },
+      "Regulation (Mechanism)": {
+        "type": "text",
+        "text": "1. Insulin binds to the **α subunits**. 2. This triggers **autophosphorylation of the β subunits**, which induces **tyrosine kinase activity**. 3. This activates a phosphorylation cascade involving **Insulin Receptor Substrates (IRS)**, Shc, Grb2, Ras, and **MAP kinase**."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "The signaling pathway mediates effects on glucose, fat, and protein metabolism; for example, it recruits **GLUT4 transporters** to the cell surface to increase glucose uptake."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Defects in this signaling pathway (e.g., mutations or autoantibodies) lead to **insulin resistance** and Type 2 Diabetes."
+      }
+    }
+  },
+  {
+    "id": 150,
     "name": "Integrative Reflexes of the Spinal Cord",
     "sections": {
       "Characteristics": {
@@ -6299,7 +6343,7 @@
     }
   },
   {
-    "id": 149,
+    "id": 151,
     "name": "Intercalated Disks",
     "sections": {
       "Characteristics": {
@@ -6351,7 +6395,7 @@
     }
   },
   {
-    "id": 150,
+    "id": 152,
     "name": "Interstitial Cells of Cajal (ICC)",
     "sections": {
       "Characteristics": {
@@ -6369,7 +6413,7 @@
     }
   },
   {
-    "id": 151,
+    "id": 153,
     "name": "Intestinal Bacterial Flora",
     "sections": {
       "Characteristics": {
@@ -6404,7 +6448,7 @@
     }
   },
   {
-    "id": 152,
+    "id": 154,
     "name": "Intestinal Crypts of Lieberkühn",
     "sections": {
       "Characteristics": {
@@ -6451,7 +6495,7 @@
     }
   },
   {
-    "id": 153,
+    "id": 155,
     "name": "Intestinal Movements",
     "sections": {
       "Characteristics": {
@@ -6523,7 +6567,7 @@
     }
   },
   {
-    "id": 154,
+    "id": 156,
     "name": "Intracellular Fluid (ICF)",
     "sections": {
       "Characteristics": {
@@ -6561,7 +6605,7 @@
     }
   },
   {
-    "id": 155,
+    "id": 157,
     "name": "Intrinsic Factor",
     "sections": {
       "Characteristics": {
@@ -6587,7 +6631,7 @@
     }
   },
   {
-    "id": 156,
+    "id": 158,
     "name": "Ion Channels",
     "sections": {
       "Characteristics": {
@@ -6629,7 +6673,7 @@
     }
   },
   {
-    "id": 157,
+    "id": 159,
     "name": "Isotonic and Isometric Contractions",
     "sections": {
       "Characteristics": {
@@ -6672,7 +6716,7 @@
     }
   },
   {
-    "id": 158,
+    "id": 160,
     "name": "Isotonic and Isometric Exercises",
     "sections": {
       "Characteristics": {
@@ -6729,7 +6773,7 @@
     }
   },
   {
-    "id": 159,
+    "id": 161,
     "name": "Jugular Venous Pulse (JVP) Waves",
     "sections": {
       "Characteristics": {
@@ -6764,7 +6808,7 @@
     }
   },
   {
-    "id": 160,
+    "id": 162,
     "name": "Juxtaglomerular (JG) Cells",
     "sections": {
       "Characteristics": {
@@ -6794,7 +6838,7 @@
     }
   },
   {
-    "id": 161,
+    "id": 163,
     "name": "Kussmaul's Respiration",
     "sections": {
       "Characteristics": {
@@ -6820,7 +6864,7 @@
     }
   },
   {
-    "id": 162,
+    "id": 164,
     "name": "L-type Calcium Channels",
     "sections": {
       "Properties": {
@@ -6855,7 +6899,7 @@
     }
   },
   {
-    "id": 163,
+    "id": 165,
     "name": "Lactose Intolerance",
     "sections": {
       "Characteristics": {
@@ -6902,7 +6946,7 @@
     }
   },
   {
-    "id": 164,
+    "id": 166,
     "name": "Larynx and Vocal Cords",
     "sections": {
       "Characteristics": {
@@ -6967,7 +7011,7 @@
     }
   },
   {
-    "id": 165,
+    "id": 167,
     "name": "Lipid Bilayer",
     "sections": {
       "Characteristics": {
@@ -7006,7 +7050,7 @@
     }
   },
   {
-    "id": 166,
+    "id": 168,
     "name": "Lipids",
     "sections": {
       "Characteristics": {
@@ -7071,7 +7115,7 @@
     }
   },
   {
-    "id": 167,
+    "id": 169,
     "name": "Lung Compliance",
     "sections": {
       "Characteristics": {
@@ -7140,7 +7184,7 @@
     }
   },
   {
-    "id": 168,
+    "id": 170,
     "name": "Lungs and Chest Wall",
     "sections": {
       "Characteristics": {
@@ -7209,7 +7253,7 @@
     }
   },
   {
-    "id": 169,
+    "id": 171,
     "name": "Lysosomes",
     "sections": {
       "Characteristics": {
@@ -7264,7 +7308,7 @@
     }
   },
   {
-    "id": 170,
+    "id": 172,
     "name": "Macula",
     "sections": {
       "Types and Locations": {
@@ -7308,7 +7352,7 @@
     }
   },
   {
-    "id": 171,
+    "id": 173,
     "name": "Malabsorption Syndrome",
     "sections": {
       "Characteristics": {
@@ -7361,7 +7405,7 @@
     }
   },
   {
-    "id": 172,
+    "id": 174,
     "name": "Maximum Expiratory Flow Volume Curve (MEFVC)",
     "sections": {
       "Characteristics": {
@@ -7405,7 +7449,7 @@
     }
   },
   {
-    "id": 173,
+    "id": 175,
     "name": "Membrane Potential",
     "sections": {
       "Characteristics": {
@@ -7465,7 +7509,7 @@
     }
   },
   {
-    "id": 174,
+    "id": 176,
     "name": "Menstrual Cycle Phases",
     "sections": {
       "Characteristics": {
@@ -7508,7 +7552,7 @@
     }
   },
   {
-    "id": 175,
+    "id": 177,
     "name": "Methods of Contraception",
     "sections": {
       "Characteristics": {
@@ -7555,7 +7599,7 @@
     }
   },
   {
-    "id": 176,
+    "id": 178,
     "name": "Micelles",
     "sections": {
       "Characteristics": {
@@ -7585,7 +7629,7 @@
     }
   },
   {
-    "id": 177,
+    "id": 179,
     "name": "Migrating Motor Complex (MMC)",
     "sections": {
       "Characteristics": {
@@ -7619,7 +7663,7 @@
     }
   },
   {
-    "id": 178,
+    "id": 180,
     "name": "Myenteric and Submucosal Plexuses",
     "sections": {
       "Characteristics": {
@@ -7663,7 +7707,7 @@
     }
   },
   {
-    "id": 179,
+    "id": 181,
     "name": "Myosin Filament",
     "sections": {
       "Characteristics/Components": {
@@ -7685,7 +7729,7 @@
     }
   },
   {
-    "id": 180,
+    "id": 182,
     "name": "Myosin Head",
     "sections": {
       "Properties": {
@@ -7712,7 +7756,7 @@
     }
   },
   {
-    "id": 181,
+    "id": 183,
     "name": "Narcolepsy and Cataplexy",
     "sections": {
       "Narcolepsy Characteristics": {
@@ -7730,7 +7774,7 @@
     }
   },
   {
-    "id": 182,
+    "id": 184,
     "name": "Necrosis and Apoptosis",
     "sections": {
       "Necrosis Characteristics": {
@@ -7770,7 +7814,50 @@
     }
   },
   {
-    "id": 183,
+    "id": 185,
+    "name": "Nerve and Muscle Action Potentials",
+    "sections": {
+      "Characteristics/Properties": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Nerve AP",
+            "text": "Resting membrane potential is **–70 mV**; duration is **0.2–0.3 ms**; velocity is **70–120 m/sec** (in large fibers)."
+          },
+          {
+            "heading": "Muscle AP",
+            "text": "Resting membrane potential is **–80 to –90 mV**; duration is longer (**1–5 ms**); velocity is slower (**3–5 m/sec**)."
+          }
+        ]
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Serve as the electrical response of excitable cells to initiate functional responses like muscle contraction or neurotransmitter release."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Occur at the cell membranes of neurons and skeletal/smooth/cardiac muscle fibers."
+      },
+      "Components/Mechanism": {
+        "type": "text",
+        "text": "Generated by the rapid opening of **voltage-gated sodium channels** (Depolarization) followed by **voltage-gated potassium channels** (Repolarization)."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Controlled by the **threshold stimulus** and **refractory periods** (Absolute and Relative)."
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Sodium channel blockers like **Lidocaine** or **Saxitoxin** prevent their generation."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "**Channelopathies** are diseases resulting from structural or functional changes in ion channels."
+      }
+    }
+  },
+  {
+    "id": 186,
     "name": "Nerve Degeneration and Regeneration",
     "sections": {
       "Characteristics": {
@@ -7834,7 +7921,7 @@
     }
   },
   {
-    "id": 184,
+    "id": 187,
     "name": "Nerve Fibers",
     "sections": {
       "Characteristics": {
@@ -7885,50 +7972,7 @@
     }
   },
   {
-    "id": 185,
-    "name": "Nerve and Muscle Action Potentials",
-    "sections": {
-      "Characteristics/Properties": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Nerve AP",
-            "text": "Resting membrane potential is **–70 mV**; duration is **0.2–0.3 ms**; velocity is **70–120 m/sec** (in large fibers)."
-          },
-          {
-            "heading": "Muscle AP",
-            "text": "Resting membrane potential is **–80 to –90 mV**; duration is longer (**1–5 ms**); velocity is slower (**3–5 m/sec**)."
-          }
-        ]
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Serve as the electrical response of excitable cells to initiate functional responses like muscle contraction or neurotransmitter release."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Occur at the cell membranes of neurons and skeletal/smooth/cardiac muscle fibers."
-      },
-      "Components/Mechanism": {
-        "type": "text",
-        "text": "Generated by the rapid opening of **voltage-gated sodium channels** (Depolarization) followed by **voltage-gated potassium channels** (Repolarization)."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Controlled by the **threshold stimulus** and **refractory periods** (Absolute and Relative)."
-      },
-      "Factors Affecting": {
-        "type": "text",
-        "text": "Sodium channel blockers like **Lidocaine** or **Saxitoxin** prevent their generation."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "**Channelopathies** are diseases resulting from structural or functional changes in ion channels."
-      }
-    }
-  },
-  {
-    "id": 186,
+    "id": 188,
     "name": "Neuronal Assemblies",
     "sections": {
       "Characteristics": {
@@ -7958,7 +8002,7 @@
     }
   },
   {
-    "id": 187,
+    "id": 189,
     "name": "Neuronal Soma",
     "sections": {
       "Characteristics": {
@@ -7988,7 +8032,7 @@
     }
   },
   {
-    "id": 188,
+    "id": 190,
     "name": "Neuropeptide Transmitters",
     "sections": {
       "Characteristics": {
@@ -8014,7 +8058,7 @@
     }
   },
   {
-    "id": 189,
+    "id": 191,
     "name": "Nicotinic Cholinergic Receptors",
     "sections": {
       "Characteristics": {
@@ -8057,7 +8101,7 @@
     }
   },
   {
-    "id": 190,
+    "id": 192,
     "name": "Nitric Oxide (NO)",
     "sections": {
       "Characteristics": {
@@ -8092,7 +8136,7 @@
     }
   },
   {
-    "id": 191,
+    "id": 193,
     "name": "Normal Lens",
     "sections": {
       "Characteristics": {
@@ -8127,7 +8171,7 @@
     }
   },
   {
-    "id": 192,
+    "id": 194,
     "name": "Olfactory Neurons",
     "sections": {
       "Characteristics": {
@@ -8170,7 +8214,7 @@
     }
   },
   {
-    "id": 193,
+    "id": 195,
     "name": "Olfactory Receptors",
     "sections": {
       "Characteristics": {
@@ -8230,7 +8274,42 @@
     }
   },
   {
-    "id": 194,
+    "id": 196,
+    "name": "Ondine's Curse",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A clinical condition where a patient **loses the automatic control of breathing** but retains the ability for **voluntary breathing**."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Because the automatic respiratory drive is lost, the patient must breathe consciously and often requires **intermittent respiratory assistance**, especially when they are unable to maintain voluntary effort."
+      },
+      "Location": {
+        "type": "text",
+        "text": "The condition is caused by **injury to the brain** (specifically the brainstem centers responsible for automatic rhythmicity)."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Mythological Origin",
+            "text": "It is named after a German myth where a character was cursed to lose automatic functions and live only as long as he breathed voluntarily."
+          },
+          {
+            "heading": "Danger",
+            "text": "In a medical context, it is a dangerous state because if the patient falls asleep, they may stop breathing and die due to the loss of the voluntary drive."
+          },
+          {
+            "heading": "Distinction",
+            "text": "It is distinguished from other breathing disorders where voluntary control might be disrupted but automatic control remains intact."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 197,
     "name": "Optics",
     "sections": {
       "Characteristics": {
@@ -8298,7 +8377,7 @@
     }
   },
   {
-    "id": 195,
+    "id": 198,
     "name": "Organ of Corti",
     "sections": {
       "Characteristics": {
@@ -8350,7 +8429,7 @@
     }
   },
   {
-    "id": 196,
+    "id": 199,
     "name": "Organelles",
     "sections": {
       "Characteristics": {
@@ -8405,7 +8484,7 @@
     }
   },
   {
-    "id": 197,
+    "id": 200,
     "name": "Orthopnea and Dyspnea",
     "sections": {
       "Characteristics": {
@@ -8428,7 +8507,7 @@
     }
   },
   {
-    "id": 198,
+    "id": 201,
     "name": "Osmolar Substances in Body Fluids",
     "sections": {
       "Characteristics": {
@@ -8459,7 +8538,7 @@
     }
   },
   {
-    "id": 199,
+    "id": 202,
     "name": "Outer Hair Cells",
     "sections": {
       "Characteristics": {
@@ -8558,7 +8637,7 @@
     }
   },
   {
-    "id": 200,
+    "id": 203,
     "name": "Pacemaker Potential",
     "sections": {
       "Characteristics": {
@@ -8593,7 +8672,7 @@
     }
   },
   {
-    "id": 201,
+    "id": 204,
     "name": "Pacinian Corpuscle",
     "sections": {
       "Characteristics": {
@@ -8619,7 +8698,7 @@
     }
   },
   {
-    "id": 202,
+    "id": 205,
     "name": "Pancreas Secretory Lobules",
     "sections": {
       "Characteristics": {
@@ -8671,7 +8750,7 @@
     }
   },
   {
-    "id": 203,
+    "id": 206,
     "name": "Paneth Cells",
     "sections": {
       "Characteristics": {
@@ -8698,7 +8777,7 @@
     }
   },
   {
-    "id": 204,
+    "id": 207,
     "name": "Pathological Q Waves",
     "sections": {
       "Characteristics": {
@@ -8712,7 +8791,7 @@
     }
   },
   {
-    "id": 205,
+    "id": 208,
     "name": "Pepsin",
     "sections": {
       "Characteristics": {
@@ -8742,7 +8821,7 @@
     }
   },
   {
-    "id": 206,
+    "id": 209,
     "name": "Pepsinogens",
     "sections": {
       "Characteristics": {
@@ -8790,7 +8869,7 @@
     }
   },
   {
-    "id": 207,
+    "id": 210,
     "name": "Peristaltic Rush",
     "sections": {
       "Characteristics": {
@@ -8820,7 +8899,7 @@
     }
   },
   {
-    "id": 208,
+    "id": 211,
     "name": "Pheochromocytoma",
     "sections": {
       "Characteristics": {
@@ -8863,7 +8942,7 @@
     }
   },
   {
-    "id": 209,
+    "id": 212,
     "name": "Physical Gas Laws",
     "sections": {
       "Characteristics/Types": {
@@ -8906,7 +8985,7 @@
     }
   },
   {
-    "id": 210,
+    "id": 213,
     "name": "Physiological Shunt",
     "sections": {
       "Characteristics": {
@@ -8937,7 +9016,7 @@
     }
   },
   {
-    "id": 211,
+    "id": 214,
     "name": "Pinna and Tragus",
     "sections": {
       "Characteristics": {
@@ -8972,7 +9051,7 @@
     }
   },
   {
-    "id": 212,
+    "id": 215,
     "name": "Plasma Proteins",
     "sections": {
       "Characteristics": {
@@ -9049,7 +9128,7 @@
     }
   },
   {
-    "id": 213,
+    "id": 216,
     "name": "Plasmin and Plasminogen",
     "sections": {
       "Characteristics": {
@@ -9101,7 +9180,7 @@
     }
   },
   {
-    "id": 214,
+    "id": 217,
     "name": "Platelet Plug (Temporary Hemostatic Plug)",
     "sections": {
       "Characteristics": {
@@ -9148,7 +9227,7 @@
     }
   },
   {
-    "id": 215,
+    "id": 218,
     "name": "Platelets (Thrombocytes)",
     "sections": {
       "Characteristics": {
@@ -9199,7 +9278,7 @@
     }
   },
   {
-    "id": 216,
+    "id": 219,
     "name": "Pleura",
     "sections": {
       "Characteristics": {
@@ -9264,7 +9343,7 @@
     }
   },
   {
-    "id": 217,
+    "id": 220,
     "name": "Posterior Pituitary Hormones",
     "sections": {
       "Characteristics": {
@@ -9312,7 +9391,7 @@
     }
   },
   {
-    "id": 218,
+    "id": 221,
     "name": "Prestin",
     "sections": {
       "Characteristics": {
@@ -9334,7 +9413,7 @@
     }
   },
   {
-    "id": 219,
+    "id": 222,
     "name": "Primary Acid–Base Disturbances",
     "sections": {
       "Characteristics/Types": {
@@ -9395,7 +9474,7 @@
     }
   },
   {
-    "id": 220,
+    "id": 223,
     "name": "Principal (P) vs. Intercalated (I) Cells",
     "sections": {
       "Location": {
@@ -9435,7 +9514,7 @@
     }
   },
   {
-    "id": 221,
+    "id": 224,
     "name": "Propulsive vs. Mixing Patterns",
     "sections": {
       "Characteristics/Types": {
@@ -9484,7 +9563,7 @@
     }
   },
   {
-    "id": 222,
+    "id": 225,
     "name": "Proteins",
     "sections": {
       "Characteristics": {
@@ -9548,7 +9627,7 @@
     }
   },
   {
-    "id": 223,
+    "id": 226,
     "name": "Proteoglycan Filaments",
     "sections": {
       "Characteristics": {
@@ -9570,7 +9649,7 @@
     }
   },
   {
-    "id": 224,
+    "id": 227,
     "name": "Prothrombin Activator",
     "sections": {
       "Characteristics": {
@@ -9596,7 +9675,7 @@
     }
   },
   {
-    "id": 225,
+    "id": 228,
     "name": "Prothrombin and Thrombin",
     "sections": {
       "Characteristics": {
@@ -9658,7 +9737,7 @@
     }
   },
   {
-    "id": 226,
+    "id": 229,
     "name": "Protoplasm",
     "sections": {
       "Characteristics": {
@@ -9676,7 +9755,7 @@
     }
   },
   {
-    "id": 227,
+    "id": 230,
     "name": "Pulmonary Capillaries",
     "sections": {
       "Characteristics": {
@@ -9710,7 +9789,7 @@
     }
   },
   {
-    "id": 228,
+    "id": 231,
     "name": "Pulmonary Circulation",
     "sections": {
       "Characteristics": {
@@ -9804,7 +9883,7 @@
     }
   },
   {
-    "id": 229,
+    "id": 232,
     "name": "Pulmonary Function Symbols",
     "sections": {
       "Characteristics": {
@@ -9883,7 +9962,7 @@
     }
   },
   {
-    "id": 230,
+    "id": 233,
     "name": "Pulmonary Hypertension",
     "sections": {
       "Characteristics": {
@@ -9918,7 +9997,7 @@
     }
   },
   {
-    "id": 231,
+    "id": 234,
     "name": "Pulmonary Interstitial Fluid",
     "sections": {
       "Properties": {
@@ -9953,7 +10032,7 @@
     }
   },
   {
-    "id": 232,
+    "id": 235,
     "name": "Pulmonary Surfactant",
     "sections": {
       "Characteristics": {
@@ -10031,7 +10110,7 @@
     }
   },
   {
-    "id": 233,
+    "id": 236,
     "name": "Pulmonary Vascular System",
     "sections": {
       "Characteristics": {
@@ -10095,7 +10174,7 @@
     }
   },
   {
-    "id": 234,
+    "id": 237,
     "name": "Pulmonary Volumes and Capacities",
     "sections": {
       "Characteristics": {
@@ -10159,7 +10238,7 @@
     }
   },
   {
-    "id": 235,
+    "id": 238,
     "name": "Purkinje Fibers",
     "sections": {
       "Characteristics": {
@@ -10189,7 +10268,7 @@
     }
   },
   {
-    "id": 236,
+    "id": 239,
     "name": "RBC Membrane",
     "sections": {
       "Characteristics/Properties": {
@@ -10224,7 +10303,7 @@
     }
   },
   {
-    "id": 237,
+    "id": 240,
     "name": "Red Blood Cells (Erythrocytes)",
     "sections": {
       "Characteristics": {
@@ -10313,7 +10392,7 @@
     }
   },
   {
-    "id": 238,
+    "id": 241,
     "name": "Reflexes",
     "sections": {
       "Characteristics": {
@@ -10432,7 +10511,7 @@
     }
   },
   {
-    "id": 239,
+    "id": 242,
     "name": "Reflux Esophagitis (GERD)",
     "sections": {
       "Characteristics": {
@@ -10454,7 +10533,7 @@
     }
   },
   {
-    "id": 240,
+    "id": 243,
     "name": "Renal Circulation",
     "sections": {
       "Characteristics": {
@@ -10527,7 +10606,7 @@
     }
   },
   {
-    "id": 241,
+    "id": 244,
     "name": "Renal System",
     "sections": {
       "Characteristics": {
@@ -10574,7 +10653,7 @@
     }
   },
   {
-    "id": 242,
+    "id": 245,
     "name": "Renal Tubules",
     "sections": {
       "Characteristics": {
@@ -10617,7 +10696,7 @@
     }
   },
   {
-    "id": 243,
+    "id": 246,
     "name": "Renin-Angiotensin-Aldosterone System (RAAS)",
     "sections": {
       "Characteristics": {
@@ -10665,7 +10744,7 @@
     }
   },
   {
-    "id": 244,
+    "id": 247,
     "name": "Respiratory Apparatus (Respiratory System)",
     "sections": {
       "Characteristics": {
@@ -10708,7 +10787,7 @@
     }
   },
   {
-    "id": 245,
+    "id": 248,
     "name": "Rhodopsin",
     "sections": {
       "Characteristics": {
@@ -10746,7 +10825,7 @@
     }
   },
   {
-    "id": 246,
+    "id": 249,
     "name": "Rigor Mortis",
     "sections": {
       "Characteristics": {
@@ -10768,7 +10847,7 @@
     }
   },
   {
-    "id": 247,
+    "id": 250,
     "name": "Rouleaux",
     "sections": {
       "Characteristics": {
@@ -10811,7 +10890,7 @@
     }
   },
   {
-    "id": 248,
+    "id": 251,
     "name": "SA Node (Sinoatrial Node)",
     "sections": {
       "Characteristics": {
@@ -10837,7 +10916,7 @@
     }
   },
   {
-    "id": 249,
+    "id": 252,
     "name": "Saliva",
     "sections": {
       "Characteristics": {
@@ -10901,7 +10980,7 @@
     }
   },
   {
-    "id": 250,
+    "id": 253,
     "name": "Saliva Composition",
     "sections": {
       "Components": {
@@ -10945,7 +11024,7 @@
     }
   },
   {
-    "id": 251,
+    "id": 254,
     "name": "Salivary Glands",
     "sections": {
       "Characteristics": {
@@ -11043,7 +11122,7 @@
     }
   },
   {
-    "id": 252,
+    "id": 255,
     "name": "Secretory Juice Phases",
     "sections": {
       "Characteristics": {
@@ -11074,7 +11153,7 @@
     }
   },
   {
-    "id": 253,
+    "id": 256,
     "name": "Selye's General Adaptation Syndrome (GAS)",
     "sections": {
       "Characteristics": {
@@ -11113,7 +11192,7 @@
     }
   },
   {
-    "id": 254,
+    "id": 257,
     "name": "Sensory Receptors",
     "sections": {
       "Characteristics": {
@@ -11156,7 +11235,7 @@
     }
   },
   {
-    "id": 255,
+    "id": 258,
     "name": "Sensory Transmission",
     "sections": {
       "Characteristics/Properties": {
@@ -11195,7 +11274,7 @@
     }
   },
   {
-    "id": 256,
+    "id": 259,
     "name": "Serum",
     "sections": {
       "Characteristics": {
@@ -11234,7 +11313,7 @@
     }
   },
   {
-    "id": 257,
+    "id": 260,
     "name": "Serum and Plasma Proteins",
     "sections": {
       "Characteristics": {
@@ -11286,7 +11365,7 @@
     }
   },
   {
-    "id": 258,
+    "id": 261,
     "name": "Signal Transmission in Nerve Trunks",
     "sections": {
       "Characteristics": {
@@ -11339,7 +11418,7 @@
     }
   },
   {
-    "id": 259,
+    "id": 262,
     "name": "Sinus Arrhythmia",
     "sections": {
       "Characteristics": {
@@ -11386,7 +11465,7 @@
     }
   },
   {
-    "id": 260,
+    "id": 263,
     "name": "Skeletal Muscle",
     "sections": {
       "Characteristics": {
@@ -11493,7 +11572,7 @@
     }
   },
   {
-    "id": 261,
+    "id": 264,
     "name": "Skeletal Muscle Contraction",
     "sections": {
       "Characteristics": {
@@ -11561,7 +11640,7 @@
     }
   },
   {
-    "id": 262,
+    "id": 265,
     "name": "Sleep Apnea Syndrome",
     "sections": {
       "Characteristics": {
@@ -11592,33 +11671,7 @@
     }
   },
   {
-    "id": 263,
-    "name": "Slow Waves (Basal Electrical Rhythm - BER)",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Slow, undulating changes in the **resting membrane potential** of gastrointestinal smooth muscle."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "They are **not action potentials** themselves but determine the rhythm of gastrointestinal contractions."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Act as the **pacemaker** for the gut, setting the maximum frequency for spike potentials and subsequent motility."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found in the **smooth muscle of the gastrointestinal tract**, particularly in the stomach and small intestine."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Generated by specialized cells known as **Interstitial cells of Cajal** ."
-      }
-    }
-  },
-  {
-    "id": 264,
+    "id": 266,
     "name": "Slow and Fast Skeletal Muscle Fibers",
     "sections": {
       "Characteristics": {
@@ -11662,7 +11715,33 @@
     }
   },
   {
-    "id": 265,
+    "id": 267,
+    "name": "Slow Waves (Basal Electrical Rhythm - BER)",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Slow, undulating changes in the **resting membrane potential** of gastrointestinal smooth muscle."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "They are **not action potentials** themselves but determine the rhythm of gastrointestinal contractions."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Act as the **pacemaker** for the gut, setting the maximum frequency for spike potentials and subsequent motility."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found in the **smooth muscle of the gastrointestinal tract**, particularly in the stomach and small intestine."
+      },
+      "Regulation": {
+        "type": "text",
+        "text": "Generated by specialized cells known as **Interstitial cells of Cajal** ."
+      }
+    }
+  },
+  {
+    "id": 268,
     "name": "Small-Molecule, Rapidly Acting Neurotransmitters",
     "sections": {
       "Characteristics": {
@@ -11726,7 +11805,7 @@
     }
   },
   {
-    "id": 266,
+    "id": 269,
     "name": "Smooth Muscle",
     "sections": {
       "Characteristics": {
@@ -11808,7 +11887,7 @@
     }
   },
   {
-    "id": 267,
+    "id": 270,
     "name": "Somnambulism",
     "sections": {
       "Characteristics": {
@@ -11830,7 +11909,7 @@
     }
   },
   {
-    "id": 268,
+    "id": 271,
     "name": "Spectrin and Ankyrin",
     "sections": {
       "Characteristics/Properties": {
@@ -11852,7 +11931,7 @@
     }
   },
   {
-    "id": 269,
+    "id": 272,
     "name": "Sperm (Spermatozoa)",
     "sections": {
       "Characteristics": {
@@ -11912,7 +11991,7 @@
     }
   },
   {
-    "id": 270,
+    "id": 273,
     "name": "Spinal Cord",
     "sections": {
       "Characteristics": {
@@ -11968,7 +12047,7 @@
     }
   },
   {
-    "id": 271,
+    "id": 274,
     "name": "Statoconia",
     "sections": {
       "Characteristics": {
@@ -12029,7 +12108,7 @@
     }
   },
   {
-    "id": 272,
+    "id": 275,
     "name": "Steatorrhea",
     "sections": {
       "Characteristics": {
@@ -12089,7 +12168,7 @@
     }
   },
   {
-    "id": 273,
+    "id": 276,
     "name": "Stem Cells",
     "sections": {
       "Properties": {
@@ -12129,7 +12208,7 @@
     }
   },
   {
-    "id": 274,
+    "id": 277,
     "name": "Stimulus",
     "sections": {
       "Characteristics/Types": {
@@ -12165,7 +12244,7 @@
     }
   },
   {
-    "id": 275,
+    "id": 278,
     "name": "Stored Blood",
     "sections": {
       "Properties": {
@@ -12198,13 +12277,29 @@
           {
             "heading": "Transfusion Hazards",
             "text": "May lead to **circulatory overload**, febrile or allergic reactions, and the **transmission of diseases** such as Hepatitis, Malaria, AIDS, and Syphilis."
+          },
+          {
+            "heading": "Biochemical Changes",
+            "text": "Artificially stored blood undergoes significant **biochemical and physical changes** in red cells over time."
+          },
+          {
+            "heading": "Therapeutic Transfusions",
+            "text": "Clinically, **fresh frozen plasma** and **fresh whole blood transfusions** are used for specific therapeutic indications."
+          },
+          {
+            "heading": "Siliconized Containers",
+            "text": "Storage of blood in **siliconized containers** is used to prevent the activation of clotting factors during collection."
           }
         ]
+      },
+      "Natural Reservoirs": {
+        "type": "text",
+        "text": "The body maintains natural reservoirs for storing blood, including the **liver** (which acts as a filter and reservoir), the **spleen** (specifically for red blood cells), and the **veins**, which can constrict or enlarge to adjust stored volume."
       }
     }
   },
   {
-    "id": 276,
+    "id": 279,
     "name": "Stress Responses",
     "sections": {
       "Characteristics": {
@@ -12243,7 +12338,7 @@
     }
   },
   {
-    "id": 277,
+    "id": 280,
     "name": "Sustentacular Cells",
     "sections": {
       "Characteristics": {
@@ -12303,7 +12398,7 @@
     }
   },
   {
-    "id": 278,
+    "id": 281,
     "name": "Sympathetic and Parasympathetic Function",
     "sections": {
       "Characteristics": {
@@ -12360,7 +12455,7 @@
     }
   },
   {
-    "id": 279,
+    "id": 282,
     "name": "Synapses",
     "sections": {
       "Characteristics": {
@@ -12395,7 +12490,7 @@
     }
   },
   {
-    "id": 280,
+    "id": 283,
     "name": "Synaptic Transmission",
     "sections": {
       "Properties": {
@@ -12421,7 +12516,7 @@
     }
   },
   {
-    "id": 281,
+    "id": 284,
     "name": "Synaptic Transmitters",
     "sections": {
       "Characteristics": {
@@ -12477,7 +12572,7 @@
     }
   },
   {
-    "id": 282,
+    "id": 285,
     "name": "Synaptic Vesicles",
     "sections": {
       "Characteristics": {
@@ -12524,7 +12619,55 @@
     }
   },
   {
-    "id": 283,
+    "id": 286,
+    "name": "T-helper Cell Subsets",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "A specialized group of T-lymphocytes characterized by the presence of specific surface markers (CD4+)."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "They play a **pivotal role in the regulation of the immune system** by coordinating the response of B-lymphocytes (humoral immunity) and cytotoxic T cells (cellular immunity)."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found in **blood, lymph nodes, and the spleen**."
+      },
+      "Types": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Type 1 (T_H1)",
+            "text": "Stimulate **cellular immunity**, NK cells, and macrophages by secreting cytokines like **IL-2** and **interferon-γ (IFNγ)**. They also produce TNFβ."
+          },
+          {
+            "heading": "Type 2 (T_H2)",
+            "text": "Stimulate **humoral immunity**, activate eosinophils, and promote IgE class switching by secreting **IL-4, IL-5, and IL-6**."
+          }
+        ]
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "These cells are the primary targets of the Human Immunodeficiency Virus; their destruction leads to **Acquired Immunodeficiency Syndrome (AIDS)**."
+      },
+      "Regulation": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "IL-12",
+            "text": "From macrophages/B cells; activates the development of T_H1 cells."
+          },
+          {
+            "heading": "IFNγ",
+            "text": "Secreted by T_H1 cells **inhibits** the activity of T_H2 cells."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 287,
     "name": "T-helper Cells",
     "sections": {
       "Characteristics": {
@@ -12558,72 +12701,7 @@
     }
   },
   {
-    "id": 284,
-    "name": "TRP Family of Ion Channels",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A specialized group of T-lymphocytes characterized by the presence of specific surface markers (CD4+)."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "They play a **pivotal role in the regulation of the immune system** by coordinating the response of B-lymphocytes (humoral immunity) and cytotoxic T cells (cellular immunity)."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found in **blood, lymph nodes, and the spleen**."
-      },
-      "Types": {
-        "type": "text",
-        "text": "Recognized as distinct subsets within the T-helper cell category (e.g., Th1, Th2), classified by their cytokine secretion profiles."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "These cells are the primary targets of the Human Immunodeficiency Virus; their destruction leads to **Acquired Immunodeficiency Syndrome (AIDS)**."
-      }
-    }
-  },
-  {
-    "id": 285,
-    "name": "TRP Family of Ion Channels",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Refers to the **Transient Receptor Potential (TRP)** family of ion channels."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "These channels act as **sensory transducers** involved in various modalities, most notably in discriminating **thermal gradations** (cold and warmth) and processing certain types of pain."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found in the membranes of **sensory receptors**, such as those in the skin and nerve endings."
-      },
-      "Regulation": {
-        "type": "text",
-        "text": "Their activity is regulated by physical stimuli, such as **changes in temperature**, or chemical ligands. For example, extreme degrees of heat or cold that stimulate pain receptors involve these transduction pathways."
-      },
-      "Types": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "CMR1 (Cold and methanol sensitive receptors 1)",
-            "text": "Receptors for **moderate cold**."
-          },
-          {
-            "heading": "VR1 (Vanilloid receptor 1)",
-            "text": "Respond to **very high temperatures** (nociceptive thermoceptors)."
-          },
-          {
-            "heading": "VRL1 (Vanilloid receptor-like 1)",
-            "text": "Respond to **moderate to high temperatures**."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 286,
+    "id": 288,
     "name": "Tactile Receptors",
     "sections": {
       "Characteristics": {
@@ -12682,7 +12760,7 @@
     }
   },
   {
-    "id": 287,
+    "id": 289,
     "name": "Taste Cells",
     "sections": {
       "Characteristics": {
@@ -12716,7 +12794,7 @@
     }
   },
   {
-    "id": 288,
+    "id": 290,
     "name": "Taste Sensations",
     "sections": {
       "Characteristics": {
@@ -12781,7 +12859,7 @@
     }
   },
   {
-    "id": 289,
+    "id": 291,
     "name": "Tectorial Membrane",
     "sections": {
       "Characteristics": {
@@ -12803,7 +12881,7 @@
     }
   },
   {
-    "id": 290,
+    "id": 292,
     "name": "Teniae Coli and Haustra",
     "sections": {
       "Characteristics/Location": {
@@ -12830,7 +12908,7 @@
     }
   },
   {
-    "id": 291,
+    "id": 293,
     "name": "Theories of Aging",
     "sections": {
       "Characteristics": {
@@ -12874,7 +12952,7 @@
     }
   },
   {
-    "id": 292,
+    "id": 294,
     "name": "Thermoregulation",
     "sections": {
       "Characteristics": {
@@ -12926,7 +13004,7 @@
     }
   },
   {
-    "id": 293,
+    "id": 295,
     "name": "Titin Molecule",
     "sections": {
       "Characteristics": {
@@ -12948,7 +13026,7 @@
     }
   },
   {
-    "id": 294,
+    "id": 296,
     "name": "Transcellular Fluid",
     "sections": {
       "Characteristics": {
@@ -12974,7 +13052,7 @@
     }
   },
   {
-    "id": 295,
+    "id": 297,
     "name": "Transplanted Lungs",
     "sections": {
       "Characteristics": {
@@ -12996,7 +13074,7 @@
     }
   },
   {
-    "id": 296,
+    "id": 298,
     "name": "Transverse Tubules (T Tubules)",
     "sections": {
       "Characteristics": {
@@ -13039,7 +13117,7 @@
     }
   },
   {
-    "id": 297,
+    "id": 299,
     "name": "Troponin-Tropomyosin Complex",
     "sections": {
       "Characteristics": {
@@ -13087,7 +13165,63 @@
     }
   },
   {
-    "id": 298,
+    "id": 300,
+    "name": "TRP Family of Ion Channels",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Refers to the **Transient Receptor Potential (TRP)** family of ion channels."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "These channels act as **sensory transducers** involved in various modalities, most notably in discriminating **thermal gradations** (cold and warmth) and processing certain types of pain."
+      },
+      "Location": {
+        "type": "text",
+        "text": "Found in the membranes of **sensory receptors**, such as those in the skin and nerve endings."
+      },
+      "Regulation": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "",
+            "text": "Their activity is regulated by physical stimuli, such as **changes in temperature**, or chemical ligands. For example, extreme degrees of heat or cold that stimulate pain receptors involve these transduction pathways."
+          },
+          {
+            "heading": "VR1 PIP2 Binding",
+            "text": "**VR1** has a **PIP2 binding site**; its sensitivity increases when the quantity of bound PIP2 decreases."
+          },
+          {
+            "heading": "Cool Receptors",
+            "text": "Depolarization of cool receptors is mediated by **Ca²⁺ influx**."
+          }
+        ]
+      },
+      "Types": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "CMR1 (Cold and methanol sensitive receptors 1)",
+            "text": "Receptors for **moderate cold**."
+          },
+          {
+            "heading": "VR1 (Vanilloid receptor 1)",
+            "text": "Respond to **very high temperatures** (nociceptive thermoceptors)."
+          },
+          {
+            "heading": "VRL1 (Vanilloid receptor-like 1)",
+            "text": "Respond to **moderate to high temperatures**."
+          }
+        ]
+      },
+      "Factors Affecting": {
+        "type": "text",
+        "text": "Cool receptors respond to ranges from **10–40°C**, while warm receptors respond from **30–50°C**. Sensitivity to high heat is increased by the presence of vanilloid compounds or reduced PIP2 binding."
+      }
+    }
+  },
+  {
+    "id": 301,
     "name": "Type II Alveolar Cells (Type II Pneumocytes)",
     "sections": {
       "Characteristics": {
@@ -13134,7 +13268,7 @@
     }
   },
   {
-    "id": 299,
+    "id": 302,
     "name": "Types of Movements",
     "sections": {
       "Characteristics": {
@@ -13186,7 +13320,7 @@
     }
   },
   {
-    "id": 300,
+    "id": 303,
     "name": "Upper Airway (Upper Respiratory Tract)",
     "sections": {
       "Characteristics": {
@@ -13238,7 +13372,7 @@
     }
   },
   {
-    "id": 301,
+    "id": 304,
     "name": "Urine",
     "sections": {
       "Properties": {
@@ -13307,65 +13441,7 @@
     }
   },
   {
-    "id": 302,
-    "name": "VIPoma",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "This is a **tumor arising from cells that secrete Vasoactive Intestinal Polypeptide (VIP)**."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Profuse Watery Diarrhea",
-            "text": "VIP increases intestinal water and electrolyte secretion, leading to **profuse watery diarrhea**."
-          },
-          {
-            "heading": "Hypotension",
-            "text": "VIP's potent vasodilatory effects can cause **hypotension**."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 303,
-    "name": "VO₂max (Maximal Oxygen Consumption)",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "Defined as the **highest attainable rate of aerobic metabolism** during strenuous exercise."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "Average untrained adult male: ~3.0–3.5 L/min. Average untrained adult female: ~2.0–2.5 L/min. Trained male athletes: 5.0–6.0+ L/min. The figure of ~3 L/min refers specifically to the untrained adult male average and should not be used as an unqualified general value."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Serves as a standard measure of a person's **maximal capacity for aerobic work** and cardiovascular fitness."
-      },
-      "Factors Affecting": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Physiological Limits",
-            "text": "It is primarily limited by the rate at which **cardiac output** can increase and the **diffusion capacity** of the lungs."
-          },
-          {
-            "heading": "Individual Variations",
-            "text": "Influenced by age, gender, genetics, and the level of aerobic training."
-          }
-        ]
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "Used in **sports science** to determine the anaerobic threshold and to design aerobic training programs."
-      }
-    }
-  },
-  {
-    "id": 304,
+    "id": 305,
     "name": "Venous System",
     "sections": {
       "Characteristics": {
@@ -13438,7 +13514,7 @@
     }
   },
   {
-    "id": 305,
+    "id": 306,
     "name": "Vestibular Hair Cells",
     "sections": {
       "Characteristics": {
@@ -13481,7 +13557,30 @@
     }
   },
   {
-    "id": 306,
+    "id": 307,
+    "name": "VIPoma",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "This is a **tumor arising from cells that secrete Vasoactive Intestinal Polypeptide (VIP)**."
+      },
+      "Clinical Correlates": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Profuse Watery Diarrhea",
+            "text": "VIP increases intestinal water and electrolyte secretion, leading to **profuse watery diarrhea**."
+          },
+          {
+            "heading": "Hypotension",
+            "text": "VIP's potent vasodilatory effects can cause **hypotension**."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 308,
     "name": "Visceral Smooth Muscle (Unitary Smooth Muscle)",
     "sections": {
       "Characteristics": {
@@ -13537,7 +13636,7 @@
     }
   },
   {
-    "id": 307,
+    "id": 309,
     "name": "Visual Field Defects",
     "sections": {
       "Characteristics": {
@@ -13568,7 +13667,42 @@
     }
   },
   {
-    "id": 308,
+    "id": 310,
+    "name": "VO₂max (Maximal Oxygen Consumption)",
+    "sections": {
+      "Characteristics": {
+        "type": "text",
+        "text": "Defined as the **highest attainable rate of aerobic metabolism** during strenuous exercise."
+      },
+      "Properties": {
+        "type": "text",
+        "text": "Average untrained adult male: ~3.0–3.5 L/min. Average untrained adult female: ~2.0–2.5 L/min. Trained male athletes: 5.0–6.0+ L/min. The figure of ~3 L/min refers specifically to the untrained adult male average and should not be used as an unqualified general value."
+      },
+      "Functions": {
+        "type": "text",
+        "text": "Serves as a standard measure of a person's **maximal capacity for aerobic work** and cardiovascular fitness."
+      },
+      "Factors Affecting": {
+        "type": "list",
+        "items": [
+          {
+            "heading": "Physiological Limits",
+            "text": "It is primarily limited by the rate at which **cardiac output** can increase and the **diffusion capacity** of the lungs."
+          },
+          {
+            "heading": "Individual Variations",
+            "text": "Influenced by age, gender, genetics, and the level of aerobic training."
+          }
+        ]
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "Used in **sports science** to determine the anaerobic threshold and to design aerobic training programs."
+      }
+    }
+  },
+  {
+    "id": 311,
     "name": "Voltage-Gated Sodium and Potassium Channels",
     "sections": {
       "Characteristics": {
@@ -13624,7 +13758,29 @@
     }
   },
   {
-    "id": 309,
+    "id": 312,
+    "name": "Vomeronasal Organ",
+    "sections": {
+      "Functions": {
+        "type": "text",
+        "text": "It acts as a specialized sensory area for **sensing pheromones** secreted by a mating partner. It is involved in mediating **behavioral and mating properties**."
+      },
+      "Location": {
+        "type": "text",
+        "text": "In rodents and other mammals, it is found as a patch of olfactory mucus membrane **along the nasal septum**."
+      },
+      "Components": {
+        "type": "text",
+        "text": "Axons from this organ project to the **accessory olfactory bulb** and then to the **amygdala and hypothalamus**."
+      },
+      "Clinical Correlates": {
+        "type": "text",
+        "text": "It is primarily concerned with **reproduction and feeding behavior**."
+      }
+    }
+  },
+  {
+    "id": 313,
     "name": "White Blood Cells (Leucocytes)",
     "sections": {
       "Characteristics": {
@@ -13762,7 +13918,7 @@
     }
   },
   {
-    "id": 310,
+    "id": 314,
     "name": "Zollinger-Ellison Syndrome",
     "sections": {
       "Characteristics": {
@@ -13790,109 +13946,5 @@
         "text": "It is a major cause of severe **peptic ulcers** and gastrointestinal complications due to the corrosive effect of sustained high acid levels."
       }
     }
-  },
-  {
-    "id": 311,
-    "name": "Dicrotic Notch",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A characteristic notch visible on the **descending limb** of the aortic pressure curve and peripheral arterial pulse tracings."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "It occurs at the **beginning of the isovolumetric relaxation phase** of the cardiac cycle."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "It serves as a physiological marker representing the **closure of the aortic valve**."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Found on the pressure curves of the **aorta** and **peripheral arteries**."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "The dicrotic notch is notably **absent** in a **water-hammer pulse** (also known as a collapsing or Corrigan's pulse), which is a diagnostic feature of **aortic regurgitation**."
-      }
-    }
-  },
-  {
-    "id": 312,
-    "name": "Ebner's Glands",
-    "sections": {
-      "Functions": {
-        "type": "text",
-        "text": "These glands secrete a specific **tastant-binding protein**. This protein's role is to **concentrate tastant molecules** and transport them directly to the membranes of the taste bud microvilli to facilitate taste perception."
-      },
-      "Properties": {
-        "type": "text",
-        "text": "They possess specialized **transport and concentrating properties** for tastant molecules."
-      },
-      "Location": {
-        "type": "text",
-        "text": "Located in the **tongue**, specifically associated with the gustatory (taste) system."
-      }
-    }
-  },
-  {
-    "id": 313,
-    "name": "Ondine's Curse",
-    "sections": {
-      "Characteristics": {
-        "type": "text",
-        "text": "A clinical condition where a patient **loses the automatic control of breathing** but retains the ability for **voluntary breathing**."
-      },
-      "Functions": {
-        "type": "text",
-        "text": "Because the automatic respiratory drive is lost, the patient must breathe consciously and often requires **intermittent respiratory assistance**, especially when they are unable to maintain voluntary effort."
-      },
-      "Location": {
-        "type": "text",
-        "text": "The condition is caused by **injury to the brain** (specifically the brainstem centers responsible for automatic rhythmicity)."
-      },
-      "Clinical Correlates": {
-        "type": "list",
-        "items": [
-          {
-            "heading": "Mythological Origin",
-            "text": "It is named after a German myth where a character was cursed to lose automatic functions and live only as long as he breathed voluntarily."
-          },
-          {
-            "heading": "Danger",
-            "text": "In a medical context, it is a dangerous state because if the patient falls asleep, they may stop breathing and die due to the loss of the voluntary drive."
-          },
-          {
-            "heading": "Distinction",
-            "text": "It is distinguished from other breathing disorders where voluntary control might be disrupted but automatic control remains intact."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": 314,
-    "name": "Vomeronasal Organ",
-    "sections": {
-      "Functions": {
-        "type": "text",
-        "text": "It acts as a specialized sensory area for **sensing pheromones** secreted by a mating partner. It is involved in mediating **behavioral and mating properties**."
-      },
-      "Location": {
-        "type": "text",
-        "text": "In rodents and other mammals, it is found as a patch of olfactory mucus membrane **along the nasal septum**."
-      },
-      "Components": {
-        "type": "text",
-        "text": "Axons from this organ project to the **accessory olfactory bulb** and then to the **amygdala and hypothalamus**."
-      },
-      "Clinical Correlates": {
-        "type": "text",
-        "text": "It is primarily concerned with **reproduction and feeding behavior**."
-      }
-    }
   }
 ]
-
-
-

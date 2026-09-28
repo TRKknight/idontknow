@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# Build output (the deployed copy in physio/ is tracked separately)
+New-Hope/dist/
+
+# Copyrighted reference material - never commit
+Reference/**/*.pdf

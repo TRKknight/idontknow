@@ -654,6 +654,7 @@ export default function App() {
   const [activeCat, setActiveCat] = useState("All");
   const [search, setSearch] = useState("");
   const [modal, setModal] = useState(null);
+  const modalBoxRef = useRef(null);
   const [hoveredMode, setHoveredMode] = useState(null);
   const [vivaData, setVivaData] = useState(FALLBACK_DATA);
   const [reflexDetailData, setReflexDetailData] = useState(FALLBACK_DETAIL_REFLEXES);
@@ -827,46 +828,32 @@ export default function App() {
 
       {/* HOME */}
       {mode === "home" && (
-        <div style={{ textAlign: "center", padding: "3rem 1rem" }}>
-          <h1 style={{ fontSize: 26, fontWeight: 600, color: "var(--color-text-primary)", margin: "0 0 8px" }}>
-            New Hope
-          </h1>
-          <p style={{ fontSize: 14, color: "var(--color-text-secondary)", margin: "0 0 2rem", lineHeight: 1.5 }}>
-            Interactive physiology reference — laws, effects, reflexes, syndromes, and more
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center", maxWidth: 500, margin: "0 auto" }}>
-            {physioVisibility.viva && <button onClick={() => handleModeChange("browse")}
-              onMouseEnter={() => setHoveredMode("browse")}
-              onMouseLeave={() => setHoveredMode(null)}
-              style={{ flex: "1 1 200px", padding: "1.5rem", background: "var(--color-background-primary)", border: "0.5px solid var(--color-border-secondary)", borderRadius: "var(--border-radius-xl)", cursor: "pointer", textAlign: "center", transition: "border-color 0.15s, transform 0.15s", borderColor: hoveredMode === "browse" ? "var(--color-border-primary)" : "var(--color-border-secondary)", transform: hoveredMode === "browse" ? "translateY(-2px)" : "translateY(0)" }}>
-              <div style={{ fontSize: 32, marginBottom: 8 }}>📖</div>
-              <div style={{ fontSize: 16, fontWeight: 600, color: "var(--color-text-primary)", marginBottom: 4 }}>Viva Savior</div>
-              <div style={{ fontSize: 13, color: "var(--color-text-secondary)" }}>{vivaData.length} laws, effects, syndromes & more</div>
-            </button>}
-            {physioVisibility.reflexExplorer && <button onClick={() => handleModeChange("reflexDetails")}
-              onMouseEnter={() => setHoveredMode("reflexDetails")}
-              onMouseLeave={() => setHoveredMode(null)}
-              style={{ flex: "1 1 200px", padding: "1.5rem", background: "var(--color-background-primary)", border: "0.5px solid var(--color-border-secondary)", borderRadius: "var(--border-radius-xl)", cursor: "pointer", textAlign: "center", transition: "border-color 0.15s, transform 0.15s", borderColor: hoveredMode === "reflexDetails" ? "var(--color-border-primary)" : "var(--color-border-secondary)", transform: hoveredMode === "reflexDetails" ? "translateY(-2px)" : "translateY(0)" }}>
-              <div style={{ fontSize: 32, marginBottom: 8 }}>🧠</div>
-              <div style={{ fontSize: 16, fontWeight: 600, color: "var(--color-text-primary)", marginBottom: 4 }}>Reflex Explorer</div>
-              <div style={{ fontSize: 13, color: "var(--color-text-secondary)" }}>{reflexDetailData.length} detailed reflex breakdowns</div>
-            </button>}
-            {physioVisibility.notes && <button onClick={() => handleModeChange("notes")}
-              onMouseEnter={() => setHoveredMode("notes")}
-              onMouseLeave={() => setHoveredMode(null)}
-              style={{ flex: "1 1 200px", padding: "1.5rem", background: "var(--color-background-primary)", border: "0.5px solid var(--color-border-secondary)", borderRadius: "var(--border-radius-xl)", cursor: "pointer", textAlign: "center", transition: "border-color 0.15s, transform 0.15s", borderColor: hoveredMode === "notes" ? "var(--color-border-primary)" : "var(--color-border-secondary)", transform: hoveredMode === "notes" ? "translateY(-2px)" : "translateY(0)" }}>
-              <div style={{ fontSize: 32, marginBottom: 8 }}>📓</div>
-              <div style={{ fontSize: 16, fontWeight: 600, color: "var(--color-text-primary)", marginBottom: 4 }}>Physiology Notes</div>
-              <div style={{ fontSize: 13, color: "var(--color-text-secondary)" }}>{notesData.length} structured reference entries</div>
-            </button>}
-            {physioVisibility.clinical && <button onClick={() => handleModeChange("clinical")}
-              onMouseEnter={() => setHoveredMode("clinical")}
-              onMouseLeave={() => setHoveredMode(null)}
-              style={{ flex: "1 1 200px", padding: "1.5rem", background: "var(--color-background-primary)", border: "0.5px solid var(--color-border-secondary)", borderRadius: "var(--border-radius-xl)", cursor: "pointer", textAlign: "center", transition: "border-color 0.15s, transform 0.15s", borderColor: hoveredMode === "clinical" ? "var(--color-border-primary)" : "var(--color-border-secondary)", transform: hoveredMode === "clinical" ? "translateY(-2px)" : "translateY(0)" }}>
-              <div style={{ fontSize: 32, marginBottom: 8 }}>🏥</div>
-              <div style={{ fontSize: 16, fontWeight: 600, color: "var(--color-text-primary)", marginBottom: 4 }}>Clinical Conditions</div>
-              <div style={{ fontSize: 13, color: "var(--color-text-secondary)" }}>{clinicalData.length} conditions with pathophysiology</div>
-            </button>}
+        <div style={{ position: "fixed", inset: 0, overflowY: "auto", background: "var(--dk-bg)", fontFamily: "Georgia,serif", display: "flex", flexDirection: "column" }}>
+          <div style={{ flex: 1, padding: "20px 16px", display: "flex", flexDirection: "column", gap: 14 }}>
+            {physioVisibility.viva && <div onClick={() => handleModeChange("browse")} style={{ background: "var(--dk-card)", borderRadius: 14, padding: "22px 20px", borderTop: "1px solid var(--dk-border)", borderRight: "1px solid var(--dk-border)", borderBottom: "1px solid var(--dk-border)", cursor: "pointer", boxShadow: "var(--dk-shadow)", borderLeft: "5px solid #e07b39" }}>
+              <div style={{ fontSize: 34, marginBottom: 8 }}>📖</div>
+              <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>Viva Savior</div>
+              <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>Browse, search and quiz yourself on {vivaData.length} named laws, effects, syndromes & more. Flashcards, quiz mode, and detailed cards.</div>
+              <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#e07b39", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
+            </div>}
+            {physioVisibility.reflexExplorer && <div onClick={() => handleModeChange("reflexDetails")} style={{ background: "var(--dk-card)", borderRadius: 14, padding: "22px 20px", borderTop: "1px solid var(--dk-border)", borderRight: "1px solid var(--dk-border)", borderBottom: "1px solid var(--dk-border)", cursor: "pointer", boxShadow: "var(--dk-shadow)", borderLeft: "5px solid #2980b9" }}>
+              <div style={{ fontSize: 34, marginBottom: 8 }}>🧠</div>
+              <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>Reflex Explorer</div>
+              <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>{reflexDetailData.length} detailed reflex breakdowns — receptors, centers, nuclei, stimuli, responses, and purpose.</div>
+              <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#2980b9", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
+            </div>}
+            {physioVisibility.notes && <div onClick={() => handleModeChange("notes")} style={{ background: "var(--dk-card)", borderRadius: 14, padding: "22px 20px", borderTop: "1px solid var(--dk-border)", borderRight: "1px solid var(--dk-border)", borderBottom: "1px solid var(--dk-border)", cursor: "pointer", boxShadow: "var(--dk-shadow)", borderLeft: "5px solid #27ae60" }}>
+              <div style={{ fontSize: 34, marginBottom: 8 }}>📓</div>
+              <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>Physiology Notes</div>
+              <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>{notesData.length} structured reference entries — laws, effects, and mechanisms with quick topic navigation.</div>
+              <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#27ae60", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
+            </div>}
+            {physioVisibility.clinical && <div onClick={() => handleModeChange("clinical")} style={{ background: "var(--dk-card)", borderRadius: 14, padding: "22px 20px", borderTop: "1px solid var(--dk-border)", borderRight: "1px solid var(--dk-border)", borderBottom: "1px solid var(--dk-border)", cursor: "pointer", boxShadow: "var(--dk-shadow)", borderLeft: "5px solid #e74c3c" }}>
+              <div style={{ fontSize: 34, marginBottom: 8 }}>🏥</div>
+              <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>Clinical Conditions</div>
+              <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>{clinicalData.length} conditions with pathophysiology, mechanisms, and linked physiology topics.</div>
+              <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#e74c3c", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
+            </div>}
           </div>
         </div>
       )}
@@ -943,11 +930,35 @@ export default function App() {
       {/* MODAL — enriched with PnC data when available */}
       {modal && (
         <div style={s.overlay} onClick={e => { if (e.target === e.currentTarget) setModal(null); }}>
-          <div style={s.modalBox}>
+          <div style={s.modalBox} ref={modalBoxRef}>
             <button style={s.modalClose} onClick={() => setModal(null)}>✕</button>
             <div style={s.modalCat}><span style={s.dot(modal.cat)} />{modal.cat}</div>
             <div style={s.modalName}>{modal.name}</div>
             <div style={s.modalDef}>{modal.def}</div>
+            {(() => {
+              const mIdx = filtered.findIndex(d => d.name === modal.name);
+              if (mIdx < 0) return null;
+              const goTo = (d) => { setModal(d); if (modalBoxRef.current) modalBoxRef.current.scrollTop = 0; };
+              const navBtn = (idx, label) => {
+                const enabled = idx >= 0 && idx < filtered.length;
+                const d = enabled ? filtered[idx] : null;
+                return (
+                  <button
+                    disabled={!enabled}
+                    onClick={() => { if (enabled) goTo(d); }}
+                    style={{ padding: "8px 14px", border: "0.5px solid var(--color-border-secondary)", borderRadius: "var(--border-radius-md)", background: "var(--color-background-primary)", color: enabled ? "var(--color-text-primary)" : "var(--color-text-tertiary)", cursor: enabled ? "pointer" : "not-allowed", fontSize: 13, fontWeight: 500 }}>
+                    {label}
+                  </button>
+                );
+              };
+              return (
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, marginTop: 14, paddingTop: 12, borderTop: "0.5px solid var(--color-border-tertiary)" }}>
+                  {navBtn(mIdx - 1, "← Previous")}
+                  <div style={{ fontSize: 12, color: "var(--color-text-tertiary)" }}>{mIdx + 1} / {filtered.length}</div>
+                  {navBtn(mIdx + 1, "Next →")}
+                </div>
+              );
+            })()}
             {notesLookup[modal.name] !== undefined && (
               <div style={{ borderTop: "0.5px solid var(--color-border-tertiary)", marginTop: 12, paddingTop: 12 }}>
                 <div style={{
