@@ -68,7 +68,9 @@
 html {
   min-height: 100%;
   background: var(--color-page-mid);
-  transition: background-color 260ms ease, color 260ms ease;
+  /* Matches body's instant gradient swap so the page does not animate on its
+     own while cards and text animate below. */
+  transition: none;
 }
 
 body {
@@ -84,7 +86,11 @@ body {
       var(--color-page-mid) 42%,
       var(--color-page-end) 100%
     );
-  transition: background 260ms ease, color 260ms ease;
+  /* The page gradient is a background-image, which cannot be interpolated when
+     its colour stops change. Transitioning it made the background snap while
+     cards and text animated over 260ms, so a toggle briefly showed only one or
+     the other. Swap the stops instantly and let #root animate the rest. */
+  transition: none;
 }
 
 button,
