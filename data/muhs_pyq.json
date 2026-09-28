@@ -1,0 +1,1693 @@
+[
+  {
+    "id": 1,
+    "title": "Hereditary Fructose Intolerance",
+    "year": 2025,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Carbohydrate Disorders",
+    "tags": [
+      "A"
+    ],
+    "difficulty": "medium",
+    "stem": "A 4-year-old boy was brought to hospital with nausea, vomiting and abdominal pain, plus typical symptoms of hypoglycaemia. He had skipped routine meals and eaten only sweets and fruits. Similar episodes occurred previously whenever he consumed large quantities of fruits and cane sugar. Low blood glucose (50 mg/dl); blood positive for fructose.",
+    "questions": [
+      "What is the likely diagnosis?",
+      "Name the deficient enzyme and the reaction catalysed by it.",
+      "What is the biochemical basis of hypoglycaemia?",
+      "Write the dietary precaution to be taken."
+    ],
+    "modelAnswer": [
+      "Hereditary fructose intolerance (aldolase B / fructose-1-phosphate aldolase deficiency).",
+      "Aldolase B (fructose-1-phosphate aldolase); it cleaves fructose-1-phosphate into dihydroxyacetone phosphate and glyceraldehyde in liver, kidney and intestine.",
+      "Fructose-1-phosphate accumulates and traps inorganic phosphate, inhibiting glycogen phosphorylase and gluconeogenesis → impaired glucose release → hypoglycaemia.",
+      "Strictly avoid fructose, sucrose and sorbitol (diabetes food); use glucose and starch as carbohydrate sources. Symptoms resolve on removal."
+    ],
+    "mcq": {
+      "question": "What is the most likely diagnosis?",
+      "answer": "A",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hereditary fructose intolerance"
+        },
+        {
+          "letter": "B",
+          "text": "Galactosemia"
+        },
+        {
+          "letter": "C",
+          "text": "Von Gierke disease"
+        },
+        {
+          "letter": "D",
+          "text": "Lactose intolerance"
+        }
+      ],
+      "explanation": "Symptoms occur only after fructose (fruits, cane sugar) ingestion; hypoglycaemia with blood fructose positivity points to aldolase B deficiency."
+    }
+  },
+  {
+    "id": 2,
+    "title": "Galactosemia (mucic acid variant)",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Carbohydrate Disorders",
+    "tags": [
+      "A"
+    ],
+    "difficulty": "medium",
+    "stem": "A 9-month-old female presented with diarrhoea, recurrent vomiting, jaundice and lethargy. Exam: hepatosplenomegaly and cataract. Urine positive for Benedict's test but glucose-specific test negative; mucic acid test positive.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "Mention the deficient enzyme.",
+      "Write the metabolic reaction affected by the enzyme deficiency.",
+      "What is the biochemical basis of cataract?",
+      "Enlist the abnormal metabolites excreted in urine."
+    ],
+    "modelAnswer": [
+      "Classic galactosemia (galactose-1-phosphate uridyl transferase, GALT deficiency).",
+      "Galactose-1-phosphate uridyl transferase (GALT).",
+      "Galactose-1-P + UDP-glucose → UDP-galactose + glucose-1-P is blocked; galactose-1-phosphate accumulates.",
+      "Galactose is converted in the lens to galactitol by aldose reductase; galactitol is osmotically active, drawing water into lens fibres → cataract.",
+      "Galactose and galactitol (and galactose-1-phosphate) — reducing sugars giving positive Benedict's but negative glucose-specific reaction."
+    ],
+    "mcq": {
+      "question": "The cataract in galactosemia is caused by accumulation of which metabolite?",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Galactose-1-phosphate"
+        },
+        {
+          "letter": "B",
+          "text": "UDP-galactose"
+        },
+        {
+          "letter": "C",
+          "text": "Galactitol"
+        },
+        {
+          "letter": "D",
+          "text": "Glucose-1-phosphate"
+        }
+      ],
+      "explanation": "Aldose reductase reduces galactose to galactitol, which is osmotically active and causes lens fibre swelling and cataract."
+    }
+  },
+  {
+    "id": 3,
+    "title": "Diabetes (Glycated Hb)",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Carbohydrate Disorders",
+    "tags": [
+      "A"
+    ],
+    "difficulty": "easy",
+    "stem": "A 55-year-old male presented with increased frequency of urination. Random plasma glucose 250 mg/dl; HbA1c 8.5%; urine sugar positive.",
+    "questions": [
+      "State the probable diagnosis.",
+      "Mention the criteria for diagnosis.",
+      "What is glycated hemoglobin? State its importance.",
+      "Explain the cause of sugar in urine."
+    ],
+    "modelAnswer": [
+      "Diabetes mellitus (random glucose ≥200 mg/dl with osmotic symptoms; HbA1c 8.5% indicates poor glycaemic control).",
+      "Fasting ≥126 mg/dl; 2-hr OGTT ≥200 mg/dl; random ≥200 mg/dl with symptoms; HbA1c ≥6.5% — any one, confirmed on a second sample.",
+      "HbA1c is irreversible glycation of the N-terminal valine of HbA β-chain, proportional to average blood glucose over the RBC life (2–3 months); it is the index of long-term glycaemic control.",
+      "When blood glucose exceeds the renal threshold (~180 mg/dl), tubular reabsorption saturates and glucose overflows into urine (osmotic diuresis → polyuria)."
+    ],
+    "mcq": {
+      "question": "Which HbA1c value indicates DIABETES by diagnostic criteria?",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "≥4.5%"
+        },
+        {
+          "letter": "B",
+          "text": "≥5.7%"
+        },
+        {
+          "letter": "C",
+          "text": "≥6.0%"
+        },
+        {
+          "letter": "D",
+          "text": "≥6.5%"
+        }
+      ],
+      "explanation": "HbA1c ≥6.5% is the diagnostic threshold for diabetes mellitus."
+    }
+  },
+  {
+    "id": 4,
+    "title": "Galactosemia (cataract/liver variant)",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Carbohydrate Disorders",
+    "tags": [
+      "A"
+    ],
+    "difficulty": "medium",
+    "stem": "A 2-year-old boy presented with liver enlargement. Milestones were delayed and he had developed cataract. Increased galactose in blood and urine.",
+    "questions": [
+      "What is the probable diagnosis and its cause?",
+      "Explain the cause of cataract.",
+      "Explain the cause of liver enlargement."
+    ],
+    "modelAnswer": [
+      "Galactosemia — deficiency of galactose-1-phosphate uridyl transferase (GALT) causing accumulation of galactose-1-phosphate in tissues.",
+      "Galactose is converted by aldose reductase in the lens to galactitol, which is osmotically active; water enters lens fibres, damaging them → cataract.",
+      "Galactose-1-phosphate is hepatotoxic → hepatic cell damage, fatty change and hepatomegaly; prolonged accumulation can progress to cirrhosis."
+    ],
+    "mcq": {
+      "question": "Galactosemia is due to deficiency of which enzyme?",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Galactokinase"
+        },
+        {
+          "letter": "B",
+          "text": "Galactose-1-phosphate uridyl transferase"
+        },
+        {
+          "letter": "C",
+          "text": "UDP-galactose-4-epimerase"
+        },
+        {
+          "letter": "D",
+          "text": "Aldose reductase"
+        }
+      ],
+      "explanation": "Classic galactosemia is GALT deficiency; galactokinase deficiency causes only cataract, not liver disease."
+    }
+  },
+  {
+    "id": 5,
+    "title": "Newborn Jaundice + Reducing Sugar",
+    "year": 2023,
+    "season": "Winter",
+    "paper": "I",
+    "topic": "Carbohydrate Disorders",
+    "tags": [
+      "A"
+    ],
+    "difficulty": "hard",
+    "stem": "A newborn infant presented with yellowing of skin and vomiting. Underweight, hepatomegaly evident. Urine positive for reducing sugar. Serum total bilirubin 20 mg/dl.",
+    "questions": [
+      "Mention the probable diagnosis.",
+      "Explain the biochemical basis of the disorder.",
+      "Which biochemical investigations will help diagnose it?"
+    ],
+    "modelAnswer": [
+      "Galactosemia (classic galactosemia) causing neonatal jaundice and hepatomegaly with reducing sugar in urine.",
+      "GALT deficiency → galactose-1-phosphate accumulates in liver → hepatocellular injury, jaundice (impaired conjugation), hepatomegaly; excess galactose excreted as reducing sugar in urine.",
+      "Urine for reducing sugars (Benedict's) with glucose-negative confirmatory tests; red cell GALT enzyme assay; galactose/galactose-1-phosphate estimation; mucic acid test; gene testing."
+    ],
+    "mcq": {
+      "question": "A neonate with jaundice, hepatomegaly and reducing sugar in urine (glucose-negative) most likely has:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Physiological jaundice"
+        },
+        {
+          "letter": "B",
+          "text": "Rh incompatibility"
+        },
+        {
+          "letter": "C",
+          "text": "Galactosemia"
+        },
+        {
+          "letter": "D",
+          "text": "Biliary atresia"
+        }
+      ],
+      "explanation": "Jaundice + hepatomegaly + non-glucose reducing sugar points to galactosemia."
+    }
+  },
+  {
+    "id": 6,
+    "title": "Obese Patient — DM + OGTT",
+    "year": 2022,
+    "season": "Winter",
+    "paper": "I",
+    "topic": "Carbohydrate Disorders",
+    "tags": [
+      "A"
+    ],
+    "difficulty": "easy",
+    "stem": "An obese person presented with polyuria, thirst, weakness and increased appetite. Random blood sugar 160 mg%.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "What is the importance of OGTT in such patients?",
+      "What is the significance of HbA1c testing?"
+    ],
+    "modelAnswer": [
+      "Prediabetes/early type 2 diabetes mellitus (obesity with osmotic symptoms; borderline random glucose 160 mg%) — confirm with OGTT.",
+      "OGTT evaluates glucose tolerance: fasting and 2-hr post-glucose values distinguish normal, impaired glucose tolerance (140–199 mg/dl) and diabetes (≥200 mg/dl).",
+      "HbA1c reflects average glycaemia over 2–3 months, identifies chronic hyperglycaemia even when fasting glucose is borderline, and monitors response to treatment."
+    ],
+    "mcq": {
+      "question": "The diagnosis of diabetes on OGTT requires a 2-hr glucose of:",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "≥120 mg/dl"
+        },
+        {
+          "letter": "B",
+          "text": "≥140 mg/dl"
+        },
+        {
+          "letter": "C",
+          "text": "≥180 mg/dl"
+        },
+        {
+          "letter": "D",
+          "text": "≥200 mg/dl"
+        }
+      ],
+      "explanation": "2-hr plasma glucose ≥200 mg/dl during OGTT diagnoses diabetes; 140–199 is impaired glucose tolerance."
+    }
+  },
+  {
+    "id": 7,
+    "title": "Fatty Liver (anorexia)",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Lipid Metabolism",
+    "tags": [
+      "C"
+    ],
+    "difficulty": "easy",
+    "stem": "A 60-year-old male presented with anorexia and an enlarged liver; diagnosed with fatty liver.",
+    "questions": [
+      "What is fatty liver?",
+      "Enumerate the causes.",
+      "Why are alcoholics prone to this condition?",
+      "Mention factors preventing fatty liver."
+    ],
+    "modelAnswer": [
+      "Fatty liver (hepatic steatosis) is abnormal accumulation of triglycerides within hepatocytes.",
+      "Malnutrition/starvation, alcoholism, obesity, diabetes mellitus, protein deficiency (kwashiorkor), toxins (CCl4), pregnancy, and inborn errors.",
+      "Alcohol metabolism generates excess NADH (favouring TG synthesis), acetaldehyde damages mitochondria/impairs VLDL secretion, and malnutrition provides a substrate flux — net TG accumulation.",
+      "Lipotropic factors: choline, methionine, betaine, folic acid, vitamin B12, and balanced protein intake — they support VLDL assembly and export."
+    ],
+    "mcq": {
+      "question": "Fatty liver is chiefly the accumulation of which compound?",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cholesterol"
+        },
+        {
+          "letter": "B",
+          "text": "Phospholipid"
+        },
+        {
+          "letter": "C",
+          "text": "Triglyceride"
+        },
+        {
+          "letter": "D",
+          "text": "Free fatty acids"
+        }
+      ],
+      "explanation": "Fatty liver = triglycerides accumulating in hepatocytes because synthesis exceeds export (VLDL)."
+    }
+  },
+  {
+    "id": 8,
+    "title": "Fatty Liver (chronic alcoholism)",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Lipid Metabolism",
+    "tags": [
+      "C"
+    ],
+    "difficulty": "easy",
+    "stem": "A 55-year-old male chronic alcoholic presented with fatty liver.",
+    "questions": [
+      "What is fatty liver?",
+      "What are the causes of fatty liver?",
+      "Enumerate the lipotropic factors."
+    ],
+    "modelAnswer": [
+      "Fatty liver is triglyceride accumulation in hepatocytes due to imbalance between synthesis and export (VLDL).",
+      "Alcoholism, protein-calorie malnutrition (kwashiorkor/marasmus), starvation, diabetes, obesity, toxins, CCl4 poisoning, pregnancy.",
+      "Choline, methionine, betaine, folic acid, vitamin B12, inositol — aid VLDL formation and lipid export; adequate dietary protein."
+    ],
+    "mcq": {
+      "question": "Which of these is a lipotropic factor?",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cholesterol"
+        },
+        {
+          "letter": "B",
+          "text": "Choline"
+        },
+        {
+          "letter": "C",
+          "text": "Triglyceride"
+        },
+        {
+          "letter": "D",
+          "text": "Palmitate"
+        }
+      ],
+      "explanation": "Choline is lipotropic: it is required for phospholipid/VLDL synthesis thus prevents fatty liver."
+    }
+  },
+  {
+    "id": 9,
+    "title": "High Cholesterol + Statin + Hypothyroidism",
+    "year": 2021,
+    "season": "Winter",
+    "paper": "I",
+    "topic": "Lipid Metabolism",
+    "tags": [
+      "C"
+    ],
+    "difficulty": "medium",
+    "stem": "A 56-year-old male had serum cholesterol of 424 mg/dl.",
+    "questions": [
+      "What is the associated risk?",
+      "Name the drug of choice to reduce serum cholesterol and its mechanism.",
+      "Why can hypothyroidism increase serum cholesterol?"
+    ],
+    "modelAnswer": [
+      "Hypercholesterolemia → atherosclerosis, coronary artery disease, myocardial infarction, stroke, xanthomas.",
+      "Statins (HMG-CoA reductase inhibitors, e.g. atorvastatin) — inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis in the liver.",
+      "In hypothyroidism, LDL-receptor expression falls, so LDL clearance decreases → serum (LDL) cholesterol rises."
+    ],
+    "mcq": {
+      "question": "Statins lower cholesterol by inhibiting which enzyme?",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lipoprotein lipase"
+        },
+        {
+          "letter": "B",
+          "text": "Cholesterol-7α-hydroxylase"
+        },
+        {
+          "letter": "C",
+          "text": "ACAT"
+        },
+        {
+          "letter": "D",
+          "text": "HMG-CoA reductase"
+        }
+      ],
+      "explanation": "HMG-CoA reductase is the rate-limiting step of cholesterol synthesis; statins competitively inhibit it."
+    }
+  },
+  {
+    "id": 10,
+    "title": "Dyslipidemia / Familial Hypercholesterolemia",
+    "year": 2020,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Lipid Metabolism",
+    "tags": [
+      "C"
+    ],
+    "difficulty": "hard",
+    "stem": "An 8-year-old female child presented with angina and atherosclerotic changes. Random plasma glucose 94 mg%; total cholesterol 432 mg%, LDL 388, VLDL 32, HDL 36, triglycerides 104 mg%.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "Explain three mechanisms for increased LDL levels.",
+      "Name the drug of choice."
+    ],
+    "modelAnswer": [
+      "Familial hypercholesterolemia (heterozygote) — LDL-receptor defect causing severe LDL/TC elevation and premature atherosclerosis.",
+      "(1) Impaired LDL-receptor-mediated endocytosis; (2) failure of feedback suppression of HMG-CoA reductase, increasing cholesterol synthesis; (3) reduced LDL clearance → prolonged circulation of LDL.",
+      "High-intensity statin (e.g. atorvastatin/rosuvastatin); often combined with ezetimibe."
+    ],
+    "mcq": {
+      "question": "The primary defect in familial hypercholesterolemia is in the receptor for:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "HDL"
+        },
+        {
+          "letter": "B",
+          "text": "VLDL"
+        },
+        {
+          "letter": "C",
+          "text": "LDL"
+        },
+        {
+          "letter": "D",
+          "text": "Chylomicrons"
+        }
+      ],
+      "explanation": "LDL-receptor (apoB/E receptor) dysfunction → LDL not cleared → striking LDL and total cholesterol elevation with tendon xanthomas and early CAD."
+    }
+  },
+  {
+    "id": 11,
+    "title": "Simvastatin Mechanism Case",
+    "year": 2018,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Lipid Metabolism",
+    "tags": [
+      "C"
+    ],
+    "difficulty": "medium",
+    "stem": "A 55-year-old man had elevated serum cholesterol despite dietary control. Simvastatin was advised; three months later cholesterol was normal.",
+    "questions": [
+      "Name the enzyme inhibited by Simvastatin.",
+      "Give the reaction catalysed by this enzyme.",
+      "Name the precursor of cholesterol synthesis.",
+      "Name two products formed from cholesterol."
+    ],
+    "modelAnswer": [
+      "HMG-CoA reductase.",
+      "HMG-CoA + 2 NADPH + 2H+ → mevalonate + 2 NADP+ + CoA-SH (the rate-limiting step of cholesterol synthesis).",
+      "Acetyl-CoA (via acetoacetyl-CoA and HMG-CoA).",
+      "Bile acids/bile salts (e.g. cholic acid), steroid hormones (e.g. cortisol, aldosterone, sex hormones), vitamin D, and cell-membrane cholesterol."
+    ],
+    "mcq": {
+      "question": "Cholesterol is synthesized from which precursor?",
+      "answer": "A",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acetyl-CoA"
+        },
+        {
+          "letter": "B",
+          "text": "Pyruvate"
+        },
+        {
+          "letter": "C",
+          "text": "Glucose-6-phosphate"
+        },
+        {
+          "letter": "D",
+          "text": "Amino acids"
+        }
+      ],
+      "explanation": "Cholesterol is built from acetyl-CoA via HMG-CoA → mevalonate → isoprenoid pathway."
+    }
+  },
+  {
+    "id": 12,
+    "title": "Kwashiorkor",
+    "year": 2022,
+    "season": "Winter",
+    "paper": "I",
+    "topic": "Nutrition & Vitamins",
+    "tags": [
+      "N",
+      "J"
+    ],
+    "difficulty": "easy",
+    "stem": "A 4-year-old child with oedema of face and lower limbs, sparse/soft/thin hair, lethargy, no craving for food; symptoms appeared after a younger sibling was born.",
+    "questions": [
+      "What is the likely disorder?",
+      "What is the biochemical defect?",
+      "Why did symptoms appear after the sibling's birth?",
+      "Why are such patients likely to have fatty liver?"
+    ],
+    "modelAnswer": [
+      "Kwashiorkor (protein-energy malnutrition with predominant protein deficiency).",
+      "Inadequate dietary protein with relatively preserved energy intake → reduced albumin and total protein synthesis → hypoalbuminemia and oedema.",
+      "Breastfeeding stopped at the birth of the younger sibling, and the child was weaned onto a protein-poor, carbohydrate-rich diet.",
+      "Decreased synthesis of apolipoproteins/VLDL and lipotropic factors (choline, methionine) impairs hepatic fat export → fatty liver."
+    ],
+    "mcq": {
+      "question": "Kwashiorkor is characterized primarily by:",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Total calorie starvation"
+        },
+        {
+          "letter": "B",
+          "text": "Protein deficiency with oedema"
+        },
+        {
+          "letter": "C",
+          "text": "Iron deficiency"
+        },
+        {
+          "letter": "D",
+          "text": "Vitamin C deficiency"
+        }
+      ],
+      "explanation": "Kwashiorkor = protein deficiency while energy intake is relatively preserved, giving oedema, fatty liver, and skin/hair changes."
+    }
+  },
+  {
+    "id": 13,
+    "title": "Vitamin C / Scurvy",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Nutrition & Vitamins",
+    "tags": [
+      "J"
+    ],
+    "difficulty": "medium",
+    "stem": "A 12-year-old girl with gingival bleeding, purpuric lesions, pallor and walking difficulties; diet lacked fresh vegetables/fruits in a region with high carbohydrate staple.",
+    "questions": [
+      "Mention probable diagnosis and the deficient compound.",
+      "Mention food sources.",
+      "State reasons for bleeding gums.",
+      "Enumerate biochemical functions of the deficient compound."
+    ],
+    "modelAnswer": [
+      "Scurvy (vitamin C / ascorbic acid deficiency).",
+      "Citrus fruits (orange, lemon), amla (Indian gooseberry), guava, tomatoes, green leafy vegetables.",
+      "Ascorbic acid is a cofactor for prolyl and lysyl hydroxylases in collagen synthesis; deficiency → defective collagen, fragile capillaries → bleeding gums, purpura.",
+      "Collagen hydroxylation (stability), antioxidant (radical scavenger, regenerates vitamin E), iron absorption (reduces Fe3+ to Fe2+), carnitine and catecholamine synthesis, cofactor in hydroxylation reactions."
+    ],
+    "mcq": {
+      "question": "Scurvy is caused by deficiency of:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vitamin K"
+        },
+        {
+          "letter": "B",
+          "text": "Vitamin A"
+        },
+        {
+          "letter": "C",
+          "text": "Vitamin C"
+        },
+        {
+          "letter": "D",
+          "text": "Niacin"
+        }
+      ],
+      "explanation": "Ascorbic acid deficiency impairs collagen hydroxylation, causing bleeding gums, purpura and poor wound healing."
+    }
+  },
+  {
+    "id": 14,
+    "title": "Osteogenesis Imperfecta",
+    "year": 2023,
+    "season": "Winter",
+    "paper": "I",
+    "topic": "Extracellular Matrix / Connective Tissue",
+    "tags": [
+      "O"
+    ],
+    "difficulty": "easy",
+    "stem": "Name the defective protein and state the clinical features of Osteogenesis Imperfecta.",
+    "questions": [
+      "Name the defective protein.",
+      "State the clinical features."
+    ],
+    "modelAnswer": [
+      "Collagen type I (defect in COL1A1/COL1A2 genes) — abnormal synthesis of alpha chains of collagen type I.",
+      "Bone fragility with recurrent fractures, blue sclera, dental abnormalities (dentinogenesis imperfecta), deafness, loose joints, short stature."
+    ],
+    "mcq": {
+      "question": "Osteogenesis Imperfecta is due to a defect in which protein?",
+      "answer": "A",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Collagen type I"
+        },
+        {
+          "letter": "B",
+          "text": "Fibrillin"
+        },
+        {
+          "letter": "C",
+          "text": "Elastin"
+        },
+        {
+          "letter": "D",
+          "text": "Collagen type IV"
+        }
+      ],
+      "explanation": "OI results from defective collagen type I, producing brittle bones and blue sclera."
+    }
+  },
+  {
+    "id": 15,
+    "title": "Marfan Syndrome",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "I",
+    "topic": "Extracellular Matrix / Connective Tissue",
+    "tags": [
+      "O"
+    ],
+    "difficulty": "easy",
+    "stem": "Enumerate any four clinical features of Marfan's syndrome.",
+    "questions": [
+      "Enumerate any four clinical features of Marfan syndrome."
+    ],
+    "modelAnswer": [
+      "Tall stature with long limbs (dolichostenomelia) and arachnodactyly; lens dislocation (ectopia lentis); aortic root dilatation/aortic aneurysm (dissection risk); mitral valve prolapse; scoliosis and pectus deformities; joint hypermobility (due to fibrillin-1 defect)."
+    ],
+    "mcq": {
+      "question": "Marfan syndrome is caused by a mutation in the gene for:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Collagen type I"
+        },
+        {
+          "letter": "B",
+          "text": "Collagen type III"
+        },
+        {
+          "letter": "C",
+          "text": "Fibrillin-1"
+        },
+        {
+          "letter": "D",
+          "text": "Elastin"
+        }
+      ],
+      "explanation": "Fibrillin-1 (FBN1) mutation → defective microfibrils → tall stature, lens dislocation, aortic aneurysm."
+    }
+  },
+  {
+    "id": 16,
+    "title": "Hartnup Disease",
+    "year": 2025,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Amino Acid Disorders",
+    "tags": [
+      "D"
+    ],
+    "difficulty": "medium",
+    "stem": "A child presents with pellagra-like dermatitis, ataxia and mood swings. Urine analysis reveals high levels of neutral amino acids.",
+    "questions": [
+      "Probable diagnosis?",
+      "Which transport system is defective?",
+      "Why does this resemble niacin deficiency?",
+      "Name two neurotransmitters derived from tryptophan."
+    ],
+    "modelAnswer": [
+      "Hartnup disease.",
+      "Neutral amino acid (tryptophan) transport in renal tubules and intestinal mucosal cells (defective system B0/neutral AA transporter).",
+      "Defective intestinal/renal tryptophan absorption → decreased tryptophan → decreased niacin (and NAD) synthesis → pellagra-like features.",
+      "Serotonin and melatonin (both derived from tryptophan); tryptamine is also a metabolite."
+    ],
+    "mcq": {
+      "question": "Hartnup disease resembles which vitamin deficiency?",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vitamin C"
+        },
+        {
+          "letter": "B",
+          "text": "Niacin"
+        },
+        {
+          "letter": "C",
+          "text": "Vitamin B12"
+        },
+        {
+          "letter": "D",
+          "text": "Folate"
+        }
+      ],
+      "explanation": "Impaired tryptophan absorption decreases endogenous niacin production → a pellagra-like dermatitis."
+    }
+  },
+  {
+    "id": 17,
+    "title": "PKU (7-month-old)",
+    "year": 2020,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Amino Acid Disorders",
+    "tags": [
+      "D"
+    ],
+    "difficulty": "medium",
+    "stem": "A 7-month-old male infant brought to casualty with generalized convulsions, delayed milestones and poor weight gain. Mother reports a mousy odour in urine.",
+    "questions": [
+      "Probable diagnosis?",
+      "Biochemical defect?",
+      "Why the mousy odour?",
+      "Bedside screening test?",
+      "Confirmatory investigations?"
+    ],
+    "modelAnswer": [
+      "Phenylketonuria (PKU).",
+      "Deficiency of phenylalanine hydroxylase (or its cofactor tetrahydrobiopterin) → phenylalanine cannot be converted to tyrosine.",
+      "Excess phenylalanine is transaminated to phenylketones (phenylpyruvate, phenylacetate); phenylacetate excreted in urine/sweat gives a mousy odour.",
+      "FeCl3 test (green colour) on urine; Guthrie test (bacterial inhibition assay) on blood.",
+      "Elevated plasma phenylalanine, low/normal tyrosine (phenylalanine:tyrosine ratio); enzyme assay; DNA analysis/molecular confirmation."
+    ],
+    "mcq": {
+      "question": "The mousy odour of urine in PKU is due to which compound?",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Phenylalanine"
+        },
+        {
+          "letter": "B",
+          "text": "Tyrosine"
+        },
+        {
+          "letter": "C",
+          "text": "Phenylpyruvate"
+        },
+        {
+          "letter": "D",
+          "text": "Phenylacetate"
+        }
+      ],
+      "explanation": "Phenylacetate (a phenylketone) excreted in urine and sweat produces the characteristic mousy smell of PKU."
+    }
+  },
+  {
+    "id": 18,
+    "title": "PKU (2-week-old)",
+    "year": 2019,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Amino Acid Disorders",
+    "tags": [
+      "D"
+    ],
+    "difficulty": "medium",
+    "stem": "A two-week-old infant tested positive for FeCl3 test. Increased serum phenylalanine, low tyrosine.",
+    "questions": [
+      "Probable diagnosis?",
+      "Which enzymatic reaction is defective?",
+      "Physiological consequences and why detect early?",
+      "Treatment?"
+    ],
+    "modelAnswer": [
+      "Phenylketonuria (PKU).",
+      "Phenylalanine → tyrosine hydroxylation by phenylalanine hydroxylase (requires cofactor tetrahydrobiopterin, BH4) is defective.",
+      "Hyperphenylalaninemia impairs myelination and dopamine/serotonin synthesis → intellectual disability, seizures, fair skin (tyrosine deficiency → reduced melanin). Early detection (newborn screening) prevents brain damage by allowing diet before irreversible injury.",
+      "Low-phenylalanine diet (special formulas), keep plasma phenylalanine in the safe range (2–6 mg/dl), tyrosine supplementation; some respond to BH4 (sapropterin)."
+    ],
+    "mcq": {
+      "question": "PKU is caused by deficiency of which enzyme/defect?",
+      "answer": "A",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Phenylalanine hydroxylase"
+        },
+        {
+          "letter": "B",
+          "text": "Tyrosinase"
+        },
+        {
+          "letter": "C",
+          "text": "Homogentisate oxidase"
+        },
+        {
+          "letter": "D",
+          "text": "Phenylalanine transaminase"
+        }
+      ],
+      "explanation": "Phenylalanine hydroxylase is defective in classic PKU, blocking phenylalanine → tyrosine conversion."
+    }
+  },
+  {
+    "id": 19,
+    "title": "PKU (Psychiatry OPD)",
+    "year": 2018,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Amino Acid Disorders",
+    "tags": [
+      "D"
+    ],
+    "difficulty": "easy",
+    "stem": "A mentally challenged child has mousy odour in urine; FeCl3 positive for phenylketone derivatives.",
+    "questions": [
+      "Name the condition.",
+      "Biochemical basis?",
+      "Rational treatment?"
+    ],
+    "modelAnswer": [
+      "Phenylketonuria (PKU).",
+      "Phenylalanine hydroxylase deficiency → phenylalanine accumulates → converted to phenylketones (phenylpyruvate, phenylacetate) → brain damage and mousy odour.",
+      "Phenylalanine-restricted diet (specialized formulas) begun early; monitor blood phenylalanine; tyrosine supplementation."
+    ],
+    "mcq": {
+      "question": "A positive FeCl3 test (green colour) in urine suggests:",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Maple syrup urine disease"
+        },
+        {
+          "letter": "B",
+          "text": "Phenylketonuria"
+        },
+        {
+          "letter": "C",
+          "text": "Alkaptonuria"
+        },
+        {
+          "letter": "D",
+          "text": "Cystinuria"
+        }
+      ],
+      "explanation": "FeCl3 gives a green colour with phenylketones (phenylpyruvate) — the classic bedside test for PKU."
+    }
+  },
+  {
+    "id": 20,
+    "title": "Gout (45-year-old)",
+    "year": 2020,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Purine Metabolism",
+    "tags": [
+      "G"
+    ],
+    "difficulty": "easy",
+    "stem": "A 45-year-old male with excruciating pain, swelling and redness of the right first MTP joint. Serum uric acid 13.5 mg%.",
+    "questions": [
+      "Probable diagnosis?",
+      "Biochemical defect?",
+      "Causes of hyperuricemia?",
+      "Management drug and why?"
+    ],
+    "modelAnswer": [
+      "Gout (acute gouty arthritis).",
+      "Hyperuricemia due to overproduction or underexcretion of uric acid (purine catabolism endpoint; urate crystallizes in joints).",
+      "Overproduction: high purine diet, cell lysis (haemolysis, chemotherapy), inborn errors (HGPRT deficiency, PRPP synthetase overactivity), alcohol; Underexcretion: renal failure, diuretics, LMW aspirin, hypothyroidism.",
+      "Acute attack: NSAIDs/colchicine (anti-inflammatory; colchicine inhibits microtubules/neutrophil migration). Long-term urate lowering: allopurinol (xanthine oxidase inhibitor) or febuxostat."
+    ],
+    "mcq": {
+      "question": "Allopurinol reduces uric acid by inhibiting:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "PRPP synthetase"
+        },
+        {
+          "letter": "B",
+          "text": "Adenosine deaminase"
+        },
+        {
+          "letter": "C",
+          "text": "Xanthine oxidase"
+        },
+        {
+          "letter": "D",
+          "text": "HGPRT"
+        }
+      ],
+      "explanation": "Allopurinol inhibits xanthine oxidase, blocking the terminal conversion of hypoxanthine/xanthine to uric acid."
+    }
+  },
+  {
+    "id": 21,
+    "title": "Lesch-Nyhan Syndrome",
+    "year": 2019,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Purine Metabolism",
+    "tags": [
+      "G"
+    ],
+    "difficulty": "medium",
+    "stem": "A 14-year-old boy with joint pain, mental retardation and self-mutilation (biting fingers/lips). Serum uric acid 10 mg/dl.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "Which enzyme is defective?",
+      "What is the normal serum uric acid level?",
+      "What is the mode of inheritance?"
+    ],
+    "modelAnswer": [
+      "Lesch-Nyhan syndrome (HGPRT deficiency).",
+      "Hypoxanthine-guanine phosphoribosyl transferase (HGPRT) — a salvage-pathway enzyme of purine metabolism.",
+      "Male: 3.5–7 mg/dl; female: 2.5–6 mg/dl.",
+      "X-linked recessive (affects males; female carriers mostly asymptomatic)."
+    ],
+    "mcq": {
+      "question": "Lesch-Nyhan syndrome is due to deficiency of which enzyme?",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Xanthine oxidase"
+        },
+        {
+          "letter": "B",
+          "text": "HGPRT"
+        },
+        {
+          "letter": "C",
+          "text": "Adenosine deaminase"
+        },
+        {
+          "letter": "D",
+          "text": "PRPP synthetase"
+        }
+      ],
+      "explanation": "HGPRT deficiency prevents purine salvage, causing gross hyperuricemia, gout, intellectual disability and self-mutilation."
+    }
+  },
+  {
+    "id": 22,
+    "title": "Gout (60-year-old)",
+    "year": 2018,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Purine Metabolism",
+    "tags": [
+      "G"
+    ],
+    "difficulty": "easy",
+    "stem": "A 60-year-old with pain and swelling in toe and knee joints. Serum uric acid 20 mg/dl.",
+    "questions": [
+      "Clinical condition?",
+      "Biochemical basis?",
+      "Rational treatment?"
+    ],
+    "modelAnswer": [
+      "Gouty arthritis (chronic tophaceous gout).",
+      "Marked hyperuricemia → monosodium urate crystal deposition in joints (and tissues) → acute inflammatory arthritis, soft-tissue tophi, and later renal damage.",
+      "Acute: NSAIDs or colchicine. Long-term: allopurinol/febuxostat (reduce uric acid production), uricosuric agents, dietary modification (reduce purines, alcohol)."
+    ],
+    "mcq": {
+      "question": "Urate crystals in gout deposits where?",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "RBC cytoplasm"
+        },
+        {
+          "letter": "B",
+          "text": "Muscle fibres"
+        },
+        {
+          "letter": "C",
+          "text": "Joints and periarticular tissues"
+        },
+        {
+          "letter": "D",
+          "text": "Renal tubules only"
+        }
+      ],
+      "explanation": "Monosodium urate crystals deposit in joints, periarticular tissue and kidneys causing gouty arthritis, tophi and nephropathy."
+    }
+  },
+  {
+    "id": 23,
+    "title": "COPD, Confusion",
+    "year": 2025,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Acid-Base Balance",
+    "tags": [
+      "H"
+    ],
+    "difficulty": "medium",
+    "stem": "A 65-year-old chronic smoker with breathlessness and confusion. RR 10/min with accessory muscle use. ABG: pH 7.29, pCO2 65 mmHg, HCO3- 30 mmol/L.",
+    "questions": [
+      "Most likely disturbance and why?",
+      "Role of hemoglobin in buffering?",
+      "Renal compensation mechanism?"
+    ],
+    "modelAnswer": [
+      "Chronic respiratory acidosis with (partial) metabolic compensation — low pH, high pCO2 (hypoventilation), appropriately raised HCO3-.",
+      "Hemoglobin buffers CO2/H+ via (1) carbamino bicarbonate formation (CO2 binding to Hb-NH2), and (2) uptake of H+ as deoxyhemoglobin (Haldane and isohydric effects).",
+      "Kidneys compensate within hours–days by increasing H+ excretion (titratable acidity and NH4+), and reabsorbing/regenerating HCO3- (carbonic anhydrase dependent)."
+    ],
+    "mcq": {
+      "question": "This ABG (pH 7.29, pCO2 65, HCO3 30) shows:",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Respiratory alkalosis"
+        },
+        {
+          "letter": "B",
+          "text": "Respiratory acidosis"
+        },
+        {
+          "letter": "C",
+          "text": "Metabolic acidosis"
+        },
+        {
+          "letter": "D",
+          "text": "Metabolic alkalosis"
+        }
+      ],
+      "explanation": "pH <7.35 with elevated pCO2 is respiratory acidosis; elevated HCO3- indicates metabolic compensation."
+    }
+  },
+  {
+    "id": 24,
+    "title": "COAD, Cyanosis",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Acid-Base Balance",
+    "tags": [
+      "H"
+    ],
+    "difficulty": "medium",
+    "stem": "A 35-year-old female with COAD, cyanosed and breathless. Blood pH 7.2, pCO2 markedly elevated, bicarbonates markedly elevated.",
+    "questions": [
+      "Probable diagnosis?",
+      "Cause of elevated pCO2?",
+      "Cause of elevated bicarbonate?",
+      "Normal blood pCO2/bicarbonate?"
+    ],
+    "modelAnswer": [
+      "Respiratory acidosis (decompensated) due to chronic obstructive airway disease with CO2 retention.",
+      "Alveolar hypoventilation (airway obstruction, reduced ventilation) → CO2 retention → raised arterial pCO2.",
+      "Renal compensation over time: increased H+ excretion and HCO3- reabsorption/generation → metabolic compensation raising plasma HCO3-.",
+      "pCO2: 35–45 mmHg (mean 40); HCO3-: 22–26 mmol/L (mean 24)."
+    ],
+    "mcq": {
+      "question": "Normal arterial blood pH range is:",
+      "answer": "A",
+      "options": [
+        {
+          "letter": "A",
+          "text": "7.35–7.45"
+        },
+        {
+          "letter": "B",
+          "text": "7.20–7.30"
+        },
+        {
+          "letter": "C",
+          "text": "7.45–7.55"
+        },
+        {
+          "letter": "D",
+          "text": "6.8–7.0"
+        }
+      ],
+      "explanation": "Arterial pH is tightly maintained at 7.35–7.45; values outside 6.8–7.8 are not compatible with life."
+    }
+  },
+  {
+    "id": 25,
+    "title": "Bad Cold → Breathing Difficulty",
+    "year": 2023,
+    "season": "Winter",
+    "paper": "II",
+    "topic": "Acid-Base Balance",
+    "tags": [
+      "H"
+    ],
+    "difficulty": "hard",
+    "stem": "A 68-year-old woman, recent bad cold, 8 days of unwell and breathing difficulty. Blood pH 7.26.",
+    "questions": [
+      "Definitions of pH/acid/base/buffer.",
+      "Buffer systems in the body.",
+      "Comment on the acid-base disturbance with justification.",
+      "Compensatory mechanism.",
+      "Further investigations.",
+      "Management."
+    ],
+    "modelAnswer": [
+      "pH = negative log of blood H+ concentration (normal 7.35–7.45); acid = proton (H+) donor; base = H+ acceptor; buffer = weak acid/base pair that resists pH change on adding acid/base.",
+      "Bicarbonate–carbonic acid (main extracellular), hemoglobin/oxyhemoglobin (RBC), protein buffers, phosphate buffer (urine/intracellular); respiratory (lungs) and renal systems as physiological buffers.",
+      "Acidosis (pH 7.26 < 7.35). Nature depends on pCO2/HCO3-: if pCO2 high → respiratory acidosis; if HCO3- low → metabolic acidosis. With a preceding respiratory infection, likely respiratory acidosis (CO2 retention from impaired ventilation).",
+      "Respiratory: hyperventilation to blow off CO2 (limited by the lung disease). Renal: increased H+ excretion and HCO3- reabsorption over days.",
+      "ABG (pO2, pCO2, HCO3-, base excess), chest X-ray, oxygen saturation, electrolytes (K+, Cl-, anion gap), sputum culture.",
+      "Treat cause (antibiotics, bronchodilators, oxygen), maintain airway/ventilation (non-invasive/invasive ventilation if needed), correct electrolytes, monitor ABG."
+    ],
+    "mcq": {
+      "question": "The major extracellular buffer system is:",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hemoglobin"
+        },
+        {
+          "letter": "B",
+          "text": "Phosphate"
+        },
+        {
+          "letter": "C",
+          "text": "Protein"
+        },
+        {
+          "letter": "D",
+          "text": "Bicarbonate-carbonic acid"
+        }
+      ],
+      "explanation": "The HCO3-/H2CO3 system is the primary extracellular buffer."
+    }
+  },
+  {
+    "id": 26,
+    "title": "Wilson's Disease (14-year-old)",
+    "year": 2025,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Mineral Metabolism",
+    "tags": [
+      "K"
+    ],
+    "difficulty": "medium",
+    "stem": "A 14-year-old boy with tremors, slurred speech and psychiatric disturbances. Brownish-gold corneal rings. Serum ceruloplasmin markedly reduced.",
+    "questions": [
+      "Probable diagnosis and reason?",
+      "Role of ceruloplasmin in copper metabolism?",
+      "Biochemical basis of symptoms?"
+    ],
+    "modelAnswer": [
+      "Wilson's disease (hepatolenticular degeneration) — Kayser-Fleischer ring plus neurological features and low ceruloplasmin.",
+      "Ceruloplasmin is the major copper-transport protein: it carries copper in plasma, delivers it to tissues, and is involved in ferroxidase activity; it incorporates ~95% of plasma copper.",
+      "Failure of biliary copper excretion and defective ceruloplasmin synthesis → copper accumulates in liver (cirrhosis), brain - basal ganglia (tremor, dysarthria, psychiatric symptoms), and cornea (Kayser-Fleischer ring), kidneys and bones."
+    ],
+    "mcq": {
+      "question": "The Kayser-Fleischer ring is seen in:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Menkes disease"
+        },
+        {
+          "letter": "B",
+          "text": "Hemochromatosis"
+        },
+        {
+          "letter": "C",
+          "text": "Wilson's disease"
+        },
+        {
+          "letter": "D",
+          "text": "Gaucher disease"
+        }
+      ],
+      "explanation": "A golden-brown ring at the corneal limbus from copper deposition is pathognomonic of Wilson's disease."
+    }
+  },
+  {
+    "id": 27,
+    "title": "Anemia, Low Ceruloplasmin",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Mineral Metabolism",
+    "tags": [
+      "K"
+    ],
+    "difficulty": "medium",
+    "stem": "A 20-year-old female, tired, diagnosed with anemia. Decreased ceruloplasmin.",
+    "questions": [
+      "Cause of anemia?",
+      "Type of anemia?",
+      "What is ceruloplasmin? Its importance?"
+    ],
+    "modelAnswer": [
+      "Iron deficiency (ceruloplasmin is a ferroxidase; low levels impair Fe2+ → Fe3+ oxidation needed for transferrin loading).",
+      "Microcytic hypochromic anemia (iron deficiency pattern — low MCV, MCH, low serum ferritin).",
+      "Ceruloplasmin is a plasma copper-binding α2-glycoprotein with ferroxidase activity; it oxidizes Fe2+ to Fe3+ for transferrin binding, enabling iron mobilization from stores, and is the main carrier of copper; it is also an acute-phase reactant."
+    ],
+    "mcq": {
+      "question": "Ceruloplasmin functions primarily as:",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A hemoglobin carrier"
+        },
+        {
+          "letter": "B",
+          "text": "An iron-storage protein"
+        },
+        {
+          "letter": "C",
+          "text": "A clotting factor"
+        },
+        {
+          "letter": "D",
+          "text": "A copper carrier and ferroxidase"
+        }
+      ],
+      "explanation": "Ceruloplasmin transports copper and oxidizes ferrous to ferric iron (ferroxidase) for iron mobilization."
+    }
+  },
+  {
+    "id": 28,
+    "title": "Wilson's-like Presentation",
+    "year": 2020,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Mineral Metabolism",
+    "tags": [
+      "K"
+    ],
+    "difficulty": "medium",
+    "stem": "A patient with seizures, weakness/fatigue, brown ring around iris and hepatomegaly.",
+    "questions": [
+      "Name the disorder.",
+      "Which mineral metabolism is deranged?",
+      "Biochemical defects?",
+      "Functional role of the mineral?"
+    ],
+    "modelAnswer": [
+      "Wilson's disease (hepatolenticular degeneration).",
+      "Copper metabolism.",
+      "Defective biliary copper excretion and reduced ceruloplasmin synthesis → copper accumulation in liver, brain (basal ganglia), cornea; hepatotoxic and neurotoxic.",
+      "Copper is a cofactor for cytochrome c oxidase, superoxide dismutase, tyrosinase, dopamine-β-hydroxylase and lysyl oxidase; it is essential for iron metabolism (via ceruloplasmin), connective tissue cross-linking, pigmentation and neurotransmitter synthesis."
+    ],
+    "mcq": {
+      "question": "Copper is a cofactor for which enzyme?",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pyruvate kinase"
+        },
+        {
+          "letter": "B",
+          "text": "Cytochrome c oxidase"
+        },
+        {
+          "letter": "C",
+          "text": "Aldolase"
+        },
+        {
+          "letter": "D",
+          "text": "Catalase"
+        }
+      ],
+      "explanation": "Copper is required for cytochrome c oxidase (respiratory chain), tyrosinase, dopamine-β-hydroxylase, SOD and lysyl oxidase."
+    }
+  },
+  {
+    "id": 29,
+    "title": "Hypocalcemia / Tetany",
+    "year": 2020,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Mineral Metabolism",
+    "tags": [
+      "K"
+    ],
+    "difficulty": "medium",
+    "stem": "A 9-year-old girl with muscle pain/cramps, tingling and carpopedal spasms. Strict vegetarian, no dairy. Trousseau's sign positive. Calcium 6.5 mg/dl.",
+    "questions": [
+      "Diagnosis?",
+      "Causes?",
+      "Confirmatory investigations needed?"
+    ],
+    "modelAnswer": [
+      "Hypocalcemic tetany (serum Ca 6.5 mg/dl < 8.5).",
+      "Vitamin D deficiency (vegan/dairy-free diet, low sunlight), hypoparathyroidism, hypoalbuminemia (corrected Ca may be normal), hypomagnesemia, renal failure, alkalosis, pancreatitis.",
+      "Serum ionized and total calcium, corrected calcium (albumin), phosphate, magnesium, serum PTH, 25-OH vitamin D levels; later 1,25(OH)2D and renal function/electrolytes."
+    ],
+    "mcq": {
+      "question": "Normal serum total calcium range is:",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6–7 mg/dl"
+        },
+        {
+          "letter": "B",
+          "text": "8.5–10.5 mg/dl"
+        },
+        {
+          "letter": "C",
+          "text": "12–14 mg/dl"
+        },
+        {
+          "letter": "D",
+          "text": "4–5 mg/dl"
+        }
+      ],
+      "explanation": "Normal total serum calcium is 8.5–10.5 mg/dl; 6.5 mg/dl here is clearly hypocalcemia causing tetany."
+    }
+  },
+  {
+    "id": 30,
+    "title": "Acute Intermittent Porphyria (25-year-old)",
+    "year": 2025,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Hemoglobin / Porphyrin",
+    "tags": [
+      "E"
+    ],
+    "difficulty": "medium",
+    "stem": "A 25-year-old woman with recurrent severe abdominal pain and anxiety, especially after antibiotics. Urine darkens on standing. Elevated ALA and porphobilinogen.",
+    "questions": [
+      "What is the most probable porphyria?",
+      "Explain the symptom development biochemically."
+    ],
+    "modelAnswer": [
+      "Acute intermittent porphyria (AIP).",
+      "Deficiency of porphobilinogen deaminase (hydroxymethylbilane synthase) → heme synthesis blocked → ALA and PBG accumulate; ALA is neurotoxic — it inhibits GABA/glutamate transmission causing autonomic neuropathy (abdominal pain, vomiting, constipation) and neuropsychiatric symptoms (anxiety, confusion, seizures). Drugs (barbiturates, sulphonamides) induce ALA synthase, precipitating attacks. Urine darkens on standing as PBG polymerizes to porphobilin (dark pigment)."
+    ],
+    "mcq": {
+      "question": "The enzyme deficient in Acute Intermittent Porphyria is:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ALA synthase"
+        },
+        {
+          "letter": "B",
+          "text": "ALA dehydratase"
+        },
+        {
+          "letter": "C",
+          "text": "Porphobilinogen deaminase"
+        },
+        {
+          "letter": "D",
+          "text": "Ferrochelatase"
+        }
+      ],
+      "explanation": "PBG deaminase deficiency is specific to acute intermittent porphyria; ALA synthase is the rate-limiting (and drug-inducible) enzyme."
+    }
+  },
+  {
+    "id": 31,
+    "title": "Neonatal Jaundice (Phototherapy)",
+    "year": 2023,
+    "season": "Winter",
+    "paper": "II",
+    "topic": "Hemoglobin / Porphyrin",
+    "tags": [
+      "E"
+    ],
+    "difficulty": "medium",
+    "stem": "A newborn developed jaundice within 24 hours of birth. Total bilirubin 20.36 mg/dl (conjugated 0.93, unconjugated 19.43). Started on phototherapy.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "Explain the biochemical basis of jaundice.",
+      "What is Kernicterus?",
+      "What is the biochemical basis of phototherapy?"
+    ],
+    "modelAnswer": [
+      "Neonatal (physiological, severe) jaundice — predominantly unconjugated hyperbilirubinemia.",
+      "RBC turnover is high and hepatic UDP-glucuronyl transferase is immature → bilirubin conjugation is impaired → unconjugated bilirubin (water-insoluble) accumulates in blood at 20.36 mg/dl.",
+      "Kernicterus is bilirubin encephalopathy — deposition of unconjugated bilirubin in basal ganglia and brainstem nuclei (due to immature blood-brain barrier) causing lethargy, opisthotonos, deafness and irreversible brain damage.",
+      "Phototherapy converts bilirubin to water-soluble photoisomers (lumirubin and its geometric isomers) that are excreted in bile/urine without conjugation — light (400–520 nm blue) acts on bilirubin in skin."
+    ],
+    "mcq": {
+      "question": "Neonatal jaundice is caused mainly by deficiency/immaturity of:",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Glucose-6-phosphate dehydrogenase"
+        },
+        {
+          "letter": "B",
+          "text": "Biliverdin reductase"
+        },
+        {
+          "letter": "C",
+          "text": "Heme oxygenase"
+        },
+        {
+          "letter": "D",
+          "text": "UDP-glucuronyl transferase"
+        }
+      ],
+      "explanation": "Immature hepatic bilirubin-UDP-glucuronyl transferase fails to conjugate bilirubin → unconjugated hyperbilirubinemia."
+    }
+  },
+  {
+    "id": 32,
+    "title": "Acute Intermittent Porphyria (30-year-old)",
+    "year": 2020,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Hemoglobin / Porphyrin",
+    "tags": [
+      "E"
+    ],
+    "difficulty": "medium",
+    "stem": "A 30-year-old male with intermittent abdominal pain, confusion, psychiatric problems. Urinary ALA and porphobilinogen positive.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "What is the pattern of inheritance?",
+      "Which reaction is catalysed by the deficient enzyme?",
+      "Reason for urine darkening on standing?"
+    ],
+    "modelAnswer": [
+      "Acute intermittent porphyria (AIP).",
+      "Autosomal dominant with incomplete penetrance.",
+      "Porphobilinogen deaminase converts porphobilinogen to hydroxymethylbilane (the third step of heme synthesis); its deficiency blocks heme synthesis and derepresses ALA synthase.",
+      "Excess porphobilinogen polymerizes spontaneously in light/air to porphobilin (and porphyrins), which darken the urine on standing."
+    ],
+    "mcq": {
+      "question": "AIP is inherited as:",
+      "answer": "B",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Autosomal recessive"
+        },
+        {
+          "letter": "B",
+          "text": "Autosomal dominant"
+        },
+        {
+          "letter": "C",
+          "text": "X-linked recessive"
+        },
+        {
+          "letter": "D",
+          "text": "X-linked dominant"
+        }
+      ],
+      "explanation": "AIP follows autosomal dominant inheritance with incomplete penetrance; attacks are precipitated by drugs, hormones and fasting."
+    }
+  },
+  {
+    "id": 33,
+    "title": "Hypothyroidism (30-year-old, goiter)",
+    "year": 2024,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Organ Function Tests",
+    "tags": [
+      "L"
+    ],
+    "difficulty": "easy",
+    "stem": "A 30-year-old female with neck swelling of 7 months, weight gain, lethargy, oligomenorrhea. Similar complaints among villagers. T3=117 (N:120–190), T4=4.2 (N:5–12), TSH=7 (N:0.5–5). Cholesterol raised.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "Explain the biochemical mechanism of the clinical features.",
+      "Reason for raised cholesterol?"
+    ],
+    "modelAnswer": [
+      "Primary hypothyroidism (goiter) — possibly iodine-deficiency (endemic goiter) given similar complaints among villagers.",
+      "Low thyroid hormones reduce the metabolic rate → weight gain, lethargy; reduced thermogenesis/myocardial activity; menstrual irregularities (oligomenorrhea) from altered hypothalamo-pituitary-ovarian axis; goiter from compensatory TSH rise due to loss of negative feedback.",
+      "Hypothyroidism decreases LDL-receptor expression and lipoprotein lipase activity in the liver → reduced clearance of LDL and VLDL → raised serum cholesterol."
+    ],
+    "mcq": {
+      "question": "In primary hypothyroidism, the typical hormone pattern is:",
+      "answer": "C",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High T3, T4 with low TSH"
+        },
+        {
+          "letter": "B",
+          "text": "High T3, T4 with high TSH"
+        },
+        {
+          "letter": "C",
+          "text": "Low T3, T4 with high TSH"
+        },
+        {
+          "letter": "D",
+          "text": "Low T3, T4 with low TSH"
+        }
+      ],
+      "explanation": "In primary hypothyroidism the thyroid fails but the pituitary responds, so T3/T4 are low with a compensatory high TSH."
+    }
+  },
+  {
+    "id": 34,
+    "title": "Hypothyroidism (33-year-old, puffiness)",
+    "year": 2020,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Organ Function Tests",
+    "tags": [
+      "L"
+    ],
+    "difficulty": "medium",
+    "stem": "A 33-year-old lady with facial puffiness, slowness, irregular menses, weight gain. Free T3-71 (N:80–120), Free T4-0.3 (N:0.8–2.4), TSH 46 (N:<10), Cholesterol 360.",
+    "questions": [
+      "What is the probable diagnosis?",
+      "Justify the raised cholesterol.",
+      "What other thyroid tests would you advise?",
+      "Which amino acid and mineral are needed for thyroid hormone synthesis?"
+    ],
+    "modelAnswer": [
+      "Primary hypothyroidism (overt) — low free T4/T3 with markedly elevated TSH (46).",
+      "Reduced LDL-receptor expression and lower hepatic cholesterol clearance in hypothyroidism → raised serum cholesterol (360 mg/dl).",
+      "Repeat fT4 + TSH, total T3/T4, anti-TPO and anti-thyroglobulin antibodies (autoimmune/POD), and anti-TSH-receptor antibody if Graves' is suspected.",
+      "Amino acid: L-tyrosine; mineral: iodine (needed for iodination of tyrosyl residues in thyroglobulin to form T3 and T4)."
+    ],
+    "mcq": {
+      "question": "Thyroid hormones are synthesized from which amino acid?",
+      "answer": "A",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tyrosine"
+        },
+        {
+          "letter": "B",
+          "text": "Tryptophan"
+        },
+        {
+          "letter": "C",
+          "text": "Phenylalanine"
+        },
+        {
+          "letter": "D",
+          "text": "Histidine"
+        }
+      ],
+      "explanation": "Iodination and coupling of tyrosine residues within thyroglobulin produce T3 and T4."
+    }
+  },
+  {
+    "id": 35,
+    "title": "Hypothyroidism (38-year-old, enlarged thyroid)",
+    "year": 2018,
+    "season": "Summer",
+    "paper": "II",
+    "topic": "Organ Function Tests",
+    "tags": [
+      "L"
+    ],
+    "difficulty": "easy",
+    "stem": "A 38-year-old woman with an enlarged thyroid. T3/T4 decreased, TSH increased.",
+    "questions": [
+      "Name the condition.",
+      "Comment on the serum cholesterol.",
+      "What are the associated diseases in children/adults?",
+      "What is the commonest dietary source of iodine?"
+    ],
+    "modelAnswer": [
+      "Primary hypothyroidism (with goiter).",
+      "Serum cholesterol is raised because reduced thyroid hormones lower LDL-receptor expression and hepatic LDL clearance.",
+      "Children: cretinism (retarded growth, mental deficiency, delayed milestones); Adults: myxedema with weight gain, lethargy, cold intolerance, bradycardia, constipation — and long-term hypercholesterolemia → atherosclerosis.",
+      "Iodized table salt (in India, mandatory iodization) — seafood and fish are other good sources."
+    ],
+    "mcq": {
+      "question": "In a patient with raised cholesterol and high TSH, the likely diagnosis is:",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperthyroidism"
+        },
+        {
+          "letter": "B",
+          "text": "Cushing syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Diabetes mellitus"
+        },
+        {
+          "letter": "D",
+          "text": "Hypothyroidism"
+        }
+      ],
+      "explanation": "High TSH with hypercholesterolemia indicates primary hypothyroidism, which reduces LDL clearance."
+    }
+  },
+  {
+    "id": 36,
+    "title": "Viral Meningitis",
+    "year": 2022,
+    "season": "Winter",
+    "paper": "II",
+    "topic": "CSF / Misc",
+    "tags": [
+      "F"
+    ],
+    "difficulty": "easy",
+    "stem": "A 30-year-old female with worsening headache, photophobia, fever, vomiting. Raised CRP, increased CSF lymphocytes, normal CSF protein/glucose. Negative bacterial culture.",
+    "questions": [
+      "What is the probable diagnosis? Justify your answer."
+    ],
+    "modelAnswer": [
+      "Viral (aseptic) meningitis — lymphocytic CSF pleocytosis with normal CSF glucose and near-normal protein, negative bacterial culture, and photophobia/fever/headache fit viral CSF findings (bacterial meningitis typically shows neutrophilic pleocytosis, low glucose and high protein)."
+    ],
+    "mcq": {
+      "question": "The CSF of VIRAL meningitis typically shows:",
+      "answer": "D",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neutrophils with very low glucose"
+        },
+        {
+          "letter": "B",
+          "text": "Very high protein and low glucose"
+        },
+        {
+          "letter": "C",
+          "text": "Blood mixed in the sample"
+        },
+        {
+          "letter": "D",
+          "text": "Lymphocytic pleocytosis with normal glucose"
+        }
+      ],
+      "explanation": "Viral meningitis causes increased lymphocytes with normal/near-normal glucose and protein, unlike bacterial meningitis."
+    }
+  }
+]

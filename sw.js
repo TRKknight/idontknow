@@ -1,4 +1,4 @@
-const CACHE = "biochem-v11";
+const CACHE = "biochem-v12";
 
 const APP_SHELL = [
   ".",
@@ -12,16 +12,24 @@ const APP_SHELL = [
   "data/normal_values.json",
   "data/cases.json",
   "data/vignettes.json",
+  "data/muhs_pyq.json",
+  "physio/notes.json",
+  "physio/clinical.json",
   "icons/icon-192.png",
   "icons/icon-512.png",
-  "https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js",
-  "https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js",
-  "https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"
+  "https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js",
+  "https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"
 ];
 
 self.addEventListener("install", e => {
+  // addAll is atomic: a single bad URL rejects the whole install. Cache each
+  // entry independently so one failure cannot leave the app with no shell.
   e.waitUntil(
-    caches.open(CACHE).then(c => c.addAll(APP_SHELL))
+    caches.open(CACHE).then(c =>
+      Promise.all(APP_SHELL.map(url =>
+        c.add(new Request(url, { cache: "reload" })).catch(() => {})
+      ))
+    )
   );
   self.skipWaiting();
 });
