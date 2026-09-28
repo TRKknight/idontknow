@@ -386,6 +386,20 @@ function mechNorm(s) {
   return s.toLowerCase().replace(/[\u2018\u2019']/g, "'").replace(/\s+/g, " ").trim();
 }
 
+function mechLooseMatch(hay, needle) {
+  if (needle.length < 5) return false;
+  if (needle.length < hay.length * 0.7) return false;
+  let from = 0;
+  for (;;) {
+    const at = hay.indexOf(needle, from);
+    if (at === -1) return false;
+    const before = at === 0 ? " " : hay[at - 1];
+    const after = hay[at + needle.length] || " ";
+    if (!/[a-z]/.test(before) && !/[a-z]/.test(after)) return true;
+    from = at + 1;
+  }
+}
+
 function getReflexMechanism(name) {
   const key = REFLEX_MECH_MAP[name];
   if (key && MECHANISMS[key]) return MECHANISMS[key];
@@ -394,7 +408,7 @@ function getReflexMechanism(name) {
     if (mechNorm(mk) === nn) return MECHANISMS[mv] || null;
   }
   for (const [mk, mv] of Object.entries(MECHANISMS)) {
-    if (mechNorm(mk).includes(nn)) return mv;
+    if (mechLooseMatch(mechNorm(mk), nn)) return mv;
   }
   return null;
 }

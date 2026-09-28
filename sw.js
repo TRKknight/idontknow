@@ -1,4 +1,4 @@
-const CACHE = "biochem-v13";
+const CACHE = "biochem-v14";
 
 const APP_SHELL = [
   ".",
