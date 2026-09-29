@@ -2,11 +2,13 @@ import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { MECHANISMS, getMechanism } from "./src/mechanisms.js";
 import PnCNotesViewer, { PnCNoteCard } from "./src/PnCNotesViewer.jsx";
 import ClinicalConditionsViewer from "./src/ClinicalConditionsViewer.jsx";
+import HormonesViewer from "./src/HormonesViewer.jsx";
 
 const DATA_URL = "viva.json";
 const REFLEX_URL = "reflex_details.json";
 const NOTES_URL = "notes.json";
 const CLINICAL_URL = "clinical.json";
+const HORMONES_URL = "hormones.json";
 
 const CAT_COLORS = {
   Laws: "#185FA5", Equations: "#3B6D11", Effects: "#534AB7",
@@ -674,11 +676,13 @@ export default function App() {
   const [reflexDetailData, setReflexDetailData] = useState(FALLBACK_DETAIL_REFLEXES);
   const [notesData, setNotesData] = useState([]);
   const [clinicalData, setClinicalData] = useState([]);
+  const [hormonesData, setHormonesData] = useState([]);
   useEffect(() => {
     fetch(DATA_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setVivaData(d); }).catch(() => {});
     fetch(REFLEX_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setReflexDetailData(d); }).catch(() => {});
     fetch(NOTES_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setNotesData(d); }).catch(() => {});
     fetch(CLINICAL_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setClinicalData(d); }).catch(() => {});
+    fetch(HORMONES_URL).then(r => r.ok ? r.json() : null).then(d => { if (d && Array.isArray(d.hormones) && d.hormones.length) setHormonesData(d.hormones); }).catch(() => {});
   }, []);
   const notesLookup = useMemo(() => {
     const m = {};
@@ -692,7 +696,7 @@ export default function App() {
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
   const [done, setDone] = useState(false);
-  const [physioVisibility, setPhysioVisibility] = useState({ viva: true, reflexExplorer: true, notes: true, clinical: true });
+  const [physioVisibility, setPhysioVisibility] = useState({ viva: true, reflexExplorer: true, notes: true, clinical: true, hormones: true });
   // postMessage nav sync with parent (skip initial mount — parent already knows from hash)
   const mounted = useRef(false);
   const navDebounce = useRef(null);
@@ -712,7 +716,7 @@ export default function App() {
         if (e.data.mode) { handleModeChange(e.data.mode); }
       }
       if (e.data && e.data.type === 'physio-visibility') {
-        setPhysioVisibility({ viva: e.data.viva !== false, reflexExplorer: e.data.reflexExplorer !== false, notes: e.data.notes !== false, clinical: e.data.clinical !== false });
+        setPhysioVisibility({ viva: e.data.viva !== false, reflexExplorer: e.data.reflexExplorer !== false, notes: e.data.notes !== false, clinical: e.data.clinical !== false, hormones: e.data.hormones !== false });
       }
     }
     window.addEventListener('message', handler);
@@ -723,6 +727,7 @@ export default function App() {
     if (mode === 'reflexDetails' && !physioVisibility.reflexExplorer) { handleModeChange('home'); }
     if (mode === 'notes' && !physioVisibility.notes) { handleModeChange('home'); }
     if (mode === 'clinical' && !physioVisibility.clinical) { handleModeChange('home'); }
+    if (mode === 'hormones' && !physioVisibility.hormones) { handleModeChange('home'); }
   }, [mode, physioVisibility]);
 
   const filtered = useMemo(() => vivaData.filter(d => {
@@ -815,6 +820,8 @@ export default function App() {
             <div style={{ ...s.input, cursor: "default", color: "var(--color-text-secondary)" }}>Physiology notes</div>
           ) : mode === "clinical" ? (
             <div style={{ ...s.input, cursor: "default", color: "var(--color-text-secondary)" }}>Clinical conditions</div>
+          ) : mode === "hormones" ? (
+            <div style={{ ...s.input, cursor: "default", color: "var(--color-text-secondary)" }}>Hormones</div>
           ) : (
             <input style={s.input} placeholder="Search names, definitions…" value={search} onChange={e => setSearch(e.target.value)} />
           )}
@@ -826,11 +833,12 @@ export default function App() {
             )}
             {physioVisibility.reflexExplorer && <button style={s.modeBtn(mode === "reflexDetails")} onClick={() => handleModeChange("reflexDetails")}>Reflex</button>}
             {physioVisibility.notes && <button style={s.modeBtn(mode === "notes")} onClick={() => handleModeChange("notes")}>Notes</button>}
+            {physioVisibility.hormones && <button style={s.modeBtn(mode === "hormones")} onClick={() => handleModeChange("hormones")}>Hormones</button>}
             {physioVisibility.clinical && <button style={s.modeBtn(mode === "clinical")} onClick={() => handleModeChange("clinical")}>ClinCond</button>}
           </div>
         </div>
       )}
-      {mode !== "reflexDetails" && mode !== "notes" && mode !== "clinical" && mode !== "home" && (
+      {mode !== "reflexDetails" && mode !== "notes" && mode !== "clinical" && mode !== "hormones" && mode !== "home" && (
         <div style={s.cats}>
           {CATS.filter(c => c === "All" || vivaData.some(d => d.cat === c)).map(c => (
             <button key={c} style={s.catBtn(c === activeCat)} onClick={() => setActiveCat(c)}>
@@ -861,6 +869,12 @@ export default function App() {
               <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>Physiology Notes</div>
               <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>{notesData.length} structured reference entries — laws, effects, and mechanisms with quick topic navigation.</div>
               <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#27ae60", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
+            </div>}
+            {physioVisibility.hormones && <div onClick={() => handleModeChange("hormones")} style={{ background: "var(--dk-card)", borderRadius: 14, padding: "22px 20px", borderTop: "1px solid var(--dk-border)", borderRight: "1px solid var(--dk-border)", borderBottom: "1px solid var(--dk-border)", cursor: "pointer", boxShadow: "var(--dk-shadow)", borderLeft: "5px solid #8e44ad" }}>
+              <div style={{ fontSize: 34, marginBottom: 8 }}>🧪</div>
+              <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>Hormones</div>
+              <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>{hormonesData.length} hormones across all major endocrine glands — synthesis, actions, regulation, and clinical correlates.</div>
+              <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#8e44ad", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
             </div>}
             {physioVisibility.clinical && <div onClick={() => handleModeChange("clinical")} style={{ background: "var(--dk-card)", borderRadius: 14, padding: "22px 20px", borderTop: "1px solid var(--dk-border)", borderRight: "1px solid var(--dk-border)", borderBottom: "1px solid var(--dk-border)", cursor: "pointer", boxShadow: "var(--dk-shadow)", borderLeft: "5px solid #e74c3c" }}>
               <div style={{ fontSize: 34, marginBottom: 8 }}>🏥</div>
@@ -940,6 +954,7 @@ export default function App() {
       {mode === "reflexDetails" && <ReflexDetailsExplorer reflexes={reflexDetailData} />}
       {mode === "notes" && <PnCNotesViewer data={notesData} />}
       {mode === "clinical" && <ClinicalConditionsViewer data={clinicalData} />}
+      {mode === "hormones" && <HormonesViewer data={hormonesData} />}
 
       {/* MODAL — enriched with PnC data when available */}
       {modal && (

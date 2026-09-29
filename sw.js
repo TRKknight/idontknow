@@ -1,4 +1,4 @@
-const CACHE = "biochem-v14";
+const CACHE = "biochem-v17";
 
 const APP_SHELL = [
   ".",
@@ -15,6 +15,7 @@ const APP_SHELL = [
   "data/muhs_pyq.json",
   "physio/notes.json",
   "physio/clinical.json",
+  "physio/hormones.json",
   "icons/icon-192.png",
   "icons/icon-512.png",
   "https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js",
