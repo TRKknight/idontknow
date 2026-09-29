@@ -1,0 +1,631 @@
+[
+  {
+    "id": 1,
+    "code": "B1",
+    "title": "Hypokalemia",
+    "year": 2020,
+    "season": "Summer",
+    "phase": "Phase-IV",
+    "system": "BLOOD",
+    "stem": "A 60-year-old man is admitted with weakness, fatigue and dizziness. Diagnosed as hypokalemia, started on supplemental potassium with symptom improvement.",
+    "questions": [
+      "What is the normal K⁺ distribution between ICF and ECF?",
+      "Mention the factors that alter the distribution of K⁺ in ECF and ICF.",
+      "Why is the person showing muscle weakness?"
+    ],
+    "modelAnswer": [
+      [
+        "Normal K⁺ distribution: ICF ≈ 140–150 mEq/L (~98% of total body K⁺ is intracellular); ECF ≈ 3.5–5.0 mEq/L. This steep gradient is maintained by the Na⁺-K⁺ ATPase pump and is the main determinant of the resting membrane potential."
+      ],
+      [
+        "Insulin — activates Na⁺-K⁺-ATPase, drives K⁺ into cells.",
+        "Catecholamines (β2-adrenergic) — drive K⁺ into cells.",
+        "Acid–base status — acidosis causes H⁺/K⁺ exchange across the cell membrane, pushing K⁺ out into ECF (hyperkalemia); alkalosis does the reverse.",
+        "Plasma osmolarity — hyperosmolar states (e.g., hyperglycemia) draw water and K⁺ out of cells.",
+        "Aldosterone — increases renal K⁺ excretion, affecting total body K⁺ balance.",
+        "Cell/tissue damage — releases intracellular K⁺ into ECF.",
+        "Exercise — local K⁺ efflux from contracting muscle."
+      ],
+      [
+        "Resting membrane potential (RMP) approximates the K⁺ equilibrium potential (Nernst equation): Ek = 61 log([K⁺]o/[K⁺]i).",
+        "When ECF K⁺ falls while ICF K⁺ is unchanged, the ratio [K⁺]o/[K⁺]i decreases, making Ek more negative — the membrane hyperpolarizes.",
+        "This moves the RMP further from threshold, so a larger depolarizing stimulus is needed to fire an action potential → reduced excitability of nerve and muscle → weakness."
+      ]
+    ],
+    "keyPoints": "ICF K⁺ ~150 mEq/L, ECF ~4.5 mEq/L; aldosterone, insulin, acid-base shift K⁺; hyperpolarization → muscle weakness"
+  },
+  {
+    "id": 2,
+    "code": "B2",
+    "title": "Anemia in IBD-like presentation",
+    "year": 2022,
+    "season": "Winter",
+    "phase": null,
+    "system": "BLOOD",
+    "stem": "A 42-year-old woman with a month's history of abdominal pain, diarrhea, and rectal bleeding. Progressive tiredness, appears pale. MCV, MCHC and MCH are low.",
+    "questions": [
+      "What is the morphological type of anemia in this patient?",
+      "What is the treatment option for this patient?",
+      "Classify the morphological types of anemia and give an example of each."
+    ],
+    "modelAnswer": [
+      [
+        "Microcytic hypochromic anemia (↓MCV = small cells, ↓MCH/MCHC = pale cells), consistent with chronic iron-deficiency anemia from ongoing GI blood loss."
+      ],
+      [
+        "Oral or parenteral iron replacement, correction of the underlying GI pathology causing chronic blood loss (e.g., IBD management), and monitoring reticulocyte response."
+      ],
+      [
+        "Microcytic hypochromic (<80 fL): Iron deficiency, thalassemia, sideroblastic anemia, anemia of chronic disease.",
+        "Normocytic normochromic (80–100 fL): Acute blood loss, hemolytic anemia, aplastic anemia.",
+        "Macrocytic (>100 fL): Megaloblastic (B12/folate deficiency), non-megaloblastic (liver disease, hypothyroidism, alcoholism)."
+      ]
+    ],
+    "keyPoints": "Low MCV/MCH/MCHC = microcytic; iron replacement; classify by MCV/MCHC (micro/normo/macrocytic)"
+  },
+  {
+    "id": 3,
+    "code": "B3",
+    "title": "HIV/AIDS (occupational exposure)",
+    "year": 2025,
+    "season": "Summer",
+    "phase": null,
+    "system": "BLOOD",
+    "stem": "An adult patient has repeated episodes of various fungal and bacterial infections. CD4 cell count < 200. Works as a lab technician collecting blood samples, history of multiple accidental needle pricks.",
+    "questions": [
+      "Describe the physiological basis of these repeated infections."
+    ],
+    "modelAnswer": [
+      [
+        "HIV selectively infects and progressively destroys CD4⁺ T-helper lymphocytes by binding the CD4 receptor plus a co-receptor (CCR5/CXCR4).",
+        "CD4 T-cells orchestrate both cell-mediated immunity (activating cytotoxic T-cells and macrophages) and, indirectly, humoral immunity (helping B-cell activation via cytokines).",
+        "As CD4 count falls below 200/mm³ (AIDS-defining threshold), the person loses the ability to mount effective immune responses, becoming susceptible to opportunistic fungal (e.g., candidiasis, Pneumocystis jirovecii pneumonia) and bacterial (recurrent pneumonias, tuberculosis) infections that immunocompetent individuals would normally control.",
+        "The occupational needle-stick history explains the likely percutaneous blood-borne transmission route."
+      ]
+    ],
+    "keyPoints": "CD4 depletion → impaired cell-mediated immunity → opportunistic infections"
+  },
+  {
+    "id": 4,
+    "code": "R1",
+    "title": "Hyaline membrane disease / RDS",
+    "year": 2020,
+    "season": "Summer",
+    "phase": "Phase-IV",
+    "system": "RESPIRATORY SYSTEM",
+    "stem": "A 24-year-old pregnant woman in preterm labor delivers a premature infant at 27 weeks gestation. The infant shows signs of hypoxia despite oxygen supplementation, is intubated, and given surfactant via endotracheal tube — hypoxia resolves.",
+    "questions": [
+      "What is the role of surfactant in the lung?",
+      "Where is the major site of airway resistance?",
+      "How does parasympathetic stimulation affect airway resistance?"
+    ],
+    "modelAnswer": [
+      [
+        "Surfactant (mainly dipalmitoylphosphatidylcholine, secreted by Type II pneumocytes from ~24–34 weeks gestation) reduces alveolar surface tension.",
+        "By Laplace's Law (P = 2T/r), a smaller alveolus needs a higher collapsing pressure for a given tension — surfactant lowers tension proportionally more in smaller alveoli, equalizing pressures across alveoli of different sizes and preventing alveolar collapse at end-expiration.",
+        "It also reduces the work of breathing and limits transudation of fluid into alveoli.",
+        "Preterm infants at 27 weeks have insufficient surfactant → diffuse alveolar collapse → hyaline membrane disease."
+      ],
+      [
+        "The medium-sized bronchi, not the smallest bronchioles — despite their small individual diameter, the terminal bronchioles have a huge total cross-sectional area (many in parallel), which drops their combined resistance well below that of the medium bronchi."
+      ],
+      [
+        "Vagal (parasympathetic) fibers release acetylcholine, acting on M3 muscarinic receptors on bronchial smooth muscle → bronchoconstriction → increased airway resistance (opposite of sympathetic β2-mediated bronchodilation)."
+      ]
+    ],
+    "keyPoints": "Surfactant ↓ surface tension, prevents alveolar collapse (Laplace's law); resistance mainly in medium bronchi; parasympathetic → bronchoconstriction"
+  },
+  {
+    "id": 5,
+    "code": "G1",
+    "title": "Achalasia cardia",
+    "year": 2025,
+    "season": "Summer",
+    "phase": null,
+    "system": "GASTROINTESTINAL SYSTEM",
+    "stem": "A young adult male complains of weakness, fatigue, and vomiting of undigested food for the last year, with partial relief on consuming liquid food. Retrosternal pain, feeling of heaviness. Pale, signs of chronic malnutrition.",
+    "questions": [
+      "Which investigations should be prescribed? What is the diagnosis? What is the underlying pathophysiology?"
+    ],
+    "modelAnswer": [
+      [
+        "Investigations: Barium swallow (classic \"bird-beak\" narrowing at the LES with proximal esophageal dilation), esophageal manometry (elevated LES resting pressure with failure of relaxation on swallowing, absent/weak peristalsis), and upper GI endoscopy (to exclude pseudo-achalasia from malignancy).",
+        "Diagnosis: Achalasia cardia.",
+        "Pathophysiology: Degeneration of inhibitory neurons (which normally release nitric oxide and VIP) in the myenteric (Auerbach's) plexus of the distal esophagus/LES leads to loss of receptive relaxation of the LES on swallowing. The LES remains persistently contracted, causing functional obstruction, progressive esophageal dilation, dysphagia to both solids and liquids, regurgitation of undigested food, retrosternal discomfort, and secondary malnutrition from chronic poor intake."
+      ]
+    ],
+    "keyPoints": "Failure of LES relaxation, loss of myenteric plexus neurons; barium swallow/manometry"
+  },
+  {
+    "id": 6,
+    "code": "G2",
+    "title": "Achalasia cardia (LES disorder)",
+    "year": 2022,
+    "season": "Winter",
+    "phase": null,
+    "system": "GASTROINTESTINAL SYSTEM",
+    "stem": "A 34-year-old man presents with increasing difficulty swallowing both solids and liquids, worse under stress, chest pain, regurgitation, and difficulty belching. Diagnosed with a disorder of the lower esophageal sphincter.",
+    "questions": [
+      "Which part of the GI tract is composed of both striated and smooth muscle?",
+      "What factors maintain tonic contraction of the LES between swallows?",
+      "What are the major neurotransmitters regulating LES contraction and relaxation?"
+    ],
+    "modelAnswer": [
+      [
+        "The esophagus — upper third is striated (skeletal) muscle, middle third is mixed, lower third is smooth muscle."
+      ],
+      [
+        "Intrinsic myogenic tone of the circular smooth muscle, plus tonic excitatory cholinergic (vagal efferent) input; gastrin and motilin also increase LES tone."
+      ],
+      [
+        "Acetylcholine (via vagal efferents, acting on muscarinic receptors) → contraction/maintains tone.",
+        "Nitric oxide (NO) and Vasoactive Intestinal Peptide (VIP), released from inhibitory non-adrenergic non-cholinergic (NANC) neurons → relaxation during the swallowing reflex."
+      ]
+    ],
+    "keyPoints": "Esophagus = striated (upper 1/3) + smooth (lower 2/3); LES tone from myogenic + vagal cholinergic input; NO/VIP relax, ACh contracts"
+  },
+  {
+    "id": 7,
+    "code": "E1",
+    "title": "Diabetes mellitus",
+    "year": 2025,
+    "season": "Summer",
+    "phase": null,
+    "system": "ENDOCRINE PHYSIOLOGY",
+    "stem": "A 45-year-old male presents with fatigue, polyphagia, excessive thirst, frequent nocturnal urination, and weight loss. Investigations reveal increased blood glucose.",
+    "questions": [
+      "Identify the clinical condition.",
+      "Describe the functions of the hormone involved."
+    ],
+    "modelAnswer": [
+      [
+        "Diabetes mellitus — classic triad of polyuria, polydipsia, polyphagia plus weight loss and confirmed hyperglycemia."
+      ],
+      [
+        "Insulin (the deficient/resistant hormone) — functions:",
+        "Promotes glucose uptake into skeletal muscle and adipose tissue via GLUT-4 translocation.",
+        "Promotes glycogenesis (liver, muscle); inhibits glycogenolysis.",
+        "Inhibits hepatic gluconeogenesis.",
+        "Promotes lipogenesis; inhibits lipolysis.",
+        "Promotes protein synthesis; inhibits proteolysis.",
+        "Promotes cellular K⁺ uptake.",
+        "Overall: the principal anabolic, blood-glucose-lowering hormone."
+      ]
+    ],
+    "keyPoints": "Insulin deficiency/resistance; insulin's role in glucose uptake, glycogenesis, lipogenesis"
+  },
+  {
+    "id": 8,
+    "code": "E2",
+    "title": "Type 2 Diabetes mellitus",
+    "year": 2024,
+    "season": "Summer",
+    "phase": null,
+    "system": "ENDOCRINE PHYSIOLOGY",
+    "stem": "A 40-year-old obese female presents with increased frequency of micturition (especially at night) and fatigue. Fasting blood sugar is 180 mg%.",
+    "questions": [
+      "Probable diagnosis?",
+      "What other investigations would confirm it?",
+      "Complications if left untreated?"
+    ],
+    "modelAnswer": [
+      [
+        "Type 2 Diabetes Mellitus."
+      ],
+      [
+        "Repeat fasting blood glucose, Oral Glucose Tolerance Test (OGTT), HbA1c (reflects average glycemic control over ~3 months), postprandial blood glucose, urine glucose/ketones."
+      ],
+      [
+        "Microvascular: diabetic retinopathy (vision loss), diabetic nephropathy (progressing to CKD), peripheral/autonomic neuropathy.",
+        "Macrovascular: coronary artery disease, stroke, peripheral arterial disease.",
+        "Acute: hyperosmolar hyperglycemic state (more typical in T2DM), recurrent infections due to impaired leukocyte function, delayed wound healing."
+      ]
+    ],
+    "keyPoints": "Confirm with OGTT/HbA1c; complications: nephropathy, retinopathy, neuropathy, CVD"
+  },
+  {
+    "id": 9,
+    "code": "E3",
+    "title": "Addison's disease",
+    "year": 2021,
+    "season": "Winter",
+    "phase": null,
+    "system": "ENDOCRINE PHYSIOLOGY",
+    "stem": "A 40-year-old male presents with weakness, hyperpigmentation of skin and mucous membranes. BP 90/60 mmHg. Serum Na = 130 mEq/L, Serum K = 4.6 mEq/L, pH = 7.2.",
+    "questions": [
+      "Likely diagnosis?",
+      "Normal serum Na and K levels?",
+      "Treatment?",
+      "Complications if untreated?"
+    ],
+    "modelAnswer": [
+      [
+        "Primary adrenal insufficiency (Addison's disease). Hyperpigmentation results from loss of cortisol's negative feedback on the hypothalamus/pituitary → elevated ACTH (and co-secreted melanocyte-stimulating hormone, MSH, since both derive from POMC) → increased melanocyte stimulation.",
+        "Hypotension, hyponatremia, and mild acidosis reflect combined glucocorticoid and mineralocorticoid (aldosterone) deficiency."
+      ],
+      [
+        "Na⁺ 135–145 mEq/L; K⁺ 3.5–5.0 mEq/L."
+      ],
+      [
+        "Lifelong glucocorticoid replacement (hydrocortisone) plus mineralocorticoid replacement (fludrocortisone); IV saline and dextrose during acute crisis."
+      ],
+      [
+        "Addisonian crisis — profound hypotension/shock, severe hyperkalemia (cardiac arrhythmias), hypoglycemia, hyponatremia, coma, and death."
+      ]
+    ],
+    "keyPoints": "Normal Na 135–145, K 3.5–5.0 mEq/L; treat with glucocorticoid + mineralocorticoid replacement; untreated → Addisonian crisis"
+  },
+  {
+    "id": 10,
+    "code": "E4",
+    "title": "Gigantism (pituitary tumor)",
+    "year": 2020,
+    "season": "Summer",
+    "phase": "Phase-IV",
+    "system": "ENDOCRINE PHYSIOLOGY",
+    "stem": "A 16-year-old boy has a fasting blood glucose of 200 mg/dl, is 6 ft 5 in tall with large hands and feet. MRI shows a pituitary tumor.",
+    "questions": [
+      "What is the most probable diagnosis? What are the functions of growth hormone at different stages of life?"
+    ],
+    "modelAnswer": [
+      [
+        "Most probable diagnosis: Pituitary gigantism — a growth-hormone-secreting pituitary adenoma occurring before epiphyseal plate closure, causing excessive linear growth; the associated hyperglycemia reflects GH's anti-insulin (diabetogenic) metabolic effect.",
+        "Functions of GH at different life stages:",
+        "Before epiphyseal fusion (childhood/adolescence): stimulates linear bone growth via IGF-1 (somatomedin C) acting at the epiphyseal growth plates → increased height; excess here causes gigantism.",
+        "After epiphyseal fusion (adulthood): excess GH instead causes acromegaly — growth of hands, feet, jaw, and soft tissue/visceral organs, since long bones can no longer lengthen.",
+        "General metabolic actions at all ages: protein anabolism (↑ amino acid uptake and protein synthesis), lipolysis (mobilizes fat for energy), and an anti-insulin/diabetogenic effect on carbohydrate metabolism (↓ peripheral glucose uptake, ↑ blood glucose), plus renal Na⁺/water retention."
+      ]
+    ],
+    "keyPoints": "GH pre-puberty → linear growth (open epiphyses); post-puberty → acromegaly"
+  },
+  {
+    "id": 11,
+    "code": "RP1",
+    "title": "Pregnancy (hCG-based test)",
+    "year": 2025,
+    "season": "Summer",
+    "phase": null,
+    "system": "REPRODUCTIVE SYSTEM",
+    "stem": "A 35-year-old female presents with 1 month of amenorrhea. Urine pregnancy test is positive.",
+    "questions": [
+      "What is the physiological basis of urine pregnancy tests?",
+      "Enumerate the various hormones secreted by the placenta and their functions."
+    ],
+    "modelAnswer": [
+      [
+        "After blastocyst implantation, the syncytiotrophoblast secretes human Chorionic Gonadotropin (hCG), which is excreted in urine and detectable by immunoassay (antibody against the beta subunit of hCG) as early as 1–2 weeks post-conception. This is the basis of both home and clinical urine pregnancy tests."
+      ],
+      [
+        "hCG — maintains the corpus luteum (sustains progesterone secretion) during early pregnancy until the placenta itself takes over steroidogenesis.",
+        "Human Placental Lactogen (hPL) — induces maternal insulin resistance to shunt glucose toward the fetus; promotes maternal breast development; has GH-like metabolic effects.",
+        "Estrogen (mainly estriol) — promotes uterine growth, mammary duct development, increases uteroplacental blood flow.",
+        "Progesterone — maintains the endometrium, inhibits uterine contractions/premature labor, suppresses further ovulation, promotes alveolar development in the breast.",
+        "Relaxin — softens the cervix and relaxes pelvic ligaments in preparation for parturition."
+      ]
+    ],
+    "keyPoints": "hCG detected in urine from trophoblast; placental hormones: hCG, hPL, estrogen, progesterone"
+  },
+  {
+    "id": 12,
+    "code": "C1",
+    "title": "Huntington's chorea",
+    "year": 2025,
+    "season": "Summer",
+    "phase": null,
+    "system": "CENTRAL NERVOUS SYSTEM",
+    "stem": "A 40-year-old man has rapid, involuntary, dancing movements, is forgetting day-to-day tasks, and has slurred speech. Diagnosed with Huntington's chorea.",
+    "questions": [
+      "What is the cause of this disorder?",
+      "What are the functions of the basal ganglia?"
+    ],
+    "modelAnswer": [
+      [
+        "Autosomal dominant disorder due to a CAG trinucleotide repeat expansion in the huntingtin (HTT) gene on chromosome 4, producing a mutant huntingtin protein that causes selective degeneration of GABAergic (and cholinergic) neurons in the caudate nucleus and putamen of the basal ganglia."
+      ],
+      [
+        "Initiation and smoothing of voluntary movement, regulation of muscle tone, maintenance of posture, motor planning (via thalamocortical loops), and contribution to certain cognitive/emotional processing.",
+        "In Huntington's, loss of inhibitory striatal GABAergic output disinhibits thalamocortical motor circuits, producing the excessive, involuntary choreiform (dance-like) movements."
+      ]
+    ],
+    "keyPoints": "Autosomal dominant, CAG repeat, loss of GABAergic striatal neurons; basal ganglia = motor control, posture, initiation of movement"
+  },
+  {
+    "id": 13,
+    "code": "C2",
+    "title": "Parkinsonism",
+    "year": 2024,
+    "season": "Summer",
+    "phase": null,
+    "system": "CENTRAL NERVOUS SYSTEM",
+    "stem": "A 60-year-old male presents with muscle stiffness, difficulty walking and initiating movements, involuntary movements of the head/neck. On exam: rigidity, resting tremors, festinant gait.",
+    "questions": [
+      "Likely diagnosis?",
+      "Which neurotransmitter is deficient, and in which pathway?",
+      "Type and cause of the rigidity?",
+      "Drugs of choice?"
+    ],
+    "modelAnswer": [
+      [
+        "Parkinson's disease."
+      ],
+      [
+        "Dopamine, deficient due to degeneration of dopaminergic neurons in the substantia nigra pars compacta, which normally project via the nigrostriatal pathway to the caudate nucleus and putamen."
+      ],
+      [
+        "\"Lead-pipe\" or \"cogwheel\" rigidity — simultaneous increased tone in both agonist and antagonist muscles.",
+        "Loss of dopaminergic inhibition disinhibits the indirect basal ganglia pathway, increasing inhibitory output from the globus pallidus internus/substantia nigra pars reticulata onto the thalamus, and secondarily increasing gamma motor neuron drive and stretch-reflex excitability at the spinal level."
+      ],
+      [
+        "Levodopa (combined with carbidopa, a peripheral decarboxylase inhibitor, to prevent peripheral conversion and side effects), dopamine agonists (pramipexole, ropinirole), MAO-B inhibitors (selegiline), and anticholinergics (for tremor predominance); amantadine as an adjunct."
+      ]
+    ],
+    "keyPoints": "Dopamine deficiency in nigrostriatal pathway; rigidity = lead-pipe/cogwheel; levodopa ± carbidopa"
+  },
+  {
+    "id": 14,
+    "code": "C3",
+    "title": "Parkinson's disease",
+    "year": 2023,
+    "season": "Winter",
+    "phase": null,
+    "system": "CENTRAL NERVOUS SYSTEM",
+    "stem": "A 50-year-old man has stooped posture, resting tremor that disappears on voluntary movement, an expressionless face, short shuffling gait, and muscular rigidity.",
+    "questions": [
+      "Diagnosis?",
+      "Cause of the disease?",
+      "Physiological basis of treatment?"
+    ],
+    "modelAnswer": [
+      [
+        "Parkinson's disease."
+      ],
+      [
+        "Degeneration of dopaminergic neurons in the substantia nigra pars compacta (nigrostriatal pathway), leading to dopamine deficiency in the striatum."
+      ],
+      [
+        "Dopamine itself cannot cross the blood-brain barrier; levodopa can, and is converted to dopamine by dopa-decarboxylase within surviving nigrostriatal neurons, replenishing striatal dopamine levels."
+      ]
+    ],
+    "keyPoints": "Substantia nigra dopaminergic loss; levodopa physiological basis (dopamine precursor)"
+  },
+  {
+    "id": 15,
+    "code": "C4",
+    "title": "Brown-Séquard syndrome",
+    "year": 2023,
+    "season": "Winter",
+    "phase": null,
+    "system": "CENTRAL NERVOUS SYSTEM",
+    "stem": "A middle-aged man has a gunshot injury to the back. On the same side as the injury: extensive motor loss, minimal sensory loss. On the opposite side: extensive sensory loss, no motor loss.",
+    "questions": [
+      "Name of the condition?",
+      "Which type of spinal shock is it?",
+      "Treatment?"
+    ],
+    "modelAnswer": [
+      [
+        "Brown-Séquard syndrome — spinal cord hemisection."
+      ],
+      [
+        "Immediately after transection there is a period of spinal shock — transient, bilateral flaccid paralysis and areflexia below the level of injury lasting days to weeks, due to sudden loss of descending facilitatory input to spinal neurons.",
+        "As this resolves, the classic hemisection pattern emerges: ipsilateral upper motor neuron paralysis and loss of proprioception/vibration/fine touch (corticospinal tract and dorsal columns, which are uncrossed at the lesion level), with contralateral loss of pain and temperature sensation below the lesion (spinothalamic tract fibers, which have already crossed near their level of entry)."
+      ],
+      [
+        "Spinal stabilization and surgical decompression where indicated, early rehabilitation/physiotherapy, and management of neurogenic bladder/bowel dysfunction if present; high-dose corticosteroids are used in some protocols but remain controversial."
+      ]
+    ],
+    "keyPoints": "Ipsilateral motor loss (corticospinal), contralateral pain/temp loss (spinothalamic)"
+  },
+  {
+    "id": 16,
+    "code": "C5",
+    "title": "Trigeminal neuralgia",
+    "year": 2020,
+    "season": "Summer",
+    "phase": "Phase-IV",
+    "system": "CENTRAL NERVOUS SYSTEM",
+    "stem": "A 70-year-old man has stabbing pain on the right side of the face, lasting seconds to minutes, often triggered by chewing or eating.",
+    "questions": [
+      "What is the most probable cause of this pain? How is it managed? Add a note on the brain's opiate system."
+    ],
+    "modelAnswer": [
+      [
+        "Probable cause: Compression/irritation of the trigeminal nerve root — most commonly by an aberrant loop of the superior cerebellar artery — causing demyelination and ephaptic (\"cross-talk\") transmission between adjacent sensory fibers, producing paroxysmal, severe, stabbing pain triggered by light touch or mechanical stimuli in the nerve's territory (trigger zones).",
+        "Management: First-line is carbamazepine (or oxcarbazepine); other options include gabapentin or baclofen; microvascular decompression surgery for refractory cases.",
+        "Brain's opiate (analgesia) system: Endogenous opioid peptides (enkephalins, endorphins, dynorphins) act on µ, δ, and κ opioid receptors, particularly in the periaqueductal gray (PAG) and dorsal horn, to inhibit ascending pain transmission. This forms part of the descending analgesic system, working alongside descending serotonergic (raphe nuclei) and noradrenergic (locus coeruleus) pathways that inhibit dorsal horn nociceptive neurons."
+      ]
+    ],
+    "keyPoints": "Triggered by touch/chewing; carbamazepine; endogenous opioid/analgesia system as adjunct"
+  },
+  {
+    "id": 17,
+    "code": "C6",
+    "title": "Parkinson's disease",
+    "year": 2020,
+    "season": "Summer",
+    "phase": "Phase-IV",
+    "system": "CENTRAL NERVOUS SYSTEM",
+    "stem": "A 60-year-old man presents with tremor in his hands, trouble sleeping, constipation, and dizziness. On exam: resting tremor, rigidity, bradykinesia. Alert, speaks in a soft, low voice.",
+    "questions": [
+      "What is his probable diagnosis? Explain the functions of the basal ganglia."
+    ],
+    "modelAnswer": [
+      [
+        "Probable diagnosis: Parkinson's disease (resting tremor, rigidity, bradykinesia).",
+        "Functions of the basal ganglia: initiation and smoothing of voluntary movement, regulation of muscle tone, maintenance of posture, motor planning (via thalamocortical loops), and contribution to certain cognitive/emotional processing."
+      ]
+    ],
+    "keyPoints": "Same as C2/C3 — basal ganglia functions: initiation/smoothing of movement, posture, muscle tone"
+  },
+  {
+    "id": 18,
+    "code": "NM1",
+    "title": "Duchenne Muscular Dystrophy",
+    "year": 2025,
+    "season": "Summer",
+    "phase": null,
+    "system": "NERVE-MUSCLE PHYSIOLOGY",
+    "stem": "An 8-year-old boy presents with fatigue, difficulty getting up from a sitting position (uses his hands to climb up his own body), symptoms worsening over 2 years, no pain.",
+    "questions": [
+      "Identify the clinical condition and its cause.",
+      "Enumerate the types of muscle proteins and their functions."
+    ],
+    "modelAnswer": [
+      [
+        "Duchenne Muscular Dystrophy — an X-linked recessive disorder caused by mutation in the dystrophin gene.",
+        "Dystrophin normally links the intracellular actin cytoskeleton to the extracellular matrix via the dystrophin-glycoprotein complex, mechanically stabilizing the sarcolemma during repeated contraction. Its absence leaves muscle fibers fragile, leading to progressive degeneration, necrosis, and eventual replacement by fat/fibrous tissue (pseudohypertrophy, classically of the calves).",
+        "Proximal muscle weakness produces the classic Gower's sign — the child uses his hands to \"climb up\" his own thighs to stand."
+      ],
+      [
+        "Actin (thin filament) — provides myosin-binding sites for cross-bridge formation.",
+        "Myosin (thick filament) — has ATPase activity; the myosin head generates force via cross-bridge cycling.",
+        "Tropomyosin — lies along the actin filament, blocking myosin-binding sites at rest.",
+        "Troponin (subunits C, T, I) — the Ca²⁺-sensing complex; Ca²⁺ binding to troponin C shifts tropomyosin to expose binding sites.",
+        "Dystrophin — mechanically links the cytoskeleton to the sarcolemma/extracellular matrix; absence causes DMD."
+      ]
+    ],
+    "keyPoints": "Dystrophin deficiency; Gower's sign; muscle proteins: actin, myosin, tropomyosin, troponin, dystrophin"
+  },
+  {
+    "id": 19,
+    "code": "NM2",
+    "title": "Rigor mortis",
+    "year": 2021,
+    "season": "Winter",
+    "phase": null,
+    "system": "NERVE-MUSCLE PHYSIOLOGY",
+    "stem": "A dead body of a ~70-year-old woman is brought for post-mortem. There is rigidity and stiffness of muscles all over the body.",
+    "questions": [
+      "What is this condition called?",
+      "What is its cause?",
+      "What is its importance?"
+    ],
+    "modelAnswer": [
+      [
+        "Rigor mortis."
+      ],
+      [
+        "After death, oxidative phosphorylation ceases and ATP is no longer produced. Since ATP is required to detach the myosin head from actin at the end of each cross-bridge cycle, cross-bridges formed after death remain permanently attached, locking the muscle in a sustained, rigid contraction.",
+        "Continued Ca²⁺ leak from the sarcoplasmic reticulum (no longer being actively pumped back without ATP) sustains the contractile signal."
+      ],
+      [
+        "Used forensically to estimate time since death — rigor mortis typically begins 2–6 hours postmortem, peaks by around 12 hours, and resolves by 24–36 hours as muscle proteins begin to degrade."
+      ]
+    ],
+    "keyPoints": "ATP depletion → actin-myosin cross-bridges can't detach; importance: estimating time since death"
+  },
+  {
+    "id": 20,
+    "code": "NM3",
+    "title": "Myasthenia gravis",
+    "year": 2020,
+    "season": "Summer",
+    "phase": "Phase-IV",
+    "system": "NERVE-MUSCLE PHYSIOLOGY",
+    "stem": "A 42-year-old man with myasthenia gravis notes increased muscle strength when treated with an acetylcholinesterase (AChE) inhibitor.",
+    "questions": [
+      "What is the physiological basis for his improvement? Explain the steps in neuromuscular transmission in skeletal muscle."
+    ],
+    "modelAnswer": [
+      [
+        "Physiological basis: Myasthenia gravis is an autoimmune disease in which antibodies target nicotinic acetylcholine receptors at the neuromuscular junction, reducing the number of functional receptors and thus reducing the \"safety factor\" for neuromuscular transmission.",
+        "Acetylcholinesterase (AChE) inhibitors (e.g., pyridostigmine, neostigmine) block the breakdown of ACh in the synaptic cleft, prolonging its availability so it has a greater chance of binding to the reduced pool of receptors — restoring an adequate end-plate potential and improving muscle strength.",
+        "Steps in neuromuscular transmission:",
+        "Action potential arrives at the presynaptic motor nerve terminal.",
+        "Depolarization opens voltage-gated Ca²⁺ channels → Ca²⁺ influx.",
+        "Ca²⁺ triggers exocytosis of ACh-containing synaptic vesicles.",
+        "ACh diffuses across the synaptic cleft and binds nicotinic ACh receptors on the motor end plate.",
+        "Receptor activation opens ligand-gated cation channels → depolarization (end-plate potential).",
+        "If the end-plate potential reaches threshold, a muscle action potential is generated and propagates along the sarcolemma and down the T-tubules.",
+        "ACh is rapidly hydrolyzed by acetylcholinesterase in the cleft, terminating the signal and allowing repolarization."
+      ]
+    ],
+    "keyPoints": "Autoantibodies vs. nicotinic ACh receptors; AChE inhibitor ↑ ACh availability at NMJ"
+  },
+  {
+    "id": 21,
+    "code": "A1",
+    "title": "Doctor–patient relationship / empathy",
+    "year": 2024,
+    "season": "Summer",
+    "phase": "Phase-II",
+    "system": "AETCOM (DOCTOR-PATIENT RELATIONSHIP)",
+    "stem": "An 87-year-old male is brought to casualty with breathlessness, diagnosed with COVID-19 pneumonia, admitted to ICU. Relatives are anxious, argue with the doctor on duty. The doctor asks that the patient be shifted to another hospital. Relatives assault the doctor.",
+    "questions": [
+      "Were the patient's relatives justified in their behavior?",
+      "Describe empathy in terms of the doctor–patient relationship."
+    ],
+    "modelAnswer": [
+      [
+        "No. Anxiety about a critically ill family member is understandable, but assaulting a healthcare worker is never an acceptable response — it is both ethically wrong and a criminal act, and it undermines the trust essential to healthcare delivery.",
+        "Appropriate channels (asking for clarification, requesting a second opinion, filing a formal complaint) should be used instead of violence."
+      ],
+      [
+        "Empathy is the capacity to understand and share the feelings of the patient/family, and to communicate that understanding back to them — through active listening, acknowledging their distress, explaining clinical decisions clearly (e.g., the reasons for referral, such as resource/bed limitations), and maintaining calm, respectful communication even under pressure.",
+        "Empathy builds trust, reduces conflict, and is central to patient- and family-centered care, while still preserving the doctor's professional judgment and boundaries."
+      ]
+    ],
+    "keyPoints": "Relatives' assault not justified; empathy = understanding + communicating concern without losing objectivity"
+  },
+  {
+    "id": 22,
+    "code": "A2",
+    "title": "Patient autonomy vs. paternalism",
+    "year": 2021,
+    "season": "Winter",
+    "phase": null,
+    "system": "AETCOM (DOCTOR-PATIENT RELATIONSHIP)",
+    "stem": "Two hypertensive patients regularly attend the OPD. Patient 1 is fully compliant, never questions treatment. Patient 2 questions the need for a new drug, cites a friend's experience and internet research.",
+    "questions": [
+      "How does each patient see her relationship with the doctor?",
+      "Should Patient 2's behavior be seen as a threat to the doctor's authority?",
+      "How could the doctor better explain the need for the new drug?",
+      "What do you think about patients' rights and doctors' responsibilities in general?"
+    ],
+    "modelAnswer": [
+      [
+        "Patient 1 exhibits a paternalistic model — she defers entirely to the doctor's authority without question.",
+        "Patient 2 exhibits a participatory/autonomous model — she wants to understand the rationale and be involved in decisions about her own care."
+      ],
+      [
+        "Not a threat — it should be seen as a positive sign of an engaged, informed patient exercising her right to autonomy, and an opportunity for genuine shared decision-making rather than a challenge to be resisted."
+      ],
+      [
+        "Provide clear, evidence-based reasoning tailored to her specific concerns, directly address the medication she found online/from her friend (correcting misinformation if needed), listen to her questions without dismissing them, and arrive at a mutually understood and agreed treatment plan."
+      ],
+      [
+        "Patients have the right to accurate information, informed consent, and meaningful participation in decisions about their care, and to be treated with respect regardless of how they choose to engage.",
+        "Doctors are responsible for full and honest disclosure, respecting patient autonomy, providing evidence-based recommendations, and communicating in a way the patient can understand and act on."
+      ]
+    ],
+    "keyPoints": "Patient 1 = paternalistic model; Patient 2 = shared decision-making/autonomy; informed consent principles"
+  },
+  {
+    "id": 23,
+    "code": "A3",
+    "title": "Professional boundaries",
+    "year": 2021,
+    "season": "Winter",
+    "phase": null,
+    "system": "AETCOM (DOCTOR-PATIENT RELATIONSHIP)",
+    "stem": "A young doctor has cared for an 80-year-old bedridden stroke patient for 2–3 years, visiting twice a week. The patient's son is abroad. The patient expresses that his son is ungrateful and intends to leave his assets to the doctor and caretaker.",
+    "questions": [
+      "How should the doctor react to this trust?",
+      "What should be the boundaries/limitations in the doctor–patient relationship?",
+      "Your opinion on trust and vulnerability in doctor–patient relationships?"
+    ],
+    "modelAnswer": [
+      [
+        "The doctor should acknowledge the patient's affection and trust with warmth and gratitude, but should firmly and kindly decline the offer to be named a beneficiary — accepting personal financial gain from a patient creates a serious conflict of interest and compromises the objectivity and integrity of the clinical relationship."
+      ],
+      [
+        "The relationship must remain professional at all times; doctors should avoid personal financial transactions with patients, avoid dual relationships, redirect matters like inheritance or legal/financial decisions to the patient's family or a lawyer, and involve appropriate third parties rather than becoming personally entangled in the patient's private affairs."
+      ],
+      [
+        "Elderly, isolated, or dependent patients are especially vulnerable and may form strong emotional attachments to caregivers who provide consistent, compassionate care. This trust is a privilege that must never be exploited — financially, emotionally, or otherwise.",
+        "Maintaining clear professional boundaries protects the patient from exploitation (real or perceived) and protects the doctor's own professional integrity and reputation."
+      ]
+    ],
+    "keyPoints": "Acknowledge trust without accepting personal gain; maintain boundaries; vulnerability of long-term patients requires extra caution"
+  }
+]

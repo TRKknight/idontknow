@@ -8693,7 +8693,7 @@ function App() {
   const [clinicalCases, setClinicalCases] = useState([]);
   const [muhsPyq, setMuhsPyq] = useState([]);
   const [jambhulkar, setJambhulkar] = useState([]);
-  const [visibility, setVisibility] = useState({ disorders: true, pathways: true, 'normal-values': true, vitamins: true, minerals: true, physiology: true, feed: true, 'clinical-vignettes': true, 'clinical-cases': true, 'muhs-pyq': true, 'jambhulkar-pyq': true, vignettes: true, 'biochem-home': true, 'physio-viva': true, 'physio-reflexes-explorer': true, 'physio-notes': true, 'physio-clinical': true, 'physio-hormones': true });
+  const [visibility, setVisibility] = useState({ disorders: true, pathways: true, 'normal-values': true, vitamins: true, minerals: true, physiology: true, feed: true, 'clinical-vignettes': true, 'clinical-cases': true, 'muhs-pyq': true, 'jambhulkar-pyq': true, vignettes: true, 'biochem-home': true, 'physio-viva': true, 'physio-reflexes-explorer': true, 'physio-notes': true, 'physio-clinical': true, 'physio-hormones': true, 'physio-muhs-pyq': true });
   const [physioViva, setPhysioViva] = useState([]);
   const [physioReflexDetails, setPhysioReflexDetails] = useState([]);
   const [physioNotes, setPhysioNotes] = useState([]);
@@ -8738,7 +8738,8 @@ function App() {
         reflexExplorer: visibility['physio-reflexes-explorer'],
         notes: visibility['physio-notes'],
         clinical: visibility['physio-clinical'],
-        hormones: visibility['physio-hormones']
+        hormones: visibility['physio-hormones'],
+        muhsPyq: visibility['physio-muhs-pyq']
       }, '*');
     }
   }, [screen, physioMode, physioCat, physioSearch, visibility]);
@@ -10171,7 +10172,7 @@ function App() {
         const sub = pp.split('/')[2] || 'home';
 physioRef.current.contentWindow.postMessage({
           type: 'physio-nav-set',
-          mode: sub === 'browse' || sub === 'quiz' || sub === 'reflex' || sub === 'reflexDetails' || sub === 'notes' || sub === 'clinical' || sub === 'hormones' ? (sub === 'reflex' ? 'reflexDetails' : sub) : 'home',
+          mode: sub === 'browse' || sub === 'quiz' || sub === 'reflex' || sub === 'reflexDetails' || sub === 'notes' || sub === 'clinical' || sub === 'hormones' || sub === 'muhsPyq' ? (sub === 'reflex' ? 'reflexDetails' : sub) : 'home',
           cat: new URLSearchParams(window.location.hash.split('?')[1] || '').get('cat') || 'All',
           search: new URLSearchParams(window.location.hash.split('?')[1] || '').get('search') || ''
         }, '*');
@@ -10181,7 +10182,8 @@ physioRef.current.contentWindow.postMessage({
           reflexExplorer: visibility['physio-reflexes-explorer'],
           notes: visibility['physio-notes'],
           clinical: visibility['physio-clinical'],
-          hormones: visibility['physio-hormones']
+          hormones: visibility['physio-hormones'],
+          muhsPyq: visibility['physio-muhs-pyq']
         }, '*');
       }
     }

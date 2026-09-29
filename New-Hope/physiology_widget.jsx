@@ -3,12 +3,14 @@ import { MECHANISMS, getMechanism } from "./src/mechanisms.js";
 import PnCNotesViewer, { PnCNoteCard } from "./src/PnCNotesViewer.jsx";
 import ClinicalConditionsViewer from "./src/ClinicalConditionsViewer.jsx";
 import HormonesViewer from "./src/HormonesViewer.jsx";
+import PhysioMuhsPyqViewer from "./src/PhysioMuhsPyqViewer.jsx";
 
 const DATA_URL = "viva.json";
 const REFLEX_URL = "reflex_details.json";
 const NOTES_URL = "notes.json";
 const CLINICAL_URL = "clinical.json";
 const HORMONES_URL = "hormones.json";
+const MUHSPYQ_URL = "muhs_pyq.json";
 
 const CAT_COLORS = {
   Laws: "#185FA5", Equations: "#3B6D11", Effects: "#534AB7",
@@ -677,12 +679,14 @@ export default function App() {
   const [notesData, setNotesData] = useState([]);
   const [clinicalData, setClinicalData] = useState([]);
   const [hormonesData, setHormonesData] = useState([]);
+  const [muhsPyqData, setMuhsPyqData] = useState([]);
   useEffect(() => {
     fetch(DATA_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setVivaData(d); }).catch(() => {});
     fetch(REFLEX_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setReflexDetailData(d); }).catch(() => {});
     fetch(NOTES_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setNotesData(d); }).catch(() => {});
     fetch(CLINICAL_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setClinicalData(d); }).catch(() => {});
     fetch(HORMONES_URL).then(r => r.ok ? r.json() : null).then(d => { if (d && Array.isArray(d.hormones) && d.hormones.length) setHormonesData(d.hormones); }).catch(() => {});
+    fetch(MUHSPYQ_URL).then(r => r.ok ? r.json() : null).then(d => { if (Array.isArray(d) && d.length) setMuhsPyqData(d); }).catch(() => {});
   }, []);
   const notesLookup = useMemo(() => {
     const m = {};
@@ -696,7 +700,7 @@ export default function App() {
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
   const [done, setDone] = useState(false);
-  const [physioVisibility, setPhysioVisibility] = useState({ viva: true, reflexExplorer: true, notes: true, clinical: true, hormones: true });
+  const [physioVisibility, setPhysioVisibility] = useState({ viva: true, reflexExplorer: true, notes: true, clinical: true, hormones: true, muhsPyq: true });
   // postMessage nav sync with parent (skip initial mount — parent already knows from hash)
   const mounted = useRef(false);
   const navDebounce = useRef(null);
@@ -716,7 +720,7 @@ export default function App() {
         if (e.data.mode) { handleModeChange(e.data.mode); }
       }
       if (e.data && e.data.type === 'physio-visibility') {
-        setPhysioVisibility({ viva: e.data.viva !== false, reflexExplorer: e.data.reflexExplorer !== false, notes: e.data.notes !== false, clinical: e.data.clinical !== false, hormones: e.data.hormones !== false });
+        setPhysioVisibility({ viva: e.data.viva !== false, reflexExplorer: e.data.reflexExplorer !== false, notes: e.data.notes !== false, clinical: e.data.clinical !== false, hormones: e.data.hormones !== false, muhsPyq: e.data.muhsPyq !== false });
       }
     }
     window.addEventListener('message', handler);
@@ -728,6 +732,7 @@ export default function App() {
     if (mode === 'notes' && !physioVisibility.notes) { handleModeChange('home'); }
     if (mode === 'clinical' && !physioVisibility.clinical) { handleModeChange('home'); }
     if (mode === 'hormones' && !physioVisibility.hormones) { handleModeChange('home'); }
+    if (mode === 'muhsPyq' && !physioVisibility.muhsPyq) { handleModeChange('home'); }
   }, [mode, physioVisibility]);
 
   const filtered = useMemo(() => vivaData.filter(d => {
@@ -822,6 +827,8 @@ export default function App() {
             <div style={{ ...s.input, cursor: "default", color: "var(--color-text-secondary)" }}>Clinical conditions</div>
           ) : mode === "hormones" ? (
             <div style={{ ...s.input, cursor: "default", color: "var(--color-text-secondary)" }}>Hormones</div>
+          ) : mode === "muhsPyq" ? (
+            <div style={{ ...s.input, cursor: "default", color: "var(--color-text-secondary)" }}>MUHS PYQs</div>
           ) : (
             <input style={s.input} placeholder="Search names, definitions…" value={search} onChange={e => setSearch(e.target.value)} />
           )}
@@ -835,10 +842,11 @@ export default function App() {
             {physioVisibility.notes && <button style={s.modeBtn(mode === "notes")} onClick={() => handleModeChange("notes")}>Notes</button>}
             {physioVisibility.hormones && <button style={s.modeBtn(mode === "hormones")} onClick={() => handleModeChange("hormones")}>Hormones</button>}
             {physioVisibility.clinical && <button style={s.modeBtn(mode === "clinical")} onClick={() => handleModeChange("clinical")}>ClinCond</button>}
+            {physioVisibility.muhsPyq && <button style={s.modeBtn(mode === "muhsPyq")} onClick={() => handleModeChange("muhsPyq")}>PYQ</button>}
           </div>
         </div>
       )}
-      {mode !== "reflexDetails" && mode !== "notes" && mode !== "clinical" && mode !== "hormones" && mode !== "home" && (
+      {mode !== "reflexDetails" && mode !== "notes" && mode !== "clinical" && mode !== "hormones" && mode !== "muhsPyq" && mode !== "home" && (
         <div style={s.cats}>
           {CATS.filter(c => c === "All" || vivaData.some(d => d.cat === c)).map(c => (
             <button key={c} style={s.catBtn(c === activeCat)} onClick={() => setActiveCat(c)}>
@@ -881,6 +889,12 @@ export default function App() {
               <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>Clinical Conditions</div>
               <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>{clinicalData.length} conditions with pathophysiology, mechanisms, and linked physiology topics.</div>
               <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#e74c3c", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
+            </div>}
+            {physioVisibility.muhsPyq && muhsPyqData.length > 0 && <div onClick={() => handleModeChange("muhsPyq")} style={{ background: "var(--dk-card)", borderRadius: 14, padding: "22px 20px", borderTop: "1px solid var(--dk-border)", borderRight: "1px solid var(--dk-border)", borderBottom: "1px solid var(--dk-border)", cursor: "pointer", boxShadow: "var(--dk-shadow)", borderLeft: "5px solid #16a085" }}>
+              <div style={{ fontSize: 34, marginBottom: 8 }}>📝</div>
+              <div style={{ fontSize: 19, fontWeight: "bold", color: "var(--dk-text)", marginBottom: 5 }}>MUHS PYQs</div>
+              <div style={{ fontSize: 13, color: "var(--dk-sub)", lineHeight: 1.6 }}>{muhsPyqData.length} clinical case questions (2020–2025) by system — stems, questions, and model answers for exam practice.</div>
+              <div style={{ marginTop: 12, display: "inline-block", padding: "7px 16px", borderRadius: 8, background: "#16a085", color: "#fff", fontSize: 13, fontWeight: "bold" }}>Open →</div>
             </div>}
           </div>
         </div>
@@ -955,6 +969,7 @@ export default function App() {
       {mode === "notes" && <PnCNotesViewer data={notesData} />}
       {mode === "clinical" && <ClinicalConditionsViewer data={clinicalData} />}
       {mode === "hormones" && <HormonesViewer data={hormonesData} />}
+      {mode === "muhsPyq" && <PhysioMuhsPyqViewer data={muhsPyqData} />}
 
       {/* MODAL — enriched with PnC data when available */}
       {modal && (
