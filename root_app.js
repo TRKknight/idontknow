@@ -5869,7 +5869,7 @@ function ClinicalVignetteView({
   onOpenDisorder
 }) {
   const [taken, setTaken] = useState(new Set());
-  const [score, setScore] = useState(100);
+  const [wrongCount, setWrongCount] = useState(0);
   const [picked, setPicked] = useState(null);
   const [showPicker, setShow] = useState(false);
   const [correct, setCorrect] = useState(false);
@@ -5906,11 +5906,44 @@ function ClinicalVignetteView({
     }
     setShuffledDiffs(arr);
   }
+  function restart() {
+    setTaken(new Set());
+    setWrongCount(0);
+    setPicked(null);
+    setShow(false);
+    setCorrect(false);
+    setWrongMsg(null);
+    setAttempted(false);
+    shuffleDiffs();
+  }
+
+  // Scoring is split so that neither skill alone can carry a grade: 60 points
+  // for reaching the right diagnosis, 40 for how closely the workup matched
+  // the critical investigations. A wrong attempt costs more than any single
+  // test, so committing to a diagnosis before investigating is never the
+  // cheaper option.
+  const ACC_TOTAL = 60;
+  const EFF_TOTAL = 40;
+  const WRONG_COST = 25;
+  const criticalIds = new Set(vignette.critical_ids && vignette.critical_ids.length ? vignette.critical_ids : actions.filter(a => a.critical).map(a => a.id));
+  const criticalTotal = criticalIds.size;
+  const criticalDone = actions.filter(a => criticalIds.has(a.id) && taken.has(a.id)).length;
+  const idealSpend = actions.filter(a => criticalIds.has(a.id)).reduce((s, a) => s + a.cost, 0);
+  const wastedSpend = actions.filter(a => !criticalIds.has(a.id) && taken.has(a.id)).reduce((s, a) => s + a.cost, 0);
+  const coverage = criticalTotal ? criticalDone / criticalTotal : 1;
+  const wasteShare = idealSpend + wastedSpend ? wastedSpend / (idealSpend + wastedSpend) : 0;
+  const efficiency = Math.round(EFF_TOTAL * coverage * (1 - wasteShare));
+  // Accuracy is forfeited by guessing, so it scales with how much of the
+  // critical workup was actually done and is not refunded by a later correct
+  // answer. Full credit needs at least three quarters of the critical
+  // investigations, which is what makes an A mean something.
+  const accBase = ACC_TOTAL * Math.min(1, coverage / 0.75);
+  const accuracy = Math.round(Math.max(0, accBase - wrongCount * WRONG_COST));
+  const score = accuracy + efficiency;
   function takeAction(a) {
     if (taken.has(a.id)) return;
     if (a.cost >= 3 && !attempted) return;
     setTaken(new Set([...taken, a.id]));
-    setScore(s => Math.max(0, s - a.cost * 8));
   }
   function handlePickDiagnosis() {
     const correctAnswer = finalDiagnosis;
@@ -5918,8 +5951,8 @@ function ClinicalVignetteView({
       setCorrect(true);
       setShow(false);
     } else {
-      setWrongMsg(`Not correct. Score -15!`);
-      setScore(s => Math.max(0, s - 15));
+      setWrongCount(w => w + 1);
+      setWrongMsg(`Not correct. -${WRONG_COST} on diagnosis.`);
       setPicked(null);
       setAttempted(true);
     }
@@ -5992,7 +6025,22 @@ function ClinicalVignetteView({
       textTransform: 'uppercase',
       letterSpacing: 1
     }
-  }, "Score", correct && ` (Grade ${grade})`))), /*#__PURE__*/React.createElement("div", {
+  }, "Score", correct && ` (Grade ${grade})`), /*#__PURE__*/React.createElement("button", {
+    onClick: restart,
+    style: {
+      marginTop: 5,
+      fontSize: 9,
+      letterSpacing: 1,
+      textTransform: 'uppercase',
+      background: 'none',
+      border: '1px solid ' + DK.border(dark),
+      borderRadius: 10,
+      padding: '2px 9px',
+      color: DK.sub(dark),
+      cursor: 'pointer',
+      fontFamily: 'Georgia,serif'
+    }
+  }, "Restart"))), /*#__PURE__*/React.createElement("div", {
     style: {
       flex: 1,
       overflowY: 'auto',
@@ -6110,7 +6158,7 @@ function ClinicalVignetteView({
         fontSize: 10,
         color: DK.muted(dark)
       }
-    }, locked ? "Requires a diagnosis attempt" : "\u23F1 " + a.cost + " \xD7 8 pts"));
+    }, locked ? "Requires a diagnosis attempt" : "\u23F1 cost " + a.cost));
   }))), score <= 0 && !correct && /*#__PURE__*/React.createElement("div", {
     style: {
       background: dark ? '#2a1a1a' : '#fdf0f0',
@@ -6305,7 +6353,14 @@ function ClinicalVignetteView({
       fontSize: 9,
       color: DK.sub(dark)
     }
-  }, "ACTIONS"))), linkedDis && /*#__PURE__*/React.createElement("button", {
+  }, "ACTIONS"))), correct && /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center',
+      fontSize: 11,
+      color: DK.sub(dark),
+      marginTop: 8
+    }
+  }, "Diagnosis ", accuracy, "/", ACC_TOTAL, "  \xB7  Workup ", efficiency, "/", EFF_TOTAL, wrongCount > 0 && `  \xB7  ${wrongCount} wrong attempt${wrongCount > 1 ? 's' : ''}`), linkedDis && /*#__PURE__*/React.createElement("button", {
     onClick: () => onOpenDisorder(linkedDis),
     style: {
       marginTop: 10,
