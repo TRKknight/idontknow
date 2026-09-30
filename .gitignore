@@ -5,4 +5,8 @@ node_modules/
 New-Hope/dist/
 
 # Copyrighted reference material - never commit
-Reference/**/*.pdf
+# Source textbooks and the markdown/OCR transcriptions taken from them. None of
+# it is project source; the datasets in data/ and physio/ were built from it.
+# Ignore the whole directory, not just the PDFs, so `git add -A` cannot sweep
+# up Hormones.md or the Clinical Conditions text.
+Reference/
