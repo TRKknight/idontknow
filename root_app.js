@@ -126,7 +126,7 @@ function sanitizeData(obj) {
 
 // \u2500\u2500 GitHub API \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 async function ghFetch(owner, repo, token) {
-  const url = `https://api.github.com/repos/${owner}/${repo}/contents/data.json`;
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/data/disorders.json`;
   const res = await fetch(url, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -135,14 +135,14 @@ async function ghFetch(owner, repo, token) {
   });
   if (!res.ok) throw new Error(`GitHub error ${res.status}: ${res.statusText}`);
   const json = await res.json();
-  const data = JSON.parse(atob(json.content.replace(/\n/g, '')));
+  const data = JSON.parse(decodeURIComponent(escape(atob(json.content.replace(/\n/g, '')))));
   return {
     data,
     sha: json.sha
   };
 }
 async function ghSave(owner, repo, token, sha, data, message) {
-  const url = `https://api.github.com/repos/${owner}/${repo}/contents/data.json`;
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/data/disorders.json`;
   const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(data), null, 2))));
   const res = await fetch(url, {
     method: "PUT",
@@ -333,7 +333,7 @@ function ImageLightbox({
 
 // \u2500\u2500 GitHub API (Pathways) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 async function ghFetchPathways(owner, repo, token) {
-  const url = `https://api.github.com/repos/${owner}/${repo}/contents/pathways.json`;
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/data/pathways.json`;
   const res = await fetch(url, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -342,14 +342,14 @@ async function ghFetchPathways(owner, repo, token) {
   });
   if (!res.ok) throw new Error(`GitHub error ${res.status}`);
   const json = await res.json();
-  const data = JSON.parse(atob(json.content.replace(/\n/g, '')));
+  const data = JSON.parse(decodeURIComponent(escape(atob(json.content.replace(/\n/g, '')))));
   return {
     data,
     sha: json.sha
   };
 }
 async function ghSavePathways(owner, repo, token, sha, data, message) {
-  const url = `https://api.github.com/repos/${owner}/${repo}/contents/pathways.json`;
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/data/pathways.json`;
   const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(data), null, 2))));
   const res = await fetch(url, {
     method: "PUT",
@@ -447,7 +447,6 @@ function sumPathE(steps, pwId, inputKey) {
 }
 
 var MOL_LBL = { atp: 'ATP', gtp: 'GTP', nadh: 'NADH', fadh2: 'FADH\u2082', nadph: 'NADPH' };
-var MOL_CLR = { atp: '#e74c3c', gtp: '#e67e22', nadh: '#3498db', fadh2: '#9b59b6', nadph: '#1abc9c' };
 var ETC_YIELD = { nadh: 2.5, fadh2: 1.5 };
 
 var ENERG_MULT = {
@@ -644,7 +643,6 @@ function PathwayViewer({
         var totalE = tot.atp + tot.gtp + tot.nadh * 2.5 + tot.fadh2 * 1.5;
         var _pnl = { margin: '0 12px 12px', padding: '14px 16px', background: dark ? '#141418' : '#ffffff', border: '1px solid ' + (dark ? '#2a2a30' : '#e2e2e6'), borderRadius: 12, fontFamily: 'Georgia,serif' };
         var _hdr = { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 };
-        var _btn = function(active, clr) { return { fontSize: 11, padding: '4px 12px', borderRadius: 20, border: '1px solid ' + (active ? clr : (dark ? '#444' : '#bbb')), background: active ? clr + '18' : 'transparent', color: active ? clr : (dark ? '#777' : '#999'), cursor: 'pointer', fontFamily: 'Georgia,serif', transition: 'all 0.2s', outline: 'none' }; };
         var _tblH = { display: 'grid', gridTemplateColumns: '100px 1fr 1fr 1fr', fontSize: 11, borderBottom: '2px solid ' + (dark ? '#2a2a30' : '#e8e8ec') };
         var _thC = { padding: '6px 10px', fontWeight: '600', color: dark ? '#888' : '#999', textTransform: 'uppercase', letterSpacing: 0.5, fontSize: 10, textAlign: 'center', borderRight: '1px solid ' + (dark ? '#1a1a1e' : '#f0f0f4') };
         return React.createElement('div', { style: _pnl },
@@ -2205,8 +2203,7 @@ function PathwayAdminPanel({
 // \u2500\u2500 Admin Login \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function AdminLogin({
   onLogin,
-  onClose,
-  allData
+  onClose
 }) {
   const [owner, setOwner] = useState(sessionStorage.getItem('gh_owner') || '');
   const [repo, setRepo] = useState(sessionStorage.getItem('gh_repo') || '');
@@ -2891,8 +2888,8 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   async function persistVitamins(newData, commitMsg) {
     setVitSaving(true);
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/vitamins.json`;
-      const content = btoa(unescape(encodeURIComponent(JSON.stringify(newData, null, 2))));
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/vitamins.json`;
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(newData), null, 2))));
       const body = {
         message: commitMsg,
         content
@@ -2933,7 +2930,7 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   }
   async function loadVitaminsSha() {
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/vitamins.json`;
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/vitamins.json`;
       const res = await fetch(url, {
         headers: {
           Authorization: `Bearer ${config.token}`,
@@ -2948,7 +2945,7 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   }
   async function loadNormalValsSha() {
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/normal_values.json`;
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/normal_values.json`;
       const res = await fetch(url, {
         headers: {
           Authorization: `Bearer ${config.token}`,
@@ -2963,7 +2960,7 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   }
   async function loadMineralsSha() {
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/minerals.json`;
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/minerals.json`;
       const res = await fetch(url, {
         headers: {
           Authorization: `Bearer ${config.token}`,
@@ -2978,7 +2975,7 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   }
   async function loadVignettesSha() {
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/vignettes.json`;
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/vignettes.json`;
       const res = await fetch(url, {
         headers: {
           Authorization: `Bearer ${config.token}`,
@@ -2993,7 +2990,7 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   }
   async function loadCasesSha() {
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/cases.json`;
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/cases.json`;
       const res = await fetch(url, {
         headers: {
           Authorization: `Bearer ${config.token}`,
@@ -3024,8 +3021,8 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   async function persistNormalVals(newData, commitMsg) {
     setNvSaving(true);
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/normal_values.json`;
-      const content = btoa(unescape(encodeURIComponent(JSON.stringify(newData, null, 2))));
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/normal_values.json`;
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(newData), null, 2))));
       const body = {
         message: commitMsg,
         content
@@ -3067,8 +3064,8 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   async function persistMinerals(newData, commitMsg) {
     setMinSaving(true);
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/minerals.json`;
-      const content = btoa(unescape(encodeURIComponent(JSON.stringify(newData, null, 2))));
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/minerals.json`;
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(newData), null, 2))));
       const body = { message: commitMsg, content };
       if (minSha) body.sha = minSha;
       const res = await fetch(url, {
@@ -3098,8 +3095,8 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   async function persistVignettes(newData, commitMsg) {
     setVigSaving(true);
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/vignettes.json`;
-      const content = btoa(unescape(encodeURIComponent(JSON.stringify(newData, null, 2))));
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/vignettes.json`;
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(newData), null, 2))));
       const body = { message: commitMsg, content };
       if (vigSha) body.sha = vigSha;
       const res = await fetch(url, {
@@ -3129,8 +3126,8 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   async function persistCases(newData, commitMsg) {
     setCaseSaving(true);
     try {
-      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/cases.json`;
-      const content = btoa(unescape(encodeURIComponent(JSON.stringify(newData, null, 2))));
+      const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/data/cases.json`;
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(newData), null, 2))));
       const body = { message: commitMsg, content };
       if (caseSha) body.sha = caseSha;
       const res = await fetch(url, {
@@ -3161,7 +3158,7 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
     setVisSaving(true);
     try {
       const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/visibility.json`;
-      const content = btoa(unescape(encodeURIComponent(JSON.stringify(newData, null, 2))));
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(sanitizeData(newData), null, 2))));
       const body = { message: commitMsg, content };
       if (visSha) body.sha = visSha;
       const res = await fetch(url, {
@@ -3421,7 +3418,7 @@ function handlePClinDelete() { const nd = physioClinical.filter(v => v.id !== pC
       style: { background: '#fff', borderRadius: 12, padding: 26, maxWidth: 340, width: '100%', textAlign: 'center', fontFamily: 'Georgia,serif' }
     }, /*#__PURE__*/React.createElement("div", {
       style: { fontSize: 15, fontWeight: 'bold', marginBottom: 10 }
-    }, 'Delete ' + del.name + '?'), /*#__PURE__*/React.createElement("div", {
+    }, 'Delete ' + label + ': ' + del.name + '?'), /*#__PURE__*/React.createElement("div", {
       style: { display: 'flex', gap: 10 }
     }, /*#__PURE__*/React.createElement("button", {
       onClick: () => setDel(null),
@@ -5887,7 +5884,6 @@ function ClinicalVignetteView({
   }, [showPicker]);
   const actions = vignette.actions || [];
   const rawDiffs = vignette.differentials || [];
-  const criticals = new Set(vignette.critical_ids || []);
   const linkedDis = vignette.disorderId ? (allDisorders || []).find(d => d.id === vignette.disorderId || d.num === vignette.disorderId) : null;
   const takenArr = actions.filter(a => taken.has(a.id));
   const remaining = actions.filter(a => !taken.has(a.id));
@@ -5928,8 +5924,6 @@ function ClinicalVignetteView({
       setAttempted(true);
     }
   }
-  const totalPossible = actions.reduce((s, a) => s + a.cost * 8, 0);
-  const maxScore = 100;
   const grade = score >= 80 ? 'A' : score >= 60 ? 'B' : score >= 40 ? 'C' : score >= 20 ? 'D' : 'F';
   const gradeColor = score >= 80 ? '#27ae60' : score >= 60 ? '#e8c56a' : score >= 40 ? '#e67e22' : '#c0392b';
   return /*#__PURE__*/React.createElement("div", {
@@ -7318,7 +7312,6 @@ function MuhsPyqView({
 }) {
 const [mode, setMode] = useState('browse');
   const [paper, setPaper] = useState('all');
-  const [source, setSource] = useState('all');
   const [topics, setTopics] = useState([]);
   const [openCase, setOpenCase] = useState(null);
   const [revealed, setRevealed] = useState(false);
@@ -7930,7 +7923,6 @@ function NormalValuesView({
 }) {
   const [search, setSearch] = useState('');
   const [openSection, setOpenSection] = useState(data.length > 0 ? data[0].id : null);
-  const [expanded, setExpanded] = useState(null);
   const filtered = data.map(s => ({
     ...s,
     entries: s.entries.filter(e => !search.trim() || e.name.toLowerCase().includes(search.toLowerCase()) || (e.abbr || '').toLowerCase().includes(search.toLowerCase()) || (e.note || '').toLowerCase().includes(search.toLowerCase()))
@@ -8127,7 +8119,7 @@ function NormalValuesView({
   }, "Note"))), /*#__PURE__*/React.createElement("tbody", null, sec.entries.map(e => /*#__PURE__*/React.createElement("tr", {
     key: e.name,
     style: {
-      background: expanded === e.name ? dark ? '#1a1a2a' : '#f5f8ff' : 'transparent'
+      background: 'transparent'
     }
   }, /*#__PURE__*/React.createElement("td", {
     style: cell
@@ -8692,8 +8684,7 @@ function App() {
   const [openVignette, setOpenVignette] = useState(null);
   const [clinicalCases, setClinicalCases] = useState([]);
   const [muhsPyq, setMuhsPyq] = useState([]);
-  const [jambhulkar, setJambhulkar] = useState([]);
-  const [visibility, setVisibility] = useState({ disorders: true, pathways: true, 'normal-values': true, vitamins: true, minerals: true, physiology: true, feed: true, 'clinical-vignettes': true, 'clinical-cases': true, 'muhs-pyq': true, 'jambhulkar-pyq': true, vignettes: true, 'biochem-home': true, 'physio-viva': true, 'physio-reflexes-explorer': true, 'physio-notes': true, 'physio-clinical': true, 'physio-hormones': true, 'physio-muhs-pyq': true });
+  const [visibility, setVisibility] = useState({ disorders: true, pathways: true, 'normal-values': true, vitamins: true, minerals: true, physiology: true, feed: true, 'clinical-vignettes': true, 'clinical-cases': true, 'muhs-pyq': true, vignettes: true, 'biochem-home': true, 'physio-viva': true, 'physio-reflexes-explorer': true, 'physio-notes': true, 'physio-clinical': true, 'physio-hormones': true, 'physio-muhs-pyq': true });
   const [physioViva, setPhysioViva] = useState([]);
   const [physioReflexDetails, setPhysioReflexDetails] = useState([]);
   const [physioNotes, setPhysioNotes] = useState([]);
@@ -8861,6 +8852,10 @@ function App() {
       } : pw : id);
     } else if (p === '/normal-values') {
       setScreen('normal-values');
+      setSel(null);
+      setOpenPathway(null);
+    } else if (p === '/vitamins') {
+      setScreen('vitamins');
       setSel(null);
       setOpenPathway(null);
     } else if (p === '/minerals') {
@@ -9521,8 +9516,7 @@ function App() {
     onLogout: handleLogout
   }), showLogin && /*#__PURE__*/React.createElement(AdminLogin, {
     onLogin: handleLogin,
-    onClose: () => setShowLogin(false),
-    allData: allData
+    onClose: () => setShowLogin(false)
   }), screen === 'home' && !adminConfig && /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh',
@@ -11071,12 +11065,11 @@ physioRef.current.contentWindow.postMessage({
 
 // \u2500\u2500 Minerals Viewer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function MineralsView({ data, allDisorders, pathways, dark, onBack, onOpenDisorder, onOpenPathway, initialMineral }) {
-  if (!data || data.length === 0) return null;
   const [search, setSearch] = useState('');
   const [typeFilter, setTypeFilter] = useState('all');
   const [importantOnly, setImportantOnly] = useState(false);
   const [sel, setSel] = useState(() => initialMineral || null);
-  const [cyclesOpen, setCyclesOpen] = useState(true);
+  if (!data || data.length === 0) return null;
   const mineralColor = m => m.type === 'macromineral' ? '#3498db' : m.type === 'toxic' ? '#e74c3c' : '#27ae60';
   const filtered = data.filter(m => {
     if (typeFilter !== 'all' && m.type !== typeFilter) return false;
