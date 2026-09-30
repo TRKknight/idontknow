@@ -8744,6 +8744,7 @@ function App() {
   const [physioReflexDetails, setPhysioReflexDetails] = useState([]);
   const [physioNotes, setPhysioNotes] = useState([]);
   const [physioClinical, setPhysioClinical] = useState([]);
+  const [physioAdminReady, setPhysioAdminReady] = useState(false);
   const [lightbox, setLightbox] = useState(null);
   const physioRef = useRef(null);
   const physioInitialSrc = useRef(null);
@@ -8844,7 +8845,7 @@ function App() {
     Promise.all([fetch('data/disorders.json').then(r => {
       if (!r.ok) throw new Error('data/disorders.json not found');
       return r.json();
-    }), fetch('data/pathways.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/normal_values.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vitamins.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/minerals.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vignettes.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/cases.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/muhs_pyq.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('visibility.json').then(r => r.ok ? r.json() : {}).catch(() => ({})), fetch('physio/viva.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/reflex_details.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/notes.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('physio/clinical.json').then(r => r.ok ? r.json() : []).catch(() => [])]).then(([data, paths, nv, vits, mins, vign, cases, mpyq, vis, pVi, pRD, pNo, pCl]) => {
+    }), fetch('data/pathways.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/normal_values.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vitamins.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/minerals.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/vignettes.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/cases.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('data/muhs_pyq.json').then(r => r.ok ? r.json() : []).catch(() => []), fetch('visibility.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))]).then(([data, paths, nv, vits, mins, vign, cases, mpyq, vis]) => {
       setMuhsPyq(mpyq);
       setAllData(data);
       setPathways(paths);
@@ -8854,16 +8855,42 @@ function App() {
       setVignettes(vign);
       setClinicalCases(cases);
       if (vis && typeof vis === 'object') setVisibility(prev => ({ ...prev, ...vis }));
-      setPhysioViva(pVi);
-      setPhysioReflexDetails(pRD);
-      setPhysioNotes(pNo);
-      setPhysioClinical(pCl);
       setLoading(false);
     }).catch(e => {
       setLoadErr(e.message);
       setLoading(false);
     });
   }, []);
+
+  // The four physiology datasets are read only by the admin editors, never by
+  // any user-facing screen, so they load on login rather than on page load.
+  // At 1.46 MB they were 38% of the initial payload for every visitor, to
+  // serve an editor only the admin ever opens. physioAdminReady holds the
+  // panel back until they arrive, so the editors never see empty arrays and
+  // compute a new record's id from an empty list.
+  useEffect(() => {
+    if (!adminConfig) {
+      setPhysioAdminReady(false);
+      return;
+    }
+    let live = true;
+    Promise.all([
+      fetch('physio/viva.json').then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('physio/reflex_details.json').then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('physio/notes.json').then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch('physio/clinical.json').then(r => r.ok ? r.json() : []).catch(() => [])
+    ]).then(([pVi, pRD, pNo, pCl]) => {
+      if (!live) return;
+      setPhysioViva(pVi);
+      setPhysioReflexDetails(pRD);
+      setPhysioNotes(pNo);
+      setPhysioClinical(pCl);
+      setPhysioAdminReady(true);
+    });
+    return () => {
+      live = false;
+    };
+  }, [adminConfig]);
   const fromHash = useRef(false);
   function applyHash(hash) {
     const h = (hash || '').replace(/^#/, '') || '/';
@@ -9542,7 +9569,23 @@ function App() {
   }, loadErr));
   return /*#__PURE__*/React.createElement("div", {
     style: s.app
-  }, adminConfig && /*#__PURE__*/React.createElement(AdminPanel, {
+  }, adminConfig && !physioAdminReady && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100vh',
+      fontFamily: 'Georgia,serif',
+      color: '#aaa',
+      flexDirection: 'column',
+      gap: 12,
+      background: DK.bg(dark)
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 32
+    }
+  }, "⏳"), /*#__PURE__*/React.createElement("div", null, "Loading physiology data…")), adminConfig && physioAdminReady && /*#__PURE__*/React.createElement(AdminPanel, {
     config: adminConfig,
     allData: allData,
     onDataChange: setAllData,
