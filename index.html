@@ -11,10 +11,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="icon" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/icon-512.png" sizes="512x512" />
   <title>Brute Forcing Medicine</title>
-  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').then(r=>r.onupdatefound=()=>{if(r.installing&&navigator.serviceWorker.controller)r.installing.onstatechange=()=>{if(r.installing.state==='activated')location.reload()}})}</script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').then(r=>r.onupdatefound=()=>{const w=r.installing;if(w&&navigator.serviceWorker.controller)w.onstatechange=()=>{if(w.state==='activated')location.reload()}})}</script>
   <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
 </head>

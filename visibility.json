@@ -1,0 +1,20 @@
+{
+  "disorders": true,
+  "pathways": true,
+  "normal-values": true,
+  "vitamins": true,
+  "minerals": true,
+  "physiology": true,
+  "feed": true,
+  "clinical-vignettes": true,
+  "clinical-cases": true,
+  "muhs-pyq": true,
+  "vignettes": true,
+  "biochem-home": true,
+  "physio-viva": true,
+  "physio-reflexes-explorer": true,
+  "physio-notes": true,
+  "physio-clinical": true,
+  "physio-hormones": true,
+  "physio-muhs-pyq": true
+}
