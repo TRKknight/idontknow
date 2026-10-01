@@ -2806,6 +2806,11 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
   const [pClinForm, setPClinForm] = useState({ name: '', tab: '', sections: [] });
   function useDataManager(fileName, onChange) {
     const [saving, setSaving] = useState(false);
+    // persist can be re-entered before React re-renders, so the in-flight
+    // guard has to live in a ref rather than the saving state. Two saves
+    // in the same tick would otherwise share one sha, both derive the
+    // same next id from the same stale list, and the second PUT fails 409.
+    const inFlight = React.useRef(false);
     const [msg, setMsg] = useState({ text: '', ok: true });
     const [sha, setSha] = useState(null);
     const [editing, setEditing] = useState(null);
@@ -2818,6 +2823,8 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
       } catch (e) {}
     }, [config.owner, config.repo, config.token, fileName]);
     const persist = React.useCallback(async (newData, commitMsg) => {
+      if (inFlight.current) { setMsg({ text: '⏳ Save already in progress', ok: false }); return; }
+      inFlight.current = true;
       setSaving(true);
       try {
         const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${fileName}`;
@@ -2832,7 +2839,7 @@ const [pVivaForm, setPVivaForm] = useState({ cat: '', name: '', def: '' });
         onChange(newData);
         setMsg({ text: '\u2705 Saved!', ok: true });
       } catch (e) { setMsg({ text: '\u274C ' + e.message, ok: false }); }
-      finally { setSaving(false); setTimeout(() => setMsg({ text: '', ok: true }), 4000); }
+      finally { inFlight.current = false; setSaving(false); setTimeout(() => setMsg({ text: '', ok: true }), 4000); }
     }, [config.owner, config.repo, config.token, fileName, sha, onChange]);
     return { saving, msg, setMsg, sha, editing, setEditing, del, setDel, persist, loadSha };
   }
@@ -9103,6 +9110,13 @@ function App() {
   }
   function handleLogout() {
     setAdmin(null);
+    // Drop the physiology datasets too. They only load while a session is
+    // active, so without this the previous admin's edits stay in memory after
+    // signing out, and the next login renders before the fetch lands.
+    setPhysioViva([]);
+    setPhysioReflexDetails([]);
+    setPhysioNotes([]);
+    setPhysioClinical([]);
     fetch('data/disorders.json').then(r => r.json()).then(setAllData);
     fetch('data/pathways.json').then(r => r.ok ? r.json() : []).then(setPathways).catch(() => {});
     fetch('data/vitamins.json').then(r => r.ok ? r.json() : []).then(setVitamins).catch(() => {});
