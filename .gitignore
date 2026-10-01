@@ -4,7 +4,5 @@ node_modules/
 # Build output (the deployed copy in physio/ is tracked separately)
 New-Hope/dist/
 
-# it is project source; the datasets in data/ and physio/ were built from it.
-# Ignore the whole directory, not just the PDFs, so `git add -A` cannot sweep
-# up Hormones.md or the Clinical Conditions text.
+# Local archive. Not project source, not needed to build or deploy.
 Reference/
